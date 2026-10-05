@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Battle Base - 対戦ゲームの土台</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Battle Base</h1>
+
+    <!-- ロビー: 部屋を作る／部屋に入る -->
+    <section id="lobby">
+      <label>名前（12文字まで）
+        <input id="name" maxlength="12" placeholder="なまえ" autocomplete="off">
+      </label>
+      <div class="row">
+        <button id="create-btn">部屋を作る</button>
+      </div>
+      <div class="row">
+        <input id="room-code" maxlength="4" placeholder="部屋コード（4文字）" autocomplete="off">
+        <button id="join-btn">部屋に入る</button>
+      </div>
+    </section>
+
+    <!-- 部屋の中: 参加者の一覧とゲーム開始 -->
+    <section id="room" hidden>
+      <p>部屋コード: <strong id="room-id"></strong>
+        <button id="copy-btn" class="small">招待リンクをコピー</button></p>
+      <ul id="players"></ul>
+      <p id="wait-note" class="note"></p>
+      <div class="row">
+        <button id="start-btn" hidden>ゲームを始める</button>
+        <button id="back-btn" class="secondary" hidden>ロビーに戻る</button>
+        <button id="leave-btn" class="secondary">部屋を出る</button>
+      </div>
+    </section>
+
+    <!-- ゲームの画面（game.js がここに描く） -->
+    <section id="game-area" hidden></section>
+
+    <p id="toast" role="status"></p>
+  </main>
+  <script type="module" src="main.js"></script>
+</body>
+</html>

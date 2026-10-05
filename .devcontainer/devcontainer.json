@@ -1,0 +1,13 @@
+{
+    "name": "Battle Base Dev",
+    "image": "mcr.microsoft.com/devcontainers/javascript-node:22",
+    "forwardPorts": [8000],
+    "portsAttributes": {
+        "8000": {
+            "label": "Battle Base Server",
+            "onAutoForward": "silent"
+        }
+    },
+    "postCreateCommand": "npm ci",
+    "remoteUser": "node"
+}

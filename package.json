@@ -1,0 +1,12 @@
+{
+  "name": "battle-base",
+  "version": "1.0.0",
+  "description": "対戦ゲームの土台（部屋・人数上限・メッセージ中継）。授業用。",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "ws": "^8.18.0"
+  }
+}

@@ -31,6 +31,11 @@ import {
     normalizePositions,
     normalizeSeasonYear,
 } from './lib/normalize.mjs';
+import {
+    CALIBRATION_REFERENCE_ERA,
+    calibratePlayerStats,
+    generateCalibrationImpactMarkdown,
+} from './lib/calibrate.mjs';
 
 export {
     ATTRIBUTE_WEIGHTS,
@@ -48,6 +53,7 @@ const MANUAL_DIR = path.join(ROOT_DIR, 'data', 'manual');
 const RAW_SQUADS_INDEX = path.join(ROOT_DIR, 'data', 'raw', 'squads', 'squads-index.json');
 const RAW_FIFA_INDEX = path.join(ROOT_DIR, 'data', 'raw', 'fifa', 'fifa-index.json');
 const REPORTS_DIR = path.join(ROOT_DIR, 'data', 'reports');
+const ERA_CALIBRATION_JSON = path.join(REPORTS_DIR, 'era-calibration.json');
 const OUTPUT_JS_PATH = path.join(ROOT_DIR, 'public', 'data', 'team-seasons.js');
 
 const LEAGUE_COMMENTS = {
@@ -216,7 +222,10 @@ function deduplicateFifaCandidates(candidates) {
     return bySource;
 }
 
-export function runBuild() {
+export function runBuild(options = {}) {
+    const calibrationMode = options.calibrationMode || 'hybrid';
+    const writeOutputJs = options.writeOutputJs !== false;
+
     fs.mkdirSync(REPORTS_DIR, { recursive: true });
 
     const seasonPool = JSON.parse(
@@ -242,6 +251,9 @@ export function runBuild() {
     const fifaData = fs.existsSync(RAW_FIFA_INDEX)
         ? JSON.parse(fs.readFileSync(RAW_FIFA_INDEX, 'utf8')).records || []
         : [];
+    const calibrationModel = fs.existsSync(ERA_CALIBRATION_JSON)
+        ? JSON.parse(fs.readFileSync(ERA_CALIBRATION_JSON, 'utf8')).calibrationModel || null
+        : null;
 
     // Collect all canonical clubs and players
     const knownClubs = [...new Set(seasonPool.map((s) => s.club))];
@@ -475,8 +487,8 @@ export function runBuild() {
                 finalPositions = normalizedExtPos;
             }
 
-            // Determine Attributes
-            let finalStats = {
+            // Determine Raw Attributes
+            let rawStats = {
                 overall: targetPlayer.overall,
                 attack: targetPlayer.attack,
                 creation: targetPlayer.creation,
@@ -488,7 +500,7 @@ export function runBuild() {
             let technicalSource = 'fallback-generated';
 
             if (chosenFifa) {
-                finalStats = { ...chosenFifa.aggregated };
+                rawStats = { ...chosenFifa.aggregated };
                 const srcLabel = fifaMatchNote
                     ? `${chosenFifa.record.source} [${fifaMatchNote}]`
                     : chosenFifa.record.source;
@@ -496,7 +508,7 @@ export function runBuild() {
                 technicalSource = srcLabel;
             }
 
-            // Apply Manual Overrides if present
+            // Apply Position Override before calibration if manualOverride specifies positions
             const overrideFields = [];
             let overrideUsed = false;
             let overrideReason = null;
@@ -509,6 +521,37 @@ export function runBuild() {
                     overrideFields.push('positions');
                     positionSource = 'manual-override';
                 }
+            }
+
+            // Apply Cross-Era Calibration ONLY to external FIFA-verified records (2005-2024).
+            // Pre-2005 fallback-generated records (99 players) remain uncalibrated ('none').
+            let calibResult = null;
+            let calibrationMethod = 'none';
+            let calibrationReferenceEra = null;
+            let finalStats = { ...rawStats };
+
+            if (chosenFifa && poolEntry.year >= 2005 && calibrationModel) {
+                calibResult = calibratePlayerStats(
+                    rawStats,
+                    finalPositions,
+                    poolEntry.year,
+                    calibrationModel,
+                    calibrationMode
+                );
+                calibrationMethod = calibResult.mode;
+                calibrationReferenceEra = calibResult.referenceEra || CALIBRATION_REFERENCE_ERA;
+                finalStats = {
+                    overall: calibResult.stats.overall.final,
+                    attack: calibResult.stats.attack.final,
+                    creation: calibResult.stats.creation.final,
+                    defense: calibResult.stats.defense.final,
+                    physical: calibResult.stats.physical.final,
+                    goalkeeping: calibResult.stats.goalkeeping.final,
+                };
+            }
+
+            // Apply Numeric Manual Overrides if present (overrides take precedence over automated calibration)
+            if (manualOverride) {
                 for (const statKey of ['overall', 'attack', 'creation', 'defense', 'physical', 'goalkeeping']) {
                     if (manualOverride[statKey] !== undefined) {
                         finalStats[statKey] = clampStat(manualOverride[statKey]);
@@ -615,6 +658,54 @@ export function runBuild() {
                     overrideFields,
                     overrideReason,
                     fallbackUsed,
+                    calibrationMethod,
+                    calibrationReferenceEra,
+                    rawOverall: rawStats.overall,
+                    calibratedOverall: finalStats.overall,
+                    rawAttack: rawStats.attack,
+                    calibratedAttack: finalStats.attack,
+                    rawCreation: rawStats.creation,
+                    calibratedCreation: finalStats.creation,
+                    rawDefense: rawStats.defense,
+                    calibratedDefense: finalStats.defense,
+                    rawPhysical: rawStats.physical,
+                    calibratedPhysical: finalStats.physical,
+                    rawGoalkeeping: rawStats.goalkeeping,
+                    calibratedGoalkeeping: finalStats.goalkeeping,
+                    calibrationComponents: calibResult
+                        ? {
+                              overall: {
+                                  zCalibrated: calibResult.stats.overall.zCalibrated,
+                                  pctCalibrated: calibResult.stats.overall.pctCalibrated,
+                                  hybridCalibrated: calibResult.stats.overall.hybridCalibrated,
+                              },
+                              attack: {
+                                  zCalibrated: calibResult.stats.attack.zCalibrated,
+                                  pctCalibrated: calibResult.stats.attack.pctCalibrated,
+                                  hybridCalibrated: calibResult.stats.attack.hybridCalibrated,
+                              },
+                              creation: {
+                                  zCalibrated: calibResult.stats.creation.zCalibrated,
+                                  pctCalibrated: calibResult.stats.creation.pctCalibrated,
+                                  hybridCalibrated: calibResult.stats.creation.hybridCalibrated,
+                              },
+                              defense: {
+                                  zCalibrated: calibResult.stats.defense.zCalibrated,
+                                  pctCalibrated: calibResult.stats.defense.pctCalibrated,
+                                  hybridCalibrated: calibResult.stats.defense.hybridCalibrated,
+                              },
+                              physical: {
+                                  zCalibrated: calibResult.stats.physical.zCalibrated,
+                                  pctCalibrated: calibResult.stats.physical.pctCalibrated,
+                                  hybridCalibrated: calibResult.stats.physical.hybridCalibrated,
+                              },
+                              goalkeeping: {
+                                  zCalibrated: calibResult.stats.goalkeeping.zCalibrated,
+                                  pctCalibrated: calibResult.stats.goalkeeping.pctCalibrated,
+                                  hybridCalibrated: calibResult.stats.goalkeeping.hybridCalibrated,
+                              },
+                          }
+                        : null,
                 },
             });
         }
@@ -628,9 +719,9 @@ export function runBuild() {
         });
     }
 
-    // Write public/data/team-seasons.js
-    const jsContent = generateTeamSeasonsJsContent(builtTeamSeasons);
-    fs.writeFileSync(OUTPUT_JS_PATH, jsContent, 'utf8');
+    // Write data/reports/calibration-impact.md
+    const impactMd = generateCalibrationImpactMarkdown(playerReports, seasonPool);
+    fs.writeFileSync(path.join(REPORTS_DIR, 'calibration-impact.md'), impactMd, 'utf8');
 
     const totalPlayers = playerReports.length;
     const squadVerifiedCount = playerReports.filter(
@@ -638,7 +729,9 @@ export function runBuild() {
     ).length;
 
     const summary = {
-        pipelineVersion: '1.0.0',
+        pipelineVersion: '1.1.0',
+        calibrationMode,
+        calibrationReferenceEra: CALIBRATION_REFERENCE_ERA,
         teamSeasonsCount: builtTeamSeasons.length,
         playerSeasonsCount: totalPlayers,
         counts: {
@@ -656,87 +749,118 @@ export function runBuild() {
         },
     };
 
-    // Write data/reports/build-report.json
-    const buildReportPath = path.join(REPORTS_DIR, 'build-report.json');
-    fs.writeFileSync(
-        buildReportPath,
-        JSON.stringify(
-            {
-                summary,
-                attributeWeights: ATTRIBUTE_WEIGHTS,
-                players: playerReports,
-            },
-            null,
-            2
-        ) + '\n',
-        'utf8'
-    );
+    if (writeOutputJs) {
+        // Write public/data/team-seasons.js
+        const jsContent = generateTeamSeasonsJsContent(builtTeamSeasons);
+        fs.writeFileSync(OUTPUT_JS_PATH, jsContent, 'utf8');
 
-    // Write data/reports/unresolved.json
-    const unresolvedPath = path.join(REPORTS_DIR, 'unresolved.json');
-    fs.writeFileSync(
-        unresolvedPath,
-        JSON.stringify(
-            {
-                pipelineVersion: summary.pipelineVersion,
-                totalUnresolved: unresolvedList.length,
-                items: unresolvedList,
-            },
-            null,
-            2
-        ) + '\n',
-        'utf8'
-    );
-
-    // Write human-readable data/reports/build-report.md
-    const mdLines = [
-        '# Team-Seasons Build & Provenance Report',
-        '',
-        `- **Total TeamSeasons**: ${summary.teamSeasonsCount}`,
-        `- **Total PlayerSeasons**: ${summary.playerSeasonsCount}`,
-        `- **Squad Roster Externally Verified**: ${summary.counts.squadRosterVerified} / ${totalPlayers} (${summary.percentages.squadRosterVerifiedPct}%)`,
-        `- **Full External Verified (Squad + FIFA Ratings)**: ${summary.counts.verifiedExternal} / ${totalPlayers} (${summary.percentages.verifiedExternalPct}%)`,
-        `- **Manual Overrides**: ${summary.counts.manualOverride} / ${totalPlayers} (${summary.percentages.manualOverridePct}%)`,
-        `- **Fallback-Generated**: ${summary.counts.fallbackGenerated} / ${totalPlayers} (${summary.percentages.fallbackGeneratedPct}%)`,
-        `- **Unresolved Records**: ${summary.counts.unresolved}`,
-        '',
-        '## Sample Provenance Check: Cristiano Ronaldo / Manchester United / 2008',
-        '',
-    ];
-
-    const ronaldo2008 = playerReports.find(
-        (p) => p.name === 'Cristiano Ronaldo' && p.club === 'Manchester United' && p.year === 2008
-    );
-    if (ronaldo2008) {
-        mdLines.push('```json');
-        mdLines.push(JSON.stringify(ronaldo2008, null, 2));
-        mdLines.push('```');
-    }
-
-    mdLines.push('');
-    mdLines.push('## Season-by-Season Coverage Breakdown');
-    mdLines.push('');
-    mdLines.push('| TeamSeason ID | League | Club | Year | Total | Verified External | Manual Override | Fallback |');
-    mdLines.push('| :--- | :--- | :--- | :--- | :---: | :---: | :---: | :---: |');
-
-    for (const ts of builtTeamSeasons) {
-        const tsPlayers = playerReports.filter((p) => p.teamSeasonId === ts.id);
-        const vExt = tsPlayers.filter((p) => p.status === 'verified-external').length;
-        const mOvr = tsPlayers.filter((p) => p.status === 'manual-override').length;
-        const fGen = tsPlayers.filter((p) => p.status === 'fallback-generated').length;
-        mdLines.push(
-            `| \`${ts.id}\` | ${ts.league} | ${ts.club} | ${ts.year} | ${tsPlayers.length} | ${vExt} | ${mOvr} | ${fGen} |`
+        // Write data/reports/build-report.json
+        const buildReportPath = path.join(REPORTS_DIR, 'build-report.json');
+        fs.writeFileSync(
+            buildReportPath,
+            JSON.stringify(
+                {
+                    summary,
+                    attributeWeights: ATTRIBUTE_WEIGHTS,
+                    players: playerReports,
+                },
+                null,
+                2
+            ) + '\n',
+            'utf8'
         );
-    }
 
-    fs.writeFileSync(path.join(REPORTS_DIR, 'build-report.md'), mdLines.join('\n') + '\n', 'utf8');
+        // Write data/reports/unresolved.json
+        const unresolvedPath = path.join(REPORTS_DIR, 'unresolved.json');
+        fs.writeFileSync(
+            unresolvedPath,
+            JSON.stringify(
+                {
+                    pipelineVersion: summary.pipelineVersion,
+                    totalUnresolved: unresolvedList.length,
+                    items: unresolvedList,
+                },
+                null,
+                2
+            ) + '\n',
+            'utf8'
+        );
+
+        // Write human-readable data/reports/build-report.md
+        const mdLines = [
+            '# Team-Seasons Build & Provenance Report',
+            '',
+            `- **Pipeline Version**: ${summary.pipelineVersion}`,
+            `- **Calibration Mode**: \`${summary.calibrationMode}\` (Reference Era: \`${summary.calibrationReferenceEra}\`)`,
+            `- **Total TeamSeasons**: ${summary.teamSeasonsCount}`,
+            `- **Total PlayerSeasons**: ${summary.playerSeasonsCount}`,
+            `- **Squad Roster Externally Verified**: ${summary.counts.squadRosterVerified} / ${totalPlayers} (${summary.percentages.squadRosterVerifiedPct}%)`,
+            `- **Full External Verified (Squad + FIFA Ratings)**: ${summary.counts.verifiedExternal} / ${totalPlayers} (${summary.percentages.verifiedExternalPct}%)`,
+            `- **Manual Overrides**: ${summary.counts.manualOverride} / ${totalPlayers} (${summary.percentages.manualOverridePct}%)`,
+            `- **Fallback-Generated**: ${summary.counts.fallbackGenerated} / ${totalPlayers} (${summary.percentages.fallbackGeneratedPct}%)`,
+            `- **Unresolved Records**: ${summary.counts.unresolved}`,
+            '',
+            '## Sample Provenance Check: Cristiano Ronaldo / Manchester United / 2008',
+            '',
+        ];
+
+        const ronaldo2008 = playerReports.find(
+            (p) => p.name === 'Cristiano Ronaldo' && p.club === 'Manchester United' && p.year === 2008
+        );
+        if (ronaldo2008) {
+            mdLines.push('```json');
+            mdLines.push(JSON.stringify(ronaldo2008, null, 2));
+            mdLines.push('```');
+        }
+
+        mdLines.push('');
+        mdLines.push('## Season-by-Season Coverage Breakdown');
+        mdLines.push('');
+        mdLines.push('| TeamSeason ID | League | Club | Year | Total | Verified External | Manual Override | Fallback |');
+        mdLines.push('| :--- | :--- | :--- | :--- | :---: | :---: | :---: | :---: |');
+
+        for (const ts of builtTeamSeasons) {
+            const tsPlayers = playerReports.filter((p) => p.teamSeasonId === ts.id);
+            const vExt = tsPlayers.filter((p) => p.status === 'verified-external').length;
+            const mOvr = tsPlayers.filter((p) => p.status === 'manual-override').length;
+            const fGen = tsPlayers.filter((p) => p.status === 'fallback-generated').length;
+            mdLines.push(
+                `| \`${ts.id}\` | ${ts.league} | ${ts.club} | ${ts.year} | ${tsPlayers.length} | ${vExt} | ${mOvr} | ${fGen} |`
+            );
+        }
+
+        fs.writeFileSync(path.join(REPORTS_DIR, 'build-report.md'), mdLines.join('\n') + '\n', 'utf8');
+    }
 
     return { summary, unresolvedList, playerReports };
 }
 
+function parseCliArgs(argv) {
+    let calibrationMode = 'hybrid';
+    let writeOutputJs = true;
+    for (const arg of argv) {
+        if (arg.startsWith('--calibration=')) {
+            const val = arg.split('=')[1].trim().toLowerCase();
+            if (['raw', 'hybrid', 'percentile'].includes(val)) {
+                calibrationMode = val;
+            } else {
+                throw new Error(
+                    `Invalid --calibration=${val}. Expected one of: raw, hybrid, percentile`
+                );
+            }
+        } else if (arg === '--impact-only') {
+            writeOutputJs = false;
+        }
+    }
+    return { calibrationMode, writeOutputJs };
+}
+
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
-    const { summary } = runBuild();
-    console.log('[build-team-seasons] Build completed successfully:');
+    const cliOptions = parseCliArgs(process.argv.slice(2));
+    const { summary } = runBuild(cliOptions);
+    console.log(
+        `[build-team-seasons] Build completed successfully (calibration=${summary.calibrationMode}, writeOutputJs=${cliOptions.writeOutputJs}):`
+    );
     console.log(`  - TeamSeasons:        ${summary.teamSeasonsCount}`);
     console.log(`  - PlayerSeasons:      ${summary.playerSeasonsCount}`);
     console.log(`  - Squad Verified:     ${summary.counts.squadRosterVerified} (${summary.percentages.squadRosterVerifiedPct}%)`);

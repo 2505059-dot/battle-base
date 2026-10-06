@@ -215,6 +215,42 @@ async function main() {
                         `Incomplete provenance sources for "${player.id}" (${player.name}).`
                     );
                 }
+                const requiredCalibFields = [
+                    'rawOverall',
+                    'calibratedOverall',
+                    'rawAttack',
+                    'calibratedAttack',
+                    'rawCreation',
+                    'calibratedCreation',
+                    'rawDefense',
+                    'calibratedDefense',
+                    'rawPhysical',
+                    'calibratedPhysical',
+                    'rawGoalkeeping',
+                    'calibratedGoalkeeping',
+                ];
+                for (const cf of requiredCalibFields) {
+                    if (!Number.isInteger(prov[cf]) || prov[cf] < 1 || prov[cf] > 99) {
+                        errors.push(
+                            `Missing or invalid provenance.${cf}=${prov[cf]} for "${player.id}" (${player.name}).`
+                        );
+                    }
+                }
+                if (!prov.calibrationMethod) {
+                    errors.push(
+                        `Missing provenance.calibrationMethod for "${player.id}" (${player.name}).`
+                    );
+                }
+                if (ts.year < 2005 && prov.calibrationMethod !== 'none') {
+                    errors.push(
+                        `Pre-2005 fallback player "${player.id}" (${player.name}) must have calibrationMethod="none", got "${prov.calibrationMethod}".`
+                    );
+                }
+                if (ts.year >= 2005 && rep.status !== 'fallback-generated' && !prov.calibrationReferenceEra) {
+                    errors.push(
+                        `Calibrated player "${player.id}" (${player.name}) is missing provenance.calibrationReferenceEra.`
+                    );
+                }
             }
         }
 

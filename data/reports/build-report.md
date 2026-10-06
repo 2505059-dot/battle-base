@@ -1,5 +1,7 @@
 # Team-Seasons Build & Provenance Report
 
+- **Pipeline Version**: 1.1.0
+- **Calibration Mode**: `hybrid` (Reference Era: `2017-2024`)
 - **Total TeamSeasons**: 62
 - **Total PlayerSeasons**: 554
 - **Squad Roster Externally Verified**: 554 / 554 (100%)
@@ -23,7 +25,7 @@
     "FW"
   ],
   "overall": 91,
-  "attack": 84,
+  "attack": 83,
   "creation": 89,
   "defense": 27,
   "physical": 88,
@@ -37,7 +39,53 @@
     "overrideUsed": false,
     "overrideFields": [],
     "overrideReason": null,
-    "fallbackUsed": false
+    "fallbackUsed": false,
+    "calibrationMethod": "hybrid",
+    "calibrationReferenceEra": "2017-2024",
+    "rawOverall": 91,
+    "calibratedOverall": 91,
+    "rawAttack": 84,
+    "calibratedAttack": 83,
+    "rawCreation": 89,
+    "calibratedCreation": 89,
+    "rawDefense": 27,
+    "calibratedDefense": 27,
+    "rawPhysical": 88,
+    "calibratedPhysical": 88,
+    "rawGoalkeeping": 17,
+    "calibratedGoalkeeping": 17,
+    "calibrationComponents": {
+      "overall": {
+        "zCalibrated": 91,
+        "pctCalibrated": 91,
+        "hybridCalibrated": 91
+      },
+      "attack": {
+        "zCalibrated": 82,
+        "pctCalibrated": 82,
+        "hybridCalibrated": 83
+      },
+      "creation": {
+        "zCalibrated": 89,
+        "pctCalibrated": 89,
+        "hybridCalibrated": 89
+      },
+      "defense": {
+        "zCalibrated": 27,
+        "pctCalibrated": 27,
+        "hybridCalibrated": 27
+      },
+      "physical": {
+        "zCalibrated": 88,
+        "pctCalibrated": 88,
+        "hybridCalibrated": 88
+      },
+      "goalkeeping": {
+        "zCalibrated": 17,
+        "pctCalibrated": 17,
+        "hybridCalibrated": 17
+      }
+    }
   }
 }
 ```

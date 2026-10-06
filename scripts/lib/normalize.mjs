@@ -470,8 +470,16 @@ export function aggregateAttributes(rawTech) {
         defAwareness = Number(rawTech.marking);
     }
 
+    // In FIFA 05, 'creativity' was the direct precursor attribute to 'vision'
+    const resolvedVision = isValidStat(rawTech.vision)
+        ? Number(rawTech.vision)
+        : isValidStat(rawTech.creativity)
+          ? Number(rawTech.creativity)
+          : null;
+
     const enriched = {
         ...rawTech,
+        vision: resolvedVision,
         defensive_awareness_or_marking: defAwareness,
     };
 
@@ -485,11 +493,17 @@ export function aggregateAttributes(rawTech) {
 
         for (const [field, weight] of Object.entries(weights)) {
             const val = Number(enriched[field]);
-            if (!isValidStat(val)) {
-                return null; // Do not fabricate if technical attributes are incomplete
+            if (isValidStat(val)) {
+                weightedSum += val * weight;
+                weightTotal += weight;
             }
-            weightedSum += val * weight;
-            weightTotal += weight;
+        }
+
+        // Require at least 50% of the category's defined weight to be present in the FIFA source.
+        // This accommodates FIFA 05-10 schema differences (e.g. before 'vision' or 'sliding_tackle'
+        // were split out by EA Sports) while rejecting any source that lacks technical attributes.
+        if (weightTotal < 0.5) {
+            return null;
         }
 
         result[category] = clampStat(weightedSum / weightTotal);

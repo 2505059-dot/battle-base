@@ -2,6 +2,7 @@
 // ふだんは書き換えなくてよい。ゲームの中身は game.js に書く。
 import { createNet } from './net.js';
 import { startGame } from './game.js';
+import { getLocale, setLocale, t, subscribeLocaleChange } from './i18n/i18n.js';
 
 const $ = (id) => document.getElementById(id);
 const net = createNet();
@@ -12,13 +13,78 @@ let started = false;
 let players = [];
 let messageHandlers = [];
 let playersHandlers = [];
+let lastToastSpec = null; // { key, rawText }
+
+// Map known server.js Japanese error messages to i18n keys without modifying server.js
+const SERVER_ERROR_KEY_MAP = {
+    '部屋が多すぎます。しばらくしてからやり直してください。': 'errors.tooManyRooms',
+    '部屋が見つかりません。': 'errors.roomNotFound',
+    'この部屋はもうゲームが始まっています。': 'errors.alreadyStarted',
+    'この部屋は満員です。': 'errors.roomFull',
+    'ゲームを始めるには2人以上必要です。': 'errors.needMinPlayers',
+    '長い間動きがなかったので、部屋を閉じました。': 'errors.roomIdleClosed',
+};
 
 const params = new URLSearchParams(location.search);
 if (params.get('room')) $('room-code').value = params.get('room').toUpperCase().slice(0, 4);
 $('name').value = localStorage.getItem('battle-base-name') ?? '';
 
-function toast(text) {
-    $('toast').textContent = text;
+function renderToast() {
+    if (!lastToastSpec) {
+        $('toast').textContent = '';
+        return;
+    }
+    if (lastToastSpec.key) {
+        $('toast').textContent = t(lastToastSpec.key);
+    } else {
+        $('toast').textContent = lastToastSpec.rawText ?? '';
+    }
+}
+
+function toastKey(key) {
+    lastToastSpec = key ? { key } : null;
+    renderToast();
+}
+
+function toastRaw(text) {
+    if (!text) {
+        lastToastSpec = null;
+    } else if (SERVER_ERROR_KEY_MAP[text]) {
+        lastToastSpec = { key: SERVER_ERROR_KEY_MAP[text] };
+    } else {
+        lastToastSpec = { rawText: text };
+    }
+    renderToast();
+}
+
+function applyLobbyTranslations() {
+    document.title = t('lobby.pageTitle');
+    if ($('app-heading')) $('app-heading').textContent = t('lobby.heading');
+    if ($('lang-label')) $('lang-label').textContent = t('common.language');
+    if ($('lang-select')) $('lang-select').value = getLocale();
+
+    if ($('about-title')) $('about-title').textContent = t('lobby.aboutTitle');
+    if ($('about-intro')) $('about-intro').textContent = t('lobby.aboutIntro');
+    if ($('about-builtin-label')) $('about-builtin-label').textContent = t('lobby.aboutBuiltInLabel');
+    if ($('about-builtin-text')) $('about-builtin-text').textContent = t('lobby.aboutBuiltInText');
+    if ($('about-custom-label')) $('about-custom-label').textContent = t('lobby.aboutCustomLabel');
+    if ($('about-custom-text')) $('about-custom-text').textContent = t('lobby.aboutCustomText');
+    if ($('about-footer')) $('about-footer').textContent = t('lobby.aboutFooter');
+
+    if ($('name-label')) $('name-label').textContent = t('lobby.nameLabel');
+    if ($('name')) $('name').placeholder = t('lobby.namePlaceholder');
+    if ($('create-btn')) $('create-btn').textContent = t('lobby.createRoomBtn');
+    if ($('room-code')) $('room-code').placeholder = t('lobby.roomCodePlaceholder');
+    if ($('join-btn')) $('join-btn').textContent = t('lobby.joinRoomBtn');
+
+    if ($('room-code-label')) $('room-code-label').textContent = t('lobby.roomCodeLabel');
+    if ($('copy-btn')) $('copy-btn').textContent = t('lobby.copyInviteBtn');
+    if ($('start-btn')) $('start-btn').textContent = t('lobby.startGameBtn');
+    if ($('back-btn')) $('back-btn').textContent = t('lobby.backToLobbyBtn');
+    if ($('leave-btn')) $('leave-btn').textContent = t('lobby.leaveRoomBtn');
+
+    renderRoom();
+    renderToast();
 }
 
 function myName() {
@@ -29,14 +95,15 @@ function myName() {
 
 function renderRoom() {
     const list = $('players');
+    if (!list) return;
     list.replaceChildren();
     for (const p of players) {
         const li = document.createElement('li');
-        li.textContent = p.name + (p.id === me ? '（あなた）' : '');
+        li.textContent = p.name + (p.id === me ? t('lobby.playerYouSuffix') : '');
         if (p.id === hostId) {
             const badge = document.createElement('span');
             badge.className = 'badge';
-            badge.textContent = 'ホスト';
+            badge.textContent = t('lobby.hostBadge');
             li.append(badge);
         }
         list.append(li);
@@ -50,8 +117,8 @@ function renderRoom() {
     $('wait-note').textContent = started
         ? ''
         : isHost
-            ? (players.length < 2 ? '2人以上そろったら、ゲームを始められます。' : '')
-            : 'ホストがゲームを始めるのを待っています。';
+            ? (players.length < 2 ? t('lobby.waitNeedMorePlayers') : '')
+            : t('lobby.waitForHost');
 }
 
 function showRoom() {
@@ -70,13 +137,26 @@ function showLobby() {
     $('lobby').hidden = false;
 }
 
+if ($('lang-select')) {
+    $('lang-select').value = getLocale();
+    $('lang-select').addEventListener('change', (e) => {
+        setLocale(e.target.value);
+    });
+}
+
+subscribeLocaleChange(() => {
+    applyLobbyTranslations();
+});
+
+applyLobbyTranslations();
+
 net.on('room_joined', (msg) => {
     me = msg.you;
     hostId = msg.hostId;
     players = msg.players;
     started = false;
     $('room-id').textContent = msg.roomId;
-    toast('');
+    toastRaw('');
     showRoom();
     renderRoom();
 });
@@ -120,14 +200,14 @@ net.on('lobby', () => {
     renderRoom();
 });
 
-net.on('error', (msg) => toast(msg.message));
+net.on('error', (msg) => toastRaw(msg.message));
 
 net.onClose(() => {
     showLobby();
-    toast('サーバーとの接続が切れました。ページを開き直してください。');
+    toastKey('lobby.toastDisconnected');
 });
 
-net.opened.catch(() => toast('サーバーに接続できません。npm start を実行しているか確認してください。'));
+net.opened.catch(() => toastKey('lobby.toastConnectFailed'));
 
 $('create-btn').addEventListener('click', () => net.send('create_room', { name: myName() }));
 $('join-btn').addEventListener('click', () => {
@@ -143,8 +223,8 @@ $('copy-btn').addEventListener('click', async () => {
     const url = `${location.origin}${location.pathname}?room=${$('room-id').textContent}`;
     try {
         await navigator.clipboard.writeText(url);
-        toast('招待リンクをコピーしました。チームに送ってください。');
+        toastKey('lobby.toastInviteCopied');
     } catch {
-        toast(url);
+        toastRaw(url);
     }
 });

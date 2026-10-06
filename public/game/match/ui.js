@@ -1,7 +1,9 @@
-// Match Ready, Live Match Center, and Full Time Result UI rendering helpers
+// Match Ready, Live Match Center, and Full Time Result UI rendering helpers (localized via i18n)
 
+import { t } from '../../i18n/i18n.js';
 import { el } from '../shared/dom.js';
 import { clamp } from '../shared/math.js';
+import { formatMatchEvent, formatMatchEventBadge } from '../shared/event-formatters.js';
 import { calculateTeamRating } from '../draft/rules.js';
 import { renderHistoryBox } from '../draft/ui.js';
 import { calculateTeamProfile } from './team-profile.js';
@@ -10,7 +12,7 @@ export function renderProfileCard(team, rating, profile) {
     const card = el('div', 'fd-complete-rating-card');
     card.append(
         el('div', 'fd-complete-team-name', `${team.label} (${team.name})`),
-        el('div', 'fd-complete-rating-text', `Overall Rating: ${rating}`)
+        el('div', 'fd-complete-rating-text', t('common.overallRating', { rating }))
     );
 
     const metrics = el('div', 'fd-profile-metrics');
@@ -37,8 +39,8 @@ export function renderCompleteZone(state, isTeamAPlayer, onMatchStartClick) {
     const profileA = calculateTeamProfile(teamA);
     const profileB = calculateTeamProfile(teamB);
 
-    const banner = el('h2', 'fd-complete-title', 'DRAFT COMPLETE');
-    const sub = el('p', 'fd-complete-sub', 'MATCH READY — 両チームの5人制ロスターが確定しました');
+    const banner = el('h2', 'fd-complete-title', t('draft.completeTitle'));
+    const sub = el('p', 'fd-complete-sub', t('draft.completeSub'));
 
     const summaryBox = el('div', 'fd-complete-ratings');
     summaryBox.append(
@@ -49,14 +51,14 @@ export function renderCompleteZone(state, isTeamAPlayer, onMatchStartClick) {
     zone.append(banner, sub, summaryBox);
 
     if (isTeamAPlayer) {
-        const matchBtn = el('button', 'fd-match-btn', 'MATCH');
+        const matchBtn = el('button', 'fd-match-btn', t('match.matchBtn'));
         matchBtn.addEventListener('click', onMatchStartClick);
         zone.append(matchBtn);
     } else {
         const waitNotice = el(
             'div',
             'fd-match-wait',
-            `等待 Team A (${teamA.name}) 开始比赛...`
+            t('match.waitingForTeamA', { playerName: teamA.name })
         );
         zone.append(waitNotice);
     }
@@ -68,23 +70,27 @@ export function renderCompleteZone(state, isTeamAPlayer, onMatchStartClick) {
 export function renderMatchStatsBox(stats, score, isFullTime) {
     const box = el('div', 'fd-stats-box' + (isFullTime ? ' fd-stats-box--ft' : ''));
     box.append(
-        el('div', 'fd-stats-title', isFullTime ? 'MATCH STATISTICS' : 'LIVE STATS')
+        el(
+            'div',
+            'fd-stats-title',
+            isFullTime ? t('match.statsTitleFullTime') : t('match.statsTitleLive')
+        )
     );
 
     const headerRow = el('div', 'fd-stats-row fd-stats-row--head');
     headerRow.append(
-        el('span', 'fd-stats-val fd-stats-val--a', 'TEAM A'),
+        el('span', 'fd-stats-val fd-stats-val--a', t('common.teamA')),
         el('span', 'fd-stats-label', ''),
-        el('span', 'fd-stats-val fd-stats-val--b', 'TEAM B')
+        el('span', 'fd-stats-val fd-stats-val--b', t('common.teamB'))
     );
     box.append(headerRow);
 
     const rows = [
-        ['Goals', score.A, score.B],
-        ['Possession', `${stats.A.possession}%`, `${stats.B.possession}%`],
-        ['Shots', stats.A.shots, stats.B.shots],
-        ['On Target', stats.A.shotsOnTarget, stats.B.shotsOnTarget],
-        ['Saves', stats.A.saves, stats.B.saves],
+        [t('match.statGoals'), score.A, score.B],
+        [t('match.statPossession'), `${stats.A.possession}%`, `${stats.B.possession}%`],
+        [t('match.statShots'), stats.A.shots, stats.B.shots],
+        [t('match.statShotsOnTarget'), stats.A.shotsOnTarget, stats.B.shotsOnTarget],
+        [t('match.statSaves'), stats.A.saves, stats.B.saves],
     ];
 
     for (const [label, valA, valB] of rows) {
@@ -117,7 +123,7 @@ export function renderMatchZone(state) {
 
     const sideA = el('div', 'fd-score-team fd-score-team--a');
     sideA.append(
-        el('div', 'fd-score-label', 'TEAM A'),
+        el('div', 'fd-score-label', t('common.teamA')),
         el('div', 'fd-score-player', teamA.name)
     );
 
@@ -125,14 +131,18 @@ export function renderMatchZone(state) {
     const scoreNumbers = el('div', 'fd-score-numbers', `${score.A} - ${score.B}`);
     const clockWrap = el('div', 'fd-clock-wrap');
     clockWrap.append(
-        el('span', 'fd-clock-label', isFinished ? 'FULL TIME' : 'MATCH CLOCK'),
+        el(
+            'span',
+            'fd-clock-label',
+            isFinished ? t('match.fullTime') : t('match.matchClock')
+        ),
         el('span', 'fd-clock-val' + (isFinished ? ' fd-clock-val--ft' : ''), minuteStr)
     );
     scoreCenter.append(scoreNumbers, clockWrap);
 
     const sideB = el('div', 'fd-score-team fd-score-team--b');
     sideB.append(
-        el('div', 'fd-score-label', 'TEAM B'),
+        el('div', 'fd-score-label', t('common.teamB')),
         el('div', 'fd-score-player', teamB.name)
     );
 
@@ -148,13 +158,13 @@ export function renderMatchZone(state) {
 
     // 2. Result Winner Banner + Full Statistics Table when FULL TIME
     if (isFinished) {
-        let resultText = 'DRAW';
+        let resultText = t('match.draw');
         let resultClass = 'fd-winner-banner fd-winner-banner--draw';
         if (score.A > score.B) {
-            resultText = `WINNER: TEAM A (${teamA.name})`;
+            resultText = t('match.winnerTeamA', { playerName: teamA.name });
             resultClass = 'fd-winner-banner fd-winner-banner--win';
         } else if (score.B > score.A) {
-            resultText = `WINNER: TEAM B (${teamB.name})`;
+            resultText = t('match.winnerTeamB', { playerName: teamB.name });
             resultClass = 'fd-winner-banner fd-winner-banner--win';
         }
         zone.append(el('div', resultClass, resultText));
@@ -165,13 +175,16 @@ export function renderMatchZone(state) {
     const feedBox = el('div', 'fd-match-center');
     const feedHeader = el('div', 'fd-match-center-head');
     feedHeader.append(
-        el('span', 'fd-match-center-title', 'MATCH CENTER'),
+        el('span', 'fd-match-center-title', t('match.matchCenterTitle')),
         el(
             'span',
             'fd-match-center-sub',
             isFinished
-                ? `All ${match.script.events.length} events completed`
-                : `Live Feed (${match.revealedCount}/${match.script.events.length})`
+                ? t('match.matchCenterSubDone', { total: match.script.events.length })
+                : t('match.matchCenterSubLive', {
+                      current: match.revealedCount,
+                      total: match.script.events.length,
+                  })
         )
     );
     feedBox.append(feedHeader);
@@ -187,18 +200,22 @@ export function renderMatchZone(state) {
 
         const row = el('div', itemClass);
         const minTag = el('span', 'fd-feed-min', `${String(ev.minute).padStart(2, '0')}'`);
-        const badge = el('span', `fd-feed-badge fd-feed-badge--${ev.type}`, ev.badge);
+        const badge = el(
+            'span',
+            `fd-feed-badge fd-feed-badge--${ev.type}`,
+            formatMatchEventBadge(ev)
+        );
 
         const body = el('div', 'fd-feed-body');
         if (ev.team) {
             const teamChip = el(
                 'span',
                 `fd-feed-team fd-feed-team--${ev.team.toLowerCase()}`,
-                `TEAM ${ev.team}`
+                ev.team === 'A' ? t('common.teamA') : t('common.teamB')
             );
             body.append(teamChip);
         }
-        body.append(el('span', 'fd-feed-text', ev.text));
+        body.append(el('span', 'fd-feed-text', formatMatchEvent(ev)));
 
         row.append(minTag, badge, body);
         feedList.append(row);

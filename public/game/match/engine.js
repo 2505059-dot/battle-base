@@ -1,4 +1,4 @@
-// Pure Match Simulation v0 Engine (deterministic, no DOM or network side effects)
+// Pure Match Simulation v0 Engine (deterministic, language-independent, no DOM or network side effects)
 
 import { SLOTS } from '../shared/constants.js';
 import { clamp } from '../shared/math.js';
@@ -11,6 +11,9 @@ import {
     PITCH_ZONES,
 } from './config.js';
 import { getEffectiveSlotRole, calculateTeamProfile } from './team-profile.js';
+
+const ATTACK_VARIANTS = [0, 1, 2];
+const MISS_VARIANTS = [0, 1];
 
 export function getRosterEntries(teamOrRoster) {
     const roster = teamOrRoster?.roster ?? teamOrRoster ?? {};
@@ -97,8 +100,8 @@ export function generateMatchScript(teamA, teamB, matchSeed) {
     const entriesA = getRosterEntries(teamA);
     const entriesB = getRosterEntries(teamB);
 
-    const gkA = (teamA?.roster ?? teamA)?.GK ?? entriesA[0]?.player ?? { id: 'gk-a', name: 'Team A GK' };
-    const gkB = (teamB?.roster ?? teamB)?.GK ?? entriesB[0]?.player ?? { id: 'gk-b', name: 'Team B GK' };
+    const gkA = (teamA?.roster ?? teamA)?.GK ?? entriesA[0]?.player ?? { id: 'gk-a', name: 'GK A' };
+    const gkB = (teamB?.roster ?? teamB)?.GK ?? entriesB[0]?.player ?? { id: 'gk-b', name: 'GK B' };
 
     // Calculate baseline possession from creation, physical, and attack
     const controlA = 0.55 * profileA.creation + 0.30 * profileA.physical + 0.15 * profileA.attack;
@@ -138,11 +141,9 @@ export function generateMatchScript(teamA, teamB, matchSeed) {
     events.push({
         minute: 1,
         type: 'kick_off',
-        badge: 'KICK OFF',
         team: null,
         zone: 'center',
         phase: 'kick_off',
-        text: 'KICK OFF — Match underway!',
         ...cloneStatsSnapshot(stats, score),
     });
 
@@ -184,9 +185,9 @@ export function generateMatchScript(teamA, teamB, matchSeed) {
         const creatorEntry = selectCreator(attEntries, rng);
         const defenderEntry = selectDefender(defEntries, rng);
 
-        const creatorName = creatorEntry?.player?.name ?? `Team ${attTag}`;
+        const creatorName = creatorEntry?.player?.name ?? attTag;
         const creatorId = creatorEntry?.player?.id ?? null;
-        const defenderName = defenderEntry?.player?.name ?? `Team ${defTag} Defense`;
+        const defenderName = defenderEntry?.player?.name ?? defTag;
         const defenderId = defenderEntry?.player?.id ?? null;
 
         // Step 2: Does the attack progress to a shot?
@@ -204,25 +205,18 @@ export function generateMatchScript(teamA, teamB, matchSeed) {
         );
 
         if (rng.random() >= probShot) {
-            // Attack broken up or chance created without a clean shot
-            const attackTemplates = [
-                `${creatorName} creates a chance on the ${zone} — broken up by ${defenderName}`,
-                `${creatorName} drives into the final third, intercepted by ${defenderName}`,
-                `${creatorName} creates a dangerous build-up (${zone})`,
-            ];
-            const text = rng.pickRandom(attackTemplates);
+            const variant = rng.pickRandom(ATTACK_VARIANTS) ?? 0;
             events.push({
                 minute,
                 type: 'attack',
-                badge: 'ATTACK',
                 team: attTag,
                 zone,
                 phase: 'build_up',
+                variant,
                 playerId: creatorId,
                 playerName: creatorName,
                 defenderId,
                 defenderName,
-                text,
                 ...cloneStatsSnapshot(stats, score),
             });
             return;
@@ -230,7 +224,7 @@ export function generateMatchScript(teamA, teamB, matchSeed) {
 
         // Step 3: Select shooter
         const shooterEntry = selectShooter(attEntries, rng);
-        const shooter = shooterEntry?.player ?? creatorEntry?.player ?? { id: null, name: `Team ${attTag}` };
+        const shooter = shooterEntry?.player ?? creatorEntry?.player ?? { id: null, name: attTag };
         const shooterAtk = Number(shooter.attack) || attProfile.attack;
 
         stats[attTag].shots += 1;
@@ -254,7 +248,6 @@ export function generateMatchScript(teamA, teamB, matchSeed) {
                 events.push({
                     minute,
                     type: 'shot',
-                    badge: 'SHOT',
                     team: attTag,
                     zone,
                     phase: 'shot',
@@ -263,25 +256,20 @@ export function generateMatchScript(teamA, teamB, matchSeed) {
                     defenderId,
                     defenderName,
                     onTarget: false,
-                    text: `${shooter.name} shoots — blocked by ${defenderName}`,
                     ...cloneStatsSnapshot(stats, score),
                 });
             } else {
-                const missPhrases = [
-                    `${shooter.name} shoots — misses wide`,
-                    `${shooter.name} fires just over the bar`,
-                ];
+                const variant = rng.pickRandom(MISS_VARIANTS) ?? 0;
                 events.push({
                     minute,
                     type: 'miss',
-                    badge: 'MISS',
                     team: attTag,
                     zone,
                     phase: 'shot',
+                    variant,
                     playerId: shooter.id,
                     playerName: shooter.name,
                     onTarget: false,
-                    text: rng.pickRandom(missPhrases),
                     ...cloneStatsSnapshot(stats, score),
                 });
             }
@@ -317,14 +305,9 @@ export function generateMatchScript(teamA, teamB, matchSeed) {
             const assistName = assistEntry?.player?.name ?? null;
             const assistId = assistEntry?.player?.id ?? null;
 
-            const goalText = assistName
-                ? `GOAL — ${shooter.name} (Assist: ${assistName})`
-                : `GOAL — ${shooter.name}`;
-
             events.push({
                 minute,
                 type: 'goal',
-                badge: 'GOAL',
                 team: attTag,
                 zone,
                 phase: 'shot',
@@ -337,7 +320,6 @@ export function generateMatchScript(teamA, teamB, matchSeed) {
                 goalkeeperId: defGk.id ?? null,
                 goalkeeperName: defGk.name ?? null,
                 onTarget: true,
-                text: goalText,
                 ...cloneStatsSnapshot(stats, score),
             });
         } else {
@@ -347,17 +329,16 @@ export function generateMatchScript(teamA, teamB, matchSeed) {
             events.push({
                 minute,
                 type: 'save',
-                badge: 'SAVE',
                 team: attTag,
                 defendingTeam: defTag,
                 zone,
                 phase: 'shot',
                 playerId: shooter.id,
                 playerName: shooter.name,
+                shooterName: shooter.name,
                 goalkeeperId: defGk.id ?? null,
-                goalkeeperName: defGk.name ?? 'Goalkeeper',
+                goalkeeperName: defGk.name ?? '',
                 onTarget: true,
-                text: `${shooter.name} shoots — SAVED by ${defGk.name ?? 'GK'}`,
                 ...cloneStatsSnapshot(stats, score),
             });
         }
@@ -371,11 +352,9 @@ export function generateMatchScript(teamA, teamB, matchSeed) {
     events.push({
         minute: 45,
         type: 'half_time',
-        badge: 'HALF TIME',
         team: null,
         zone: 'center',
         phase: 'half_time',
-        text: `HALF TIME — TEAM A ${score.A} - ${score.B} TEAM B`,
         ...cloneStatsSnapshot(stats, score),
     });
 
@@ -387,11 +366,9 @@ export function generateMatchScript(teamA, teamB, matchSeed) {
     events.push({
         minute: 90,
         type: 'full_time',
-        badge: 'FULL TIME',
         team: null,
         zone: 'center',
         phase: 'full_time',
-        text: `FULL TIME — TEAM A ${score.A} - ${score.B} TEAM B`,
         ...cloneStatsSnapshot(stats, score),
     });
 

@@ -1,8 +1,9 @@
-// Main Game Controller — coordinates state, network messages, Draft rules, Match engine, and UI rendering
+// Main Game Controller — coordinates state, network messages, Draft rules, Match engine, and localized UI rendering
 
 import { TEAM_SEASON_MAP } from '../data/team-seasons.js';
+import { t, subscribeLocaleChange } from '../i18n/i18n.js';
 import { el } from './shared/dom.js';
-import { SLOTS, REROLL_TYPES, REROLL_LABELS } from './shared/constants.js';
+import { SLOTS, REROLL_TYPES } from './shared/constants.js';
 import { createInitialState, getCurrentTeam, isDraftPhase, pushHistory } from './state.js';
 import { generateInitialRollTeamSeason } from './draft/random.js';
 import {
@@ -20,18 +21,27 @@ export function startGame(ctx) {
     ctx.area.replaceChildren();
     ctx.area.hidden = false;
 
+    const root = el('div', 'fd-root');
+    ctx.area.append(root);
+
     // 2-player only check
     if (!Array.isArray(ctx.order) || ctx.order.length !== 2 || ctx.players.length !== 2) {
-        const notice = el('div', 'fd-only-two', 'このプロトタイプは2人対戦専用です');
-        ctx.area.append(notice);
+        const renderOnlyTwoNotice = () => {
+            root.replaceChildren(el('div', 'fd-only-two', t('draft.onlyTwoPlayers')));
+        };
+        renderOnlyTwoNotice();
+        const unsubscribe = subscribeLocaleChange(() => {
+            if (root.isConnected === false) {
+                unsubscribe();
+                return;
+            }
+            renderOnlyTwoNotice();
+        });
         return;
     }
 
     const state = createInitialState(ctx);
     let playbackTimer = null;
-
-    const root = el('div', 'fd-root');
-    ctx.area.append(root);
 
     function stopPlaybackTimer() {
         if (playbackTimer !== null) {
@@ -61,7 +71,12 @@ export function startGame(ctx) {
         state.currentRoll = teamSeason;
         state.selectedPlayerId = null;
         state.phase = 'PICK';
-        pushHistory(state, `${currentTeam.name} rolled ${teamSeason.club} ${teamSeason.year}`);
+        pushHistory(state, {
+            type: 'draft.roll',
+            actorName: currentTeam.name,
+            club: teamSeason.club,
+            year: teamSeason.year,
+        });
         render();
     }
 
@@ -82,8 +97,13 @@ export function startGame(ctx) {
         state.currentRoll = nextTeamSeason;
         state.selectedPlayerId = null;
 
-        pushHistory(state, `${currentTeam.name} used ${REROLL_LABELS[type]}`);
-        pushHistory(state, `${currentTeam.name} rolled ${nextTeamSeason.club} ${nextTeamSeason.year}`);
+        pushHistory(state, {
+            type: 'draft.reroll',
+            rerollType: type,
+            actorName: currentTeam.name,
+            club: nextTeamSeason.club,
+            year: nextTeamSeason.year,
+        });
         render();
     }
 
@@ -102,7 +122,12 @@ export function startGame(ctx) {
         currentTeam.roster[slot] = candidate;
         state.currentRoll = null;
         state.selectedPlayerId = null;
-        pushHistory(state, `${currentTeam.name} picked ${candidate.name} → ${slot}`);
+        pushHistory(state, {
+            type: 'draft.pick',
+            actorName: currentTeam.name,
+            playerName: candidate.name,
+            slot,
+        });
 
         if (state.teams.every((t) => isRosterComplete(t))) {
             state.phase = 'COMPLETE';
@@ -246,7 +271,7 @@ export function startGame(ctx) {
         root.append(renderHeader(state, ctx.me));
 
         if (state.opponentLeft) {
-            root.append(el('div', 'fd-alert', '対戦相手が退出しました。'));
+            root.append(el('div', 'fd-alert', t('draft.opponentLeft')));
         }
 
         const mainGrid = el('div', 'fd-main');
@@ -264,6 +289,18 @@ export function startGame(ctx) {
         mainGrid.append(teamAPanel, centerZone, teamBPanel);
         root.append(mainGrid);
     }
+
+    // Re-render in-place whenever the user changes locale (without resetting state or match playback)
+    const unsubscribeLocale = subscribeLocaleChange(() => {
+        if (root.isConnected === false) {
+            unsubscribeLocale();
+            return;
+        }
+        render();
+        if (state.phase === 'MATCH') {
+            scrollFeedToBottom(root);
+        }
+    });
 
     // ----- Network Handlers -----
 

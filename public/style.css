@@ -8,7 +8,35 @@ body {
   line-height: 1.6;
 }
 main { max-width: 980px; margin: 0 auto; padding: 16px; }
-h1 { font-size: 1.4rem; letter-spacing: .08em; color: #5ee0ff; max-width: 560px; margin: 0 auto 12px; }
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  max-width: 560px;
+  margin: 0 auto 12px;
+}
+h1 { font-size: 1.4rem; letter-spacing: .08em; color: #5ee0ff; margin: 0; }
+.lang-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin: 0;
+  font-size: .82rem;
+  color: #9fb0d4;
+}
+.lang-switch select {
+  padding: 5px 10px;
+  font-size: .85rem;
+  background: #0d1424;
+  color: #e8eefc;
+  border: 1px solid #2a3a5c;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.lang-switch select:focus {
+  outline: 1px solid #5ee0ff;
+}
 section { background: #182238; border: 1px solid #2a3a5c; border-radius: 12px; padding: 16px; margin-bottom: 16px; }
 #about, #lobby, #room, #toast { max-width: 560px; margin-left: auto; margin-right: auto; }
 label { display: block; margin-bottom: 12px; font-size: .9rem; }

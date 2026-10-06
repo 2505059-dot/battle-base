@@ -10,6 +10,7 @@ import {
     ROLES,
     ROSTER_SLOTS,
     SLOTS,
+    REROLL_TYPES,
     getSlotDefinition,
     getSlotRole,
     getSlotsForRole,
@@ -21,6 +22,7 @@ export {
     ROLES,
     ROSTER_SLOTS,
     SLOTS,
+    REROLL_TYPES,
     getSlotDefinition,
     getSlotRole,
     getSlotsForRole,
@@ -43,23 +45,30 @@ export function hasRerollOption(currentRoll, type) {
     return false;
 }
 
-export function generateRerollTeamSeason(currentRoll, type) {
+export function generateRerollTeamSeason(currentRoll, type, randomFn = Math.random) {
     if (!currentRoll) return null;
 
     if (type === 'league') {
-        const newLeague = pickRandomExceptDraft(getLeagues(), currentRoll.league);
+        const newLeague = pickRandomExceptDraft(getLeagues(), currentRoll.league, randomFn);
         if (!newLeague) return null;
-        const newClub = pickRandomDraft(getClubsByLeague(newLeague));
+        const newClub = pickRandomDraft(getClubsByLeague(newLeague), randomFn);
         if (!newClub) return null;
-        const newYear = pickRandomDraft(getYearsByLeagueAndClub(newLeague, newClub));
+        const newYear = pickRandomDraft(getYearsByLeagueAndClub(newLeague, newClub), randomFn);
         if (newYear === null) return null;
         return findTeamSeason(newLeague, newClub, newYear);
     }
 
     if (type === 'club') {
-        const newClub = pickRandomExceptDraft(getClubsByLeague(currentRoll.league), currentRoll.club);
+        const newClub = pickRandomExceptDraft(
+            getClubsByLeague(currentRoll.league),
+            currentRoll.club,
+            randomFn
+        );
         if (!newClub) return null;
-        const newYear = pickRandomDraft(getYearsByLeagueAndClub(currentRoll.league, newClub));
+        const newYear = pickRandomDraft(
+            getYearsByLeagueAndClub(currentRoll.league, newClub),
+            randomFn
+        );
         if (newYear === null) return null;
         return findTeamSeason(currentRoll.league, newClub, newYear);
     }
@@ -67,7 +76,8 @@ export function generateRerollTeamSeason(currentRoll, type) {
     if (type === 'year') {
         const newYear = pickRandomExceptDraft(
             getYearsByLeagueAndClub(currentRoll.league, currentRoll.club),
-            currentRoll.year
+            currentRoll.year,
+            randomFn
         );
         if (newYear === null) return null;
         return findTeamSeason(currentRoll.league, currentRoll.club, newYear);
@@ -170,6 +180,76 @@ export function getAvailableSlotsForPlayer(teamOrRoster, player) {
     return SLOTS.filter((slot) => roster[slot] === null && canPlayerFitSlot(player, slot));
 }
 
+export function getLegalPickActions(team) {
+    if (!team) return [];
+    if (team.draft && (team.draft.locked || (team.draft.phase && team.draft.phase !== 'PICK'))) {
+        return [];
+    }
+    const roster = team.roster ?? team;
+    const currentRoll = team?.draft?.currentRoll ?? team?.currentRoll ?? null;
+    if (!roster || !currentRoll || !Array.isArray(currentRoll.players)) return [];
+
+    const actions = [];
+    for (const player of currentRoll.players) {
+        const availableRoles = getAvailableRolesForPlayer(roster, player);
+        for (const role of availableRoles) {
+            actions.push({
+                type: 'pick',
+                playerId: player.id,
+                role,
+                player,
+            });
+        }
+    }
+    return actions;
+}
+
+export function getLegalRerollActions(team) {
+    if (!team) return [];
+    if (team.draft && (team.draft.locked || (team.draft.phase && team.draft.phase !== 'PICK'))) {
+        return [];
+    }
+    const currentRoll = team?.draft?.currentRoll ?? team?.currentRoll ?? null;
+    const rerolls = team?.rerolls ?? null;
+    if (!currentRoll || !rerolls) return [];
+
+    const actions = [];
+    for (const rerollType of REROLL_TYPES) {
+        if ((rerolls[rerollType] ?? 0) > 0 && hasRerollOption(currentRoll, rerollType)) {
+            actions.push({
+                type: 'reroll',
+                rerollType,
+            });
+        }
+    }
+    return actions;
+}
+
+export function getLegalDraftActions(team) {
+    if (!team) return [];
+    const draft = team.draft;
+    if (draft?.locked || draft?.phase === 'LOCKED') return [];
+
+    const phase =
+        draft?.phase ??
+        (isRosterComplete(team)
+            ? 'READY'
+            : team?.currentRoll
+              ? 'PICK'
+              : 'ROLL');
+
+    if (phase === 'ROLL') {
+        return [{ type: 'roll' }];
+    }
+    if (phase === 'READY') {
+        return isRosterComplete(team) ? [{ type: 'lock' }] : [];
+    }
+    if (phase === 'PICK') {
+        return [...getLegalPickActions(team), ...getLegalRerollActions(team)];
+    }
+    return [];
+}
+
 export function findPlayersByRole(teamOrRoster, role) {
     const roster = teamOrRoster?.roster ?? teamOrRoster ?? {};
     return getSlotsForRole(role)
@@ -216,4 +296,5 @@ export function calculateTeamRating(teamState) {
     const sum = picked.reduce((acc, p) => acc + getPlayerOverall(p), 0);
     return Math.round(sum / picked.length);
 }
+
 

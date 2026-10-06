@@ -1,29 +1,28 @@
 // Main Game Controller — coordinates state, network messages, Draft rules, Match engine, and localized UI rendering
 
-import { TEAM_SEASON_MAP } from '../data/team-seasons.js';
 import { t, subscribeLocaleChange } from '../i18n/i18n.js';
 import { el } from './shared/dom.js';
 import { SLOTS, REROLL_TYPES } from './shared/constants.js';
 import {
     createInitialState,
-    getTeamById,
     getMyTeam,
     canTeamRoll,
     canTeamPick,
     canTeamLock,
     areBothTeamsLocked,
-    pushTeamHistory,
 } from './state.js';
 import { generateInitialRollTeamSeason } from './draft/random.js';
 import {
     generateRerollTeamSeason,
-    isValidRerollTransition,
-    canPlayerFitSlot,
-    isPlayerInRoster,
     getAvailableRolesForPlayer,
     getFirstAvailableSlotForRole,
-    isRosterComplete,
 } from './draft/rules.js';
+import {
+    applyDraftRoll,
+    applyDraftReroll,
+    applyDraftPick,
+    applyDraftLock as applyDraftLockTransition,
+} from './draft/transitions.js';
 import { renderHeader, renderDraftZone, renderTeamPanel } from './draft/ui.js';
 import { MATCH_SIM_CONFIG } from './match/config.js';
 import { generateMatchScript } from './match/engine.js';
@@ -70,120 +69,41 @@ export function startGame(ctx) {
     // ----- State Transitions (Synced across both clients) -----
 
     function applyRoll(actorId, teamSeasonId) {
-        if (state.phase !== 'DRAFT') return;
-        const actorTeam = getTeamById(state, actorId);
-        if (!actorTeam || !canTeamRoll(actorTeam)) return;
-
-        const teamSeason = TEAM_SEASON_MAP.get(teamSeasonId);
-        if (!teamSeason) return;
-
-        actorTeam.draft.currentRoll = teamSeason;
-        actorTeam.draft.phase = 'PICK';
+        const res = applyDraftRoll(state, actorId, teamSeasonId);
+        if (!res.ok) return;
         if (actorId === ctx.me) {
             localSelectedPlayerId = null;
         }
-
-        pushTeamHistory(actorTeam, {
-            type: 'draft.roll',
-            actorId: actorTeam.id,
-            actorName: actorTeam.name,
-            club: teamSeason.club,
-            year: teamSeason.year,
-        });
         render();
     }
 
     function applyReroll(actorId, type, teamSeasonId) {
-        if (state.phase !== 'DRAFT') return;
-        const actorTeam = getTeamById(state, actorId);
-        if (!actorTeam || !canTeamPick(actorTeam)) return;
-
-        if (!REROLL_TYPES.includes(type)) return;
-        if (actorTeam.rerolls[type] <= 0) return;
-
-        const nextTeamSeason = TEAM_SEASON_MAP.get(teamSeasonId);
-        if (!nextTeamSeason) return;
-
-        if (!isValidRerollTransition(actorTeam.draft.currentRoll, nextTeamSeason, type)) return;
-
-        actorTeam.rerolls[type] -= 1;
-        actorTeam.draft.currentRoll = nextTeamSeason;
+        const res = applyDraftReroll(state, actorId, type, teamSeasonId);
+        if (!res.ok) return;
         if (actorId === ctx.me) {
             localSelectedPlayerId = null;
         }
-
-        pushTeamHistory(actorTeam, {
-            type: 'draft.reroll',
-            actorId: actorTeam.id,
-            actorName: actorTeam.name,
-            rerollType: type,
-            club: nextTeamSeason.club,
-            year: nextTeamSeason.year,
-        });
         render();
     }
 
     function applyPick(actorId, playerId, slot) {
-        if (state.phase !== 'DRAFT') return;
-        const actorTeam = getTeamById(state, actorId);
-        if (!actorTeam || !canTeamPick(actorTeam)) return;
-
-        if (!SLOTS.includes(slot)) return;
-        if (actorTeam.roster[slot] !== null) return;
-
-        const candidate = actorTeam.draft.currentRoll.players.find((p) => p.id === playerId);
-        if (!candidate) return;
-        if (isPlayerInRoster(actorTeam.roster, candidate)) return;
-        if (!canPlayerFitSlot(candidate, slot)) return;
-
-        actorTeam.roster[slot] = candidate;
-        actorTeam.draft.currentRoll = null;
+        const res = applyDraftPick(state, actorId, playerId, slot);
+        if (!res.ok) return;
         if (actorId === ctx.me) {
             localSelectedPlayerId = null;
         }
-
-        if (isRosterComplete(actorTeam)) {
-            actorTeam.draft.phase = 'READY';
-        } else {
-            actorTeam.draft.phase = 'ROLL';
-        }
-
-        pushTeamHistory(actorTeam, {
-            type: 'draft.pick',
-            actorId: actorTeam.id,
-            actorName: actorTeam.name,
-            playerId: candidate.id,
-            playerName: candidate.name,
-            slot,
-        });
-
         render();
     }
 
     function applyDraftLock(actorId) {
-        if (state.phase !== 'DRAFT') return;
-        const actorTeam = getTeamById(state, actorId);
-        if (!actorTeam || !canTeamLock(actorTeam)) return;
-
-        actorTeam.draft.locked = true;
-        actorTeam.draft.phase = 'LOCKED';
-        actorTeam.draft.currentRoll = null;
+        const res = applyDraftLockTransition(state, actorId);
+        if (!res.ok) return;
         if (actorId === ctx.me) {
             localSelectedPlayerId = null;
         }
-
-        pushTeamHistory(actorTeam, {
-            type: 'draft.lock',
-            actorId: actorTeam.id,
-            actorName: actorTeam.name,
-        });
-
-        if (areBothTeamsLocked(state)) {
-            state.phase = 'REVEAL';
-        }
-
         render();
     }
+
 
     function applyMatchStart(actorId, matchSeed) {
         // Validate:

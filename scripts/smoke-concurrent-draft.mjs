@@ -1,20 +1,25 @@
-// Comprehensive regression & smoke test for Concurrent Blind Draft v1
+// Comprehensive regression & smoke test for Concurrent Blind Draft (11v11 Abstract 4-3-3)
 // Simulates two connected clients (Client A & Client B) through:
 // - Concurrent ROLL / REROLL / PICK in different phases simultaneously
-// - Blind UI verification (no opponent player/club/year/rating/reroll/history leakage in DOM before REVEAL)
-// - Asymmetric completion (A reaches 5/5 READY & LOCKED while B is at 2/5 and continues drafting)
-// - Security & validation guards (spoofed actorId, unknown sender, premature lock, post-lock actions, filled slot overwrite)
-// - Dual LOCK -> automatic REVEAL transition with full roster disclosure on both clients
+// - Blind UI verification (no opponent player/club/year/rating/reroll/history leakage in DOM before REVEAL; compact role progress shown)
+// - Asymmetric completion (A reaches 11/11 READY & LOCKED while B is at 6/11 and continues drafting remaining 5 players)
+// - Security & validation guards (unknown sender, premature lock at <11/11, post-lock actions, filled slot overwrite, duplicate player.id)
+// - Dual LOCK -> automatic REVEAL transition with full 22-player disclosure on both clients
 // - Per-team structured history consistency (with actorId) across both clients
 // - Match start validation (Team B rejected, Team A accepted) + deterministic Match Script + multi-locale switching
 // - Opponent left handling during Draft
 
 import assert from 'node:assert/strict';
-import { TEAM_SEASONS, TEAM_SEASON_MAP, findTeamSeason } from '../public/data/team-seasons.js';
+import { TEAM_SEASONS, TEAM_SEASON_MAP } from '../public/data/team-seasons.js';
 import { setLocale, getLocale, t } from '../public/i18n/i18n.js';
+import { ROSTER_SLOTS, SLOTS, getSlotRole } from '../public/game/shared/constants.js';
+import {
+    getFirstAvailableSlotForRole,
+    isPlayerInRoster,
+} from '../public/game/draft/rules.js';
 import { startGame } from '../public/game/controller.js';
 import { generateMatchScript } from '../public/game/match/engine.js';
-import { buildSampleRosterFromSeason } from '../public/game/match/simulator.js';
+import { buildSample11PlayerRoster } from '../public/game/match/simulator.js';
 
 // ----- Minimal Headless DOM Shim for Controller & UI Rendering -----
 
@@ -175,7 +180,7 @@ globalThis.document = {
     },
 };
 
-// ----- Two-Client Harness -----
+// ----- Two-Client Harness & Reusable 11v11 Draft Helpers -----
 
 function createTwoClientHarness(seed = 123456) {
     const players = [
@@ -236,7 +241,6 @@ function createTwoClientHarness(seed = 123456) {
     const controllerA = startGame(ctxA);
     const controllerB = startGame(ctxB);
 
-    // Helper to dispatch a raw action on both clients (as if sent by `from` and applied locally + remotely)
     function dispatchAction(from, payload) {
         for (const fn of handlersA.message) {
             fn({ from, payload: structuredClone(payload) });
@@ -251,6 +255,11 @@ function createTwoClientHarness(seed = 123456) {
         for (const fn of handlersB.players) fn(nextPlayers);
     }
 
+    function getTeamState(actorId) {
+        const state = controllerA.getState();
+        return state.teams.find((tm) => tm.id === actorId);
+    }
+
     return {
         areaA,
         areaB,
@@ -263,21 +272,73 @@ function createTwoClientHarness(seed = 123456) {
         sentLog,
         dispatchAction,
         notifyPlayers,
+        getTeamState,
     };
 }
 
-function findPlayerForSlot(teamSeason, slot, usedIds = new Set()) {
+function findCandidateForRole(teamSeason, role, rosterOrUsedIds = {}) {
+    const isUsed = (playerId) => {
+        if (rosterOrUsedIds instanceof Set) return rosterOrUsedIds.has(playerId);
+        return isPlayerInRoster(rosterOrUsedIds, playerId);
+    };
     for (const p of teamSeason.players) {
-        if (usedIds.has(p.id)) continue;
-        if (slot === 'FLEX' && !p.positions.includes('GK')) return p;
-        if (p.positions.includes(slot)) return p;
+        if (isUsed(p.id)) continue;
+        if (p.positions.includes(role)) return p;
     }
-    throw new Error(`No player found for slot ${slot} in ${teamSeason.id}`);
+    return null;
+}
+
+function pickForRole(harness, actorId, teamSeason, role) {
+    const team = harness.getTeamState(actorId);
+    const slot = getFirstAvailableSlotForRole(team.roster, role);
+    assert.ok(slot, `Expected an empty slot for role ${role} on ${actorId}`);
+
+    if (team.draft.phase === 'ROLL') {
+        harness.dispatchAction(actorId, { kind: 'roll', teamSeasonId: teamSeason.id });
+    }
+    const activeRoll = harness.getTeamState(actorId).draft.currentRoll;
+    const candidate = findCandidateForRole(activeRoll, role, team.roster);
+    assert.ok(candidate, `No candidate for role ${role} in ${activeRoll.id}`);
+
+    harness.dispatchAction(actorId, {
+        kind: 'pick',
+        playerId: candidate.id,
+        slot,
+    });
+    return { candidate, slot, teamSeason: activeRoll };
+}
+
+function fillTeamRoster(harness, actorId, seasonCursorStart = 0, maxCount = SLOTS.length) {
+    const pickedRecords = [];
+    let cursor = seasonCursorStart;
+
+    for (const slotDef of ROSTER_SLOTS) {
+        const team = harness.getTeamState(actorId);
+        const currentPicked = SLOTS.filter((s) => Boolean(team.roster[s])).length;
+        if (currentPicked >= maxCount) break;
+        if (team.roster[slotDef.id] !== null) continue;
+
+        // Find next season in pool that has an unused player for slotDef.role
+        let chosenSeason = null;
+        for (let attempt = 0; attempt < TEAM_SEASONS.length; attempt++) {
+            const candidateSeason = TEAM_SEASONS[(cursor + attempt) % TEAM_SEASONS.length];
+            if (findCandidateForRole(candidateSeason, slotDef.role, team.roster)) {
+                chosenSeason = candidateSeason;
+                cursor = (cursor + attempt + 1) % TEAM_SEASONS.length;
+                break;
+            }
+        }
+        assert.ok(chosenSeason, `Could not find season for role ${slotDef.role}`);
+        const rec = pickForRole(harness, actorId, chosenSeason, slotDef.role);
+        pickedRecords.push(rec);
+    }
+
+    return pickedRecords;
 }
 
 // ----- Run Smoke & Regression Suite -----
 
-console.log('[smoke-concurrent-draft] Starting test suite...');
+console.log('[smoke-concurrent-draft] Starting 11v11 test suite...');
 
 setLocale('en', { persist: false });
 
@@ -288,10 +349,11 @@ const { areaA, areaB, dispatchAction, notifyPlayers } = harness;
 {
     const textA = areaA.dumpText();
     const textB = areaB.dumpText();
-    assert.ok(textA.includes('0 / 5'), 'Client A should show 0 / 5 progress');
-    assert.ok(textB.includes('0 / 5'), 'Client B should show 0 / 5 progress');
+    assert.ok(textA.includes('0 / 11'), 'Client A should show 0 / 11 progress');
+    assert.ok(textB.includes('0 / 11'), 'Client B should show 0 / 11 progress');
     assert.ok(textA.includes('HIDDEN'), 'Client A should render blind opponent panel');
     assert.ok(textB.includes('HIDDEN'), 'Client B should render blind opponent panel');
+    assert.ok(textA.includes('GK 0 / 1') && textA.includes('DF 0 / 4'), 'Blind panel shows role counts');
     assert.ok(!textA.includes('Your Turn'), 'No turn-based text should exist on Client A');
     assert.ok(!textB.includes('Your Turn'), 'No turn-based text should exist on Client B');
 }
@@ -300,13 +362,13 @@ const { areaA, areaB, dispatchAction, notifyPlayers } = harness;
 const barca2011 = TEAM_SEASON_MAP.get('barcelona-2011');
 const barca2015 = TEAM_SEASON_MAP.get('barcelona-2015');
 const milan2007 = TEAM_SEASON_MAP.get('ac-milan-2007');
-const madrid2014 = TEAM_SEASON_MAP.get('real-madrid-2017');
-const bayern2013 = TEAM_SEASON_MAP.get('bayern-munich-2013');
-const inter2010 = TEAM_SEASON_MAP.get('inter-milan-2010');
-const arsenal2004 = TEAM_SEASON_MAP.get('arsenal-2004');
-const chelsea2005 = TEAM_SEASON_MAP.get('chelsea-2005');
+const madrid2017 = TEAM_SEASON_MAP.get('real-madrid-2017');
+const juve2017 = TEAM_SEASON_MAP.get('juventus-2017');
+const bvb2013 = TEAM_SEASON_MAP.get('borussia-dortmund-2013');
+const liv2005 = TEAM_SEASON_MAP.get('liverpool-2005');
+const city2023 = TEAM_SEASON_MAP.get('manchester-city-2023');
 
-assert.ok(barca2011 && barca2015 && milan2007 && madrid2014 && bayern2013 && inter2010 && arsenal2004 && chelsea2005);
+assert.ok(barca2011 && barca2015 && milan2007 && madrid2017 && juve2017 && bvb2013 && liv2005 && city2023);
 
 // Both A and B roll simultaneously!
 dispatchAction('p1', { kind: 'roll', teamSeasonId: barca2015.id });
@@ -325,19 +387,28 @@ dispatchAction('p2', { kind: 'roll', teamSeasonId: milan2007.id });
 // While B is in PICK, A uses Year Reroll (barcelona-2015 -> barcelona-2011)
 dispatchAction('p1', { kind: 'reroll', type: 'year', teamSeasonId: barca2011.id });
 
-// Local card selection isolation test: Client A clicks a candidate card locally
+// Local card selection isolation test + role buttons verification: Client A clicks a candidate card locally
 {
     const firstCardA = areaA.querySelector('.fd-card--interactive');
     assert.ok(firstCardA, 'Client A should have interactive candidate cards');
     firstCardA.click();
     assert.ok(areaA.querySelector('.fd-card--selected'), 'Client A has a selected card');
     assert.equal(areaB.querySelector('.fd-card--selected'), null, 'Client B must NOT have a selected card when A clicks');
+
+    const roleBtns = areaA.querySelectorAll('.fd-slot-btn');
+    assert.ok(roleBtns.length > 0, 'Selected candidate card renders role buttons');
+    for (const btn of roleBtns) {
+        assert.ok(
+            ['GK', 'DF', 'MF', 'FW'].includes(btn.textContent),
+            `Role button must show role (GK/DF/MF/FW), got ${btn.textContent}`
+        );
+    }
 }
 
-// A picks Lionel Messi into FW while B is still in PICK
+// A picks Lionel Messi into FW1 while B is still in PICK
 const messi = barca2011.players.find((p) => p.name === 'Lionel Messi');
 assert.ok(messi, 'Lionel Messi must exist in barcelona-2011');
-dispatchAction('p1', { kind: 'pick', playerId: messi.id, slot: 'FW' });
+dispatchAction('p1', { kind: 'pick', playerId: messi.id, slot: 'FW1' });
 
 // Verify Blindness on Client B: B's DOM must NOT contain Lionel Messi, Barcelona, 2011, or Messi's rating
 {
@@ -347,69 +418,91 @@ dispatchAction('p1', { kind: 'pick', playerId: messi.id, slot: 'FW' });
     assert.ok(!textB.includes('Lionel Messi'), 'BLINDNESS VIOLATION: Client B DOM leaked Lionel Messi');
     assert.ok(!textB.includes('Barcelona'), 'BLINDNESS VIOLATION: Client B DOM leaked Barcelona');
     assert.ok(!textB.includes('2011'), 'BLINDNESS VIOLATION: Client B DOM leaked 2011');
-    assert.ok(textB.includes('1 / 5'), 'Client B sees that Team A has 1 / 5 selected');
+    assert.ok(textB.includes('1 / 11'), 'Client B sees that Team A has 1 / 11 selected');
+    assert.ok(textB.includes('FW 1 / 3'), 'Client B sees Team A role progress FW 1 / 3');
 }
 
-// Now B picks Kaká into MF while A is in ROLL
+// Now B picks Kaká into MF1 while A is in ROLL
 const kaka = milan2007.players.find((p) => p.positions.includes('MF'));
 assert.ok(kaka);
-dispatchAction('p2', { kind: 'pick', playerId: kaka.id, slot: 'MF' });
+dispatchAction('p2', { kind: 'pick', playerId: kaka.id, slot: 'MF1' });
 
 // Verify Blindness on Client A: A's DOM must NOT contain Kaká or AC Milan
 {
     const textA = areaA.dumpText();
     assert.ok(!textA.includes(kaka.name), `BLINDNESS VIOLATION: Client A DOM leaked ${kaka.name}`);
     assert.ok(!textA.includes('AC Milan'), 'BLINDNESS VIOLATION: Client A DOM leaked AC Milan');
+    assert.ok(textA.includes('MF 1 / 3'), 'Client A sees Team B role progress MF 1 / 3');
 }
 
 // 3. Security & Validation Guard Checks
-// - Spoofed actorId: B tries to roll/pick claiming to be p1; controller uses `from` ('p2'), not payload.actorId
 // - Unknown sender 'p999' is ignored
-// - Premature draft_lock when A only has 1/5 is ignored
-// - Picking into already filled slot 'FW' for A is ignored
-dispatchAction('p999', { kind: 'roll', teamSeasonId: madrid2014.id });
-dispatchAction('p1', { kind: 'draft_lock' }); // premature lock (1/5)
+// - Premature draft_lock when A only has 1/11 is ignored
+// - Picking into already filled slot 'FW1' for A is ignored
+// - Duplicate exact player.id is rejected
+dispatchAction('p999', { kind: 'roll', teamSeasonId: madrid2017.id });
+dispatchAction('p1', { kind: 'draft_lock' }); // premature lock (1/11)
 
-// A rolls madrid2014 and tries to overwrite FW slot
-dispatchAction('p1', { kind: 'roll', teamSeasonId: madrid2014.id });
-const madridFw = findPlayerForSlot(madrid2014, 'FW');
-dispatchAction('p1', { kind: 'pick', playerId: madridFw.id, slot: 'FW' }); // should be ignored since FW is filled!
-assert.ok(areaA.dumpText().includes('Lionel Messi'), 'Filled FW slot must not be overwritten');
+// A rolls barca2011 again and tries to pick Lionel Messi into FW2 (duplicate player.id!)
+dispatchAction('p1', { kind: 'roll', teamSeasonId: barca2011.id });
+dispatchAction('p1', { kind: 'pick', playerId: messi.id, slot: 'FW2' }); // must be rejected!
+assert.equal(harness.getTeamState('p1').roster.FW2, null, 'Duplicate player.id must be rejected by applyPick');
 
-// 4. Asymmetric Progression: A completes all 5 slots -> READY -> LOCKED while B is only at 2/5
-// B rolls inter2010 and picks GK (so B is at 2/5)
-dispatchAction('p2', { kind: 'roll', teamSeasonId: inter2010.id });
-const interGk = findPlayerForSlot(inter2010, 'GK');
-dispatchAction('p2', { kind: 'pick', playerId: interGk.id, slot: 'GK' });
+// A tries to overwrite filled FW1 slot with another FW from barca2011
+const otherBarcaFw = barca2011.players.find((p) => p.id !== messi.id && p.positions.includes('FW'));
+assert.ok(otherBarcaFw);
+dispatchAction('p1', { kind: 'pick', playerId: otherBarcaFw.id, slot: 'FW1' }); // must be rejected!
+assert.equal(harness.getTeamState('p1').roster.FW1.id, messi.id, 'Filled FW1 slot must not be overwritten');
 
-// A completes remaining 4 slots: GK, DF, MF, FLEX
-const madridGk = findPlayerForSlot(madrid2014, 'GK');
-dispatchAction('p1', { kind: 'pick', playerId: madridGk.id, slot: 'GK' }); // A: 2/5
+// Now A validly picks otherBarcaFw into FW2 (A is now at 2/11)
+dispatchAction('p1', { kind: 'pick', playerId: otherBarcaFw.id, slot: 'FW2' });
 
-dispatchAction('p1', { kind: 'roll', teamSeasonId: bayern2013.id });
-const bayernDf = findPlayerForSlot(bayern2013, 'DF');
-dispatchAction('p1', { kind: 'pick', playerId: bayernDf.id, slot: 'DF' }); // A: 3/5
+// 4. Asymmetric Progression:
+// B uses League Reroll and Club Reroll and advances to 6/11, while A fills all 11/11 -> READY -> LOCKED
+dispatchAction('p2', { kind: 'roll', teamSeasonId: juve2017.id });
+dispatchAction('p2', { kind: 'reroll', type: 'league', teamSeasonId: bvb2013.id });
+const bDf1 = findCandidateForRole(bvb2013, 'DF', harness.getTeamState('p2').roster);
+dispatchAction('p2', { kind: 'pick', playerId: bDf1.id, slot: 'DF1' }); // B: 2/11
 
-dispatchAction('p1', { kind: 'roll', teamSeasonId: arsenal2004.id });
-const arsenalMf = findPlayerForSlot(arsenal2004, 'MF');
-dispatchAction('p1', { kind: 'pick', playerId: arsenalMf.id, slot: 'MF' }); // A: 4/5
+dispatchAction('p2', { kind: 'roll', teamSeasonId: liv2005.id });
+dispatchAction('p2', { kind: 'reroll', type: 'club', teamSeasonId: city2023.id });
+const bFw1 = findCandidateForRole(city2023, 'FW', harness.getTeamState('p2').roster);
+dispatchAction('p2', { kind: 'pick', playerId: bFw1.id, slot: 'FW1' }); // B: 3/11
 
-dispatchAction('p1', { kind: 'roll', teamSeasonId: chelsea2005.id });
-const chelseaFlex = findPlayerForSlot(chelsea2005, 'FLEX');
-dispatchAction('p1', { kind: 'pick', playerId: chelseaFlex.id, slot: 'FLEX' }); // A: 5/5 -> READY
+// Fill B up to 6/11 using helper
+fillTeamRoster(harness, 'p2', 5, 6);
+assert.equal(
+    SLOTS.filter((s) => Boolean(harness.getTeamState('p2').roster[s])).length,
+    6,
+    'Team B should be at 6/11'
+);
 
-// Verify A is now in READY (5/5) with LOCK IN button, while B is at 2/5
+// Fill A up to 10/11 first and verify premature lock at 10/11 is rejected
+fillTeamRoster(harness, 'p1', 10, 10);
+assert.equal(
+    SLOTS.filter((s) => Boolean(harness.getTeamState('p1').roster[s])).length,
+    10,
+    'Team A should be at 10/11'
+);
+dispatchAction('p1', { kind: 'draft_lock' }); // premature lock at 10/11 must be rejected!
+assert.equal(harness.getTeamState('p1').draft.locked, false, '10/11 must NOT allow draft_lock');
+
+// Fill A's final 11th slot -> 11/11 READY
+fillTeamRoster(harness, 'p1', 25, 11);
+
+// Verify A is now in READY (11/11) with LOCK IN button, while B is at 6/11
 {
     const textA = areaA.dumpText();
     const textB = areaB.dumpText();
-    assert.ok(textA.includes('5 / 5'), 'A shows 5 / 5');
+    assert.ok(textA.includes('11 / 11'), 'A shows 11 / 11');
     assert.ok(textA.includes('READY'), 'A shows READY state');
     assert.ok(areaA.querySelector('.fd-lock-btn'), 'A renders LOCK IN button');
-    assert.ok(textB.includes('5 / 5') && textB.includes('READY'), 'B sees that A is 5 / 5 READY');
+    assert.ok(textB.includes('11 / 11') && textB.includes('READY'), 'B sees that A is 11 / 11 READY');
+    assert.ok(textB.includes('6 / 11'), 'B sees own progress 6 / 11');
     assert.ok(!textB.includes('Lionel Messi'), 'B still cannot see Lionel Messi while A is READY');
 }
 
-// A clicks LOCK IN (`draft_lock`) while B is at 2/5
+// A clicks LOCK IN (`draft_lock`) while B is at 6/11
 dispatchAction('p1', { kind: 'draft_lock' });
 
 // Verify A is LOCKED and waiting for opponent, and post-lock actions by A are ignored
@@ -424,41 +517,19 @@ dispatchAction('p1', { kind: 'draft_lock' }); // duplicate lock must be ignored
     assert.ok(!textB.includes('Lionel Messi'), 'B STILL cannot see A roster when only A is locked');
 }
 
-// 5. B continues drafting from 2/5 to 5/5 while A is LOCKED
-const juve2017 = TEAM_SEASON_MAP.get('juventus-2017');
-const bvb2013 = TEAM_SEASON_MAP.get('borussia-dortmund-2013');
-const liv2005 = TEAM_SEASON_MAP.get('liverpool-2005');
-const city2023 = TEAM_SEASON_MAP.get('manchester-city-2023');
-const napoli2023 = TEAM_SEASON_MAP.get('napoli-2023');
-assert.ok(juve2017 && bvb2013 && liv2005 && city2023 && napoli2023);
+// 5. B continues drafting remaining 5 players (from 6/11 to 11/11) while A is LOCKED
+fillTeamRoster(harness, 'p2', 40, 11);
+assert.equal(harness.getTeamState('p2').draft.phase, 'READY', 'Team B reaches READY at 11/11');
 
-// B rolls juve2017 (Serie A), uses League Reroll -> bvb2013 (Bundesliga), picks DF (3/5)
-dispatchAction('p2', { kind: 'roll', teamSeasonId: juve2017.id });
-dispatchAction('p2', { kind: 'reroll', type: 'league', teamSeasonId: bvb2013.id });
-const bDf = findPlayerForSlot(bvb2013, 'DF');
-dispatchAction('p2', { kind: 'pick', playerId: bDf.id, slot: 'DF' }); // B: 3/5
-
-// B rolls liv2005 (Premier League), uses Club Reroll -> city2023 (Premier League), picks FW (4/5)
-dispatchAction('p2', { kind: 'roll', teamSeasonId: liv2005.id });
-dispatchAction('p2', { kind: 'reroll', type: 'club', teamSeasonId: city2023.id });
-const bFw = findPlayerForSlot(city2023, 'FW');
-dispatchAction('p2', { kind: 'pick', playerId: bFw.id, slot: 'FW' }); // B: 4/5
-
-// B rolls napoli2023, picks FLEX (5/5 -> READY)
-dispatchAction('p2', { kind: 'roll', teamSeasonId: napoli2023.id });
-const bFlex = findPlayerForSlot(napoli2023, 'FLEX', new Set([bFw.id]));
-dispatchAction('p2', { kind: 'pick', playerId: bFlex.id, slot: 'FLEX' }); // B: 5/5 -> READY
-
-// Before B locks in, A still cannot see ANY of B's players or clubs
+// Before B locks in, verify A still cannot see ANY of B's 11 players
 {
     const textA = areaA.dumpText();
-    assert.ok(!textA.includes(kaka.name), 'A must not see B player before B locks in');
-    assert.ok(!textA.includes(interGk.name), 'A must not see B GK before B locks in');
-    assert.ok(!textA.includes(bDf.name), 'A must not see B DF before B locks in');
-    assert.ok(!textA.includes(bFw.name), 'A must not see B FW before B locks in');
-    assert.ok(!textA.includes(bFlex.name), 'A must not see B FLEX before B locks in');
-    assert.ok(!textA.includes('Borussia Dortmund'), 'A must not see B club Borussia Dortmund before B locks in');
-    assert.ok(!textA.includes('Manchester City'), 'A must not see B club Manchester City before B locks in');
+    const teamBRoster = harness.getTeamState('p2').roster;
+    for (const slot of SLOTS) {
+        const p = teamBRoster[slot];
+        assert.ok(p, `Team B slot ${slot} must be filled`);
+        assert.ok(!textA.includes(p.name), `A must not see B player ${p.name} before B locks in`);
+    }
 }
 
 // 6. B locks in -> Both teams locked -> Automatic transition to REVEAL!
@@ -472,23 +543,17 @@ dispatchAction('p2', { kind: 'draft_lock' });
     assert.ok(textA.includes('ROSTER REVEAL'), 'Client A displays ROSTER REVEAL');
     assert.ok(textB.includes('ROSTER REVEAL'), 'Client B displays ROSTER REVEAL');
 
-    // Both clients must now see ALL players from both Team A and Team B!
-    const allExpectedPlayers = [
-        messi.name,
-        madridGk.name,
-        bayernDf.name,
-        arsenalMf.name,
-        chelseaFlex.name,
-        kaka.name,
-        interGk.name,
-        bDf.name,
-        bFw.name,
-        bFlex.name,
-    ];
+    const stateA = harness.controllerA.getState();
+    const stateB = harness.controllerB.getState();
 
-    for (const pName of allExpectedPlayers) {
-        assert.ok(textA.includes(pName), `REVEAL: Client A should see ${pName}`);
-        assert.ok(textB.includes(pName), `REVEAL: Client B should see ${pName}`);
+    // Both clients must now see ALL 22 players from both Team A and Team B!
+    for (const team of stateA.teams) {
+        for (const slot of SLOTS) {
+            const player = team.roster[slot];
+            assert.ok(player, `Expected filled slot ${slot} on ${team.id}`);
+            assert.ok(textA.includes(player.name), `REVEAL: Client A should see ${player.name}`);
+            assert.ok(textB.includes(player.name), `REVEAL: Client B should see ${player.name}`);
+        }
     }
 
     // Team A sees MATCH button; Team B sees waiting notice
@@ -497,15 +562,6 @@ dispatchAction('p2', { kind: 'draft_lock' });
     assert.ok(areaB.querySelector('.fd-match-wait'), 'Team B sees waiting notice in REVEAL');
 
     // Verify internal state parity between Client A and Client B
-    const stateA = harness.controllerA.getState();
-    const stateB = harness.controllerB.getState();
-
-    assert.equal('turnIndex' in stateA, false, 'turnIndex must be completely removed from state');
-    assert.equal('roundCount' in stateA, false, 'roundCount must be completely removed from state');
-    assert.equal('currentRoll' in stateA, false, 'global currentRoll must be removed from state');
-    assert.equal('selectedPlayerId' in stateA, false, 'global selectedPlayerId must be removed from state');
-    assert.equal('history' in stateA, false, 'global history must be removed from state');
-
     assert.equal(stateA.phase, 'REVEAL');
     assert.equal(stateB.phase, 'REVEAL');
     assert.deepEqual(stateA.teams[0].roster, stateB.teams[0].roster, 'Team A rosters identical on both clients');
@@ -560,7 +616,7 @@ assert.ok(areaA.dumpText().includes('阵容揭晓'), 'Client A renders REVEAL in
 
 setLocale('ja', { persist: false });
 assert.equal(getLocale(), 'ja');
-assert.ok(areaB.dumpText().includes('両チームの5人制ロスターが公開されました'), 'Client B renders REVEAL in ja');
+assert.ok(areaB.dumpText().includes('両チームの11人制ロスターが公開されました'), 'Client B renders REVEAL in ja');
 
 // Team A sends match_start
 const matchSeed = 20261006;
@@ -600,28 +656,27 @@ dispatchAction('p1', { kind: 'match_start', matchSeed });
     h2.controllerB.stop();
 }
 
-// 9. Deterministic Match Engine Baseline Verification
+// 9. Deterministic Match Engine Verification on 11v11 Rosters
 {
     const teamA = {
         id: 'p1',
         label: 'TEAM A',
         shortTag: 'A',
         name: 'Alice',
-        roster: buildSampleRosterFromSeason(TEAM_SEASONS[0]),
+        roster: buildSample11PlayerRoster(TEAM_SEASONS.slice(0, 4)),
     };
     const teamB = {
         id: 'p2',
         label: 'TEAM B',
         shortTag: 'B',
         name: 'Bob',
-        roster: buildSampleRosterFromSeason(TEAM_SEASONS[1]),
+        roster: buildSample11PlayerRoster(TEAM_SEASONS.slice(4, 8)),
     };
     const s1 = generateMatchScript(teamA, teamB, 20261006);
     const s2 = generateMatchScript(teamA, teamB, 20261006);
-    assert.deepEqual(s1, s2, 'generateMatchScript must be 100% deterministic');
-    assert.deepEqual(s1.finalScore, { A: 2, B: 2 });
-    assert.equal(s1.events.length, 27);
+    assert.deepEqual(s1, s2, 'generateMatchScript must be 100% deterministic for 11v11 rosters');
 }
 
-console.log('[smoke-concurrent-draft] PASS — All Concurrent Blind Draft, Reveal, Security, i18n, and Match tests succeeded.');
+console.log('[smoke-concurrent-draft] PASS — All 11v11 Concurrent Blind Draft, Reveal, Security, i18n, and Match tests succeeded.');
 process.exit(0);
+

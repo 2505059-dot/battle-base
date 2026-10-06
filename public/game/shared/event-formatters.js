@@ -1,6 +1,7 @@
 // Pure UI formatters for structured Draft History events and Match Simulation events
 
 import { t } from '../../i18n/i18n.js';
+import { formatSlotLabel } from './constants.js';
 
 export function formatHistoryEvent(event, localeOverride = null) {
     if (!event) return '';
@@ -37,7 +38,7 @@ export function formatHistoryEvent(event, localeOverride = null) {
                 {
                     actorName: event.actorName,
                     playerName: event.playerName,
-                    slot: event.slot,
+                    slot: formatSlotLabel(event.slot),
                 },
                 localeOverride
             );

@@ -1,56 +1,87 @@
-// Batch simulation debug helper for Match Simulation v0 balance testing
+// Batch simulation debug helper for Match Simulation v0 balance testing (11v11)
 
 import { TEAM_SEASONS } from '../../data/team-seasons.js';
+import { ROSTER_SLOTS } from '../shared/constants.js';
 import { createEmptyRoster, getPlayerOverall, canPlayerFitSlot } from '../draft/rules.js';
 import { calculateTeamProfile } from './team-profile.js';
 import { generateMatchScript } from './engine.js';
 
-export function buildSampleRosterFromSeason(teamSeason) {
-    const roster = createEmptyRoster();
-    if (!teamSeason || !Array.isArray(teamSeason.players)) return roster;
+function buildOrderedSeasonPool(source) {
+    if (Array.isArray(source) && source.length > 0) {
+        const seen = new Set(source.map((ts) => ts?.id).filter(Boolean));
+        return [...source.filter(Boolean), ...TEAM_SEASONS.filter((ts) => !seen.has(ts.id))];
+    }
+    if (source && Array.isArray(source.players)) {
+        const idx = TEAM_SEASONS.findIndex((ts) => ts.id === source.id);
+        if (idx >= 0) {
+            return [
+                ...TEAM_SEASONS.slice(idx),
+                ...TEAM_SEASONS.slice(0, idx),
+            ];
+        }
+        return [source, ...TEAM_SEASONS];
+    }
+    if (typeof source === 'number' && Number.isInteger(source) && TEAM_SEASONS.length > 0) {
+        const offset = ((source % TEAM_SEASONS.length) + TEAM_SEASONS.length) % TEAM_SEASONS.length;
+        return [
+            ...TEAM_SEASONS.slice(offset),
+            ...TEAM_SEASONS.slice(0, offset),
+        ];
+    }
+    return [...TEAM_SEASONS];
+}
 
-    const sortedPlayers = [...teamSeason.players].sort(
-        (a, b) => getPlayerOverall(b) - getPlayerOverall(a)
-    );
+export function buildSampleRosterFromPool(teamSeasons = TEAM_SEASONS) {
+    const roster = createEmptyRoster();
+    const orderedSeasons = buildOrderedSeasonPool(teamSeasons);
+    const candidatePlayers = [];
+
+    for (const ts of orderedSeasons) {
+        if (!ts || !Array.isArray(ts.players)) continue;
+        const sortedSeasonPlayers = [...ts.players].sort(
+            (a, b) => getPlayerOverall(b) - getPlayerOverall(a)
+        );
+        candidatePlayers.push(...sortedSeasonPlayers);
+    }
+
     const usedIds = new Set();
 
-    // First fill GK, DF, MF, FW preferring primary position match, then any valid fit
-    for (const slot of ['GK', 'DF', 'MF', 'FW']) {
-        let candidate = sortedPlayers.find(
-            (p) => !usedIds.has(p.id) && p.positions?.[0] === slot
+    for (const slotDef of ROSTER_SLOTS) {
+        let candidate = candidatePlayers.find(
+            (p) => p?.id && !usedIds.has(p.id) && p.positions?.[0] === slotDef.role
         );
         if (!candidate) {
-            candidate = sortedPlayers.find(
-                (p) => !usedIds.has(p.id) && canPlayerFitSlot(p, slot)
+            candidate = candidatePlayers.find(
+                (p) => p?.id && !usedIds.has(p.id) && canPlayerFitSlot(p, slotDef.id)
             );
         }
         if (candidate) {
-            roster[slot] = candidate;
+            roster[slotDef.id] = candidate;
             usedIds.add(candidate.id);
         }
-    }
-
-    // Fill FLEX with highest-rated remaining outfield player
-    const flexCandidate = sortedPlayers.find(
-        (p) => !usedIds.has(p.id) && canPlayerFitSlot(p, 'FLEX')
-    );
-    if (flexCandidate) {
-        roster.FLEX = flexCandidate;
-        usedIds.add(flexCandidate.id);
     }
 
     return roster;
 }
 
-export function normalizeTeamInput(teamInput, fallbackSeason) {
-    if (!teamInput) return buildSampleRosterFromSeason(fallbackSeason);
-    if (Array.isArray(teamInput.players)) return buildSampleRosterFromSeason(teamInput);
+export function buildSample11PlayerRoster(source = 0) {
+    return buildSampleRosterFromPool(source);
+}
+
+export function buildSampleRosterFromSeason(teamSeason) {
+    return buildSampleRosterFromPool(teamSeason);
+}
+
+export function normalizeTeamInput(teamInput, fallbackSource = 0) {
+    if (!teamInput) return buildSample11PlayerRoster(fallbackSource);
+    if (Array.isArray(teamInput)) return buildSampleRosterFromPool(teamInput);
+    if (Array.isArray(teamInput.players)) return buildSample11PlayerRoster(teamInput);
     return teamInput;
 }
 
 export function simulateManyMatches(teamA, teamB, count = 1000, baseSeed = 10001) {
-    const resolvedTeamA = normalizeTeamInput(teamA, TEAM_SEASONS[0]);
-    const resolvedTeamB = normalizeTeamInput(teamB, TEAM_SEASONS[1] ?? TEAM_SEASONS[0]);
+    const resolvedTeamA = normalizeTeamInput(teamA, TEAM_SEASONS.slice(0, 4));
+    const resolvedTeamB = normalizeTeamInput(teamB, TEAM_SEASONS.slice(4, 8));
     const totalMatches = Math.max(1, Number(count) || 1000);
     const startSeed = (Number(baseSeed) || 10001) >>> 0;
 

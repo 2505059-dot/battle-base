@@ -3,20 +3,33 @@
 import { t, formatLeagueName } from '../../i18n/i18n.js';
 import { el } from '../shared/dom.js';
 import {
+    ROLES,
     SLOTS,
     REROLL_TYPES,
     REROLL_LABEL_KEYS,
     REROLL_SHORT_LABEL_KEYS,
+    getSlotsForRole,
+    formatSlotLabel,
 } from '../shared/constants.js';
 import { formatHistoryEvent } from '../shared/event-formatters.js';
 import { getMyTeam, isDraftPhase, isTeamDraftActive } from '../state.js';
 import {
     hasRerollOption,
-    getAvailableSlotsForPlayer,
+    isPlayerInRoster,
+    getAvailableRolesForPlayer,
+    getFirstAvailableSlotForRole,
+    getRoleProgress,
     getPlayerOverall,
     calculateTeamRating,
     getPickedCount,
 } from './rules.js';
+
+const ROLE_TITLE_KEYS = {
+    GK: 'draft.goalkeeper',
+    DF: 'draft.defenders',
+    MF: 'draft.midfielders',
+    FW: 'draft.forwards',
+};
 
 function getTeamPhaseBadgeText(team, isSelf) {
     const phase = team?.draft?.phase;
@@ -288,15 +301,16 @@ export function renderDraftZone(state, myTeam, handlers = {}, selectedPlayerIdOv
 
         const cardsGrid = el('div', 'fd-cards-grid');
         for (const player of roll.players) {
-            const availableSlots = getAvailableSlotsForPlayer(team.roster, player);
+            const isDuplicate = isPlayerInRoster(team.roster, player);
+            const availableRoles = getAvailableRolesForPlayer(team.roster, player);
             const isSelected = selectedPlayerId === player.id;
-            const hasSlots = availableSlots.length > 0;
+            const hasRoles = availableRoles.length > 0;
             const ovr = getPlayerOverall(player);
 
             let cardClass = 'fd-card';
             if (isSelected) cardClass += ' fd-card--selected';
-            if (!hasSlots) cardClass += ' fd-card--disabled';
-            if (!team.draft.locked && hasSlots) cardClass += ' fd-card--interactive';
+            if (!hasRoles) cardClass += ' fd-card--disabled';
+            if (!team.draft.locked && hasRoles) cardClass += ' fd-card--interactive';
 
             const card = el('div', cardClass);
             const topRow = el('div', 'fd-card-top');
@@ -308,23 +322,32 @@ export function renderDraftZone(state, myTeam, handlers = {}, selectedPlayerIdOv
             const nameEl = el('div', 'fd-card-name', player.name);
             card.append(topRow, nameEl, renderPlayerMiniStats(player));
 
-            if (!team.draft.locked && hasSlots) {
+            if (!team.draft.locked && hasRoles) {
                 card.addEventListener('click', () => onSelectCandidate(player.id));
-            } else if (!hasSlots) {
-                card.append(el('div', 'fd-card-noslot', t('draft.noAvailableSlot')));
+            } else if (!hasRoles) {
+                card.append(
+                    el(
+                        'div',
+                        'fd-card-noslot',
+                        isDuplicate ? t('draft.duplicatePlayer') : t('draft.noAvailableSlot')
+                    )
+                );
             }
 
-            if (!team.draft.locked && isSelected && hasSlots) {
+            if (!team.draft.locked && isSelected && hasRoles) {
                 const slotBar = el('div', 'fd-slot-actions');
                 slotBar.append(el('span', 'fd-slot-prompt', t('draft.chooseSlotPrompt')));
                 const btnGroup = el('div', 'fd-slot-btns');
-                for (const slot of availableSlots) {
-                    const slotBtn = el('button', 'fd-slot-btn', slot);
-                    slotBtn.addEventListener('click', (e) => {
+                for (const role of availableRoles) {
+                    const roleBtn = el('button', 'fd-slot-btn', role);
+                    roleBtn.addEventListener('click', (e) => {
                         e.stopPropagation();
-                        onPickSlot(player.id, slot);
+                        const targetSlot = getFirstAvailableSlotForRole(team.roster, role);
+                        if (targetSlot) {
+                            onPickSlot(player.id, targetSlot);
+                        }
                     });
-                    btnGroup.append(slotBtn);
+                    btnGroup.append(roleBtn);
                 }
                 slotBar.append(btnGroup);
                 card.append(slotBar);
@@ -345,17 +368,22 @@ export function renderDraftZone(state, myTeam, handlers = {}, selectedPlayerIdOv
         );
 
         const readyRoster = el('div', 'fd-ready-roster');
-        for (const slot of SLOTS) {
-            const p = team.roster[slot];
-            if (!p) continue;
-            const item = el('div', 'fd-ready-slot');
-            item.append(
-                el('span', 'fd-slot-tag', slot),
-                el('span', 'fd-ready-player-name', p.name),
-                el('span', 'fd-ready-player-meta', `${p.club} '${String(p.year).slice(-2)}`),
-                el('span', 'fd-slot-player-rating', String(getPlayerOverall(p)))
-            );
-            readyRoster.append(item);
+        for (const role of ROLES) {
+            const group = el('div', 'fd-ready-role-group');
+            group.append(el('div', 'fd-ready-role-title', `${role} — ${t(ROLE_TITLE_KEYS[role])}`));
+            for (const slot of getSlotsForRole(role)) {
+                const p = team.roster[slot];
+                if (!p) continue;
+                const item = el('div', 'fd-ready-slot');
+                item.append(
+                    el('span', 'fd-slot-tag', formatSlotLabel(slot)),
+                    el('span', 'fd-ready-player-name', p.name),
+                    el('span', 'fd-ready-player-meta', `${p.club} '${String(p.year).slice(-2)}`),
+                    el('span', 'fd-slot-player-rating', String(getPlayerOverall(p)))
+                );
+                group.append(item);
+            }
+            readyRoster.append(group);
         }
         readyBox.append(readyRoster);
 
@@ -398,28 +426,77 @@ export function renderBlindOpponentPanel(teamState) {
     );
 
     const phaseMod = getTeamPhaseModifier(teamState);
-    const statusBadge = el(
-        'div',
-        `fd-team-status fd-team-status--${phaseMod}`,
-        getTeamPhaseBadgeText(teamState, false)
+    const statusRow = el('div', 'fd-blind-status-row');
+    statusRow.append(
+        el(
+            'span',
+            `fd-team-status fd-team-status--${phaseMod}`,
+            getTeamPhaseBadgeText(teamState, false)
+        ),
+        el('span', 'fd-slot-blind-badge', t('draft.opponentHidden'))
     );
 
-    head.append(titleWrap, progressEl, statusBadge);
+    head.append(titleWrap, progressEl, statusRow);
     panel.append(head);
 
-    const slotList = el('div', 'fd-slot-list');
-    for (const slot of SLOTS) {
-        const row = el('div', 'fd-slot-row fd-slot-row--blind');
-        row.append(
-            el('span', 'fd-slot-tag', slot),
-            el('span', 'fd-slot-blind-mask', '? ? ?'),
-            el('span', 'fd-slot-blind-badge', t('draft.opponentHidden'))
-        );
-        slotList.append(row);
+    const roleProgress = getRoleProgress(teamState);
+    const roleList = el('div', 'fd-blind-role-list');
+    for (const role of ROLES) {
+        const info = roleProgress[role];
+        const isDone = info.filled >= info.total;
+        const row = el('div', 'fd-blind-role-row' + (isDone ? ' fd-blind-role-row--done' : ''));
+        row.append(el('span', 'fd-blind-role-text', `${role} ${info.filled} / ${info.total}`));
+
+        const pips = el('div', 'fd-blind-pips');
+        for (let i = 0; i < info.total; i++) {
+            pips.append(
+                el('span', 'fd-blind-pip' + (i < info.filled ? ' fd-blind-pip--filled' : ''))
+            );
+        }
+        row.append(pips);
+        roleList.append(row);
     }
 
-    panel.append(slotList, el('div', 'fd-blind-note', t('draft.hiddenUntilReveal')));
+    panel.append(roleList, el('div', 'fd-blind-note', t('draft.hiddenUntilReveal')));
     return panel;
+}
+
+export function renderGroupedSlotList(teamState) {
+    const slotList = el('div', 'fd-slot-list');
+    const roleProgress = getRoleProgress(teamState);
+
+    for (const role of ROLES) {
+        const info = roleProgress[role];
+        const group = el('div', 'fd-role-group');
+        const groupHead = el('div', 'fd-role-group-head');
+        groupHead.append(
+            el('span', 'fd-role-group-title', `${role} — ${t(ROLE_TITLE_KEYS[role])}`),
+            el('span', 'fd-role-group-count', `${info.filled}/${info.total}`)
+        );
+        group.append(groupHead);
+
+        for (const slot of getSlotsForRole(role)) {
+            const p = teamState.roster[slot];
+            const row = el('div', 'fd-slot-row' + (p ? ' fd-slot-row--filled' : ''));
+            row.append(el('span', 'fd-slot-tag', formatSlotLabel(slot)));
+
+            if (p) {
+                const playerBox = el('div', 'fd-slot-player');
+                playerBox.append(
+                    el('span', 'fd-slot-player-name', p.name),
+                    el('span', 'fd-slot-player-meta', `${p.club} '${String(p.year).slice(-2)}`)
+                );
+                row.append(playerBox, el('span', 'fd-slot-player-rating', String(getPlayerOverall(p))));
+            } else {
+                row.append(el('span', 'fd-slot-empty', t('common.emptySlot')));
+            }
+            group.append(row);
+        }
+
+        slotList.append(group);
+    }
+
+    return slotList;
 }
 
 export function renderTeamPanel(state, teamState, idx, meId) {
@@ -441,6 +518,8 @@ export function renderTeamPanel(state, teamState, idx, meId) {
             teamState.name + (isSelf ? t('common.youSuffix') : '')
         )
     );
+
+    const formationBadge = el('div', 'fd-team-formation', t('draft.formation'));
 
     const ratingVal = calculateTeamRating(teamState);
     const ratingBadge = el(
@@ -474,29 +553,10 @@ export function renderTeamPanel(state, teamState, idx, meId) {
         rerollChips.append(chip);
     }
 
-    head.append(titleWrap, ratingBadge, statusBadge, rerollChips);
+    head.append(titleWrap, formationBadge, ratingBadge, statusBadge, rerollChips);
     panel.append(head);
-
-    const slotList = el('div', 'fd-slot-list');
-    for (const slot of SLOTS) {
-        const p = teamState.roster[slot];
-        const row = el('div', 'fd-slot-row' + (p ? ' fd-slot-row--filled' : ''));
-        row.append(el('span', 'fd-slot-tag', slot));
-
-        if (p) {
-            const info = el('div', 'fd-slot-player');
-            info.append(
-                el('span', 'fd-slot-player-name', p.name),
-                el('span', 'fd-slot-player-meta', `${p.club} '${String(p.year).slice(-2)}`)
-            );
-            row.append(info, el('span', 'fd-slot-player-rating', String(getPlayerOverall(p))));
-        } else {
-            row.append(el('span', 'fd-slot-empty', t('common.emptySlot')));
-        }
-        slotList.append(row);
-    }
-
-    panel.append(slotList);
+    panel.append(renderGroupedSlotList(teamState));
     return panel;
 }
+
 

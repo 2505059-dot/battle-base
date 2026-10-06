@@ -1,10 +1,10 @@
-// Pure Team Profile calculation from 5-a-side roster and role weights
+// Pure Team Profile calculation from 11v11 (4-3-3) roster and role weights
 
-import { SLOTS } from '../shared/constants.js';
-import { getPlayerOverall } from '../draft/rules.js';
+import { SLOTS, getSlotRole } from '../shared/constants.js';
+import { getPlayerOverall, findPlayerByRole } from '../draft/rules.js';
 import { ROLE_WEIGHTS } from './config.js';
 
-// Choose the best non-GK role for a FLEX player based on their actual positions and stats
+// Legacy helper retained only for backward export compatibility; not used in 11v11 rosters
 export function resolveFlexRole(player) {
     if (!player || !Array.isArray(player.positions)) return 'MF';
     const candidateRoles = player.positions.filter((pos) => pos !== 'GK' && ROLE_WEIGHTS[pos]);
@@ -24,7 +24,6 @@ export function resolveFlexRole(player) {
             w.defense * (player.defense ?? 0) +
             w.physical * (player.physical ?? 0) +
             w.goalkeeping * (player.goalkeeping ?? 0);
-        // Primary listed position gets a tiny tie-break preference
         const normalizedScore = rawScore / (weightSum || 1) + (i === 0 ? 0.25 : 0);
         if (normalizedScore > bestScore) {
             bestScore = normalizedScore;
@@ -35,11 +34,12 @@ export function resolveFlexRole(player) {
     return bestRole;
 }
 
-export function getEffectiveSlotRole(slot, player) {
-    if (slot === 'FLEX') {
-        return resolveFlexRole(player);
+export function getEffectiveSlotRole(slotId) {
+    const role = getSlotRole(slotId);
+    if (role && ROLE_WEIGHTS[role]) {
+        return role;
     }
-    return ROLE_WEIGHTS[slot] ? slot : 'MF';
+    return ROLE_WEIGHTS[slotId] ? slotId : 'MF';
 }
 
 export function calculateTeamProfile(teamOrRoster) {
@@ -65,7 +65,7 @@ export function calculateTeamProfile(teamOrRoster) {
     for (const slot of SLOTS) {
         const player = roster?.[slot];
         if (!player) continue;
-        const role = getEffectiveSlotRole(slot, player);
+        const role = getEffectiveSlotRole(slot);
         const weights = ROLE_WEIGHTS[role];
         activePlayers.push({ slot, role, player });
 
@@ -96,8 +96,8 @@ export function calculateTeamProfile(teamOrRoster) {
     }
 
     // GK reflexes/command also slightly supported by GK physical & defense
-    if (roster?.GK) {
-        const gk = roster.GK;
+    const gk = findPlayerByRole(roster, 'GK');
+    if (gk) {
         const gkBlend =
             0.88 * (Number(gk.goalkeeping) || 0) +
             0.07 * (Number(gk.physical) || 0) +
@@ -110,3 +110,4 @@ export function calculateTeamProfile(teamOrRoster) {
 
     return profile;
 }
+

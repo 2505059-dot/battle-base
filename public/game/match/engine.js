@@ -2,6 +2,7 @@
 
 import { SLOTS } from '../shared/constants.js';
 import { clamp } from '../shared/math.js';
+import { findPlayerByRole } from '../draft/rules.js';
 import { createRng } from './rng.js';
 import {
     SHOT_ROLE_WEIGHTS,
@@ -22,7 +23,7 @@ export function getRosterEntries(teamOrRoster) {
         if (!player) return null;
         return {
             slot,
-            role: getEffectiveSlotRole(slot, player),
+            role: getEffectiveSlotRole(slot),
             player,
         };
     }).filter(Boolean);
@@ -100,8 +101,14 @@ export function generateMatchScript(teamA, teamB, matchSeed) {
     const entriesA = getRosterEntries(teamA);
     const entriesB = getRosterEntries(teamB);
 
-    const gkA = (teamA?.roster ?? teamA)?.GK ?? entriesA[0]?.player ?? { id: 'gk-a', name: 'GK A' };
-    const gkB = (teamB?.roster ?? teamB)?.GK ?? entriesB[0]?.player ?? { id: 'gk-b', name: 'GK B' };
+    const gkA =
+        entriesA.find((entry) => entry.role === 'GK')?.player ??
+        findPlayerByRole(teamA, 'GK') ??
+        entriesA[0]?.player ?? { id: 'gk-a', name: 'GK A' };
+    const gkB =
+        entriesB.find((entry) => entry.role === 'GK')?.player ??
+        findPlayerByRole(teamB, 'GK') ??
+        entriesB[0]?.player ?? { id: 'gk-b', name: 'GK B' };
 
     // Calculate baseline possession from creation, physical, and attack
     const controlA = 0.55 * profileA.creation + 0.30 * profileA.physical + 0.15 * profileA.attack;

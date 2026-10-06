@@ -175,7 +175,7 @@ li { padding: 8px 12px; margin-bottom: 6px; background: #0d1424; border-radius: 
 /* Main 3-Column Layout on Desktop, Stacked on Mobile */
 .fd-main {
   display: grid;
-  grid-template-columns: 240px 1fr 240px;
+  grid-template-columns: 245px minmax(0, 1fr) 245px;
   gap: 14px;
   align-items: start;
 }
@@ -185,10 +185,11 @@ li { padding: 8px 12px; margin-bottom: 6px; background: #0d1424; border-radius: 
   background: #0d1424;
   border: 1px solid #2a3a5c;
   border-radius: 10px;
-  padding: 12px;
+  padding: 10px 11px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 8px;
+  min-width: 0;
 }
 
 .fd-team-panel--active {
@@ -224,6 +225,13 @@ li { padding: 8px 12px; margin-bottom: 6px; background: #0d1424; border-radius: 
   font-weight: 600;
 }
 
+.fd-team-formation {
+  font-size: .72rem;
+  font-weight: 700;
+  color: #9fb0d4;
+  letter-spacing: .04em;
+}
+
 .fd-team-rating {
   font-size: .82rem;
   font-weight: 700;
@@ -257,18 +265,41 @@ li { padding: 8px 12px; margin-bottom: 6px; background: #0d1424; border-radius: 
 .fd-slot-list {
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 8px;
+}
+
+.fd-role-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.fd-role-group-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2px 4px;
+  font-size: .68rem;
+  font-weight: 800;
+  letter-spacing: .06em;
+  color: #7ea0d4;
+  text-transform: uppercase;
+}
+
+.fd-role-group-count {
+  color: #9fb0d4;
+  font-variant-numeric: tabular-nums;
 }
 
 .fd-slot-row {
   display: flex;
   align-items: center;
-  gap: 8px;
-  padding: 8px 10px;
+  gap: 7px;
+  padding: 5px 8px;
   background: #141e33;
   border: 1px solid #223150;
-  border-radius: 8px;
-  min-height: 46px;
+  border-radius: 6px;
+  min-height: 36px;
 }
 
 .fd-slot-row--filled {
@@ -277,11 +308,11 @@ li { padding: 8px 12px; margin-bottom: 6px; background: #0d1424; border-radius: 
 }
 
 .fd-slot-tag {
-  font-size: .75rem;
+  font-size: .7rem;
   font-weight: 800;
-  width: 40px;
+  width: 38px;
   text-align: center;
-  padding: 2px 4px;
+  padding: 2px 3px;
   border-radius: 4px;
   background: #233457;
   color: #9ec5ff;
@@ -290,7 +321,7 @@ li { padding: 8px 12px; margin-bottom: 6px; background: #0d1424; border-radius: 
 
 .fd-slot-empty {
   color: #637599;
-  font-size: .9rem;
+  font-size: .84rem;
 }
 
 .fd-slot-player {
@@ -298,11 +329,11 @@ li { padding: 8px 12px; margin-bottom: 6px; background: #0d1424; border-radius: 
   min-width: 0;
   display: flex;
   flex-direction: column;
-  line-height: 1.25;
+  line-height: 1.2;
 }
 
 .fd-slot-player-name {
-  font-size: .86rem;
+  font-size: .81rem;
   font-weight: 700;
   color: #eef4ff;
   white-space: nowrap;
@@ -311,12 +342,15 @@ li { padding: 8px 12px; margin-bottom: 6px; background: #0d1424; border-radius: 
 }
 
 .fd-slot-player-meta {
-  font-size: .7rem;
+  font-size: .67rem;
   color: #8da2c8;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .fd-slot-player-rating {
-  font-size: .9rem;
+  font-size: .84rem;
   font-weight: 800;
   color: #4ade80;
   flex-shrink: 0;
@@ -789,18 +823,11 @@ li { padding: 8px 12px; margin-bottom: 6px; background: #0d1424; border-radius: 
   color: #ffd166;
 }
 
-.fd-slot-row--blind {
-  background: #11192b;
-  border-color: #1f2d4a;
-  justify-content: space-between;
-}
-
-.fd-slot-blind-mask {
-  flex: 1;
-  font-size: .85rem;
-  font-weight: 800;
-  letter-spacing: .16em;
-  color: #5b7099;
+.fd-blind-status-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
 }
 
 .fd-slot-blind-badge {
@@ -812,6 +839,56 @@ li { padding: 8px 12px; margin-bottom: 6px; background: #0d1424; border-radius: 
   background: #1a253d;
   border: 1px solid #2d3f66;
   color: #7e95bf;
+}
+
+.fd-blind-role-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.fd-blind-role-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 7px 10px;
+  background: #11192b;
+  border: 1px solid #1f2d4a;
+  border-radius: 7px;
+}
+
+.fd-blind-role-row--done {
+  background: #13253d;
+  border-color: #2f548f;
+}
+
+.fd-blind-role-text {
+  font-size: .8rem;
+  font-weight: 800;
+  letter-spacing: .04em;
+  color: #cfe0ff;
+  font-variant-numeric: tabular-nums;
+}
+
+.fd-blind-pips {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.fd-blind-pip {
+  width: 9px;
+  height: 9px;
+  border-radius: 999px;
+  background: #1c2942;
+  border: 1px solid #354c78;
+}
+
+.fd-blind-pip--filled {
+  background: #5ee0ff;
+  border-color: #5ee0ff;
+  box-shadow: 0 0 6px #5ee0ff66;
 }
 
 .fd-blind-note {
@@ -831,7 +908,7 @@ li { padding: 8px 12px; margin-bottom: 6px; background: #0d1424; border-radius: 
   flex-direction: column;
   align-items: center;
   gap: 12px;
-  padding: 20px 16px;
+  padding: 18px 14px;
   background: #131f36;
   border: 1px solid #2e4570;
   border-radius: 10px;
@@ -859,16 +936,31 @@ li { padding: 8px 12px; margin-bottom: 6px; background: #0d1424; border-radius: 
 .fd-ready-roster {
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 8px;
   width: 100%;
-  max-width: 420px;
+  max-width: 440px;
+}
+
+.fd-ready-role-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.fd-ready-role-title {
+  text-align: left;
+  font-size: .68rem;
+  font-weight: 800;
+  letter-spacing: .06em;
+  color: #7ea0d4;
+  padding: 0 4px;
 }
 
 .fd-ready-slot {
   display: flex;
   align-items: center;
   gap: 8px;
-  padding: 6px 10px;
+  padding: 5px 9px;
   background: #0e1729;
   border: 1px solid #24385e;
   border-radius: 6px;
@@ -877,13 +969,13 @@ li { padding: 8px 12px; margin-bottom: 6px; background: #0d1424; border-radius: 
 
 .fd-ready-player-name {
   flex: 1;
-  font-size: .86rem;
+  font-size: .83rem;
   font-weight: 700;
   color: #eef4ff;
 }
 
 .fd-ready-player-meta {
-  font-size: .74rem;
+  font-size: .72rem;
   color: #8da2c8;
 }
 
@@ -922,6 +1014,73 @@ li { padding: 8px 12px; margin-bottom: 6px; background: #0d1424; border-radius: 
   background: #123124;
   border: 1px solid #22c55e;
   color: #4ade80;
+}
+
+.fd-reveal-lineup {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 6px;
+  padding-top: 8px;
+  border-top: 1px solid #263c63;
+  text-align: left;
+}
+
+.fd-reveal-role-group {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.fd-reveal-role-head {
+  font-size: .65rem;
+  font-weight: 800;
+  letter-spacing: .08em;
+  color: #7ea0d4;
+}
+
+.fd-reveal-player-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 3px 6px;
+  border-radius: 4px;
+  background: #0e182c;
+  font-size: .76rem;
+}
+
+.fd-reveal-slot-tag {
+  font-size: .64rem;
+  font-weight: 800;
+  width: 32px;
+  text-align: center;
+  padding: 1px 3px;
+  border-radius: 3px;
+  background: #1f3154;
+  color: #9ec5ff;
+  flex-shrink: 0;
+}
+
+.fd-reveal-player-name {
+  flex: 1;
+  min-width: 0;
+  font-weight: 700;
+  color: #eef4ff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.fd-reveal-player-meta {
+  font-size: .66rem;
+  color: #8da2c8;
+  flex-shrink: 0;
+}
+
+.fd-reveal-player-ovr {
+  font-weight: 800;
+  color: #4ade80;
+  flex-shrink: 0;
 }
 
 /* ===== Match Simulation v0 UI ===== */

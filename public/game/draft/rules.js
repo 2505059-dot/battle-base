@@ -6,8 +6,26 @@ import {
     getYearsByLeagueAndClub,
     findTeamSeason,
 } from '../../data/team-seasons.js';
-import { SLOTS } from '../shared/constants.js';
+import {
+    ROLES,
+    ROSTER_SLOTS,
+    SLOTS,
+    getSlotDefinition,
+    getSlotRole,
+    getSlotsForRole,
+    formatSlotLabel,
+} from '../shared/constants.js';
 import { pickRandomDraft, pickRandomExceptDraft } from './random.js';
+
+export {
+    ROLES,
+    ROSTER_SLOTS,
+    SLOTS,
+    getSlotDefinition,
+    getSlotRole,
+    getSlotsForRole,
+    formatSlotLabel,
+};
 
 export function hasRerollOption(currentRoll, type) {
     if (!currentRoll) return false;
@@ -78,11 +96,20 @@ export function isValidRerollTransition(prevRoll, nextRoll, type) {
 
 export function createEmptyRoster() {
     return {
-        GK: null,
-        DF: null,
-        MF: null,
-        FW: null,
-        FLEX: null,
+        GK1: null,
+
+        DF1: null,
+        DF2: null,
+        DF3: null,
+        DF4: null,
+
+        MF1: null,
+        MF2: null,
+        MF3: null,
+
+        FW1: null,
+        FW2: null,
+        FW3: null,
     };
 }
 
@@ -98,26 +125,75 @@ export function getPlayerOverall(player) {
     return player?.overall ?? player?.rating ?? 0;
 }
 
-export function canPlayerFitSlot(player, slot) {
+export function canPlayerFitSlot(player, slotId) {
     if (!player || !Array.isArray(player.positions)) return false;
-    switch (slot) {
-        case 'GK':
-            return player.positions.includes('GK');
-        case 'DF':
-            return player.positions.includes('DF');
-        case 'MF':
-            return player.positions.includes('MF');
-        case 'FW':
-            return player.positions.includes('FW');
-        case 'FLEX':
-            return !player.positions.includes('GK');
-        default:
-            return false;
-    }
+    const role = getSlotRole(slotId);
+    if (!role) return false;
+    return player.positions.includes(role);
 }
 
-export function getAvailableSlotsForPlayer(roster, player) {
+export function isPlayerInRoster(teamOrRoster, playerOrId) {
+    const roster = teamOrRoster?.roster ?? teamOrRoster;
+    if (!roster) return false;
+    const targetId = typeof playerOrId === 'string' ? playerOrId : playerOrId?.id;
+    if (!targetId) return false;
+    return SLOTS.some((slotId) => roster[slotId]?.id === targetId);
+}
+
+export function getFirstAvailableSlotForRole(teamOrRoster, role) {
+    const roster = teamOrRoster?.roster ?? teamOrRoster;
+    if (!roster) return null;
+    const slots = getSlotsForRole(role);
+    for (const slotId of slots) {
+        if (roster[slotId] === null) {
+            return slotId;
+        }
+    }
+    return null;
+}
+
+export function getAvailableRolesForPlayer(teamOrRoster, player) {
+    const roster = teamOrRoster?.roster ?? teamOrRoster;
+    if (!roster || !player || !Array.isArray(player.positions)) return [];
+    if (isPlayerInRoster(roster, player)) return [];
+    return ROLES.filter(
+        (role) =>
+            player.positions.includes(role) &&
+            getFirstAvailableSlotForRole(roster, role) !== null
+    );
+}
+
+export function getAvailableSlotsForPlayer(teamOrRoster, player) {
+    const roster = teamOrRoster?.roster ?? teamOrRoster;
+    if (!roster || !player) return [];
+    if (isPlayerInRoster(roster, player)) return [];
     return SLOTS.filter((slot) => roster[slot] === null && canPlayerFitSlot(player, slot));
+}
+
+export function findPlayersByRole(teamOrRoster, role) {
+    const roster = teamOrRoster?.roster ?? teamOrRoster ?? {};
+    return getSlotsForRole(role)
+        .map((slotId) => roster[slotId])
+        .filter(Boolean);
+}
+
+export function findPlayerByRole(teamOrRoster, role) {
+    return findPlayersByRole(teamOrRoster, role)[0] ?? null;
+}
+
+export function getRoleProgress(teamOrRoster) {
+    const roster = teamOrRoster?.roster ?? teamOrRoster ?? {};
+    const progress = {};
+    for (const role of ROLES) {
+        const slots = getSlotsForRole(role);
+        const filled = slots.filter((slotId) => Boolean(roster[slotId])).length;
+        progress[role] = {
+            role,
+            filled,
+            total: slots.length,
+        };
+    }
+    return progress;
 }
 
 export function isRosterComplete(teamState) {
@@ -127,7 +203,9 @@ export function isRosterComplete(teamState) {
 }
 
 export function getPickedCount(teamState) {
-    return SLOTS.filter((slot) => teamState.roster[slot] !== null).length;
+    const roster = teamState?.roster ?? teamState;
+    if (!roster) return 0;
+    return SLOTS.filter((slot) => Boolean(roster[slot])).length;
 }
 
 export function calculateTeamRating(teamState) {
@@ -138,3 +216,4 @@ export function calculateTeamRating(teamState) {
     const sum = picked.reduce((acc, p) => acc + getPlayerOverall(p), 0);
     return Math.round(sum / picked.length);
 }
+

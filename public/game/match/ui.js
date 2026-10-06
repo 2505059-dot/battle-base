@@ -2,9 +2,10 @@
 
 import { t } from '../../i18n/i18n.js';
 import { el } from '../shared/dom.js';
+import { ROLES, getSlotsForRole, formatSlotLabel } from '../shared/constants.js';
 import { clamp } from '../shared/math.js';
 import { formatMatchEvent, formatMatchEventBadge } from '../shared/event-formatters.js';
-import { calculateTeamRating } from '../draft/rules.js';
+import { calculateTeamRating, getPlayerOverall } from '../draft/rules.js';
 import { renderHistoryBox } from '../draft/ui.js';
 import { calculateTeamProfile } from './team-profile.js';
 
@@ -28,6 +29,27 @@ export function renderProfileCard(team, rating, profile) {
         metrics.append(chip);
     }
     card.append(metrics);
+
+    const lineupBox = el('div', 'fd-reveal-lineup');
+    for (const role of ROLES) {
+        const roleGroup = el('div', 'fd-reveal-role-group');
+        roleGroup.append(el('div', 'fd-reveal-role-head', role));
+        for (const slot of getSlotsForRole(role)) {
+            const p = team?.roster?.[slot];
+            if (!p) continue;
+            const row = el('div', 'fd-reveal-player-row');
+            row.append(
+                el('span', 'fd-reveal-slot-tag', formatSlotLabel(slot)),
+                el('span', 'fd-reveal-player-name', p.name),
+                el('span', 'fd-reveal-player-meta', `${p.club} '${String(p.year).slice(-2)}`),
+                el('span', 'fd-reveal-player-ovr', String(getPlayerOverall(p)))
+            );
+            roleGroup.append(row);
+        }
+        lineupBox.append(roleGroup);
+    }
+    card.append(lineupBox);
+
     return card;
 }
 

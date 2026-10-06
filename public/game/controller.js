@@ -19,6 +19,9 @@ import {
     generateRerollTeamSeason,
     isValidRerollTransition,
     canPlayerFitSlot,
+    isPlayerInRoster,
+    getAvailableRolesForPlayer,
+    getFirstAvailableSlotForRole,
     isRosterComplete,
 } from './draft/rules.js';
 import { renderHeader, renderDraftZone, renderTeamPanel } from './draft/ui.js';
@@ -130,6 +133,7 @@ export function startGame(ctx) {
 
         const candidate = actorTeam.draft.currentRoll.players.find((p) => p.id === playerId);
         if (!candidate) return;
+        if (isPlayerInRoster(actorTeam.roster, candidate)) return;
         if (!canPlayerFitSlot(candidate, slot)) return;
 
         actorTeam.roster[slot] = candidate;
@@ -277,13 +281,19 @@ export function startGame(ctx) {
     function handleSelectCandidate(playerId) {
         const myTeam = getMyTeam(state, ctx.me);
         if (state.phase !== 'DRAFT' || !canTeamPick(myTeam)) return;
+        const candidate = myTeam.draft.currentRoll?.players?.find((p) => p.id === playerId);
+        if (!candidate || getAvailableRolesForPlayer(myTeam.roster, candidate).length === 0) return;
         localSelectedPlayerId = localSelectedPlayerId === playerId ? null : playerId;
         render();
     }
 
-    function handlePickSlot(playerId, slot) {
+    function handlePickSlot(playerId, slotOrRole) {
         const myTeam = getMyTeam(state, ctx.me);
         if (state.phase !== 'DRAFT' || !canTeamPick(myTeam)) return;
+        const slot = SLOTS.includes(slotOrRole)
+            ? slotOrRole
+            : getFirstAvailableSlotForRole(myTeam.roster, slotOrRole);
+        if (!slot) return;
         ctx.send({ kind: 'pick', playerId, slot });
         applyPick(ctx.me, playerId, slot);
     }

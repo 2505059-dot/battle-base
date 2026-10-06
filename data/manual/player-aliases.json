@@ -23,7 +23,8 @@
     "Andres Iniesta",
     "Andrés Iniesta",
     "A. Iniesta",
-    "Andrés Iniesta Luján"
+    "Andrés Iniesta Luján",
+    "Iniesta"
   ],
   "Carles Puyol": [
     "Carles Puyol",
@@ -42,7 +43,9 @@
     "Victor Valdes",
     "Víctor Valdés",
     "V. Valdés",
-    "Víctor Valdés Arribas"
+    "Víctor Valdés Arribas",
+    "Valdés",
+    "Valdes"
   ],
   "Samuel Eto'o": [
     "Samuel Eto'o",
@@ -257,7 +260,9 @@
     "Cesc Fabregas",
     "Cesc Fàbregas",
     "Fàbregas",
-    "Francesc Fàbregas Soler"
+    "Francesc Fàbregas Soler",
+    "Francesc Fabregas",
+    "F. Fabregas"
   ],
   "David Silva": [
     "David Silva",
@@ -439,7 +444,9 @@
   ],
   "Maxi Pereira": [
     "Maxi Pereira",
-    "Victoriano Maximiliano Pereira Páez"
+    "Victoriano Maximiliano Pereira Páez",
+    "Maximiliano Pereira",
+    "M. Pereira"
   ],
   "Radamel Falcao": [
     "Radamel Falcao",
@@ -853,13 +860,16 @@
     "Park Ji-sung",
     "Ji-sung Park",
     "Ji Sung Park",
-    "Park Ji Sung"
+    "Park Ji Sung",
+    "J. S. Park"
   ],
   "Lee Young-pyo": [
     "Lee Young-pyo",
     "Young-pyo Lee",
     "Young Pyo Lee",
-    "Lee Young Pyo"
+    "Lee Young Pyo",
+    "Yeong-pyo Lee",
+    "Young-Pyo Lee"
   ],
   "Reinildo Mandava": [
     "Reinildo Mandava",
@@ -870,5 +880,50 @@
     "Sokratis Papastathopoulos",
     "Sokratis",
     "S. Papastathopoulos"
+  ],
+  "David de Gea": [
+    "David de Gea",
+    "David De Gea Quintana",
+    "D. De Gea",
+    "De Gea"
+  ],
+  "Bacary Sagna": [
+    "Bacary Sagna",
+    "Bakary Sagna",
+    "B. Sagna"
+  ],
+  "Aleksandr Hleb": [
+    "Aleksandr Hleb",
+    "Aliaksandr Hleb",
+    "A. Hleb"
+  ],
+  "Juan Mata": [
+    "Juan Mata",
+    "Juan Manuel Mata García",
+    "Juan Manuel Mata Garcia",
+    "Mata"
+  ],
+  "Roberto Sensini": [
+    "Roberto Sensini",
+    "Nestor Sensini",
+    "Néstor Sensini",
+    "Roberto Néstor Sensini"
+  ],
+  "Sammy Kuffour": [
+    "Sammy Kuffour",
+    "Samuel Osei Kuffour",
+    "Samuel Kuffour"
+  ],
+  "Patrik Andersson": [
+    "Patrik Andersson",
+    "Patrick Andersson"
+  ],
+  "Phillip Cocu": [
+    "Phillip Cocu",
+    "Philip Cocu"
+  ],
+  "Jan Vennegoor of Hesselink": [
+    "Jan Vennegoor of Hesselink",
+    "Jan Vennegoor of H."
   ]
 }

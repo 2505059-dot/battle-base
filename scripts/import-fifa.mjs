@@ -113,9 +113,11 @@ function parseLbenzRow(row, year, clubAliasIndex) {
     const overall = toValidNum(row.rating);
     if (!overall) return null;
 
+    // In FIFA 05, 'shot_accuracy' was used before being renamed 'finishing',
+    // and in FIFA 05-07 FIFA Index stored the single 'Tackling' attribute in 'slide_tackle'.
     const tech = {
         overall,
-        finishing: toValidNum(row.finishing),
+        finishing: toValidNum(row.finishing) ?? toValidNum(row.shot_accuracy),
         positioning: toValidNum(row.att_position),
         shot_power: toValidNum(row.shot_power),
         long_shots: toValidNum(row.long_shots),
@@ -130,14 +132,14 @@ function parseLbenzRow(row, year, clubAliasIndex) {
         interceptions: toValidNum(row.interceptions),
         defensive_awareness: toValidNum(row.marking),
         marking: toValidNum(row.marking),
-        standing_tackle: toValidNum(row.stand_tackle),
+        standing_tackle: toValidNum(row.stand_tackle) ?? toValidNum(row.slide_tackle),
         sliding_tackle: toValidNum(row.slide_tackle),
         strength: toValidNum(row.strength),
         stamina: toValidNum(row.stamina),
         acceleration: toValidNum(row.acceleration),
         sprint_speed: toValidNum(row.sprint_speed),
         aggression: toValidNum(row.aggression),
-        gk_diving: toValidNum(row.gk_diving),
+        gk_diving: toValidNum(row.gk_diving) ?? toValidNum(row.gk_rushing),
         gk_handling: toValidNum(row.gk_handling),
         gk_kicking: toValidNum(row.gk_kicking),
         gk_positioning: toValidNum(row.gk_positioning),
@@ -215,8 +217,8 @@ async function main() {
             }
         }
 
-        // 2. lbenz730/fifa_model covers 2005..2020 (essential for 2005-2010 where ea-fc had 0s in early columns)
-        if (year >= 2005 && year <= 2012) {
+        // 2. lbenz730/fifa_model covers 2005..2020
+        if (year >= 2005 && year <= 2020) {
             const fileName = `player_stats_${year}.csv`;
             const url = `https://raw.githubusercontent.com/lbenz730/fifa_model/master/stats/${fileName}`;
             const cachePath = path.join(RAW_FIFA_DIR, `lbenz_${fileName}`);

@@ -1,4 +1,19 @@
 {
   "_comment": "Manual overrides keyed by '<teamSeasonId>::<Canonical Player Name>'. Every entry MUST include a non-empty 'reason' field.",
-  "overrides": {}
+  "overrides": {
+    "ac-milan-2007::Kaka": {
+      "positions": [
+        "MF",
+        "FW"
+      ],
+      "reason": "Played as second striker / attacking midfielder behind Inzaghi in 2006-07 AC Milan; FIFA 07 only lists CAM (MF)"
+    },
+    "bayer-leverkusen-2024::Florian Wirtz": {
+      "positions": [
+        "MF",
+        "FW"
+      ],
+      "reason": "Played as inside forward / attacking midfielder behind Boniface in 2023-24 Leverkusen 3-4-2-1; EA FC 24 only lists CAM (MF)"
+    }
+  }
 }

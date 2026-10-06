@@ -202,6 +202,30 @@ li { padding: 8px 12px; margin-bottom: 6px; background: #0d1424; border-radius: 
   color: #ffd166;
 }
 
+.fd-team-rerolls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 2px;
+}
+
+.fd-reroll-chip {
+  font-size: .68rem;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 4px;
+  background: #172b4d;
+  border: 1px solid #2f548f;
+  color: #9ec5ff;
+}
+
+.fd-reroll-chip--used {
+  background: #181f30;
+  border-color: #29344d;
+  color: #5d6d8e;
+  text-decoration: line-through;
+}
+
 .fd-slot-list {
   display: flex;
   flex-direction: column;
@@ -348,6 +372,53 @@ li { padding: 8px 12px; margin-bottom: 6px; background: #0d1424; border-radius: 
   color: #ffffff;
 }
 
+/* Reroll Controls */
+.fd-reroll-box {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.fd-reroll-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.fd-reroll-btn {
+  padding: 8px 10px;
+  font-size: .78rem;
+  font-weight: 700;
+  background: #1e325c;
+  border: 1px solid #3c62ad;
+  color: #d9e8ff;
+  border-radius: 7px;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.fd-reroll-btn:hover:not(:disabled) {
+  background: #28457d;
+  border-color: #5ee0ff;
+}
+
+.fd-reroll-btn--used {
+  background: #141c2e;
+  border-color: #25314d;
+  color: #6b7c9e;
+}
+
+.fd-reroll-btn--no-option {
+  background: #182136;
+  border-color: #2b3957;
+  color: #7d8fb3;
+}
+
+.fd-reroll-hint {
+  text-align: center;
+  font-size: .74rem;
+  color: #ffd166;
+}
+
 .fd-pick-guide {
   text-align: center;
   font-size: .85rem;
@@ -458,6 +529,42 @@ li { padding: 8px 12px; margin-bottom: 6px; background: #0d1424; border-radius: 
   background: #ffd166;
 }
 
+/* Synchronized Draft History */
+.fd-history {
+  margin-top: 4px;
+  padding: 10px 12px;
+  background: #111a2e;
+  border: 1px solid #223252;
+  border-radius: 8px;
+  width: 100%;
+  text-align: left;
+}
+
+.fd-history-title {
+  font-size: .7rem;
+  font-weight: 800;
+  letter-spacing: .08em;
+  color: #7e95bf;
+  margin-bottom: 6px;
+}
+
+.fd-history-empty {
+  font-size: .78rem;
+  color: #5c7099;
+}
+
+.fd-history-list {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.fd-history-item {
+  font-size: .8rem;
+  color: #b8caec;
+  line-height: 1.35;
+}
+
 /* Complete Screen */
 .fd-complete-zone {
   align-items: center;
@@ -538,7 +645,8 @@ li { padding: 8px 12px; margin-bottom: 6px; background: #0d1424; border-radius: 
   .fd-center {
     order: -1;
   }
-  .fd-roll-result {
+  .fd-roll-result,
+  .fd-reroll-row {
     grid-template-columns: 1fr;
   }
 }

@@ -2,9 +2,32 @@
 // Uses Battle Base ctx: ctx.me, ctx.players, ctx.order, ctx.seed, ctx.send(), ctx.onMessage()
 
 const SLOTS = ['GK', 'DF', 'MF', 'FW', 'FLEX'];
+const REROLL_TYPES = ['league', 'club', 'year'];
+const REROLL_LABELS = {
+    league: 'League Reroll',
+    club: 'Club Reroll',
+    year: 'Year Reroll',
+};
+const MAX_HISTORY_ITEMS = 8;
 
 const RAW_TEAM_SEASONS = [
     // Premier League
+    {
+        id: 'manchester-united-1999',
+        league: 'Premier League',
+        club: 'Manchester United',
+        year: 1999,
+        players: [
+            { name: 'David Beckham', positions: ['MF'], rating: 93 },
+            { name: 'Roy Keane', positions: ['MF'], rating: 93 },
+            { name: 'Paul Scholes', positions: ['MF'], rating: 90 },
+            { name: 'Ryan Giggs', positions: ['MF', 'FW'], rating: 91 },
+            { name: 'Dwight Yorke', positions: ['FW'], rating: 89 },
+            { name: 'Jaap Stam', positions: ['DF'], rating: 92 },
+            { name: 'Gary Neville', positions: ['DF'], rating: 88 },
+            { name: 'Peter Schmeichel', positions: ['GK'], rating: 92 },
+        ],
+    },
     {
         id: 'manchester-united-2008',
         league: 'Premier League',
@@ -197,7 +220,137 @@ const TEAM_SEASONS = RAW_TEAM_SEASONS.map((ts) => ({
     })),
 }));
 
+// ---------- Structured Query Indexes ----------
+// Guarantees that all rolls and rerolls only ever produce valid (league, club, year) combinations
+
 const TEAM_SEASON_MAP = new Map(TEAM_SEASONS.map((ts) => [ts.id, ts]));
+
+const LEAGUES = [];
+const CLUBS_BY_LEAGUE = new Map();       // league -> string[]
+const YEARS_BY_LEAGUE_CLUB = new Map();  // `${league}::${club}` -> number[]
+const TEAM_SEASON_BY_COMBO = new Map();  // `${league}::${club}::${year}` -> teamSeason
+
+for (const ts of TEAM_SEASONS) {
+    if (!LEAGUES.includes(ts.league)) {
+        LEAGUES.push(ts.league);
+    }
+
+    if (!CLUBS_BY_LEAGUE.has(ts.league)) {
+        CLUBS_BY_LEAGUE.set(ts.league, []);
+    }
+    const clubs = CLUBS_BY_LEAGUE.get(ts.league);
+    if (!clubs.includes(ts.club)) {
+        clubs.push(ts.club);
+    }
+
+    const lcKey = `${ts.league}::${ts.club}`;
+    if (!YEARS_BY_LEAGUE_CLUB.has(lcKey)) {
+        YEARS_BY_LEAGUE_CLUB.set(lcKey, []);
+    }
+    const years = YEARS_BY_LEAGUE_CLUB.get(lcKey);
+    if (!years.includes(ts.year)) {
+        years.push(ts.year);
+    }
+
+    TEAM_SEASON_BY_COMBO.set(`${ts.league}::${ts.club}::${ts.year}`, ts);
+}
+
+function getLeagues() {
+    return LEAGUES;
+}
+
+function getClubsByLeague(league) {
+    return CLUBS_BY_LEAGUE.get(league) ?? [];
+}
+
+function getYearsByLeagueAndClub(league, club) {
+    return YEARS_BY_LEAGUE_CLUB.get(`${league}::${club}`) ?? [];
+}
+
+function findTeamSeason(league, club, year) {
+    return TEAM_SEASON_BY_COMBO.get(`${league}::${club}::${year}`) ?? null;
+}
+
+// ---------- Random Selection Helpers ----------
+
+function pickRandom(arr) {
+    if (!Array.isArray(arr) || arr.length === 0) return null;
+    const index = Math.floor(Math.random() * arr.length);
+    return arr[index];
+}
+
+function pickRandomExcept(arr, current) {
+    if (!Array.isArray(arr) || arr.length === 0) return null;
+    const candidates = arr.filter((item) => item !== current);
+    return pickRandom(candidates);
+}
+
+function hasRerollOption(currentRoll, type) {
+    if (!currentRoll) return false;
+    if (type === 'league') {
+        return getLeagues().some((l) => l !== currentRoll.league);
+    }
+    if (type === 'club') {
+        return getClubsByLeague(currentRoll.league).some((c) => c !== currentRoll.club);
+    }
+    if (type === 'year') {
+        return getYearsByLeagueAndClub(currentRoll.league, currentRoll.club).some(
+            (y) => y !== currentRoll.year
+        );
+    }
+    return false;
+}
+
+function generateRerollTeamSeason(currentRoll, type) {
+    if (!currentRoll) return null;
+
+    if (type === 'league') {
+        const newLeague = pickRandomExcept(getLeagues(), currentRoll.league);
+        if (!newLeague) return null;
+        const newClub = pickRandom(getClubsByLeague(newLeague));
+        if (!newClub) return null;
+        const newYear = pickRandom(getYearsByLeagueAndClub(newLeague, newClub));
+        if (newYear === null) return null;
+        return findTeamSeason(newLeague, newClub, newYear);
+    }
+
+    if (type === 'club') {
+        const newClub = pickRandomExcept(getClubsByLeague(currentRoll.league), currentRoll.club);
+        if (!newClub) return null;
+        const newYear = pickRandom(getYearsByLeagueAndClub(currentRoll.league, newClub));
+        if (newYear === null) return null;
+        return findTeamSeason(currentRoll.league, newClub, newYear);
+    }
+
+    if (type === 'year') {
+        const newYear = pickRandomExcept(
+            getYearsByLeagueAndClub(currentRoll.league, currentRoll.club),
+            currentRoll.year
+        );
+        if (newYear === null) return null;
+        return findTeamSeason(currentRoll.league, currentRoll.club, newYear);
+    }
+
+    return null;
+}
+
+function isValidRerollTransition(prevRoll, nextRoll, type) {
+    if (!prevRoll || !nextRoll) return false;
+    if (type === 'league') {
+        return nextRoll.league !== prevRoll.league;
+    }
+    if (type === 'club') {
+        return nextRoll.league === prevRoll.league && nextRoll.club !== prevRoll.club;
+    }
+    if (type === 'year') {
+        return (
+            nextRoll.league === prevRoll.league &&
+            nextRoll.club === prevRoll.club &&
+            nextRoll.year !== prevRoll.year
+        );
+    }
+    return false;
+}
 
 // ---------- Pure Rule Helpers ----------
 
@@ -208,6 +361,14 @@ function createEmptyRoster() {
         MF: null,
         FW: null,
         FLEX: null,
+    };
+}
+
+function createInitialRerolls() {
+    return {
+        league: 1,
+        club: 1,
+        year: 1,
     };
 }
 
@@ -252,8 +413,10 @@ function createInitialState(ctx) {
     const teams = ctx.order.map((id, idx) => ({
         id,
         label: idx === 0 ? 'TEAM A' : 'TEAM B',
+        shortTag: idx === 0 ? 'A' : 'B',
         name: ctx.players.find((p) => p.id === id)?.name ?? id,
         roster: createEmptyRoster(),
+        rerolls: createInitialRerolls(),
     }));
 
     return {
@@ -264,6 +427,7 @@ function createInitialState(ctx) {
         phase: 'ROLL',          // 'ROLL' | 'PICK' | 'COMPLETE'
         currentRoll: null,      // teamSeason object when phase === 'PICK'
         selectedPlayerId: null, // local UI selection during 'PICK'
+        history: [],            // recent 5~8 synchronized action logs
         matchNoticeShown: false,
         opponentLeft: false,
     };
@@ -295,9 +459,11 @@ export function startGame(ctx) {
         return state.phase !== 'COMPLETE' && getCurrentTeam().id === ctx.me;
     }
 
-    function pickRandomTeamSeasonId() {
-        const index = Math.floor(Math.random() * TEAM_SEASONS.length);
-        return TEAM_SEASONS[index].id;
+    function pushHistory(entryText) {
+        state.history.push(entryText);
+        if (state.history.length > MAX_HISTORY_ITEMS) {
+            state.history = state.history.slice(-MAX_HISTORY_ITEMS);
+        }
     }
 
     // ----- State Transitions (Synced across both clients) -----
@@ -313,6 +479,29 @@ export function startGame(ctx) {
         state.currentRoll = teamSeason;
         state.selectedPlayerId = null;
         state.phase = 'PICK';
+        pushHistory(`${currentTeam.name} rolled ${teamSeason.club} ${teamSeason.year}`);
+        render();
+    }
+
+    function applyReroll(actorId, type, teamSeasonId) {
+        if (state.phase !== 'PICK' || !state.currentRoll) return;
+        const currentTeam = getCurrentTeam();
+        if (currentTeam.id !== actorId) return;
+
+        if (!REROLL_TYPES.includes(type)) return;
+        if (currentTeam.rerolls[type] <= 0) return;
+
+        const nextTeamSeason = TEAM_SEASON_MAP.get(teamSeasonId);
+        if (!nextTeamSeason) return;
+
+        if (!isValidRerollTransition(state.currentRoll, nextTeamSeason, type)) return;
+
+        currentTeam.rerolls[type] -= 1;
+        state.currentRoll = nextTeamSeason;
+        state.selectedPlayerId = null;
+
+        pushHistory(`${currentTeam.name} used ${REROLL_LABELS[type]}`);
+        pushHistory(`${currentTeam.name} rolled ${nextTeamSeason.club} ${nextTeamSeason.year}`);
         render();
     }
 
@@ -331,6 +520,7 @@ export function startGame(ctx) {
         currentTeam.roster[slot] = candidate;
         state.currentRoll = null;
         state.selectedPlayerId = null;
+        pushHistory(`${currentTeam.name} picked ${candidate.name} → ${slot}`);
 
         if (state.teams.every((t) => isRosterComplete(t))) {
             state.phase = 'COMPLETE';
@@ -347,9 +537,22 @@ export function startGame(ctx) {
 
     function handleRollClick() {
         if (!isMyTurn() || state.phase !== 'ROLL') return;
-        const teamSeasonId = pickRandomTeamSeasonId();
-        ctx.send({ kind: 'roll', teamSeasonId });
-        applyRoll(ctx.me, teamSeasonId);
+        const chosen = pickRandom(TEAM_SEASONS);
+        if (!chosen) return;
+        ctx.send({ kind: 'roll', teamSeasonId: chosen.id });
+        applyRoll(ctx.me, chosen.id);
+    }
+
+    function handleRerollClick(type) {
+        if (!isMyTurn() || state.phase !== 'PICK' || !state.currentRoll) return;
+        const currentTeam = getCurrentTeam();
+        if (!REROLL_TYPES.includes(type) || currentTeam.rerolls[type] <= 0) return;
+
+        const nextTeamSeason = generateRerollTeamSeason(state.currentRoll, type);
+        if (!nextTeamSeason) return;
+
+        ctx.send({ kind: 'reroll', type, teamSeasonId: nextTeamSeason.id });
+        applyReroll(ctx.me, type, nextTeamSeason.id);
     }
 
     function handleSelectCandidate(playerId) {
@@ -412,7 +615,7 @@ export function startGame(ctx) {
             turnBar.textContent = 'DRAFT COMPLETE';
         } else {
             const cur = getCurrentTeam();
-            const stepText = state.phase === 'ROLL' ? 'Step 1: ROLL' : 'Step 2: PICK PLAYER & POSITION';
+            const stepText = state.phase === 'ROLL' ? 'Step 1: ROLL' : 'Step 2: REROLL OR PICK PLAYER';
             if (cur.id === ctx.me) {
                 turnBar.classList.add('fd-turn-bar--mine');
                 turnBar.textContent = `あなたのターン (${cur.label}: ${cur.name}) — ${stepText}`;
@@ -423,6 +626,68 @@ export function startGame(ctx) {
 
         header.append(vsRow, turnBar);
         return header;
+    }
+
+    function renderRerollControls(curTeam, currentRoll, myTurn) {
+        const box = el('div', 'fd-reroll-box');
+        const btnRow = el('div', 'fd-reroll-row');
+        let noYearHint = false;
+
+        for (const type of REROLL_TYPES) {
+            const remaining = curTeam.rerolls[type];
+            const used = remaining <= 0;
+            const hasOption = hasRerollOption(currentRoll, type);
+
+            let btnText = `${REROLL_LABELS[type]} ×${remaining}`;
+            if (used) {
+                btnText = `${REROLL_LABELS[type]} — USED`;
+            }
+
+            let btnClass = 'fd-reroll-btn';
+            if (used) btnClass += ' fd-reroll-btn--used';
+            else if (!hasOption) btnClass += ' fd-reroll-btn--no-option';
+
+            const btn = el('button', btnClass, btnText);
+            btn.disabled = !myTurn || used || !hasOption;
+
+            if (!used && !hasOption && type === 'year') {
+                noYearHint = true;
+            }
+
+            btn.addEventListener('click', () => handleRerollClick(type));
+            btnRow.append(btn);
+        }
+
+        box.append(btnRow);
+
+        if (noYearHint) {
+            box.append(
+                el(
+                    'div',
+                    'fd-reroll-hint',
+                    `※ ${currentRoll.club} は他年度のシーズンデータが登録されていないため Year Reroll できません`
+                )
+            );
+        }
+
+        return box;
+    }
+
+    function renderHistoryBox() {
+        const box = el('div', 'fd-history');
+        box.append(el('div', 'fd-history-title', 'RECENT HISTORY'));
+
+        if (state.history.length === 0) {
+            box.append(el('div', 'fd-history-empty', 'No actions yet.'));
+            return box;
+        }
+
+        const list = el('div', 'fd-history-list');
+        for (const item of state.history) {
+            list.append(el('div', 'fd-history-item', item));
+        }
+        box.append(list);
+        return box;
     }
 
     function renderDraftZone() {
@@ -445,7 +710,7 @@ export function startGame(ctx) {
             rollBtn.addEventListener('click', handleRollClick);
             rollBox.append(rollBtn);
 
-            zone.append(rollBox);
+            zone.append(rollBox, renderHistoryBox());
             return zone;
         }
 
@@ -464,6 +729,9 @@ export function startGame(ctx) {
 
         rollInfo.append(leagueItem, clubItem, yearItem);
         zone.append(rollInfo);
+
+        // Reroll Controls right under Roll Result
+        zone.append(renderRerollControls(cur, roll, myTurn));
 
         const guide = el(
             'div',
@@ -501,7 +769,6 @@ export function startGame(ctx) {
                 card.append(el('div', 'fd-card-noslot', '空き枠なし'));
             }
 
-            // Show available slot buttons inside or right under the selected card
             if (myTurn && isSelected && hasSlots) {
                 const slotBar = el('div', 'fd-slot-actions');
                 slotBar.append(el('span', 'fd-slot-prompt', '配置枠を選択:'));
@@ -521,7 +788,7 @@ export function startGame(ctx) {
             cardsGrid.append(card);
         }
 
-        zone.append(cardsGrid);
+        zone.append(cardsGrid, renderHistoryBox());
         return zone;
     }
 
@@ -562,6 +829,7 @@ export function startGame(ctx) {
             zone.append(el('div', 'fd-match-notice', 'Match simulation coming next'));
         }
 
+        zone.append(renderHistoryBox());
         return zone;
     }
 
@@ -582,7 +850,20 @@ export function startGame(ctx) {
             'fd-team-rating',
             `Team Rating: ${ratingVal > 0 ? ratingVal : '---'} (${getPickedCount(teamState)}/5)`
         );
-        head.append(titleWrap, ratingBadge);
+
+        const rerollChips = el('div', 'fd-team-rerolls');
+        for (const type of REROLL_TYPES) {
+            const left = teamState.rerolls[type];
+            const shortName = type.charAt(0).toUpperCase() + type.slice(1);
+            const chip = el(
+                'span',
+                'fd-reroll-chip' + (left <= 0 ? ' fd-reroll-chip--used' : ''),
+                left > 0 ? `${shortName} ×1` : `${shortName}: USED`
+            );
+            rerollChips.append(chip);
+        }
+
+        head.append(titleWrap, ratingBadge, rerollChips);
         panel.append(head);
 
         const slotList = el('div', 'fd-slot-list');
@@ -615,6 +896,15 @@ export function startGame(ctx) {
 
         if (payload.kind === 'roll' && typeof payload.teamSeasonId === 'string') {
             applyRoll(from, payload.teamSeasonId);
+            return;
+        }
+
+        if (
+            payload.kind === 'reroll' &&
+            typeof payload.type === 'string' &&
+            typeof payload.teamSeasonId === 'string'
+        ) {
+            applyReroll(from, payload.type, payload.teamSeasonId);
             return;
         }
 

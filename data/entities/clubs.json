@@ -1,0 +1,973 @@
+{
+  "schemaVersion": "1.0.0",
+  "entityType": "club",
+  "totalEntities": 28,
+  "entities": [
+    {
+      "id": "ac-milan",
+      "canonicalName": "AC Milan",
+      "league": "Serie A",
+      "leagueId": "serie-a",
+      "localizedNames": {
+        "en": "AC Milan",
+        "zh-CN": null,
+        "ja": null
+      },
+      "aliases": {
+        "en": [],
+        "zh-CN": [],
+        "ja": []
+      },
+      "externalIds": {
+        "footballData": null,
+        "theSportsDb": null,
+        "wikidata": null
+      },
+      "media": {
+        "crest": null,
+        "crestCandidates": []
+      },
+      "seasons": [
+        2007,
+        2011,
+        2015,
+        2022
+      ],
+      "teamSeasonIds": [
+        "ac-milan-2007",
+        "ac-milan-2011",
+        "ac-milan-2015",
+        "ac-milan-2022"
+      ]
+    },
+    {
+      "id": "ajax",
+      "canonicalName": "Ajax",
+      "league": "Eredivisie",
+      "leagueId": "eredivisie",
+      "localizedNames": {
+        "en": "Ajax",
+        "zh-CN": null,
+        "ja": null
+      },
+      "aliases": {
+        "en": [],
+        "zh-CN": [],
+        "ja": []
+      },
+      "externalIds": {
+        "footballData": null,
+        "theSportsDb": null,
+        "wikidata": null
+      },
+      "media": {
+        "crest": null,
+        "crestCandidates": []
+      },
+      "seasons": [
+        2019
+      ],
+      "teamSeasonIds": [
+        "ajax-2019"
+      ]
+    },
+    {
+      "id": "arsenal",
+      "canonicalName": "Arsenal",
+      "league": "Premier League",
+      "leagueId": "premier-league",
+      "localizedNames": {
+        "en": "Arsenal",
+        "zh-CN": null,
+        "ja": null
+      },
+      "aliases": {
+        "en": [],
+        "zh-CN": [],
+        "ja": []
+      },
+      "externalIds": {
+        "footballData": null,
+        "theSportsDb": null,
+        "wikidata": null
+      },
+      "media": {
+        "crest": null,
+        "crestCandidates": []
+      },
+      "seasons": [
+        2004,
+        2008,
+        2020
+      ],
+      "teamSeasonIds": [
+        "arsenal-2004",
+        "arsenal-2008",
+        "arsenal-2020"
+      ]
+    },
+    {
+      "id": "atalanta",
+      "canonicalName": "Atalanta",
+      "league": "Serie A",
+      "leagueId": "serie-a",
+      "localizedNames": {
+        "en": "Atalanta",
+        "zh-CN": null,
+        "ja": null
+      },
+      "aliases": {
+        "en": [],
+        "zh-CN": [],
+        "ja": []
+      },
+      "externalIds": {
+        "footballData": null,
+        "theSportsDb": null,
+        "wikidata": null
+      },
+      "media": {
+        "crest": null,
+        "crestCandidates": []
+      },
+      "seasons": [
+        2020
+      ],
+      "teamSeasonIds": [
+        "atalanta-2020"
+      ]
+    },
+    {
+      "id": "atletico-madrid",
+      "canonicalName": "Atletico Madrid",
+      "league": "La Liga",
+      "leagueId": "la-liga",
+      "localizedNames": {
+        "en": "Atletico Madrid",
+        "zh-CN": null,
+        "ja": null
+      },
+      "aliases": {
+        "en": [],
+        "zh-CN": [],
+        "ja": []
+      },
+      "externalIds": {
+        "footballData": null,
+        "theSportsDb": null,
+        "wikidata": null
+      },
+      "media": {
+        "crest": null,
+        "crestCandidates": []
+      },
+      "seasons": [
+        2014
+      ],
+      "teamSeasonIds": [
+        "atletico-madrid-2014"
+      ]
+    },
+    {
+      "id": "barcelona",
+      "canonicalName": "Barcelona",
+      "league": "La Liga",
+      "leagueId": "la-liga",
+      "localizedNames": {
+        "en": "Barcelona",
+        "zh-CN": null,
+        "ja": null
+      },
+      "aliases": {
+        "en": [],
+        "zh-CN": [],
+        "ja": []
+      },
+      "externalIds": {
+        "footballData": null,
+        "theSportsDb": null,
+        "wikidata": null
+      },
+      "media": {
+        "crest": null,
+        "crestCandidates": []
+      },
+      "seasons": [
+        2009,
+        2011,
+        2015,
+        2020,
+        2022
+      ],
+      "teamSeasonIds": [
+        "barcelona-2009",
+        "barcelona-2011",
+        "barcelona-2015",
+        "barcelona-2020",
+        "barcelona-2022"
+      ]
+    },
+    {
+      "id": "bayer-leverkusen",
+      "canonicalName": "Bayer Leverkusen",
+      "league": "Bundesliga",
+      "leagueId": "bundesliga",
+      "localizedNames": {
+        "en": "Bayer Leverkusen",
+        "zh-CN": null,
+        "ja": null
+      },
+      "aliases": {
+        "en": [],
+        "zh-CN": [],
+        "ja": []
+      },
+      "externalIds": {
+        "footballData": null,
+        "theSportsDb": null,
+        "wikidata": null
+      },
+      "media": {
+        "crest": null,
+        "crestCandidates": []
+      },
+      "seasons": [
+        2024
+      ],
+      "teamSeasonIds": [
+        "bayer-leverkusen-2024"
+      ]
+    },
+    {
+      "id": "bayern-munich",
+      "canonicalName": "Bayern Munich",
+      "league": "Bundesliga",
+      "leagueId": "bundesliga",
+      "localizedNames": {
+        "en": "Bayern Munich",
+        "zh-CN": null,
+        "ja": null
+      },
+      "aliases": {
+        "en": [],
+        "zh-CN": [],
+        "ja": []
+      },
+      "externalIds": {
+        "footballData": null,
+        "theSportsDb": null,
+        "wikidata": null
+      },
+      "media": {
+        "crest": null,
+        "crestCandidates": []
+      },
+      "seasons": [
+        2001,
+        2013,
+        2020,
+        2022
+      ],
+      "teamSeasonIds": [
+        "bayern-munich-2001",
+        "bayern-munich-2013",
+        "bayern-munich-2020",
+        "bayern-munich-2022"
+      ]
+    },
+    {
+      "id": "benfica",
+      "canonicalName": "Benfica",
+      "league": "Primeira Liga",
+      "leagueId": "primeira-liga",
+      "localizedNames": {
+        "en": "Benfica",
+        "zh-CN": null,
+        "ja": null
+      },
+      "aliases": {
+        "en": [],
+        "zh-CN": [],
+        "ja": []
+      },
+      "externalIds": {
+        "footballData": null,
+        "theSportsDb": null,
+        "wikidata": null
+      },
+      "media": {
+        "crest": null,
+        "crestCandidates": []
+      },
+      "seasons": [
+        2014
+      ],
+      "teamSeasonIds": [
+        "benfica-2014"
+      ]
+    },
+    {
+      "id": "borussia-dortmund",
+      "canonicalName": "Borussia Dortmund",
+      "league": "Bundesliga",
+      "leagueId": "bundesliga",
+      "localizedNames": {
+        "en": "Borussia Dortmund",
+        "zh-CN": null,
+        "ja": null
+      },
+      "aliases": {
+        "en": [],
+        "zh-CN": [],
+        "ja": []
+      },
+      "externalIds": {
+        "footballData": null,
+        "theSportsDb": null,
+        "wikidata": null
+      },
+      "media": {
+        "crest": null,
+        "crestCandidates": []
+      },
+      "seasons": [
+        2013,
+        2015,
+        2017,
+        2023
+      ],
+      "teamSeasonIds": [
+        "borussia-dortmund-2013",
+        "borussia-dortmund-2015",
+        "borussia-dortmund-2017",
+        "borussia-dortmund-2023"
+      ]
+    },
+    {
+      "id": "chelsea",
+      "canonicalName": "Chelsea",
+      "league": "Premier League",
+      "leagueId": "premier-league",
+      "localizedNames": {
+        "en": "Chelsea",
+        "zh-CN": null,
+        "ja": null
+      },
+      "aliases": {
+        "en": [],
+        "zh-CN": [],
+        "ja": []
+      },
+      "externalIds": {
+        "footballData": null,
+        "theSportsDb": null,
+        "wikidata": null
+      },
+      "media": {
+        "crest": null,
+        "crestCandidates": []
+      },
+      "seasons": [
+        2005,
+        2012,
+        2016,
+        2021,
+        2023
+      ],
+      "teamSeasonIds": [
+        "chelsea-2005",
+        "chelsea-2012",
+        "chelsea-2016",
+        "chelsea-2021",
+        "chelsea-2023"
+      ]
+    },
+    {
+      "id": "deportivo-la-coruna",
+      "canonicalName": "Deportivo La Coruna",
+      "league": "La Liga",
+      "leagueId": "la-liga",
+      "localizedNames": {
+        "en": "Deportivo La Coruna",
+        "zh-CN": null,
+        "ja": null
+      },
+      "aliases": {
+        "en": [],
+        "zh-CN": [],
+        "ja": []
+      },
+      "externalIds": {
+        "footballData": null,
+        "theSportsDb": null,
+        "wikidata": null
+      },
+      "media": {
+        "crest": null,
+        "crestCandidates": []
+      },
+      "seasons": [
+        2000
+      ],
+      "teamSeasonIds": [
+        "deportivo-la-coruna-2000"
+      ]
+    },
+    {
+      "id": "inter-milan",
+      "canonicalName": "Inter Milan",
+      "league": "Serie A",
+      "leagueId": "serie-a",
+      "localizedNames": {
+        "en": "Inter Milan",
+        "zh-CN": null,
+        "ja": null
+      },
+      "aliases": {
+        "en": [],
+        "zh-CN": [],
+        "ja": []
+      },
+      "externalIds": {
+        "footballData": null,
+        "theSportsDb": null,
+        "wikidata": null
+      },
+      "media": {
+        "crest": null,
+        "crestCandidates": []
+      },
+      "seasons": [
+        2010,
+        2016,
+        2021,
+        2024
+      ],
+      "teamSeasonIds": [
+        "inter-milan-2010",
+        "inter-milan-2016",
+        "inter-milan-2021",
+        "inter-milan-2024"
+      ]
+    },
+    {
+      "id": "juventus",
+      "canonicalName": "Juventus",
+      "league": "Serie A",
+      "leagueId": "serie-a",
+      "localizedNames": {
+        "en": "Juventus",
+        "zh-CN": null,
+        "ja": null
+      },
+      "aliases": {
+        "en": [],
+        "zh-CN": [],
+        "ja": []
+      },
+      "externalIds": {
+        "footballData": null,
+        "theSportsDb": null,
+        "wikidata": null
+      },
+      "media": {
+        "crest": null,
+        "crestCandidates": []
+      },
+      "seasons": [
+        2003,
+        2012,
+        2017,
+        2021
+      ],
+      "teamSeasonIds": [
+        "juventus-2003",
+        "juventus-2012",
+        "juventus-2017",
+        "juventus-2021"
+      ]
+    },
+    {
+      "id": "lazio",
+      "canonicalName": "Lazio",
+      "league": "Serie A",
+      "leagueId": "serie-a",
+      "localizedNames": {
+        "en": "Lazio",
+        "zh-CN": null,
+        "ja": null
+      },
+      "aliases": {
+        "en": [],
+        "zh-CN": [],
+        "ja": []
+      },
+      "externalIds": {
+        "footballData": null,
+        "theSportsDb": null,
+        "wikidata": null
+      },
+      "media": {
+        "crest": null,
+        "crestCandidates": []
+      },
+      "seasons": [
+        2000
+      ],
+      "teamSeasonIds": [
+        "lazio-2000"
+      ]
+    },
+    {
+      "id": "leicester-city",
+      "canonicalName": "Leicester City",
+      "league": "Premier League",
+      "leagueId": "premier-league",
+      "localizedNames": {
+        "en": "Leicester City",
+        "zh-CN": null,
+        "ja": null
+      },
+      "aliases": {
+        "en": [],
+        "zh-CN": [],
+        "ja": []
+      },
+      "externalIds": {
+        "footballData": null,
+        "theSportsDb": null,
+        "wikidata": null
+      },
+      "media": {
+        "crest": null,
+        "crestCandidates": []
+      },
+      "seasons": [
+        2016
+      ],
+      "teamSeasonIds": [
+        "leicester-city-2016"
+      ]
+    },
+    {
+      "id": "lille",
+      "canonicalName": "Lille",
+      "league": "Ligue 1",
+      "leagueId": "ligue-1",
+      "localizedNames": {
+        "en": "Lille",
+        "zh-CN": null,
+        "ja": null
+      },
+      "aliases": {
+        "en": [],
+        "zh-CN": [],
+        "ja": []
+      },
+      "externalIds": {
+        "footballData": null,
+        "theSportsDb": null,
+        "wikidata": null
+      },
+      "media": {
+        "crest": null,
+        "crestCandidates": []
+      },
+      "seasons": [
+        2021
+      ],
+      "teamSeasonIds": [
+        "lille-2021"
+      ]
+    },
+    {
+      "id": "liverpool",
+      "canonicalName": "Liverpool",
+      "league": "Premier League",
+      "leagueId": "premier-league",
+      "localizedNames": {
+        "en": "Liverpool",
+        "zh-CN": null,
+        "ja": null
+      },
+      "aliases": {
+        "en": [],
+        "zh-CN": [],
+        "ja": []
+      },
+      "externalIds": {
+        "footballData": null,
+        "theSportsDb": null,
+        "wikidata": null
+      },
+      "media": {
+        "crest": null,
+        "crestCandidates": []
+      },
+      "seasons": [
+        2005,
+        2019
+      ],
+      "teamSeasonIds": [
+        "liverpool-2005",
+        "liverpool-2019"
+      ]
+    },
+    {
+      "id": "manchester-city",
+      "canonicalName": "Manchester City",
+      "league": "Premier League",
+      "leagueId": "premier-league",
+      "localizedNames": {
+        "en": "Manchester City",
+        "zh-CN": null,
+        "ja": null
+      },
+      "aliases": {
+        "en": [],
+        "zh-CN": [],
+        "ja": []
+      },
+      "externalIds": {
+        "footballData": null,
+        "theSportsDb": null,
+        "wikidata": null
+      },
+      "media": {
+        "crest": null,
+        "crestCandidates": []
+      },
+      "seasons": [
+        2012,
+        2023
+      ],
+      "teamSeasonIds": [
+        "manchester-city-2012",
+        "manchester-city-2023"
+      ]
+    },
+    {
+      "id": "manchester-united",
+      "canonicalName": "Manchester United",
+      "league": "Premier League",
+      "leagueId": "premier-league",
+      "localizedNames": {
+        "en": "Manchester United",
+        "zh-CN": null,
+        "ja": null
+      },
+      "aliases": {
+        "en": [],
+        "zh-CN": [],
+        "ja": []
+      },
+      "externalIds": {
+        "footballData": null,
+        "theSportsDb": null,
+        "wikidata": null
+      },
+      "media": {
+        "crest": null,
+        "crestCandidates": []
+      },
+      "seasons": [
+        1999,
+        2008,
+        2013,
+        2022
+      ],
+      "teamSeasonIds": [
+        "manchester-united-1999",
+        "manchester-united-2008",
+        "manchester-united-2013",
+        "manchester-united-2022"
+      ]
+    },
+    {
+      "id": "monaco",
+      "canonicalName": "Monaco",
+      "league": "Ligue 1",
+      "leagueId": "ligue-1",
+      "localizedNames": {
+        "en": "Monaco",
+        "zh-CN": null,
+        "ja": null
+      },
+      "aliases": {
+        "en": [],
+        "zh-CN": [],
+        "ja": []
+      },
+      "externalIds": {
+        "footballData": null,
+        "theSportsDb": null,
+        "wikidata": null
+      },
+      "media": {
+        "crest": null,
+        "crestCandidates": []
+      },
+      "seasons": [
+        2017
+      ],
+      "teamSeasonIds": [
+        "monaco-2017"
+      ]
+    },
+    {
+      "id": "napoli",
+      "canonicalName": "Napoli",
+      "league": "Serie A",
+      "leagueId": "serie-a",
+      "localizedNames": {
+        "en": "Napoli",
+        "zh-CN": null,
+        "ja": null
+      },
+      "aliases": {
+        "en": [],
+        "zh-CN": [],
+        "ja": []
+      },
+      "externalIds": {
+        "footballData": null,
+        "theSportsDb": null,
+        "wikidata": null
+      },
+      "media": {
+        "crest": null,
+        "crestCandidates": []
+      },
+      "seasons": [
+        2023
+      ],
+      "teamSeasonIds": [
+        "napoli-2023"
+      ]
+    },
+    {
+      "id": "parma",
+      "canonicalName": "Parma",
+      "league": "Serie A",
+      "leagueId": "serie-a",
+      "localizedNames": {
+        "en": "Parma",
+        "zh-CN": null,
+        "ja": null
+      },
+      "aliases": {
+        "en": [],
+        "zh-CN": [],
+        "ja": []
+      },
+      "externalIds": {
+        "footballData": null,
+        "theSportsDb": null,
+        "wikidata": null
+      },
+      "media": {
+        "crest": null,
+        "crestCandidates": []
+      },
+      "seasons": [
+        1999
+      ],
+      "teamSeasonIds": [
+        "parma-1999"
+      ]
+    },
+    {
+      "id": "porto",
+      "canonicalName": "Porto",
+      "league": "Primeira Liga",
+      "leagueId": "primeira-liga",
+      "localizedNames": {
+        "en": "Porto",
+        "zh-CN": null,
+        "ja": null
+      },
+      "aliases": {
+        "en": [],
+        "zh-CN": [],
+        "ja": []
+      },
+      "externalIds": {
+        "footballData": null,
+        "theSportsDb": null,
+        "wikidata": null
+      },
+      "media": {
+        "crest": null,
+        "crestCandidates": []
+      },
+      "seasons": [
+        2004
+      ],
+      "teamSeasonIds": [
+        "porto-2004"
+      ]
+    },
+    {
+      "id": "psv",
+      "canonicalName": "PSV",
+      "league": "Eredivisie",
+      "leagueId": "eredivisie",
+      "localizedNames": {
+        "en": "PSV",
+        "zh-CN": null,
+        "ja": null
+      },
+      "aliases": {
+        "en": [],
+        "zh-CN": [],
+        "ja": []
+      },
+      "externalIds": {
+        "footballData": null,
+        "theSportsDb": null,
+        "wikidata": null
+      },
+      "media": {
+        "crest": null,
+        "crestCandidates": []
+      },
+      "seasons": [
+        2005
+      ],
+      "teamSeasonIds": [
+        "psv-2005"
+      ]
+    },
+    {
+      "id": "real-madrid",
+      "canonicalName": "Real Madrid",
+      "league": "La Liga",
+      "leagueId": "la-liga",
+      "localizedNames": {
+        "en": "Real Madrid",
+        "zh-CN": null,
+        "ja": null
+      },
+      "aliases": {
+        "en": [],
+        "zh-CN": [],
+        "ja": []
+      },
+      "externalIds": {
+        "footballData": null,
+        "theSportsDb": null,
+        "wikidata": null
+      },
+      "media": {
+        "crest": null,
+        "crestCandidates": []
+      },
+      "seasons": [
+        2002,
+        2012,
+        2017,
+        2019,
+        2022
+      ],
+      "teamSeasonIds": [
+        "real-madrid-2002",
+        "real-madrid-2012",
+        "real-madrid-2017",
+        "real-madrid-2019",
+        "real-madrid-2022"
+      ]
+    },
+    {
+      "id": "roma",
+      "canonicalName": "Roma",
+      "league": "Serie A",
+      "leagueId": "serie-a",
+      "localizedNames": {
+        "en": "Roma",
+        "zh-CN": null,
+        "ja": null
+      },
+      "aliases": {
+        "en": [],
+        "zh-CN": [],
+        "ja": []
+      },
+      "externalIds": {
+        "footballData": null,
+        "theSportsDb": null,
+        "wikidata": null
+      },
+      "media": {
+        "crest": null,
+        "crestCandidates": []
+      },
+      "seasons": [
+        2001
+      ],
+      "teamSeasonIds": [
+        "roma-2001"
+      ]
+    },
+    {
+      "id": "valencia",
+      "canonicalName": "Valencia",
+      "league": "La Liga",
+      "leagueId": "la-liga",
+      "localizedNames": {
+        "en": "Valencia",
+        "zh-CN": null,
+        "ja": null
+      },
+      "aliases": {
+        "en": [],
+        "zh-CN": [],
+        "ja": []
+      },
+      "externalIds": {
+        "footballData": null,
+        "theSportsDb": null,
+        "wikidata": null
+      },
+      "media": {
+        "crest": null,
+        "crestCandidates": []
+      },
+      "seasons": [
+        2004
+      ],
+      "teamSeasonIds": [
+        "valencia-2004"
+      ]
+    }
+  ],
+  "clubMap": {
+    "AC Milan": "ac-milan",
+    "Ajax": "ajax",
+    "Arsenal": "arsenal",
+    "Atalanta": "atalanta",
+    "Atletico Madrid": "atletico-madrid",
+    "Barcelona": "barcelona",
+    "Bayer Leverkusen": "bayer-leverkusen",
+    "Bayern Munich": "bayern-munich",
+    "Benfica": "benfica",
+    "Borussia Dortmund": "borussia-dortmund",
+    "Chelsea": "chelsea",
+    "Deportivo La Coruna": "deportivo-la-coruna",
+    "Inter Milan": "inter-milan",
+    "Juventus": "juventus",
+    "Lazio": "lazio",
+    "Leicester City": "leicester-city",
+    "Lille": "lille",
+    "Liverpool": "liverpool",
+    "Manchester City": "manchester-city",
+    "Manchester United": "manchester-united",
+    "Monaco": "monaco",
+    "Napoli": "napoli",
+    "PSV": "psv",
+    "Parma": "parma",
+    "Porto": "porto",
+    "Real Madrid": "real-madrid",
+    "Roma": "roma",
+    "Valencia": "valencia"
+  }
+}

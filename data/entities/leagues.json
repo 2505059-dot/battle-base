@@ -1,0 +1,337 @@
+{
+  "schemaVersion": "1.0.0",
+  "entityType": "league",
+  "totalEntities": 7,
+  "entities": [
+    {
+      "id": "bundesliga",
+      "canonicalName": "Bundesliga",
+      "localizedNames": {
+        "en": "Bundesliga",
+        "zh-CN": null,
+        "ja": null
+      },
+      "aliases": {
+        "en": [],
+        "zh-CN": [],
+        "ja": []
+      },
+      "externalIds": {
+        "footballData": null,
+        "theSportsDb": null,
+        "wikidata": null
+      },
+      "media": {
+        "emblem": null,
+        "emblemCandidates": []
+      },
+      "clubs": [
+        "Bayer Leverkusen",
+        "Bayern Munich",
+        "Borussia Dortmund"
+      ],
+      "clubIds": [
+        "bayer-leverkusen",
+        "bayern-munich",
+        "borussia-dortmund"
+      ],
+      "teamSeasonIds": [
+        "bayer-leverkusen-2024",
+        "bayern-munich-2001",
+        "bayern-munich-2013",
+        "bayern-munich-2020",
+        "bayern-munich-2022",
+        "borussia-dortmund-2013",
+        "borussia-dortmund-2015",
+        "borussia-dortmund-2017",
+        "borussia-dortmund-2023"
+      ]
+    },
+    {
+      "id": "eredivisie",
+      "canonicalName": "Eredivisie",
+      "localizedNames": {
+        "en": "Eredivisie",
+        "zh-CN": null,
+        "ja": null
+      },
+      "aliases": {
+        "en": [],
+        "zh-CN": [],
+        "ja": []
+      },
+      "externalIds": {
+        "footballData": null,
+        "theSportsDb": null,
+        "wikidata": null
+      },
+      "media": {
+        "emblem": null,
+        "emblemCandidates": []
+      },
+      "clubs": [
+        "Ajax",
+        "PSV"
+      ],
+      "clubIds": [
+        "ajax",
+        "psv"
+      ],
+      "teamSeasonIds": [
+        "ajax-2019",
+        "psv-2005"
+      ]
+    },
+    {
+      "id": "la-liga",
+      "canonicalName": "La Liga",
+      "localizedNames": {
+        "en": "La Liga",
+        "zh-CN": null,
+        "ja": null
+      },
+      "aliases": {
+        "en": [],
+        "zh-CN": [],
+        "ja": []
+      },
+      "externalIds": {
+        "footballData": null,
+        "theSportsDb": null,
+        "wikidata": null
+      },
+      "media": {
+        "emblem": null,
+        "emblemCandidates": []
+      },
+      "clubs": [
+        "Atletico Madrid",
+        "Barcelona",
+        "Deportivo La Coruna",
+        "Real Madrid",
+        "Valencia"
+      ],
+      "clubIds": [
+        "atletico-madrid",
+        "barcelona",
+        "deportivo-la-coruna",
+        "real-madrid",
+        "valencia"
+      ],
+      "teamSeasonIds": [
+        "atletico-madrid-2014",
+        "barcelona-2009",
+        "barcelona-2011",
+        "barcelona-2015",
+        "barcelona-2020",
+        "barcelona-2022",
+        "deportivo-la-coruna-2000",
+        "real-madrid-2002",
+        "real-madrid-2012",
+        "real-madrid-2017",
+        "real-madrid-2019",
+        "real-madrid-2022",
+        "valencia-2004"
+      ]
+    },
+    {
+      "id": "ligue-1",
+      "canonicalName": "Ligue 1",
+      "localizedNames": {
+        "en": "Ligue 1",
+        "zh-CN": null,
+        "ja": null
+      },
+      "aliases": {
+        "en": [],
+        "zh-CN": [],
+        "ja": []
+      },
+      "externalIds": {
+        "footballData": null,
+        "theSportsDb": null,
+        "wikidata": null
+      },
+      "media": {
+        "emblem": null,
+        "emblemCandidates": []
+      },
+      "clubs": [
+        "Lille",
+        "Monaco"
+      ],
+      "clubIds": [
+        "lille",
+        "monaco"
+      ],
+      "teamSeasonIds": [
+        "lille-2021",
+        "monaco-2017"
+      ]
+    },
+    {
+      "id": "premier-league",
+      "canonicalName": "Premier League",
+      "localizedNames": {
+        "en": "Premier League",
+        "zh-CN": null,
+        "ja": null
+      },
+      "aliases": {
+        "en": [],
+        "zh-CN": [],
+        "ja": []
+      },
+      "externalIds": {
+        "footballData": null,
+        "theSportsDb": null,
+        "wikidata": null
+      },
+      "media": {
+        "emblem": null,
+        "emblemCandidates": []
+      },
+      "clubs": [
+        "Arsenal",
+        "Chelsea",
+        "Leicester City",
+        "Liverpool",
+        "Manchester City",
+        "Manchester United"
+      ],
+      "clubIds": [
+        "arsenal",
+        "chelsea",
+        "leicester-city",
+        "liverpool",
+        "manchester-city",
+        "manchester-united"
+      ],
+      "teamSeasonIds": [
+        "arsenal-2004",
+        "arsenal-2008",
+        "arsenal-2020",
+        "chelsea-2005",
+        "chelsea-2012",
+        "chelsea-2016",
+        "chelsea-2021",
+        "chelsea-2023",
+        "leicester-city-2016",
+        "liverpool-2005",
+        "liverpool-2019",
+        "manchester-city-2012",
+        "manchester-city-2023",
+        "manchester-united-1999",
+        "manchester-united-2008",
+        "manchester-united-2013",
+        "manchester-united-2022"
+      ]
+    },
+    {
+      "id": "primeira-liga",
+      "canonicalName": "Primeira Liga",
+      "localizedNames": {
+        "en": "Primeira Liga",
+        "zh-CN": null,
+        "ja": null
+      },
+      "aliases": {
+        "en": [],
+        "zh-CN": [],
+        "ja": []
+      },
+      "externalIds": {
+        "footballData": null,
+        "theSportsDb": null,
+        "wikidata": null
+      },
+      "media": {
+        "emblem": null,
+        "emblemCandidates": []
+      },
+      "clubs": [
+        "Benfica",
+        "Porto"
+      ],
+      "clubIds": [
+        "benfica",
+        "porto"
+      ],
+      "teamSeasonIds": [
+        "benfica-2014",
+        "porto-2004"
+      ]
+    },
+    {
+      "id": "serie-a",
+      "canonicalName": "Serie A",
+      "localizedNames": {
+        "en": "Serie A",
+        "zh-CN": null,
+        "ja": null
+      },
+      "aliases": {
+        "en": [],
+        "zh-CN": [],
+        "ja": []
+      },
+      "externalIds": {
+        "footballData": null,
+        "theSportsDb": null,
+        "wikidata": null
+      },
+      "media": {
+        "emblem": null,
+        "emblemCandidates": []
+      },
+      "clubs": [
+        "AC Milan",
+        "Atalanta",
+        "Inter Milan",
+        "Juventus",
+        "Lazio",
+        "Napoli",
+        "Parma",
+        "Roma"
+      ],
+      "clubIds": [
+        "ac-milan",
+        "atalanta",
+        "inter-milan",
+        "juventus",
+        "lazio",
+        "napoli",
+        "parma",
+        "roma"
+      ],
+      "teamSeasonIds": [
+        "ac-milan-2007",
+        "ac-milan-2011",
+        "ac-milan-2015",
+        "ac-milan-2022",
+        "atalanta-2020",
+        "inter-milan-2010",
+        "inter-milan-2016",
+        "inter-milan-2021",
+        "inter-milan-2024",
+        "juventus-2003",
+        "juventus-2012",
+        "juventus-2017",
+        "juventus-2021",
+        "lazio-2000",
+        "napoli-2023",
+        "parma-1999",
+        "roma-2001"
+      ]
+    }
+  ],
+  "leagueMap": {
+    "Bundesliga": "bundesliga",
+    "Eredivisie": "eredivisie",
+    "La Liga": "la-liga",
+    "Ligue 1": "ligue-1",
+    "Premier League": "premier-league",
+    "Primeira Liga": "primeira-liga",
+    "Serie A": "serie-a"
+  }
+}

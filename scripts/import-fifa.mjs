@@ -42,6 +42,13 @@ function toValidNum(val) {
     return Number.isFinite(n) && n >= 1 && n <= 99 ? n : null;
 }
 
+function cleanOptionalString(val) {
+    if (val === undefined || val === null) return null;
+    const trimmed = String(val).trim();
+    if (!trimmed || trimmed === 'NA' || trimmed === 'null') return null;
+    return trimmed;
+}
+
 function parseEaFcRow(row, year, clubAliasIndex) {
     const canonicalClub = canonicalizeClubName(row.club_name, clubAliasIndex);
     const positions = normalizePositions(row.positions);
@@ -98,7 +105,10 @@ function parseEaFcRow(row, year, clubAliasIndex) {
         shortName: (row.short_name || '').trim(),
         longName: (row.long_name || '').trim(),
         aliasName: (row.alias || '').trim(),
-        sofifaId: row.sofifa_id || null,
+        sofifaId: cleanOptionalString(row.sofifa_id),
+        fifaIndexId: null,
+        fifaIndexPageUrl: null,
+        fifaIndexHeadshotUrl: null,
         rawPositions: row.positions || '',
         positions,
         overall,
@@ -164,7 +174,10 @@ function parseLbenzRow(row, year, clubAliasIndex) {
         shortName: (row.name || '').trim(),
         longName: (row.name || '').trim(),
         aliasName: '',
-        sofifaId: row.player_id || null,
+        sofifaId: null,
+        fifaIndexId: cleanOptionalString(row.player_id),
+        fifaIndexPageUrl: cleanOptionalString(row.page_url),
+        fifaIndexHeadshotUrl: cleanOptionalString(row.headshot_url),
         rawPositions: rawPos,
         positions,
         overall,

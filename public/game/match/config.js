@@ -1,33 +1,33 @@
-// Position weights and probability parameters for Match Simulation v0
+// Position weights and probability parameters for Match Simulation v1
 
 // Role contribution weights toward the 5 team functional dimensions
 export const ROLE_WEIGHTS = {
     GK: {
         goalkeeping: 1.0,
-        defense: 0.08,
+        defense: 0.04,
         physical: 0.10,
-        creation: 0.10,
+        creation: 0.04,
         attack: 0.0,
     },
     DF: {
-        defense: 0.48,
+        defense: 0.56,
         physical: 0.30,
-        creation: 0.14,
+        creation: 0.08,
         attack: 0.04,
         goalkeeping: 0.0,
     },
     MF: {
-        creation: 0.44,
+        creation: 0.56,
         attack: 0.28,
-        defense: 0.24,
+        defense: 0.18,
         physical: 0.26,
         goalkeeping: 0.0,
     },
     FW: {
         attack: 0.56,
-        creation: 0.24,
+        creation: 0.20,
         physical: 0.24,
-        defense: 0.04,
+        defense: 0.02,
         goalkeeping: 0.0,
     },
 };
@@ -56,30 +56,30 @@ export const DEFENSE_ROLE_WEIGHTS = {
     GK: 0.15,
 };
 
-// Centralized probability & pacing parameters for Match Simulation v0
+// Centralized probability & pacing parameters for Match Simulation v1
 export const MATCH_SIM_CONFIG = {
     halfEventsMin: 11,
     halfEventsMax: 15,
     // Step 1: Attacking opportunity allocation
     baseAttackShare: 0.5,
-    initiativeDiffScale: 0.011,
+    initiativeDiffScale: 0.008,
     minAttackShare: 0.30,
     maxAttackShare: 0.70,
     // Step 2: Build-up progression to shot
     baseShotProb: 0.74,
-    progressionDiffScale: 0.009,
+    progressionDiffScale: 0.0065,
     minShotProb: 0.48,
     maxShotProb: 0.88,
     // Step 4: Shot accuracy (on target)
     baseOnTargetProb: 0.47,
-    onTargetDiffScale: 0.007,
+    onTargetDiffScale: 0.0055,
     minOnTargetProb: 0.25,
     maxOnTargetProb: 0.65,
     // Off-target split between blocked ('shot') and wide/over ('miss')
     blockedOffTargetShare: 0.42,
     // Step 5 & 6: Goal vs GK Save when shot is on target
-    baseGoalOnTargetProb: 0.33,
-    goalDiffScale: 0.008,
+    baseGoalOnTargetProb: 0.30,
+    goalDiffScale: 0.006,
     minGoalOnTargetProb: 0.13,
     maxGoalOnTargetProb: 0.50,
     // Assist probability on a goal

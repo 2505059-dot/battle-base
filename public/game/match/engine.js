@@ -1,4 +1,4 @@
-// Pure Match Simulation v0 Engine (deterministic, language-independent, no DOM or network side effects)
+// Pure Match Simulation v1 Engine (deterministic, language-independent, no DOM or network side effects)
 
 import { SLOTS } from '../shared/constants.js';
 import { clamp } from '../shared/math.js';
@@ -110,9 +110,17 @@ export function generateMatchScript(teamA, teamB, matchSeed) {
         findPlayerByRole(teamB, 'GK') ??
         entriesB[0]?.player ?? { id: 'gk-b', name: 'GK B' };
 
-    // Calculate baseline possession from creation, physical, and attack
-    const controlA = 0.55 * profileA.creation + 0.30 * profileA.physical + 0.15 * profileA.attack;
-    const controlB = 0.55 * profileB.creation + 0.30 * profileB.physical + 0.15 * profileB.attack;
+    // Calculate baseline possession from creation, physical, attack, and defense
+    const controlA =
+        0.64 * profileA.creation +
+        0.16 * profileA.physical +
+        0.10 * profileA.attack +
+        0.10 * profileA.defense;
+    const controlB =
+        0.64 * profileB.creation +
+        0.16 * profileB.physical +
+        0.10 * profileB.attack +
+        0.10 * profileB.defense;
     const controlDiff = controlA - controlB;
     const noise = (rng.random() * 2 - 1) * MATCH_SIM_CONFIG.possessionNoiseMax;
 
@@ -168,9 +176,15 @@ export function generateMatchScript(teamA, teamB, matchSeed) {
 
     // Step 1 probability: Who wins each attacking sequence
     const initiativeA =
-        0.45 * profileA.creation + 0.30 * profileA.physical + 0.25 * profileA.attack;
+        0.48 * profileA.creation +
+        0.22 * profileA.defense +
+        0.15 * profileA.attack +
+        0.15 * profileA.physical;
     const initiativeB =
-        0.45 * profileB.creation + 0.30 * profileB.physical + 0.25 * profileB.attack;
+        0.48 * profileB.creation +
+        0.22 * profileB.defense +
+        0.15 * profileB.attack +
+        0.15 * profileB.physical;
     const probAttackA = clamp(
         MATCH_SIM_CONFIG.baseAttackShare +
             (initiativeA - initiativeB) * MATCH_SIM_CONFIG.initiativeDiffScale,
@@ -199,10 +213,10 @@ export function generateMatchScript(teamA, teamB, matchSeed) {
 
         // Step 2: Does the attack progress to a shot?
         const attackBuild =
-            0.45 * attProfile.creation +
-            0.35 * attProfile.attack +
-            0.20 * attProfile.physical;
-        const defenseStop = 0.60 * defProfile.defense + 0.40 * defProfile.physical;
+            0.52 * attProfile.creation +
+            0.34 * attProfile.attack +
+            0.14 * attProfile.physical;
+        const defenseStop = 0.80 * defProfile.defense + 0.20 * defProfile.physical;
         const progressionDiff = attackBuild - defenseStop;
         const probShot = clamp(
             MATCH_SIM_CONFIG.baseShotProb +
@@ -239,7 +253,7 @@ export function generateMatchScript(teamA, teamB, matchSeed) {
         // Step 4: Is the shot on target?
         const shotQuality =
             0.55 * shooterAtk + 0.25 * attProfile.attack + 0.20 * attProfile.creation;
-        const shotPressure = 0.60 * defProfile.defense + 0.40 * defProfile.physical;
+        const shotPressure = 0.78 * defProfile.defense + 0.22 * defProfile.physical;
         const probOnTarget = clamp(
             MATCH_SIM_CONFIG.baseOnTargetProb +
                 (shotQuality - shotPressure) * MATCH_SIM_CONFIG.onTargetDiffScale,
@@ -290,9 +304,9 @@ export function generateMatchScript(teamA, teamB, matchSeed) {
         const finishRating =
             0.55 * shooterAtk + 0.25 * attProfile.attack + 0.20 * attProfile.creation;
         const gkRating =
-            0.72 * defProfile.goalkeeping +
+            0.76 * defProfile.goalkeeping +
             0.18 * defProfile.defense +
-            0.10 * defProfile.physical;
+            0.06 * defProfile.physical;
         const probGoal = clamp(
             MATCH_SIM_CONFIG.baseGoalOnTargetProb +
                 (finishRating - gkRating) * MATCH_SIM_CONFIG.goalDiffScale,

@@ -1,4 +1,4 @@
-// Batch simulation debug helper for Match Simulation v0 balance testing (11v11)
+// Batch simulation debug helper for Match Simulation v1 balance testing (11v11)
 
 import { TEAM_SEASONS } from '../../data/team-seasons.js';
 import { ROSTER_SLOTS } from '../shared/constants.js';
@@ -154,7 +154,7 @@ export function simulateManyMatches(teamA, teamB, count = 1000, baseSeed = 10001
     };
 
     console.log(
-        `[Match Simulation v0] Simulated ${totalMatches} matches (baseSeed=${startSeed}):`,
+        `[Match Simulation v1] Simulated ${totalMatches} matches (baseSeed=${startSeed}):`,
         summary
     );
     return summary;

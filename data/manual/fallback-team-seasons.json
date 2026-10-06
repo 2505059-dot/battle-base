@@ -1,0 +1,7243 @@
+[
+  {
+    "id": "manchester-united-1999",
+    "league": "Premier League",
+    "club": "Manchester United",
+    "year": 1999,
+    "players": [
+      {
+        "name": "Peter Schmeichel",
+        "positions": [
+          "GK"
+        ],
+        "overall": 92,
+        "attack": 18,
+        "creation": 42,
+        "defense": 46,
+        "physical": 82,
+        "goalkeeping": 93
+      },
+      {
+        "name": "Jaap Stam",
+        "positions": [
+          "DF"
+        ],
+        "overall": 92,
+        "attack": 45,
+        "creation": 58,
+        "defense": 94,
+        "physical": 94,
+        "goalkeeping": 12
+      },
+      {
+        "name": "Gary Neville",
+        "positions": [
+          "DF"
+        ],
+        "overall": 87,
+        "attack": 58,
+        "creation": 74,
+        "defense": 87,
+        "physical": 83,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Denis Irwin",
+        "positions": [
+          "DF"
+        ],
+        "overall": 86,
+        "attack": 68,
+        "creation": 76,
+        "defense": 86,
+        "physical": 80,
+        "goalkeeping": 12
+      },
+      {
+        "name": "Roy Keane",
+        "positions": [
+          "MF"
+        ],
+        "overall": 93,
+        "attack": 76,
+        "creation": 84,
+        "defense": 91,
+        "physical": 93,
+        "goalkeeping": 13
+      },
+      {
+        "name": "David Beckham",
+        "positions": [
+          "MF"
+        ],
+        "overall": 92,
+        "attack": 84,
+        "creation": 96,
+        "defense": 68,
+        "physical": 84,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Paul Scholes",
+        "positions": [
+          "MF"
+        ],
+        "overall": 90,
+        "attack": 86,
+        "creation": 91,
+        "defense": 66,
+        "physical": 78,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Ryan Giggs",
+        "positions": [
+          "MF",
+          "FW"
+        ],
+        "overall": 91,
+        "attack": 88,
+        "creation": 90,
+        "defense": 52,
+        "physical": 83,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Dwight Yorke",
+        "positions": [
+          "FW"
+        ],
+        "overall": 89,
+        "attack": 90,
+        "creation": 81,
+        "defense": 42,
+        "physical": 82,
+        "goalkeeping": 11
+      }
+    ]
+  },
+  {
+    "id": "manchester-united-2008",
+    "league": "Premier League",
+    "club": "Manchester United",
+    "year": 2008,
+    "players": [
+      {
+        "name": "Edwin van der Sar",
+        "positions": [
+          "GK"
+        ],
+        "overall": 90,
+        "attack": 14,
+        "creation": 52,
+        "defense": 44,
+        "physical": 76,
+        "goalkeeping": 91
+      },
+      {
+        "name": "Rio Ferdinand",
+        "positions": [
+          "DF"
+        ],
+        "overall": 92,
+        "attack": 52,
+        "creation": 74,
+        "defense": 93,
+        "physical": 88,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Nemanja Vidic",
+        "positions": [
+          "DF"
+        ],
+        "overall": 91,
+        "attack": 54,
+        "creation": 55,
+        "defense": 94,
+        "physical": 93,
+        "goalkeeping": 12
+      },
+      {
+        "name": "Patrice Evra",
+        "positions": [
+          "DF"
+        ],
+        "overall": 88,
+        "attack": 70,
+        "creation": 78,
+        "defense": 86,
+        "physical": 86,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Paul Scholes",
+        "positions": [
+          "MF"
+        ],
+        "overall": 90,
+        "attack": 80,
+        "creation": 94,
+        "defense": 68,
+        "physical": 74,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Michael Carrick",
+        "positions": [
+          "MF"
+        ],
+        "overall": 86,
+        "attack": 68,
+        "creation": 87,
+        "defense": 84,
+        "physical": 79,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Ryan Giggs",
+        "positions": [
+          "MF",
+          "FW"
+        ],
+        "overall": 88,
+        "attack": 80,
+        "creation": 90,
+        "defense": 56,
+        "physical": 76,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Cristiano Ronaldo",
+        "positions": [
+          "FW",
+          "MF"
+        ],
+        "overall": 96,
+        "attack": 97,
+        "creation": 86,
+        "defense": 38,
+        "physical": 91,
+        "goalkeeping": 12
+      },
+      {
+        "name": "Wayne Rooney",
+        "positions": [
+          "FW",
+          "MF"
+        ],
+        "overall": 91,
+        "attack": 91,
+        "creation": 86,
+        "defense": 62,
+        "physical": 90,
+        "goalkeeping": 13
+      }
+    ]
+  },
+  {
+    "id": "manchester-united-2013",
+    "league": "Premier League",
+    "club": "Manchester United",
+    "year": 2013,
+    "players": [
+      {
+        "name": "David de Gea",
+        "positions": [
+          "GK"
+        ],
+        "overall": 86,
+        "attack": 12,
+        "creation": 40,
+        "defense": 38,
+        "physical": 72,
+        "goalkeeping": 88
+      },
+      {
+        "name": "Rio Ferdinand",
+        "positions": [
+          "DF"
+        ],
+        "overall": 86,
+        "attack": 48,
+        "creation": 70,
+        "defense": 88,
+        "physical": 79,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Patrice Evra",
+        "positions": [
+          "DF"
+        ],
+        "overall": 85,
+        "attack": 68,
+        "creation": 75,
+        "defense": 82,
+        "physical": 81,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Rafael",
+        "positions": [
+          "DF"
+        ],
+        "overall": 81,
+        "attack": 69,
+        "creation": 72,
+        "defense": 79,
+        "physical": 80,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Michael Carrick",
+        "positions": [
+          "MF"
+        ],
+        "overall": 88,
+        "attack": 68,
+        "creation": 90,
+        "defense": 85,
+        "physical": 78,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Shinji Kagawa",
+        "positions": [
+          "MF",
+          "FW"
+        ],
+        "overall": 83,
+        "attack": 80,
+        "creation": 86,
+        "defense": 48,
+        "physical": 68,
+        "goalkeeping": 9
+      },
+      {
+        "name": "Robin van Persie",
+        "positions": [
+          "FW"
+        ],
+        "overall": 92,
+        "attack": 94,
+        "creation": 84,
+        "defense": 38,
+        "physical": 81,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Wayne Rooney",
+        "positions": [
+          "FW",
+          "MF"
+        ],
+        "overall": 89,
+        "attack": 88,
+        "creation": 87,
+        "defense": 60,
+        "physical": 86,
+        "goalkeeping": 12
+      }
+    ]
+  },
+  {
+    "id": "manchester-united-2022",
+    "league": "Premier League",
+    "club": "Manchester United",
+    "year": 2022,
+    "players": [
+      {
+        "name": "David de Gea",
+        "positions": [
+          "GK"
+        ],
+        "overall": 85,
+        "attack": 11,
+        "creation": 36,
+        "defense": 35,
+        "physical": 70,
+        "goalkeeping": 87
+      },
+      {
+        "name": "Raphael Varane",
+        "positions": [
+          "DF"
+        ],
+        "overall": 83,
+        "attack": 45,
+        "creation": 64,
+        "defense": 85,
+        "physical": 81,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Luke Shaw",
+        "positions": [
+          "DF"
+        ],
+        "overall": 81,
+        "attack": 66,
+        "creation": 77,
+        "defense": 78,
+        "physical": 80,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Harry Maguire",
+        "positions": [
+          "DF"
+        ],
+        "overall": 77,
+        "attack": 52,
+        "creation": 62,
+        "defense": 78,
+        "physical": 84,
+        "goalkeeping": 12
+      },
+      {
+        "name": "Bruno Fernandes",
+        "positions": [
+          "MF"
+        ],
+        "overall": 87,
+        "attack": 84,
+        "creation": 90,
+        "defense": 62,
+        "physical": 80,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Fred",
+        "positions": [
+          "MF"
+        ],
+        "overall": 79,
+        "attack": 66,
+        "creation": 76,
+        "defense": 78,
+        "physical": 79,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Scott McTominay",
+        "positions": [
+          "MF"
+        ],
+        "overall": 78,
+        "attack": 65,
+        "creation": 68,
+        "defense": 78,
+        "physical": 84,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Cristiano Ronaldo",
+        "positions": [
+          "FW"
+        ],
+        "overall": 88,
+        "attack": 91,
+        "creation": 75,
+        "defense": 28,
+        "physical": 78,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Marcus Rashford",
+        "positions": [
+          "FW"
+        ],
+        "overall": 79,
+        "attack": 81,
+        "creation": 73,
+        "defense": 38,
+        "physical": 82,
+        "goalkeeping": 10
+      }
+    ]
+  },
+  {
+    "id": "arsenal-2004",
+    "league": "Premier League",
+    "club": "Arsenal",
+    "year": 2004,
+    "players": [
+      {
+        "name": "Jens Lehmann",
+        "positions": [
+          "GK"
+        ],
+        "overall": 87,
+        "attack": 15,
+        "creation": 44,
+        "defense": 42,
+        "physical": 79,
+        "goalkeeping": 88
+      },
+      {
+        "name": "Sol Campbell",
+        "positions": [
+          "DF"
+        ],
+        "overall": 91,
+        "attack": 48,
+        "creation": 58,
+        "defense": 93,
+        "physical": 93,
+        "goalkeeping": 12
+      },
+      {
+        "name": "Ashley Cole",
+        "positions": [
+          "DF"
+        ],
+        "overall": 90,
+        "attack": 72,
+        "creation": 79,
+        "defense": 90,
+        "physical": 87,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Kolo Toure",
+        "positions": [
+          "DF"
+        ],
+        "overall": 86,
+        "attack": 54,
+        "creation": 64,
+        "defense": 87,
+        "physical": 89,
+        "goalkeeping": 12
+      },
+      {
+        "name": "Patrick Vieira",
+        "positions": [
+          "MF"
+        ],
+        "overall": 93,
+        "attack": 78,
+        "creation": 85,
+        "defense": 92,
+        "physical": 94,
+        "goalkeeping": 13
+      },
+      {
+        "name": "Robert Pires",
+        "positions": [
+          "MF",
+          "FW"
+        ],
+        "overall": 90,
+        "attack": 88,
+        "creation": 91,
+        "defense": 52,
+        "physical": 78,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Gilberto Silva",
+        "positions": [
+          "MF"
+        ],
+        "overall": 86,
+        "attack": 62,
+        "creation": 76,
+        "defense": 88,
+        "physical": 85,
+        "goalkeeping": 12
+      },
+      {
+        "name": "Thierry Henry",
+        "positions": [
+          "FW"
+        ],
+        "overall": 96,
+        "attack": 97,
+        "creation": 90,
+        "defense": 40,
+        "physical": 90,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Dennis Bergkamp",
+        "positions": [
+          "FW",
+          "MF"
+        ],
+        "overall": 90,
+        "attack": 87,
+        "creation": 94,
+        "defense": 42,
+        "physical": 76,
+        "goalkeeping": 10
+      }
+    ]
+  },
+  {
+    "id": "arsenal-2008",
+    "league": "Premier League",
+    "club": "Arsenal",
+    "year": 2008,
+    "players": [
+      {
+        "name": "Manuel Almunia",
+        "positions": [
+          "GK"
+        ],
+        "overall": 79,
+        "attack": 12,
+        "creation": 36,
+        "defense": 36,
+        "physical": 71,
+        "goalkeeping": 80
+      },
+      {
+        "name": "Kolo Toure",
+        "positions": [
+          "DF"
+        ],
+        "overall": 85,
+        "attack": 52,
+        "creation": 62,
+        "defense": 86,
+        "physical": 87,
+        "goalkeeping": 12
+      },
+      {
+        "name": "Gael Clichy",
+        "positions": [
+          "DF"
+        ],
+        "overall": 84,
+        "attack": 66,
+        "creation": 74,
+        "defense": 83,
+        "physical": 84,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Bacary Sagna",
+        "positions": [
+          "DF"
+        ],
+        "overall": 84,
+        "attack": 64,
+        "creation": 71,
+        "defense": 85,
+        "physical": 84,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Cesc Fabregas",
+        "positions": [
+          "MF"
+        ],
+        "overall": 90,
+        "attack": 81,
+        "creation": 94,
+        "defense": 65,
+        "physical": 77,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Aleksandr Hleb",
+        "positions": [
+          "MF",
+          "FW"
+        ],
+        "overall": 85,
+        "attack": 77,
+        "creation": 88,
+        "defense": 52,
+        "physical": 73,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Mathieu Flamini",
+        "positions": [
+          "MF"
+        ],
+        "overall": 83,
+        "attack": 64,
+        "creation": 74,
+        "defense": 84,
+        "physical": 85,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Emmanuel Adebayor",
+        "positions": [
+          "FW"
+        ],
+        "overall": 88,
+        "attack": 89,
+        "creation": 76,
+        "defense": 44,
+        "physical": 88,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Robin van Persie",
+        "positions": [
+          "FW"
+        ],
+        "overall": 85,
+        "attack": 87,
+        "creation": 83,
+        "defense": 36,
+        "physical": 76,
+        "goalkeeping": 10
+      }
+    ]
+  },
+  {
+    "id": "arsenal-2020",
+    "league": "Premier League",
+    "club": "Arsenal",
+    "year": 2020,
+    "players": [
+      {
+        "name": "Bernd Leno",
+        "positions": [
+          "GK"
+        ],
+        "overall": 83,
+        "attack": 12,
+        "creation": 38,
+        "defense": 36,
+        "physical": 72,
+        "goalkeeping": 84
+      },
+      {
+        "name": "David Luiz",
+        "positions": [
+          "DF"
+        ],
+        "overall": 78,
+        "attack": 60,
+        "creation": 74,
+        "defense": 76,
+        "physical": 78,
+        "goalkeeping": 12
+      },
+      {
+        "name": "Kieran Tierney",
+        "positions": [
+          "DF"
+        ],
+        "overall": 81,
+        "attack": 66,
+        "creation": 75,
+        "defense": 80,
+        "physical": 81,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Hector Bellerin",
+        "positions": [
+          "DF"
+        ],
+        "overall": 79,
+        "attack": 68,
+        "creation": 72,
+        "defense": 76,
+        "physical": 80,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Granit Xhaka",
+        "positions": [
+          "MF"
+        ],
+        "overall": 81,
+        "attack": 70,
+        "creation": 82,
+        "defense": 77,
+        "physical": 82,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Dani Ceballos",
+        "positions": [
+          "MF"
+        ],
+        "overall": 79,
+        "attack": 68,
+        "creation": 82,
+        "defense": 68,
+        "physical": 72,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Bukayo Saka",
+        "positions": [
+          "MF",
+          "FW"
+        ],
+        "overall": 80,
+        "attack": 78,
+        "creation": 81,
+        "defense": 62,
+        "physical": 76,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Pierre-Emerick Aubameyang",
+        "positions": [
+          "FW"
+        ],
+        "overall": 89,
+        "attack": 91,
+        "creation": 77,
+        "defense": 36,
+        "physical": 84,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Alexandre Lacazette",
+        "positions": [
+          "FW"
+        ],
+        "overall": 82,
+        "attack": 83,
+        "creation": 77,
+        "defense": 45,
+        "physical": 79,
+        "goalkeeping": 10
+      }
+    ]
+  },
+  {
+    "id": "chelsea-2005",
+    "league": "Premier League",
+    "club": "Chelsea",
+    "year": 2005,
+    "players": [
+      {
+        "name": "Petr Cech",
+        "positions": [
+          "GK"
+        ],
+        "overall": 92,
+        "attack": 14,
+        "creation": 44,
+        "defense": 46,
+        "physical": 82,
+        "goalkeeping": 93
+      },
+      {
+        "name": "John Terry",
+        "positions": [
+          "DF"
+        ],
+        "overall": 93,
+        "attack": 56,
+        "creation": 64,
+        "defense": 95,
+        "physical": 92,
+        "goalkeeping": 12
+      },
+      {
+        "name": "Ricardo Carvalho",
+        "positions": [
+          "DF"
+        ],
+        "overall": 90,
+        "attack": 50,
+        "creation": 72,
+        "defense": 92,
+        "physical": 84,
+        "goalkeeping": 11
+      },
+      {
+        "name": "William Gallas",
+        "positions": [
+          "DF"
+        ],
+        "overall": 87,
+        "attack": 58,
+        "creation": 66,
+        "defense": 88,
+        "physical": 86,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Frank Lampard",
+        "positions": [
+          "MF"
+        ],
+        "overall": 93,
+        "attack": 91,
+        "creation": 90,
+        "defense": 74,
+        "physical": 88,
+        "goalkeeping": 12
+      },
+      {
+        "name": "Claude Makelele",
+        "positions": [
+          "MF"
+        ],
+        "overall": 91,
+        "attack": 52,
+        "creation": 78,
+        "defense": 95,
+        "physical": 88,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Arjen Robben",
+        "positions": [
+          "FW",
+          "MF"
+        ],
+        "overall": 90,
+        "attack": 91,
+        "creation": 86,
+        "defense": 36,
+        "physical": 82,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Didier Drogba",
+        "positions": [
+          "FW"
+        ],
+        "overall": 89,
+        "attack": 90,
+        "creation": 76,
+        "defense": 48,
+        "physical": 93,
+        "goalkeeping": 12
+      }
+    ]
+  },
+  {
+    "id": "chelsea-2012",
+    "league": "Premier League",
+    "club": "Chelsea",
+    "year": 2012,
+    "players": [
+      {
+        "name": "Petr Cech",
+        "positions": [
+          "GK"
+        ],
+        "overall": 90,
+        "attack": 14,
+        "creation": 43,
+        "defense": 44,
+        "physical": 80,
+        "goalkeeping": 91
+      },
+      {
+        "name": "John Terry",
+        "positions": [
+          "DF"
+        ],
+        "overall": 88,
+        "attack": 54,
+        "creation": 62,
+        "defense": 90,
+        "physical": 86,
+        "goalkeeping": 12
+      },
+      {
+        "name": "Ashley Cole",
+        "positions": [
+          "DF"
+        ],
+        "overall": 87,
+        "attack": 66,
+        "creation": 75,
+        "defense": 88,
+        "physical": 83,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Branislav Ivanovic",
+        "positions": [
+          "DF"
+        ],
+        "overall": 86,
+        "attack": 66,
+        "creation": 68,
+        "defense": 87,
+        "physical": 89,
+        "goalkeeping": 12
+      },
+      {
+        "name": "Frank Lampard",
+        "positions": [
+          "MF"
+        ],
+        "overall": 88,
+        "attack": 86,
+        "creation": 88,
+        "defense": 70,
+        "physical": 81,
+        "goalkeeping": 12
+      },
+      {
+        "name": "Juan Mata",
+        "positions": [
+          "MF",
+          "FW"
+        ],
+        "overall": 89,
+        "attack": 84,
+        "creation": 92,
+        "defense": 42,
+        "physical": 70,
+        "goalkeeping": 9
+      },
+      {
+        "name": "Ramires",
+        "positions": [
+          "MF"
+        ],
+        "overall": 85,
+        "attack": 74,
+        "creation": 77,
+        "defense": 82,
+        "physical": 88,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Didier Drogba",
+        "positions": [
+          "FW"
+        ],
+        "overall": 90,
+        "attack": 91,
+        "creation": 79,
+        "defense": 50,
+        "physical": 92,
+        "goalkeeping": 12
+      }
+    ]
+  },
+  {
+    "id": "chelsea-2016",
+    "league": "Premier League",
+    "club": "Chelsea",
+    "year": 2016,
+    "players": [
+      {
+        "name": "Thibaut Courtois",
+        "positions": [
+          "GK"
+        ],
+        "overall": 84,
+        "attack": 12,
+        "creation": 38,
+        "defense": 38,
+        "physical": 76,
+        "goalkeeping": 85
+      },
+      {
+        "name": "Cesar Azpilicueta",
+        "positions": [
+          "DF"
+        ],
+        "overall": 84,
+        "attack": 60,
+        "creation": 72,
+        "defense": 86,
+        "physical": 82,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Gary Cahill",
+        "positions": [
+          "DF"
+        ],
+        "overall": 80,
+        "attack": 52,
+        "creation": 58,
+        "defense": 81,
+        "physical": 82,
+        "goalkeeping": 11
+      },
+      {
+        "name": "John Terry",
+        "positions": [
+          "DF"
+        ],
+        "overall": 79,
+        "attack": 48,
+        "creation": 58,
+        "defense": 81,
+        "physical": 76,
+        "goalkeeping": 12
+      },
+      {
+        "name": "Cesc Fabregas",
+        "positions": [
+          "MF"
+        ],
+        "overall": 83,
+        "attack": 72,
+        "creation": 88,
+        "defense": 58,
+        "physical": 69,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Nemanja Matic",
+        "positions": [
+          "MF"
+        ],
+        "overall": 80,
+        "attack": 60,
+        "creation": 72,
+        "defense": 82,
+        "physical": 84,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Willian",
+        "positions": [
+          "MF",
+          "FW"
+        ],
+        "overall": 85,
+        "attack": 82,
+        "creation": 85,
+        "defense": 60,
+        "physical": 82,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Eden Hazard",
+        "positions": [
+          "FW",
+          "MF"
+        ],
+        "overall": 83,
+        "attack": 82,
+        "creation": 86,
+        "defense": 36,
+        "physical": 76,
+        "goalkeeping": 9
+      },
+      {
+        "name": "Diego Costa",
+        "positions": [
+          "FW"
+        ],
+        "overall": 84,
+        "attack": 86,
+        "creation": 72,
+        "defense": 44,
+        "physical": 87,
+        "goalkeeping": 11
+      }
+    ]
+  },
+  {
+    "id": "chelsea-2021",
+    "league": "Premier League",
+    "club": "Chelsea",
+    "year": 2021,
+    "players": [
+      {
+        "name": "Edouard Mendy",
+        "positions": [
+          "GK"
+        ],
+        "overall": 88,
+        "attack": 13,
+        "creation": 40,
+        "defense": 42,
+        "physical": 80,
+        "goalkeeping": 89
+      },
+      {
+        "name": "Thiago Silva",
+        "positions": [
+          "DF"
+        ],
+        "overall": 89,
+        "attack": 52,
+        "creation": 76,
+        "defense": 91,
+        "physical": 81,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Antonio Rudiger",
+        "positions": [
+          "DF"
+        ],
+        "overall": 88,
+        "attack": 54,
+        "creation": 66,
+        "defense": 90,
+        "physical": 91,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Reece James",
+        "positions": [
+          "DF",
+          "MF"
+        ],
+        "overall": 86,
+        "attack": 76,
+        "creation": 83,
+        "defense": 84,
+        "physical": 87,
+        "goalkeeping": 11
+      },
+      {
+        "name": "N'Golo Kante",
+        "positions": [
+          "MF"
+        ],
+        "overall": 92,
+        "attack": 68,
+        "creation": 81,
+        "defense": 95,
+        "physical": 93,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Jorginho",
+        "positions": [
+          "MF"
+        ],
+        "overall": 88,
+        "attack": 68,
+        "creation": 89,
+        "defense": 81,
+        "physical": 74,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Mason Mount",
+        "positions": [
+          "MF",
+          "FW"
+        ],
+        "overall": 86,
+        "attack": 82,
+        "creation": 86,
+        "defense": 64,
+        "physical": 80,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Kai Havertz",
+        "positions": [
+          "FW",
+          "MF"
+        ],
+        "overall": 84,
+        "attack": 84,
+        "creation": 82,
+        "defense": 46,
+        "physical": 79,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Timo Werner",
+        "positions": [
+          "FW"
+        ],
+        "overall": 81,
+        "attack": 80,
+        "creation": 74,
+        "defense": 38,
+        "physical": 84,
+        "goalkeeping": 10
+      }
+    ]
+  },
+  {
+    "id": "chelsea-2023",
+    "league": "Premier League",
+    "club": "Chelsea",
+    "year": 2023,
+    "players": [
+      {
+        "name": "Kepa Arrizabalaga",
+        "positions": [
+          "GK"
+        ],
+        "overall": 80,
+        "attack": 12,
+        "creation": 44,
+        "defense": 35,
+        "physical": 68,
+        "goalkeeping": 81
+      },
+      {
+        "name": "Thiago Silva",
+        "positions": [
+          "DF"
+        ],
+        "overall": 85,
+        "attack": 48,
+        "creation": 74,
+        "defense": 87,
+        "physical": 76,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Kalidou Koulibaly",
+        "positions": [
+          "DF"
+        ],
+        "overall": 79,
+        "attack": 46,
+        "creation": 60,
+        "defense": 80,
+        "physical": 84,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Ben Chilwell",
+        "positions": [
+          "DF"
+        ],
+        "overall": 80,
+        "attack": 68,
+        "creation": 75,
+        "defense": 77,
+        "physical": 78,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Enzo Fernandez",
+        "positions": [
+          "MF"
+        ],
+        "overall": 83,
+        "attack": 70,
+        "creation": 86,
+        "defense": 76,
+        "physical": 78,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Mateo Kovacic",
+        "positions": [
+          "MF"
+        ],
+        "overall": 82,
+        "attack": 68,
+        "creation": 84,
+        "defense": 75,
+        "physical": 78,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Conor Gallagher",
+        "positions": [
+          "MF"
+        ],
+        "overall": 78,
+        "attack": 70,
+        "creation": 74,
+        "defense": 75,
+        "physical": 85,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Raheem Sterling",
+        "positions": [
+          "FW"
+        ],
+        "overall": 80,
+        "attack": 80,
+        "creation": 77,
+        "defense": 38,
+        "physical": 75,
+        "goalkeeping": 9
+      },
+      {
+        "name": "Kai Havertz",
+        "positions": [
+          "FW",
+          "MF"
+        ],
+        "overall": 79,
+        "attack": 78,
+        "creation": 77,
+        "defense": 45,
+        "physical": 77,
+        "goalkeeping": 10
+      }
+    ]
+  },
+  {
+    "id": "manchester-city-2012",
+    "league": "Premier League",
+    "club": "Manchester City",
+    "year": 2012,
+    "players": [
+      {
+        "name": "Joe Hart",
+        "positions": [
+          "GK"
+        ],
+        "overall": 87,
+        "attack": 14,
+        "creation": 38,
+        "defense": 40,
+        "physical": 79,
+        "goalkeeping": 88
+      },
+      {
+        "name": "Vincent Kompany",
+        "positions": [
+          "DF"
+        ],
+        "overall": 91,
+        "attack": 54,
+        "creation": 68,
+        "defense": 93,
+        "physical": 91,
+        "goalkeeping": 12
+      },
+      {
+        "name": "Pablo Zabaleta",
+        "positions": [
+          "DF"
+        ],
+        "overall": 85,
+        "attack": 64,
+        "creation": 72,
+        "defense": 86,
+        "physical": 86,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Gael Clichy",
+        "positions": [
+          "DF"
+        ],
+        "overall": 84,
+        "attack": 65,
+        "creation": 74,
+        "defense": 83,
+        "physical": 83,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Yaya Toure",
+        "positions": [
+          "MF"
+        ],
+        "overall": 92,
+        "attack": 88,
+        "creation": 88,
+        "defense": 84,
+        "physical": 94,
+        "goalkeeping": 12
+      },
+      {
+        "name": "David Silva",
+        "positions": [
+          "MF"
+        ],
+        "overall": 91,
+        "attack": 82,
+        "creation": 95,
+        "defense": 52,
+        "physical": 72,
+        "goalkeeping": 9
+      },
+      {
+        "name": "Gareth Barry",
+        "positions": [
+          "MF"
+        ],
+        "overall": 84,
+        "attack": 64,
+        "creation": 80,
+        "defense": 85,
+        "physical": 82,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Sergio Aguero",
+        "positions": [
+          "FW"
+        ],
+        "overall": 92,
+        "attack": 94,
+        "creation": 84,
+        "defense": 38,
+        "physical": 85,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Carlos Tevez",
+        "positions": [
+          "FW"
+        ],
+        "overall": 88,
+        "attack": 89,
+        "creation": 83,
+        "defense": 54,
+        "physical": 88,
+        "goalkeeping": 11
+      }
+    ]
+  },
+  {
+    "id": "manchester-city-2023",
+    "league": "Premier League",
+    "club": "Manchester City",
+    "year": 2023,
+    "players": [
+      {
+        "name": "Ederson",
+        "positions": [
+          "GK"
+        ],
+        "overall": 89,
+        "attack": 20,
+        "creation": 55,
+        "defense": 44,
+        "physical": 78,
+        "goalkeeping": 89
+      },
+      {
+        "name": "Ruben Dias",
+        "positions": [
+          "DF"
+        ],
+        "overall": 91,
+        "attack": 50,
+        "creation": 70,
+        "defense": 93,
+        "physical": 90,
+        "goalkeeping": 11
+      },
+      {
+        "name": "John Stones",
+        "positions": [
+          "DF",
+          "MF"
+        ],
+        "overall": 89,
+        "attack": 62,
+        "creation": 84,
+        "defense": 89,
+        "physical": 84,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Kyle Walker",
+        "positions": [
+          "DF"
+        ],
+        "overall": 88,
+        "attack": 64,
+        "creation": 74,
+        "defense": 88,
+        "physical": 92,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Rodri",
+        "positions": [
+          "MF"
+        ],
+        "overall": 93,
+        "attack": 78,
+        "creation": 90,
+        "defense": 92,
+        "physical": 91,
+        "goalkeeping": 12
+      },
+      {
+        "name": "Kevin De Bruyne",
+        "positions": [
+          "MF"
+        ],
+        "overall": 95,
+        "attack": 89,
+        "creation": 98,
+        "defense": 66,
+        "physical": 83,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Bernardo Silva",
+        "positions": [
+          "MF",
+          "FW"
+        ],
+        "overall": 91,
+        "attack": 84,
+        "creation": 92,
+        "defense": 74,
+        "physical": 82,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Erling Haaland",
+        "positions": [
+          "FW"
+        ],
+        "overall": 95,
+        "attack": 98,
+        "creation": 76,
+        "defense": 42,
+        "physical": 95,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Jack Grealish",
+        "positions": [
+          "FW",
+          "MF"
+        ],
+        "overall": 87,
+        "attack": 81,
+        "creation": 88,
+        "defense": 54,
+        "physical": 80,
+        "goalkeeping": 10
+      }
+    ]
+  },
+  {
+    "id": "liverpool-2005",
+    "league": "Premier League",
+    "club": "Liverpool",
+    "year": 2005,
+    "players": [
+      {
+        "name": "Jerzy Dudek",
+        "positions": [
+          "GK"
+        ],
+        "overall": 83,
+        "attack": 13,
+        "creation": 36,
+        "defense": 38,
+        "physical": 74,
+        "goalkeeping": 85
+      },
+      {
+        "name": "Jamie Carragher",
+        "positions": [
+          "DF"
+        ],
+        "overall": 88,
+        "attack": 44,
+        "creation": 60,
+        "defense": 91,
+        "physical": 87,
+        "goalkeeping": 12
+      },
+      {
+        "name": "Sami Hyypia",
+        "positions": [
+          "DF"
+        ],
+        "overall": 87,
+        "attack": 54,
+        "creation": 62,
+        "defense": 89,
+        "physical": 88,
+        "goalkeeping": 12
+      },
+      {
+        "name": "John Arne Riise",
+        "positions": [
+          "DF",
+          "MF"
+        ],
+        "overall": 84,
+        "attack": 78,
+        "creation": 76,
+        "defense": 80,
+        "physical": 86,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Steven Gerrard",
+        "positions": [
+          "MF"
+        ],
+        "overall": 92,
+        "attack": 89,
+        "creation": 90,
+        "defense": 82,
+        "physical": 91,
+        "goalkeeping": 13
+      },
+      {
+        "name": "Xabi Alonso",
+        "positions": [
+          "MF"
+        ],
+        "overall": 88,
+        "attack": 72,
+        "creation": 92,
+        "defense": 81,
+        "physical": 78,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Luis Garcia",
+        "positions": [
+          "MF",
+          "FW"
+        ],
+        "overall": 84,
+        "attack": 84,
+        "creation": 82,
+        "defense": 46,
+        "physical": 74,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Milan Baros",
+        "positions": [
+          "FW"
+        ],
+        "overall": 81,
+        "attack": 83,
+        "creation": 72,
+        "defense": 36,
+        "physical": 78,
+        "goalkeeping": 10
+      }
+    ]
+  },
+  {
+    "id": "liverpool-2019",
+    "league": "Premier League",
+    "club": "Liverpool",
+    "year": 2019,
+    "players": [
+      {
+        "name": "Alisson",
+        "positions": [
+          "GK"
+        ],
+        "overall": 92,
+        "attack": 18,
+        "creation": 50,
+        "defense": 46,
+        "physical": 81,
+        "goalkeeping": 93
+      },
+      {
+        "name": "Virgil van Dijk",
+        "positions": [
+          "DF"
+        ],
+        "overall": 94,
+        "attack": 60,
+        "creation": 76,
+        "defense": 96,
+        "physical": 94,
+        "goalkeeping": 12
+      },
+      {
+        "name": "Trent Alexander-Arnold",
+        "positions": [
+          "DF"
+        ],
+        "overall": 89,
+        "attack": 76,
+        "creation": 92,
+        "defense": 80,
+        "physical": 81,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Andrew Robertson",
+        "positions": [
+          "DF"
+        ],
+        "overall": 89,
+        "attack": 72,
+        "creation": 86,
+        "defense": 86,
+        "physical": 89,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Fabinho",
+        "positions": [
+          "MF"
+        ],
+        "overall": 89,
+        "attack": 66,
+        "creation": 80,
+        "defense": 91,
+        "physical": 88,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Jordan Henderson",
+        "positions": [
+          "MF"
+        ],
+        "overall": 86,
+        "attack": 70,
+        "creation": 82,
+        "defense": 83,
+        "physical": 88,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Georginio Wijnaldum",
+        "positions": [
+          "MF"
+        ],
+        "overall": 86,
+        "attack": 78,
+        "creation": 81,
+        "defense": 80,
+        "physical": 86,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Mohamed Salah",
+        "positions": [
+          "FW"
+        ],
+        "overall": 93,
+        "attack": 95,
+        "creation": 86,
+        "defense": 44,
+        "physical": 85,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Sadio Mane",
+        "positions": [
+          "FW"
+        ],
+        "overall": 92,
+        "attack": 93,
+        "creation": 84,
+        "defense": 52,
+        "physical": 88,
+        "goalkeeping": 11
+      }
+    ]
+  },
+  {
+    "id": "leicester-city-2016",
+    "league": "Premier League",
+    "club": "Leicester City",
+    "year": 2016,
+    "players": [
+      {
+        "name": "Kasper Schmeichel",
+        "positions": [
+          "GK"
+        ],
+        "overall": 85,
+        "attack": 15,
+        "creation": 45,
+        "defense": 40,
+        "physical": 77,
+        "goalkeeping": 86
+      },
+      {
+        "name": "Wes Morgan",
+        "positions": [
+          "DF"
+        ],
+        "overall": 84,
+        "attack": 46,
+        "creation": 52,
+        "defense": 86,
+        "physical": 89,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Robert Huth",
+        "positions": [
+          "DF"
+        ],
+        "overall": 83,
+        "attack": 48,
+        "creation": 50,
+        "defense": 85,
+        "physical": 88,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Christian Fuchs",
+        "positions": [
+          "DF"
+        ],
+        "overall": 81,
+        "attack": 64,
+        "creation": 76,
+        "defense": 81,
+        "physical": 81,
+        "goalkeeping": 11
+      },
+      {
+        "name": "N'Golo Kante",
+        "positions": [
+          "MF"
+        ],
+        "overall": 90,
+        "attack": 66,
+        "creation": 78,
+        "defense": 94,
+        "physical": 92,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Danny Drinkwater",
+        "positions": [
+          "MF"
+        ],
+        "overall": 82,
+        "attack": 66,
+        "creation": 82,
+        "defense": 76,
+        "physical": 80,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Marc Albrighton",
+        "positions": [
+          "MF"
+        ],
+        "overall": 80,
+        "attack": 70,
+        "creation": 82,
+        "defense": 68,
+        "physical": 79,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Riyad Mahrez",
+        "positions": [
+          "FW",
+          "MF"
+        ],
+        "overall": 90,
+        "attack": 89,
+        "creation": 91,
+        "defense": 38,
+        "physical": 75,
+        "goalkeeping": 9
+      },
+      {
+        "name": "Jamie Vardy",
+        "positions": [
+          "FW"
+        ],
+        "overall": 90,
+        "attack": 92,
+        "creation": 76,
+        "defense": 46,
+        "physical": 88,
+        "goalkeeping": 11
+      }
+    ]
+  },
+  {
+    "id": "barcelona-2009",
+    "league": "La Liga",
+    "club": "Barcelona",
+    "year": 2009,
+    "players": [
+      {
+        "name": "Victor Valdes",
+        "positions": [
+          "GK"
+        ],
+        "overall": 87,
+        "attack": 16,
+        "creation": 48,
+        "defense": 42,
+        "physical": 76,
+        "goalkeeping": 88
+      },
+      {
+        "name": "Carles Puyol",
+        "positions": [
+          "DF"
+        ],
+        "overall": 92,
+        "attack": 52,
+        "creation": 64,
+        "defense": 94,
+        "physical": 92,
+        "goalkeeping": 12
+      },
+      {
+        "name": "Gerard Pique",
+        "positions": [
+          "DF"
+        ],
+        "overall": 89,
+        "attack": 60,
+        "creation": 76,
+        "defense": 90,
+        "physical": 86,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Dani Alves",
+        "positions": [
+          "DF",
+          "MF"
+        ],
+        "overall": 90,
+        "attack": 80,
+        "creation": 88,
+        "defense": 84,
+        "physical": 88,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Xavi",
+        "positions": [
+          "MF"
+        ],
+        "overall": 94,
+        "attack": 78,
+        "creation": 98,
+        "defense": 72,
+        "physical": 76,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Andres Iniesta",
+        "positions": [
+          "MF"
+        ],
+        "overall": 93,
+        "attack": 84,
+        "creation": 96,
+        "defense": 66,
+        "physical": 75,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Yaya Toure",
+        "positions": [
+          "MF"
+        ],
+        "overall": 88,
+        "attack": 76,
+        "creation": 82,
+        "defense": 88,
+        "physical": 91,
+        "goalkeeping": 12
+      },
+      {
+        "name": "Lionel Messi",
+        "positions": [
+          "FW",
+          "MF"
+        ],
+        "overall": 96,
+        "attack": 96,
+        "creation": 95,
+        "defense": 36,
+        "physical": 84,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Samuel Eto'o",
+        "positions": [
+          "FW"
+        ],
+        "overall": 92,
+        "attack": 94,
+        "creation": 82,
+        "defense": 46,
+        "physical": 88,
+        "goalkeeping": 11
+      }
+    ]
+  },
+  {
+    "id": "barcelona-2011",
+    "league": "La Liga",
+    "club": "Barcelona",
+    "year": 2011,
+    "players": [
+      {
+        "name": "Victor Valdes",
+        "positions": [
+          "GK"
+        ],
+        "overall": 88,
+        "attack": 16,
+        "creation": 50,
+        "defense": 43,
+        "physical": 77,
+        "goalkeeping": 89
+      },
+      {
+        "name": "Carles Puyol",
+        "positions": [
+          "DF"
+        ],
+        "overall": 91,
+        "attack": 50,
+        "creation": 63,
+        "defense": 93,
+        "physical": 90,
+        "goalkeeping": 12
+      },
+      {
+        "name": "Gerard Pique",
+        "positions": [
+          "DF"
+        ],
+        "overall": 91,
+        "attack": 62,
+        "creation": 78,
+        "defense": 92,
+        "physical": 87,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Dani Alves",
+        "positions": [
+          "DF",
+          "MF"
+        ],
+        "overall": 91,
+        "attack": 81,
+        "creation": 89,
+        "defense": 85,
+        "physical": 89,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Xavi",
+        "positions": [
+          "MF"
+        ],
+        "overall": 95,
+        "attack": 80,
+        "creation": 99,
+        "defense": 73,
+        "physical": 76,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Andres Iniesta",
+        "positions": [
+          "MF",
+          "FW"
+        ],
+        "overall": 94,
+        "attack": 86,
+        "creation": 97,
+        "defense": 67,
+        "physical": 76,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Sergio Busquets",
+        "positions": [
+          "MF"
+        ],
+        "overall": 91,
+        "attack": 62,
+        "creation": 89,
+        "defense": 91,
+        "physical": 82,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Lionel Messi",
+        "positions": [
+          "FW",
+          "MF"
+        ],
+        "overall": 98,
+        "attack": 99,
+        "creation": 97,
+        "defense": 38,
+        "physical": 85,
+        "goalkeeping": 10
+      },
+      {
+        "name": "David Villa",
+        "positions": [
+          "FW"
+        ],
+        "overall": 91,
+        "attack": 93,
+        "creation": 84,
+        "defense": 42,
+        "physical": 80,
+        "goalkeeping": 10
+      }
+    ]
+  },
+  {
+    "id": "barcelona-2015",
+    "league": "La Liga",
+    "club": "Barcelona",
+    "year": 2015,
+    "players": [
+      {
+        "name": "Marc-Andre ter Stegen",
+        "positions": [
+          "GK"
+        ],
+        "overall": 86,
+        "attack": 17,
+        "creation": 52,
+        "defense": 40,
+        "physical": 76,
+        "goalkeeping": 87
+      },
+      {
+        "name": "Gerard Pique",
+        "positions": [
+          "DF"
+        ],
+        "overall": 90,
+        "attack": 60,
+        "creation": 76,
+        "defense": 91,
+        "physical": 86,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Jordi Alba",
+        "positions": [
+          "DF"
+        ],
+        "overall": 88,
+        "attack": 74,
+        "creation": 83,
+        "defense": 84,
+        "physical": 86,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Dani Alves",
+        "positions": [
+          "DF"
+        ],
+        "overall": 88,
+        "attack": 78,
+        "creation": 86,
+        "defense": 82,
+        "physical": 84,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Sergio Busquets",
+        "positions": [
+          "MF"
+        ],
+        "overall": 90,
+        "attack": 60,
+        "creation": 88,
+        "defense": 90,
+        "physical": 81,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Andres Iniesta",
+        "positions": [
+          "MF"
+        ],
+        "overall": 90,
+        "attack": 80,
+        "creation": 94,
+        "defense": 64,
+        "physical": 72,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Ivan Rakitic",
+        "positions": [
+          "MF"
+        ],
+        "overall": 89,
+        "attack": 82,
+        "creation": 89,
+        "defense": 78,
+        "physical": 83,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Lionel Messi",
+        "positions": [
+          "FW",
+          "MF"
+        ],
+        "overall": 97,
+        "attack": 98,
+        "creation": 98,
+        "defense": 36,
+        "physical": 84,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Luis Suarez",
+        "positions": [
+          "FW"
+        ],
+        "overall": 94,
+        "attack": 96,
+        "creation": 87,
+        "defense": 46,
+        "physical": 88,
+        "goalkeeping": 12
+      }
+    ]
+  },
+  {
+    "id": "barcelona-2020",
+    "league": "La Liga",
+    "club": "Barcelona",
+    "year": 2020,
+    "players": [
+      {
+        "name": "Marc-Andre ter Stegen",
+        "positions": [
+          "GK"
+        ],
+        "overall": 88,
+        "attack": 18,
+        "creation": 54,
+        "defense": 42,
+        "physical": 77,
+        "goalkeeping": 89
+      },
+      {
+        "name": "Gerard Pique",
+        "positions": [
+          "DF"
+        ],
+        "overall": 84,
+        "attack": 54,
+        "creation": 70,
+        "defense": 85,
+        "physical": 79,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Jordi Alba",
+        "positions": [
+          "DF"
+        ],
+        "overall": 84,
+        "attack": 72,
+        "creation": 81,
+        "defense": 79,
+        "physical": 80,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Clement Lenglet",
+        "positions": [
+          "DF"
+        ],
+        "overall": 80,
+        "attack": 46,
+        "creation": 66,
+        "defense": 81,
+        "physical": 77,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Sergio Busquets",
+        "positions": [
+          "MF"
+        ],
+        "overall": 85,
+        "attack": 56,
+        "creation": 84,
+        "defense": 83,
+        "physical": 74,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Frenkie de Jong",
+        "positions": [
+          "MF"
+        ],
+        "overall": 85,
+        "attack": 70,
+        "creation": 87,
+        "defense": 78,
+        "physical": 80,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Arturo Vidal",
+        "positions": [
+          "MF"
+        ],
+        "overall": 83,
+        "attack": 76,
+        "creation": 76,
+        "defense": 82,
+        "physical": 86,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Lionel Messi",
+        "positions": [
+          "FW",
+          "MF"
+        ],
+        "overall": 94,
+        "attack": 94,
+        "creation": 96,
+        "defense": 32,
+        "physical": 77,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Luis Suarez",
+        "positions": [
+          "FW"
+        ],
+        "overall": 87,
+        "attack": 89,
+        "creation": 81,
+        "defense": 40,
+        "physical": 80,
+        "goalkeeping": 11
+      }
+    ]
+  },
+  {
+    "id": "barcelona-2022",
+    "league": "La Liga",
+    "club": "Barcelona",
+    "year": 2022,
+    "players": [
+      {
+        "name": "Marc-Andre ter Stegen",
+        "positions": [
+          "GK"
+        ],
+        "overall": 85,
+        "attack": 17,
+        "creation": 50,
+        "defense": 40,
+        "physical": 75,
+        "goalkeeping": 86
+      },
+      {
+        "name": "Ronald Araujo",
+        "positions": [
+          "DF"
+        ],
+        "overall": 85,
+        "attack": 50,
+        "creation": 62,
+        "defense": 87,
+        "physical": 89,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Jordi Alba",
+        "positions": [
+          "DF"
+        ],
+        "overall": 83,
+        "attack": 70,
+        "creation": 82,
+        "defense": 77,
+        "physical": 78,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Gerard Pique",
+        "positions": [
+          "DF"
+        ],
+        "overall": 81,
+        "attack": 52,
+        "creation": 68,
+        "defense": 82,
+        "physical": 75,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Pedri",
+        "positions": [
+          "MF"
+        ],
+        "overall": 86,
+        "attack": 74,
+        "creation": 90,
+        "defense": 70,
+        "physical": 74,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Frenkie de Jong",
+        "positions": [
+          "MF"
+        ],
+        "overall": 85,
+        "attack": 72,
+        "creation": 87,
+        "defense": 78,
+        "physical": 81,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Sergio Busquets",
+        "positions": [
+          "MF"
+        ],
+        "overall": 83,
+        "attack": 54,
+        "creation": 84,
+        "defense": 81,
+        "physical": 71,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Pierre-Emerick Aubameyang",
+        "positions": [
+          "FW"
+        ],
+        "overall": 84,
+        "attack": 86,
+        "creation": 74,
+        "defense": 35,
+        "physical": 80,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Ousmane Dembele",
+        "positions": [
+          "FW",
+          "MF"
+        ],
+        "overall": 84,
+        "attack": 82,
+        "creation": 87,
+        "defense": 36,
+        "physical": 78,
+        "goalkeeping": 9
+      }
+    ]
+  },
+  {
+    "id": "real-madrid-2002",
+    "league": "La Liga",
+    "club": "Real Madrid",
+    "year": 2002,
+    "players": [
+      {
+        "name": "Iker Casillas",
+        "positions": [
+          "GK"
+        ],
+        "overall": 90,
+        "attack": 14,
+        "creation": 40,
+        "defense": 44,
+        "physical": 80,
+        "goalkeeping": 92
+      },
+      {
+        "name": "Roberto Carlos",
+        "positions": [
+          "DF"
+        ],
+        "overall": 93,
+        "attack": 86,
+        "creation": 85,
+        "defense": 86,
+        "physical": 92,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Fernando Hierro",
+        "positions": [
+          "DF"
+        ],
+        "overall": 90,
+        "attack": 68,
+        "creation": 74,
+        "defense": 91,
+        "physical": 88,
+        "goalkeeping": 12
+      },
+      {
+        "name": "Michel Salgado",
+        "positions": [
+          "DF"
+        ],
+        "overall": 86,
+        "attack": 62,
+        "creation": 72,
+        "defense": 87,
+        "physical": 86,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Zinedine Zidane",
+        "positions": [
+          "MF"
+        ],
+        "overall": 96,
+        "attack": 90,
+        "creation": 98,
+        "defense": 64,
+        "physical": 85,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Claude Makelele",
+        "positions": [
+          "MF"
+        ],
+        "overall": 90,
+        "attack": 52,
+        "creation": 77,
+        "defense": 94,
+        "physical": 88,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Luis Figo",
+        "positions": [
+          "MF",
+          "FW"
+        ],
+        "overall": 93,
+        "attack": 90,
+        "creation": 95,
+        "defense": 50,
+        "physical": 83,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Raul",
+        "positions": [
+          "FW"
+        ],
+        "overall": 93,
+        "attack": 94,
+        "creation": 86,
+        "defense": 48,
+        "physical": 83,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Fernando Morientes",
+        "positions": [
+          "FW"
+        ],
+        "overall": 87,
+        "attack": 89,
+        "creation": 76,
+        "defense": 42,
+        "physical": 85,
+        "goalkeeping": 11
+      }
+    ]
+  },
+  {
+    "id": "real-madrid-2012",
+    "league": "La Liga",
+    "club": "Real Madrid",
+    "year": 2012,
+    "players": [
+      {
+        "name": "Iker Casillas",
+        "positions": [
+          "GK"
+        ],
+        "overall": 91,
+        "attack": 14,
+        "creation": 42,
+        "defense": 45,
+        "physical": 80,
+        "goalkeeping": 92
+      },
+      {
+        "name": "Sergio Ramos",
+        "positions": [
+          "DF"
+        ],
+        "overall": 91,
+        "attack": 68,
+        "creation": 72,
+        "defense": 92,
+        "physical": 91,
+        "goalkeeping": 12
+      },
+      {
+        "name": "Pepe",
+        "positions": [
+          "DF"
+        ],
+        "overall": 89,
+        "attack": 50,
+        "creation": 62,
+        "defense": 91,
+        "physical": 91,
+        "goalkeeping": 12
+      },
+      {
+        "name": "Marcelo",
+        "positions": [
+          "DF"
+        ],
+        "overall": 88,
+        "attack": 78,
+        "creation": 86,
+        "defense": 80,
+        "physical": 83,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Xabi Alonso",
+        "positions": [
+          "MF"
+        ],
+        "overall": 91,
+        "attack": 74,
+        "creation": 94,
+        "defense": 85,
+        "physical": 81,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Mesut Ozil",
+        "positions": [
+          "MF"
+        ],
+        "overall": 91,
+        "attack": 80,
+        "creation": 96,
+        "defense": 40,
+        "physical": 72,
+        "goalkeeping": 9
+      },
+      {
+        "name": "Angel Di Maria",
+        "positions": [
+          "MF",
+          "FW"
+        ],
+        "overall": 88,
+        "attack": 85,
+        "creation": 90,
+        "defense": 52,
+        "physical": 79,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Cristiano Ronaldo",
+        "positions": [
+          "FW"
+        ],
+        "overall": 97,
+        "attack": 98,
+        "creation": 88,
+        "defense": 38,
+        "physical": 94,
+        "goalkeeping": 12
+      },
+      {
+        "name": "Karim Benzema",
+        "positions": [
+          "FW"
+        ],
+        "overall": 89,
+        "attack": 90,
+        "creation": 85,
+        "defense": 42,
+        "physical": 83,
+        "goalkeeping": 10
+      }
+    ]
+  },
+  {
+    "id": "real-madrid-2017",
+    "league": "La Liga",
+    "club": "Real Madrid",
+    "year": 2017,
+    "players": [
+      {
+        "name": "Keylor Navas",
+        "positions": [
+          "GK"
+        ],
+        "overall": 89,
+        "attack": 14,
+        "creation": 40,
+        "defense": 42,
+        "physical": 80,
+        "goalkeeping": 90
+      },
+      {
+        "name": "Sergio Ramos",
+        "positions": [
+          "DF"
+        ],
+        "overall": 93,
+        "attack": 74,
+        "creation": 75,
+        "defense": 94,
+        "physical": 92,
+        "goalkeeping": 12
+      },
+      {
+        "name": "Marcelo",
+        "positions": [
+          "DF",
+          "MF"
+        ],
+        "overall": 91,
+        "attack": 82,
+        "creation": 90,
+        "defense": 82,
+        "physical": 84,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Dani Carvajal",
+        "positions": [
+          "DF"
+        ],
+        "overall": 89,
+        "attack": 68,
+        "creation": 80,
+        "defense": 89,
+        "physical": 87,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Luka Modric",
+        "positions": [
+          "MF"
+        ],
+        "overall": 94,
+        "attack": 82,
+        "creation": 96,
+        "defense": 82,
+        "physical": 82,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Toni Kroos",
+        "positions": [
+          "MF"
+        ],
+        "overall": 92,
+        "attack": 78,
+        "creation": 96,
+        "defense": 78,
+        "physical": 79,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Casemiro",
+        "positions": [
+          "MF"
+        ],
+        "overall": 90,
+        "attack": 68,
+        "creation": 76,
+        "defense": 92,
+        "physical": 91,
+        "goalkeeping": 12
+      },
+      {
+        "name": "Cristiano Ronaldo",
+        "positions": [
+          "FW"
+        ],
+        "overall": 97,
+        "attack": 99,
+        "creation": 86,
+        "defense": 36,
+        "physical": 92,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Karim Benzema",
+        "positions": [
+          "FW"
+        ],
+        "overall": 90,
+        "attack": 90,
+        "creation": 87,
+        "defense": 42,
+        "physical": 84,
+        "goalkeeping": 10
+      }
+    ]
+  },
+  {
+    "id": "real-madrid-2019",
+    "league": "La Liga",
+    "club": "Real Madrid",
+    "year": 2019,
+    "players": [
+      {
+        "name": "Thibaut Courtois",
+        "positions": [
+          "GK"
+        ],
+        "overall": 86,
+        "attack": 13,
+        "creation": 40,
+        "defense": 40,
+        "physical": 78,
+        "goalkeeping": 87
+      },
+      {
+        "name": "Sergio Ramos",
+        "positions": [
+          "DF"
+        ],
+        "overall": 89,
+        "attack": 70,
+        "creation": 72,
+        "defense": 89,
+        "physical": 88,
+        "goalkeeping": 12
+      },
+      {
+        "name": "Raphael Varane",
+        "positions": [
+          "DF"
+        ],
+        "overall": 86,
+        "attack": 48,
+        "creation": 66,
+        "defense": 87,
+        "physical": 85,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Marcelo",
+        "positions": [
+          "DF"
+        ],
+        "overall": 82,
+        "attack": 74,
+        "creation": 83,
+        "defense": 72,
+        "physical": 76,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Luka Modric",
+        "positions": [
+          "MF"
+        ],
+        "overall": 89,
+        "attack": 76,
+        "creation": 91,
+        "defense": 77,
+        "physical": 77,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Toni Kroos",
+        "positions": [
+          "MF"
+        ],
+        "overall": 87,
+        "attack": 73,
+        "creation": 91,
+        "defense": 73,
+        "physical": 75,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Casemiro",
+        "positions": [
+          "MF"
+        ],
+        "overall": 86,
+        "attack": 64,
+        "creation": 72,
+        "defense": 88,
+        "physical": 88,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Karim Benzema",
+        "positions": [
+          "FW"
+        ],
+        "overall": 89,
+        "attack": 90,
+        "creation": 86,
+        "defense": 42,
+        "physical": 83,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Vinicius Junior",
+        "positions": [
+          "FW"
+        ],
+        "overall": 80,
+        "attack": 79,
+        "creation": 80,
+        "defense": 36,
+        "physical": 78,
+        "goalkeeping": 9
+      }
+    ]
+  },
+  {
+    "id": "real-madrid-2022",
+    "league": "La Liga",
+    "club": "Real Madrid",
+    "year": 2022,
+    "players": [
+      {
+        "name": "Thibaut Courtois",
+        "positions": [
+          "GK"
+        ],
+        "overall": 93,
+        "attack": 14,
+        "creation": 44,
+        "defense": 46,
+        "physical": 84,
+        "goalkeeping": 95
+      },
+      {
+        "name": "Eder Militao",
+        "positions": [
+          "DF"
+        ],
+        "overall": 88,
+        "attack": 54,
+        "creation": 68,
+        "defense": 89,
+        "physical": 89,
+        "goalkeeping": 11
+      },
+      {
+        "name": "David Alaba",
+        "positions": [
+          "DF"
+        ],
+        "overall": 88,
+        "attack": 70,
+        "creation": 82,
+        "defense": 88,
+        "physical": 82,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Dani Carvajal",
+        "positions": [
+          "DF"
+        ],
+        "overall": 86,
+        "attack": 66,
+        "creation": 78,
+        "defense": 86,
+        "physical": 84,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Luka Modric",
+        "positions": [
+          "MF"
+        ],
+        "overall": 91,
+        "attack": 79,
+        "creation": 94,
+        "defense": 78,
+        "physical": 79,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Toni Kroos",
+        "positions": [
+          "MF"
+        ],
+        "overall": 89,
+        "attack": 75,
+        "creation": 93,
+        "defense": 75,
+        "physical": 76,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Casemiro",
+        "positions": [
+          "MF"
+        ],
+        "overall": 89,
+        "attack": 66,
+        "creation": 75,
+        "defense": 91,
+        "physical": 90,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Karim Benzema",
+        "positions": [
+          "FW"
+        ],
+        "overall": 95,
+        "attack": 96,
+        "creation": 91,
+        "defense": 44,
+        "physical": 86,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Vinicius Junior",
+        "positions": [
+          "FW"
+        ],
+        "overall": 91,
+        "attack": 92,
+        "creation": 88,
+        "defense": 42,
+        "physical": 85,
+        "goalkeeping": 9
+      }
+    ]
+  },
+  {
+    "id": "valencia-2004",
+    "league": "La Liga",
+    "club": "Valencia",
+    "year": 2004,
+    "players": [
+      {
+        "name": "Santiago Canizares",
+        "positions": [
+          "GK"
+        ],
+        "overall": 89,
+        "attack": 14,
+        "creation": 42,
+        "defense": 44,
+        "physical": 78,
+        "goalkeeping": 90
+      },
+      {
+        "name": "Roberto Ayala",
+        "positions": [
+          "DF"
+        ],
+        "overall": 91,
+        "attack": 52,
+        "creation": 64,
+        "defense": 93,
+        "physical": 89,
+        "goalkeeping": 12
+      },
+      {
+        "name": "Carlos Marchena",
+        "positions": [
+          "DF",
+          "MF"
+        ],
+        "overall": 86,
+        "attack": 54,
+        "creation": 66,
+        "defense": 88,
+        "physical": 87,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Amedeo Carboni",
+        "positions": [
+          "DF"
+        ],
+        "overall": 84,
+        "attack": 58,
+        "creation": 72,
+        "defense": 85,
+        "physical": 81,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Ruben Baraja",
+        "positions": [
+          "MF"
+        ],
+        "overall": 90,
+        "attack": 82,
+        "creation": 88,
+        "defense": 84,
+        "physical": 86,
+        "goalkeeping": 11
+      },
+      {
+        "name": "David Albelda",
+        "positions": [
+          "MF"
+        ],
+        "overall": 88,
+        "attack": 58,
+        "creation": 76,
+        "defense": 90,
+        "physical": 88,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Pablo Aimar",
+        "positions": [
+          "MF",
+          "FW"
+        ],
+        "overall": 89,
+        "attack": 83,
+        "creation": 92,
+        "defense": 44,
+        "physical": 72,
+        "goalkeeping": 9
+      },
+      {
+        "name": "Vicente",
+        "positions": [
+          "MF",
+          "FW"
+        ],
+        "overall": 89,
+        "attack": 87,
+        "creation": 89,
+        "defense": 48,
+        "physical": 82,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Mista",
+        "positions": [
+          "FW"
+        ],
+        "overall": 86,
+        "attack": 88,
+        "creation": 76,
+        "defense": 42,
+        "physical": 82,
+        "goalkeeping": 10
+      }
+    ]
+  },
+  {
+    "id": "deportivo-la-coruna-2000",
+    "league": "La Liga",
+    "club": "Deportivo La Coruna",
+    "year": 2000,
+    "players": [
+      {
+        "name": "Jacques Songo'o",
+        "positions": [
+          "GK"
+        ],
+        "overall": 84,
+        "attack": 14,
+        "creation": 36,
+        "defense": 40,
+        "physical": 78,
+        "goalkeeping": 85
+      },
+      {
+        "name": "Noureddine Naybet",
+        "positions": [
+          "DF"
+        ],
+        "overall": 88,
+        "attack": 52,
+        "creation": 66,
+        "defense": 90,
+        "physical": 87,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Donato",
+        "positions": [
+          "DF",
+          "MF"
+        ],
+        "overall": 85,
+        "attack": 66,
+        "creation": 74,
+        "defense": 86,
+        "physical": 84,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Manuel Pablo",
+        "positions": [
+          "DF"
+        ],
+        "overall": 84,
+        "attack": 62,
+        "creation": 72,
+        "defense": 85,
+        "physical": 85,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Mauro Silva",
+        "positions": [
+          "MF"
+        ],
+        "overall": 89,
+        "attack": 56,
+        "creation": 78,
+        "defense": 91,
+        "physical": 89,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Djalminha",
+        "positions": [
+          "MF",
+          "FW"
+        ],
+        "overall": 90,
+        "attack": 86,
+        "creation": 93,
+        "defense": 44,
+        "physical": 76,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Fran",
+        "positions": [
+          "MF"
+        ],
+        "overall": 86,
+        "attack": 78,
+        "creation": 88,
+        "defense": 58,
+        "physical": 76,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Roy Makaay",
+        "positions": [
+          "FW"
+        ],
+        "overall": 89,
+        "attack": 91,
+        "creation": 77,
+        "defense": 38,
+        "physical": 84,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Pauleta",
+        "positions": [
+          "FW"
+        ],
+        "overall": 84,
+        "attack": 86,
+        "creation": 74,
+        "defense": 38,
+        "physical": 80,
+        "goalkeeping": 10
+      }
+    ]
+  },
+  {
+    "id": "atletico-madrid-2014",
+    "league": "La Liga",
+    "club": "Atletico Madrid",
+    "year": 2014,
+    "players": [
+      {
+        "name": "Thibaut Courtois",
+        "positions": [
+          "GK"
+        ],
+        "overall": 90,
+        "attack": 13,
+        "creation": 42,
+        "defense": 44,
+        "physical": 82,
+        "goalkeeping": 91
+      },
+      {
+        "name": "Diego Godin",
+        "positions": [
+          "DF"
+        ],
+        "overall": 92,
+        "attack": 58,
+        "creation": 66,
+        "defense": 94,
+        "physical": 91,
+        "goalkeeping": 12
+      },
+      {
+        "name": "Miranda",
+        "positions": [
+          "DF"
+        ],
+        "overall": 88,
+        "attack": 52,
+        "creation": 64,
+        "defense": 90,
+        "physical": 87,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Filipe Luis",
+        "positions": [
+          "DF"
+        ],
+        "overall": 88,
+        "attack": 70,
+        "creation": 80,
+        "defense": 88,
+        "physical": 86,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Gabi",
+        "positions": [
+          "MF"
+        ],
+        "overall": 88,
+        "attack": 68,
+        "creation": 84,
+        "defense": 88,
+        "physical": 87,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Koke",
+        "positions": [
+          "MF"
+        ],
+        "overall": 88,
+        "attack": 76,
+        "creation": 89,
+        "defense": 80,
+        "physical": 84,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Arda Turan",
+        "positions": [
+          "MF",
+          "FW"
+        ],
+        "overall": 87,
+        "attack": 82,
+        "creation": 88,
+        "defense": 62,
+        "physical": 81,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Diego Costa",
+        "positions": [
+          "FW"
+        ],
+        "overall": 91,
+        "attack": 92,
+        "creation": 78,
+        "defense": 50,
+        "physical": 92,
+        "goalkeeping": 11
+      },
+      {
+        "name": "David Villa",
+        "positions": [
+          "FW"
+        ],
+        "overall": 85,
+        "attack": 87,
+        "creation": 81,
+        "defense": 42,
+        "physical": 76,
+        "goalkeeping": 10
+      }
+    ]
+  },
+  {
+    "id": "ac-milan-2007",
+    "league": "Serie A",
+    "club": "AC Milan",
+    "year": 2007,
+    "players": [
+      {
+        "name": "Dida",
+        "positions": [
+          "GK"
+        ],
+        "overall": 87,
+        "attack": 13,
+        "creation": 38,
+        "defense": 42,
+        "physical": 79,
+        "goalkeeping": 88
+      },
+      {
+        "name": "Paolo Maldini",
+        "positions": [
+          "DF"
+        ],
+        "overall": 92,
+        "attack": 56,
+        "creation": 74,
+        "defense": 95,
+        "physical": 86,
+        "goalkeeping": 12
+      },
+      {
+        "name": "Alessandro Nesta",
+        "positions": [
+          "DF"
+        ],
+        "overall": 93,
+        "attack": 48,
+        "creation": 72,
+        "defense": 96,
+        "physical": 88,
+        "goalkeeping": 12
+      },
+      {
+        "name": "Cafu",
+        "positions": [
+          "DF"
+        ],
+        "overall": 87,
+        "attack": 72,
+        "creation": 82,
+        "defense": 84,
+        "physical": 84,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Andrea Pirlo",
+        "positions": [
+          "MF"
+        ],
+        "overall": 93,
+        "attack": 80,
+        "creation": 98,
+        "defense": 72,
+        "physical": 74,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Clarence Seedorf",
+        "positions": [
+          "MF"
+        ],
+        "overall": 90,
+        "attack": 84,
+        "creation": 90,
+        "defense": 74,
+        "physical": 86,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Gennaro Gattuso",
+        "positions": [
+          "MF"
+        ],
+        "overall": 89,
+        "attack": 56,
+        "creation": 70,
+        "defense": 92,
+        "physical": 93,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Kaka",
+        "positions": [
+          "MF",
+          "FW"
+        ],
+        "overall": 95,
+        "attack": 94,
+        "creation": 93,
+        "defense": 46,
+        "physical": 88,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Filippo Inzaghi",
+        "positions": [
+          "FW"
+        ],
+        "overall": 90,
+        "attack": 93,
+        "creation": 72,
+        "defense": 32,
+        "physical": 78,
+        "goalkeeping": 10
+      }
+    ]
+  },
+  {
+    "id": "ac-milan-2011",
+    "league": "Serie A",
+    "club": "AC Milan",
+    "year": 2011,
+    "players": [
+      {
+        "name": "Christian Abbiati",
+        "positions": [
+          "GK"
+        ],
+        "overall": 85,
+        "attack": 12,
+        "creation": 38,
+        "defense": 40,
+        "physical": 76,
+        "goalkeeping": 86
+      },
+      {
+        "name": "Thiago Silva",
+        "positions": [
+          "DF"
+        ],
+        "overall": 92,
+        "attack": 56,
+        "creation": 76,
+        "defense": 94,
+        "physical": 89,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Alessandro Nesta",
+        "positions": [
+          "DF"
+        ],
+        "overall": 88,
+        "attack": 46,
+        "creation": 70,
+        "defense": 91,
+        "physical": 80,
+        "goalkeeping": 12
+      },
+      {
+        "name": "Ignazio Abate",
+        "positions": [
+          "DF"
+        ],
+        "overall": 82,
+        "attack": 64,
+        "creation": 72,
+        "defense": 81,
+        "physical": 86,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Mark van Bommel",
+        "positions": [
+          "MF"
+        ],
+        "overall": 85,
+        "attack": 66,
+        "creation": 78,
+        "defense": 87,
+        "physical": 86,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Clarence Seedorf",
+        "positions": [
+          "MF"
+        ],
+        "overall": 86,
+        "attack": 78,
+        "creation": 87,
+        "defense": 68,
+        "physical": 79,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Kevin-Prince Boateng",
+        "positions": [
+          "MF",
+          "FW"
+        ],
+        "overall": 86,
+        "attack": 83,
+        "creation": 82,
+        "defense": 70,
+        "physical": 88,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Zlatan Ibrahimovic",
+        "positions": [
+          "FW"
+        ],
+        "overall": 92,
+        "attack": 94,
+        "creation": 86,
+        "defense": 42,
+        "physical": 93,
+        "goalkeeping": 12
+      },
+      {
+        "name": "Robinho",
+        "positions": [
+          "FW"
+        ],
+        "overall": 85,
+        "attack": 84,
+        "creation": 86,
+        "defense": 36,
+        "physical": 74,
+        "goalkeeping": 9
+      }
+    ]
+  },
+  {
+    "id": "ac-milan-2015",
+    "league": "Serie A",
+    "club": "AC Milan",
+    "year": 2015,
+    "players": [
+      {
+        "name": "Diego Lopez",
+        "positions": [
+          "GK"
+        ],
+        "overall": 82,
+        "attack": 12,
+        "creation": 38,
+        "defense": 38,
+        "physical": 75,
+        "goalkeeping": 83
+      },
+      {
+        "name": "Alex",
+        "positions": [
+          "DF"
+        ],
+        "overall": 79,
+        "attack": 50,
+        "creation": 56,
+        "defense": 80,
+        "physical": 83,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Philippe Mexes",
+        "positions": [
+          "DF"
+        ],
+        "overall": 78,
+        "attack": 54,
+        "creation": 62,
+        "defense": 79,
+        "physical": 81,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Ignazio Abate",
+        "positions": [
+          "DF"
+        ],
+        "overall": 78,
+        "attack": 62,
+        "creation": 70,
+        "defense": 77,
+        "physical": 82,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Nigel de Jong",
+        "positions": [
+          "MF"
+        ],
+        "overall": 81,
+        "attack": 54,
+        "creation": 68,
+        "defense": 84,
+        "physical": 85,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Giacomo Bonaventura",
+        "positions": [
+          "MF",
+          "FW"
+        ],
+        "overall": 82,
+        "attack": 78,
+        "creation": 83,
+        "defense": 64,
+        "physical": 77,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Keisuke Honda",
+        "positions": [
+          "MF",
+          "FW"
+        ],
+        "overall": 80,
+        "attack": 77,
+        "creation": 83,
+        "defense": 56,
+        "physical": 74,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Jeremy Menez",
+        "positions": [
+          "FW"
+        ],
+        "overall": 83,
+        "attack": 85,
+        "creation": 80,
+        "defense": 34,
+        "physical": 76,
+        "goalkeeping": 9
+      },
+      {
+        "name": "Mattia Destro",
+        "positions": [
+          "FW"
+        ],
+        "overall": 77,
+        "attack": 79,
+        "creation": 66,
+        "defense": 34,
+        "physical": 76,
+        "goalkeeping": 10
+      }
+    ]
+  },
+  {
+    "id": "ac-milan-2022",
+    "league": "Serie A",
+    "club": "AC Milan",
+    "year": 2022,
+    "players": [
+      {
+        "name": "Mike Maignan",
+        "positions": [
+          "GK"
+        ],
+        "overall": 90,
+        "attack": 18,
+        "creation": 52,
+        "defense": 44,
+        "physical": 82,
+        "goalkeeping": 91
+      },
+      {
+        "name": "Fikayo Tomori",
+        "positions": [
+          "DF"
+        ],
+        "overall": 86,
+        "attack": 48,
+        "creation": 66,
+        "defense": 87,
+        "physical": 88,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Theo Hernandez",
+        "positions": [
+          "DF"
+        ],
+        "overall": 89,
+        "attack": 82,
+        "creation": 83,
+        "defense": 82,
+        "physical": 91,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Pierre Kalulu",
+        "positions": [
+          "DF"
+        ],
+        "overall": 83,
+        "attack": 52,
+        "creation": 68,
+        "defense": 84,
+        "physical": 83,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Sandro Tonali",
+        "positions": [
+          "MF"
+        ],
+        "overall": 86,
+        "attack": 74,
+        "creation": 85,
+        "defense": 83,
+        "physical": 86,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Ismael Bennacer",
+        "positions": [
+          "MF"
+        ],
+        "overall": 85,
+        "attack": 68,
+        "creation": 86,
+        "defense": 81,
+        "physical": 79,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Franck Kessie",
+        "positions": [
+          "MF"
+        ],
+        "overall": 86,
+        "attack": 74,
+        "creation": 78,
+        "defense": 85,
+        "physical": 91,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Rafael Leao",
+        "positions": [
+          "FW"
+        ],
+        "overall": 90,
+        "attack": 91,
+        "creation": 86,
+        "defense": 38,
+        "physical": 88,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Olivier Giroud",
+        "positions": [
+          "FW"
+        ],
+        "overall": 85,
+        "attack": 87,
+        "creation": 78,
+        "defense": 44,
+        "physical": 86,
+        "goalkeeping": 12
+      }
+    ]
+  },
+  {
+    "id": "inter-milan-2010",
+    "league": "Serie A",
+    "club": "Inter Milan",
+    "year": 2010,
+    "players": [
+      {
+        "name": "Julio Cesar",
+        "positions": [
+          "GK"
+        ],
+        "overall": 91,
+        "attack": 15,
+        "creation": 44,
+        "defense": 45,
+        "physical": 80,
+        "goalkeeping": 92
+      },
+      {
+        "name": "Maicon",
+        "positions": [
+          "DF"
+        ],
+        "overall": 92,
+        "attack": 84,
+        "creation": 86,
+        "defense": 86,
+        "physical": 92,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Lucio",
+        "positions": [
+          "DF"
+        ],
+        "overall": 91,
+        "attack": 58,
+        "creation": 68,
+        "defense": 92,
+        "physical": 91,
+        "goalkeeping": 12
+      },
+      {
+        "name": "Walter Samuel",
+        "positions": [
+          "DF"
+        ],
+        "overall": 90,
+        "attack": 50,
+        "creation": 60,
+        "defense": 93,
+        "physical": 90,
+        "goalkeeping": 12
+      },
+      {
+        "name": "Javier Zanetti",
+        "positions": [
+          "DF",
+          "MF"
+        ],
+        "overall": 90,
+        "attack": 68,
+        "creation": 82,
+        "defense": 90,
+        "physical": 89,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Wesley Sneijder",
+        "positions": [
+          "MF"
+        ],
+        "overall": 93,
+        "attack": 88,
+        "creation": 96,
+        "defense": 58,
+        "physical": 78,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Esteban Cambiasso",
+        "positions": [
+          "MF"
+        ],
+        "overall": 90,
+        "attack": 72,
+        "creation": 85,
+        "defense": 90,
+        "physical": 84,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Diego Milito",
+        "positions": [
+          "FW"
+        ],
+        "overall": 92,
+        "attack": 94,
+        "creation": 82,
+        "defense": 42,
+        "physical": 84,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Samuel Eto'o",
+        "positions": [
+          "FW",
+          "MF"
+        ],
+        "overall": 91,
+        "attack": 91,
+        "creation": 84,
+        "defense": 58,
+        "physical": 88,
+        "goalkeeping": 11
+      }
+    ]
+  },
+  {
+    "id": "inter-milan-2016",
+    "league": "Serie A",
+    "club": "Inter Milan",
+    "year": 2016,
+    "players": [
+      {
+        "name": "Samir Handanovic",
+        "positions": [
+          "GK"
+        ],
+        "overall": 86,
+        "attack": 12,
+        "creation": 38,
+        "defense": 40,
+        "physical": 78,
+        "goalkeeping": 87
+      },
+      {
+        "name": "Miranda",
+        "positions": [
+          "DF"
+        ],
+        "overall": 84,
+        "attack": 48,
+        "creation": 62,
+        "defense": 86,
+        "physical": 83,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Jeison Murillo",
+        "positions": [
+          "DF"
+        ],
+        "overall": 79,
+        "attack": 46,
+        "creation": 56,
+        "defense": 80,
+        "physical": 82,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Danilo D'Ambrosio",
+        "positions": [
+          "DF"
+        ],
+        "overall": 78,
+        "attack": 60,
+        "creation": 68,
+        "defense": 79,
+        "physical": 80,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Gary Medel",
+        "positions": [
+          "MF",
+          "DF"
+        ],
+        "overall": 80,
+        "attack": 52,
+        "creation": 66,
+        "defense": 83,
+        "physical": 86,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Marcelo Brozovic",
+        "positions": [
+          "MF"
+        ],
+        "overall": 81,
+        "attack": 72,
+        "creation": 82,
+        "defense": 76,
+        "physical": 81,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Geoffrey Kondogbia",
+        "positions": [
+          "MF"
+        ],
+        "overall": 77,
+        "attack": 62,
+        "creation": 70,
+        "defense": 76,
+        "physical": 84,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Mauro Icardi",
+        "positions": [
+          "FW"
+        ],
+        "overall": 85,
+        "attack": 88,
+        "creation": 70,
+        "defense": 32,
+        "physical": 80,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Ivan Perisic",
+        "positions": [
+          "FW",
+          "MF"
+        ],
+        "overall": 83,
+        "attack": 82,
+        "creation": 81,
+        "defense": 56,
+        "physical": 84,
+        "goalkeeping": 10
+      }
+    ]
+  },
+  {
+    "id": "inter-milan-2021",
+    "league": "Serie A",
+    "club": "Inter Milan",
+    "year": 2021,
+    "players": [
+      {
+        "name": "Samir Handanovic",
+        "positions": [
+          "GK"
+        ],
+        "overall": 86,
+        "attack": 12,
+        "creation": 40,
+        "defense": 40,
+        "physical": 76,
+        "goalkeeping": 87
+      },
+      {
+        "name": "Milan Skriniar",
+        "positions": [
+          "DF"
+        ],
+        "overall": 88,
+        "attack": 50,
+        "creation": 66,
+        "defense": 90,
+        "physical": 89,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Alessandro Bastoni",
+        "positions": [
+          "DF"
+        ],
+        "overall": 86,
+        "attack": 56,
+        "creation": 78,
+        "defense": 87,
+        "physical": 84,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Achraf Hakimi",
+        "positions": [
+          "DF",
+          "MF"
+        ],
+        "overall": 89,
+        "attack": 82,
+        "creation": 84,
+        "defense": 79,
+        "physical": 91,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Nicolo Barella",
+        "positions": [
+          "MF"
+        ],
+        "overall": 89,
+        "attack": 78,
+        "creation": 88,
+        "defense": 83,
+        "physical": 88,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Marcelo Brozovic",
+        "positions": [
+          "MF"
+        ],
+        "overall": 88,
+        "attack": 72,
+        "creation": 89,
+        "defense": 84,
+        "physical": 86,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Christian Eriksen",
+        "positions": [
+          "MF"
+        ],
+        "overall": 85,
+        "attack": 78,
+        "creation": 90,
+        "defense": 56,
+        "physical": 72,
+        "goalkeeping": 9
+      },
+      {
+        "name": "Romelu Lukaku",
+        "positions": [
+          "FW"
+        ],
+        "overall": 91,
+        "attack": 92,
+        "creation": 80,
+        "defense": 42,
+        "physical": 94,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Lautaro Martinez",
+        "positions": [
+          "FW"
+        ],
+        "overall": 87,
+        "attack": 88,
+        "creation": 80,
+        "defense": 48,
+        "physical": 84,
+        "goalkeeping": 10
+      }
+    ]
+  },
+  {
+    "id": "inter-milan-2024",
+    "league": "Serie A",
+    "club": "Inter Milan",
+    "year": 2024,
+    "players": [
+      {
+        "name": "Yann Sommer",
+        "positions": [
+          "GK"
+        ],
+        "overall": 88,
+        "attack": 14,
+        "creation": 46,
+        "defense": 42,
+        "physical": 76,
+        "goalkeeping": 89
+      },
+      {
+        "name": "Alessandro Bastoni",
+        "positions": [
+          "DF"
+        ],
+        "overall": 90,
+        "attack": 62,
+        "creation": 84,
+        "defense": 90,
+        "physical": 86,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Federico Dimarco",
+        "positions": [
+          "DF",
+          "MF"
+        ],
+        "overall": 89,
+        "attack": 80,
+        "creation": 89,
+        "defense": 81,
+        "physical": 83,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Benjamin Pavard",
+        "positions": [
+          "DF"
+        ],
+        "overall": 87,
+        "attack": 60,
+        "creation": 74,
+        "defense": 88,
+        "physical": 84,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Hakan Calhanoglu",
+        "positions": [
+          "MF"
+        ],
+        "overall": 91,
+        "attack": 84,
+        "creation": 93,
+        "defense": 82,
+        "physical": 81,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Nicolo Barella",
+        "positions": [
+          "MF"
+        ],
+        "overall": 90,
+        "attack": 80,
+        "creation": 89,
+        "defense": 84,
+        "physical": 89,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Henrikh Mkhitaryan",
+        "positions": [
+          "MF"
+        ],
+        "overall": 86,
+        "attack": 78,
+        "creation": 86,
+        "defense": 74,
+        "physical": 80,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Lautaro Martinez",
+        "positions": [
+          "FW"
+        ],
+        "overall": 92,
+        "attack": 94,
+        "creation": 83,
+        "defense": 52,
+        "physical": 86,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Marcus Thuram",
+        "positions": [
+          "FW"
+        ],
+        "overall": 87,
+        "attack": 87,
+        "creation": 81,
+        "defense": 46,
+        "physical": 88,
+        "goalkeeping": 10
+      }
+    ]
+  },
+  {
+    "id": "juventus-2003",
+    "league": "Serie A",
+    "club": "Juventus",
+    "year": 2003,
+    "players": [
+      {
+        "name": "Gianluigi Buffon",
+        "positions": [
+          "GK"
+        ],
+        "overall": 94,
+        "attack": 15,
+        "creation": 45,
+        "defense": 48,
+        "physical": 83,
+        "goalkeeping": 95
+      },
+      {
+        "name": "Lilian Thuram",
+        "positions": [
+          "DF"
+        ],
+        "overall": 92,
+        "attack": 54,
+        "creation": 70,
+        "defense": 94,
+        "physical": 91,
+        "goalkeeping": 12
+      },
+      {
+        "name": "Ciro Ferrara",
+        "positions": [
+          "DF"
+        ],
+        "overall": 88,
+        "attack": 48,
+        "creation": 64,
+        "defense": 90,
+        "physical": 86,
+        "goalkeeping": 12
+      },
+      {
+        "name": "Gianluca Zambrotta",
+        "positions": [
+          "DF",
+          "MF"
+        ],
+        "overall": 89,
+        "attack": 74,
+        "creation": 84,
+        "defense": 86,
+        "physical": 89,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Pavel Nedved",
+        "positions": [
+          "MF",
+          "FW"
+        ],
+        "overall": 94,
+        "attack": 91,
+        "creation": 92,
+        "defense": 70,
+        "physical": 91,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Edgar Davids",
+        "positions": [
+          "MF"
+        ],
+        "overall": 90,
+        "attack": 72,
+        "creation": 82,
+        "defense": 90,
+        "physical": 92,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Mauro Camoranesi",
+        "positions": [
+          "MF"
+        ],
+        "overall": 87,
+        "attack": 78,
+        "creation": 86,
+        "defense": 68,
+        "physical": 81,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Alessandro Del Piero",
+        "positions": [
+          "FW",
+          "MF"
+        ],
+        "overall": 92,
+        "attack": 92,
+        "creation": 91,
+        "defense": 42,
+        "physical": 80,
+        "goalkeeping": 10
+      },
+      {
+        "name": "David Trezeguet",
+        "positions": [
+          "FW"
+        ],
+        "overall": 90,
+        "attack": 93,
+        "creation": 76,
+        "defense": 38,
+        "physical": 85,
+        "goalkeeping": 10
+      }
+    ]
+  },
+  {
+    "id": "juventus-2012",
+    "league": "Serie A",
+    "club": "Juventus",
+    "year": 2012,
+    "players": [
+      {
+        "name": "Gianluigi Buffon",
+        "positions": [
+          "GK"
+        ],
+        "overall": 90,
+        "attack": 14,
+        "creation": 44,
+        "defense": 46,
+        "physical": 80,
+        "goalkeeping": 91
+      },
+      {
+        "name": "Giorgio Chiellini",
+        "positions": [
+          "DF"
+        ],
+        "overall": 90,
+        "attack": 50,
+        "creation": 62,
+        "defense": 93,
+        "physical": 91,
+        "goalkeeping": 12
+      },
+      {
+        "name": "Andrea Barzagli",
+        "positions": [
+          "DF"
+        ],
+        "overall": 90,
+        "attack": 44,
+        "creation": 66,
+        "defense": 93,
+        "physical": 87,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Leonardo Bonucci",
+        "positions": [
+          "DF"
+        ],
+        "overall": 87,
+        "attack": 56,
+        "creation": 80,
+        "defense": 87,
+        "physical": 84,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Andrea Pirlo",
+        "positions": [
+          "MF"
+        ],
+        "overall": 93,
+        "attack": 78,
+        "creation": 98,
+        "defense": 70,
+        "physical": 73,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Arturo Vidal",
+        "positions": [
+          "MF"
+        ],
+        "overall": 89,
+        "attack": 82,
+        "creation": 83,
+        "defense": 87,
+        "physical": 90,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Claudio Marchisio",
+        "positions": [
+          "MF"
+        ],
+        "overall": 88,
+        "attack": 80,
+        "creation": 86,
+        "defense": 81,
+        "physical": 83,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Mirko Vucinic",
+        "positions": [
+          "FW"
+        ],
+        "overall": 85,
+        "attack": 85,
+        "creation": 83,
+        "defense": 40,
+        "physical": 80,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Alessandro Del Piero",
+        "positions": [
+          "FW"
+        ],
+        "overall": 83,
+        "attack": 84,
+        "creation": 86,
+        "defense": 36,
+        "physical": 68,
+        "goalkeeping": 10
+      }
+    ]
+  },
+  {
+    "id": "juventus-2017",
+    "league": "Serie A",
+    "club": "Juventus",
+    "year": 2017,
+    "players": [
+      {
+        "name": "Gianluigi Buffon",
+        "positions": [
+          "GK"
+        ],
+        "overall": 90,
+        "attack": 14,
+        "creation": 43,
+        "defense": 45,
+        "physical": 78,
+        "goalkeeping": 91
+      },
+      {
+        "name": "Giorgio Chiellini",
+        "positions": [
+          "DF"
+        ],
+        "overall": 91,
+        "attack": 48,
+        "creation": 62,
+        "defense": 94,
+        "physical": 90,
+        "goalkeeping": 12
+      },
+      {
+        "name": "Leonardo Bonucci",
+        "positions": [
+          "DF"
+        ],
+        "overall": 90,
+        "attack": 58,
+        "creation": 84,
+        "defense": 90,
+        "physical": 85,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Alex Sandro",
+        "positions": [
+          "DF"
+        ],
+        "overall": 87,
+        "attack": 72,
+        "creation": 81,
+        "defense": 85,
+        "physical": 86,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Miralem Pjanic",
+        "positions": [
+          "MF"
+        ],
+        "overall": 88,
+        "attack": 78,
+        "creation": 91,
+        "defense": 74,
+        "physical": 76,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Sami Khedira",
+        "positions": [
+          "MF"
+        ],
+        "overall": 86,
+        "attack": 74,
+        "creation": 80,
+        "defense": 84,
+        "physical": 85,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Mario Mandzukic",
+        "positions": [
+          "FW",
+          "MF"
+        ],
+        "overall": 87,
+        "attack": 85,
+        "creation": 76,
+        "defense": 70,
+        "physical": 91,
+        "goalkeeping": 12
+      },
+      {
+        "name": "Paulo Dybala",
+        "positions": [
+          "FW",
+          "MF"
+        ],
+        "overall": 90,
+        "attack": 90,
+        "creation": 90,
+        "defense": 38,
+        "physical": 76,
+        "goalkeeping": 9
+      },
+      {
+        "name": "Gonzalo Higuain",
+        "positions": [
+          "FW"
+        ],
+        "overall": 90,
+        "attack": 92,
+        "creation": 80,
+        "defense": 38,
+        "physical": 85,
+        "goalkeeping": 10
+      }
+    ]
+  },
+  {
+    "id": "juventus-2021",
+    "league": "Serie A",
+    "club": "Juventus",
+    "year": 2021,
+    "players": [
+      {
+        "name": "Wojciech Szczesny",
+        "positions": [
+          "GK"
+        ],
+        "overall": 84,
+        "attack": 12,
+        "creation": 38,
+        "defense": 38,
+        "physical": 76,
+        "goalkeeping": 85
+      },
+      {
+        "name": "Matthijs de Ligt",
+        "positions": [
+          "DF"
+        ],
+        "overall": 85,
+        "attack": 52,
+        "creation": 66,
+        "defense": 86,
+        "physical": 87,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Leonardo Bonucci",
+        "positions": [
+          "DF"
+        ],
+        "overall": 84,
+        "attack": 54,
+        "creation": 78,
+        "defense": 84,
+        "physical": 79,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Danilo",
+        "positions": [
+          "DF"
+        ],
+        "overall": 83,
+        "attack": 62,
+        "creation": 74,
+        "defense": 83,
+        "physical": 82,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Juan Cuadrado",
+        "positions": [
+          "DF",
+          "MF"
+        ],
+        "overall": 86,
+        "attack": 78,
+        "creation": 86,
+        "defense": 76,
+        "physical": 82,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Adrien Rabiot",
+        "positions": [
+          "MF"
+        ],
+        "overall": 82,
+        "attack": 72,
+        "creation": 78,
+        "defense": 78,
+        "physical": 84,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Rodrigo Bentancur",
+        "positions": [
+          "MF"
+        ],
+        "overall": 80,
+        "attack": 62,
+        "creation": 76,
+        "defense": 79,
+        "physical": 81,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Federico Chiesa",
+        "positions": [
+          "FW",
+          "MF"
+        ],
+        "overall": 87,
+        "attack": 87,
+        "creation": 84,
+        "defense": 52,
+        "physical": 84,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Cristiano Ronaldo",
+        "positions": [
+          "FW"
+        ],
+        "overall": 92,
+        "attack": 94,
+        "creation": 82,
+        "defense": 32,
+        "physical": 85,
+        "goalkeeping": 10
+      }
+    ]
+  },
+  {
+    "id": "napoli-2023",
+    "league": "Serie A",
+    "club": "Napoli",
+    "year": 2023,
+    "players": [
+      {
+        "name": "Alex Meret",
+        "positions": [
+          "GK"
+        ],
+        "overall": 84,
+        "attack": 12,
+        "creation": 40,
+        "defense": 38,
+        "physical": 75,
+        "goalkeeping": 85
+      },
+      {
+        "name": "Kim Min-jae",
+        "positions": [
+          "DF"
+        ],
+        "overall": 90,
+        "attack": 52,
+        "creation": 68,
+        "defense": 92,
+        "physical": 91,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Giovanni Di Lorenzo",
+        "positions": [
+          "DF"
+        ],
+        "overall": 87,
+        "attack": 70,
+        "creation": 79,
+        "defense": 86,
+        "physical": 86,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Amir Rrahmani",
+        "positions": [
+          "DF"
+        ],
+        "overall": 84,
+        "attack": 48,
+        "creation": 64,
+        "defense": 85,
+        "physical": 84,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Stanislav Lobotka",
+        "positions": [
+          "MF"
+        ],
+        "overall": 88,
+        "attack": 66,
+        "creation": 89,
+        "defense": 84,
+        "physical": 81,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Andre-Frank Zambo Anguissa",
+        "positions": [
+          "MF"
+        ],
+        "overall": 86,
+        "attack": 72,
+        "creation": 80,
+        "defense": 84,
+        "physical": 89,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Piotr Zielinski",
+        "positions": [
+          "MF"
+        ],
+        "overall": 86,
+        "attack": 80,
+        "creation": 88,
+        "defense": 68,
+        "physical": 78,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Khvicha Kvaratskhelia",
+        "positions": [
+          "FW",
+          "MF"
+        ],
+        "overall": 91,
+        "attack": 90,
+        "creation": 91,
+        "defense": 46,
+        "physical": 83,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Victor Osimhen",
+        "positions": [
+          "FW"
+        ],
+        "overall": 92,
+        "attack": 94,
+        "creation": 77,
+        "defense": 44,
+        "physical": 92,
+        "goalkeeping": 11
+      }
+    ]
+  },
+  {
+    "id": "roma-2001",
+    "league": "Serie A",
+    "club": "Roma",
+    "year": 2001,
+    "players": [
+      {
+        "name": "Francesco Antonioli",
+        "positions": [
+          "GK"
+        ],
+        "overall": 82,
+        "attack": 12,
+        "creation": 36,
+        "defense": 38,
+        "physical": 74,
+        "goalkeeping": 83
+      },
+      {
+        "name": "Walter Samuel",
+        "positions": [
+          "DF"
+        ],
+        "overall": 90,
+        "attack": 50,
+        "creation": 62,
+        "defense": 92,
+        "physical": 91,
+        "goalkeeping": 12
+      },
+      {
+        "name": "Cafu",
+        "positions": [
+          "DF",
+          "MF"
+        ],
+        "overall": 91,
+        "attack": 78,
+        "creation": 86,
+        "defense": 86,
+        "physical": 90,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Vincent Candela",
+        "positions": [
+          "DF",
+          "MF"
+        ],
+        "overall": 87,
+        "attack": 72,
+        "creation": 82,
+        "defense": 84,
+        "physical": 85,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Damiano Tommasi",
+        "positions": [
+          "MF"
+        ],
+        "overall": 85,
+        "attack": 66,
+        "creation": 76,
+        "defense": 86,
+        "physical": 88,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Emerson",
+        "positions": [
+          "MF"
+        ],
+        "overall": 88,
+        "attack": 72,
+        "creation": 82,
+        "defense": 88,
+        "physical": 90,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Hidetoshi Nakata",
+        "positions": [
+          "MF"
+        ],
+        "overall": 85,
+        "attack": 78,
+        "creation": 87,
+        "defense": 60,
+        "physical": 78,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Francesco Totti",
+        "positions": [
+          "FW",
+          "MF"
+        ],
+        "overall": 94,
+        "attack": 93,
+        "creation": 95,
+        "defense": 46,
+        "physical": 85,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Gabriel Batistuta",
+        "positions": [
+          "FW"
+        ],
+        "overall": 92,
+        "attack": 95,
+        "creation": 78,
+        "defense": 38,
+        "physical": 89,
+        "goalkeeping": 11
+      }
+    ]
+  },
+  {
+    "id": "lazio-2000",
+    "league": "Serie A",
+    "club": "Lazio",
+    "year": 2000,
+    "players": [
+      {
+        "name": "Luca Marchegiani",
+        "positions": [
+          "GK"
+        ],
+        "overall": 85,
+        "attack": 13,
+        "creation": 40,
+        "defense": 42,
+        "physical": 76,
+        "goalkeeping": 86
+      },
+      {
+        "name": "Alessandro Nesta",
+        "positions": [
+          "DF"
+        ],
+        "overall": 93,
+        "attack": 50,
+        "creation": 74,
+        "defense": 95,
+        "physical": 89,
+        "goalkeeping": 12
+      },
+      {
+        "name": "Sinisa Mihajlovic",
+        "positions": [
+          "DF"
+        ],
+        "overall": 89,
+        "attack": 78,
+        "creation": 86,
+        "defense": 86,
+        "physical": 85,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Giuseppe Pancaro",
+        "positions": [
+          "DF"
+        ],
+        "overall": 84,
+        "attack": 62,
+        "creation": 72,
+        "defense": 85,
+        "physical": 83,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Juan Sebastian Veron",
+        "positions": [
+          "MF"
+        ],
+        "overall": 92,
+        "attack": 84,
+        "creation": 95,
+        "defense": 72,
+        "physical": 84,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Pavel Nedved",
+        "positions": [
+          "MF",
+          "FW"
+        ],
+        "overall": 90,
+        "attack": 87,
+        "creation": 88,
+        "defense": 68,
+        "physical": 89,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Diego Simeone",
+        "positions": [
+          "MF"
+        ],
+        "overall": 88,
+        "attack": 74,
+        "creation": 78,
+        "defense": 89,
+        "physical": 91,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Marcelo Salas",
+        "positions": [
+          "FW"
+        ],
+        "overall": 89,
+        "attack": 91,
+        "creation": 80,
+        "defense": 42,
+        "physical": 84,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Roberto Mancini",
+        "positions": [
+          "FW",
+          "MF"
+        ],
+        "overall": 86,
+        "attack": 84,
+        "creation": 88,
+        "defense": 46,
+        "physical": 78,
+        "goalkeeping": 10
+      }
+    ]
+  },
+  {
+    "id": "parma-1999",
+    "league": "Serie A",
+    "club": "Parma",
+    "year": 1999,
+    "players": [
+      {
+        "name": "Gianluigi Buffon",
+        "positions": [
+          "GK"
+        ],
+        "overall": 90,
+        "attack": 15,
+        "creation": 42,
+        "defense": 44,
+        "physical": 82,
+        "goalkeeping": 91
+      },
+      {
+        "name": "Lilian Thuram",
+        "positions": [
+          "DF"
+        ],
+        "overall": 92,
+        "attack": 54,
+        "creation": 70,
+        "defense": 94,
+        "physical": 92,
+        "goalkeeping": 12
+      },
+      {
+        "name": "Fabio Cannavaro",
+        "positions": [
+          "DF"
+        ],
+        "overall": 91,
+        "attack": 48,
+        "creation": 64,
+        "defense": 93,
+        "physical": 90,
+        "goalkeeping": 12
+      },
+      {
+        "name": "Roberto Sensini",
+        "positions": [
+          "DF",
+          "MF"
+        ],
+        "overall": 86,
+        "attack": 56,
+        "creation": 74,
+        "defense": 88,
+        "physical": 84,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Juan Sebastian Veron",
+        "positions": [
+          "MF"
+        ],
+        "overall": 90,
+        "attack": 82,
+        "creation": 93,
+        "defense": 70,
+        "physical": 83,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Dino Baggio",
+        "positions": [
+          "MF"
+        ],
+        "overall": 86,
+        "attack": 74,
+        "creation": 80,
+        "defense": 85,
+        "physical": 86,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Diego Fuser",
+        "positions": [
+          "MF"
+        ],
+        "overall": 84,
+        "attack": 74,
+        "creation": 83,
+        "defense": 66,
+        "physical": 80,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Hernan Crespo",
+        "positions": [
+          "FW"
+        ],
+        "overall": 91,
+        "attack": 93,
+        "creation": 79,
+        "defense": 38,
+        "physical": 86,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Enrico Chiesa",
+        "positions": [
+          "FW"
+        ],
+        "overall": 88,
+        "attack": 89,
+        "creation": 82,
+        "defense": 36,
+        "physical": 80,
+        "goalkeeping": 10
+      }
+    ]
+  },
+  {
+    "id": "atalanta-2020",
+    "league": "Serie A",
+    "club": "Atalanta",
+    "year": 2020,
+    "players": [
+      {
+        "name": "Pierluigi Gollini",
+        "positions": [
+          "GK"
+        ],
+        "overall": 81,
+        "attack": 12,
+        "creation": 38,
+        "defense": 36,
+        "physical": 75,
+        "goalkeeping": 82
+      },
+      {
+        "name": "Rafael Toloi",
+        "positions": [
+          "DF"
+        ],
+        "overall": 83,
+        "attack": 58,
+        "creation": 70,
+        "defense": 83,
+        "physical": 83,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Berat Djimsiti",
+        "positions": [
+          "DF"
+        ],
+        "overall": 81,
+        "attack": 48,
+        "creation": 62,
+        "defense": 82,
+        "physical": 83,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Robin Gosens",
+        "positions": [
+          "DF",
+          "MF"
+        ],
+        "overall": 85,
+        "attack": 78,
+        "creation": 80,
+        "defense": 79,
+        "physical": 86,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Hans Hateboer",
+        "positions": [
+          "DF",
+          "MF"
+        ],
+        "overall": 82,
+        "attack": 70,
+        "creation": 76,
+        "defense": 78,
+        "physical": 85,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Marten de Roon",
+        "positions": [
+          "MF"
+        ],
+        "overall": 84,
+        "attack": 66,
+        "creation": 78,
+        "defense": 84,
+        "physical": 86,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Remo Freuler",
+        "positions": [
+          "MF"
+        ],
+        "overall": 84,
+        "attack": 70,
+        "creation": 82,
+        "defense": 80,
+        "physical": 83,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Alejandro Gomez",
+        "positions": [
+          "MF",
+          "FW"
+        ],
+        "overall": 90,
+        "attack": 87,
+        "creation": 93,
+        "defense": 44,
+        "physical": 75,
+        "goalkeeping": 9
+      },
+      {
+        "name": "Duvan Zapata",
+        "positions": [
+          "FW"
+        ],
+        "overall": 87,
+        "attack": 88,
+        "creation": 76,
+        "defense": 42,
+        "physical": 91,
+        "goalkeeping": 11
+      }
+    ]
+  },
+  {
+    "id": "bayern-munich-2001",
+    "league": "Bundesliga",
+    "club": "Bayern Munich",
+    "year": 2001,
+    "players": [
+      {
+        "name": "Oliver Kahn",
+        "positions": [
+          "GK"
+        ],
+        "overall": 94,
+        "attack": 14,
+        "creation": 40,
+        "defense": 48,
+        "physical": 86,
+        "goalkeeping": 95
+      },
+      {
+        "name": "Sammy Kuffour",
+        "positions": [
+          "DF"
+        ],
+        "overall": 86,
+        "attack": 46,
+        "creation": 58,
+        "defense": 88,
+        "physical": 88,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Patrik Andersson",
+        "positions": [
+          "DF"
+        ],
+        "overall": 86,
+        "attack": 50,
+        "creation": 64,
+        "defense": 88,
+        "physical": 87,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Bixente Lizarazu",
+        "positions": [
+          "DF"
+        ],
+        "overall": 90,
+        "attack": 72,
+        "creation": 82,
+        "defense": 89,
+        "physical": 86,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Willy Sagnol",
+        "positions": [
+          "DF"
+        ],
+        "overall": 86,
+        "attack": 66,
+        "creation": 82,
+        "defense": 85,
+        "physical": 84,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Stefan Effenberg",
+        "positions": [
+          "MF"
+        ],
+        "overall": 91,
+        "attack": 82,
+        "creation": 91,
+        "defense": 82,
+        "physical": 90,
+        "goalkeeping": 12
+      },
+      {
+        "name": "Owen Hargreaves",
+        "positions": [
+          "MF"
+        ],
+        "overall": 85,
+        "attack": 66,
+        "creation": 78,
+        "defense": 85,
+        "physical": 86,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Mehmet Scholl",
+        "positions": [
+          "MF",
+          "FW"
+        ],
+        "overall": 89,
+        "attack": 85,
+        "creation": 91,
+        "defense": 48,
+        "physical": 74,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Giovane Elber",
+        "positions": [
+          "FW"
+        ],
+        "overall": 90,
+        "attack": 92,
+        "creation": 82,
+        "defense": 38,
+        "physical": 83,
+        "goalkeeping": 10
+      }
+    ]
+  },
+  {
+    "id": "bayern-munich-2013",
+    "league": "Bundesliga",
+    "club": "Bayern Munich",
+    "year": 2013,
+    "players": [
+      {
+        "name": "Manuel Neuer",
+        "positions": [
+          "GK"
+        ],
+        "overall": 93,
+        "attack": 20,
+        "creation": 55,
+        "defense": 48,
+        "physical": 82,
+        "goalkeeping": 94
+      },
+      {
+        "name": "Philipp Lahm",
+        "positions": [
+          "DF",
+          "MF"
+        ],
+        "overall": 93,
+        "attack": 70,
+        "creation": 90,
+        "defense": 93,
+        "physical": 84,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Jerome Boateng",
+        "positions": [
+          "DF"
+        ],
+        "overall": 89,
+        "attack": 52,
+        "creation": 76,
+        "defense": 90,
+        "physical": 90,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Dante",
+        "positions": [
+          "DF"
+        ],
+        "overall": 88,
+        "attack": 50,
+        "creation": 68,
+        "defense": 89,
+        "physical": 87,
+        "goalkeeping": 11
+      },
+      {
+        "name": "David Alaba",
+        "positions": [
+          "DF"
+        ],
+        "overall": 88,
+        "attack": 74,
+        "creation": 84,
+        "defense": 86,
+        "physical": 86,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Bastian Schweinsteiger",
+        "positions": [
+          "MF"
+        ],
+        "overall": 92,
+        "attack": 82,
+        "creation": 91,
+        "defense": 88,
+        "physical": 89,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Javi Martinez",
+        "positions": [
+          "MF",
+          "DF"
+        ],
+        "overall": 89,
+        "attack": 64,
+        "creation": 78,
+        "defense": 91,
+        "physical": 90,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Franck Ribery",
+        "positions": [
+          "FW",
+          "MF"
+        ],
+        "overall": 94,
+        "attack": 92,
+        "creation": 95,
+        "defense": 48,
+        "physical": 83,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Arjen Robben",
+        "positions": [
+          "FW",
+          "MF"
+        ],
+        "overall": 93,
+        "attack": 94,
+        "creation": 89,
+        "defense": 40,
+        "physical": 84,
+        "goalkeeping": 10
+      }
+    ]
+  },
+  {
+    "id": "bayern-munich-2020",
+    "league": "Bundesliga",
+    "club": "Bayern Munich",
+    "year": 2020,
+    "players": [
+      {
+        "name": "Manuel Neuer",
+        "positions": [
+          "GK"
+        ],
+        "overall": 91,
+        "attack": 20,
+        "creation": 54,
+        "defense": 46,
+        "physical": 80,
+        "goalkeeping": 92
+      },
+      {
+        "name": "David Alaba",
+        "positions": [
+          "DF"
+        ],
+        "overall": 89,
+        "attack": 70,
+        "creation": 85,
+        "defense": 88,
+        "physical": 84,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Alphonso Davies",
+        "positions": [
+          "DF"
+        ],
+        "overall": 88,
+        "attack": 76,
+        "creation": 82,
+        "defense": 83,
+        "physical": 92,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Jerome Boateng",
+        "positions": [
+          "DF"
+        ],
+        "overall": 86,
+        "attack": 50,
+        "creation": 76,
+        "defense": 86,
+        "physical": 84,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Joshua Kimmich",
+        "positions": [
+          "MF",
+          "DF"
+        ],
+        "overall": 92,
+        "attack": 76,
+        "creation": 94,
+        "defense": 88,
+        "physical": 85,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Thiago Alcantara",
+        "positions": [
+          "MF"
+        ],
+        "overall": 91,
+        "attack": 76,
+        "creation": 95,
+        "defense": 80,
+        "physical": 77,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Leon Goretzka",
+        "positions": [
+          "MF"
+        ],
+        "overall": 88,
+        "attack": 82,
+        "creation": 83,
+        "defense": 82,
+        "physical": 90,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Thomas Muller",
+        "positions": [
+          "MF",
+          "FW"
+        ],
+        "overall": 91,
+        "attack": 89,
+        "creation": 93,
+        "defense": 58,
+        "physical": 82,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Robert Lewandowski",
+        "positions": [
+          "FW"
+        ],
+        "overall": 96,
+        "attack": 98,
+        "creation": 86,
+        "defense": 44,
+        "physical": 91,
+        "goalkeeping": 11
+      }
+    ]
+  },
+  {
+    "id": "bayern-munich-2022",
+    "league": "Bundesliga",
+    "club": "Bayern Munich",
+    "year": 2022,
+    "players": [
+      {
+        "name": "Manuel Neuer",
+        "positions": [
+          "GK"
+        ],
+        "overall": 89,
+        "attack": 19,
+        "creation": 52,
+        "defense": 44,
+        "physical": 78,
+        "goalkeeping": 90
+      },
+      {
+        "name": "Lucas Hernandez",
+        "positions": [
+          "DF"
+        ],
+        "overall": 86,
+        "attack": 52,
+        "creation": 68,
+        "defense": 88,
+        "physical": 86,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Dayot Upamecano",
+        "positions": [
+          "DF"
+        ],
+        "overall": 83,
+        "attack": 50,
+        "creation": 68,
+        "defense": 83,
+        "physical": 88,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Alphonso Davies",
+        "positions": [
+          "DF"
+        ],
+        "overall": 86,
+        "attack": 75,
+        "creation": 80,
+        "defense": 81,
+        "physical": 91,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Joshua Kimmich",
+        "positions": [
+          "MF"
+        ],
+        "overall": 90,
+        "attack": 74,
+        "creation": 92,
+        "defense": 84,
+        "physical": 83,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Leon Goretzka",
+        "positions": [
+          "MF"
+        ],
+        "overall": 86,
+        "attack": 79,
+        "creation": 81,
+        "defense": 80,
+        "physical": 88,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Thomas Muller",
+        "positions": [
+          "MF",
+          "FW"
+        ],
+        "overall": 88,
+        "attack": 85,
+        "creation": 91,
+        "defense": 56,
+        "physical": 79,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Kingsley Coman",
+        "positions": [
+          "FW",
+          "MF"
+        ],
+        "overall": 86,
+        "attack": 85,
+        "creation": 85,
+        "defense": 42,
+        "physical": 81,
+        "goalkeeping": 9
+      },
+      {
+        "name": "Robert Lewandowski",
+        "positions": [
+          "FW"
+        ],
+        "overall": 94,
+        "attack": 96,
+        "creation": 84,
+        "defense": 42,
+        "physical": 89,
+        "goalkeeping": 11
+      }
+    ]
+  },
+  {
+    "id": "borussia-dortmund-2013",
+    "league": "Bundesliga",
+    "club": "Borussia Dortmund",
+    "year": 2013,
+    "players": [
+      {
+        "name": "Roman Weidenfeller",
+        "positions": [
+          "GK"
+        ],
+        "overall": 86,
+        "attack": 13,
+        "creation": 38,
+        "defense": 42,
+        "physical": 79,
+        "goalkeeping": 87
+      },
+      {
+        "name": "Mats Hummels",
+        "positions": [
+          "DF"
+        ],
+        "overall": 90,
+        "attack": 58,
+        "creation": 82,
+        "defense": 91,
+        "physical": 86,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Neven Subotic",
+        "positions": [
+          "DF"
+        ],
+        "overall": 85,
+        "attack": 48,
+        "creation": 60,
+        "defense": 87,
+        "physical": 86,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Lukasz Piszczek",
+        "positions": [
+          "DF"
+        ],
+        "overall": 87,
+        "attack": 72,
+        "creation": 80,
+        "defense": 86,
+        "physical": 87,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Ilkay Gundogan",
+        "positions": [
+          "MF"
+        ],
+        "overall": 88,
+        "attack": 78,
+        "creation": 90,
+        "defense": 76,
+        "physical": 79,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Sven Bender",
+        "positions": [
+          "MF"
+        ],
+        "overall": 84,
+        "attack": 56,
+        "creation": 70,
+        "defense": 87,
+        "physical": 86,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Jakub Blaszczykowski",
+        "positions": [
+          "MF",
+          "FW"
+        ],
+        "overall": 85,
+        "attack": 82,
+        "creation": 83,
+        "defense": 62,
+        "physical": 84,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Marco Reus",
+        "positions": [
+          "FW",
+          "MF"
+        ],
+        "overall": 90,
+        "attack": 91,
+        "creation": 89,
+        "defense": 46,
+        "physical": 81,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Robert Lewandowski",
+        "positions": [
+          "FW"
+        ],
+        "overall": 92,
+        "attack": 94,
+        "creation": 83,
+        "defense": 44,
+        "physical": 89,
+        "goalkeeping": 11
+      }
+    ]
+  },
+  {
+    "id": "borussia-dortmund-2015",
+    "league": "Bundesliga",
+    "club": "Borussia Dortmund",
+    "year": 2015,
+    "players": [
+      {
+        "name": "Roman Weidenfeller",
+        "positions": [
+          "GK"
+        ],
+        "overall": 79,
+        "attack": 12,
+        "creation": 35,
+        "defense": 36,
+        "physical": 74,
+        "goalkeeping": 80
+      },
+      {
+        "name": "Mats Hummels",
+        "positions": [
+          "DF"
+        ],
+        "overall": 85,
+        "attack": 56,
+        "creation": 78,
+        "defense": 86,
+        "physical": 82,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Sokratis Papastathopoulos",
+        "positions": [
+          "DF"
+        ],
+        "overall": 83,
+        "attack": 46,
+        "creation": 58,
+        "defense": 85,
+        "physical": 86,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Lukasz Piszczek",
+        "positions": [
+          "DF"
+        ],
+        "overall": 82,
+        "attack": 68,
+        "creation": 76,
+        "defense": 81,
+        "physical": 82,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Ilkay Gundogan",
+        "positions": [
+          "MF"
+        ],
+        "overall": 83,
+        "attack": 74,
+        "creation": 85,
+        "defense": 72,
+        "physical": 74,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Shinji Kagawa",
+        "positions": [
+          "MF"
+        ],
+        "overall": 82,
+        "attack": 78,
+        "creation": 85,
+        "defense": 48,
+        "physical": 68,
+        "goalkeeping": 9
+      },
+      {
+        "name": "Henrikh Mkhitaryan",
+        "positions": [
+          "MF",
+          "FW"
+        ],
+        "overall": 81,
+        "attack": 79,
+        "creation": 82,
+        "defense": 54,
+        "physical": 78,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Marco Reus",
+        "positions": [
+          "FW",
+          "MF"
+        ],
+        "overall": 86,
+        "attack": 87,
+        "creation": 86,
+        "defense": 44,
+        "physical": 77,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Pierre-Emerick Aubameyang",
+        "positions": [
+          "FW"
+        ],
+        "overall": 85,
+        "attack": 87,
+        "creation": 75,
+        "defense": 38,
+        "physical": 85,
+        "goalkeeping": 10
+      }
+    ]
+  },
+  {
+    "id": "borussia-dortmund-2017",
+    "league": "Bundesliga",
+    "club": "Borussia Dortmund",
+    "year": 2017,
+    "players": [
+      {
+        "name": "Roman Burki",
+        "positions": [
+          "GK"
+        ],
+        "overall": 83,
+        "attack": 13,
+        "creation": 40,
+        "defense": 38,
+        "physical": 75,
+        "goalkeeping": 84
+      },
+      {
+        "name": "Sokratis Papastathopoulos",
+        "positions": [
+          "DF"
+        ],
+        "overall": 86,
+        "attack": 48,
+        "creation": 60,
+        "defense": 88,
+        "physical": 88,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Lukasz Piszczek",
+        "positions": [
+          "DF"
+        ],
+        "overall": 85,
+        "attack": 70,
+        "creation": 77,
+        "defense": 85,
+        "physical": 84,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Raphael Guerreiro",
+        "positions": [
+          "DF",
+          "MF"
+        ],
+        "overall": 84,
+        "attack": 76,
+        "creation": 85,
+        "defense": 74,
+        "physical": 75,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Julian Weigl",
+        "positions": [
+          "MF"
+        ],
+        "overall": 83,
+        "attack": 60,
+        "creation": 84,
+        "defense": 80,
+        "physical": 76,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Gonzalo Castro",
+        "positions": [
+          "MF"
+        ],
+        "overall": 82,
+        "attack": 72,
+        "creation": 82,
+        "defense": 74,
+        "physical": 76,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Ousmane Dembele",
+        "positions": [
+          "FW",
+          "MF"
+        ],
+        "overall": 87,
+        "attack": 85,
+        "creation": 89,
+        "defense": 36,
+        "physical": 79,
+        "goalkeeping": 9
+      },
+      {
+        "name": "Marco Reus",
+        "positions": [
+          "FW",
+          "MF"
+        ],
+        "overall": 88,
+        "attack": 89,
+        "creation": 87,
+        "defense": 44,
+        "physical": 78,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Pierre-Emerick Aubameyang",
+        "positions": [
+          "FW"
+        ],
+        "overall": 90,
+        "attack": 93,
+        "creation": 77,
+        "defense": 38,
+        "physical": 87,
+        "goalkeeping": 10
+      }
+    ]
+  },
+  {
+    "id": "borussia-dortmund-2023",
+    "league": "Bundesliga",
+    "club": "Borussia Dortmund",
+    "year": 2023,
+    "players": [
+      {
+        "name": "Gregor Kobel",
+        "positions": [
+          "GK"
+        ],
+        "overall": 88,
+        "attack": 14,
+        "creation": 42,
+        "defense": 42,
+        "physical": 82,
+        "goalkeeping": 89
+      },
+      {
+        "name": "Mats Hummels",
+        "positions": [
+          "DF"
+        ],
+        "overall": 86,
+        "attack": 54,
+        "creation": 80,
+        "defense": 87,
+        "physical": 80,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Nico Schlotterbeck",
+        "positions": [
+          "DF"
+        ],
+        "overall": 84,
+        "attack": 56,
+        "creation": 74,
+        "defense": 84,
+        "physical": 84,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Raphael Guerreiro",
+        "positions": [
+          "DF",
+          "MF"
+        ],
+        "overall": 85,
+        "attack": 78,
+        "creation": 88,
+        "defense": 72,
+        "physical": 74,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Jude Bellingham",
+        "positions": [
+          "MF"
+        ],
+        "overall": 90,
+        "attack": 85,
+        "creation": 88,
+        "defense": 84,
+        "physical": 90,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Emre Can",
+        "positions": [
+          "MF"
+        ],
+        "overall": 83,
+        "attack": 68,
+        "creation": 75,
+        "defense": 84,
+        "physical": 87,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Julian Brandt",
+        "positions": [
+          "MF",
+          "FW"
+        ],
+        "overall": 86,
+        "attack": 82,
+        "creation": 88,
+        "defense": 56,
+        "physical": 77,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Karim Adeyemi",
+        "positions": [
+          "FW"
+        ],
+        "overall": 83,
+        "attack": 84,
+        "creation": 76,
+        "defense": 40,
+        "physical": 85,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Sebastien Haller",
+        "positions": [
+          "FW"
+        ],
+        "overall": 83,
+        "attack": 85,
+        "creation": 74,
+        "defense": 42,
+        "physical": 86,
+        "goalkeeping": 11
+      }
+    ]
+  },
+  {
+    "id": "bayer-leverkusen-2024",
+    "league": "Bundesliga",
+    "club": "Bayer Leverkusen",
+    "year": 2024,
+    "players": [
+      {
+        "name": "Lukas Hradecky",
+        "positions": [
+          "GK"
+        ],
+        "overall": 86,
+        "attack": 13,
+        "creation": 42,
+        "defense": 40,
+        "physical": 78,
+        "goalkeeping": 87
+      },
+      {
+        "name": "Jonathan Tah",
+        "positions": [
+          "DF"
+        ],
+        "overall": 88,
+        "attack": 54,
+        "creation": 68,
+        "defense": 89,
+        "physical": 90,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Alejandro Grimaldo",
+        "positions": [
+          "DF",
+          "MF"
+        ],
+        "overall": 90,
+        "attack": 84,
+        "creation": 91,
+        "defense": 78,
+        "physical": 83,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Jeremie Frimpong",
+        "positions": [
+          "DF",
+          "MF"
+        ],
+        "overall": 88,
+        "attack": 85,
+        "creation": 84,
+        "defense": 76,
+        "physical": 89,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Edmond Tapsoba",
+        "positions": [
+          "DF"
+        ],
+        "overall": 86,
+        "attack": 54,
+        "creation": 76,
+        "defense": 86,
+        "physical": 86,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Granit Xhaka",
+        "positions": [
+          "MF"
+        ],
+        "overall": 90,
+        "attack": 76,
+        "creation": 92,
+        "defense": 85,
+        "physical": 86,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Exequiel Palacios",
+        "positions": [
+          "MF"
+        ],
+        "overall": 86,
+        "attack": 72,
+        "creation": 84,
+        "defense": 84,
+        "physical": 83,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Florian Wirtz",
+        "positions": [
+          "MF",
+          "FW"
+        ],
+        "overall": 92,
+        "attack": 88,
+        "creation": 95,
+        "defense": 56,
+        "physical": 79,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Victor Boniface",
+        "positions": [
+          "FW"
+        ],
+        "overall": 87,
+        "attack": 88,
+        "creation": 79,
+        "defense": 42,
+        "physical": 88,
+        "goalkeeping": 10
+      }
+    ]
+  },
+  {
+    "id": "monaco-2017",
+    "league": "Ligue 1",
+    "club": "Monaco",
+    "year": 2017,
+    "players": [
+      {
+        "name": "Danijel Subasic",
+        "positions": [
+          "GK"
+        ],
+        "overall": 85,
+        "attack": 13,
+        "creation": 40,
+        "defense": 40,
+        "physical": 78,
+        "goalkeeping": 86
+      },
+      {
+        "name": "Kamil Glik",
+        "positions": [
+          "DF"
+        ],
+        "overall": 86,
+        "attack": 56,
+        "creation": 60,
+        "defense": 88,
+        "physical": 89,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Djibril Sidibe",
+        "positions": [
+          "DF"
+        ],
+        "overall": 83,
+        "attack": 68,
+        "creation": 76,
+        "defense": 81,
+        "physical": 84,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Benjamin Mendy",
+        "positions": [
+          "DF"
+        ],
+        "overall": 84,
+        "attack": 72,
+        "creation": 83,
+        "defense": 79,
+        "physical": 85,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Fabinho",
+        "positions": [
+          "MF"
+        ],
+        "overall": 88,
+        "attack": 72,
+        "creation": 82,
+        "defense": 89,
+        "physical": 87,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Tiemoue Bakayoko",
+        "positions": [
+          "MF"
+        ],
+        "overall": 84,
+        "attack": 64,
+        "creation": 74,
+        "defense": 85,
+        "physical": 88,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Bernardo Silva",
+        "positions": [
+          "MF",
+          "FW"
+        ],
+        "overall": 89,
+        "attack": 83,
+        "creation": 91,
+        "defense": 64,
+        "physical": 78,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Kylian Mbappe",
+        "positions": [
+          "FW"
+        ],
+        "overall": 89,
+        "attack": 91,
+        "creation": 83,
+        "defense": 36,
+        "physical": 87,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Radamel Falcao",
+        "positions": [
+          "FW"
+        ],
+        "overall": 88,
+        "attack": 91,
+        "creation": 77,
+        "defense": 40,
+        "physical": 82,
+        "goalkeeping": 10
+      }
+    ]
+  },
+  {
+    "id": "lille-2021",
+    "league": "Ligue 1",
+    "club": "Lille",
+    "year": 2021,
+    "players": [
+      {
+        "name": "Mike Maignan",
+        "positions": [
+          "GK"
+        ],
+        "overall": 88,
+        "attack": 17,
+        "creation": 50,
+        "defense": 42,
+        "physical": 81,
+        "goalkeeping": 89
+      },
+      {
+        "name": "Jose Fonte",
+        "positions": [
+          "DF"
+        ],
+        "overall": 85,
+        "attack": 48,
+        "creation": 64,
+        "defense": 87,
+        "physical": 83,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Sven Botman",
+        "positions": [
+          "DF"
+        ],
+        "overall": 84,
+        "attack": 48,
+        "creation": 66,
+        "defense": 86,
+        "physical": 86,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Reinildo Mandava",
+        "positions": [
+          "DF"
+        ],
+        "overall": 83,
+        "attack": 62,
+        "creation": 70,
+        "defense": 84,
+        "physical": 85,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Benjamin Andre",
+        "positions": [
+          "MF"
+        ],
+        "overall": 85,
+        "attack": 66,
+        "creation": 78,
+        "defense": 86,
+        "physical": 86,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Renato Sanches",
+        "positions": [
+          "MF"
+        ],
+        "overall": 83,
+        "attack": 74,
+        "creation": 81,
+        "defense": 76,
+        "physical": 86,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Jonathan Bamba",
+        "positions": [
+          "MF",
+          "FW"
+        ],
+        "overall": 82,
+        "attack": 80,
+        "creation": 82,
+        "defense": 54,
+        "physical": 79,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Burak Yilmaz",
+        "positions": [
+          "FW"
+        ],
+        "overall": 86,
+        "attack": 88,
+        "creation": 75,
+        "defense": 42,
+        "physical": 85,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Jonathan David",
+        "positions": [
+          "FW"
+        ],
+        "overall": 84,
+        "attack": 85,
+        "creation": 76,
+        "defense": 46,
+        "physical": 82,
+        "goalkeeping": 10
+      }
+    ]
+  },
+  {
+    "id": "ajax-2019",
+    "league": "Eredivisie",
+    "club": "Ajax",
+    "year": 2019,
+    "players": [
+      {
+        "name": "Andre Onana",
+        "positions": [
+          "GK"
+        ],
+        "overall": 85,
+        "attack": 18,
+        "creation": 52,
+        "defense": 40,
+        "physical": 78,
+        "goalkeeping": 86
+      },
+      {
+        "name": "Matthijs de Ligt",
+        "positions": [
+          "DF"
+        ],
+        "overall": 88,
+        "attack": 58,
+        "creation": 70,
+        "defense": 89,
+        "physical": 89,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Daley Blind",
+        "positions": [
+          "DF",
+          "MF"
+        ],
+        "overall": 85,
+        "attack": 62,
+        "creation": 86,
+        "defense": 84,
+        "physical": 76,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Nicolas Tagliafico",
+        "positions": [
+          "DF"
+        ],
+        "overall": 84,
+        "attack": 68,
+        "creation": 76,
+        "defense": 83,
+        "physical": 84,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Frenkie de Jong",
+        "positions": [
+          "MF"
+        ],
+        "overall": 89,
+        "attack": 72,
+        "creation": 92,
+        "defense": 82,
+        "physical": 82,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Donny van de Beek",
+        "positions": [
+          "MF"
+        ],
+        "overall": 85,
+        "attack": 82,
+        "creation": 83,
+        "defense": 72,
+        "physical": 82,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Lasse Schone",
+        "positions": [
+          "MF"
+        ],
+        "overall": 82,
+        "attack": 76,
+        "creation": 85,
+        "defense": 70,
+        "physical": 72,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Hakim Ziyech",
+        "positions": [
+          "MF",
+          "FW"
+        ],
+        "overall": 88,
+        "attack": 84,
+        "creation": 92,
+        "defense": 52,
+        "physical": 76,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Dusan Tadic",
+        "positions": [
+          "FW",
+          "MF"
+        ],
+        "overall": 89,
+        "attack": 88,
+        "creation": 91,
+        "defense": 46,
+        "physical": 80,
+        "goalkeeping": 10
+      }
+    ]
+  },
+  {
+    "id": "psv-2005",
+    "league": "Eredivisie",
+    "club": "PSV",
+    "year": 2005,
+    "players": [
+      {
+        "name": "Heurelho Gomes",
+        "positions": [
+          "GK"
+        ],
+        "overall": 85,
+        "attack": 13,
+        "creation": 38,
+        "defense": 40,
+        "physical": 79,
+        "goalkeeping": 86
+      },
+      {
+        "name": "Alex",
+        "positions": [
+          "DF"
+        ],
+        "overall": 87,
+        "attack": 56,
+        "creation": 62,
+        "defense": 89,
+        "physical": 91,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Wilfred Bouma",
+        "positions": [
+          "DF"
+        ],
+        "overall": 83,
+        "attack": 58,
+        "creation": 70,
+        "defense": 84,
+        "physical": 83,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Lee Young-pyo",
+        "positions": [
+          "DF"
+        ],
+        "overall": 84,
+        "attack": 66,
+        "creation": 78,
+        "defense": 83,
+        "physical": 85,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Mark van Bommel",
+        "positions": [
+          "MF"
+        ],
+        "overall": 89,
+        "attack": 80,
+        "creation": 86,
+        "defense": 86,
+        "physical": 88,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Phillip Cocu",
+        "positions": [
+          "MF",
+          "DF"
+        ],
+        "overall": 88,
+        "attack": 78,
+        "creation": 85,
+        "defense": 86,
+        "physical": 85,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Park Ji-sung",
+        "positions": [
+          "MF",
+          "FW"
+        ],
+        "overall": 87,
+        "attack": 81,
+        "creation": 83,
+        "defense": 78,
+        "physical": 91,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Jefferson Farfan",
+        "positions": [
+          "FW"
+        ],
+        "overall": 85,
+        "attack": 86,
+        "creation": 80,
+        "defense": 42,
+        "physical": 83,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Jan Vennegoor of Hesselink",
+        "positions": [
+          "FW"
+        ],
+        "overall": 84,
+        "attack": 86,
+        "creation": 72,
+        "defense": 44,
+        "physical": 88,
+        "goalkeeping": 11
+      }
+    ]
+  },
+  {
+    "id": "porto-2004",
+    "league": "Primeira Liga",
+    "club": "Porto",
+    "year": 2004,
+    "players": [
+      {
+        "name": "Vitor Baia",
+        "positions": [
+          "GK"
+        ],
+        "overall": 88,
+        "attack": 14,
+        "creation": 42,
+        "defense": 44,
+        "physical": 78,
+        "goalkeeping": 89
+      },
+      {
+        "name": "Ricardo Carvalho",
+        "positions": [
+          "DF"
+        ],
+        "overall": 91,
+        "attack": 52,
+        "creation": 74,
+        "defense": 93,
+        "physical": 85,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Jorge Costa",
+        "positions": [
+          "DF"
+        ],
+        "overall": 86,
+        "attack": 48,
+        "creation": 60,
+        "defense": 88,
+        "physical": 88,
+        "goalkeeping": 12
+      },
+      {
+        "name": "Paulo Ferreira",
+        "positions": [
+          "DF"
+        ],
+        "overall": 86,
+        "attack": 64,
+        "creation": 76,
+        "defense": 87,
+        "physical": 83,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Costinha",
+        "positions": [
+          "MF"
+        ],
+        "overall": 87,
+        "attack": 68,
+        "creation": 76,
+        "defense": 88,
+        "physical": 87,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Maniche",
+        "positions": [
+          "MF"
+        ],
+        "overall": 88,
+        "attack": 82,
+        "creation": 85,
+        "defense": 82,
+        "physical": 86,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Deco",
+        "positions": [
+          "MF"
+        ],
+        "overall": 93,
+        "attack": 84,
+        "creation": 96,
+        "defense": 68,
+        "physical": 80,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Benni McCarthy",
+        "positions": [
+          "FW"
+        ],
+        "overall": 87,
+        "attack": 89,
+        "creation": 78,
+        "defense": 40,
+        "physical": 84,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Derlei",
+        "positions": [
+          "FW"
+        ],
+        "overall": 85,
+        "attack": 86,
+        "creation": 79,
+        "defense": 46,
+        "physical": 82,
+        "goalkeeping": 10
+      }
+    ]
+  },
+  {
+    "id": "benfica-2014",
+    "league": "Primeira Liga",
+    "club": "Benfica",
+    "year": 2014,
+    "players": [
+      {
+        "name": "Jan Oblak",
+        "positions": [
+          "GK"
+        ],
+        "overall": 85,
+        "attack": 13,
+        "creation": 40,
+        "defense": 42,
+        "physical": 79,
+        "goalkeeping": 86
+      },
+      {
+        "name": "Luisao",
+        "positions": [
+          "DF"
+        ],
+        "overall": 86,
+        "attack": 54,
+        "creation": 62,
+        "defense": 88,
+        "physical": 88,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Ezequiel Garay",
+        "positions": [
+          "DF"
+        ],
+        "overall": 87,
+        "attack": 58,
+        "creation": 68,
+        "defense": 88,
+        "physical": 86,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Maxi Pereira",
+        "positions": [
+          "DF"
+        ],
+        "overall": 83,
+        "attack": 66,
+        "creation": 75,
+        "defense": 82,
+        "physical": 84,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Enzo Perez",
+        "positions": [
+          "MF"
+        ],
+        "overall": 86,
+        "attack": 74,
+        "creation": 85,
+        "defense": 82,
+        "physical": 84,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Nemanja Matic",
+        "positions": [
+          "MF"
+        ],
+        "overall": 86,
+        "attack": 66,
+        "creation": 78,
+        "defense": 88,
+        "physical": 89,
+        "goalkeeping": 11
+      },
+      {
+        "name": "Nicolas Gaitan",
+        "positions": [
+          "MF",
+          "FW"
+        ],
+        "overall": 87,
+        "attack": 82,
+        "creation": 89,
+        "defense": 48,
+        "physical": 76,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Rodrigo",
+        "positions": [
+          "FW"
+        ],
+        "overall": 84,
+        "attack": 85,
+        "creation": 78,
+        "defense": 38,
+        "physical": 80,
+        "goalkeeping": 10
+      },
+      {
+        "name": "Lima",
+        "positions": [
+          "FW"
+        ],
+        "overall": 85,
+        "attack": 87,
+        "creation": 76,
+        "defense": 42,
+        "physical": 82,
+        "goalkeeping": 10
+      }
+    ]
+  }
+]

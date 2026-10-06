@@ -1,2 +1,7 @@
 node_modules/
 .DS_Store
+data/raw/squads/*.csv
+data/raw/squads/*.txt
+data/raw/squads/*.json
+data/raw/fifa/*.csv
+data/raw/fifa/*.json

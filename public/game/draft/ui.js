@@ -9,7 +9,7 @@ import {
     REROLL_SHORT_LABEL_KEYS,
 } from '../shared/constants.js';
 import { formatHistoryEvent } from '../shared/event-formatters.js';
-import { getCurrentTeam, isDraftPhase } from '../state.js';
+import { getMyTeam, isDraftPhase, isTeamDraftActive } from '../state.js';
 import {
     hasRerollOption,
     getAvailableSlotsForPlayer,
@@ -18,6 +18,27 @@ import {
     getPickedCount,
 } from './rules.js';
 
+function getTeamPhaseBadgeText(team, isSelf) {
+    const phase = team?.draft?.phase;
+    if (team?.draft?.locked || phase === 'LOCKED') {
+        return t('draft.locked');
+    }
+    if (phase === 'READY') {
+        return t('draft.ready');
+    }
+    if (isSelf) {
+        return phase === 'PICK' ? 'PICK' : 'ROLL';
+    }
+    return t('draft.drafting');
+}
+
+function getTeamPhaseModifier(team) {
+    const phase = team?.draft?.phase;
+    if (team?.draft?.locked || phase === 'LOCKED') return 'locked';
+    if (phase === 'READY') return 'ready';
+    return 'drafting';
+}
+
 export function renderHeader(state, meId) {
     const header = el('div', 'fd-header');
     const [teamA, teamB] = state.teams;
@@ -25,32 +46,45 @@ export function renderHeader(state, meId) {
 
     const vsRow = el('div', 'fd-vs-row');
 
-    const pA = el(
-        'div',
-        'fd-vs-player' + (draftPhase && state.turnIndex === 0 ? ' fd-vs-player--active' : '')
-    );
-    pA.append(
-        el('span', 'fd-vs-tag', t('common.playerA')),
-        el('span', 'fd-vs-name', teamA.name + (teamA.id === meId ? t('common.youSuffix') : ''))
-    );
+    const renderVsPlayer = (team, tagKey) => {
+        const isSelf = team.id === meId;
+        const active = draftPhase && isTeamDraftActive(team);
+        const locked = Boolean(team?.draft?.locked);
+        let cls = 'fd-vs-player';
+        if (active) cls += ' fd-vs-player--active';
+        if (locked) cls += ' fd-vs-player--locked';
 
+        const box = el('div', cls);
+        const picked = getPickedCount(team);
+        const phaseMod = getTeamPhaseModifier(team);
+        const metaRow = el('div', 'fd-vs-meta');
+        metaRow.append(
+            el('span', 'fd-vs-progress', `${picked} / ${SLOTS.length}`),
+            el(
+                'span',
+                `fd-vs-status fd-vs-status--${phaseMod}`,
+                getTeamPhaseBadgeText(team, isSelf)
+            )
+        );
+
+        box.append(
+            el('span', 'fd-vs-tag', t(tagKey)),
+            el('span', 'fd-vs-name', team.name + (isSelf ? t('common.youSuffix') : '')),
+            metaRow
+        );
+        return box;
+    };
+
+    const pA = renderVsPlayer(teamA, 'common.playerA');
     const vsBadge = el('span', 'fd-vs-badge', t('common.vs'));
-
-    const pB = el(
-        'div',
-        'fd-vs-player' + (draftPhase && state.turnIndex === 1 ? ' fd-vs-player--active' : '')
-    );
-    pB.append(
-        el('span', 'fd-vs-tag', t('common.playerB')),
-        el('span', 'fd-vs-name', teamB.name + (teamB.id === meId ? t('common.youSuffix') : ''))
-    );
+    const pB = renderVsPlayer(teamB, 'common.playerB');
 
     vsRow.append(pA, vsBadge, pB);
 
     const turnBar = el('div', 'fd-turn-bar');
-    if (state.phase === 'COMPLETE') {
+    if (state.phase === 'REVEAL') {
         turnBar.classList.add('fd-turn-bar--complete');
-        turnBar.textContent = t('draft.completeBanner');
+        turnBar.textContent = `${t('draft.rosterReveal')} — ${t('draft.bothLocked')}`;
     } else if (state.phase === 'MATCH') {
         turnBar.classList.add('fd-turn-bar--match');
         turnBar.textContent = t('match.liveTurnBar', {
@@ -60,19 +94,32 @@ export function renderHeader(state, meId) {
         turnBar.classList.add('fd-turn-bar--complete');
         turnBar.textContent = t('match.resultTurnBar');
     } else {
-        const cur = getCurrentTeam(state);
-        const stepText = state.phase === 'ROLL' ? t('draft.stepRoll') : t('draft.stepPick');
-        if (cur.id === meId) {
-            turnBar.classList.add('fd-turn-bar--mine');
-            turnBar.textContent = t('draft.yourTurn', {
-                teamLabel: cur.label,
-                playerName: cur.name,
-                stepText,
+        const myTeam = getMyTeam(state, meId) ?? state.teams[0];
+        const picked = getPickedCount(myTeam);
+        const myPhase = myTeam?.draft?.phase;
+
+        if (myTeam?.draft?.locked || myPhase === 'LOCKED') {
+            turnBar.classList.add('fd-turn-bar--locked');
+            turnBar.textContent = t('draft.statusBarLocked', {
+                teamLabel: myTeam.label,
+                playerName: myTeam.name,
+            });
+        } else if (myPhase === 'READY') {
+            turnBar.classList.add('fd-turn-bar--ready');
+            turnBar.textContent = t('draft.statusBarReady', {
+                teamLabel: myTeam.label,
+                playerName: myTeam.name,
+                picked,
+                total: SLOTS.length,
             });
         } else {
-            turnBar.textContent = t('draft.opponentTurn', {
-                teamLabel: cur.label,
-                playerName: cur.name,
+            turnBar.classList.add('fd-turn-bar--mine');
+            const stepText = myPhase === 'ROLL' ? t('draft.stepRoll') : t('draft.stepPick');
+            turnBar.textContent = t('draft.statusBarDrafting', {
+                teamLabel: myTeam.label,
+                playerName: myTeam.name,
+                picked,
+                total: SLOTS.length,
                 stepText,
             });
         }
@@ -82,7 +129,7 @@ export function renderHeader(state, meId) {
     return header;
 }
 
-export function renderRerollControls(curTeam, currentRoll, myTurn, onRerollClick) {
+export function renderRerollControls(curTeam, currentRoll, canInteract, onRerollClick) {
     const box = el('div', 'fd-reroll-box');
     const btnRow = el('div', 'fd-reroll-row');
     let noYearHint = false;
@@ -102,7 +149,7 @@ export function renderRerollControls(curTeam, currentRoll, myTurn, onRerollClick
         else if (!hasOption) btnClass += ' fd-reroll-btn--no-option';
 
         const btn = el('button', btnClass, btnText);
-        btn.disabled = !myTurn || used || !hasOption;
+        btn.disabled = !canInteract || used || !hasOption;
 
         if (!used && !hasOption && type === 'year') {
             noYearHint = true;
@@ -114,7 +161,7 @@ export function renderRerollControls(curTeam, currentRoll, myTurn, onRerollClick
 
     box.append(btnRow);
 
-    if (noYearHint) {
+    if (noYearHint && currentRoll) {
         box.append(
             el(
                 'div',
@@ -127,17 +174,26 @@ export function renderRerollControls(curTeam, currentRoll, myTurn, onRerollClick
     return box;
 }
 
-export function renderHistoryBox(state) {
+export function renderHistoryBox(teamOrState) {
     const box = el('div', 'fd-history');
     box.append(el('div', 'fd-history-title', t('draft.recentHistory')));
 
-    if (state.history.length === 0) {
+    let items = [];
+    if (Array.isArray(teamOrState)) {
+        items = teamOrState;
+    } else if (Array.isArray(teamOrState?.draft?.history)) {
+        items = teamOrState.draft.history;
+    } else if (Array.isArray(teamOrState?.teams)) {
+        items = teamOrState.teams.flatMap((team) => team?.draft?.history ?? []);
+    }
+
+    if (items.length === 0) {
         box.append(el('div', 'fd-history-empty', t('draft.historyEmpty')));
         return box;
     }
 
     const list = el('div', 'fd-history-list');
-    for (const item of state.history) {
+    for (const item of items) {
         list.append(el('div', 'fd-history-item', formatHistoryEvent(item)));
     }
     box.append(list);
@@ -164,125 +220,216 @@ export function renderPlayerMiniStats(player) {
     return statsRow;
 }
 
-export function renderDraftZone(state, myTurn, handlers) {
-    const { onRollClick, onRerollClick, onSelectCandidate, onPickSlot } = handlers;
+export function renderDraftZone(state, myTeam, handlers = {}, selectedPlayerIdOverride = null) {
+    const {
+        onRollClick,
+        onRerollClick,
+        onSelectCandidate,
+        onPickSlot,
+        onLockClick,
+        selectedPlayerId: handlerSelectedId,
+    } = handlers;
+    const selectedPlayerId = selectedPlayerIdOverride ?? handlerSelectedId ?? null;
+    const team = myTeam ?? state.teams[0];
+    const myPhase = team?.draft?.phase ?? 'ROLL';
+    const pickedCount = getPickedCount(team);
+
     const zone = el('div', 'fd-center');
-    const cur = getCurrentTeam(state);
 
     const pickCounter = el(
         'div',
         'fd-pick-counter',
-        t('draft.pickCounter', { current: state.roundCount, total: 10 })
+        t('draft.progress', { picked: pickedCount, total: SLOTS.length })
     );
     zone.append(pickCounter);
 
-    if (state.phase === 'ROLL') {
+    if (myPhase === 'ROLL') {
         const rollBox = el('div', 'fd-roll-box');
-        const promptText = myTurn
-            ? t('draft.rollPromptMine')
-            : t('draft.rollPromptOpponent', { playerName: cur.name });
-        rollBox.append(el('p', 'fd-roll-prompt', promptText));
+        rollBox.append(el('p', 'fd-roll-prompt', t('draft.rollPromptMine')));
 
         const rollBtn = el('button', 'fd-roll-btn', t('draft.rollBtn'));
-        rollBtn.disabled = !myTurn;
-        rollBtn.addEventListener('click', onRollClick);
+        rollBtn.disabled = Boolean(team.draft.locked);
+        if (onRollClick) rollBtn.addEventListener('click', onRollClick);
         rollBox.append(rollBtn);
 
-        zone.append(rollBox, renderHistoryBox(state));
+        zone.append(rollBox, renderHistoryBox(team));
         return zone;
     }
 
-    // Phase === 'PICK'
-    const roll = state.currentRoll;
-    const rollInfo = el('div', 'fd-roll-result');
+    if (myPhase === 'PICK' && team.draft.currentRoll) {
+        const roll = team.draft.currentRoll;
+        const rollInfo = el('div', 'fd-roll-result');
 
-    const leagueItem = el('div', 'fd-roll-meta');
-    leagueItem.append(
-        el('span', 'fd-meta-label', t('draft.metaLeague')),
-        el('strong', 'fd-meta-val', formatLeagueName(roll.league))
-    );
-
-    const clubItem = el('div', 'fd-roll-meta');
-    clubItem.append(
-        el('span', 'fd-meta-label', t('draft.metaClub')),
-        el('strong', 'fd-meta-val', roll.club)
-    );
-
-    const yearItem = el('div', 'fd-roll-meta');
-    yearItem.append(
-        el('span', 'fd-meta-label', t('draft.metaYear')),
-        el('strong', 'fd-meta-val', String(roll.year))
-    );
-
-    rollInfo.append(leagueItem, clubItem, yearItem);
-    zone.append(rollInfo);
-
-    // Reroll Controls right under Roll Result
-    zone.append(renderRerollControls(cur, roll, myTurn, onRerollClick));
-
-    const guide = el(
-        'div',
-        'fd-pick-guide',
-        myTurn
-            ? t('draft.pickGuideMine')
-            : t('draft.pickGuideOpponent', { playerName: cur.name })
-    );
-    zone.append(guide);
-
-    const cardsGrid = el('div', 'fd-cards-grid');
-    for (const player of roll.players) {
-        const availableSlots = getAvailableSlotsForPlayer(cur.roster, player);
-        const isSelected = state.selectedPlayerId === player.id;
-        const hasSlots = availableSlots.length > 0;
-        const ovr = getPlayerOverall(player);
-
-        let cardClass = 'fd-card';
-        if (isSelected) cardClass += ' fd-card--selected';
-        if (!hasSlots) cardClass += ' fd-card--disabled';
-        if (myTurn && hasSlots) cardClass += ' fd-card--interactive';
-
-        const card = el('div', cardClass);
-        const topRow = el('div', 'fd-card-top');
-        topRow.append(
-            el('span', 'fd-card-pos', player.positions.join(' / ')),
-            el('span', 'fd-card-rating', t('draft.cardRating', { rating: ovr }))
+        const leagueItem = el('div', 'fd-roll-meta');
+        leagueItem.append(
+            el('span', 'fd-meta-label', t('draft.metaLeague')),
+            el('strong', 'fd-meta-val', formatLeagueName(roll.league))
         );
 
-        const nameEl = el('div', 'fd-card-name', player.name);
-        card.append(topRow, nameEl, renderPlayerMiniStats(player));
+        const clubItem = el('div', 'fd-roll-meta');
+        clubItem.append(
+            el('span', 'fd-meta-label', t('draft.metaClub')),
+            el('strong', 'fd-meta-val', roll.club)
+        );
 
-        if (myTurn && hasSlots) {
-            card.addEventListener('click', () => onSelectCandidate(player.id));
-        } else if (!hasSlots) {
-            card.append(el('div', 'fd-card-noslot', t('draft.noAvailableSlot')));
-        }
+        const yearItem = el('div', 'fd-roll-meta');
+        yearItem.append(
+            el('span', 'fd-meta-label', t('draft.metaYear')),
+            el('strong', 'fd-meta-val', String(roll.year))
+        );
 
-        if (myTurn && isSelected && hasSlots) {
-            const slotBar = el('div', 'fd-slot-actions');
-            slotBar.append(el('span', 'fd-slot-prompt', t('draft.chooseSlotPrompt')));
-            const btnGroup = el('div', 'fd-slot-btns');
-            for (const slot of availableSlots) {
-                const slotBtn = el('button', 'fd-slot-btn', slot);
-                slotBtn.addEventListener('click', (e) => {
-                    e.stopPropagation();
-                    onPickSlot(player.id, slot);
-                });
-                btnGroup.append(slotBtn);
+        rollInfo.append(leagueItem, clubItem, yearItem);
+        zone.append(rollInfo);
+
+        zone.append(renderRerollControls(team, roll, !team.draft.locked, onRerollClick));
+
+        const guide = el('div', 'fd-pick-guide', t('draft.pickGuideMine'));
+        zone.append(guide);
+
+        const cardsGrid = el('div', 'fd-cards-grid');
+        for (const player of roll.players) {
+            const availableSlots = getAvailableSlotsForPlayer(team.roster, player);
+            const isSelected = selectedPlayerId === player.id;
+            const hasSlots = availableSlots.length > 0;
+            const ovr = getPlayerOverall(player);
+
+            let cardClass = 'fd-card';
+            if (isSelected) cardClass += ' fd-card--selected';
+            if (!hasSlots) cardClass += ' fd-card--disabled';
+            if (!team.draft.locked && hasSlots) cardClass += ' fd-card--interactive';
+
+            const card = el('div', cardClass);
+            const topRow = el('div', 'fd-card-top');
+            topRow.append(
+                el('span', 'fd-card-pos', player.positions.join(' / ')),
+                el('span', 'fd-card-rating', t('draft.cardRating', { rating: ovr }))
+            );
+
+            const nameEl = el('div', 'fd-card-name', player.name);
+            card.append(topRow, nameEl, renderPlayerMiniStats(player));
+
+            if (!team.draft.locked && hasSlots) {
+                card.addEventListener('click', () => onSelectCandidate(player.id));
+            } else if (!hasSlots) {
+                card.append(el('div', 'fd-card-noslot', t('draft.noAvailableSlot')));
             }
-            slotBar.append(btnGroup);
-            card.append(slotBar);
+
+            if (!team.draft.locked && isSelected && hasSlots) {
+                const slotBar = el('div', 'fd-slot-actions');
+                slotBar.append(el('span', 'fd-slot-prompt', t('draft.chooseSlotPrompt')));
+                const btnGroup = el('div', 'fd-slot-btns');
+                for (const slot of availableSlots) {
+                    const slotBtn = el('button', 'fd-slot-btn', slot);
+                    slotBtn.addEventListener('click', (e) => {
+                        e.stopPropagation();
+                        onPickSlot(player.id, slot);
+                    });
+                    btnGroup.append(slotBtn);
+                }
+                slotBar.append(btnGroup);
+                card.append(slotBar);
+            }
+
+            cardsGrid.append(card);
         }
 
-        cardsGrid.append(card);
+        zone.append(cardsGrid, renderHistoryBox(team));
+        return zone;
     }
 
-    zone.append(cardsGrid, renderHistoryBox(state));
+    if (myPhase === 'READY') {
+        const readyBox = el('div', 'fd-ready-box');
+        readyBox.append(
+            el('div', 'fd-ready-badge', t('draft.ready')),
+            el('p', 'fd-ready-guide', t('draft.readyGuide'))
+        );
+
+        const readyRoster = el('div', 'fd-ready-roster');
+        for (const slot of SLOTS) {
+            const p = team.roster[slot];
+            if (!p) continue;
+            const item = el('div', 'fd-ready-slot');
+            item.append(
+                el('span', 'fd-slot-tag', slot),
+                el('span', 'fd-ready-player-name', p.name),
+                el('span', 'fd-ready-player-meta', `${p.club} '${String(p.year).slice(-2)}`),
+                el('span', 'fd-slot-player-rating', String(getPlayerOverall(p)))
+            );
+            readyRoster.append(item);
+        }
+        readyBox.append(readyRoster);
+
+        const lockBtn = el('button', 'fd-lock-btn', t('draft.lockIn'));
+        if (onLockClick) {
+            lockBtn.addEventListener('click', onLockClick);
+        }
+        readyBox.append(lockBtn);
+
+        zone.append(readyBox, renderHistoryBox(team));
+        return zone;
+    }
+
+    // myPhase === 'LOCKED'
+    const lockedBox = el('div', 'fd-locked-box');
+    lockedBox.append(
+        el('div', 'fd-locked-badge', t('draft.locked')),
+        el('p', 'fd-locked-wait', t('draft.waitingOpponent'))
+    );
+
+    zone.append(lockedBox, renderHistoryBox(team));
     return zone;
 }
 
+export function renderBlindOpponentPanel(teamState) {
+    const panel = el('div', 'fd-team-panel fd-team-panel--blind');
+
+    const head = el('div', 'fd-team-head');
+    const titleWrap = el('div', 'fd-team-title-wrap');
+    titleWrap.append(
+        el('div', 'fd-team-label', teamState.label),
+        el('div', 'fd-team-player', teamState.name)
+    );
+
+    const pickedCount = getPickedCount(teamState);
+    const progressEl = el(
+        'div',
+        'fd-team-progress',
+        t('draft.progress', { picked: pickedCount, total: SLOTS.length })
+    );
+
+    const phaseMod = getTeamPhaseModifier(teamState);
+    const statusBadge = el(
+        'div',
+        `fd-team-status fd-team-status--${phaseMod}`,
+        getTeamPhaseBadgeText(teamState, false)
+    );
+
+    head.append(titleWrap, progressEl, statusBadge);
+    panel.append(head);
+
+    const slotList = el('div', 'fd-slot-list');
+    for (const slot of SLOTS) {
+        const row = el('div', 'fd-slot-row fd-slot-row--blind');
+        row.append(
+            el('span', 'fd-slot-tag', slot),
+            el('span', 'fd-slot-blind-mask', '? ? ?'),
+            el('span', 'fd-slot-blind-badge', t('draft.opponentHidden'))
+        );
+        slotList.append(row);
+    }
+
+    panel.append(slotList, el('div', 'fd-blind-note', t('draft.hiddenUntilReveal')));
+    return panel;
+}
+
 export function renderTeamPanel(state, teamState, idx, meId) {
-    const isCurrent = isDraftPhase(state) && state.turnIndex === idx;
-    const panel = el('div', 'fd-team-panel' + (isCurrent ? ' fd-team-panel--active' : ''));
+    const isSelf = teamState.id === meId;
+    if (isDraftPhase(state) && !isSelf) {
+        return renderBlindOpponentPanel(teamState);
+    }
+
+    const isActive = isDraftPhase(state) && isTeamDraftActive(teamState);
+    const panel = el('div', 'fd-team-panel' + (isActive ? ' fd-team-panel--active' : ''));
 
     const head = el('div', 'fd-team-head');
     const titleWrap = el('div', 'fd-team-title-wrap');
@@ -291,7 +438,7 @@ export function renderTeamPanel(state, teamState, idx, meId) {
         el(
             'div',
             'fd-team-player',
-            teamState.name + (teamState.id === meId ? t('common.youSuffix') : '')
+            teamState.name + (isSelf ? t('common.youSuffix') : '')
         )
     );
 
@@ -304,6 +451,13 @@ export function renderTeamPanel(state, teamState, idx, meId) {
             picked: getPickedCount(teamState),
             total: SLOTS.length,
         })
+    );
+
+    const phaseMod = getTeamPhaseModifier(teamState);
+    const statusBadge = el(
+        'div',
+        `fd-team-status fd-team-status--${phaseMod}`,
+        getTeamPhaseBadgeText(teamState, isSelf)
     );
 
     const rerollChips = el('div', 'fd-team-rerolls');
@@ -320,7 +474,7 @@ export function renderTeamPanel(state, teamState, idx, meId) {
         rerollChips.append(chip);
     }
 
-    head.append(titleWrap, ratingBadge, rerollChips);
+    head.append(titleWrap, ratingBadge, statusBadge, rerollChips);
     panel.append(head);
 
     const slotList = el('div', 'fd-slot-list');
@@ -345,3 +499,4 @@ export function renderTeamPanel(state, teamState, idx, meId) {
     panel.append(slotList);
     return panel;
 }
+

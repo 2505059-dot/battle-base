@@ -41,6 +41,14 @@ export function formatHistoryEvent(event, localeOverride = null) {
                 },
                 localeOverride
             );
+        case 'draft.lock':
+            return t(
+                'history.locked',
+                {
+                    actorName: event.actorName,
+                },
+                localeOverride
+            );
         default:
             return '';
     }

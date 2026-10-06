@@ -711,6 +711,219 @@ li { padding: 8px 12px; margin-bottom: 6px; background: #0d1424; border-radius: 
   letter-spacing: .06em;
 }
 
+.fd-turn-bar--ready {
+  background: #2b2310;
+  border-color: #f6b82f;
+  color: #ffd166;
+}
+
+.fd-turn-bar--locked {
+  background: #102a22;
+  border-color: #22c55e;
+  color: #4ade80;
+}
+
+/* Concurrent Draft Header & Team Status */
+.fd-vs-player--locked {
+  border-color: #22c55e;
+  background: #102822;
+}
+
+.fd-vs-meta {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 4px;
+}
+
+.fd-vs-progress {
+  font-size: .74rem;
+  font-weight: 800;
+  color: #ffd166;
+  background: #1a2640;
+  padding: 1px 7px;
+  border-radius: 999px;
+}
+
+.fd-vs-status,
+.fd-team-status {
+  display: inline-block;
+  font-size: .7rem;
+  font-weight: 800;
+  letter-spacing: .06em;
+  padding: 2px 8px;
+  border-radius: 999px;
+  width: fit-content;
+}
+
+.fd-vs-status--drafting,
+.fd-team-status--drafting {
+  background: #162c4e;
+  border: 1px solid #3563a8;
+  color: #7dd3fc;
+}
+
+.fd-vs-status--ready,
+.fd-team-status--ready {
+  background: #33270d;
+  border: 1px solid #f6b82f;
+  color: #ffd166;
+}
+
+.fd-vs-status--locked,
+.fd-team-status--locked {
+  background: #123124;
+  border: 1px solid #22c55e;
+  color: #4ade80;
+}
+
+/* Blind Opponent Panel */
+.fd-team-panel--blind {
+  border-style: dashed;
+  border-color: #32466e;
+}
+
+.fd-team-progress {
+  font-size: .82rem;
+  font-weight: 700;
+  color: #ffd166;
+}
+
+.fd-slot-row--blind {
+  background: #11192b;
+  border-color: #1f2d4a;
+  justify-content: space-between;
+}
+
+.fd-slot-blind-mask {
+  flex: 1;
+  font-size: .85rem;
+  font-weight: 800;
+  letter-spacing: .16em;
+  color: #5b7099;
+}
+
+.fd-slot-blind-badge {
+  font-size: .66rem;
+  font-weight: 800;
+  letter-spacing: .06em;
+  padding: 2px 6px;
+  border-radius: 4px;
+  background: #1a253d;
+  border: 1px solid #2d3f66;
+  color: #7e95bf;
+}
+
+.fd-blind-note {
+  font-size: .74rem;
+  color: #7e95bf;
+  text-align: center;
+  padding: 6px 8px;
+  background: #111a2e;
+  border: 1px dashed #25385c;
+  border-radius: 6px;
+}
+
+/* Ready & Lock In Center Box */
+.fd-ready-box,
+.fd-locked-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 20px 16px;
+  background: #131f36;
+  border: 1px solid #2e4570;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.fd-ready-badge {
+  font-size: .82rem;
+  font-weight: 900;
+  letter-spacing: .1em;
+  padding: 4px 14px;
+  border-radius: 999px;
+  background: #33270d;
+  border: 1px solid #f6b82f;
+  color: #ffd166;
+}
+
+.fd-ready-guide,
+.fd-locked-wait {
+  margin: 0;
+  font-size: .92rem;
+  color: #b8caec;
+}
+
+.fd-ready-roster {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 100%;
+  max-width: 420px;
+}
+
+.fd-ready-slot {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+  background: #0e1729;
+  border: 1px solid #24385e;
+  border-radius: 6px;
+  text-align: left;
+}
+
+.fd-ready-player-name {
+  flex: 1;
+  font-size: .86rem;
+  font-weight: 700;
+  color: #eef4ff;
+}
+
+.fd-ready-player-meta {
+  font-size: .74rem;
+  color: #8da2c8;
+}
+
+.fd-lock-btn {
+  font-size: 1.15rem;
+  font-weight: 800;
+  letter-spacing: .1em;
+  padding: 13px 40px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #f6b82f, #eab308);
+  color: #1a1300;
+  box-shadow: 0 4px 14px #f6b82f55;
+}
+
+.fd-lock-btn:hover {
+  background: linear-gradient(135deg, #ffd166, #f6b82f);
+}
+
+.fd-locked-badge {
+  font-size: .9rem;
+  font-weight: 900;
+  letter-spacing: .1em;
+  padding: 5px 16px;
+  border-radius: 999px;
+  background: #123124;
+  border: 1px solid #22c55e;
+  color: #4ade80;
+}
+
+.fd-reveal-badge {
+  font-size: .76rem;
+  font-weight: 800;
+  letter-spacing: .1em;
+  padding: 3px 12px;
+  border-radius: 999px;
+  background: #123124;
+  border: 1px solid #22c55e;
+  color: #4ade80;
+}
+
 /* ===== Match Simulation v0 UI ===== */
 .fd-match-zone {
   gap: 12px;

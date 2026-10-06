@@ -4,7 +4,16 @@ import { TEAM_SEASON_MAP } from '../data/team-seasons.js';
 import { t, subscribeLocaleChange } from '../i18n/i18n.js';
 import { el } from './shared/dom.js';
 import { SLOTS, REROLL_TYPES } from './shared/constants.js';
-import { createInitialState, getCurrentTeam, isDraftPhase, pushHistory } from './state.js';
+import {
+    createInitialState,
+    getTeamById,
+    getMyTeam,
+    canTeamRoll,
+    canTeamPick,
+    canTeamLock,
+    areBothTeamsLocked,
+    pushTeamHistory,
+} from './state.js';
 import { generateInitialRollTeamSeason } from './draft/random.js';
 import {
     generateRerollTeamSeason,
@@ -41,6 +50,7 @@ export function startGame(ctx) {
     }
 
     const state = createInitialState(ctx);
+    let localSelectedPlayerId = null;
     let playbackTimer = null;
 
     function stopPlaybackTimer() {
@@ -50,10 +60,6 @@ export function startGame(ctx) {
         }
     }
 
-    function isMyTurn() {
-        return isDraftPhase(state) && getCurrentTeam(state).id === ctx.me;
-    }
-
     function isTeamAPlayer() {
         return ctx.me === ctx.order[0];
     }
@@ -61,19 +67,23 @@ export function startGame(ctx) {
     // ----- State Transitions (Synced across both clients) -----
 
     function applyRoll(actorId, teamSeasonId) {
-        if (state.phase !== 'ROLL') return;
-        const currentTeam = getCurrentTeam(state);
-        if (currentTeam.id !== actorId) return;
+        if (state.phase !== 'DRAFT') return;
+        const actorTeam = getTeamById(state, actorId);
+        if (!actorTeam || !canTeamRoll(actorTeam)) return;
 
         const teamSeason = TEAM_SEASON_MAP.get(teamSeasonId);
         if (!teamSeason) return;
 
-        state.currentRoll = teamSeason;
-        state.selectedPlayerId = null;
-        state.phase = 'PICK';
-        pushHistory(state, {
+        actorTeam.draft.currentRoll = teamSeason;
+        actorTeam.draft.phase = 'PICK';
+        if (actorId === ctx.me) {
+            localSelectedPlayerId = null;
+        }
+
+        pushTeamHistory(actorTeam, {
             type: 'draft.roll',
-            actorName: currentTeam.name,
+            actorId: actorTeam.id,
+            actorName: actorTeam.name,
             club: teamSeason.club,
             year: teamSeason.year,
         });
@@ -81,26 +91,29 @@ export function startGame(ctx) {
     }
 
     function applyReroll(actorId, type, teamSeasonId) {
-        if (state.phase !== 'PICK' || !state.currentRoll) return;
-        const currentTeam = getCurrentTeam(state);
-        if (currentTeam.id !== actorId) return;
+        if (state.phase !== 'DRAFT') return;
+        const actorTeam = getTeamById(state, actorId);
+        if (!actorTeam || !canTeamPick(actorTeam)) return;
 
         if (!REROLL_TYPES.includes(type)) return;
-        if (currentTeam.rerolls[type] <= 0) return;
+        if (actorTeam.rerolls[type] <= 0) return;
 
         const nextTeamSeason = TEAM_SEASON_MAP.get(teamSeasonId);
         if (!nextTeamSeason) return;
 
-        if (!isValidRerollTransition(state.currentRoll, nextTeamSeason, type)) return;
+        if (!isValidRerollTransition(actorTeam.draft.currentRoll, nextTeamSeason, type)) return;
 
-        currentTeam.rerolls[type] -= 1;
-        state.currentRoll = nextTeamSeason;
-        state.selectedPlayerId = null;
+        actorTeam.rerolls[type] -= 1;
+        actorTeam.draft.currentRoll = nextTeamSeason;
+        if (actorId === ctx.me) {
+            localSelectedPlayerId = null;
+        }
 
-        pushHistory(state, {
+        pushTeamHistory(actorTeam, {
             type: 'draft.reroll',
+            actorId: actorTeam.id,
+            actorName: actorTeam.name,
             rerollType: type,
-            actorName: currentTeam.name,
             club: nextTeamSeason.club,
             year: nextTeamSeason.year,
         });
@@ -108,33 +121,61 @@ export function startGame(ctx) {
     }
 
     function applyPick(actorId, playerId, slot) {
-        if (state.phase !== 'PICK' || !state.currentRoll) return;
-        const currentTeam = getCurrentTeam(state);
-        if (currentTeam.id !== actorId) return;
+        if (state.phase !== 'DRAFT') return;
+        const actorTeam = getTeamById(state, actorId);
+        if (!actorTeam || !canTeamPick(actorTeam)) return;
 
         if (!SLOTS.includes(slot)) return;
-        if (currentTeam.roster[slot] !== null) return;
+        if (actorTeam.roster[slot] !== null) return;
 
-        const candidate = state.currentRoll.players.find((p) => p.id === playerId);
+        const candidate = actorTeam.draft.currentRoll.players.find((p) => p.id === playerId);
         if (!candidate) return;
         if (!canPlayerFitSlot(candidate, slot)) return;
 
-        currentTeam.roster[slot] = candidate;
-        state.currentRoll = null;
-        state.selectedPlayerId = null;
-        pushHistory(state, {
+        actorTeam.roster[slot] = candidate;
+        actorTeam.draft.currentRoll = null;
+        if (actorId === ctx.me) {
+            localSelectedPlayerId = null;
+        }
+
+        if (isRosterComplete(actorTeam)) {
+            actorTeam.draft.phase = 'READY';
+        } else {
+            actorTeam.draft.phase = 'ROLL';
+        }
+
+        pushTeamHistory(actorTeam, {
             type: 'draft.pick',
-            actorName: currentTeam.name,
+            actorId: actorTeam.id,
+            actorName: actorTeam.name,
+            playerId: candidate.id,
             playerName: candidate.name,
             slot,
         });
 
-        if (state.teams.every((t) => isRosterComplete(t))) {
-            state.phase = 'COMPLETE';
-        } else {
-            state.turnIndex = (state.turnIndex + 1) % 2;
-            state.roundCount += 1;
-            state.phase = 'ROLL';
+        render();
+    }
+
+    function applyDraftLock(actorId) {
+        if (state.phase !== 'DRAFT') return;
+        const actorTeam = getTeamById(state, actorId);
+        if (!actorTeam || !canTeamLock(actorTeam)) return;
+
+        actorTeam.draft.locked = true;
+        actorTeam.draft.phase = 'LOCKED';
+        actorTeam.draft.currentRoll = null;
+        if (actorId === ctx.me) {
+            localSelectedPlayerId = null;
+        }
+
+        pushTeamHistory(actorTeam, {
+            type: 'draft.lock',
+            actorId: actorTeam.id,
+            actorName: actorTeam.name,
+        });
+
+        if (areBothTeamsLocked(state)) {
+            state.phase = 'REVEAL';
         }
 
         render();
@@ -142,12 +183,13 @@ export function startGame(ctx) {
 
     function applyMatchStart(actorId, matchSeed) {
         // Validate:
-        // 1. Draft is complete
-        // 2. actorId === ctx.order[0] (Team A)
-        // 3. Match has not started yet
-        // 4. matchSeed is a valid integer
-        if (state.phase !== 'COMPLETE') return;
-        if (!state.teams.every((t) => isRosterComplete(t))) return;
+        // 1. State phase is REVEAL
+        // 2. Both rosters are complete and locked
+        // 3. actorId === ctx.order[0] (Team A)
+        // 4. Match has not started yet
+        // 5. matchSeed is a valid safe integer
+        if (state.phase !== 'REVEAL') return;
+        if (!areBothTeamsLocked(state)) return;
         if (actorId !== ctx.order[0]) return;
         if (state.match !== null) return;
         if (typeof matchSeed !== 'number' || !Number.isInteger(matchSeed) || !Number.isSafeInteger(matchSeed)) {
@@ -212,7 +254,8 @@ export function startGame(ctx) {
     // ----- User Actions -----
 
     function handleRollClick() {
-        if (!isMyTurn() || state.phase !== 'ROLL') return;
+        const myTeam = getMyTeam(state, ctx.me);
+        if (state.phase !== 'DRAFT' || !canTeamRoll(myTeam)) return;
         const chosen = generateInitialRollTeamSeason();
         if (!chosen) return;
         ctx.send({ kind: 'roll', teamSeasonId: chosen.id });
@@ -220,11 +263,11 @@ export function startGame(ctx) {
     }
 
     function handleRerollClick(type) {
-        if (!isMyTurn() || state.phase !== 'PICK' || !state.currentRoll) return;
-        const currentTeam = getCurrentTeam(state);
-        if (!REROLL_TYPES.includes(type) || currentTeam.rerolls[type] <= 0) return;
+        const myTeam = getMyTeam(state, ctx.me);
+        if (state.phase !== 'DRAFT' || !canTeamPick(myTeam)) return;
+        if (!REROLL_TYPES.includes(type) || myTeam.rerolls[type] <= 0) return;
 
-        const nextTeamSeason = generateRerollTeamSeason(state.currentRoll, type);
+        const nextTeamSeason = generateRerollTeamSeason(myTeam.draft.currentRoll, type);
         if (!nextTeamSeason) return;
 
         ctx.send({ kind: 'reroll', type, teamSeasonId: nextTeamSeason.id });
@@ -232,19 +275,30 @@ export function startGame(ctx) {
     }
 
     function handleSelectCandidate(playerId) {
-        if (!isMyTurn() || state.phase !== 'PICK') return;
-        state.selectedPlayerId = state.selectedPlayerId === playerId ? null : playerId;
+        const myTeam = getMyTeam(state, ctx.me);
+        if (state.phase !== 'DRAFT' || !canTeamPick(myTeam)) return;
+        localSelectedPlayerId = localSelectedPlayerId === playerId ? null : playerId;
         render();
     }
 
     function handlePickSlot(playerId, slot) {
-        if (!isMyTurn() || state.phase !== 'PICK') return;
+        const myTeam = getMyTeam(state, ctx.me);
+        if (state.phase !== 'DRAFT' || !canTeamPick(myTeam)) return;
         ctx.send({ kind: 'pick', playerId, slot });
         applyPick(ctx.me, playerId, slot);
     }
 
+    function handleLockClick() {
+        const myTeam = getMyTeam(state, ctx.me);
+        if (state.phase !== 'DRAFT' || !canTeamLock(myTeam)) return;
+        ctx.send({ kind: 'draft_lock' });
+        applyDraftLock(ctx.me);
+    }
+
     function handleMatchStartClick() {
-        if (state.phase !== 'COMPLETE' || !isTeamAPlayer() || state.match !== null) return;
+        if (state.phase !== 'REVEAL' || !areBothTeamsLocked(state) || !isTeamAPlayer() || state.match !== null) {
+            return;
+        }
         const baseSeed = Number(ctx.seed) || 0;
         const timePart = Date.now() % 1000000000;
         const matchSeed = Math.trunc((baseSeed + timePart) % 2147483647) || 1;
@@ -258,13 +312,6 @@ export function startGame(ctx) {
 
     // ----- Rendering -----
 
-    const draftHandlers = {
-        onRollClick: handleRollClick,
-        onRerollClick: handleRerollClick,
-        onSelectCandidate: handleSelectCandidate,
-        onPickSlot: handlePickSlot,
-    };
-
     function render() {
         root.replaceChildren();
 
@@ -277,12 +324,25 @@ export function startGame(ctx) {
         const mainGrid = el('div', 'fd-main');
         const teamAPanel = renderTeamPanel(state, state.teams[0], 0, ctx.me);
         let centerZone;
-        if (state.phase === 'COMPLETE') {
+        if (state.phase === 'REVEAL') {
             centerZone = renderCompleteZone(state, isTeamAPlayer(), handleMatchStartClick);
         } else if (state.phase === 'MATCH' || state.phase === 'RESULT') {
             centerZone = renderMatchZone(state);
         } else {
-            centerZone = renderDraftZone(state, isMyTurn(), draftHandlers);
+            const myTeam = getMyTeam(state, ctx.me);
+            centerZone = renderDraftZone(
+                state,
+                myTeam,
+                {
+                    onRollClick: handleRollClick,
+                    onRerollClick: handleRerollClick,
+                    onSelectCandidate: handleSelectCandidate,
+                    onPickSlot: handlePickSlot,
+                    onLockClick: handleLockClick,
+                    selectedPlayerId: localSelectedPlayerId,
+                },
+                localSelectedPlayerId
+            );
         }
         const teamBPanel = renderTeamPanel(state, state.teams[1], 1, ctx.me);
 
@@ -305,7 +365,7 @@ export function startGame(ctx) {
     // ----- Network Handlers -----
 
     ctx.onMessage(({ from, payload }) => {
-        if (!payload || typeof payload !== 'object') return;
+        if (!payload || typeof payload !== 'object' || typeof from !== 'string') return;
 
         if (payload.kind === 'roll' && typeof payload.teamSeasonId === 'string') {
             applyRoll(from, payload.teamSeasonId);
@@ -330,6 +390,11 @@ export function startGame(ctx) {
             return;
         }
 
+        if (payload.kind === 'draft_lock') {
+            applyDraftLock(from);
+            return;
+        }
+
         if (payload.kind === 'match_start') {
             applyMatchStart(from, payload.matchSeed);
         }
@@ -344,4 +409,10 @@ export function startGame(ctx) {
     });
 
     render();
+
+    return {
+        getState: () => state,
+        stop: stopPlaybackTimer,
+    };
 }
+

@@ -32,15 +32,16 @@ export function renderProfileCard(team, rating, profile) {
 }
 
 export function renderCompleteZone(state, isTeamAPlayer, onMatchStartClick) {
-    const zone = el('div', 'fd-center fd-complete-zone');
+    const zone = el('div', 'fd-center fd-complete-zone fd-reveal-zone');
     const [teamA, teamB] = state.teams;
     const ratingA = calculateTeamRating(teamA);
     const ratingB = calculateTeamRating(teamB);
     const profileA = calculateTeamProfile(teamA);
     const profileB = calculateTeamProfile(teamB);
 
-    const banner = el('h2', 'fd-complete-title', t('draft.completeTitle'));
-    const sub = el('p', 'fd-complete-sub', t('draft.completeSub'));
+    const lockedBadge = el('div', 'fd-reveal-badge', t('draft.bothLocked'));
+    const banner = el('h2', 'fd-complete-title', t('draft.rosterReveal'));
+    const sub = el('p', 'fd-complete-sub', t('draft.revealSub'));
 
     const summaryBox = el('div', 'fd-complete-ratings');
     summaryBox.append(
@@ -48,7 +49,7 @@ export function renderCompleteZone(state, isTeamAPlayer, onMatchStartClick) {
         renderProfileCard(teamB, ratingB, profileB)
     );
 
-    zone.append(banner, sub, summaryBox);
+    zone.append(lockedBadge, banner, sub, summaryBox);
 
     if (isTeamAPlayer) {
         const matchBtn = el('button', 'fd-match-btn', t('match.matchBtn'));
@@ -66,6 +67,8 @@ export function renderCompleteZone(state, isTeamAPlayer, onMatchStartClick) {
     zone.append(renderHistoryBox(state));
     return zone;
 }
+
+export const renderRevealZone = renderCompleteZone;
 
 export function renderMatchStatsBox(stats, score, isFullTime) {
     const box = el('div', 'fd-stats-box' + (isFullTime ? ' fd-stats-box--ft' : ''));

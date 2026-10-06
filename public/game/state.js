@@ -1,7 +1,7 @@
-// Game State initialization and shared state selectors/helpers
+// Game State initialization and shared per-team concurrent draft selectors/helpers
 
 import { MAX_HISTORY_ITEMS } from './shared/constants.js';
-import { createEmptyRoster, createInitialRerolls } from './draft/rules.js';
+import { createEmptyRoster, createInitialRerolls, isRosterComplete } from './draft/rules.js';
 
 export function createInitialState(ctx) {
     const teams = ctx.order.map((id, idx) => ({
@@ -11,33 +11,88 @@ export function createInitialState(ctx) {
         name: ctx.players.find((p) => p.id === id)?.name ?? id,
         roster: createEmptyRoster(),
         rerolls: createInitialRerolls(),
+        draft: {
+            phase: 'ROLL',          // 'ROLL' | 'PICK' | 'READY' | 'LOCKED'
+            currentRoll: null,      // teamSeason object when team.draft.phase === 'PICK'
+            locked: false,
+            history: [],            // per-team structured action logs (up to MAX_HISTORY_ITEMS)
+        },
     }));
 
     return {
         seed: ctx.seed,
         teams,
-        turnIndex: 0,           // 0 or 1 (index into state.teams)
-        roundCount: 1,          // 1..10
-        phase: 'ROLL',          // 'ROLL' | 'PICK' | 'COMPLETE' | 'MATCH' | 'RESULT'
-        currentRoll: null,      // teamSeason object when phase === 'PICK'
-        selectedPlayerId: null, // local UI selection during 'PICK'
-        history: [],            // recent 5~8 synchronized action logs
-        match: null,            // { matchSeed, script, revealedCount, currentMinute, liveScore, liveStats }
+        phase: 'DRAFT',             // 'DRAFT' | 'REVEAL' | 'MATCH' | 'RESULT'
+        match: null,                // { matchSeed, script, revealedCount, currentMinute, liveScore, liveStats }
         opponentLeft: false,
     };
 }
 
-export function getCurrentTeam(state) {
-    return state.teams[state.turnIndex];
-}
-
 export function isDraftPhase(state) {
-    return state.phase === 'ROLL' || state.phase === 'PICK';
+    return state?.phase === 'DRAFT';
 }
 
-export function pushHistory(state, entryText) {
-    state.history.push(entryText);
-    if (state.history.length > MAX_HISTORY_ITEMS) {
-        state.history = state.history.slice(-MAX_HISTORY_ITEMS);
+export function getTeamById(state, id) {
+    if (!state || !Array.isArray(state.teams)) return null;
+    return state.teams.find((t) => t.id === id) ?? null;
+}
+
+export function getMyTeam(state, meId) {
+    return getTeamById(state, meId);
+}
+
+export function getOpponentTeam(state, meId) {
+    if (!state || !Array.isArray(state.teams)) return null;
+    return state.teams.find((t) => t.id !== meId) ?? null;
+}
+
+export function isTeamDraftActive(team) {
+    return Boolean(team?.draft && !team.draft.locked && team.draft.phase !== 'LOCKED');
+}
+
+export function canTeamRoll(team) {
+    return Boolean(team?.draft && !team.draft.locked && team.draft.phase === 'ROLL');
+}
+
+export function canTeamPick(team) {
+    return Boolean(
+        team?.draft &&
+            !team.draft.locked &&
+            team.draft.phase === 'PICK' &&
+            team.draft.currentRoll !== null
+    );
+}
+
+export function canTeamLock(team) {
+    return Boolean(
+        team?.draft &&
+            !team.draft.locked &&
+            team.draft.phase === 'READY' &&
+            isRosterComplete(team)
+    );
+}
+
+export function areBothTeamsLocked(state) {
+    return Boolean(
+        state &&
+            Array.isArray(state.teams) &&
+            state.teams.length === 2 &&
+            state.teams.every(
+                (team) =>
+                    Boolean(
+                        team?.draft?.locked &&
+                            team?.draft?.phase === 'LOCKED' &&
+                            isRosterComplete(team)
+                    )
+            )
+    );
+}
+
+export function pushTeamHistory(team, entry) {
+    if (!team?.draft || !Array.isArray(team.draft.history)) return;
+    team.draft.history.push(entry);
+    if (team.draft.history.length > MAX_HISTORY_ITEMS) {
+        team.draft.history = team.draft.history.slice(-MAX_HISTORY_ITEMS);
     }
 }
+

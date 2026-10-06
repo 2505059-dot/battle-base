@@ -1,6 +1,14 @@
 // 5-a-side Football Fantasy Draft Prototype (2 Players)
 // Uses Battle Base ctx: ctx.me, ctx.players, ctx.order, ctx.seed, ctx.send(), ctx.onMessage()
 
+import {
+    TEAM_SEASON_MAP,
+    getLeagues,
+    getClubsByLeague,
+    getYearsByLeagueAndClub,
+    findTeamSeason,
+} from './data/team-seasons.js';
+
 const SLOTS = ['GK', 'DF', 'MF', 'FW', 'FLEX'];
 const REROLL_TYPES = ['league', 'club', 'year'];
 const REROLL_LABELS = {
@@ -10,268 +18,7 @@ const REROLL_LABELS = {
 };
 const MAX_HISTORY_ITEMS = 8;
 
-const RAW_TEAM_SEASONS = [
-    // Premier League
-    {
-        id: 'manchester-united-1999',
-        league: 'Premier League',
-        club: 'Manchester United',
-        year: 1999,
-        players: [
-            { name: 'David Beckham', positions: ['MF'], rating: 93 },
-            { name: 'Roy Keane', positions: ['MF'], rating: 93 },
-            { name: 'Paul Scholes', positions: ['MF'], rating: 90 },
-            { name: 'Ryan Giggs', positions: ['MF', 'FW'], rating: 91 },
-            { name: 'Dwight Yorke', positions: ['FW'], rating: 89 },
-            { name: 'Jaap Stam', positions: ['DF'], rating: 92 },
-            { name: 'Gary Neville', positions: ['DF'], rating: 88 },
-            { name: 'Peter Schmeichel', positions: ['GK'], rating: 92 },
-        ],
-    },
-    {
-        id: 'manchester-united-2008',
-        league: 'Premier League',
-        club: 'Manchester United',
-        year: 2008,
-        players: [
-            { name: 'Cristiano Ronaldo', positions: ['FW', 'MF'], rating: 96 },
-            { name: 'Wayne Rooney', positions: ['FW', 'MF'], rating: 91 },
-            { name: 'Paul Scholes', positions: ['MF'], rating: 91 },
-            { name: 'Ryan Giggs', positions: ['MF', 'FW'], rating: 89 },
-            { name: 'Rio Ferdinand', positions: ['DF'], rating: 92 },
-            { name: 'Nemanja Vidic', positions: ['DF'], rating: 91 },
-            { name: 'Patrice Evra', positions: ['DF'], rating: 88 },
-            { name: 'Edwin van der Sar', positions: ['GK'], rating: 90 },
-        ],
-    },
-    {
-        id: 'arsenal-2004',
-        league: 'Premier League',
-        club: 'Arsenal',
-        year: 2004,
-        players: [
-            { name: 'Thierry Henry', positions: ['FW'], rating: 96 },
-            { name: 'Dennis Bergkamp', positions: ['FW', 'MF'], rating: 91 },
-            { name: 'Patrick Vieira', positions: ['MF'], rating: 93 },
-            { name: 'Robert Pires', positions: ['MF', 'FW'], rating: 90 },
-            { name: 'Sol Campbell', positions: ['DF'], rating: 90 },
-            { name: 'Ashley Cole', positions: ['DF'], rating: 89 },
-            { name: 'Jens Lehmann', positions: ['GK'], rating: 87 },
-        ],
-    },
-    {
-        id: 'chelsea-2005',
-        league: 'Premier League',
-        club: 'Chelsea',
-        year: 2005,
-        players: [
-            { name: 'Frank Lampard', positions: ['MF'], rating: 93 },
-            { name: 'Claude Makelele', positions: ['MF'], rating: 91 },
-            { name: 'Didier Drogba', positions: ['FW'], rating: 91 },
-            { name: 'Arjen Robben', positions: ['FW', 'MF'], rating: 90 },
-            { name: 'John Terry', positions: ['DF'], rating: 92 },
-            { name: 'Ricardo Carvalho', positions: ['DF'], rating: 89 },
-            { name: 'Petr Cech', positions: ['GK'], rating: 92 },
-        ],
-    },
-    {
-        id: 'manchester-city-2023',
-        league: 'Premier League',
-        club: 'Manchester City',
-        year: 2023,
-        players: [
-            { name: 'Erling Haaland', positions: ['FW'], rating: 95 },
-            { name: 'Kevin De Bruyne', positions: ['MF'], rating: 95 },
-            { name: 'Rodri', positions: ['MF'], rating: 93 },
-            { name: 'Bernardo Silva', positions: ['MF', 'FW'], rating: 91 },
-            { name: 'Ruben Dias', positions: ['DF'], rating: 91 },
-            { name: 'John Stones', positions: ['DF', 'MF'], rating: 89 },
-            { name: 'Kyle Walker', positions: ['DF'], rating: 88 },
-            { name: 'Ederson', positions: ['GK'], rating: 89 },
-        ],
-    },
-
-    // La Liga
-    {
-        id: 'barcelona-2009',
-        league: 'La Liga',
-        club: 'Barcelona',
-        year: 2009,
-        players: [
-            { name: 'Lionel Messi', positions: ['FW', 'MF'], rating: 96 },
-            { name: "Samuel Eto'o", positions: ['FW'], rating: 92 },
-            { name: 'Xavi', positions: ['MF'], rating: 94 },
-            { name: 'Andres Iniesta', positions: ['MF'], rating: 93 },
-            { name: 'Carles Puyol', positions: ['DF'], rating: 92 },
-            { name: 'Gerard Pique', positions: ['DF'], rating: 89 },
-            { name: 'Dani Alves', positions: ['DF', 'MF'], rating: 90 },
-            { name: 'Victor Valdes', positions: ['GK'], rating: 87 },
-        ],
-    },
-    {
-        id: 'barcelona-2011',
-        league: 'La Liga',
-        club: 'Barcelona',
-        year: 2011,
-        players: [
-            { name: 'Lionel Messi', positions: ['FW', 'MF'], rating: 98 },
-            { name: 'David Villa', positions: ['FW'], rating: 91 },
-            { name: 'Xavi', positions: ['MF'], rating: 95 },
-            { name: 'Andres Iniesta', positions: ['MF', 'FW'], rating: 94 },
-            { name: 'Sergio Busquets', positions: ['MF'], rating: 91 },
-            { name: 'Carles Puyol', positions: ['DF'], rating: 91 },
-            { name: 'Gerard Pique', positions: ['DF'], rating: 91 },
-            { name: 'Victor Valdes', positions: ['GK'], rating: 88 },
-        ],
-    },
-    {
-        id: 'real-madrid-2002',
-        league: 'La Liga',
-        club: 'Real Madrid',
-        year: 2002,
-        players: [
-            { name: 'Zinedine Zidane', positions: ['MF'], rating: 96 },
-            { name: 'Luis Figo', positions: ['MF', 'FW'], rating: 93 },
-            { name: 'Raul', positions: ['FW'], rating: 93 },
-            { name: 'Claude Makelele', positions: ['MF'], rating: 90 },
-            { name: 'Roberto Carlos', positions: ['DF'], rating: 93 },
-            { name: 'Fernando Hierro', positions: ['DF'], rating: 90 },
-            { name: 'Iker Casillas', positions: ['GK'], rating: 90 },
-        ],
-    },
-    {
-        id: 'real-madrid-2017',
-        league: 'La Liga',
-        club: 'Real Madrid',
-        year: 2017,
-        players: [
-            { name: 'Cristiano Ronaldo', positions: ['FW'], rating: 97 },
-            { name: 'Karim Benzema', positions: ['FW'], rating: 91 },
-            { name: 'Luka Modric', positions: ['MF'], rating: 94 },
-            { name: 'Toni Kroos', positions: ['MF'], rating: 92 },
-            { name: 'Casemiro', positions: ['MF'], rating: 90 },
-            { name: 'Sergio Ramos', positions: ['DF'], rating: 93 },
-            { name: 'Marcelo', positions: ['DF', 'MF'], rating: 91 },
-            { name: 'Keylor Navas', positions: ['GK'], rating: 89 },
-        ],
-    },
-
-    // Serie A
-    {
-        id: 'ac-milan-2007',
-        league: 'Serie A',
-        club: 'AC Milan',
-        year: 2007,
-        players: [
-            { name: 'Kaka', positions: ['MF', 'FW'], rating: 95 },
-            { name: 'Andrea Pirlo', positions: ['MF'], rating: 93 },
-            { name: 'Clarence Seedorf', positions: ['MF'], rating: 90 },
-            { name: 'Filippo Inzaghi', positions: ['FW'], rating: 90 },
-            { name: 'Paolo Maldini', positions: ['DF'], rating: 93 },
-            { name: 'Alessandro Nesta', positions: ['DF'], rating: 93 },
-            { name: 'Cafu', positions: ['DF'], rating: 88 },
-            { name: 'Dida', positions: ['GK'], rating: 87 },
-        ],
-    },
-    {
-        id: 'inter-milan-2010',
-        league: 'Serie A',
-        club: 'Inter Milan',
-        year: 2010,
-        players: [
-            { name: 'Wesley Sneijder', positions: ['MF'], rating: 93 },
-            { name: 'Diego Milito', positions: ['FW'], rating: 92 },
-            { name: "Samuel Eto'o", positions: ['FW', 'MF'], rating: 91 },
-            { name: 'Esteban Cambiasso', positions: ['MF'], rating: 89 },
-            { name: 'Maicon', positions: ['DF'], rating: 92 },
-            { name: 'Lucio', positions: ['DF'], rating: 91 },
-            { name: 'Javier Zanetti', positions: ['DF', 'MF'], rating: 91 },
-            { name: 'Julio Cesar', positions: ['GK'], rating: 91 },
-        ],
-    },
-    {
-        id: 'juventus-2003',
-        league: 'Serie A',
-        club: 'Juventus',
-        year: 2003,
-        players: [
-            { name: 'Pavel Nedved', positions: ['MF', 'FW'], rating: 94 },
-            { name: 'Alessandro Del Piero', positions: ['FW', 'MF'], rating: 93 },
-            { name: 'David Trezeguet', positions: ['FW'], rating: 90 },
-            { name: 'Edgar Davids', positions: ['MF'], rating: 90 },
-            { name: 'Lilian Thuram', positions: ['DF'], rating: 92 },
-            { name: 'Gianluca Zambrotta', positions: ['DF', 'MF'], rating: 89 },
-            { name: 'Gianluigi Buffon', positions: ['GK'], rating: 94 },
-        ],
-    },
-];
-
-// Normalize database so every player object contains id, name, club, year, league, positions, rating
-const TEAM_SEASONS = RAW_TEAM_SEASONS.map((ts) => ({
-    ...ts,
-    players: ts.players.map((p, index) => ({
-        id: `${ts.id}-${index}`,
-        name: p.name,
-        club: ts.club,
-        year: ts.year,
-        league: ts.league,
-        positions: p.positions,
-        rating: p.rating,
-    })),
-}));
-
-// ---------- Structured Query Indexes ----------
-// Guarantees that all rolls and rerolls only ever produce valid (league, club, year) combinations
-
-const TEAM_SEASON_MAP = new Map(TEAM_SEASONS.map((ts) => [ts.id, ts]));
-
-const LEAGUES = [];
-const CLUBS_BY_LEAGUE = new Map();       // league -> string[]
-const YEARS_BY_LEAGUE_CLUB = new Map();  // `${league}::${club}` -> number[]
-const TEAM_SEASON_BY_COMBO = new Map();  // `${league}::${club}::${year}` -> teamSeason
-
-for (const ts of TEAM_SEASONS) {
-    if (!LEAGUES.includes(ts.league)) {
-        LEAGUES.push(ts.league);
-    }
-
-    if (!CLUBS_BY_LEAGUE.has(ts.league)) {
-        CLUBS_BY_LEAGUE.set(ts.league, []);
-    }
-    const clubs = CLUBS_BY_LEAGUE.get(ts.league);
-    if (!clubs.includes(ts.club)) {
-        clubs.push(ts.club);
-    }
-
-    const lcKey = `${ts.league}::${ts.club}`;
-    if (!YEARS_BY_LEAGUE_CLUB.has(lcKey)) {
-        YEARS_BY_LEAGUE_CLUB.set(lcKey, []);
-    }
-    const years = YEARS_BY_LEAGUE_CLUB.get(lcKey);
-    if (!years.includes(ts.year)) {
-        years.push(ts.year);
-    }
-
-    TEAM_SEASON_BY_COMBO.set(`${ts.league}::${ts.club}::${ts.year}`, ts);
-}
-
-function getLeagues() {
-    return LEAGUES;
-}
-
-function getClubsByLeague(league) {
-    return CLUBS_BY_LEAGUE.get(league) ?? [];
-}
-
-function getYearsByLeagueAndClub(league, club) {
-    return YEARS_BY_LEAGUE_CLUB.get(`${league}::${club}`) ?? [];
-}
-
-function findTeamSeason(league, club, year) {
-    return TEAM_SEASON_BY_COMBO.get(`${league}::${club}::${year}`) ?? null;
-}
-
-// ---------- Random Selection Helpers ----------
+// ---------- Random Selection & Hierarchical Roll Helpers ----------
 
 function pickRandom(arr) {
     if (!Array.isArray(arr) || arr.length === 0) return null;
@@ -283,6 +30,20 @@ function pickRandomExcept(arr, current) {
     if (!Array.isArray(arr) || arr.length === 0) return null;
     const candidates = arr.filter((item) => item !== current);
     return pickRandom(candidates);
+}
+
+// 3-Stage Uniform Roll: League -> Club -> Year
+function generateInitialRollTeamSeason() {
+    const league = pickRandom(getLeagues());
+    if (!league) return null;
+
+    const club = pickRandom(getClubsByLeague(league));
+    if (!club) return null;
+
+    const year = pickRandom(getYearsByLeagueAndClub(league, club));
+    if (year === null) return null;
+
+    return findTeamSeason(league, club, year);
 }
 
 function hasRerollOption(currentRoll, type) {
@@ -372,6 +133,10 @@ function createInitialRerolls() {
     };
 }
 
+function getPlayerOverall(player) {
+    return player?.overall ?? player?.rating ?? 0;
+}
+
 function canPlayerFitSlot(player, slot) {
     if (!player || !Array.isArray(player.positions)) return false;
     switch (slot) {
@@ -405,7 +170,7 @@ function getPickedCount(teamState) {
 function calculateTeamRating(teamState) {
     const picked = SLOTS.map((slot) => teamState.roster[slot]).filter(Boolean);
     if (picked.length === 0) return 0;
-    const sum = picked.reduce((acc, p) => acc + p.rating, 0);
+    const sum = picked.reduce((acc, p) => acc + getPlayerOverall(p), 0);
     return Math.round(sum / picked.length);
 }
 
@@ -537,7 +302,7 @@ export function startGame(ctx) {
 
     function handleRollClick() {
         if (!isMyTurn() || state.phase !== 'ROLL') return;
-        const chosen = pickRandom(TEAM_SEASONS);
+        const chosen = generateInitialRollTeamSeason();
         if (!chosen) return;
         ctx.send({ kind: 'roll', teamSeasonId: chosen.id });
         applyRoll(ctx.me, chosen.id);
@@ -690,6 +455,26 @@ export function startGame(ctx) {
         return box;
     }
 
+    function renderPlayerMiniStats(player) {
+        const statsRow = el('div', 'fd-card-stats');
+        if (player.positions.includes('GK')) {
+            statsRow.append(
+                el('span', 'fd-stat', `GK ${player.goalkeeping}`),
+                el('span', 'fd-stat', `DEF ${player.defense}`),
+                el('span', 'fd-stat', `PHY ${player.physical}`),
+                el('span', 'fd-stat', `CRE ${player.creation}`)
+            );
+        } else {
+            statsRow.append(
+                el('span', 'fd-stat', `ATK ${player.attack}`),
+                el('span', 'fd-stat', `CRE ${player.creation}`),
+                el('span', 'fd-stat', `DEF ${player.defense}`),
+                el('span', 'fd-stat', `PHY ${player.physical}`)
+            );
+        }
+        return statsRow;
+    }
+
     function renderDraftZone() {
         const zone = el('div', 'fd-center');
         const cur = getCurrentTeam();
@@ -747,6 +532,7 @@ export function startGame(ctx) {
             const availableSlots = getAvailableSlotsForPlayer(cur.roster, player);
             const isSelected = state.selectedPlayerId === player.id;
             const hasSlots = availableSlots.length > 0;
+            const ovr = getPlayerOverall(player);
 
             let cardClass = 'fd-card';
             if (isSelected) cardClass += ' fd-card--selected';
@@ -757,11 +543,11 @@ export function startGame(ctx) {
             const topRow = el('div', 'fd-card-top');
             topRow.append(
                 el('span', 'fd-card-pos', player.positions.join(' / ')),
-                el('span', 'fd-card-rating', `Rating ${player.rating}`)
+                el('span', 'fd-card-rating', `Rating ${ovr}`)
             );
 
             const nameEl = el('div', 'fd-card-name', player.name);
-            card.append(topRow, nameEl);
+            card.append(topRow, nameEl, renderPlayerMiniStats(player));
 
             if (myTurn && hasSlots) {
                 card.addEventListener('click', () => handleSelectCandidate(player.id));
@@ -878,7 +664,7 @@ export function startGame(ctx) {
                     el('span', 'fd-slot-player-name', p.name),
                     el('span', 'fd-slot-player-meta', `${p.club} '${String(p.year).slice(-2)}`)
                 );
-                row.append(info, el('span', 'fd-slot-player-rating', String(p.rating)));
+                row.append(info, el('span', 'fd-slot-player-rating', String(getPlayerOverall(p))));
             } else {
                 row.append(el('span', 'fd-slot-empty', '---'));
             }

@@ -490,6 +490,22 @@ li { padding: 8px 12px; margin-bottom: 6px; background: #0d1424; border-radius: 
   color: #ffffff;
 }
 
+.fd-card-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.fd-stat {
+  font-size: .66rem;
+  font-weight: 600;
+  color: #96add6;
+  background: #0f182b;
+  border: 1px solid #1f3052;
+  border-radius: 4px;
+  padding: 1px 5px;
+}
+
 .fd-card-noslot {
   font-size: .72rem;
   color: #ff8a9a;

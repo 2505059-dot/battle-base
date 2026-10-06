@@ -1,0 +1,1392 @@
+{
+  "pipelineVersion": "1.0.0",
+  "totalUnresolved": 99,
+  "items": [
+    {
+      "id": "manchester-united-1999-0",
+      "teamSeasonId": "manchester-united-1999",
+      "league": "Premier League",
+      "club": "Manchester United",
+      "year": 1999,
+      "playerName": "Peter Schmeichel",
+      "reasons": [
+        "season_predates_fifa_05_dataset"
+      ],
+      "squadSource": "footballcsv/cache.footballsquads",
+      "overallSource": "fallback-generated",
+      "fuzzySuggestion": null
+    },
+    {
+      "id": "manchester-united-1999-1",
+      "teamSeasonId": "manchester-united-1999",
+      "league": "Premier League",
+      "club": "Manchester United",
+      "year": 1999,
+      "playerName": "Jaap Stam",
+      "reasons": [
+        "season_predates_fifa_05_dataset"
+      ],
+      "squadSource": "footballcsv/cache.footballsquads",
+      "overallSource": "fallback-generated",
+      "fuzzySuggestion": null
+    },
+    {
+      "id": "manchester-united-1999-2",
+      "teamSeasonId": "manchester-united-1999",
+      "league": "Premier League",
+      "club": "Manchester United",
+      "year": 1999,
+      "playerName": "Gary Neville",
+      "reasons": [
+        "season_predates_fifa_05_dataset"
+      ],
+      "squadSource": "footballcsv/cache.footballsquads",
+      "overallSource": "fallback-generated",
+      "fuzzySuggestion": null
+    },
+    {
+      "id": "manchester-united-1999-3",
+      "teamSeasonId": "manchester-united-1999",
+      "league": "Premier League",
+      "club": "Manchester United",
+      "year": 1999,
+      "playerName": "Denis Irwin",
+      "reasons": [
+        "season_predates_fifa_05_dataset"
+      ],
+      "squadSource": "footballcsv/cache.footballsquads",
+      "overallSource": "fallback-generated",
+      "fuzzySuggestion": null
+    },
+    {
+      "id": "manchester-united-1999-4",
+      "teamSeasonId": "manchester-united-1999",
+      "league": "Premier League",
+      "club": "Manchester United",
+      "year": 1999,
+      "playerName": "Roy Keane",
+      "reasons": [
+        "season_predates_fifa_05_dataset"
+      ],
+      "squadSource": "footballcsv/cache.footballsquads",
+      "overallSource": "fallback-generated",
+      "fuzzySuggestion": null
+    },
+    {
+      "id": "manchester-united-1999-5",
+      "teamSeasonId": "manchester-united-1999",
+      "league": "Premier League",
+      "club": "Manchester United",
+      "year": 1999,
+      "playerName": "David Beckham",
+      "reasons": [
+        "season_predates_fifa_05_dataset"
+      ],
+      "squadSource": "footballcsv/cache.footballsquads",
+      "overallSource": "fallback-generated",
+      "fuzzySuggestion": null
+    },
+    {
+      "id": "manchester-united-1999-6",
+      "teamSeasonId": "manchester-united-1999",
+      "league": "Premier League",
+      "club": "Manchester United",
+      "year": 1999,
+      "playerName": "Paul Scholes",
+      "reasons": [
+        "season_predates_fifa_05_dataset"
+      ],
+      "squadSource": "footballcsv/cache.footballsquads",
+      "overallSource": "fallback-generated",
+      "fuzzySuggestion": null
+    },
+    {
+      "id": "manchester-united-1999-7",
+      "teamSeasonId": "manchester-united-1999",
+      "league": "Premier League",
+      "club": "Manchester United",
+      "year": 1999,
+      "playerName": "Ryan Giggs",
+      "reasons": [
+        "season_predates_fifa_05_dataset"
+      ],
+      "squadSource": "footballcsv/cache.footballsquads",
+      "overallSource": "fallback-generated",
+      "fuzzySuggestion": null
+    },
+    {
+      "id": "manchester-united-1999-8",
+      "teamSeasonId": "manchester-united-1999",
+      "league": "Premier League",
+      "club": "Manchester United",
+      "year": 1999,
+      "playerName": "Dwight Yorke",
+      "reasons": [
+        "season_predates_fifa_05_dataset"
+      ],
+      "squadSource": "footballcsv/cache.footballsquads",
+      "overallSource": "fallback-generated",
+      "fuzzySuggestion": null
+    },
+    {
+      "id": "arsenal-2004-0",
+      "teamSeasonId": "arsenal-2004",
+      "league": "Premier League",
+      "club": "Arsenal",
+      "year": 2004,
+      "playerName": "Jens Lehmann",
+      "reasons": [
+        "season_predates_fifa_05_dataset"
+      ],
+      "squadSource": "footballcsv/cache.footballsquads",
+      "overallSource": "fallback-generated",
+      "fuzzySuggestion": null
+    },
+    {
+      "id": "arsenal-2004-1",
+      "teamSeasonId": "arsenal-2004",
+      "league": "Premier League",
+      "club": "Arsenal",
+      "year": 2004,
+      "playerName": "Sol Campbell",
+      "reasons": [
+        "season_predates_fifa_05_dataset"
+      ],
+      "squadSource": "footballcsv/cache.footballsquads",
+      "overallSource": "fallback-generated",
+      "fuzzySuggestion": null
+    },
+    {
+      "id": "arsenal-2004-2",
+      "teamSeasonId": "arsenal-2004",
+      "league": "Premier League",
+      "club": "Arsenal",
+      "year": 2004,
+      "playerName": "Ashley Cole",
+      "reasons": [
+        "season_predates_fifa_05_dataset"
+      ],
+      "squadSource": "footballcsv/cache.footballsquads",
+      "overallSource": "fallback-generated",
+      "fuzzySuggestion": null
+    },
+    {
+      "id": "arsenal-2004-3",
+      "teamSeasonId": "arsenal-2004",
+      "league": "Premier League",
+      "club": "Arsenal",
+      "year": 2004,
+      "playerName": "Kolo Toure",
+      "reasons": [
+        "season_predates_fifa_05_dataset"
+      ],
+      "squadSource": "footballcsv/cache.footballsquads",
+      "overallSource": "fallback-generated",
+      "fuzzySuggestion": null
+    },
+    {
+      "id": "arsenal-2004-4",
+      "teamSeasonId": "arsenal-2004",
+      "league": "Premier League",
+      "club": "Arsenal",
+      "year": 2004,
+      "playerName": "Patrick Vieira",
+      "reasons": [
+        "season_predates_fifa_05_dataset"
+      ],
+      "squadSource": "footballcsv/cache.footballsquads",
+      "overallSource": "fallback-generated",
+      "fuzzySuggestion": null
+    },
+    {
+      "id": "arsenal-2004-5",
+      "teamSeasonId": "arsenal-2004",
+      "league": "Premier League",
+      "club": "Arsenal",
+      "year": 2004,
+      "playerName": "Robert Pires",
+      "reasons": [
+        "season_predates_fifa_05_dataset"
+      ],
+      "squadSource": "footballcsv/cache.footballsquads",
+      "overallSource": "fallback-generated",
+      "fuzzySuggestion": null
+    },
+    {
+      "id": "arsenal-2004-6",
+      "teamSeasonId": "arsenal-2004",
+      "league": "Premier League",
+      "club": "Arsenal",
+      "year": 2004,
+      "playerName": "Gilberto Silva",
+      "reasons": [
+        "season_predates_fifa_05_dataset"
+      ],
+      "squadSource": "footballcsv/cache.footballsquads",
+      "overallSource": "fallback-generated",
+      "fuzzySuggestion": null
+    },
+    {
+      "id": "arsenal-2004-7",
+      "teamSeasonId": "arsenal-2004",
+      "league": "Premier League",
+      "club": "Arsenal",
+      "year": 2004,
+      "playerName": "Thierry Henry",
+      "reasons": [
+        "season_predates_fifa_05_dataset"
+      ],
+      "squadSource": "footballcsv/cache.footballsquads",
+      "overallSource": "fallback-generated",
+      "fuzzySuggestion": null
+    },
+    {
+      "id": "arsenal-2004-8",
+      "teamSeasonId": "arsenal-2004",
+      "league": "Premier League",
+      "club": "Arsenal",
+      "year": 2004,
+      "playerName": "Dennis Bergkamp",
+      "reasons": [
+        "season_predates_fifa_05_dataset"
+      ],
+      "squadSource": "footballcsv/cache.footballsquads",
+      "overallSource": "fallback-generated",
+      "fuzzySuggestion": null
+    },
+    {
+      "id": "real-madrid-2002-0",
+      "teamSeasonId": "real-madrid-2002",
+      "league": "La Liga",
+      "club": "Real Madrid",
+      "year": 2002,
+      "playerName": "Iker Casillas",
+      "reasons": [
+        "season_predates_fifa_05_dataset"
+      ],
+      "squadSource": "footballcsv/cache.footballsquads",
+      "overallSource": "fallback-generated",
+      "fuzzySuggestion": null
+    },
+    {
+      "id": "real-madrid-2002-1",
+      "teamSeasonId": "real-madrid-2002",
+      "league": "La Liga",
+      "club": "Real Madrid",
+      "year": 2002,
+      "playerName": "Roberto Carlos",
+      "reasons": [
+        "season_predates_fifa_05_dataset"
+      ],
+      "squadSource": "footballcsv/cache.footballsquads",
+      "overallSource": "fallback-generated",
+      "fuzzySuggestion": null
+    },
+    {
+      "id": "real-madrid-2002-2",
+      "teamSeasonId": "real-madrid-2002",
+      "league": "La Liga",
+      "club": "Real Madrid",
+      "year": 2002,
+      "playerName": "Fernando Hierro",
+      "reasons": [
+        "season_predates_fifa_05_dataset"
+      ],
+      "squadSource": "footballcsv/cache.footballsquads",
+      "overallSource": "fallback-generated",
+      "fuzzySuggestion": null
+    },
+    {
+      "id": "real-madrid-2002-3",
+      "teamSeasonId": "real-madrid-2002",
+      "league": "La Liga",
+      "club": "Real Madrid",
+      "year": 2002,
+      "playerName": "Michel Salgado",
+      "reasons": [
+        "season_predates_fifa_05_dataset"
+      ],
+      "squadSource": "footballcsv/cache.footballsquads",
+      "overallSource": "fallback-generated",
+      "fuzzySuggestion": null
+    },
+    {
+      "id": "real-madrid-2002-4",
+      "teamSeasonId": "real-madrid-2002",
+      "league": "La Liga",
+      "club": "Real Madrid",
+      "year": 2002,
+      "playerName": "Zinedine Zidane",
+      "reasons": [
+        "season_predates_fifa_05_dataset"
+      ],
+      "squadSource": "footballcsv/cache.footballsquads",
+      "overallSource": "fallback-generated",
+      "fuzzySuggestion": null
+    },
+    {
+      "id": "real-madrid-2002-5",
+      "teamSeasonId": "real-madrid-2002",
+      "league": "La Liga",
+      "club": "Real Madrid",
+      "year": 2002,
+      "playerName": "Claude Makelele",
+      "reasons": [
+        "season_predates_fifa_05_dataset"
+      ],
+      "squadSource": "footballcsv/cache.footballsquads",
+      "overallSource": "fallback-generated",
+      "fuzzySuggestion": null
+    },
+    {
+      "id": "real-madrid-2002-6",
+      "teamSeasonId": "real-madrid-2002",
+      "league": "La Liga",
+      "club": "Real Madrid",
+      "year": 2002,
+      "playerName": "Luis Figo",
+      "reasons": [
+        "season_predates_fifa_05_dataset"
+      ],
+      "squadSource": "footballcsv/cache.footballsquads",
+      "overallSource": "fallback-generated",
+      "fuzzySuggestion": null
+    },
+    {
+      "id": "real-madrid-2002-7",
+      "teamSeasonId": "real-madrid-2002",
+      "league": "La Liga",
+      "club": "Real Madrid",
+      "year": 2002,
+      "playerName": "Raul",
+      "reasons": [
+        "season_predates_fifa_05_dataset"
+      ],
+      "squadSource": "footballcsv/cache.footballsquads",
+      "overallSource": "fallback-generated",
+      "fuzzySuggestion": null
+    },
+    {
+      "id": "real-madrid-2002-8",
+      "teamSeasonId": "real-madrid-2002",
+      "league": "La Liga",
+      "club": "Real Madrid",
+      "year": 2002,
+      "playerName": "Fernando Morientes",
+      "reasons": [
+        "season_predates_fifa_05_dataset"
+      ],
+      "squadSource": "footballcsv/cache.footballsquads",
+      "overallSource": "fallback-generated",
+      "fuzzySuggestion": null
+    },
+    {
+      "id": "valencia-2004-0",
+      "teamSeasonId": "valencia-2004",
+      "league": "La Liga",
+      "club": "Valencia",
+      "year": 2004,
+      "playerName": "Santiago Canizares",
+      "reasons": [
+        "season_predates_fifa_05_dataset"
+      ],
+      "squadSource": "footballcsv/cache.footballsquads",
+      "overallSource": "fallback-generated",
+      "fuzzySuggestion": null
+    },
+    {
+      "id": "valencia-2004-1",
+      "teamSeasonId": "valencia-2004",
+      "league": "La Liga",
+      "club": "Valencia",
+      "year": 2004,
+      "playerName": "Roberto Ayala",
+      "reasons": [
+        "season_predates_fifa_05_dataset"
+      ],
+      "squadSource": "footballcsv/cache.footballsquads",
+      "overallSource": "fallback-generated",
+      "fuzzySuggestion": null
+    },
+    {
+      "id": "valencia-2004-2",
+      "teamSeasonId": "valencia-2004",
+      "league": "La Liga",
+      "club": "Valencia",
+      "year": 2004,
+      "playerName": "Carlos Marchena",
+      "reasons": [
+        "season_predates_fifa_05_dataset"
+      ],
+      "squadSource": "footballcsv/cache.footballsquads",
+      "overallSource": "fallback-generated",
+      "fuzzySuggestion": null
+    },
+    {
+      "id": "valencia-2004-3",
+      "teamSeasonId": "valencia-2004",
+      "league": "La Liga",
+      "club": "Valencia",
+      "year": 2004,
+      "playerName": "Amedeo Carboni",
+      "reasons": [
+        "season_predates_fifa_05_dataset"
+      ],
+      "squadSource": "footballcsv/cache.footballsquads",
+      "overallSource": "fallback-generated",
+      "fuzzySuggestion": null
+    },
+    {
+      "id": "valencia-2004-4",
+      "teamSeasonId": "valencia-2004",
+      "league": "La Liga",
+      "club": "Valencia",
+      "year": 2004,
+      "playerName": "Ruben Baraja",
+      "reasons": [
+        "season_predates_fifa_05_dataset"
+      ],
+      "squadSource": "footballcsv/cache.footballsquads",
+      "overallSource": "fallback-generated",
+      "fuzzySuggestion": null
+    },
+    {
+      "id": "valencia-2004-5",
+      "teamSeasonId": "valencia-2004",
+      "league": "La Liga",
+      "club": "Valencia",
+      "year": 2004,
+      "playerName": "David Albelda",
+      "reasons": [
+        "season_predates_fifa_05_dataset"
+      ],
+      "squadSource": "footballcsv/cache.footballsquads",
+      "overallSource": "fallback-generated",
+      "fuzzySuggestion": null
+    },
+    {
+      "id": "valencia-2004-6",
+      "teamSeasonId": "valencia-2004",
+      "league": "La Liga",
+      "club": "Valencia",
+      "year": 2004,
+      "playerName": "Pablo Aimar",
+      "reasons": [
+        "season_predates_fifa_05_dataset"
+      ],
+      "squadSource": "footballcsv/cache.footballsquads",
+      "overallSource": "fallback-generated",
+      "fuzzySuggestion": null
+    },
+    {
+      "id": "valencia-2004-7",
+      "teamSeasonId": "valencia-2004",
+      "league": "La Liga",
+      "club": "Valencia",
+      "year": 2004,
+      "playerName": "Vicente",
+      "reasons": [
+        "season_predates_fifa_05_dataset"
+      ],
+      "squadSource": "footballcsv/cache.footballsquads",
+      "overallSource": "fallback-generated",
+      "fuzzySuggestion": null
+    },
+    {
+      "id": "valencia-2004-8",
+      "teamSeasonId": "valencia-2004",
+      "league": "La Liga",
+      "club": "Valencia",
+      "year": 2004,
+      "playerName": "Mista",
+      "reasons": [
+        "season_predates_fifa_05_dataset"
+      ],
+      "squadSource": "footballcsv/cache.footballsquads",
+      "overallSource": "fallback-generated",
+      "fuzzySuggestion": null
+    },
+    {
+      "id": "deportivo-la-coruna-2000-0",
+      "teamSeasonId": "deportivo-la-coruna-2000",
+      "league": "La Liga",
+      "club": "Deportivo La Coruna",
+      "year": 2000,
+      "playerName": "Jacques Songo'o",
+      "reasons": [
+        "season_predates_fifa_05_dataset"
+      ],
+      "squadSource": "footballcsv/cache.footballsquads",
+      "overallSource": "fallback-generated",
+      "fuzzySuggestion": null
+    },
+    {
+      "id": "deportivo-la-coruna-2000-1",
+      "teamSeasonId": "deportivo-la-coruna-2000",
+      "league": "La Liga",
+      "club": "Deportivo La Coruna",
+      "year": 2000,
+      "playerName": "Noureddine Naybet",
+      "reasons": [
+        "season_predates_fifa_05_dataset"
+      ],
+      "squadSource": "footballcsv/cache.footballsquads",
+      "overallSource": "fallback-generated",
+      "fuzzySuggestion": null
+    },
+    {
+      "id": "deportivo-la-coruna-2000-2",
+      "teamSeasonId": "deportivo-la-coruna-2000",
+      "league": "La Liga",
+      "club": "Deportivo La Coruna",
+      "year": 2000,
+      "playerName": "Donato",
+      "reasons": [
+        "season_predates_fifa_05_dataset"
+      ],
+      "squadSource": "footballcsv/cache.footballsquads",
+      "overallSource": "fallback-generated",
+      "fuzzySuggestion": null
+    },
+    {
+      "id": "deportivo-la-coruna-2000-3",
+      "teamSeasonId": "deportivo-la-coruna-2000",
+      "league": "La Liga",
+      "club": "Deportivo La Coruna",
+      "year": 2000,
+      "playerName": "Manuel Pablo",
+      "reasons": [
+        "season_predates_fifa_05_dataset"
+      ],
+      "squadSource": "footballcsv/cache.footballsquads",
+      "overallSource": "fallback-generated",
+      "fuzzySuggestion": null
+    },
+    {
+      "id": "deportivo-la-coruna-2000-4",
+      "teamSeasonId": "deportivo-la-coruna-2000",
+      "league": "La Liga",
+      "club": "Deportivo La Coruna",
+      "year": 2000,
+      "playerName": "Mauro Silva",
+      "reasons": [
+        "season_predates_fifa_05_dataset"
+      ],
+      "squadSource": "footballcsv/cache.footballsquads",
+      "overallSource": "fallback-generated",
+      "fuzzySuggestion": null
+    },
+    {
+      "id": "deportivo-la-coruna-2000-5",
+      "teamSeasonId": "deportivo-la-coruna-2000",
+      "league": "La Liga",
+      "club": "Deportivo La Coruna",
+      "year": 2000,
+      "playerName": "Djalminha",
+      "reasons": [
+        "season_predates_fifa_05_dataset"
+      ],
+      "squadSource": "footballcsv/cache.footballsquads",
+      "overallSource": "fallback-generated",
+      "fuzzySuggestion": null
+    },
+    {
+      "id": "deportivo-la-coruna-2000-6",
+      "teamSeasonId": "deportivo-la-coruna-2000",
+      "league": "La Liga",
+      "club": "Deportivo La Coruna",
+      "year": 2000,
+      "playerName": "Fran",
+      "reasons": [
+        "season_predates_fifa_05_dataset"
+      ],
+      "squadSource": "footballcsv/cache.footballsquads",
+      "overallSource": "fallback-generated",
+      "fuzzySuggestion": null
+    },
+    {
+      "id": "deportivo-la-coruna-2000-7",
+      "teamSeasonId": "deportivo-la-coruna-2000",
+      "league": "La Liga",
+      "club": "Deportivo La Coruna",
+      "year": 2000,
+      "playerName": "Roy Makaay",
+      "reasons": [
+        "season_predates_fifa_05_dataset"
+      ],
+      "squadSource": "footballcsv/cache.footballsquads",
+      "overallSource": "fallback-generated",
+      "fuzzySuggestion": null
+    },
+    {
+      "id": "deportivo-la-coruna-2000-8",
+      "teamSeasonId": "deportivo-la-coruna-2000",
+      "league": "La Liga",
+      "club": "Deportivo La Coruna",
+      "year": 2000,
+      "playerName": "Pauleta",
+      "reasons": [
+        "season_predates_fifa_05_dataset"
+      ],
+      "squadSource": "footballcsv/cache.footballsquads",
+      "overallSource": "fallback-generated",
+      "fuzzySuggestion": null
+    },
+    {
+      "id": "juventus-2003-0",
+      "teamSeasonId": "juventus-2003",
+      "league": "Serie A",
+      "club": "Juventus",
+      "year": 2003,
+      "playerName": "Gianluigi Buffon",
+      "reasons": [
+        "season_predates_fifa_05_dataset"
+      ],
+      "squadSource": "footballcsv/cache.footballsquads",
+      "overallSource": "fallback-generated",
+      "fuzzySuggestion": null
+    },
+    {
+      "id": "juventus-2003-1",
+      "teamSeasonId": "juventus-2003",
+      "league": "Serie A",
+      "club": "Juventus",
+      "year": 2003,
+      "playerName": "Lilian Thuram",
+      "reasons": [
+        "season_predates_fifa_05_dataset"
+      ],
+      "squadSource": "footballcsv/cache.footballsquads",
+      "overallSource": "fallback-generated",
+      "fuzzySuggestion": null
+    },
+    {
+      "id": "juventus-2003-2",
+      "teamSeasonId": "juventus-2003",
+      "league": "Serie A",
+      "club": "Juventus",
+      "year": 2003,
+      "playerName": "Ciro Ferrara",
+      "reasons": [
+        "season_predates_fifa_05_dataset"
+      ],
+      "squadSource": "footballcsv/cache.footballsquads",
+      "overallSource": "fallback-generated",
+      "fuzzySuggestion": null
+    },
+    {
+      "id": "juventus-2003-3",
+      "teamSeasonId": "juventus-2003",
+      "league": "Serie A",
+      "club": "Juventus",
+      "year": 2003,
+      "playerName": "Gianluca Zambrotta",
+      "reasons": [
+        "season_predates_fifa_05_dataset"
+      ],
+      "squadSource": "footballcsv/cache.footballsquads",
+      "overallSource": "fallback-generated",
+      "fuzzySuggestion": null
+    },
+    {
+      "id": "juventus-2003-4",
+      "teamSeasonId": "juventus-2003",
+      "league": "Serie A",
+      "club": "Juventus",
+      "year": 2003,
+      "playerName": "Pavel Nedved",
+      "reasons": [
+        "season_predates_fifa_05_dataset"
+      ],
+      "squadSource": "footballcsv/cache.footballsquads",
+      "overallSource": "fallback-generated",
+      "fuzzySuggestion": null
+    },
+    {
+      "id": "juventus-2003-5",
+      "teamSeasonId": "juventus-2003",
+      "league": "Serie A",
+      "club": "Juventus",
+      "year": 2003,
+      "playerName": "Edgar Davids",
+      "reasons": [
+        "season_predates_fifa_05_dataset"
+      ],
+      "squadSource": "footballcsv/cache.footballsquads",
+      "overallSource": "fallback-generated",
+      "fuzzySuggestion": null
+    },
+    {
+      "id": "juventus-2003-6",
+      "teamSeasonId": "juventus-2003",
+      "league": "Serie A",
+      "club": "Juventus",
+      "year": 2003,
+      "playerName": "Mauro Camoranesi",
+      "reasons": [
+        "season_predates_fifa_05_dataset"
+      ],
+      "squadSource": "footballcsv/cache.footballsquads",
+      "overallSource": "fallback-generated",
+      "fuzzySuggestion": null
+    },
+    {
+      "id": "juventus-2003-7",
+      "teamSeasonId": "juventus-2003",
+      "league": "Serie A",
+      "club": "Juventus",
+      "year": 2003,
+      "playerName": "Alessandro Del Piero",
+      "reasons": [
+        "season_predates_fifa_05_dataset"
+      ],
+      "squadSource": "footballcsv/cache.footballsquads",
+      "overallSource": "fallback-generated",
+      "fuzzySuggestion": null
+    },
+    {
+      "id": "juventus-2003-8",
+      "teamSeasonId": "juventus-2003",
+      "league": "Serie A",
+      "club": "Juventus",
+      "year": 2003,
+      "playerName": "David Trezeguet",
+      "reasons": [
+        "season_predates_fifa_05_dataset"
+      ],
+      "squadSource": "footballcsv/cache.footballsquads",
+      "overallSource": "fallback-generated",
+      "fuzzySuggestion": null
+    },
+    {
+      "id": "roma-2001-0",
+      "teamSeasonId": "roma-2001",
+      "league": "Serie A",
+      "club": "Roma",
+      "year": 2001,
+      "playerName": "Francesco Antonioli",
+      "reasons": [
+        "season_predates_fifa_05_dataset"
+      ],
+      "squadSource": "footballcsv/cache.footballsquads",
+      "overallSource": "fallback-generated",
+      "fuzzySuggestion": null
+    },
+    {
+      "id": "roma-2001-1",
+      "teamSeasonId": "roma-2001",
+      "league": "Serie A",
+      "club": "Roma",
+      "year": 2001,
+      "playerName": "Walter Samuel",
+      "reasons": [
+        "season_predates_fifa_05_dataset"
+      ],
+      "squadSource": "footballcsv/cache.footballsquads",
+      "overallSource": "fallback-generated",
+      "fuzzySuggestion": null
+    },
+    {
+      "id": "roma-2001-2",
+      "teamSeasonId": "roma-2001",
+      "league": "Serie A",
+      "club": "Roma",
+      "year": 2001,
+      "playerName": "Cafu",
+      "reasons": [
+        "season_predates_fifa_05_dataset"
+      ],
+      "squadSource": "footballcsv/cache.footballsquads",
+      "overallSource": "fallback-generated",
+      "fuzzySuggestion": null
+    },
+    {
+      "id": "roma-2001-3",
+      "teamSeasonId": "roma-2001",
+      "league": "Serie A",
+      "club": "Roma",
+      "year": 2001,
+      "playerName": "Vincent Candela",
+      "reasons": [
+        "season_predates_fifa_05_dataset"
+      ],
+      "squadSource": "footballcsv/cache.footballsquads",
+      "overallSource": "fallback-generated",
+      "fuzzySuggestion": null
+    },
+    {
+      "id": "roma-2001-4",
+      "teamSeasonId": "roma-2001",
+      "league": "Serie A",
+      "club": "Roma",
+      "year": 2001,
+      "playerName": "Damiano Tommasi",
+      "reasons": [
+        "season_predates_fifa_05_dataset"
+      ],
+      "squadSource": "footballcsv/cache.footballsquads",
+      "overallSource": "fallback-generated",
+      "fuzzySuggestion": null
+    },
+    {
+      "id": "roma-2001-5",
+      "teamSeasonId": "roma-2001",
+      "league": "Serie A",
+      "club": "Roma",
+      "year": 2001,
+      "playerName": "Emerson",
+      "reasons": [
+        "season_predates_fifa_05_dataset"
+      ],
+      "squadSource": "footballcsv/cache.footballsquads",
+      "overallSource": "fallback-generated",
+      "fuzzySuggestion": null
+    },
+    {
+      "id": "roma-2001-6",
+      "teamSeasonId": "roma-2001",
+      "league": "Serie A",
+      "club": "Roma",
+      "year": 2001,
+      "playerName": "Hidetoshi Nakata",
+      "reasons": [
+        "season_predates_fifa_05_dataset"
+      ],
+      "squadSource": "footballcsv/cache.footballsquads",
+      "overallSource": "fallback-generated",
+      "fuzzySuggestion": null
+    },
+    {
+      "id": "roma-2001-7",
+      "teamSeasonId": "roma-2001",
+      "league": "Serie A",
+      "club": "Roma",
+      "year": 2001,
+      "playerName": "Francesco Totti",
+      "reasons": [
+        "season_predates_fifa_05_dataset"
+      ],
+      "squadSource": "footballcsv/cache.footballsquads",
+      "overallSource": "fallback-generated",
+      "fuzzySuggestion": null
+    },
+    {
+      "id": "roma-2001-8",
+      "teamSeasonId": "roma-2001",
+      "league": "Serie A",
+      "club": "Roma",
+      "year": 2001,
+      "playerName": "Gabriel Batistuta",
+      "reasons": [
+        "season_predates_fifa_05_dataset"
+      ],
+      "squadSource": "footballcsv/cache.footballsquads",
+      "overallSource": "fallback-generated",
+      "fuzzySuggestion": null
+    },
+    {
+      "id": "lazio-2000-0",
+      "teamSeasonId": "lazio-2000",
+      "league": "Serie A",
+      "club": "Lazio",
+      "year": 2000,
+      "playerName": "Luca Marchegiani",
+      "reasons": [
+        "season_predates_fifa_05_dataset"
+      ],
+      "squadSource": "footballcsv/cache.footballsquads",
+      "overallSource": "fallback-generated",
+      "fuzzySuggestion": null
+    },
+    {
+      "id": "lazio-2000-1",
+      "teamSeasonId": "lazio-2000",
+      "league": "Serie A",
+      "club": "Lazio",
+      "year": 2000,
+      "playerName": "Alessandro Nesta",
+      "reasons": [
+        "season_predates_fifa_05_dataset"
+      ],
+      "squadSource": "footballcsv/cache.footballsquads",
+      "overallSource": "fallback-generated",
+      "fuzzySuggestion": null
+    },
+    {
+      "id": "lazio-2000-2",
+      "teamSeasonId": "lazio-2000",
+      "league": "Serie A",
+      "club": "Lazio",
+      "year": 2000,
+      "playerName": "Sinisa Mihajlovic",
+      "reasons": [
+        "season_predates_fifa_05_dataset"
+      ],
+      "squadSource": "footballcsv/cache.footballsquads",
+      "overallSource": "fallback-generated",
+      "fuzzySuggestion": null
+    },
+    {
+      "id": "lazio-2000-3",
+      "teamSeasonId": "lazio-2000",
+      "league": "Serie A",
+      "club": "Lazio",
+      "year": 2000,
+      "playerName": "Giuseppe Pancaro",
+      "reasons": [
+        "season_predates_fifa_05_dataset"
+      ],
+      "squadSource": "footballcsv/cache.footballsquads",
+      "overallSource": "fallback-generated",
+      "fuzzySuggestion": null
+    },
+    {
+      "id": "lazio-2000-4",
+      "teamSeasonId": "lazio-2000",
+      "league": "Serie A",
+      "club": "Lazio",
+      "year": 2000,
+      "playerName": "Juan Sebastian Veron",
+      "reasons": [
+        "season_predates_fifa_05_dataset"
+      ],
+      "squadSource": "footballcsv/cache.footballsquads",
+      "overallSource": "fallback-generated",
+      "fuzzySuggestion": null
+    },
+    {
+      "id": "lazio-2000-5",
+      "teamSeasonId": "lazio-2000",
+      "league": "Serie A",
+      "club": "Lazio",
+      "year": 2000,
+      "playerName": "Pavel Nedved",
+      "reasons": [
+        "season_predates_fifa_05_dataset"
+      ],
+      "squadSource": "footballcsv/cache.footballsquads",
+      "overallSource": "fallback-generated",
+      "fuzzySuggestion": null
+    },
+    {
+      "id": "lazio-2000-6",
+      "teamSeasonId": "lazio-2000",
+      "league": "Serie A",
+      "club": "Lazio",
+      "year": 2000,
+      "playerName": "Diego Simeone",
+      "reasons": [
+        "season_predates_fifa_05_dataset"
+      ],
+      "squadSource": "footballcsv/cache.footballsquads",
+      "overallSource": "fallback-generated",
+      "fuzzySuggestion": null
+    },
+    {
+      "id": "lazio-2000-7",
+      "teamSeasonId": "lazio-2000",
+      "league": "Serie A",
+      "club": "Lazio",
+      "year": 2000,
+      "playerName": "Marcelo Salas",
+      "reasons": [
+        "season_predates_fifa_05_dataset"
+      ],
+      "squadSource": "footballcsv/cache.footballsquads",
+      "overallSource": "fallback-generated",
+      "fuzzySuggestion": null
+    },
+    {
+      "id": "lazio-2000-8",
+      "teamSeasonId": "lazio-2000",
+      "league": "Serie A",
+      "club": "Lazio",
+      "year": 2000,
+      "playerName": "Roberto Mancini",
+      "reasons": [
+        "season_predates_fifa_05_dataset"
+      ],
+      "squadSource": "footballcsv/cache.footballsquads",
+      "overallSource": "fallback-generated",
+      "fuzzySuggestion": null
+    },
+    {
+      "id": "parma-1999-0",
+      "teamSeasonId": "parma-1999",
+      "league": "Serie A",
+      "club": "Parma",
+      "year": 1999,
+      "playerName": "Gianluigi Buffon",
+      "reasons": [
+        "season_predates_fifa_05_dataset"
+      ],
+      "squadSource": "footballcsv/cache.footballsquads",
+      "overallSource": "fallback-generated",
+      "fuzzySuggestion": null
+    },
+    {
+      "id": "parma-1999-1",
+      "teamSeasonId": "parma-1999",
+      "league": "Serie A",
+      "club": "Parma",
+      "year": 1999,
+      "playerName": "Lilian Thuram",
+      "reasons": [
+        "season_predates_fifa_05_dataset"
+      ],
+      "squadSource": "footballcsv/cache.footballsquads",
+      "overallSource": "fallback-generated",
+      "fuzzySuggestion": null
+    },
+    {
+      "id": "parma-1999-2",
+      "teamSeasonId": "parma-1999",
+      "league": "Serie A",
+      "club": "Parma",
+      "year": 1999,
+      "playerName": "Fabio Cannavaro",
+      "reasons": [
+        "season_predates_fifa_05_dataset"
+      ],
+      "squadSource": "footballcsv/cache.footballsquads",
+      "overallSource": "fallback-generated",
+      "fuzzySuggestion": null
+    },
+    {
+      "id": "parma-1999-3",
+      "teamSeasonId": "parma-1999",
+      "league": "Serie A",
+      "club": "Parma",
+      "year": 1999,
+      "playerName": "Roberto Sensini",
+      "reasons": [
+        "season_predates_fifa_05_dataset"
+      ],
+      "squadSource": "footballcsv/cache.footballsquads",
+      "overallSource": "fallback-generated",
+      "fuzzySuggestion": null
+    },
+    {
+      "id": "parma-1999-4",
+      "teamSeasonId": "parma-1999",
+      "league": "Serie A",
+      "club": "Parma",
+      "year": 1999,
+      "playerName": "Juan Sebastian Veron",
+      "reasons": [
+        "season_predates_fifa_05_dataset"
+      ],
+      "squadSource": "footballcsv/cache.footballsquads",
+      "overallSource": "fallback-generated",
+      "fuzzySuggestion": null
+    },
+    {
+      "id": "parma-1999-5",
+      "teamSeasonId": "parma-1999",
+      "league": "Serie A",
+      "club": "Parma",
+      "year": 1999,
+      "playerName": "Dino Baggio",
+      "reasons": [
+        "season_predates_fifa_05_dataset"
+      ],
+      "squadSource": "footballcsv/cache.footballsquads",
+      "overallSource": "fallback-generated",
+      "fuzzySuggestion": null
+    },
+    {
+      "id": "parma-1999-6",
+      "teamSeasonId": "parma-1999",
+      "league": "Serie A",
+      "club": "Parma",
+      "year": 1999,
+      "playerName": "Diego Fuser",
+      "reasons": [
+        "season_predates_fifa_05_dataset"
+      ],
+      "squadSource": "footballcsv/cache.footballsquads",
+      "overallSource": "fallback-generated",
+      "fuzzySuggestion": null
+    },
+    {
+      "id": "parma-1999-7",
+      "teamSeasonId": "parma-1999",
+      "league": "Serie A",
+      "club": "Parma",
+      "year": 1999,
+      "playerName": "Hernan Crespo",
+      "reasons": [
+        "season_predates_fifa_05_dataset"
+      ],
+      "squadSource": "footballcsv/cache.footballsquads",
+      "overallSource": "fallback-generated",
+      "fuzzySuggestion": null
+    },
+    {
+      "id": "parma-1999-8",
+      "teamSeasonId": "parma-1999",
+      "league": "Serie A",
+      "club": "Parma",
+      "year": 1999,
+      "playerName": "Enrico Chiesa",
+      "reasons": [
+        "season_predates_fifa_05_dataset"
+      ],
+      "squadSource": "footballcsv/cache.footballsquads",
+      "overallSource": "fallback-generated",
+      "fuzzySuggestion": null
+    },
+    {
+      "id": "bayern-munich-2001-0",
+      "teamSeasonId": "bayern-munich-2001",
+      "league": "Bundesliga",
+      "club": "Bayern Munich",
+      "year": 2001,
+      "playerName": "Oliver Kahn",
+      "reasons": [
+        "season_predates_fifa_05_dataset"
+      ],
+      "squadSource": "footballcsv/cache.footballsquads",
+      "overallSource": "fallback-generated",
+      "fuzzySuggestion": null
+    },
+    {
+      "id": "bayern-munich-2001-1",
+      "teamSeasonId": "bayern-munich-2001",
+      "league": "Bundesliga",
+      "club": "Bayern Munich",
+      "year": 2001,
+      "playerName": "Sammy Kuffour",
+      "reasons": [
+        "season_predates_fifa_05_dataset"
+      ],
+      "squadSource": "footballcsv/cache.footballsquads",
+      "overallSource": "fallback-generated",
+      "fuzzySuggestion": null
+    },
+    {
+      "id": "bayern-munich-2001-2",
+      "teamSeasonId": "bayern-munich-2001",
+      "league": "Bundesliga",
+      "club": "Bayern Munich",
+      "year": 2001,
+      "playerName": "Patrik Andersson",
+      "reasons": [
+        "season_predates_fifa_05_dataset"
+      ],
+      "squadSource": "footballcsv/cache.footballsquads",
+      "overallSource": "fallback-generated",
+      "fuzzySuggestion": null
+    },
+    {
+      "id": "bayern-munich-2001-3",
+      "teamSeasonId": "bayern-munich-2001",
+      "league": "Bundesliga",
+      "club": "Bayern Munich",
+      "year": 2001,
+      "playerName": "Bixente Lizarazu",
+      "reasons": [
+        "season_predates_fifa_05_dataset"
+      ],
+      "squadSource": "footballcsv/cache.footballsquads",
+      "overallSource": "fallback-generated",
+      "fuzzySuggestion": null
+    },
+    {
+      "id": "bayern-munich-2001-4",
+      "teamSeasonId": "bayern-munich-2001",
+      "league": "Bundesliga",
+      "club": "Bayern Munich",
+      "year": 2001,
+      "playerName": "Willy Sagnol",
+      "reasons": [
+        "season_predates_fifa_05_dataset"
+      ],
+      "squadSource": "footballcsv/cache.footballsquads",
+      "overallSource": "fallback-generated",
+      "fuzzySuggestion": null
+    },
+    {
+      "id": "bayern-munich-2001-5",
+      "teamSeasonId": "bayern-munich-2001",
+      "league": "Bundesliga",
+      "club": "Bayern Munich",
+      "year": 2001,
+      "playerName": "Stefan Effenberg",
+      "reasons": [
+        "season_predates_fifa_05_dataset"
+      ],
+      "squadSource": "footballcsv/cache.footballsquads",
+      "overallSource": "fallback-generated",
+      "fuzzySuggestion": null
+    },
+    {
+      "id": "bayern-munich-2001-6",
+      "teamSeasonId": "bayern-munich-2001",
+      "league": "Bundesliga",
+      "club": "Bayern Munich",
+      "year": 2001,
+      "playerName": "Owen Hargreaves",
+      "reasons": [
+        "season_predates_fifa_05_dataset"
+      ],
+      "squadSource": "footballcsv/cache.footballsquads",
+      "overallSource": "fallback-generated",
+      "fuzzySuggestion": null
+    },
+    {
+      "id": "bayern-munich-2001-7",
+      "teamSeasonId": "bayern-munich-2001",
+      "league": "Bundesliga",
+      "club": "Bayern Munich",
+      "year": 2001,
+      "playerName": "Mehmet Scholl",
+      "reasons": [
+        "season_predates_fifa_05_dataset"
+      ],
+      "squadSource": "footballcsv/cache.footballsquads",
+      "overallSource": "fallback-generated",
+      "fuzzySuggestion": null
+    },
+    {
+      "id": "bayern-munich-2001-8",
+      "teamSeasonId": "bayern-munich-2001",
+      "league": "Bundesliga",
+      "club": "Bayern Munich",
+      "year": 2001,
+      "playerName": "Giovane Elber",
+      "reasons": [
+        "season_predates_fifa_05_dataset"
+      ],
+      "squadSource": "footballcsv/cache.footballsquads",
+      "overallSource": "fallback-generated",
+      "fuzzySuggestion": null
+    },
+    {
+      "id": "porto-2004-0",
+      "teamSeasonId": "porto-2004",
+      "league": "Primeira Liga",
+      "club": "Porto",
+      "year": 2004,
+      "playerName": "Vitor Baia",
+      "reasons": [
+        "season_predates_fifa_05_dataset"
+      ],
+      "squadSource": "footballcsv/cache.footballsquads",
+      "overallSource": "fallback-generated",
+      "fuzzySuggestion": null
+    },
+    {
+      "id": "porto-2004-1",
+      "teamSeasonId": "porto-2004",
+      "league": "Primeira Liga",
+      "club": "Porto",
+      "year": 2004,
+      "playerName": "Ricardo Carvalho",
+      "reasons": [
+        "season_predates_fifa_05_dataset"
+      ],
+      "squadSource": "footballcsv/cache.footballsquads",
+      "overallSource": "fallback-generated",
+      "fuzzySuggestion": null
+    },
+    {
+      "id": "porto-2004-2",
+      "teamSeasonId": "porto-2004",
+      "league": "Primeira Liga",
+      "club": "Porto",
+      "year": 2004,
+      "playerName": "Jorge Costa",
+      "reasons": [
+        "season_predates_fifa_05_dataset"
+      ],
+      "squadSource": "footballcsv/cache.footballsquads",
+      "overallSource": "fallback-generated",
+      "fuzzySuggestion": null
+    },
+    {
+      "id": "porto-2004-3",
+      "teamSeasonId": "porto-2004",
+      "league": "Primeira Liga",
+      "club": "Porto",
+      "year": 2004,
+      "playerName": "Paulo Ferreira",
+      "reasons": [
+        "season_predates_fifa_05_dataset"
+      ],
+      "squadSource": "footballcsv/cache.footballsquads",
+      "overallSource": "fallback-generated",
+      "fuzzySuggestion": null
+    },
+    {
+      "id": "porto-2004-4",
+      "teamSeasonId": "porto-2004",
+      "league": "Primeira Liga",
+      "club": "Porto",
+      "year": 2004,
+      "playerName": "Costinha",
+      "reasons": [
+        "season_predates_fifa_05_dataset"
+      ],
+      "squadSource": "footballcsv/cache.footballsquads",
+      "overallSource": "fallback-generated",
+      "fuzzySuggestion": null
+    },
+    {
+      "id": "porto-2004-5",
+      "teamSeasonId": "porto-2004",
+      "league": "Primeira Liga",
+      "club": "Porto",
+      "year": 2004,
+      "playerName": "Maniche",
+      "reasons": [
+        "season_predates_fifa_05_dataset"
+      ],
+      "squadSource": "footballcsv/cache.footballsquads",
+      "overallSource": "fallback-generated",
+      "fuzzySuggestion": null
+    },
+    {
+      "id": "porto-2004-6",
+      "teamSeasonId": "porto-2004",
+      "league": "Primeira Liga",
+      "club": "Porto",
+      "year": 2004,
+      "playerName": "Deco",
+      "reasons": [
+        "season_predates_fifa_05_dataset"
+      ],
+      "squadSource": "footballcsv/cache.footballsquads",
+      "overallSource": "fallback-generated",
+      "fuzzySuggestion": null
+    },
+    {
+      "id": "porto-2004-7",
+      "teamSeasonId": "porto-2004",
+      "league": "Primeira Liga",
+      "club": "Porto",
+      "year": 2004,
+      "playerName": "Benni McCarthy",
+      "reasons": [
+        "season_predates_fifa_05_dataset"
+      ],
+      "squadSource": "footballcsv/cache.footballsquads",
+      "overallSource": "fallback-generated",
+      "fuzzySuggestion": null
+    },
+    {
+      "id": "porto-2004-8",
+      "teamSeasonId": "porto-2004",
+      "league": "Primeira Liga",
+      "club": "Porto",
+      "year": 2004,
+      "playerName": "Derlei",
+      "reasons": [
+        "season_predates_fifa_05_dataset"
+      ],
+      "squadSource": "footballcsv/cache.footballsquads",
+      "overallSource": "fallback-generated",
+      "fuzzySuggestion": null
+    }
+  ]
+}

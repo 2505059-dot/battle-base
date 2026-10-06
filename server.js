@@ -13,6 +13,10 @@ const PORT = process.env.PORT || 8000;
 
 // ---- 設定（ここを変えると、部屋の人数などが変わる） ----
 const MAX_PLAYERS = 6;            // 1つの部屋に入れる人数の上限
+const MIN_PLAYERS = 2;            // ゲームを始めるのに必要な人数
+const MAX_ROOMS = 30;             // 同時に作れる部屋の数の上限（作りすぎを防ぐ）
+// この時間、動き（入室・開始・メッセージの中継）のない部屋は閉じる（枠を埋めたままにされるのを防ぐ）
+const ROOM_IDLE_MS = Number(process.env.ROOM_IDLE_MS) || 30 * 60 * 1000;
 const MAX_NAME_LENGTH = 12;       // 名前の最大文字数
 // 公開ポートは誰でも接続できるため、1通のサイズと送信頻度に上限を設ける
 const MAX_PAYLOAD_BYTES = 64 * 1024;
@@ -75,8 +79,25 @@ function generateRoomId() {
     return rooms.has(id) ? generateRoomId() : id;
 }
 
+// サーバーの動きを、ターミナルに1行で出す。
+// ターミナルへの出力があると、Codespacesの「操作なしで停止」までの時間がリセットされる（公式）。
+// 名前は他の人が入力した文字なので、端末を乱す制御文字は取り除いてから出す
+function log(text) {
+    const time = new Date().toLocaleTimeString('ja-JP', { hour12: false });
+    console.log(`[${time}] ${stripInvisible(text)}`);
+}
+
+// 制御文字（C0・C1）、書式文字（表示の向きを変えるものなど）、行区切りを取り除く
+function stripInvisible(text) {
+    return String(text ?? '').replace(/[\p{Cc}\p{Cf}\u2028\u2029]/gu, '');
+}
+
 function send(ws, data) {
     if (ws && ws.readyState === WebSocket.OPEN) ws.send(JSON.stringify(data));
+}
+
+function touch(room) {
+    room.lastActivity = Date.now();
 }
 
 function playerList(room) {
@@ -94,7 +115,7 @@ function sendPlayers(room) {
 }
 
 function cleanName(name) {
-    const s = String(name ?? '').trim().slice(0, MAX_NAME_LENGTH);
+    const s = stripInvisible(name).trim().slice(0, MAX_NAME_LENGTH);
     return s || 'ななし';
 }
 
@@ -110,12 +131,15 @@ function addPlayer(room, ws, name) {
 function handleLeave(ws) {
     const room = rooms.get(ws.roomId);
     if (!room) return;
+    const leaving = room.players.get(ws.playerId);
     room.players.delete(ws.playerId);
     ws.roomId = null;
     ws.playerId = null;
+    log(`部屋 ${room.id}: ${leaving?.name ?? '誰か'} が出ました（残り${room.players.size}人）`);
 
     if (room.players.size === 0) {
         rooms.delete(room.id);
+        log(`部屋 ${room.id}: 誰もいなくなったので閉じました`);
         return;
     }
     // 部屋のリーダー（ホスト）が抜けたら、残った先頭の人に引き継ぐ
@@ -155,9 +179,11 @@ wss.on('connection', (ws) => {
         switch (msg.type) {
             case 'create_room': {
                 if (ws.roomId) return;
-                const room = { id: generateRoomId(), players: new Map(), hostId: null, started: false, seq: 0 };
+                if (rooms.size >= MAX_ROOMS) return send(ws, { type: 'error', message: '部屋が多すぎます。しばらくしてからやり直してください。' });
+                const room = { id: generateRoomId(), players: new Map(), hostId: null, started: false, seq: 0, relayed: 0, lastActivity: Date.now() };
                 rooms.set(room.id, room);
                 const you = addPlayer(room, ws, msg.name);
+                log(`部屋 ${room.id}: ${room.players.get(you).name} が部屋を作りました`);
                 send(ws, {
                     type: 'room_joined', roomId: room.id, you,
                     players: playerList(room), hostId: room.hostId, maxPlayers: MAX_PLAYERS,
@@ -172,6 +198,8 @@ wss.on('connection', (ws) => {
                 if (room.started) return send(ws, { type: 'error', message: 'この部屋はもうゲームが始まっています。' });
                 if (room.players.size >= MAX_PLAYERS) return send(ws, { type: 'error', message: 'この部屋は満員です。' });
                 const you = addPlayer(room, ws, msg.name);
+                touch(room);
+                log(`部屋 ${room.id}: ${room.players.get(you).name} が入りました（${room.players.size}人）`);
                 send(ws, {
                     type: 'room_joined', roomId: room.id, you,
                     players: playerList(room), hostId: room.hostId, maxPlayers: MAX_PLAYERS,
@@ -184,7 +212,10 @@ wss.on('connection', (ws) => {
             case 'start': {
                 const room = rooms.get(ws.roomId);
                 if (!room || ws.playerId !== room.hostId || room.started) return;
+                if (room.players.size < MIN_PLAYERS) return send(ws, { type: 'error', message: `ゲームを始めるには${MIN_PLAYERS}人以上必要です。` });
                 room.started = true;
+                touch(room);
+                log(`部屋 ${room.id}: ゲーム開始（${room.players.size}人）`);
                 const order = playerList(room).map((p) => p.id);
                 for (let i = order.length - 1; i > 0; i--) {
                     const j = Math.floor(Math.random() * (i + 1));
@@ -201,6 +232,8 @@ wss.on('connection', (ws) => {
                 const room = rooms.get(ws.roomId);
                 if (!room || !room.started) return;
                 broadcast(room, { type: 'message', from: ws.playerId, payload: msg.payload }, ws.playerId);
+                room.relayed++;
+                touch(room);
                 break;
             }
 
@@ -209,6 +242,8 @@ wss.on('connection', (ws) => {
                 const room = rooms.get(ws.roomId);
                 if (!room || ws.playerId !== room.hostId || !room.started) return;
                 room.started = false;
+                touch(room);
+                log(`部屋 ${room.id}: ロビーに戻りました`);
                 broadcast(room, { type: 'lobby' });
                 sendPlayers(room);
                 break;
@@ -232,7 +267,28 @@ const interval = setInterval(() => {
     });
 }, 30000);
 
-wss.on('close', () => clearInterval(interval));
+// 1分ごとの見回り: ① 遊んでいる間の動きを1行だけ出す（1通ごとに出すと多すぎるため）
+// ② 長い間動きのない部屋を閉じる
+const logInterval = setInterval(() => {
+    for (const room of rooms.values()) {
+        if (room.relayed > 0) {
+            log(`部屋 ${room.id}: メッセージを${room.relayed}通中継（直近1分）`);
+            room.relayed = 0;
+        }
+        if (Date.now() - room.lastActivity > ROOM_IDLE_MS) {
+            log(`部屋 ${room.id}: 長い間動きがないので閉じます`);
+            for (const p of [...room.players.values()]) {
+                send(p.ws, { type: 'error', message: '長い間動きがなかったので、部屋を閉じました。' });
+                p.ws.close(); // 閉じると、handleLeave が部屋を片付ける
+            }
+        }
+    }
+}, Math.min(60000, ROOM_IDLE_MS));
+
+wss.on('close', () => {
+    clearInterval(interval);
+    clearInterval(logInterval);
+});
 
 server.listen(PORT, () => {
     console.log(`Battle Base Server running on http://localhost:${PORT}`);

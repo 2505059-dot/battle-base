@@ -119,12 +119,17 @@ export const zhCN = {
         statusBarDrafting: '{teamLabel} ({playerName}) — {picked}/{total} — {stepText}',
         statusBarReady: '{teamLabel} ({playerName}) — {picked}/{total} 已就绪 — 请点击 LOCK IN',
         statusBarLocked: '{teamLabel} ({playerName}) — 已锁定 ✓ — 等待对手完成',
+        noValidPick: 'NO VALID PICK — 当前没有任何合法选择',
+        freeRedrawBtn: 'FREE REDRAW（免费重新抽取）',
+        freeRedrawExplain:
+            '当前抽取结果没有可合法选入的球员且无可用重抽。可执行一次免费重新抽取以继续选秀（不消耗也不增加重抽道具次数）。',
     },
     history: {
         rolled: '{actorName} 抽到了 {club} {year}',
         rerolledLeague: '{actorName} 使用了联赛重抽 → {club} {year}',
         rerolledClub: '{actorName} 使用了俱乐部重抽 → {club} {year}',
         rerolledYear: '{actorName} 使用了年代重抽 → {club} {year}',
+        freeRedrawn: '{actorName} 触发免费重新抽取（无合法候选）→ {club} {year}',
         picked: '{actorName} 选择了 {playerName} → {slot}',
         locked: '{actorName} 锁定了阵容 (LOCK IN)',
     },

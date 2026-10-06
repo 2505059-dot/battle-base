@@ -18,6 +18,7 @@ import {
     isPlayerInRoster,
     getFirstAvailableSlotForRole,
     isRosterComplete,
+    canFreeRedraw,
 } from './rules.js';
 
 export function applyDraftRoll(state, actorId, teamSeasonId) {
@@ -83,6 +84,43 @@ export function applyDraftReroll(state, actorId, type, teamSeasonId) {
         rerollType: type,
         club: nextTeamSeason.club,
         year: nextTeamSeason.year,
+    });
+
+    return { ok: true, team: actorTeam, teamSeason: nextTeamSeason };
+}
+
+export function applyDraftRedraw(state, actorId, teamSeasonId) {
+    if (!state || state.phase !== 'DRAFT') {
+        return { ok: false, reason: 'not_in_draft_phase' };
+    }
+    const actorTeam = getTeamById(state, actorId);
+    if (!actorTeam || !canTeamPick(actorTeam)) {
+        return { ok: false, reason: 'cannot_redraw_phase' };
+    }
+    if (!canFreeRedraw(actorTeam)) {
+        return { ok: false, reason: 'free_redraw_not_allowed' };
+    }
+    if (typeof teamSeasonId !== 'string') {
+        return { ok: false, reason: 'invalid_team_season_id' };
+    }
+
+    const nextTeamSeason = TEAM_SEASON_MAP.get(teamSeasonId);
+    if (!nextTeamSeason) {
+        return { ok: false, reason: 'unknown_team_season' };
+    }
+
+    const prevRoll = actorTeam.draft.currentRoll;
+    actorTeam.draft.currentRoll = nextTeamSeason;
+    actorTeam.draft.phase = 'PICK';
+
+    pushTeamHistory(actorTeam, {
+        type: 'draft.redraw',
+        actorId: actorTeam.id,
+        actorName: actorTeam.name,
+        club: nextTeamSeason.club,
+        year: nextTeamSeason.year,
+        previousClub: prevRoll?.club ?? null,
+        previousYear: prevRoll?.year ?? null,
     });
 
     return { ok: true, team: actorTeam, teamSeason: nextTeamSeason };
@@ -197,6 +235,14 @@ export function applyBotDraftAction(state, actorId, action, randomFn = Math.rand
             return { ok: false, reason: 'reroll_generation_failed' };
         }
         return applyDraftReroll(state, actorId, action.rerollType, nextSeason.id);
+    }
+
+    if (action.type === 'redraw') {
+        const redrawnSeason = generateInitialRollTeamSeason(randomFn);
+        if (!redrawnSeason) {
+            return { ok: false, reason: 'redraw_generation_failed' };
+        }
+        return applyDraftRedraw(state, actorId, redrawnSeason.id);
     }
 
     if (action.type === 'pick') {

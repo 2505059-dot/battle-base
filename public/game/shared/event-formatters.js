@@ -32,6 +32,16 @@ export function formatHistoryEvent(event, localeOverride = null) {
                 localeOverride
             );
         }
+        case 'draft.redraw':
+            return t(
+                'history.freeRedrawn',
+                {
+                    actorName: event.actorName,
+                    club: event.club,
+                    year: event.year,
+                },
+                localeOverride
+            );
         case 'draft.pick':
             return t(
                 'history.picked',

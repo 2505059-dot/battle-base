@@ -225,6 +225,31 @@ export function getLegalRerollActions(team) {
     return actions;
 }
 
+export function canFreeRedraw(team) {
+    if (!team) return false;
+    const draft = team.draft;
+    if (draft?.locked || draft?.phase === 'LOCKED') return false;
+
+    const phase =
+        draft?.phase ??
+        (isRosterComplete(team)
+            ? 'READY'
+            : team?.currentRoll
+              ? 'PICK'
+              : 'ROLL');
+
+    if (phase !== 'PICK') return false;
+
+    const currentRoll = draft?.currentRoll ?? team?.currentRoll ?? null;
+    if (!currentRoll || !Array.isArray(currentRoll.players)) return false;
+
+    if (isRosterComplete(team)) return false;
+
+    return getLegalPickActions(team).length === 0 && getLegalRerollActions(team).length === 0;
+}
+
+export const isDeadRoll = canFreeRedraw;
+
 export function getLegalDraftActions(team) {
     if (!team) return [];
     const draft = team.draft;
@@ -245,7 +270,11 @@ export function getLegalDraftActions(team) {
         return isRosterComplete(team) ? [{ type: 'lock' }] : [];
     }
     if (phase === 'PICK') {
-        return [...getLegalPickActions(team), ...getLegalRerollActions(team)];
+        const pickAndReroll = [...getLegalPickActions(team), ...getLegalRerollActions(team)];
+        if (pickAndReroll.length > 0) {
+            return pickAndReroll;
+        }
+        return canFreeRedraw(team) ? [{ type: 'redraw' }] : [];
     }
     return [];
 }

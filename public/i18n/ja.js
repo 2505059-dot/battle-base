@@ -121,12 +121,17 @@ export const ja = {
         statusBarDrafting: '{teamLabel} ({playerName}) — {picked}/{total} — {stepText}',
         statusBarReady: '{teamLabel} ({playerName}) — {picked}/{total} READY — LOCK IN してください',
         statusBarLocked: '{teamLabel} ({playerName}) — LOCKED ✓ — 対戦相手を待機中',
+        noValidPick: 'NO VALID PICK — 指名可能な選手なし',
+        freeRedrawBtn: 'FREE REDRAW（無料再抽選）',
+        freeRedrawExplain:
+            'この抽選では指名可能な選手も利用可能な再抽選もありません。進行不能を回避するため無料で再抽選できます（再抽選回数は増減しません）。',
     },
     history: {
         rolled: '{actorName} が {club} {year} を引きました',
         rerolledLeague: '{actorName} がリーグ再抽選を使用 → {club} {year}',
         rerolledClub: '{actorName} がクラブ再抽選を使用 → {club} {year}',
         rerolledYear: '{actorName} が年代再抽選を使用 → {club} {year}',
+        freeRedrawn: '{actorName} が無料再抽選（指名可能選手なし）→ {club} {year}',
         picked: '{actorName} が {playerName} を {slot} に指名',
         locked: '{actorName} がロスターを確定（LOCK IN）しました',
     },

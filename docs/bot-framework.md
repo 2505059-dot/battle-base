@@ -15,8 +15,8 @@ It is decoupled from the DOM, WebSocket transport, and room server (`server.js` 
 - [`public/game/bot/personas.js`](../public/game/bot/personas.js) — Orthogonal Coach Persona schema, `NEUTRAL_PERSONA`, `createPersona`, and `resolvePersona`.
 - [`public/game/bot/scoring.js`](../public/game/bot/scoring.js) — `scorePlayerForRole`, `scoreRoleUrgency`, `evaluateCandidatePick`, and `scoreMarginalRosterGain`.
 - [`public/game/bot/reroll-value.js`](../public/game/bot/reroll-value.js) — `getRerollOutcomeDistribution`, `getRerollOpportunityCost`, and `estimateRerollValue` over the 3-stage uniform `League -> Club -> Year` probability tree.
-- [`public/game/bot/decision.js`](../public/game/bot/decision.js) — Primary entry point `chooseDraftAction`, `diagnoseDeadRoll`, and `toPublicDraftAction`.
-- [`public/game/draft/transitions.js`](../public/game/draft/transitions.js) — Pure state transitions (`applyDraftRoll`, `applyDraftReroll`, `applyDraftPick`, `applyDraftLock`, `resolveBotPickSlot`, `applyBotDraftAction`) shared between `public/game/controller.js` and headless simulators.
+- [`public/game/bot/decision.js`](../public/game/bot/decision.js) — Primary entry point `chooseDraftAction`, `canFreeRedraw`, `diagnoseDeadRoll`, and `toPublicDraftAction`.
+- [`public/game/draft/transitions.js`](../public/game/draft/transitions.js) — Pure state transitions (`applyDraftRoll`, `applyDraftReroll`, `applyDraftRedraw`, `applyDraftPick`, `applyDraftLock`, `resolveBotPickSlot`, `applyBotDraftAction`) shared between `public/game/controller.js` and headless simulators.
 
 ---
 
@@ -37,8 +37,9 @@ const action = chooseDraftAction({
 - **ROLL phase**: `{ type: 'roll' }`
 - **PICK phase (Pick)**: `{ type: 'pick', playerId, role }` where `role` is an abstract role (`'GK' | 'DF' | 'MF' | 'FW'`), never a concrete slot ID. The driver resolves the concrete slot via `getFirstAvailableSlotForRole(team.roster, action.role)`.
 - **PICK phase (Reroll)**: `{ type: 'reroll', rerollType }` where `rerollType` is `'league' | 'club' | 'year'`.
+- **PICK phase (Dead Roll Free Redraw)**: `{ type: 'redraw' }` when `canFreeRedraw(team) === true` (`0` legal picks AND `0` legal rerolls).
 - **READY phase (11/11 complete)**: `{ type: 'lock' }`
-- **Diagnostic deadlock fallback**: `{ type: 'stuck', reason }`
+- **Diagnostic fallback**: `{ type: 'stuck', reason }`
 
 ### Explainability (`debug` Metadata)
 
@@ -49,7 +50,7 @@ action.debug = {
     candidateScore,
     bestPickValue,
     rerollValue,
-    reasonCode, // 'roll_next' | 'pick_best_value' | 'pick_role_urgent' | 'reroll_expected_upgrade' | 'reroll_no_good_pick' | 'lock_complete' | 'random_choice' | 'stuck_dead_roll'
+    reasonCode, // 'roll_next' | 'pick_best_value' | 'pick_role_urgent' | 'reroll_expected_upgrade' | 'reroll_no_good_pick' | 'dead_roll_free_redraw' | 'lock_complete' | 'random_choice' | 'stuck_dead_roll'
 };
 ```
 
@@ -118,6 +119,24 @@ Draft rolls follow a 3-stage uniform hierarchy (`League -> Club -> Year`). Rerol
 For `expert`, `estimateRerollValue` computes the exact expected best legal pick across all reachable `TeamSeason` outcomes (taking into account players already in `team.roster`), and subtracts:
 1. **Reroll Opportunity Cost (`getRerollOpportunityCost`)**: scales with `remainingFutureRolls` and adds a reserve premium when holding the last remaining reroll token.
 2. **Downside & Completion Risk Penalty**: protects strong current candidates (`> 83.0`) and decent late-draft role-completing starters from reckless gambling.
+
+---
+
+## Dead Roll Recovery Rule (`canFreeRedraw` / `applyDraftRedraw`)
+
+In rare late-draft states (approximately `0.034%` of drafts before Deadlock Safety v1), a team in `PICK` phase can encounter a **Dead Roll** — for example, rolling a single-year club (`ajax-2019` or `benfica-2014`) when only `FW` slots remain open, all `FW` players on that `TeamSeason` are already in the team's own roster, `league` and `club` rerolls are `0`, and `year` reroll cannot be used because the club has only one year in the dataset.
+
+To guarantee `100%` draft completion for both humans and bots without altering normal draft strategy:
+
+1. **Strict Eligibility (`canFreeRedraw(team)`)**:
+   - `team.draft.phase === 'PICK'` (and not locked)
+   - `!isRosterComplete(team)`
+   - `getLegalPickActions(team).length === 0`
+   - `getLegalRerollActions(team).length === 0`
+2. **Recovery Rule**:
+   - `0 legal pick + 0 legal reroll -> unlimited free full redraw until a legal action exists.`
+   - Executing `applyDraftRedraw(state, actorId, teamSeasonId)` draws a fresh 3-stage uniform `League -> Club -> Year` `TeamSeason` (`generateInitialRollTeamSeason`), keeps `team.draft.phase === 'PICK'`, does **not** consume or grant any `rerolls.{league, club, year}`, does **not** modify `roster`, and records a `{ type: 'draft.redraw', actorId, actorName, club, year }` event in `team.draft.history`.
+   - **Free Redraw is not a strategic reroll resource**: if even a single legal pick or legal reroll exists, `canFreeRedraw(team)` is `false` and `applyDraftRedraw` rejects the action.
 
 ---
 

@@ -121,12 +121,17 @@ export const en = {
         statusBarDrafting: '{teamLabel} ({playerName}) — {picked}/{total} — {stepText}',
         statusBarReady: '{teamLabel} ({playerName}) — {picked}/{total} READY — Press LOCK IN',
         statusBarLocked: '{teamLabel} ({playerName}) — LOCKED ✓ — Waiting for opponent',
+        noValidPick: 'NO VALID PICK',
+        freeRedrawBtn: 'FREE REDRAW',
+        freeRedrawExplain:
+            'No legal player pick or reroll is available for this draw. Perform a free redraw to continue (does not grant or consume rerolls).',
     },
     history: {
         rolled: '{actorName} rolled {club} {year}',
         rerolledLeague: '{actorName} used League Reroll → {club} {year}',
         rerolledClub: '{actorName} used Club Reroll → {club} {year}',
         rerolledYear: '{actorName} used Year Reroll → {club} {year}',
+        freeRedrawn: '{actorName} triggered Free Redraw (no valid pick) → {club} {year}',
         picked: '{actorName} picked {playerName} → {slot}',
         locked: '{actorName} locked in the roster',
     },

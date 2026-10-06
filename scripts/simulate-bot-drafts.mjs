@@ -55,6 +55,7 @@ export function simulateSingleBotDraft({
         club: 0,
         year: 0,
     };
+    let freeRedrawCount = 0;
 
     // Track pre-reroll best candidate score vs eventual picked score in that round
     let roundPreRerollBestScore = null;
@@ -130,6 +131,12 @@ export function simulateSingleBotDraft({
                     `reroll-roll::${seed}::round-${pickedBefore}::${action.rerollType}::${totalRerollsSoFar}`
                 )
             );
+        } else if (action.type === 'redraw') {
+            stepRng = createBotRng(
+                hashBotSeed(
+                    `free-redraw::${seed}::round-${pickedBefore}::redraw-${freeRedrawCount}`
+                )
+            );
         } else {
             stepRng = createBotRng(hashBotSeed(`step::${seed}::${stepIndex}`));
         }
@@ -167,6 +174,8 @@ export function simulateSingleBotDraft({
 
         if (action.type === 'reroll') {
             rerollsUsed[action.rerollType] = (rerollsUsed[action.rerollType] ?? 0) + 1;
+        } else if (action.type === 'redraw') {
+            freeRedrawCount += 1;
         } else if (action.type === 'pick') {
             if (roundPreRerollBestScore !== null && transitionRes.player) {
                 const postScore = scorePlayerForRole(transitionRes.player, action.role, {
@@ -223,6 +232,7 @@ export function simulateSingleBotDraft({
         invalidActions,
         duplicateViolations,
         rerollsUsed,
+        freeRedrawCount,
         rerollTransitions,
         teamRating,
         profile,
@@ -243,6 +253,8 @@ export function simulateBotDraftBatch({
     let duplicateViolations = 0;
     let invalidActions = 0;
     let totalDecisions = 0;
+    let freeRedrawCount = 0;
+    let draftsUsingFreeRedraw = 0;
 
     let sumTeamRating = 0;
     const sumProfile = {
@@ -289,6 +301,11 @@ export function simulateBotDraftBatch({
         totalDecisions += res.decisions;
         duplicateViolations += res.duplicateViolations;
         invalidActions += res.invalidActions;
+
+        freeRedrawCount += res.freeRedrawCount;
+        if (res.freeRedrawCount > 0) {
+            draftsUsingFreeRedraw += 1;
+        }
 
         sumRerolls.league += res.rerollsUsed.league;
         sumRerolls.club += res.rerollsUsed.club;
@@ -342,6 +359,9 @@ export function simulateBotDraftBatch({
         stuck,
         completionRate: round4((completed / Math.max(1, runs)) * 100),
         stuckRate: round4((stuck / Math.max(1, runs)) * 100),
+        freeRedrawCount,
+        draftsUsingFreeRedraw,
+        freeRedrawRate: round4((draftsUsingFreeRedraw / Math.max(1, runs)) * 100),
         avgTeamRating: round2(sumTeamRating / denom),
         avgProfile: {
             attack: round2(sumProfile.attack / denom),
@@ -427,6 +447,8 @@ if (isMain) {
     let totalAttempts = 0;
     let totalCompleted = 0;
     let totalStuck = 0;
+    let totalFreeRedrawCount = 0;
+    let totalDraftsUsingFreeRedraw = 0;
     const aggregateStuckByReason = {
         no_legal_pick: 0,
         no_reroll_remaining: 0,
@@ -447,6 +469,8 @@ if (isMain) {
         totalAttempts += summary.runs;
         totalCompleted += summary.completed;
         totalStuck += summary.stuck;
+        totalFreeRedrawCount += summary.freeRedrawCount;
+        totalDraftsUsingFreeRedraw += summary.draftsUsingFreeRedraw;
         aggregateStuckByReason.no_legal_pick += summary.stuckByReason.no_legal_pick;
         aggregateStuckByReason.no_reroll_remaining += summary.stuckByReason.no_reroll_remaining;
         aggregateStuckByReason.duplicate_only += summary.stuckByReason.duplicate_only;
@@ -470,6 +494,12 @@ if (isMain) {
                     Math.round((totalCompleted / Math.max(1, totalAttempts)) * 10000) / 100,
                 overallStuckRatePct:
                     Math.round((totalStuck / Math.max(1, totalAttempts)) * 10000) / 100,
+                freeRedrawCount: totalFreeRedrawCount,
+                draftsUsingFreeRedraw: totalDraftsUsingFreeRedraw,
+                freeRedrawRate:
+                    Math.round(
+                        (totalDraftsUsingFreeRedraw / Math.max(1, totalAttempts)) * 1000000
+                    ) / 10000,
                 aggregateStuckByReason,
                 elapsedSeconds: Number(elapsedSec),
                 byDifficulty: results,

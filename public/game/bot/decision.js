@@ -10,6 +10,8 @@ import {
     getLegalPickActions,
     getLegalRerollActions,
     getLegalDraftActions,
+    canFreeRedraw,
+    isDeadRoll,
 } from '../draft/rules.js';
 import {
     BOT_DIFFICULTIES,
@@ -29,6 +31,8 @@ export {
     getLegalPickActions,
     getLegalRerollActions,
     getLegalDraftActions,
+    canFreeRedraw,
+    isDeadRoll,
     scorePlayerForRole,
     scoreMarginalRosterGain,
     estimateRerollValue,
@@ -121,6 +125,7 @@ export function toPublicDraftAction(actionOrDecision) {
     if (raw.type === 'roll') return { type: 'roll' };
     if (raw.type === 'lock') return { type: 'lock' };
     if (raw.type === 'reroll') return { type: 'reroll', rerollType: raw.rerollType };
+    if (raw.type === 'redraw') return { type: 'redraw' };
     if (raw.type === 'pick') return { type: 'pick', playerId: raw.playerId, role: raw.role };
     if (raw.type === 'stuck') return { type: 'stuck', reason: raw.reason };
     return null;
@@ -209,6 +214,19 @@ export function chooseDraftAction({
 
     if (legalPicks.length === 0 && legalRerolls.length === 0) {
         const diagnosis = diagnoseDeadRoll(team);
+        if (canFreeRedraw(team)) {
+            return attachDebugMetadata(
+                { type: 'redraw' },
+                {
+                    candidateScore: null,
+                    bestPickValue: null,
+                    rerollValue: null,
+                    reasonCode: BOT_REASON_CODES.DEAD_ROLL_FREE_REDRAW,
+                    diagnosis,
+                },
+                includeDebug
+            );
+        }
         return attachDebugMetadata(
             { type: 'stuck', reason: diagnosis.primaryReason },
             {

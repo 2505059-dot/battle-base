@@ -22,6 +22,7 @@ import {
     getPlayerOverall,
     calculateTeamRating,
     getPickedCount,
+    canFreeRedraw,
 } from './rules.js';
 
 const ROLE_TITLE_KEYS = {
@@ -237,6 +238,7 @@ export function renderDraftZone(state, myTeam, handlers = {}, selectedPlayerIdOv
     const {
         onRollClick,
         onRerollClick,
+        onRedrawClick,
         onSelectCandidate,
         onPickSlot,
         onLockClick,
@@ -296,8 +298,24 @@ export function renderDraftZone(state, myTeam, handlers = {}, selectedPlayerIdOv
 
         zone.append(renderRerollControls(team, roll, !team.draft.locked, onRerollClick));
 
-        const guide = el('div', 'fd-pick-guide', t('draft.pickGuideMine'));
-        zone.append(guide);
+        if (canFreeRedraw(team)) {
+            const deadRollBox = el('div', 'fd-deadroll-box');
+            deadRollBox.append(
+                el('div', 'fd-deadroll-badge', t('draft.noValidPick')),
+                el('p', 'fd-deadroll-explain', t('draft.freeRedrawExplain'))
+            );
+
+            const redrawBtn = el('button', 'fd-redraw-btn', t('draft.freeRedrawBtn'));
+            redrawBtn.disabled = Boolean(team.draft.locked);
+            if (onRedrawClick) {
+                redrawBtn.addEventListener('click', onRedrawClick);
+            }
+            deadRollBox.append(redrawBtn);
+            zone.append(deadRollBox);
+        } else {
+            const guide = el('div', 'fd-pick-guide', t('draft.pickGuideMine'));
+            zone.append(guide);
+        }
 
         const cardsGrid = el('div', 'fd-cards-grid');
         for (const player of roll.players) {

@@ -3,7 +3,7 @@
 // multi-position evaluation, hierarchical reroll EV, and full draft completion.
 
 import assert from 'node:assert/strict';
-import { TEAM_SEASONS, findTeamSeason } from '../public/data/team-seasons.js';
+import { TEAM_SEASONS, TEAM_SEASON_MAP, findTeamSeason } from '../public/data/team-seasons.js';
 import { ROLES, SLOTS, REROLL_TYPES } from '../public/game/shared/constants.js';
 import { createInitialState } from '../public/game/state.js';
 import {
@@ -15,10 +15,12 @@ import {
     getLegalPickActions,
     getLegalRerollActions,
     getLegalDraftActions,
+    canFreeRedraw,
 } from '../public/game/draft/rules.js';
 import {
     applyDraftRoll,
     applyDraftReroll,
+    applyDraftRedraw,
     applyDraftPick,
     applyDraftLock,
     resolveBotPickSlot,
@@ -557,6 +559,104 @@ console.log('[smoke-bot-framework] Running Bot Framework v1 verification suite..
     }
 }
 
+// ---------------------------------------------------------------------------
+// 6. Dead Roll Free Redraw & Historical Stuck Seeds Recovery
+// ---------------------------------------------------------------------------
+{
+    const ajax2019 = TEAM_SEASON_MAP.get('ajax-2019');
+    const barca2011 = TEAM_SEASON_MAP.get('barcelona-2011');
+    const ajaxFws = ajax2019.players.filter((p) => p.positions.includes('FW'));
+    assert.equal(ajaxFws.length, 2, 'Ajax 2019 has exactly 2 FWs');
+
+    const pool = TEAM_SEASONS.flatMap((t) => t.players);
+    const roster = createEmptyRoster();
+    roster.FW1 = ajaxFws[0];
+    roster.FW2 = ajaxFws[1];
+    roster.FW3 = null;
+    for (const slot of SLOTS) {
+        if (slot.startsWith('FW')) continue;
+        const role = slot.slice(0, 2);
+        roster[slot] = pool.find(
+            (p) => p.positions.includes(role) && !isPlayerInRoster(roster, p)
+        );
+    }
+
+    const state = createInitialState({
+        seed: 777,
+        order: ['bot-a', 'bot-b'],
+        players: [
+            { id: 'bot-a', name: 'Bot A' },
+            { id: 'bot-b', name: 'Bot B' },
+        ],
+    });
+    const team = state.teams[0];
+    team.roster = roster;
+    team.rerolls = { league: 0, club: 0, year: 1 };
+    team.draft.phase = 'PICK';
+    team.draft.currentRoll = ajax2019;
+
+    assert.equal(getLegalPickActions(team).length, 0);
+    assert.equal(getLegalRerollActions(team).length, 0);
+    assert.equal(canFreeRedraw(team), true);
+    assert.deepStrictEqual(getLegalDraftActions(team), [{ type: 'redraw' }]);
+
+    for (const diff of BOT_DIFFICULTIES) {
+        const act = chooseDraftAction({
+            team,
+            difficulty: diff,
+            persona: 'neutral',
+            decisionSeed: 42,
+        });
+        assert.deepStrictEqual(act, { type: 'redraw' });
+        assert.equal(act.debug.reasonCode, BOT_REASON_CODES.DEAD_ROLL_FREE_REDRAW);
+        assert.deepStrictEqual(toPublicDraftAction(act), { type: 'redraw' });
+    }
+
+    // Repeated dead roll -> second redraw -> legal pick
+    const redraw1 = applyDraftRedraw(state, 'bot-a', ajax2019.id);
+    assert.equal(redraw1.ok, true);
+    assert.equal(team.rerolls.year, 1, 'Free redraw must not consume year reroll');
+    assert.equal(canFreeRedraw(team), true, 'Second consecutive dead roll still allows free redraw');
+
+    const redraw2 = applyDraftRedraw(state, 'bot-a', barca2011.id);
+    assert.equal(redraw2.ok, true);
+    assert.equal(canFreeRedraw(team), false);
+
+    // Negative check: when legal pick exists, applyDraftRedraw is rejected
+    const illegalRedraw = applyDraftRedraw(state, 'bot-a', ajax2019.id);
+    assert.equal(illegalRedraw.ok, false);
+    assert.equal(illegalRedraw.reason, 'free_redraw_not_allowed');
+
+    // All 5 historical stuck seeds must now complete 11/11 -> READY -> LOCKED
+    const historicalStuckSeeds = [
+        { difficulty: 'random', seed: 2154022250 },
+        { difficulty: 'casual', seed: 2446731682 },
+        { difficulty: 'smart', seed: 3503798806 },
+        { difficulty: 'expert', seed: 1764790880 },
+        { difficulty: 'expert', seed: 691322844 },
+    ];
+
+    for (const { difficulty, seed } of historicalStuckSeeds) {
+        const res = simulateSingleBotDraft({
+            seed,
+            difficulty,
+            persona: 'neutral',
+        });
+        assert.equal(
+            res.completed,
+            true,
+            `Historical stuck seed ${seed} (${difficulty}) must now complete`
+        );
+        assert.equal(res.stuck, false);
+        assert(
+            res.freeRedrawCount >= 1,
+            `Historical stuck seed ${seed} (${difficulty}) must recover via freeRedrawCount >= 1`
+        );
+        assert.equal(res.duplicateViolations, 0);
+        assert.equal(res.invalidActions, 0);
+    }
+}
+
 console.log(
-    '[smoke-bot-framework] PASS — All legal action, determinism, no-cheating, scoring, reroll EV, persona, and full draft checks succeeded.'
+    '[smoke-bot-framework] PASS — All legal action, determinism, no-cheating, scoring, reroll EV, persona, dead-roll free redraw, and full draft checks succeeded.'
 );

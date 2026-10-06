@@ -16,10 +16,12 @@ import {
     generateRerollTeamSeason,
     getAvailableRolesForPlayer,
     getFirstAvailableSlotForRole,
+    canFreeRedraw,
 } from './draft/rules.js';
 import {
     applyDraftRoll,
     applyDraftReroll,
+    applyDraftRedraw,
     applyDraftPick,
     applyDraftLock as applyDraftLockTransition,
 } from './draft/transitions.js';
@@ -79,6 +81,15 @@ export function startGame(ctx) {
 
     function applyReroll(actorId, type, teamSeasonId) {
         const res = applyDraftReroll(state, actorId, type, teamSeasonId);
+        if (!res.ok) return;
+        if (actorId === ctx.me) {
+            localSelectedPlayerId = null;
+        }
+        render();
+    }
+
+    function applyRedraw(actorId, teamSeasonId) {
+        const res = applyDraftRedraw(state, actorId, teamSeasonId);
         if (!res.ok) return;
         if (actorId === ctx.me) {
             localSelectedPlayerId = null;
@@ -198,6 +209,17 @@ export function startGame(ctx) {
         applyReroll(ctx.me, type, nextTeamSeason.id);
     }
 
+    function handleRedrawClick() {
+        const myTeam = getMyTeam(state, ctx.me);
+        if (state.phase !== 'DRAFT' || !canTeamPick(myTeam) || !canFreeRedraw(myTeam)) return;
+
+        const nextTeamSeason = generateInitialRollTeamSeason();
+        if (!nextTeamSeason) return;
+
+        ctx.send({ kind: 'redraw', teamSeasonId: nextTeamSeason.id });
+        applyRedraw(ctx.me, nextTeamSeason.id);
+    }
+
     function handleSelectCandidate(playerId) {
         const myTeam = getMyTeam(state, ctx.me);
         if (state.phase !== 'DRAFT' || !canTeamPick(myTeam)) return;
@@ -266,6 +288,7 @@ export function startGame(ctx) {
                 {
                     onRollClick: handleRollClick,
                     onRerollClick: handleRerollClick,
+                    onRedrawClick: handleRedrawClick,
                     onSelectCandidate: handleSelectCandidate,
                     onPickSlot: handlePickSlot,
                     onLockClick: handleLockClick,
@@ -308,6 +331,11 @@ export function startGame(ctx) {
             typeof payload.teamSeasonId === 'string'
         ) {
             applyReroll(from, payload.type, payload.teamSeasonId);
+            return;
+        }
+
+        if (payload.kind === 'redraw' && typeof payload.teamSeasonId === 'string') {
+            applyRedraw(from, payload.teamSeasonId);
             return;
         }
 

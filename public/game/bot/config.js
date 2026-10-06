@@ -12,6 +12,7 @@ export const BOT_REASON_CODES = Object.freeze({
     PICK_ROLE_URGENT: 'pick_role_urgent',
     REROLL_EXPECTED_UPGRADE: 'reroll_expected_upgrade',
     REROLL_NO_GOOD_PICK: 'reroll_no_good_pick',
+    DEAD_ROLL_FREE_REDRAW: 'dead_roll_free_redraw',
     LOCK_COMPLETE: 'lock_complete',
     RANDOM_CHOICE: 'random_choice',
     STUCK_DEAD_ROLL: 'stuck_dead_roll',

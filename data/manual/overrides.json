@@ -1,0 +1,4 @@
+{
+  "_comment": "Manual overrides keyed by '<teamSeasonId>::<Canonical Player Name>'. Every entry MUST include a non-empty 'reason' field.",
+  "overrides": {}
+}

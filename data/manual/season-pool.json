@@ -1,0 +1,374 @@
+[
+  {
+    "id": "manchester-united-1999",
+    "league": "Premier League",
+    "club": "Manchester United",
+    "year": 1999
+  },
+  {
+    "id": "manchester-united-2008",
+    "league": "Premier League",
+    "club": "Manchester United",
+    "year": 2008
+  },
+  {
+    "id": "manchester-united-2013",
+    "league": "Premier League",
+    "club": "Manchester United",
+    "year": 2013
+  },
+  {
+    "id": "manchester-united-2022",
+    "league": "Premier League",
+    "club": "Manchester United",
+    "year": 2022
+  },
+  {
+    "id": "arsenal-2004",
+    "league": "Premier League",
+    "club": "Arsenal",
+    "year": 2004
+  },
+  {
+    "id": "arsenal-2008",
+    "league": "Premier League",
+    "club": "Arsenal",
+    "year": 2008
+  },
+  {
+    "id": "arsenal-2020",
+    "league": "Premier League",
+    "club": "Arsenal",
+    "year": 2020
+  },
+  {
+    "id": "chelsea-2005",
+    "league": "Premier League",
+    "club": "Chelsea",
+    "year": 2005
+  },
+  {
+    "id": "chelsea-2012",
+    "league": "Premier League",
+    "club": "Chelsea",
+    "year": 2012
+  },
+  {
+    "id": "chelsea-2016",
+    "league": "Premier League",
+    "club": "Chelsea",
+    "year": 2016
+  },
+  {
+    "id": "chelsea-2021",
+    "league": "Premier League",
+    "club": "Chelsea",
+    "year": 2021
+  },
+  {
+    "id": "chelsea-2023",
+    "league": "Premier League",
+    "club": "Chelsea",
+    "year": 2023
+  },
+  {
+    "id": "manchester-city-2012",
+    "league": "Premier League",
+    "club": "Manchester City",
+    "year": 2012
+  },
+  {
+    "id": "manchester-city-2023",
+    "league": "Premier League",
+    "club": "Manchester City",
+    "year": 2023
+  },
+  {
+    "id": "liverpool-2005",
+    "league": "Premier League",
+    "club": "Liverpool",
+    "year": 2005
+  },
+  {
+    "id": "liverpool-2019",
+    "league": "Premier League",
+    "club": "Liverpool",
+    "year": 2019
+  },
+  {
+    "id": "leicester-city-2016",
+    "league": "Premier League",
+    "club": "Leicester City",
+    "year": 2016
+  },
+  {
+    "id": "barcelona-2009",
+    "league": "La Liga",
+    "club": "Barcelona",
+    "year": 2009
+  },
+  {
+    "id": "barcelona-2011",
+    "league": "La Liga",
+    "club": "Barcelona",
+    "year": 2011
+  },
+  {
+    "id": "barcelona-2015",
+    "league": "La Liga",
+    "club": "Barcelona",
+    "year": 2015
+  },
+  {
+    "id": "barcelona-2020",
+    "league": "La Liga",
+    "club": "Barcelona",
+    "year": 2020
+  },
+  {
+    "id": "barcelona-2022",
+    "league": "La Liga",
+    "club": "Barcelona",
+    "year": 2022
+  },
+  {
+    "id": "real-madrid-2002",
+    "league": "La Liga",
+    "club": "Real Madrid",
+    "year": 2002
+  },
+  {
+    "id": "real-madrid-2012",
+    "league": "La Liga",
+    "club": "Real Madrid",
+    "year": 2012
+  },
+  {
+    "id": "real-madrid-2017",
+    "league": "La Liga",
+    "club": "Real Madrid",
+    "year": 2017
+  },
+  {
+    "id": "real-madrid-2019",
+    "league": "La Liga",
+    "club": "Real Madrid",
+    "year": 2019
+  },
+  {
+    "id": "real-madrid-2022",
+    "league": "La Liga",
+    "club": "Real Madrid",
+    "year": 2022
+  },
+  {
+    "id": "valencia-2004",
+    "league": "La Liga",
+    "club": "Valencia",
+    "year": 2004
+  },
+  {
+    "id": "deportivo-la-coruna-2000",
+    "league": "La Liga",
+    "club": "Deportivo La Coruna",
+    "year": 2000
+  },
+  {
+    "id": "atletico-madrid-2014",
+    "league": "La Liga",
+    "club": "Atletico Madrid",
+    "year": 2014
+  },
+  {
+    "id": "ac-milan-2007",
+    "league": "Serie A",
+    "club": "AC Milan",
+    "year": 2007
+  },
+  {
+    "id": "ac-milan-2011",
+    "league": "Serie A",
+    "club": "AC Milan",
+    "year": 2011
+  },
+  {
+    "id": "ac-milan-2015",
+    "league": "Serie A",
+    "club": "AC Milan",
+    "year": 2015
+  },
+  {
+    "id": "ac-milan-2022",
+    "league": "Serie A",
+    "club": "AC Milan",
+    "year": 2022
+  },
+  {
+    "id": "inter-milan-2010",
+    "league": "Serie A",
+    "club": "Inter Milan",
+    "year": 2010
+  },
+  {
+    "id": "inter-milan-2016",
+    "league": "Serie A",
+    "club": "Inter Milan",
+    "year": 2016
+  },
+  {
+    "id": "inter-milan-2021",
+    "league": "Serie A",
+    "club": "Inter Milan",
+    "year": 2021
+  },
+  {
+    "id": "inter-milan-2024",
+    "league": "Serie A",
+    "club": "Inter Milan",
+    "year": 2024
+  },
+  {
+    "id": "juventus-2003",
+    "league": "Serie A",
+    "club": "Juventus",
+    "year": 2003
+  },
+  {
+    "id": "juventus-2012",
+    "league": "Serie A",
+    "club": "Juventus",
+    "year": 2012
+  },
+  {
+    "id": "juventus-2017",
+    "league": "Serie A",
+    "club": "Juventus",
+    "year": 2017
+  },
+  {
+    "id": "juventus-2021",
+    "league": "Serie A",
+    "club": "Juventus",
+    "year": 2021
+  },
+  {
+    "id": "napoli-2023",
+    "league": "Serie A",
+    "club": "Napoli",
+    "year": 2023
+  },
+  {
+    "id": "roma-2001",
+    "league": "Serie A",
+    "club": "Roma",
+    "year": 2001
+  },
+  {
+    "id": "lazio-2000",
+    "league": "Serie A",
+    "club": "Lazio",
+    "year": 2000
+  },
+  {
+    "id": "parma-1999",
+    "league": "Serie A",
+    "club": "Parma",
+    "year": 1999
+  },
+  {
+    "id": "atalanta-2020",
+    "league": "Serie A",
+    "club": "Atalanta",
+    "year": 2020
+  },
+  {
+    "id": "bayern-munich-2001",
+    "league": "Bundesliga",
+    "club": "Bayern Munich",
+    "year": 2001
+  },
+  {
+    "id": "bayern-munich-2013",
+    "league": "Bundesliga",
+    "club": "Bayern Munich",
+    "year": 2013
+  },
+  {
+    "id": "bayern-munich-2020",
+    "league": "Bundesliga",
+    "club": "Bayern Munich",
+    "year": 2020
+  },
+  {
+    "id": "bayern-munich-2022",
+    "league": "Bundesliga",
+    "club": "Bayern Munich",
+    "year": 2022
+  },
+  {
+    "id": "borussia-dortmund-2013",
+    "league": "Bundesliga",
+    "club": "Borussia Dortmund",
+    "year": 2013
+  },
+  {
+    "id": "borussia-dortmund-2015",
+    "league": "Bundesliga",
+    "club": "Borussia Dortmund",
+    "year": 2015
+  },
+  {
+    "id": "borussia-dortmund-2017",
+    "league": "Bundesliga",
+    "club": "Borussia Dortmund",
+    "year": 2017
+  },
+  {
+    "id": "borussia-dortmund-2023",
+    "league": "Bundesliga",
+    "club": "Borussia Dortmund",
+    "year": 2023
+  },
+  {
+    "id": "bayer-leverkusen-2024",
+    "league": "Bundesliga",
+    "club": "Bayer Leverkusen",
+    "year": 2024
+  },
+  {
+    "id": "monaco-2017",
+    "league": "Ligue 1",
+    "club": "Monaco",
+    "year": 2017
+  },
+  {
+    "id": "lille-2021",
+    "league": "Ligue 1",
+    "club": "Lille",
+    "year": 2021
+  },
+  {
+    "id": "ajax-2019",
+    "league": "Eredivisie",
+    "club": "Ajax",
+    "year": 2019
+  },
+  {
+    "id": "psv-2005",
+    "league": "Eredivisie",
+    "club": "PSV",
+    "year": 2005
+  },
+  {
+    "id": "porto-2004",
+    "league": "Primeira Liga",
+    "club": "Porto",
+    "year": 2004
+  },
+  {
+    "id": "benfica-2014",
+    "league": "Primeira Liga",
+    "club": "Benfica",
+    "year": 2014
+  }
+]

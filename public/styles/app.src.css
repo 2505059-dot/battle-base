@@ -1,0 +1,180 @@
+/*!
+ * AUTO-GENERATED FILE NOTICE:
+ * public/styles/app.css is compiled from public/styles/app.src.css via `npm run build:css` (Tailwind CSS v4.3.3).
+ * DO NOT EDIT public/styles/app.css DIRECTLY — edit public/styles/app.src.css and run `npm run build:css`.
+ */
+
+/* 1. Explicit cascade layer order:
+ *    - theme:      Tailwind default theme + UI Foundation v1 semantic tokens
+ *    - legacy:     Existing public/style.css (~2245 lines) imported intact without Preflight
+ *    - components: Scoped base & special surface/gradient helpers for new UI foundation elements
+ *    - utilities:  Tailwind utility classes (always override legacy element/class rules without !important)
+ */
+@layer theme, legacy, components, utilities;
+
+/* 2. Import Tailwind theme & utilities separately (Tailwind Preflight is intentionally NOT imported
+ *    so existing headings, buttons, inputs, lists, sections, and images keep their exact behavior).
+ */
+@import "tailwindcss/theme.css" layer(theme);
+@import "../style.css" layer(legacy);
+@import "tailwindcss/utilities.css" layer(utilities) source(none);
+
+/* 3. Explicit source scanning scope (relative to public/styles/app.src.css):
+ *    Only scan actual HTML pages, native UI JS modules, and the UI foundation preview scripts.
+ *    Excludes data/, public/data/, research/, reports, scripts/, and external caches.
+ */
+@source "../index.html";
+@source "../ui-foundation.html";
+@source "../main.js";
+@source "../game.js";
+@source "../game/**/*.js";
+@source "../media/**/*.js";
+@source "../ui/**/*.js";
+
+/* 4. UI Foundation v1 Semantic Design Tokens (mapped to Tailwind theme utilities):
+ *    Reference direction: compact dark football tactical UI (FO3/3M visual organization reference).
+ *    Named by semantic purpose rather than raw palette numbers.
+ */
+@theme {
+  /* Backgrounds, Panels & Borders */
+  --color-canvas: #0b111e;
+  --color-canvas-subtle: #101826;
+  --color-panel: #151f32;
+  --color-panel-elevated: #1c2942;
+  --color-panel-inset: #0d1422;
+  --color-panel-header: #18253d;
+  --color-panel-border: #283959;
+  --color-panel-border-subtle: #1e2c46;
+  --color-panel-border-strong: #3b527e;
+
+  /* Primary, Secondary & Muted Text */
+  --color-fg: #eaf0ff;
+  --color-fg-secondary: #b6c5e3;
+  --color-fg-muted: #7e92b8;
+  --color-muted: #7e92b8;
+  --color-fg-on-accent: #ffffff;
+
+  /* Accent, Selected, Disabled & Danger Semantic States */
+  --color-accent: #2f8cff;
+  --color-accent-hover: #4ca0ff;
+  --color-accent-active: #1e70db;
+  --color-accent-soft: #162d52;
+
+  --color-selected: #38bdf8;
+  --color-selected-surface: #132a4a;
+  --color-selected-glow: #0ea5e9;
+
+  --color-disabled: #1b2436;
+  --color-disabled-fg: #596987;
+  --color-disabled-border: #233047;
+
+  --color-danger: #dc2626;
+  --color-danger-hover: #ef4444;
+  --color-danger-surface: #2c1621;
+  --color-danger-border: #7f1d1d;
+
+  /* Football Season & Position Semantic Accents */
+  --color-season-gold: #f59e0b;
+  --color-season-surface: #2b2111;
+  --color-pos-gk: #f59e0b;
+  --color-pos-df: #38bdf8;
+  --color-pos-mf: #22c55e;
+  --color-pos-fw: #f43f5e;
+
+  /* Typography Scale Extensions */
+  --text-2xs: 0.6875rem;
+  --text-2xs--line-height: 1rem;
+  --text-ovr: 1.375rem;
+  --text-ovr--line-height: 1.1;
+
+  /* Spacing Extensions */
+  --spacing-panel-xs: 0.5rem;
+  --spacing-panel-sm: 0.75rem;
+  --spacing-panel-md: 1rem;
+  --spacing-panel-lg: 1.25rem;
+
+  /* Border Radius Tokens */
+  --radius-badge: 0.25rem;
+  --radius-control: 0.375rem;
+  --radius-card: 0.5rem;
+  --radius-panel: 0.625rem;
+
+  /* Elevation & Selection Shadows */
+  --shadow-panel: 0 8px 24px -4px rgb(4 9 20 / 0.55), inset 0 1px 0 0 rgb(255 255 255 / 0.05);
+  --shadow-card: 0 4px 14px -2px rgb(4 9 20 / 0.45), inset 0 1px 0 0 rgb(255 255 255 / 0.04);
+  --shadow-selected: 0 0 0 1px var(--color-selected), 0 8px 20px -4px rgb(56 189 248 / 0.28);
+}
+
+@layer theme {
+  :root,
+  :host {
+    --color-canvas-subtle: #101826;
+    --color-panel-header: #18253d;
+    --color-selected-glow: #0ea5e9;
+    --color-danger-border: #7f1d1d;
+    --spacing-panel-xs: 0.5rem;
+    --spacing-panel-sm: 0.75rem;
+    --spacing-panel-md: 1rem;
+    --spacing-panel-lg: 1.25rem;
+    --shadow-panel: 0 8px 24px -4px rgb(4 9 20 / 0.55), inset 0 1px 0 0 rgb(255 255 255 / 0.05);
+    --shadow-card: 0 4px 14px -2px rgb(4 9 20 / 0.45), inset 0 1px 0 0 rgb(255 255 255 / 0.04);
+    --shadow-selected: 0 0 0 1px var(--color-selected), 0 8px 20px -4px rgb(56 189 248 / 0.28);
+    --z-base: 1;
+    --z-sticky: 20;
+    --z-overlay: 40;
+    --z-modal: 60;
+    --z-toast: 80;
+  }
+}
+
+/* 5. Scoped Base Rules & Dedicated Visual Helpers:
+ *    - Provides local base normalization inside `.ui-scope` without global Preflight side effects.
+ *    - Preserves HTML [hidden] semantics inside `.ui-scope` via @layer utilities specificity (0,2,0)
+ *      without using !important and without altering legacy [hidden] behavior on formal pages.
+ *    - Provides small dedicated helpers for tactical panel headers and CSS-variable stat bars.
+ */
+@layer components {
+  .ui-scope,
+  .ui-scope *,
+  .ui-scope *::before,
+  .ui-scope *::after {
+    box-sizing: border-box;
+  }
+
+  .ui-scope button,
+  .ui-scope input,
+  .ui-scope select,
+  .ui-scope textarea {
+    font-family: inherit;
+    line-height: inherit;
+  }
+
+  .ui-scope section {
+    margin-bottom: 0;
+  }
+
+  .ui-panel-header-sheen {
+    background-image: linear-gradient(
+      180deg,
+      rgb(255 255 255 / 0.05) 0%,
+      rgb(255 255 255 / 0) 100%
+    );
+  }
+
+  .ui-card-portrait-well {
+    background-image:
+      radial-gradient(circle at 50% 28%, rgb(56 189 248 / 0.16), transparent 68%),
+      linear-gradient(180deg, #121c30 0%, #0b1220 100%);
+  }
+
+  .ui-stat-bar-fill {
+    width: calc(var(--stat-pct, 0) * 1%);
+    transition: width 180ms ease-out;
+  }
+}
+
+@layer utilities {
+  .ui-scope [hidden] {
+    display: none;
+  }
+}

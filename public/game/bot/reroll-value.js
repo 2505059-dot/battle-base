@@ -1,15 +1,10 @@
 // Reroll Expected Value (EV) & Resource Opportunity Cost calculator
-// Strictly uses public dataset distribution and hierarchical League -> Club -> Year probabilities.
+// Strictly uses shared Draft Roll Policy v2 distribution from ../roll-policy.js.
 // NEVER peeks at future RNG rolls or hidden match/opponent state.
 
-import {
-    TEAM_SEASON_MAP,
-    getLeagues,
-    getClubsByLeague,
-    getYearsByLeagueAndClub,
-    findTeamSeason,
-} from '../../data/team-seasons.js';
+import { TEAM_SEASON_MAP } from '../../data/team-seasons.js';
 import { ROLES, SLOTS, REROLL_TYPES } from '../shared/constants.js';
+import { getRerollOutcomeDistribution } from '../roll-policy.js';
 import {
     hasRerollOption,
     getFirstAvailableSlotForRole,
@@ -27,8 +22,7 @@ import {
 import { NEUTRAL_PERSONA, resolvePersona } from './personas.js';
 import { scorePlayerForRole, evaluateCandidatePick } from './scoring.js';
 
-// Cache for hierarchical reroll outcome distributions: key -> Array<{ teamSeason, probability }>
-const REROLL_DISTRIBUTION_CACHE = new Map();
+export { getRerollOutcomeDistribution };
 
 // Cache for static per-TeamSeason best role scores (when no player from that TeamSeason is in roster)
 // key: `${teamSeason.id}::${difficulty}::${persona.id}` -> { GK, DF, MF, FW }
@@ -84,86 +78,6 @@ function getStaticSeasonBestByRole(teamSeason, difficulty, persona) {
         STATIC_SEASON_ROLE_BEST_CACHE.set(cacheKey, bestByRole);
     }
     return bestByRole;
-}
-
-/**
- * Enumerates all legal outcome TeamSeasons and their exact 3-stage uniform probabilities
- * for a given (currentRoll, rerollType).
- *
- * - league: uniform over other leagues -> uniform over clubs in league -> uniform over years in club
- * - club:   same league, uniform over other clubs -> uniform over years in club
- * - year:   same league & club, uniform over other years
- */
-export function getRerollOutcomeDistribution(currentRoll, rerollType) {
-    if (!currentRoll || !REROLL_TYPES.includes(rerollType)) return [];
-    if (!hasRerollOption(currentRoll, rerollType)) return [];
-
-    const cacheKey = `${currentRoll.league}::${currentRoll.club}::${currentRoll.year}::${rerollType}`;
-    if (REROLL_DISTRIBUTION_CACHE.has(cacheKey)) {
-        return REROLL_DISTRIBUTION_CACHE.get(cacheKey);
-    }
-
-    const outcomes = [];
-
-    if (rerollType === 'league') {
-        const otherLeagues = getLeagues().filter((l) => l !== currentRoll.league);
-        if (otherLeagues.length === 0) return [];
-        const leagueProb = 1 / otherLeagues.length;
-
-        for (const league of otherLeagues) {
-            const clubs = getClubsByLeague(league);
-            if (clubs.length === 0) continue;
-            const clubProb = leagueProb / clubs.length;
-
-            for (const club of clubs) {
-                const years = getYearsByLeagueAndClub(league, club);
-                if (years.length === 0) continue;
-                const yearProb = clubProb / years.length;
-
-                for (const year of years) {
-                    const ts = findTeamSeason(league, club, year);
-                    if (ts) {
-                        outcomes.push({ teamSeason: ts, probability: yearProb });
-                    }
-                }
-            }
-        }
-    } else if (rerollType === 'club') {
-        const otherClubs = getClubsByLeague(currentRoll.league).filter(
-            (c) => c !== currentRoll.club
-        );
-        if (otherClubs.length === 0) return [];
-        const clubProb = 1 / otherClubs.length;
-
-        for (const club of otherClubs) {
-            const years = getYearsByLeagueAndClub(currentRoll.league, club);
-            if (years.length === 0) continue;
-            const yearProb = clubProb / years.length;
-
-            for (const year of years) {
-                const ts = findTeamSeason(currentRoll.league, club, year);
-                if (ts) {
-                    outcomes.push({ teamSeason: ts, probability: yearProb });
-                }
-            }
-        }
-    } else if (rerollType === 'year') {
-        const otherYears = getYearsByLeagueAndClub(currentRoll.league, currentRoll.club).filter(
-            (y) => y !== currentRoll.year
-        );
-        if (otherYears.length === 0) return [];
-        const yearProb = 1 / otherYears.length;
-
-        for (const year of otherYears) {
-            const ts = findTeamSeason(currentRoll.league, currentRoll.club, year);
-            if (ts) {
-                outcomes.push({ teamSeason: ts, probability: yearProb });
-            }
-        }
-    }
-
-    REROLL_DISTRIBUTION_CACHE.set(cacheKey, outcomes);
-    return outcomes;
 }
 
 export function getRerollOpportunityCost(team, rerollType, context = {}) {

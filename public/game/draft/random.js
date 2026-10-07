@@ -1,11 +1,9 @@
-// Draft random selection & 3-stage uniform hierarchical roll helpers
+// Draft random selection & uniform TeamSeason initial roll helpers
 
 import {
-    getLeagues,
-    getClubsByLeague,
-    getYearsByLeagueAndClub,
-    findTeamSeason,
-} from '../../data/team-seasons.js';
+    getInitialRollOutcomeDistribution,
+    sampleOutcomeDistribution,
+} from '../roll-policy.js';
 
 function resolveRandomFn(randomFn) {
     if (typeof randomFn === 'function') return randomFn;
@@ -27,17 +25,9 @@ export function pickRandomExceptDraft(arr, current, randomFn = Math.random) {
     return pickRandomDraft(candidates, randomFn);
 }
 
-// 3-Stage Uniform Roll: League -> Club -> Year
+// Uniform TeamSeason Roll via shared roll policy (P = 1 / TEAM_SEASONS.length)
 export function generateInitialRollTeamSeason(randomFn = Math.random) {
-    const league = pickRandomDraft(getLeagues(), randomFn);
-    if (!league) return null;
-
-    const club = pickRandomDraft(getClubsByLeague(league), randomFn);
-    if (!club) return null;
-
-    const year = pickRandomDraft(getYearsByLeagueAndClub(league, club), randomFn);
-    if (year === null) return null;
-
-    return findTeamSeason(league, club, year);
+    return sampleOutcomeDistribution(getInitialRollOutcomeDistribution(), randomFn);
 }
+
 

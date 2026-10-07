@@ -1,12 +1,6 @@
 // Pure Draft rules, reroll validation, and roster slot helpers
 
 import {
-    getLeagues,
-    getClubsByLeague,
-    getYearsByLeagueAndClub,
-    findTeamSeason,
-} from '../../data/team-seasons.js';
-import {
     ROLES,
     ROSTER_SLOTS,
     SLOTS,
@@ -16,7 +10,11 @@ import {
     getSlotsForRole,
     formatSlotLabel,
 } from '../shared/constants.js';
-import { pickRandomDraft, pickRandomExceptDraft } from './random.js';
+import {
+    getRerollOutcomeDistribution,
+    sampleOutcomeDistribution,
+    isLegalRerollDestination,
+} from '../roll-policy.js';
 
 export {
     ROLES,
@@ -31,77 +29,17 @@ export {
 
 export function hasRerollOption(currentRoll, type) {
     if (!currentRoll) return false;
-    if (type === 'league') {
-        return getLeagues().some((l) => l !== currentRoll.league);
-    }
-    if (type === 'club') {
-        return getClubsByLeague(currentRoll.league).some((c) => c !== currentRoll.club);
-    }
-    if (type === 'year') {
-        return getYearsByLeagueAndClub(currentRoll.league, currentRoll.club).some(
-            (y) => y !== currentRoll.year
-        );
-    }
-    return false;
+    return getRerollOutcomeDistribution(currentRoll, type).length > 0;
 }
 
 export function generateRerollTeamSeason(currentRoll, type, randomFn = Math.random) {
     if (!currentRoll) return null;
-
-    if (type === 'league') {
-        const newLeague = pickRandomExceptDraft(getLeagues(), currentRoll.league, randomFn);
-        if (!newLeague) return null;
-        const newClub = pickRandomDraft(getClubsByLeague(newLeague), randomFn);
-        if (!newClub) return null;
-        const newYear = pickRandomDraft(getYearsByLeagueAndClub(newLeague, newClub), randomFn);
-        if (newYear === null) return null;
-        return findTeamSeason(newLeague, newClub, newYear);
-    }
-
-    if (type === 'club') {
-        const newClub = pickRandomExceptDraft(
-            getClubsByLeague(currentRoll.league),
-            currentRoll.club,
-            randomFn
-        );
-        if (!newClub) return null;
-        const newYear = pickRandomDraft(
-            getYearsByLeagueAndClub(currentRoll.league, newClub),
-            randomFn
-        );
-        if (newYear === null) return null;
-        return findTeamSeason(currentRoll.league, newClub, newYear);
-    }
-
-    if (type === 'year') {
-        const newYear = pickRandomExceptDraft(
-            getYearsByLeagueAndClub(currentRoll.league, currentRoll.club),
-            currentRoll.year,
-            randomFn
-        );
-        if (newYear === null) return null;
-        return findTeamSeason(currentRoll.league, currentRoll.club, newYear);
-    }
-
-    return null;
+    const distribution = getRerollOutcomeDistribution(currentRoll, type);
+    return sampleOutcomeDistribution(distribution, randomFn);
 }
 
 export function isValidRerollTransition(prevRoll, nextRoll, type) {
-    if (!prevRoll || !nextRoll) return false;
-    if (type === 'league') {
-        return nextRoll.league !== prevRoll.league;
-    }
-    if (type === 'club') {
-        return nextRoll.league === prevRoll.league && nextRoll.club !== prevRoll.club;
-    }
-    if (type === 'year') {
-        return (
-            nextRoll.league === prevRoll.league &&
-            nextRoll.club === prevRoll.club &&
-            nextRoll.year !== prevRoll.year
-        );
-    }
-    return false;
+    return isLegalRerollDestination(prevRoll, nextRoll, type);
 }
 
 export function createEmptyRoster() {

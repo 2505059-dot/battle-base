@@ -87,6 +87,10 @@ export const en = {
         rerollUsed: '{label} — USED',
         rerollChipRemaining: '{label} ×{count}',
         rerollChipUsed: '{label}: USED',
+        rerollUnavailableLeague:
+            '* No other league data is available near {year}, so League Reroll is disabled',
+        rerollUnavailableClub:
+            '* No other same-league clubs are available near {year}, so Club Reroll is disabled',
         rerollUnavailableYear:
             '* No other season years are available for {club}, so Year Reroll is disabled',
         pickGuideMine: 'Select a player card, then choose a position role',

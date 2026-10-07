@@ -1,0 +1,205 @@
+{
+  "policyVersion": "teamseason-semantic-v2",
+  "auditTimestamp": "2026-10-07T06:22:17.640Z",
+  "dataset": {
+    "teamSeasonCount": 62,
+    "leagueCount": 7,
+    "clubCount": 28
+  },
+  "initialRollComparison": {
+    "oldPolicy": {
+      "name": "v1: League uniform -> Club uniform -> Year uniform",
+      "oldMinProbability": 0.004464285714285714,
+      "oldMinProbabilityPct": "0.446429%",
+      "oldMaxProbability": 0.07142857142857142,
+      "oldMaxProbabilityPct": "7.142857%",
+      "oldMaxMinRatio": 16,
+      "sum": 0.9999999999999998
+    },
+    "newPolicy": {
+      "name": "v2: TeamSeason uniform (1 / TEAM_SEASONS.length)",
+      "newMinProbability": 0.016129032258064516,
+      "newMinProbabilityPct": "1.612903%",
+      "newMaxProbability": 0.016129032258064516,
+      "newMaxProbabilityPct": "1.612903%",
+      "newMaxMinRatio": 1,
+      "initialDistributionSum": 0.9999999999999992
+    }
+  },
+  "regressionHighlights": [
+    {
+      "id": "porto-2004",
+      "club": "Porto",
+      "league": "Primeira Liga",
+      "year": 2004,
+      "oldProbability": 0.07142857142857142,
+      "oldProbabilityPct": "7.142857%",
+      "newProbability": 0.016129032258064516,
+      "newProbabilityPct": "1.612903%",
+      "changeRatio": 0.22580645161290322
+    },
+    {
+      "id": "benfica-2014",
+      "club": "Benfica",
+      "league": "Primeira Liga",
+      "year": 2014,
+      "oldProbability": 0.07142857142857142,
+      "oldProbabilityPct": "7.142857%",
+      "newProbability": 0.016129032258064516,
+      "newProbabilityPct": "1.612903%",
+      "changeRatio": 0.22580645161290322
+    },
+    {
+      "id": "monaco-2017",
+      "club": "Monaco",
+      "league": "Ligue 1",
+      "year": 2017,
+      "oldProbability": 0.07142857142857142,
+      "oldProbabilityPct": "7.142857%",
+      "newProbability": 0.016129032258064516,
+      "newProbabilityPct": "1.612903%",
+      "changeRatio": 0.22580645161290322
+    },
+    {
+      "id": "ajax-2019",
+      "club": "Ajax",
+      "league": "Eredivisie",
+      "year": 2019,
+      "oldProbability": 0.07142857142857142,
+      "oldProbabilityPct": "7.142857%",
+      "newProbability": 0.016129032258064516,
+      "newProbabilityPct": "1.612903%",
+      "changeRatio": 0.22580645161290322
+    },
+    {
+      "id": "real-madrid-2002",
+      "club": "Real Madrid",
+      "league": "La Liga",
+      "year": 2002,
+      "oldProbability": 0.005714285714285714,
+      "oldProbabilityPct": "0.571429%",
+      "newProbability": 0.016129032258064516,
+      "newProbabilityPct": "1.612903%",
+      "changeRatio": 2.82258064516129
+    },
+    {
+      "id": "manchester-united-2008",
+      "club": "Manchester United",
+      "league": "Premier League",
+      "year": 2008,
+      "oldProbability": 0.005952380952380952,
+      "oldProbabilityPct": "0.595238%",
+      "newProbability": 0.016129032258064516,
+      "newProbabilityPct": "1.612903%",
+      "changeRatio": 2.709677419354839
+    }
+  ],
+  "diceAvailability": {
+    "leagueDie": {
+      "maxAllowedDrift": 3,
+      "exactSameYearCount": 55,
+      "exactSameYearPct": "88.71%",
+      "within1YearCount": 62,
+      "within1YearPct": "100.00%",
+      "within3YearsCount": 62,
+      "within3YearsPct": "100.00%",
+      "maxObservedFallbackDistance": 1
+    },
+    "clubDie": {
+      "maxAllowedDrift": 3,
+      "exactSameYearCount": 16,
+      "exactSameYearPct": "25.81%",
+      "within1YearCount": 44,
+      "within1YearPct": "70.97%",
+      "within2YearsCount": 50,
+      "within2YearsPct": "80.65%",
+      "within3YearsCount": 54,
+      "within3YearsPct": "87.10%",
+      "unavailableCount": 8,
+      "unavailablePct": "12.90%",
+      "unavailableTeamSeasons": [
+        {
+          "id": "manchester-united-1999",
+          "league": "Premier League",
+          "club": "Manchester United",
+          "year": 1999,
+          "nearestDistance": 5
+        },
+        {
+          "id": "bayern-munich-2001",
+          "league": "Bundesliga",
+          "club": "Bayern Munich",
+          "year": 2001,
+          "nearestDistance": 12
+        },
+        {
+          "id": "monaco-2017",
+          "league": "Ligue 1",
+          "club": "Monaco",
+          "year": 2017,
+          "nearestDistance": 4
+        },
+        {
+          "id": "lille-2021",
+          "league": "Ligue 1",
+          "club": "Lille",
+          "year": 2021,
+          "nearestDistance": 4
+        },
+        {
+          "id": "ajax-2019",
+          "league": "Eredivisie",
+          "club": "Ajax",
+          "year": 2019,
+          "nearestDistance": 14
+        },
+        {
+          "id": "psv-2005",
+          "league": "Eredivisie",
+          "club": "PSV",
+          "year": 2005,
+          "nearestDistance": 14
+        },
+        {
+          "id": "porto-2004",
+          "league": "Primeira Liga",
+          "club": "Porto",
+          "year": 2004,
+          "nearestDistance": 10
+        },
+        {
+          "id": "benfica-2014",
+          "league": "Primeira Liga",
+          "club": "Benfica",
+          "year": 2014,
+          "nearestDistance": 10
+        }
+      ]
+    },
+    "seasonDie": {
+      "availableCount": 46,
+      "availablePct": "74.19%",
+      "unavailableCount": 16,
+      "unavailablePct": "25.81%",
+      "singleSeasonClubCount": 16,
+      "singleSeasonClubs": [
+        "Leicester City",
+        "Valencia",
+        "Deportivo La Coruna",
+        "Atletico Madrid",
+        "Napoli",
+        "Roma",
+        "Lazio",
+        "Parma",
+        "Atalanta",
+        "Bayer Leverkusen",
+        "Monaco",
+        "Lille",
+        "Ajax",
+        "PSV",
+        "Porto",
+        "Benfica"
+      ]
+    }
+  }
+}

@@ -87,6 +87,10 @@ export const ja = {
         rerollUsed: '{label} — 使用済',
         rerollChipRemaining: '{label} ×{count}',
         rerollChipUsed: '{label}: 使用済',
+        rerollUnavailableLeague:
+            '※ {year} 前後に他リーグのデータがないためリーグ再抽選できません',
+        rerollUnavailableClub:
+            '※ {year} 前後に同リーグ他クラブのデータがないためクラブ再抽選できません',
         rerollUnavailableYear:
             '※ {club} は他シーズンのデータがないためシーズン再抽選できません',
         pickGuideMine: '選手カードを選択し、配置するポジションボタンを押してください',

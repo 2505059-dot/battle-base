@@ -367,8 +367,19 @@ const juve2017 = TEAM_SEASON_MAP.get('juventus-2017');
 const bvb2013 = TEAM_SEASON_MAP.get('borussia-dortmund-2013');
 const liv2005 = TEAM_SEASON_MAP.get('liverpool-2005');
 const city2023 = TEAM_SEASON_MAP.get('manchester-city-2023');
+const chelsea2005 = TEAM_SEASON_MAP.get('chelsea-2005');
 
-assert.ok(barca2011 && barca2015 && milan2007 && madrid2017 && juve2017 && bvb2013 && liv2005 && city2023);
+assert.ok(
+    barca2011 &&
+        barca2015 &&
+        milan2007 &&
+        madrid2017 &&
+        juve2017 &&
+        bvb2013 &&
+        liv2005 &&
+        city2023 &&
+        chelsea2005
+);
 
 // Both A and B roll simultaneously!
 dispatchAction('p1', { kind: 'roll', teamSeasonId: barca2015.id });
@@ -460,14 +471,42 @@ dispatchAction('p1', { kind: 'pick', playerId: otherBarcaFw.id, slot: 'FW2' });
 // 4. Asymmetric Progression:
 // B uses League Reroll and Club Reroll and advances to 6/11, while A fills all 11/11 -> READY -> LOCKED
 dispatchAction('p2', { kind: 'roll', teamSeasonId: juve2017.id });
+assert.equal(harness.getTeamState('p2').draft.currentRoll.id, juve2017.id);
+const prevLeagueRerolls = harness.getTeamState('p2').rerolls.league;
+
+// Policy v2 Check: Illegal League jump juve2017 -> bvb2013 (year drift 4 > 0 exact-year) must be rejected
 dispatchAction('p2', { kind: 'reroll', type: 'league', teamSeasonId: bvb2013.id });
-const bDf1 = findCandidateForRole(bvb2013, 'DF', harness.getTeamState('p2').roster);
+assert.equal(harness.getTeamState('p2').draft.currentRoll.id, juve2017.id, 'Illegal league jump must be rejected');
+assert.equal(harness.getTeamState('p2').rerolls.league, prevLeagueRerolls, 'Rejected reroll must not consume token');
+
+// Legal League Reroll: juve2017 (Serie A 2017) -> madrid2017 (La Liga 2017, exact same year)
+dispatchAction('p2', { kind: 'reroll', type: 'league', teamSeasonId: madrid2017.id });
+assert.equal(harness.getTeamState('p2').draft.currentRoll.id, madrid2017.id, 'Legal league reroll must update currentRoll');
+assert.equal(harness.getTeamState('p2').rerolls.league, prevLeagueRerolls - 1, 'Legal league reroll consumes token');
+
+const bDf1 = findCandidateForRole(madrid2017, 'DF', harness.getTeamState('p2').roster);
+assert.ok(bDf1, 'DF candidate must exist in real-madrid-2017');
 dispatchAction('p2', { kind: 'pick', playerId: bDf1.id, slot: 'DF1' }); // B: 2/11
+assert.equal(harness.getTeamState('p2').roster.DF1.id, bDf1.id);
 
 dispatchAction('p2', { kind: 'roll', teamSeasonId: liv2005.id });
+assert.equal(harness.getTeamState('p2').draft.currentRoll.id, liv2005.id);
+const prevClubRerolls = harness.getTeamState('p2').rerolls.club;
+
+// Policy v2 Check: Illegal Club jump liv2005 -> city2023 (drift 18 > 3) must be rejected
 dispatchAction('p2', { kind: 'reroll', type: 'club', teamSeasonId: city2023.id });
-const bFw1 = findCandidateForRole(city2023, 'FW', harness.getTeamState('p2').roster);
+assert.equal(harness.getTeamState('p2').draft.currentRoll.id, liv2005.id, 'Illegal club jump must be rejected');
+assert.equal(harness.getTeamState('p2').rerolls.club, prevClubRerolls, 'Rejected reroll must not consume token');
+
+// Legal Club Reroll: liv2005 (Premier League 2005) -> chelsea2005 (Premier League 2005, exact same year)
+dispatchAction('p2', { kind: 'reroll', type: 'club', teamSeasonId: chelsea2005.id });
+assert.equal(harness.getTeamState('p2').draft.currentRoll.id, chelsea2005.id, 'Legal club reroll must update currentRoll');
+assert.equal(harness.getTeamState('p2').rerolls.club, prevClubRerolls - 1, 'Legal club reroll consumes token');
+
+const bFw1 = findCandidateForRole(chelsea2005, 'FW', harness.getTeamState('p2').roster);
+assert.ok(bFw1, 'FW candidate must exist in chelsea-2005');
 dispatchAction('p2', { kind: 'pick', playerId: bFw1.id, slot: 'FW1' }); // B: 3/11
+assert.equal(harness.getTeamState('p2').roster.FW1.id, bFw1.id);
 
 // Fill B up to 6/11 using helper
 fillTeamRoster(harness, 'p2', 5, 6);

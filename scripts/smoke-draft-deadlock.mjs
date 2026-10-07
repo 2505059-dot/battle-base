@@ -587,9 +587,10 @@ function build10Of11RosterWithTwoFws(fw1, fw2) {
 }
 
 // ---------------------------------------------------------------------------
-// 5. Historical Stuck Seeds Regression Test (All 5 Seeds from 100k Run)
+// 5. Historical Stuck Seeds Regression Test (5 Historical v1 Seeds + Policy v2 Stuck Recovery Seeds)
 // ---------------------------------------------------------------------------
 {
+    // Under Policy v2, historical seeds complete 100% cleanly (stuck === false)
     const historicalStuckSeeds = [
         { difficulty: 'random', seed: 2154022250 },
         { difficulty: 'casual', seed: 2446731682 },
@@ -607,12 +608,39 @@ function build10Of11RosterWithTwoFws(fw1, fw2) {
         assert.equal(
             res.completed,
             true,
-            `Historical stuck seed ${seed} (${difficulty}) must complete 11/11 -> READY -> LOCKED`
+            `Historical seed ${seed} (${difficulty}) must complete 11/11 -> READY -> LOCKED`
+        );
+        assert.equal(res.stuck, false);
+        assert.equal(res.duplicateViolations, 0);
+        assert.equal(res.invalidActions, 0);
+        assert.equal(res.team.draft.phase, 'LOCKED');
+        assert.equal(res.team.draft.locked, true);
+        assert.equal(isRosterComplete(res.team), true);
+    }
+
+    // Policy v2 Deadlock Recovery Seeds: Discovered in 100k Bot Draft simulation,
+    // these seeds actually trigger a dead roll and recover via freeRedrawCount >= 1!
+    const policyV2StuckRecoverySeeds = [
+        { difficulty: 'random', seed: 4119464685 },
+        { difficulty: 'random', seed: 1752298874 },
+        { difficulty: 'random', seed: 3439136925 },
+    ];
+
+    for (const { difficulty, seed } of policyV2StuckRecoverySeeds) {
+        const res = simulateSingleBotDraft({
+            seed,
+            difficulty,
+            persona: 'neutral',
+        });
+        assert.equal(
+            res.completed,
+            true,
+            `Policy v2 recovery seed ${seed} (${difficulty}) must complete 11/11 -> READY -> LOCKED`
         );
         assert.equal(res.stuck, false);
         assert(
             res.freeRedrawCount >= 1,
-            `Historical stuck seed ${seed} (${difficulty}) must use at least 1 free redraw (got ${res.freeRedrawCount})`
+            `Policy v2 recovery seed ${seed} (${difficulty}) must use at least 1 free redraw (got ${res.freeRedrawCount})`
         );
         assert.equal(res.duplicateViolations, 0);
         assert.equal(res.invalidActions, 0);

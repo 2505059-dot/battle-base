@@ -296,11 +296,12 @@ console.log('[smoke-bot-framework] Running Bot Framework v1 verification suite..
         roster10of11[slot] = match;
     }
 
+    const roll2008 = TEAM_SEASON_MAP.get('manchester-united-2008') ?? sampleRoll;
     const decentGkRoll = {
         id: 'synthetic-decent-gk-roll',
-        league: sampleRoll.league,
-        club: sampleRoll.club,
-        year: sampleRoll.year,
+        league: roll2008.league,
+        club: roll2008.club,
+        year: roll2008.year,
         players: [
             {
                 id: 'decent-gk-82',
@@ -627,7 +628,7 @@ console.log('[smoke-bot-framework] Running Bot Framework v1 verification suite..
     assert.equal(illegalRedraw.ok, false);
     assert.equal(illegalRedraw.reason, 'free_redraw_not_allowed');
 
-    // All 5 historical stuck seeds must now complete 11/11 -> READY -> LOCKED
+    // Under Policy v2, all 5 historical stuck seeds complete cleanly (stuck === false)
     const historicalStuckSeeds = [
         { difficulty: 'random', seed: 2154022250 },
         { difficulty: 'casual', seed: 2446731682 },
@@ -645,12 +646,36 @@ console.log('[smoke-bot-framework] Running Bot Framework v1 verification suite..
         assert.equal(
             res.completed,
             true,
-            `Historical stuck seed ${seed} (${difficulty}) must now complete`
+            `Historical seed ${seed} (${difficulty}) must now complete`
+        );
+        assert.equal(res.stuck, false);
+        assert.equal(res.duplicateViolations, 0);
+        assert.equal(res.invalidActions, 0);
+    }
+
+    // Policy v2 Deadlock Recovery Seeds: Discovered in 100k Bot Draft simulation,
+    // these seeds actually trigger a dead roll and recover via freeRedrawCount >= 1!
+    const policyV2StuckRecoverySeeds = [
+        { difficulty: 'random', seed: 4119464685 },
+        { difficulty: 'random', seed: 1752298874 },
+        { difficulty: 'random', seed: 3439136925 },
+    ];
+
+    for (const { difficulty, seed } of policyV2StuckRecoverySeeds) {
+        const res = simulateSingleBotDraft({
+            seed,
+            difficulty,
+            persona: 'neutral',
+        });
+        assert.equal(
+            res.completed,
+            true,
+            `Policy v2 recovery seed ${seed} (${difficulty}) must now complete`
         );
         assert.equal(res.stuck, false);
         assert(
             res.freeRedrawCount >= 1,
-            `Historical stuck seed ${seed} (${difficulty}) must recover via freeRedrawCount >= 1`
+            `Policy v2 recovery seed ${seed} (${difficulty}) must recover via freeRedrawCount >= 1 (got ${res.freeRedrawCount})`
         );
         assert.equal(res.duplicateViolations, 0);
         assert.equal(res.invalidActions, 0);

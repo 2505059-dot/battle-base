@@ -86,6 +86,8 @@ export const zhCN = {
         rerollUsed: '{label} — 已用',
         rerollChipRemaining: '{label} ×{count}',
         rerollChipUsed: '{label}: 已用',
+        rerollUnavailableLeague: '※ {year} 前后暂无其他联赛数据，无法使用联赛重抽',
+        rerollUnavailableClub: '※ {year} 前后暂无可重抽的同联赛球队，无法使用球队重抽',
         rerollUnavailableYear: '※ {club} 暂无其他可重抽赛季，无法使用赛季重抽',
         pickGuideMine: '请点击选择一名球员卡片，然后点击下方位置按钮完成配置',
         pickGuideOpponent: '{playerName} 正在选择球员...',

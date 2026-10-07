@@ -157,6 +157,8 @@ export function renderHeader(state, meId) {
 export function renderRerollControls(curTeam, currentRoll, canInteract, onRerollClick) {
     const box = el('div', 'fd-reroll-box');
     const btnRow = el('div', 'fd-reroll-row');
+    let noLeagueHint = false;
+    let noClubHint = false;
     let noYearHint = false;
 
     for (const type of REROLL_TYPES) {
@@ -176,8 +178,10 @@ export function renderRerollControls(curTeam, currentRoll, canInteract, onReroll
         const btn = el('button', btnClass, btnText);
         btn.disabled = !canInteract || used || !hasOption;
 
-        if (!used && !hasOption && type === 'year') {
-            noYearHint = true;
+        if (!used && !hasOption) {
+            if (type === 'league') noLeagueHint = true;
+            else if (type === 'club') noClubHint = true;
+            else if (type === 'year') noYearHint = true;
         }
 
         btn.addEventListener('click', () => onRerollClick(type));
@@ -185,6 +189,26 @@ export function renderRerollControls(curTeam, currentRoll, canInteract, onReroll
     }
 
     box.append(btnRow);
+
+    if (noLeagueHint && currentRoll) {
+        box.append(
+            el(
+                'div',
+                'fd-reroll-hint',
+                t('draft.rerollUnavailableLeague', { year: currentRoll.year })
+            )
+        );
+    }
+
+    if (noClubHint && currentRoll) {
+        box.append(
+            el(
+                'div',
+                'fd-reroll-hint',
+                t('draft.rerollUnavailableClub', { year: currentRoll.year })
+            )
+        );
+    }
 
     if (noYearHint && currentRoll) {
         box.append(

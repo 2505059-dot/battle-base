@@ -1,0 +1,600 @@
+{
+  "audit": "FIFA Historical Schema & Position Rating Audit v1",
+  "verified_date": "2026-10-07",
+  "worktree_baseline": "3bcb487388b655c9ac0fde34555af98284114719",
+  "branch": "research/fifa-historical-schema-audit-v1",
+  "source_files": [
+    {
+      "cache_path": "research/cache/fifa-rating-audit/kaggle_fifa18_CompleteDataset.csv",
+      "verified_date": "2026-10-07",
+      "bytes": 7695093,
+      "sha256": "b1018e12bea62c715bf09ab838cfa8512ef1e7afcb970be173237117257f84b1",
+      "redistribute_in_repo": false,
+      "source": "thec03u5 FIFA 18 Demo Player Dataset",
+      "source_url_mutable": true,
+      "declared_license": "CC BY-NC-SA 4.0 per listing evidence",
+      "underlying_rights": "SoFIFA-derived player data; no full CSV redistribution in this repository",
+      "listing_schema_claim_columns": 155,
+      "observed_csv_rows": 17981,
+      "observed_csv_columns": 75,
+      "url": "https://www.kaggle.com/api/v1/datasets/download/thec03u5/fifa-18-demo-player-dataset"
+    },
+    {
+      "cache_path": "research/cache/fifa-rating-audit/kaggle_fifa18_demo.zip",
+      "verified_date": "2026-10-07",
+      "bytes": 4005705,
+      "sha256": "34df4bd41119ebe1796524b8c5f81a90a7252084e2a1ee8e2bf4a90f9fb38ae2",
+      "redistribute_in_repo": false,
+      "source": "thec03u5 FIFA 18 Demo Player Dataset",
+      "source_url_mutable": true,
+      "declared_license": "CC BY-NC-SA 4.0 per listing evidence",
+      "underlying_rights": "SoFIFA-derived player data; no full CSV redistribution in this repository",
+      "listing_schema_claim_columns": 155,
+      "observed_csv_rows": 17981,
+      "observed_csv_columns": 75,
+      "url": "https://www.kaggle.com/api/v1/datasets/download/thec03u5/fifa-18-demo-player-dataset"
+    },
+    {
+      "cache_path": "research/cache/fifa-rating-audit/lbenz_fifa05_20_player_stats.csv",
+      "verified_date": "2026-10-07",
+      "bytes": 62733624,
+      "sha256": "90403e4a7d30e94198b4c031d805fe06f170833efcae0d738e04108bba436758",
+      "redistribute_in_repo": false,
+      "source": "lbenz730/fifa_model",
+      "source_revision": "UNRESOLVED; fetched endpoint is mutable master branch; cached payload pinned by SHA256",
+      "source_url_mutable": true,
+      "dataset_version": "UNRESOLVED",
+      "license": "no repository/data license identified; redistribution rights unresolved",
+      "url": "https://raw.githubusercontent.com/lbenz730/fifa_model/master/player_stats.csv"
+    },
+    {
+      "cache_path": "research/cache/fifa-rating-audit/mzafram_FC24.csv",
+      "verified_date": "2026-10-07",
+      "bytes": 5761637,
+      "sha256": "1ddeb423c9271c50a301fde6fccca8aa19d1c11d8a92f3a25f5a5cec93f0e65b",
+      "redistribute_in_repo": false,
+      "source": "Mzafram ea-fc repository",
+      "source_revision": "main at pinned SHA 90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0",
+      "source_url_mutable": false,
+      "license": "MIT for scraper/code; underlying SoFIFA/game data rights unresolved",
+      "repository_source_description": "current scraper/API identifies SoFIFA as upstream",
+      "historical_edition_lineage": "UNRESOLVED: current repo does not independently establish the origin or update vintage of every historical edition CSV",
+      "url": "https://raw.githubusercontent.com/mzafram2001/ea-fc/90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0/data/dataset_ea_fc_24.csv",
+      "git_blob_sha1": "94e6496e0e3e2fcaafdf0eef3a4e2fb4701989f9"
+    },
+    {
+      "cache_path": "research/cache/fifa-rating-audit/mzafram_FC25.csv",
+      "verified_date": "2026-10-07",
+      "bytes": 5703530,
+      "sha256": "1b7794c5e6dca9c93f814ca89c3dbbd0e99648927bd670150be70a40e579a2b5",
+      "redistribute_in_repo": false,
+      "source": "Mzafram ea-fc repository",
+      "source_revision": "main at pinned SHA 90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0",
+      "source_url_mutable": false,
+      "license": "MIT for scraper/code; underlying SoFIFA/game data rights unresolved",
+      "repository_source_description": "current scraper/API identifies SoFIFA as upstream",
+      "historical_edition_lineage": "UNRESOLVED: current repo does not independently establish the origin or update vintage of every historical edition CSV",
+      "url": "https://raw.githubusercontent.com/mzafram2001/ea-fc/90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0/data/dataset_ea_fc_25.csv",
+      "git_blob_sha1": "f644c4f6f403e189121cb4c69bae0eac8d8c2fea"
+    },
+    {
+      "cache_path": "research/cache/fifa-rating-audit/mzafram_FIFA07.csv",
+      "verified_date": "2026-10-07",
+      "bytes": 2898882,
+      "sha256": "945761dfce3f7c250fe3f902e824fcf477e48e64307ba37afd572756a5ee7836",
+      "redistribute_in_repo": false,
+      "source": "Mzafram ea-fc repository",
+      "source_revision": "main at pinned SHA 90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0",
+      "source_url_mutable": false,
+      "license": "MIT for scraper/code; underlying SoFIFA/game data rights unresolved",
+      "repository_source_description": "current scraper/API identifies SoFIFA as upstream",
+      "historical_edition_lineage": "UNRESOLVED: current repo does not independently establish the origin or update vintage of every historical edition CSV",
+      "url": "https://raw.githubusercontent.com/mzafram2001/ea-fc/90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0/data/dataset_fifa_07.csv",
+      "git_blob_sha1": "24c36b96057cc2eee31cbded9d0759eada361343"
+    },
+    {
+      "cache_path": "research/cache/fifa-rating-audit/mzafram_FIFA08.csv",
+      "verified_date": "2026-10-07",
+      "bytes": 3440684,
+      "sha256": "1a96b04b03447d925707a646e3b6d4c91304255ab5c621b7b9e2109534df1423",
+      "redistribute_in_repo": false,
+      "source": "Mzafram ea-fc repository",
+      "source_revision": "main at pinned SHA 90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0",
+      "source_url_mutable": false,
+      "license": "MIT for scraper/code; underlying SoFIFA/game data rights unresolved",
+      "repository_source_description": "current scraper/API identifies SoFIFA as upstream",
+      "historical_edition_lineage": "UNRESOLVED: current repo does not independently establish the origin or update vintage of every historical edition CSV",
+      "url": "https://raw.githubusercontent.com/mzafram2001/ea-fc/90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0/data/dataset_fifa_08.csv",
+      "git_blob_sha1": "6876e726c8b9147d2a3c6b05860396b8bd64eb65"
+    },
+    {
+      "cache_path": "research/cache/fifa-rating-audit/mzafram_FIFA09.csv",
+      "verified_date": "2026-10-07",
+      "bytes": 4359033,
+      "sha256": "4aca59d976167ab3b9079298587e11aeccc9a16e2baf7c67ae35ddb367a6c2d8",
+      "redistribute_in_repo": false,
+      "source": "Mzafram ea-fc repository",
+      "source_revision": "main at pinned SHA 90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0",
+      "source_url_mutable": false,
+      "license": "MIT for scraper/code; underlying SoFIFA/game data rights unresolved",
+      "repository_source_description": "current scraper/API identifies SoFIFA as upstream",
+      "historical_edition_lineage": "UNRESOLVED: current repo does not independently establish the origin or update vintage of every historical edition CSV",
+      "url": "https://raw.githubusercontent.com/mzafram2001/ea-fc/90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0/data/dataset_fifa_09.csv",
+      "git_blob_sha1": "edaece038a0f3eea7475d2888534b87f85b08104"
+    },
+    {
+      "cache_path": "research/cache/fifa-rating-audit/mzafram_FIFA10.csv",
+      "verified_date": "2026-10-07",
+      "bytes": 4499766,
+      "sha256": "4cac8ff557238aa965e96a4b746e7eb8eb0401bd37ab86752f9b180f4f0f3e6f",
+      "redistribute_in_repo": false,
+      "source": "Mzafram ea-fc repository",
+      "source_revision": "main at pinned SHA 90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0",
+      "source_url_mutable": false,
+      "license": "MIT for scraper/code; underlying SoFIFA/game data rights unresolved",
+      "repository_source_description": "current scraper/API identifies SoFIFA as upstream",
+      "historical_edition_lineage": "UNRESOLVED: current repo does not independently establish the origin or update vintage of every historical edition CSV",
+      "url": "https://raw.githubusercontent.com/mzafram2001/ea-fc/90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0/data/dataset_fifa_10.csv",
+      "git_blob_sha1": "019e96672b32338c6cff4642fd1d19dba2ef6f55"
+    },
+    {
+      "cache_path": "research/cache/fifa-rating-audit/mzafram_FIFA11.csv",
+      "verified_date": "2026-10-07",
+      "bytes": 4411119,
+      "sha256": "2759c693ffcc4822d5a4516981681c19715ce2569b2e3f1700c89c33c99c7ae8",
+      "redistribute_in_repo": false,
+      "source": "Mzafram ea-fc repository",
+      "source_revision": "main at pinned SHA 90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0",
+      "source_url_mutable": false,
+      "license": "MIT for scraper/code; underlying SoFIFA/game data rights unresolved",
+      "repository_source_description": "current scraper/API identifies SoFIFA as upstream",
+      "historical_edition_lineage": "UNRESOLVED: current repo does not independently establish the origin or update vintage of every historical edition CSV",
+      "url": "https://raw.githubusercontent.com/mzafram2001/ea-fc/90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0/data/dataset_fifa_11.csv",
+      "git_blob_sha1": "6b8014ac5ed83743c6aa136f6a1192d1afac4541"
+    },
+    {
+      "cache_path": "research/cache/fifa-rating-audit/mzafram_FIFA12.csv",
+      "verified_date": "2026-10-07",
+      "bytes": 4286908,
+      "sha256": "97be5e33fed7b9fd77023a48aaf6b4ec34ed8430453c6b0d4bfd90be8944f9aa",
+      "redistribute_in_repo": false,
+      "source": "Mzafram ea-fc repository",
+      "source_revision": "main at pinned SHA 90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0",
+      "source_url_mutable": false,
+      "license": "MIT for scraper/code; underlying SoFIFA/game data rights unresolved",
+      "repository_source_description": "current scraper/API identifies SoFIFA as upstream",
+      "historical_edition_lineage": "UNRESOLVED: current repo does not independently establish the origin or update vintage of every historical edition CSV",
+      "url": "https://raw.githubusercontent.com/mzafram2001/ea-fc/90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0/data/dataset_fifa_12.csv",
+      "git_blob_sha1": "8679fd3e13c4cdf5d7f48ae12d10b8f49a1cbafc"
+    },
+    {
+      "cache_path": "research/cache/fifa-rating-audit/mzafram_FIFA13.csv",
+      "verified_date": "2026-10-07",
+      "bytes": 4417984,
+      "sha256": "532bc125dc33b9fccb388ffeac83f5f0193fecf6b0a0f1d9e3e4f532b9fe9671",
+      "redistribute_in_repo": false,
+      "source": "Mzafram ea-fc repository",
+      "source_revision": "main at pinned SHA 90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0",
+      "source_url_mutable": false,
+      "license": "MIT for scraper/code; underlying SoFIFA/game data rights unresolved",
+      "repository_source_description": "current scraper/API identifies SoFIFA as upstream",
+      "historical_edition_lineage": "UNRESOLVED: current repo does not independently establish the origin or update vintage of every historical edition CSV",
+      "url": "https://raw.githubusercontent.com/mzafram2001/ea-fc/90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0/data/dataset_fifa_13.csv",
+      "git_blob_sha1": "7064b354c205359e317cf81d4e8c5c8c92659f25"
+    },
+    {
+      "cache_path": "research/cache/fifa-rating-audit/mzafram_FIFA14.csv",
+      "verified_date": "2026-10-07",
+      "bytes": 4881236,
+      "sha256": "8c6526c72be2ecd5f7a41d3ebb61e2346320b060b03334a37f6a1f2bb90d4044",
+      "redistribute_in_repo": false,
+      "source": "Mzafram ea-fc repository",
+      "source_revision": "main at pinned SHA 90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0",
+      "source_url_mutable": false,
+      "license": "MIT for scraper/code; underlying SoFIFA/game data rights unresolved",
+      "repository_source_description": "current scraper/API identifies SoFIFA as upstream",
+      "historical_edition_lineage": "UNRESOLVED: current repo does not independently establish the origin or update vintage of every historical edition CSV",
+      "url": "https://raw.githubusercontent.com/mzafram2001/ea-fc/90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0/data/dataset_fifa_14.csv",
+      "git_blob_sha1": "3d81dbc748c4dec3be7039e91231669d575f4011"
+    },
+    {
+      "cache_path": "research/cache/fifa-rating-audit/mzafram_FIFA15.csv",
+      "verified_date": "2026-10-07",
+      "bytes": 4824967,
+      "sha256": "c127ea2d9ad240ae0b7d8b29e8eb2ed22b289cd71381846b3279e2f5e96ad74e",
+      "redistribute_in_repo": false,
+      "source": "Mzafram ea-fc repository",
+      "source_revision": "main at pinned SHA 90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0",
+      "source_url_mutable": false,
+      "license": "MIT for scraper/code; underlying SoFIFA/game data rights unresolved",
+      "repository_source_description": "current scraper/API identifies SoFIFA as upstream",
+      "historical_edition_lineage": "UNRESOLVED: current repo does not independently establish the origin or update vintage of every historical edition CSV",
+      "url": "https://raw.githubusercontent.com/mzafram2001/ea-fc/90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0/data/dataset_fifa_15.csv",
+      "git_blob_sha1": "bc0f871eec370e0526463bc6bbac4cce7c3c08aa"
+    },
+    {
+      "cache_path": "research/cache/fifa-rating-audit/mzafram_FIFA16.csv",
+      "verified_date": "2026-10-07",
+      "bytes": 5017554,
+      "sha256": "688a706ef1fcdff37a89642c1101ee769f3ade9a876c41a8e3cd392cd23c5ba6",
+      "redistribute_in_repo": false,
+      "source": "Mzafram ea-fc repository",
+      "source_revision": "main at pinned SHA 90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0",
+      "source_url_mutable": false,
+      "license": "MIT for scraper/code; underlying SoFIFA/game data rights unresolved",
+      "repository_source_description": "current scraper/API identifies SoFIFA as upstream",
+      "historical_edition_lineage": "UNRESOLVED: current repo does not independently establish the origin or update vintage of every historical edition CSV",
+      "url": "https://raw.githubusercontent.com/mzafram2001/ea-fc/90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0/data/dataset_fifa_16.csv",
+      "git_blob_sha1": "4149fa92b71662288b0a8fa348939a86dbcde10a"
+    },
+    {
+      "cache_path": "research/cache/fifa-rating-audit/mzafram_FIFA17.csv",
+      "verified_date": "2026-10-07",
+      "bytes": 5187386,
+      "sha256": "028387a40c72ff89f4d0ef798df1231edaafaaefdff856944c77a8bf556a93d9",
+      "redistribute_in_repo": false,
+      "source": "Mzafram ea-fc repository",
+      "source_revision": "main at pinned SHA 90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0",
+      "source_url_mutable": false,
+      "license": "MIT for scraper/code; underlying SoFIFA/game data rights unresolved",
+      "repository_source_description": "current scraper/API identifies SoFIFA as upstream",
+      "historical_edition_lineage": "UNRESOLVED: current repo does not independently establish the origin or update vintage of every historical edition CSV",
+      "url": "https://raw.githubusercontent.com/mzafram2001/ea-fc/90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0/data/dataset_fifa_17.csv",
+      "git_blob_sha1": "a8842ee148587984abde2046a70036147635acaf"
+    },
+    {
+      "cache_path": "research/cache/fifa-rating-audit/mzafram_FIFA18.csv",
+      "verified_date": "2026-10-07",
+      "bytes": 5308580,
+      "sha256": "9ebe3b423d6679cdb2352bba3b7d4eea852b5d91ecf5e5e8fffd1e407ce8ba2f",
+      "redistribute_in_repo": false,
+      "source": "Mzafram ea-fc repository",
+      "source_revision": "main at pinned SHA 90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0",
+      "source_url_mutable": false,
+      "license": "MIT for scraper/code; underlying SoFIFA/game data rights unresolved",
+      "repository_source_description": "current scraper/API identifies SoFIFA as upstream",
+      "historical_edition_lineage": "UNRESOLVED: current repo does not independently establish the origin or update vintage of every historical edition CSV",
+      "url": "https://raw.githubusercontent.com/mzafram2001/ea-fc/90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0/data/dataset_fifa_18.csv",
+      "git_blob_sha1": "7bf16f76a508f8a5552d9509177ce53d67032f97"
+    },
+    {
+      "cache_path": "research/cache/fifa-rating-audit/mzafram_FIFA19.csv",
+      "verified_date": "2026-10-07",
+      "bytes": 5305437,
+      "sha256": "5e0d91768dd5dd65d8fcacf9231104faf095496577013ad06980460ef17f8516",
+      "redistribute_in_repo": false,
+      "source": "Mzafram ea-fc repository",
+      "source_revision": "main at pinned SHA 90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0",
+      "source_url_mutable": false,
+      "license": "MIT for scraper/code; underlying SoFIFA/game data rights unresolved",
+      "repository_source_description": "current scraper/API identifies SoFIFA as upstream",
+      "historical_edition_lineage": "UNRESOLVED: current repo does not independently establish the origin or update vintage of every historical edition CSV",
+      "url": "https://raw.githubusercontent.com/mzafram2001/ea-fc/90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0/data/dataset_fifa_19.csv",
+      "git_blob_sha1": "7fa04bcff143617ce53fdb3baf4cc8d8cde6e25c"
+    },
+    {
+      "cache_path": "research/cache/fifa-rating-audit/mzafram_FIFA20.csv",
+      "verified_date": "2026-10-07",
+      "bytes": 5463083,
+      "sha256": "084911f02fb106504ae46b8419ca8efb43357ad1aad219407962b2c972c9c959",
+      "redistribute_in_repo": false,
+      "source": "Mzafram ea-fc repository",
+      "source_revision": "main at pinned SHA 90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0",
+      "source_url_mutable": false,
+      "license": "MIT for scraper/code; underlying SoFIFA/game data rights unresolved",
+      "repository_source_description": "current scraper/API identifies SoFIFA as upstream",
+      "historical_edition_lineage": "UNRESOLVED: current repo does not independently establish the origin or update vintage of every historical edition CSV",
+      "url": "https://raw.githubusercontent.com/mzafram2001/ea-fc/90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0/data/dataset_fifa_20.csv",
+      "git_blob_sha1": "f65122f01f801f0beb24b5f57cb4268da627d4b3"
+    },
+    {
+      "cache_path": "research/cache/fifa-rating-audit/mzafram_FIFA21.csv",
+      "verified_date": "2026-10-07",
+      "bytes": 5463195,
+      "sha256": "e85bb9ffeb3e8934365f493bee080dc87c256df0e4f7814157b5fa4d95cb56a4",
+      "redistribute_in_repo": false,
+      "source": "Mzafram ea-fc repository",
+      "source_revision": "main at pinned SHA 90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0",
+      "source_url_mutable": false,
+      "license": "MIT for scraper/code; underlying SoFIFA/game data rights unresolved",
+      "repository_source_description": "current scraper/API identifies SoFIFA as upstream",
+      "historical_edition_lineage": "UNRESOLVED: current repo does not independently establish the origin or update vintage of every historical edition CSV",
+      "url": "https://raw.githubusercontent.com/mzafram2001/ea-fc/90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0/data/dataset_fifa_21.csv",
+      "git_blob_sha1": "172650bace3c26e31d89819a47779eba125eb96c"
+    },
+    {
+      "cache_path": "research/cache/fifa-rating-audit/mzafram_FIFA22.csv",
+      "verified_date": "2026-10-07",
+      "bytes": 5464693,
+      "sha256": "8a5b98643b3c6fac0afc1ed5499889ce2ca0f89f7eb69a37af6d95af5288b65f",
+      "redistribute_in_repo": false,
+      "source": "Mzafram ea-fc repository",
+      "source_revision": "main at pinned SHA 90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0",
+      "source_url_mutable": false,
+      "license": "MIT for scraper/code; underlying SoFIFA/game data rights unresolved",
+      "repository_source_description": "current scraper/API identifies SoFIFA as upstream",
+      "historical_edition_lineage": "UNRESOLVED: current repo does not independently establish the origin or update vintage of every historical edition CSV",
+      "url": "https://raw.githubusercontent.com/mzafram2001/ea-fc/90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0/data/dataset_fifa_22.csv",
+      "git_blob_sha1": "e76553fb67bbb341a730f8ece9ea7cc37b91fcb0"
+    },
+    {
+      "cache_path": "research/cache/fifa-rating-audit/mzafram_FIFA23.csv",
+      "verified_date": "2026-10-07",
+      "bytes": 5458116,
+      "sha256": "14561b7be4456c9827c50632d2ac75a2bde0c60a25a46441787f8ac2c14e630c",
+      "redistribute_in_repo": false,
+      "source": "Mzafram ea-fc repository",
+      "source_revision": "main at pinned SHA 90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0",
+      "source_url_mutable": false,
+      "license": "MIT for scraper/code; underlying SoFIFA/game data rights unresolved",
+      "repository_source_description": "current scraper/API identifies SoFIFA as upstream",
+      "historical_edition_lineage": "UNRESOLVED: current repo does not independently establish the origin or update vintage of every historical edition CSV",
+      "url": "https://raw.githubusercontent.com/mzafram2001/ea-fc/90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0/data/dataset_fifa_23.csv",
+      "git_blob_sha1": "6f1f6738e725fcf71da01252fead47fa62ebeadf"
+    },
+    {
+      "cache_path": "research/cache/fifa-rating-audit/stefanoleone_fifa23_complete.zip",
+      "verified_date": "2026-10-07",
+      "bytes": 1696543355,
+      "sha256": "1395ffeb21654873993367b1b09db450f4f4cb946e9a2e31233256ffdac59adc",
+      "redistribute_in_repo": false,
+      "source": "Stefano Leone Kaggle dataset",
+      "source_revision": "Kaggle version id unavailable in retrieved evidence; cached archive pinned by SHA256",
+      "source_url_mutable": true,
+      "declared_license": "CC0: Public Domain",
+      "underlying_rights": "FIFA/SoFIFA-derived data rights unresolved separately; do not redistribute full archive",
+      "url": "https://www.kaggle.com/api/v1/datasets/download/stefanoleone992/fifa-23-complete-player-dataset"
+    }
+  ],
+  "source_summary_observations": 46,
+  "available_source_edition_rows": 45,
+  "source_lineage_assessment": {
+    "Mzafram": "Pinned current repository/code identifies SoFIFA as upstream, but per-edition historical payload origin/update vintage is UNRESOLVED; use as retrieved third-party observations, not verified primary SoFIFA history.",
+    "lbenz": "The mutable source endpoint has no pinned repository revision; local payload SHA256 identifies only the observed downloaded file.",
+    "Stefano Leone": "Kaggle API declares CC0; FIFA/SoFIFA-derived data rights remain separate and unresolved.",
+    "FIFA18 demo": "Listing says 155 columns; actual downloaded file has 17,981 rows and 75 columns."
+  },
+  "metadata_files": [
+    {
+      "cache_path": "research/cache/fifa-rating-audit/downloads.json",
+      "bytes": 36943,
+      "sha256": "17a340b48bc390a2aaea4816ba94b02ec601b1b0a8f2e050a6beca9bb5f796ce"
+    },
+    {
+      "cache_path": "research/cache/fifa-rating-audit/position_labels.json",
+      "bytes": 2335,
+      "sha256": "12e4886b058d70e783a6e2ed2c314e546a418ff39901b0d63b8eab7bdd0af1f0"
+    },
+    {
+      "cache_path": "research/cache/fifa-rating-audit/stefanoleone_download.json",
+      "bytes": 12397,
+      "sha256": "66f80327acabfb2ca57ea7cb9148f4be5f56b4fbf1d6a4d05e8487d6b6a49ff1"
+    }
+  ],
+  "unavailable_expected_sources": [
+    {
+      "source": "Mzafram ea-fc",
+      "edition": "FC26",
+      "http_status": 404,
+      "live_repository_revision": "90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0",
+      "updated_at": "2026-10-07T06:48:32Z",
+      "tree_verified_no_FC26_blob": true,
+      "note": "A stale six-day-old indexed listing claimed 5.44MB; live tree/API/raw checks supersede it."
+    }
+  ],
+  "source_license_policy": {
+    "lbenz": "unknown/unresolved; cache only",
+    "mzafram": "MIT code only; dataset rights unresolved; cache only",
+    "Stefano Leone": "Kaggle declares CC0, underlying FIFA/SoFIFA data rights separate and unresolved; cache only",
+    "FIFA18 demo": "CC BY-NC-SA 4.0 source listing; full CSV remains in ignored cache only"
+  },
+  "position_label_sources": {
+    "Stefano legacy": "FIFA15–23, 27 native position labels; label strings parsed to base and signed modifier independently; legacy snapshot is second-year-update vintage",
+    "FIFA18 demo": "17,981×75 actual file; source listing described 155 columns; 27 scalar position ratings; schema discrepancy reported"
+  },
+  "analysis_script": {
+    "path": "research/fifa-rating-audit/src/audit.py",
+    "sha256": "f97c3ef3b696d85c62eccfa5f07d1e3abdee3bcc7c812b2649645f5d16b0f06b"
+  },
+  "outputs": [
+    {
+      "path": "outputs/source-summary.csv",
+      "bytes": 13888,
+      "sha256": "19c73d8739dfc9d348552e68098d938591364be8bbcd860cfe213b38ec2725df",
+      "rows": 46
+    },
+    {
+      "path": "outputs/schema-matrix.csv",
+      "bytes": 283933,
+      "sha256": "9c14b665fc9ca1fceb2ba1693e5103787e20f0226699ba6c8381c3a13210a9bc",
+      "rows": 2958
+    },
+    {
+      "path": "outputs/edition-distributions.csv",
+      "bytes": 5890,
+      "sha256": "37e957ecf806c141b36b1cf7336fe1268795abfaf69153980f027a754cdf3027",
+      "rows": 45
+    },
+    {
+      "path": "outputs/position-vocabulary.csv",
+      "bytes": 11754,
+      "sha256": "adcd6756c32943858e9e7edcb6ffeacdc42578fb0add24450b935879e55d8610",
+      "rows": 88
+    },
+    {
+      "path": "outputs/position-formula-fit.csv",
+      "bytes": 175376,
+      "sha256": "a6f60ffe6236f5b53f8e304696bd3b00eb603c0a9111c77d9df738acc5e6fc65",
+      "rows": 484
+    },
+    {
+      "path": "outputs/position-formula-stability.csv",
+      "bytes": 433124,
+      "sha256": "20b3c62f83ff9c2e407acf60734b844b1299821b5cf886d227c60e30c391fc03",
+      "rows": 1929
+    },
+    {
+      "path": "outputs/same-player-continuity.csv",
+      "bytes": 94392,
+      "sha256": "9518bc22262ec91542f18cefed8db9e008a52d2b1e699d93e35722ccef1ca9f0",
+      "rows": 416
+    },
+    {
+      "path": "outputs/snapshot-alignment.csv",
+      "bytes": 142689,
+      "sha256": "05284b3b4956b5e0509cf1e61cecf889206353c6302afc523ee08eace1d3d110",
+      "rows": 567
+    },
+    {
+      "path": "outputs/psv-2005-case.csv",
+      "bytes": 62704,
+      "sha256": "893b41ae9a7879803d48d3d1dad5ab560f98b4f4d072ec3b1156fe2af58169ff",
+      "rows": 27
+    },
+    {
+      "path": "outputs/battle-base-coverage.csv",
+      "bytes": 34771,
+      "sha256": "04f46f893b63693b6dc70043b98a774d27ae4cea17c13b55f45fd3425bfac383",
+      "rows": 187
+    },
+    {
+      "path": "outputs/player-season-coverage.csv",
+      "bytes": 1864069,
+      "sha256": "72f88f198358f996c3dcde50704217fb91109f6835a3f5b68683287b288ca514",
+      "rows": 554
+    },
+    {
+      "path": "outputs/entity-coverage-summary.csv",
+      "bytes": 120320,
+      "sha256": "85186838cf768987d92325f3fbef183c37967b6c7134a04c8ab8ba77f7751286",
+      "rows": 418
+    },
+    {
+      "path": "outputs/breakpoint-score.csv",
+      "bytes": 22899,
+      "sha256": "b0e60cfb2747ee002f420f3452577c529667de465cf7aeb5cbf3e0626b78a36d",
+      "rows": 42
+    },
+    {
+      "path": "outputs/source-conflicts.csv",
+      "bytes": 82788,
+      "sha256": "310d354a288841553f50e35bb849c93dfb56f81e978d684326656f400ab8a337",
+      "rows": 300
+    },
+    {
+      "path": "outputs/cross-source-verification.csv",
+      "bytes": 82788,
+      "sha256": "310d354a288841553f50e35bb849c93dfb56f81e978d684326656f400ab8a337",
+      "rows": 300
+    },
+    {
+      "path": "outputs/source-conflict-summary.csv",
+      "bytes": 5831,
+      "sha256": "c3ebd4b8dbe8bba966a97f0de7d4321489a76ea4241c3d439ad8b3c4857c068a",
+      "rows": 29
+    },
+    {
+      "path": "outputs/attribute-drift.csv",
+      "bytes": 170657,
+      "sha256": "1e55584f853f4a956357db7e8f1c8a3cf99c2c156ab95ed21f2c397fd6cec21a",
+      "rows": 760
+    },
+    {
+      "path": "outputs/reference-candidate-ranges.csv",
+      "bytes": 1624,
+      "sha256": "28658701c0c975b05e950d93c5ea9fe3f58b17996cc8690fcf225b1111b67115",
+      "rows": 4
+    },
+    {
+      "path": "outputs/position-cohort-distributions.csv",
+      "bytes": 7175225,
+      "sha256": "c8d0acf93532b31b99affda6f32023fb53c3fb947f2cc1c28f207fc25321c5a1",
+      "rows": 28701
+    },
+    {
+      "path": "outputs/adjacent-distribution-distances.csv",
+      "bytes": 115587,
+      "sha256": "71ee9bd128b584f719cc1685956df0def65def5b356807b8a6211c04f4690f27",
+      "rows": 433
+    },
+    {
+      "path": "FIFA-HISTORICAL-RATING-AUDIT.md",
+      "bytes": 20489,
+      "sha256": "45bed613a9da4d46b3e659f4e3d18f34da16a1c037f54cc48bc4b48349be2247"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3123,
+      "sha256": "5e207c78c042ae6558e993ac61e9ee14d94c94285d6df9210b59a6f051fc6312"
+    },
+    {
+      "path": "figures/attribute-drift-heatmap.svg",
+      "bytes": 60874,
+      "sha256": "9d8d12835131a8bd0dfb759f303a6dcd25630c5f0217b351851f426c3fd3431b"
+    },
+    {
+      "path": "figures/ovr-by-edition.svg",
+      "bytes": 8784,
+      "sha256": "5106a99e3df968003cb3ce7e46d1dd47f99ce640b276100a9349881505fd927f"
+    },
+    {
+      "path": "figures/position-coefficient-similarity.svg",
+      "bytes": 5392,
+      "sha256": "6c0e1315161c78990967fc2694d85401155aee6f65f67a20e37f68586305ce69"
+    },
+    {
+      "path": "figures/psv-2005-nine-players-fifa05-07.svg",
+      "bytes": 5629,
+      "sha256": "ea47eaff55ee9f9ca94de8858837d9e193b7ef29ab69c63664e0a8c73f26b0dc"
+    },
+    {
+      "path": "figures/same-player-adjacent-delta.svg",
+      "bytes": 8268,
+      "sha256": "8877a610bb6fe1386090348858edf259abc58bced8f2186531d71e633b55282e"
+    },
+    {
+      "path": "figures/schema-field-count.svg",
+      "bytes": 8797,
+      "sha256": "9953f353ee073563026a7f7523e89551c2715af73e05f4213f66435c8507ca3b"
+    },
+    {
+      "path": "figures/top500-mean-by-edition.svg",
+      "bytes": 8777,
+      "sha256": "06a0223226290b2310ee9700a5fe3cfe9ea301ede721aad3ca38af0eff1f9d43"
+    },
+    {
+      "path": "figures/top500-std-by-edition.svg",
+      "bytes": 8778,
+      "sha256": "e7f32ab7922634c032c98ea544234c88e47612a4c1164ac27cf56862b9043a82"
+    }
+  ],
+  "derived_intermediate_cache": [
+    {
+      "cache_path": "research/cache/fifa-rating-audit/derived-cross-source-comparisons-intermediate.csv",
+      "bytes": 75280874,
+      "rows": 320580,
+      "sha256": "9b9dba119685c9573999f9fd1ca7fac6e1cf43e63bffd94f01910f130318f84d",
+      "redistribute_in_repo": false
+    },
+    {
+      "cache_path": "research/cache/fifa-rating-audit/derived-same-player-continuity-intermediate.csv",
+      "bytes": 96947667,
+      "rows": 427755,
+      "sha256": "e3cc76457b0c39fe72776952f025459367767517235ee8ac69f8b7332f01245b",
+      "redistribute_in_repo": false
+    }
+  ],
+  "figures": [
+    "figures/attribute-drift-heatmap.svg",
+    "figures/ovr-by-edition.svg",
+    "figures/position-coefficient-similarity.svg",
+    "figures/psv-2005-nine-players-fifa05-07.svg",
+    "figures/same-player-adjacent-delta.svg",
+    "figures/schema-field-count.svg",
+    "figures/top500-mean-by-edition.svg",
+    "figures/top500-std-by-edition.svg"
+  ],
+  "rebuild_command": "python research/fifa-rating-audit/src/audit.py",
+  "read_only_check_command": "python research/fifa-rating-audit/src/audit.py --check",
+  "analysis_method": "NumPy ridge regression, stable player_id SHA256 fold (20% held out consistently across editions), training-only global feature scales and per-model training-only imputations; no sklearn/scipy/matplotlib dependency."
+}

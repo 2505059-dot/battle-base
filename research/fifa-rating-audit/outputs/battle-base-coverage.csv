@@ -1,0 +1,188 @@
+teamSeasonId,club,year,source,edition,bb_player_n,matched_n,stable_id_match_n,unique_name_only_n,ambiguous_n,unmatched_n,match_rate,matching_policy
+ac-milan-2007,AC Milan,2007,lbenz FIFAIndex,07,9,9,9,0,0,0,1.0,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+ac-milan-2007,AC Milan,2007,Mzafram SoFIFA,FIFA07,9,8,8,0,0,1,0.888889,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+ac-milan-2007,AC Milan,2007,Stefano legacy,,9,0,0,0,0,9,0.0,no same-year edition in retrieved corpus; explicit unavailable source row; no historical attributes fabricated
+ac-milan-2011,AC Milan,2011,lbenz FIFAIndex,11,9,9,9,0,0,0,1.0,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+ac-milan-2011,AC Milan,2011,Mzafram SoFIFA,FIFA11,9,9,9,0,0,0,1.0,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+ac-milan-2011,AC Milan,2011,Stefano legacy,,9,0,0,0,0,9,0.0,no same-year edition in retrieved corpus; explicit unavailable source row; no historical attributes fabricated
+ac-milan-2015,AC Milan,2015,lbenz FIFAIndex,15,9,9,9,0,0,0,1.0,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+ac-milan-2015,AC Milan,2015,Mzafram SoFIFA,FIFA15,9,9,9,0,0,0,1.0,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+ac-milan-2015,AC Milan,2015,Stefano legacy,15,9,9,9,0,0,0,1.0,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+ac-milan-2022,AC Milan,2022,lbenz FIFAIndex,,9,0,0,0,0,9,0.0,no same-year edition in retrieved corpus; explicit unavailable source row; no historical attributes fabricated
+ac-milan-2022,AC Milan,2022,Mzafram SoFIFA,FIFA22,9,9,9,0,0,0,1.0,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+ac-milan-2022,AC Milan,2022,Stefano legacy,22,9,9,9,0,0,0,1.0,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+ajax-2019,Ajax,2019,lbenz FIFAIndex,19,9,9,9,0,0,0,1.0,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+ajax-2019,Ajax,2019,Mzafram SoFIFA,FIFA19,9,9,9,0,0,0,1.0,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+ajax-2019,Ajax,2019,Stefano legacy,19,9,9,9,0,0,0,1.0,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+arsenal-2004,Arsenal,2004,lbenz FIFAIndex,,9,0,0,0,0,9,0.0,no same-year edition in retrieved corpus; explicit unavailable source row; no historical attributes fabricated
+arsenal-2004,Arsenal,2004,Mzafram SoFIFA,,9,0,0,0,0,9,0.0,no same-year edition in retrieved corpus; explicit unavailable source row; no historical attributes fabricated
+arsenal-2004,Arsenal,2004,Stefano legacy,,9,0,0,0,0,9,0.0,no same-year edition in retrieved corpus; explicit unavailable source row; no historical attributes fabricated
+arsenal-2008,Arsenal,2008,lbenz FIFAIndex,08,9,9,9,0,0,0,1.0,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+arsenal-2008,Arsenal,2008,Mzafram SoFIFA,FIFA08,9,9,9,0,0,0,1.0,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+arsenal-2008,Arsenal,2008,Stefano legacy,,9,0,0,0,0,9,0.0,no same-year edition in retrieved corpus; explicit unavailable source row; no historical attributes fabricated
+arsenal-2020,Arsenal,2020,lbenz FIFAIndex,20,9,9,9,0,0,0,1.0,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+arsenal-2020,Arsenal,2020,Mzafram SoFIFA,FIFA20,9,9,9,0,0,0,1.0,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+arsenal-2020,Arsenal,2020,Stefano legacy,20,9,9,9,0,0,0,1.0,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+atalanta-2020,Atalanta,2020,lbenz FIFAIndex,20,9,9,9,0,0,0,1.0,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+atalanta-2020,Atalanta,2020,Mzafram SoFIFA,FIFA20,9,9,9,0,0,0,1.0,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+atalanta-2020,Atalanta,2020,Stefano legacy,20,9,9,9,0,0,0,1.0,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+atletico-madrid-2014,Atletico Madrid,2014,lbenz FIFAIndex,14,9,9,9,0,0,0,1.0,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+atletico-madrid-2014,Atletico Madrid,2014,Mzafram SoFIFA,FIFA14,9,9,9,0,0,0,1.0,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+atletico-madrid-2014,Atletico Madrid,2014,Stefano legacy,,9,0,0,0,0,9,0.0,no same-year edition in retrieved corpus; explicit unavailable source row; no historical attributes fabricated
+barcelona-2009,Barcelona,2009,lbenz FIFAIndex,09,9,9,9,0,0,0,1.0,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+barcelona-2009,Barcelona,2009,Mzafram SoFIFA,FIFA09,9,9,9,0,0,0,1.0,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+barcelona-2009,Barcelona,2009,Stefano legacy,,9,0,0,0,0,9,0.0,no same-year edition in retrieved corpus; explicit unavailable source row; no historical attributes fabricated
+barcelona-2011,Barcelona,2011,lbenz FIFAIndex,11,9,9,9,0,0,0,1.0,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+barcelona-2011,Barcelona,2011,Mzafram SoFIFA,FIFA11,9,9,9,0,0,0,1.0,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+barcelona-2011,Barcelona,2011,Stefano legacy,,9,0,0,0,0,9,0.0,no same-year edition in retrieved corpus; explicit unavailable source row; no historical attributes fabricated
+barcelona-2015,Barcelona,2015,lbenz FIFAIndex,15,9,9,9,0,0,0,1.0,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+barcelona-2015,Barcelona,2015,Mzafram SoFIFA,FIFA15,9,9,9,0,0,0,1.0,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+barcelona-2015,Barcelona,2015,Stefano legacy,15,9,9,9,0,0,0,1.0,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+barcelona-2020,Barcelona,2020,lbenz FIFAIndex,20,9,9,9,0,0,0,1.0,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+barcelona-2020,Barcelona,2020,Mzafram SoFIFA,FIFA20,9,9,9,0,0,0,1.0,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+barcelona-2020,Barcelona,2020,Stefano legacy,20,9,9,9,0,0,0,1.0,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+barcelona-2022,Barcelona,2022,lbenz FIFAIndex,,9,0,0,0,0,9,0.0,no same-year edition in retrieved corpus; explicit unavailable source row; no historical attributes fabricated
+barcelona-2022,Barcelona,2022,Mzafram SoFIFA,FIFA22,9,9,9,0,0,0,1.0,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+barcelona-2022,Barcelona,2022,Stefano legacy,22,9,9,9,0,0,0,1.0,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+bayer-leverkusen-2024,Bayer Leverkusen,2024,lbenz FIFAIndex,,9,0,0,0,0,9,0.0,no same-year edition in retrieved corpus; explicit unavailable source row; no historical attributes fabricated
+bayer-leverkusen-2024,Bayer Leverkusen,2024,Mzafram SoFIFA,FC24,9,9,9,0,0,0,1.0,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+bayer-leverkusen-2024,Bayer Leverkusen,2024,Stefano legacy,,9,0,0,0,0,9,0.0,no same-year edition in retrieved corpus; explicit unavailable source row; no historical attributes fabricated
+bayern-munich-2001,Bayern Munich,2001,lbenz FIFAIndex,,9,0,0,0,0,9,0.0,no same-year edition in retrieved corpus; explicit unavailable source row; no historical attributes fabricated
+bayern-munich-2001,Bayern Munich,2001,Mzafram SoFIFA,,9,0,0,0,0,9,0.0,no same-year edition in retrieved corpus; explicit unavailable source row; no historical attributes fabricated
+bayern-munich-2001,Bayern Munich,2001,Stefano legacy,,9,0,0,0,0,9,0.0,no same-year edition in retrieved corpus; explicit unavailable source row; no historical attributes fabricated
+bayern-munich-2013,Bayern Munich,2013,lbenz FIFAIndex,13,9,9,9,0,0,0,1.0,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+bayern-munich-2013,Bayern Munich,2013,Mzafram SoFIFA,FIFA13,9,9,9,0,0,0,1.0,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+bayern-munich-2013,Bayern Munich,2013,Stefano legacy,,9,0,0,0,0,9,0.0,no same-year edition in retrieved corpus; explicit unavailable source row; no historical attributes fabricated
+bayern-munich-2020,Bayern Munich,2020,lbenz FIFAIndex,20,9,9,9,0,0,0,1.0,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+bayern-munich-2020,Bayern Munich,2020,Mzafram SoFIFA,FIFA20,9,9,9,0,0,0,1.0,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+bayern-munich-2020,Bayern Munich,2020,Stefano legacy,20,9,9,9,0,0,0,1.0,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+bayern-munich-2022,Bayern Munich,2022,lbenz FIFAIndex,,9,0,0,0,0,9,0.0,no same-year edition in retrieved corpus; explicit unavailable source row; no historical attributes fabricated
+bayern-munich-2022,Bayern Munich,2022,Mzafram SoFIFA,FIFA22,9,9,9,0,0,0,1.0,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+bayern-munich-2022,Bayern Munich,2022,Stefano legacy,22,9,9,9,0,0,0,1.0,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+benfica-2014,Benfica,2014,lbenz FIFAIndex,14,9,9,9,0,0,0,1.0,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+benfica-2014,Benfica,2014,Mzafram SoFIFA,FIFA14,9,9,9,0,0,0,1.0,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+benfica-2014,Benfica,2014,Stefano legacy,,9,0,0,0,0,9,0.0,no same-year edition in retrieved corpus; explicit unavailable source row; no historical attributes fabricated
+borussia-dortmund-2013,Borussia Dortmund,2013,lbenz FIFAIndex,13,9,9,9,0,0,0,1.0,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+borussia-dortmund-2013,Borussia Dortmund,2013,Mzafram SoFIFA,FIFA13,9,9,9,0,0,0,1.0,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+borussia-dortmund-2013,Borussia Dortmund,2013,Stefano legacy,,9,0,0,0,0,9,0.0,no same-year edition in retrieved corpus; explicit unavailable source row; no historical attributes fabricated
+borussia-dortmund-2015,Borussia Dortmund,2015,lbenz FIFAIndex,15,9,9,9,0,0,0,1.0,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+borussia-dortmund-2015,Borussia Dortmund,2015,Mzafram SoFIFA,FIFA15,9,9,9,0,0,0,1.0,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+borussia-dortmund-2015,Borussia Dortmund,2015,Stefano legacy,15,9,9,9,0,0,0,1.0,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+borussia-dortmund-2017,Borussia Dortmund,2017,lbenz FIFAIndex,17,9,9,9,0,0,0,1.0,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+borussia-dortmund-2017,Borussia Dortmund,2017,Mzafram SoFIFA,FIFA17,9,9,9,0,0,0,1.0,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+borussia-dortmund-2017,Borussia Dortmund,2017,Stefano legacy,17,9,9,9,0,0,0,1.0,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+borussia-dortmund-2023,Borussia Dortmund,2023,lbenz FIFAIndex,,9,0,0,0,0,9,0.0,no same-year edition in retrieved corpus; explicit unavailable source row; no historical attributes fabricated
+borussia-dortmund-2023,Borussia Dortmund,2023,Mzafram SoFIFA,FIFA23,9,9,9,0,0,0,1.0,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+borussia-dortmund-2023,Borussia Dortmund,2023,Stefano legacy,23,9,9,9,0,0,0,1.0,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+chelsea-2005,Chelsea,2005,lbenz FIFAIndex,05,8,8,8,0,0,0,1.0,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+chelsea-2005,Chelsea,2005,Mzafram SoFIFA,,8,0,0,0,0,8,0.0,no same-year edition in retrieved corpus; explicit unavailable source row; no historical attributes fabricated
+chelsea-2005,Chelsea,2005,Stefano legacy,,8,0,0,0,0,8,0.0,no same-year edition in retrieved corpus; explicit unavailable source row; no historical attributes fabricated
+chelsea-2012,Chelsea,2012,lbenz FIFAIndex,12,8,8,8,0,0,0,1.0,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+chelsea-2012,Chelsea,2012,Mzafram SoFIFA,FIFA12,8,8,8,0,0,0,1.0,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+chelsea-2012,Chelsea,2012,Stefano legacy,,8,0,0,0,0,8,0.0,no same-year edition in retrieved corpus; explicit unavailable source row; no historical attributes fabricated
+chelsea-2016,Chelsea,2016,lbenz FIFAIndex,16,9,9,9,0,0,0,1.0,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+chelsea-2016,Chelsea,2016,Mzafram SoFIFA,FIFA16,9,9,9,0,0,0,1.0,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+chelsea-2016,Chelsea,2016,Stefano legacy,16,9,9,9,0,0,0,1.0,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+chelsea-2021,Chelsea,2021,lbenz FIFAIndex,,9,0,0,0,0,9,0.0,no same-year edition in retrieved corpus; explicit unavailable source row; no historical attributes fabricated
+chelsea-2021,Chelsea,2021,Mzafram SoFIFA,FIFA21,9,9,9,0,0,0,1.0,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+chelsea-2021,Chelsea,2021,Stefano legacy,21,9,9,9,0,0,0,1.0,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+chelsea-2023,Chelsea,2023,lbenz FIFAIndex,,9,0,0,0,0,9,0.0,no same-year edition in retrieved corpus; explicit unavailable source row; no historical attributes fabricated
+chelsea-2023,Chelsea,2023,Mzafram SoFIFA,FIFA23,9,9,9,0,0,0,1.0,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+chelsea-2023,Chelsea,2023,Stefano legacy,23,9,9,9,0,0,0,1.0,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+deportivo-la-coruna-2000,Deportivo La Coruna,2000,lbenz FIFAIndex,,9,0,0,0,0,9,0.0,no same-year edition in retrieved corpus; explicit unavailable source row; no historical attributes fabricated
+deportivo-la-coruna-2000,Deportivo La Coruna,2000,Mzafram SoFIFA,,9,0,0,0,0,9,0.0,no same-year edition in retrieved corpus; explicit unavailable source row; no historical attributes fabricated
+deportivo-la-coruna-2000,Deportivo La Coruna,2000,Stefano legacy,,9,0,0,0,0,9,0.0,no same-year edition in retrieved corpus; explicit unavailable source row; no historical attributes fabricated
+inter-milan-2010,Inter Milan,2010,lbenz FIFAIndex,10,9,9,9,0,0,0,1.0,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+inter-milan-2010,Inter Milan,2010,Mzafram SoFIFA,FIFA10,9,9,9,0,0,0,1.0,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+inter-milan-2010,Inter Milan,2010,Stefano legacy,,9,0,0,0,0,9,0.0,no same-year edition in retrieved corpus; explicit unavailable source row; no historical attributes fabricated
+inter-milan-2016,Inter Milan,2016,lbenz FIFAIndex,16,9,9,9,0,0,0,1.0,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+inter-milan-2016,Inter Milan,2016,Mzafram SoFIFA,FIFA16,9,9,9,0,0,0,1.0,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+inter-milan-2016,Inter Milan,2016,Stefano legacy,16,9,8,8,0,0,1,0.888889,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+inter-milan-2021,Inter Milan,2021,lbenz FIFAIndex,,9,0,0,0,0,9,0.0,no same-year edition in retrieved corpus; explicit unavailable source row; no historical attributes fabricated
+inter-milan-2021,Inter Milan,2021,Mzafram SoFIFA,FIFA21,9,9,9,0,0,0,1.0,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+inter-milan-2021,Inter Milan,2021,Stefano legacy,21,9,9,9,0,0,0,1.0,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+inter-milan-2024,Inter Milan,2024,lbenz FIFAIndex,,9,0,0,0,0,9,0.0,no same-year edition in retrieved corpus; explicit unavailable source row; no historical attributes fabricated
+inter-milan-2024,Inter Milan,2024,Mzafram SoFIFA,FC24,9,9,9,0,0,0,1.0,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+inter-milan-2024,Inter Milan,2024,Stefano legacy,,9,0,0,0,0,9,0.0,no same-year edition in retrieved corpus; explicit unavailable source row; no historical attributes fabricated
+juventus-2003,Juventus,2003,lbenz FIFAIndex,,9,0,0,0,0,9,0.0,no same-year edition in retrieved corpus; explicit unavailable source row; no historical attributes fabricated
+juventus-2003,Juventus,2003,Mzafram SoFIFA,,9,0,0,0,0,9,0.0,no same-year edition in retrieved corpus; explicit unavailable source row; no historical attributes fabricated
+juventus-2003,Juventus,2003,Stefano legacy,,9,0,0,0,0,9,0.0,no same-year edition in retrieved corpus; explicit unavailable source row; no historical attributes fabricated
+juventus-2012,Juventus,2012,lbenz FIFAIndex,12,9,9,9,0,0,0,1.0,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+juventus-2012,Juventus,2012,Mzafram SoFIFA,FIFA12,9,9,9,0,0,0,1.0,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+juventus-2012,Juventus,2012,Stefano legacy,,9,0,0,0,0,9,0.0,no same-year edition in retrieved corpus; explicit unavailable source row; no historical attributes fabricated
+juventus-2017,Juventus,2017,lbenz FIFAIndex,17,9,9,9,0,0,0,1.0,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+juventus-2017,Juventus,2017,Mzafram SoFIFA,FIFA17,9,9,9,0,0,0,1.0,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+juventus-2017,Juventus,2017,Stefano legacy,17,9,9,9,0,0,0,1.0,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+juventus-2021,Juventus,2021,lbenz FIFAIndex,,9,0,0,0,0,9,0.0,no same-year edition in retrieved corpus; explicit unavailable source row; no historical attributes fabricated
+juventus-2021,Juventus,2021,Mzafram SoFIFA,FIFA21,9,9,9,0,0,0,1.0,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+juventus-2021,Juventus,2021,Stefano legacy,21,9,9,9,0,0,0,1.0,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+lazio-2000,Lazio,2000,lbenz FIFAIndex,,9,0,0,0,0,9,0.0,no same-year edition in retrieved corpus; explicit unavailable source row; no historical attributes fabricated
+lazio-2000,Lazio,2000,Mzafram SoFIFA,,9,0,0,0,0,9,0.0,no same-year edition in retrieved corpus; explicit unavailable source row; no historical attributes fabricated
+lazio-2000,Lazio,2000,Stefano legacy,,9,0,0,0,0,9,0.0,no same-year edition in retrieved corpus; explicit unavailable source row; no historical attributes fabricated
+leicester-city-2016,Leicester City,2016,lbenz FIFAIndex,16,9,9,9,0,0,0,1.0,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+leicester-city-2016,Leicester City,2016,Mzafram SoFIFA,FIFA16,9,8,8,0,0,1,0.888889,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+leicester-city-2016,Leicester City,2016,Stefano legacy,16,9,8,8,0,0,1,0.888889,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+lille-2021,Lille,2021,lbenz FIFAIndex,,9,0,0,0,0,9,0.0,no same-year edition in retrieved corpus; explicit unavailable source row; no historical attributes fabricated
+lille-2021,Lille,2021,Mzafram SoFIFA,FIFA21,9,9,9,0,0,0,1.0,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+lille-2021,Lille,2021,Stefano legacy,21,9,9,9,0,0,0,1.0,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+liverpool-2005,Liverpool,2005,lbenz FIFAIndex,05,8,8,8,0,0,0,1.0,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+liverpool-2005,Liverpool,2005,Mzafram SoFIFA,,8,0,0,0,0,8,0.0,no same-year edition in retrieved corpus; explicit unavailable source row; no historical attributes fabricated
+liverpool-2005,Liverpool,2005,Stefano legacy,,8,0,0,0,0,8,0.0,no same-year edition in retrieved corpus; explicit unavailable source row; no historical attributes fabricated
+liverpool-2019,Liverpool,2019,lbenz FIFAIndex,19,9,9,9,0,0,0,1.0,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+liverpool-2019,Liverpool,2019,Mzafram SoFIFA,FIFA19,9,9,9,0,0,0,1.0,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+liverpool-2019,Liverpool,2019,Stefano legacy,19,9,9,9,0,0,0,1.0,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+manchester-city-2012,Manchester City,2012,lbenz FIFAIndex,12,9,9,9,0,0,0,1.0,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+manchester-city-2012,Manchester City,2012,Mzafram SoFIFA,FIFA12,9,9,9,0,0,0,1.0,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+manchester-city-2012,Manchester City,2012,Stefano legacy,,9,0,0,0,0,9,0.0,no same-year edition in retrieved corpus; explicit unavailable source row; no historical attributes fabricated
+manchester-city-2023,Manchester City,2023,lbenz FIFAIndex,,9,0,0,0,0,9,0.0,no same-year edition in retrieved corpus; explicit unavailable source row; no historical attributes fabricated
+manchester-city-2023,Manchester City,2023,Mzafram SoFIFA,FIFA23,9,9,9,0,0,0,1.0,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+manchester-city-2023,Manchester City,2023,Stefano legacy,23,9,9,9,0,0,0,1.0,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+manchester-united-1999,Manchester United,1999,lbenz FIFAIndex,,9,0,0,0,0,9,0.0,no same-year edition in retrieved corpus; explicit unavailable source row; no historical attributes fabricated
+manchester-united-1999,Manchester United,1999,Mzafram SoFIFA,,9,0,0,0,0,9,0.0,no same-year edition in retrieved corpus; explicit unavailable source row; no historical attributes fabricated
+manchester-united-1999,Manchester United,1999,Stefano legacy,,9,0,0,0,0,9,0.0,no same-year edition in retrieved corpus; explicit unavailable source row; no historical attributes fabricated
+manchester-united-2008,Manchester United,2008,lbenz FIFAIndex,08,9,9,9,0,0,0,1.0,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+manchester-united-2008,Manchester United,2008,Mzafram SoFIFA,FIFA08,9,9,9,0,0,0,1.0,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+manchester-united-2008,Manchester United,2008,Stefano legacy,,9,0,0,0,0,9,0.0,no same-year edition in retrieved corpus; explicit unavailable source row; no historical attributes fabricated
+manchester-united-2013,Manchester United,2013,lbenz FIFAIndex,13,8,8,8,0,0,0,1.0,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+manchester-united-2013,Manchester United,2013,Mzafram SoFIFA,FIFA13,8,8,8,0,0,0,1.0,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+manchester-united-2013,Manchester United,2013,Stefano legacy,,8,0,0,0,0,8,0.0,no same-year edition in retrieved corpus; explicit unavailable source row; no historical attributes fabricated
+manchester-united-2022,Manchester United,2022,lbenz FIFAIndex,,9,0,0,0,0,9,0.0,no same-year edition in retrieved corpus; explicit unavailable source row; no historical attributes fabricated
+manchester-united-2022,Manchester United,2022,Mzafram SoFIFA,FIFA22,9,9,9,0,0,0,1.0,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+manchester-united-2022,Manchester United,2022,Stefano legacy,22,9,9,9,0,0,0,1.0,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+monaco-2017,Monaco,2017,lbenz FIFAIndex,17,9,9,9,0,0,0,1.0,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+monaco-2017,Monaco,2017,Mzafram SoFIFA,FIFA17,9,9,9,0,0,0,1.0,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+monaco-2017,Monaco,2017,Stefano legacy,17,9,9,9,0,0,0,1.0,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+napoli-2023,Napoli,2023,lbenz FIFAIndex,,9,0,0,0,0,9,0.0,no same-year edition in retrieved corpus; explicit unavailable source row; no historical attributes fabricated
+napoli-2023,Napoli,2023,Mzafram SoFIFA,FIFA23,9,9,9,0,0,0,1.0,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+napoli-2023,Napoli,2023,Stefano legacy,23,9,9,9,0,0,0,1.0,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+parma-1999,Parma,1999,lbenz FIFAIndex,,9,0,0,0,0,9,0.0,no same-year edition in retrieved corpus; explicit unavailable source row; no historical attributes fabricated
+parma-1999,Parma,1999,Mzafram SoFIFA,,9,0,0,0,0,9,0.0,no same-year edition in retrieved corpus; explicit unavailable source row; no historical attributes fabricated
+parma-1999,Parma,1999,Stefano legacy,,9,0,0,0,0,9,0.0,no same-year edition in retrieved corpus; explicit unavailable source row; no historical attributes fabricated
+porto-2004,Porto,2004,lbenz FIFAIndex,,9,0,0,0,0,9,0.0,no same-year edition in retrieved corpus; explicit unavailable source row; no historical attributes fabricated
+porto-2004,Porto,2004,Mzafram SoFIFA,,9,0,0,0,0,9,0.0,no same-year edition in retrieved corpus; explicit unavailable source row; no historical attributes fabricated
+porto-2004,Porto,2004,Stefano legacy,,9,0,0,0,0,9,0.0,no same-year edition in retrieved corpus; explicit unavailable source row; no historical attributes fabricated
+psv-2005,PSV,2005,lbenz FIFAIndex,05,9,9,9,0,0,0,1.0,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+psv-2005,PSV,2005,Mzafram SoFIFA,,9,0,0,0,0,9,0.0,no same-year edition in retrieved corpus; explicit unavailable source row; no historical attributes fabricated
+psv-2005,PSV,2005,Stefano legacy,,9,0,0,0,0,9,0.0,no same-year edition in retrieved corpus; explicit unavailable source row; no historical attributes fabricated
+real-madrid-2002,Real Madrid,2002,lbenz FIFAIndex,,9,0,0,0,0,9,0.0,no same-year edition in retrieved corpus; explicit unavailable source row; no historical attributes fabricated
+real-madrid-2002,Real Madrid,2002,Mzafram SoFIFA,,9,0,0,0,0,9,0.0,no same-year edition in retrieved corpus; explicit unavailable source row; no historical attributes fabricated
+real-madrid-2002,Real Madrid,2002,Stefano legacy,,9,0,0,0,0,9,0.0,no same-year edition in retrieved corpus; explicit unavailable source row; no historical attributes fabricated
+real-madrid-2012,Real Madrid,2012,lbenz FIFAIndex,12,9,9,9,0,0,0,1.0,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+real-madrid-2012,Real Madrid,2012,Mzafram SoFIFA,FIFA12,9,9,9,0,0,0,1.0,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+real-madrid-2012,Real Madrid,2012,Stefano legacy,,9,0,0,0,0,9,0.0,no same-year edition in retrieved corpus; explicit unavailable source row; no historical attributes fabricated
+real-madrid-2017,Real Madrid,2017,lbenz FIFAIndex,17,9,9,9,0,0,0,1.0,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+real-madrid-2017,Real Madrid,2017,Mzafram SoFIFA,FIFA17,9,9,9,0,0,0,1.0,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+real-madrid-2017,Real Madrid,2017,Stefano legacy,17,9,9,9,0,0,0,1.0,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+real-madrid-2019,Real Madrid,2019,lbenz FIFAIndex,19,9,9,9,0,0,0,1.0,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+real-madrid-2019,Real Madrid,2019,Mzafram SoFIFA,FIFA19,9,9,9,0,0,0,1.0,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+real-madrid-2019,Real Madrid,2019,Stefano legacy,19,9,9,9,0,0,0,1.0,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+real-madrid-2022,Real Madrid,2022,lbenz FIFAIndex,,9,0,0,0,0,9,0.0,no same-year edition in retrieved corpus; explicit unavailable source row; no historical attributes fabricated
+real-madrid-2022,Real Madrid,2022,Mzafram SoFIFA,FIFA22,9,9,9,0,0,0,1.0,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+real-madrid-2022,Real Madrid,2022,Stefano legacy,22,9,9,9,0,0,0,1.0,"stable source-specific external ID first; else unique exact normalized name, optional club context; ambiguous retained"
+roma-2001,Roma,2001,lbenz FIFAIndex,,9,0,0,0,0,9,0.0,no same-year edition in retrieved corpus; explicit unavailable source row; no historical attributes fabricated
+roma-2001,Roma,2001,Mzafram SoFIFA,,9,0,0,0,0,9,0.0,no same-year edition in retrieved corpus; explicit unavailable source row; no historical attributes fabricated
+roma-2001,Roma,2001,Stefano legacy,,9,0,0,0,0,9,0.0,no same-year edition in retrieved corpus; explicit unavailable source row; no historical attributes fabricated
+valencia-2004,Valencia,2004,lbenz FIFAIndex,,9,0,0,0,0,9,0.0,no same-year edition in retrieved corpus; explicit unavailable source row; no historical attributes fabricated
+valencia-2004,Valencia,2004,Mzafram SoFIFA,,9,0,0,0,0,9,0.0,no same-year edition in retrieved corpus; explicit unavailable source row; no historical attributes fabricated
+valencia-2004,Valencia,2004,Stefano legacy,,9,0,0,0,0,9,0.0,no same-year edition in retrieved corpus; explicit unavailable source row; no historical attributes fabricated
+ALL_62_TEAMSEASONS,,,ALL_AVAILABLE_SAME_YEAR_SOURCES,,554,,,,,,,Scope: 418 entities / 554 player-seasons / 62 TeamSeasons; per-edition rows above; no fabricated pre-2005 ability evidence

@@ -354,7 +354,10 @@ const { areaA, areaB, dispatchAction, notifyPlayers } = harness;
     assert.ok(textB.includes('0 / 11'), 'Client B should show 0 / 11 progress');
     assert.ok(textA.includes('HIDDEN'), 'Client A should render blind opponent panel');
     assert.ok(textB.includes('HIDDEN'), 'Client B should render blind opponent panel');
-    assert.ok(textA.includes('GK 0 / 1') && textA.includes('DF 0 / 4'), 'Blind panel shows role counts');
+    assert.ok(
+        !textA.includes('GK 0 / 1') && !textA.includes('DF 0 / 4'),
+        'Blind opponent floating pill must only show total count/status, not role distribution'
+    );
     assert.ok(!textA.includes('Your Turn'), 'No turn-based text should exist on Client A');
     assert.ok(!textB.includes('Your Turn'), 'No turn-based text should exist on Client B');
 }
@@ -431,7 +434,7 @@ dispatchAction('p1', { kind: 'pick', playerId: messi.id, slot: 'FW1' });
     assert.ok(!textB.includes('Barcelona'), 'BLINDNESS VIOLATION: Client B DOM leaked Barcelona');
     assert.ok(!textB.includes('2011'), 'BLINDNESS VIOLATION: Client B DOM leaked 2011');
     assert.ok(textB.includes('1 / 11'), 'Client B sees that Team A has 1 / 11 selected');
-    assert.ok(textB.includes('FW 1 / 3'), 'Client B sees Team A role progress FW 1 / 3');
+    assert.ok(!textB.includes('FW 1 / 3'), 'Client B blind floating pill must NOT expose opponent role distribution');
 }
 
 // Now B picks Kaká into MF1 while A is in ROLL
@@ -444,7 +447,8 @@ dispatchAction('p2', { kind: 'pick', playerId: kaka.id, slot: 'MF1' });
     const textA = areaA.dumpText();
     assert.ok(!textA.includes(kaka.name), `BLINDNESS VIOLATION: Client A DOM leaked ${kaka.name}`);
     assert.ok(!textA.includes('AC Milan'), 'BLINDNESS VIOLATION: Client A DOM leaked AC Milan');
-    assert.ok(textA.includes('MF 1 / 3'), 'Client A sees Team B role progress MF 1 / 3');
+    assert.ok(textA.includes('1 / 11'), 'Client A sees Team B progress 1 / 11');
+    assert.ok(!textA.includes('MF 1 / 3'), 'Client A blind floating pill must NOT expose opponent role distribution');
 }
 
 // 3. Security & Validation Guard Checks

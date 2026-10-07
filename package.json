@@ -4,9 +4,15 @@
   "description": "対戦ゲームの土台（部屋・人数上限・メッセージ中継）。授業用。",
   "type": "module",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "build:css": "tailwindcss -i ./public/styles/app.src.css -o ./public/styles/app.css",
+    "watch:css": "tailwindcss -i ./public/styles/app.src.css -o ./public/styles/app.css --watch"
   },
   "dependencies": {
     "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "4.3.3",
+    "tailwindcss": "4.3.3"
   }
 }

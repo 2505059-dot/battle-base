@@ -1,0 +1,1055 @@
+{
+  "timestamp": "2026-10-07T14:22:16.324Z",
+  "outputDir": "C:\\Users\\l1513\\.gemini\\antigravity\\brain\\ddf71845-db10-4570-a7ce-9ccf541c8f09\\scratch\\draft-workbench-v1",
+  "docsScreenshotsDir": "c:\\Users\\l1513\\Desktop\\battle-base\\docs\\screenshots\\draft-workbench-v1",
+  "consoleErrors": [],
+  "runtimeExceptions": [],
+  "screenshots": {
+    "01-draft-roll-1920x1080.png": {
+      "scratchPath": "C:\\Users\\l1513\\.gemini\\antigravity\\brain\\ddf71845-db10-4570-a7ce-9ccf541c8f09\\scratch\\draft-workbench-v1\\01-draft-roll-1920x1080.png",
+      "docsPath": "c:\\Users\\l1513\\Desktop\\battle-base\\docs\\screenshots\\draft-workbench-v1\\01-draft-roll-1920x1080.png"
+    },
+    "02-draft-empty-inspector-1920x1080.png": {
+      "scratchPath": "C:\\Users\\l1513\\.gemini\\antigravity\\brain\\ddf71845-db10-4570-a7ce-9ccf541c8f09\\scratch\\draft-workbench-v1\\02-draft-empty-inspector-1920x1080.png",
+      "docsPath": "c:\\Users\\l1513\\Desktop\\battle-base\\docs\\screenshots\\draft-workbench-v1\\02-draft-empty-inspector-1920x1080.png"
+    },
+    "03-draft-candidate-selected-1920x1080.png": {
+      "scratchPath": "C:\\Users\\l1513\\.gemini\\antigravity\\brain\\ddf71845-db10-4570-a7ce-9ccf541c8f09\\scratch\\draft-workbench-v1\\03-draft-candidate-selected-1920x1080.png",
+      "docsPath": "c:\\Users\\l1513\\Desktop\\battle-base\\docs\\screenshots\\draft-workbench-v1\\03-draft-candidate-selected-1920x1080.png"
+    },
+    "04-draft-slot-preview-1920x1080.png": {
+      "scratchPath": "C:\\Users\\l1513\\.gemini\\antigravity\\brain\\ddf71845-db10-4570-a7ce-9ccf541c8f09\\scratch\\draft-workbench-v1\\04-draft-slot-preview-1920x1080.png",
+      "docsPath": "c:\\Users\\l1513\\Desktop\\battle-base\\docs\\screenshots\\draft-workbench-v1\\04-draft-slot-preview-1920x1080.png"
+    },
+    "05-draft-slot-preview-1366x768.png": {
+      "scratchPath": "C:\\Users\\l1513\\.gemini\\antigravity\\brain\\ddf71845-db10-4570-a7ce-9ccf541c8f09\\scratch\\draft-workbench-v1\\05-draft-slot-preview-1366x768.png",
+      "docsPath": "c:\\Users\\l1513\\Desktop\\battle-base\\docs\\screenshots\\draft-workbench-v1\\05-draft-slot-preview-1366x768.png"
+    },
+    "06-draft-slot-preview-1280x720.png": {
+      "scratchPath": "C:\\Users\\l1513\\.gemini\\antigravity\\brain\\ddf71845-db10-4570-a7ce-9ccf541c8f09\\scratch\\draft-workbench-v1\\06-draft-slot-preview-1280x720.png",
+      "docsPath": "c:\\Users\\l1513\\Desktop\\battle-base\\docs\\screenshots\\draft-workbench-v1\\06-draft-slot-preview-1280x720.png"
+    },
+    "07-draft-list-preview-1366x768.png": {
+      "scratchPath": "C:\\Users\\l1513\\.gemini\\antigravity\\brain\\ddf71845-db10-4570-a7ce-9ccf541c8f09\\scratch\\draft-workbench-v1\\07-draft-list-preview-1366x768.png",
+      "docsPath": "c:\\Users\\l1513\\Desktop\\battle-base\\docs\\screenshots\\draft-workbench-v1\\07-draft-list-preview-1366x768.png"
+    },
+    "08-draft-mobile-candidates-390x844.png": {
+      "scratchPath": "C:\\Users\\l1513\\.gemini\\antigravity\\brain\\ddf71845-db10-4570-a7ce-9ccf541c8f09\\scratch\\draft-workbench-v1\\08-draft-mobile-candidates-390x844.png",
+      "docsPath": "c:\\Users\\l1513\\Desktop\\battle-base\\docs\\screenshots\\draft-workbench-v1\\08-draft-mobile-candidates-390x844.png"
+    },
+    "09-draft-mobile-squad-390x844.png": {
+      "scratchPath": "C:\\Users\\l1513\\.gemini\\antigravity\\brain\\ddf71845-db10-4570-a7ce-9ccf541c8f09\\scratch\\draft-workbench-v1\\09-draft-mobile-squad-390x844.png",
+      "docsPath": "c:\\Users\\l1513\\Desktop\\battle-base\\docs\\screenshots\\draft-workbench-v1\\09-draft-mobile-squad-390x844.png"
+    },
+    "10-draft-mobile-inspector-390x844.png": {
+      "scratchPath": "C:\\Users\\l1513\\.gemini\\antigravity\\brain\\ddf71845-db10-4570-a7ce-9ccf541c8f09\\scratch\\draft-workbench-v1\\10-draft-mobile-inspector-390x844.png",
+      "docsPath": "c:\\Users\\l1513\\Desktop\\battle-base\\docs\\screenshots\\draft-workbench-v1\\10-draft-mobile-inspector-390x844.png"
+    },
+    "11-reveal-1366x768.png": {
+      "scratchPath": "C:\\Users\\l1513\\.gemini\\antigravity\\brain\\ddf71845-db10-4570-a7ce-9ccf541c8f09\\scratch\\draft-workbench-v1\\11-reveal-1366x768.png",
+      "docsPath": "c:\\Users\\l1513\\Desktop\\battle-base\\docs\\screenshots\\draft-workbench-v1\\11-reveal-1366x768.png"
+    },
+    "12-match-1366x768.png": {
+      "scratchPath": "C:\\Users\\l1513\\.gemini\\antigravity\\brain\\ddf71845-db10-4570-a7ce-9ccf541c8f09\\scratch\\draft-workbench-v1\\12-match-1366x768.png",
+      "docsPath": "c:\\Users\\l1513\\Desktop\\battle-base\\docs\\screenshots\\draft-workbench-v1\\12-match-1366x768.png"
+    },
+    "13-result-1366x768.png": {
+      "scratchPath": "C:\\Users\\l1513\\.gemini\\antigravity\\brain\\ddf71845-db10-4570-a7ce-9ccf541c8f09\\scratch\\draft-workbench-v1\\13-result-1366x768.png",
+      "docsPath": "c:\\Users\\l1513\\Desktop\\battle-base\\docs\\screenshots\\draft-workbench-v1\\13-result-1366x768.png"
+    }
+  },
+  "lobbyScrollCheck": {
+    "lobbyVisible": true,
+    "aboutVisible": true,
+    "bodyHasInDraft": false,
+    "docOverflowY": "visible",
+    "bodyOverflowY": "visible"
+  },
+  "desktopViewports": {
+    "1920x1080": {
+      "innerWidth": 1920,
+      "innerHeight": 1080,
+      "clientWidth": 1920,
+      "clientHeight": 1080,
+      "scrollWidth": 1920,
+      "scrollHeight": 1080,
+      "hasVerticalPageOverflow": false,
+      "hasHorizontalPageOverflow": false,
+      "bodyHasInDraft": true,
+      "docOverflow": "visible",
+      "docOverflowY": "visible",
+      "bodyOverflow": "visible",
+      "bodyOverflowY": "visible",
+      "rects": {
+        "main": {
+          "x": 120,
+          "y": 0,
+          "width": 1680,
+          "height": 1080,
+          "bottom": 1080,
+          "right": 1800
+        },
+        "topbar": {
+          "x": 132,
+          "y": 6,
+          "width": 352.39,
+          "height": 34,
+          "bottom": 40,
+          "right": 484.39
+        },
+        "room": {
+          "x": 494.39,
+          "y": 6,
+          "width": 1293.61,
+          "height": 34,
+          "bottom": 40,
+          "right": 1788
+        },
+        "dwRoot": {
+          "x": 132,
+          "y": 46,
+          "width": 1656,
+          "height": 1028,
+          "bottom": 1074,
+          "right": 1788
+        },
+        "dwHeaderDraft": {
+          "x": 132,
+          "y": 46,
+          "width": 1656,
+          "height": 41.92,
+          "bottom": 87.92,
+          "right": 1788
+        },
+        "dwWorkbench": {
+          "x": 132,
+          "y": 93.92,
+          "width": 1656,
+          "height": 980.08,
+          "bottom": 1074,
+          "right": 1788
+        },
+        "colSquad": {
+          "x": 132,
+          "y": 93.92,
+          "width": 326,
+          "height": 980.08,
+          "bottom": 1074,
+          "right": 458
+        },
+        "colCenter": {
+          "x": 468,
+          "y": 93.92,
+          "width": 974,
+          "height": 980.08,
+          "bottom": 1074,
+          "right": 1442
+        },
+        "colInspector": {
+          "x": 1452,
+          "y": 93.92,
+          "width": 336,
+          "height": 980.08,
+          "bottom": 1074,
+          "right": 1788
+        },
+        "confirmBar": {
+          "x": 479,
+          "y": 970.53,
+          "width": 952,
+          "height": 48.47,
+          "bottom": 1019,
+          "right": 1431
+        },
+        "historyBox": {
+          "x": 479,
+          "y": 1025,
+          "width": 952,
+          "height": 40,
+          "bottom": 1065,
+          "right": 1431
+        }
+      },
+      "internalScrollContainers": {
+        "candidatesScroll": {
+          "overflowY": "auto",
+          "clientHeight": 693,
+          "scrollHeight": 693
+        },
+        "teamBody": {
+          "overflowY": "auto",
+          "clientHeight": 848,
+          "scrollHeight": 848
+        },
+        "inspectorBody": {
+          "overflowY": "auto",
+          "clientHeight": 929,
+          "scrollHeight": 929
+        }
+      }
+    },
+    "1366x768": {
+      "innerWidth": 1366,
+      "innerHeight": 768,
+      "clientWidth": 1366,
+      "clientHeight": 768,
+      "scrollWidth": 1366,
+      "scrollHeight": 768,
+      "hasVerticalPageOverflow": false,
+      "hasHorizontalPageOverflow": false,
+      "bodyHasInDraft": true,
+      "docOverflow": "visible",
+      "docOverflowY": "visible",
+      "bodyOverflow": "visible",
+      "bodyOverflowY": "visible",
+      "rects": {
+        "main": {
+          "x": 12,
+          "y": 0,
+          "width": 1342,
+          "height": 768,
+          "bottom": 768,
+          "right": 1354
+        },
+        "topbar": {
+          "x": 24,
+          "y": 6,
+          "width": 352.39,
+          "height": 34,
+          "bottom": 40,
+          "right": 376.39
+        },
+        "room": {
+          "x": 386.39,
+          "y": 6,
+          "width": 955.61,
+          "height": 34,
+          "bottom": 40,
+          "right": 1342
+        },
+        "dwRoot": {
+          "x": 24,
+          "y": 46,
+          "width": 1318,
+          "height": 716,
+          "bottom": 762,
+          "right": 1342
+        },
+        "dwHeaderDraft": {
+          "x": 24,
+          "y": 46,
+          "width": 1318,
+          "height": 41.92,
+          "bottom": 87.92,
+          "right": 1342
+        },
+        "dwWorkbench": {
+          "x": 24,
+          "y": 93.92,
+          "width": 1318,
+          "height": 668.08,
+          "bottom": 762,
+          "right": 1342
+        },
+        "colSquad": {
+          "x": 24,
+          "y": 93.92,
+          "width": 326,
+          "height": 668.08,
+          "bottom": 762,
+          "right": 350
+        },
+        "colCenter": {
+          "x": 360,
+          "y": 93.92,
+          "width": 636,
+          "height": 668.08,
+          "bottom": 762,
+          "right": 996
+        },
+        "colInspector": {
+          "x": 1006,
+          "y": 93.92,
+          "width": 336,
+          "height": 668.08,
+          "bottom": 762,
+          "right": 1342
+        },
+        "confirmBar": {
+          "x": 371,
+          "y": 658.53,
+          "width": 614,
+          "height": 48.47,
+          "bottom": 707,
+          "right": 985
+        },
+        "historyBox": {
+          "x": 371,
+          "y": 713,
+          "width": 614,
+          "height": 40,
+          "bottom": 753,
+          "right": 985
+        }
+      },
+      "internalScrollContainers": {
+        "candidatesScroll": {
+          "overflowY": "auto",
+          "clientHeight": 381,
+          "scrollHeight": 539
+        },
+        "teamBody": {
+          "overflowY": "auto",
+          "clientHeight": 536,
+          "scrollHeight": 536
+        },
+        "inspectorBody": {
+          "overflowY": "auto",
+          "clientHeight": 617,
+          "scrollHeight": 617
+        }
+      }
+    },
+    "1280x720": {
+      "innerWidth": 1280,
+      "innerHeight": 720,
+      "clientWidth": 1280,
+      "clientHeight": 720,
+      "scrollWidth": 1280,
+      "scrollHeight": 720,
+      "hasVerticalPageOverflow": false,
+      "hasHorizontalPageOverflow": false,
+      "bodyHasInDraft": true,
+      "docOverflow": "visible",
+      "docOverflowY": "visible",
+      "bodyOverflow": "visible",
+      "bodyOverflowY": "visible",
+      "rects": {
+        "main": {
+          "x": 12,
+          "y": 0,
+          "width": 1256,
+          "height": 720,
+          "bottom": 720,
+          "right": 1268
+        },
+        "topbar": {
+          "x": 24,
+          "y": 6,
+          "width": 352.39,
+          "height": 34,
+          "bottom": 40,
+          "right": 376.39
+        },
+        "room": {
+          "x": 386.39,
+          "y": 6,
+          "width": 869.61,
+          "height": 34,
+          "bottom": 40,
+          "right": 1256
+        },
+        "dwRoot": {
+          "x": 24,
+          "y": 46,
+          "width": 1232,
+          "height": 668,
+          "bottom": 714,
+          "right": 1256
+        },
+        "dwHeaderDraft": {
+          "x": 24,
+          "y": 46,
+          "width": 1232,
+          "height": 41.92,
+          "bottom": 87.92,
+          "right": 1256
+        },
+        "dwWorkbench": {
+          "x": 24,
+          "y": 93.92,
+          "width": 1232,
+          "height": 620.08,
+          "bottom": 714,
+          "right": 1256
+        },
+        "colSquad": {
+          "x": 24,
+          "y": 93.92,
+          "width": 326,
+          "height": 620.08,
+          "bottom": 714,
+          "right": 350
+        },
+        "colCenter": {
+          "x": 360,
+          "y": 93.92,
+          "width": 550,
+          "height": 620.08,
+          "bottom": 714,
+          "right": 910
+        },
+        "colInspector": {
+          "x": 920,
+          "y": 93.92,
+          "width": 336,
+          "height": 620.08,
+          "bottom": 714,
+          "right": 1256
+        },
+        "confirmBar": {
+          "x": 371,
+          "y": 610.53,
+          "width": 528,
+          "height": 48.47,
+          "bottom": 659,
+          "right": 899
+        },
+        "historyBox": {
+          "x": 371,
+          "y": 665,
+          "width": 528,
+          "height": 40,
+          "bottom": 705,
+          "right": 899
+        }
+      },
+      "internalScrollContainers": {
+        "candidatesScroll": {
+          "overflowY": "auto",
+          "clientHeight": 333,
+          "scrollHeight": 539
+        },
+        "teamBody": {
+          "overflowY": "auto",
+          "clientHeight": 488,
+          "scrollHeight": 488
+        },
+        "inspectorBody": {
+          "overflowY": "auto",
+          "clientHeight": 569,
+          "scrollHeight": 569
+        }
+      }
+    }
+  },
+  "threeStepPickInteraction": {
+    "step0BeforeCandidate": {
+      "inspectorEmptyPresent": true,
+      "inspectorEmptyTitle": "尚未选择候选球员",
+      "inspectorEmptyGuide": "点击中间的候选球员卡片，即可在此查看头像、俱乐部赛季、可踢位置与五维能力详情，并在左侧预览放置位置。",
+      "confirmBtnDisabled": true,
+      "confirmReasonText": "请先在中间选择一名候选球员",
+      "opponentFloatText": "对手进度Bob0 / 11选秀中HIDDEN",
+      "opponentFloatImgCount": 0
+    },
+    "step1AfterCandidateClick": {
+      "selectedCardPlayerId": "ajax-2019-0",
+      "inspectorEmptyPresent": false,
+      "inspectorHeroName": "奥纳纳",
+      "inspectorPortraitLoaded": true,
+      "inspectorPortraitNaturalWidth": 133,
+      "inspectorStatBarCount": 5,
+      "inspectorSlotChipCount": 1,
+      "inspectorPosBoundaryNote": "暂无各位置独立评分（仅使用官方总评与位置资格）",
+      "eligiblePitchSlotCount": 1,
+      "eligiblePitchSlots": [
+        "GK1"
+      ],
+      "mismatchPitchSlotCount": 10,
+      "confirmBtnDisabled": true,
+      "confirmReasonText": "请在左侧阵容或位置栏选择可放置的位置",
+      "pickWsSentCount": 0
+    },
+    "step2AfterSlotPreviewClick": {
+      "previewSlot": "GK1",
+      "hasPreviewClass": true,
+      "previewBadgeText": "预览",
+      "previewPortraitLoaded": true,
+      "formalFilledNodeCount": 0,
+      "confirmBtnDisabled": false,
+      "confirmBtnText": "确认选入 → GK",
+      "confirmSummaryText": "待确认：奥纳纳 → GK",
+      "pickWsSentCount": 0
+    },
+    "listViewPreview": {
+      "hasPreviewRow": true,
+      "previewSlot": "GK1",
+      "previewBadgeText": "预览",
+      "viewport": {
+        "innerWidth": 1366,
+        "innerHeight": 768,
+        "clientWidth": 1366,
+        "clientHeight": 768,
+        "scrollWidth": 1366,
+        "scrollHeight": 768,
+        "hasVerticalPageOverflow": false,
+        "hasHorizontalPageOverflow": false,
+        "bodyHasInDraft": true,
+        "docOverflow": "visible",
+        "docOverflowY": "visible",
+        "bodyOverflow": "visible",
+        "bodyOverflowY": "visible",
+        "rects": {
+          "main": {
+            "x": 12,
+            "y": 0,
+            "width": 1342,
+            "height": 768,
+            "bottom": 768,
+            "right": 1354
+          },
+          "topbar": {
+            "x": 24,
+            "y": 6,
+            "width": 352.39,
+            "height": 34,
+            "bottom": 40,
+            "right": 376.39
+          },
+          "room": {
+            "x": 386.39,
+            "y": 6,
+            "width": 955.61,
+            "height": 34,
+            "bottom": 40,
+            "right": 1342
+          },
+          "dwRoot": {
+            "x": 24,
+            "y": 46,
+            "width": 1318,
+            "height": 716,
+            "bottom": 762,
+            "right": 1342
+          },
+          "dwHeaderDraft": {
+            "x": 24,
+            "y": 46,
+            "width": 1318,
+            "height": 41.92,
+            "bottom": 87.92,
+            "right": 1342
+          },
+          "dwWorkbench": {
+            "x": 24,
+            "y": 93.92,
+            "width": 1318,
+            "height": 668.08,
+            "bottom": 762,
+            "right": 1342
+          },
+          "colSquad": {
+            "x": 24,
+            "y": 93.92,
+            "width": 326,
+            "height": 668.08,
+            "bottom": 762,
+            "right": 350
+          },
+          "colCenter": {
+            "x": 360,
+            "y": 93.92,
+            "width": 636,
+            "height": 668.08,
+            "bottom": 762,
+            "right": 996
+          },
+          "colInspector": {
+            "x": 1006,
+            "y": 93.92,
+            "width": 336,
+            "height": 668.08,
+            "bottom": 762,
+            "right": 1342
+          },
+          "confirmBar": {
+            "x": 371,
+            "y": 658.53,
+            "width": 614,
+            "height": 48.47,
+            "bottom": 707,
+            "right": 985
+          },
+          "historyBox": {
+            "x": 371,
+            "y": 713,
+            "width": 614,
+            "height": 40,
+            "bottom": 753,
+            "right": 985
+          }
+        },
+        "internalScrollContainers": {
+          "candidatesScroll": {
+            "overflowY": "auto",
+            "clientHeight": 381,
+            "scrollHeight": 539
+          },
+          "teamBody": {
+            "overflowY": "auto",
+            "clientHeight": 536,
+            "scrollHeight": 548
+          },
+          "inspectorBody": {
+            "overflowY": "auto",
+            "clientHeight": 617,
+            "scrollHeight": 617
+          }
+        }
+      }
+    },
+    "step3AfterConfirmClick": {
+      "phaseNowRoll": true,
+      "filledPitchNodesCount": 1,
+      "filledSlots": [
+        "GK1"
+      ],
+      "previewNodesCount": 0,
+      "inspectorEmptyPresent": true,
+      "pickWsSentTotal": 1,
+      "lastPickPayload": {
+        "kind": "pick",
+        "playerId": "ajax-2019-0",
+        "slot": "GK1"
+      }
+    }
+  },
+  "mobileTabbedWorkbench": {
+    "candidatesTab": {
+      "activeTabAttr": "candidates",
+      "innerWidth": 390,
+      "scrollWidth": 390,
+      "hasHorizontalOverflow": false,
+      "colCenterDisplay": "flex",
+      "colSquadDisplay": "none",
+      "colInspectorDisplay": "none"
+    },
+    "squadTab": {
+      "activeTabAttr": "squad",
+      "innerWidth": 390,
+      "scrollWidth": 390,
+      "hasHorizontalOverflow": false,
+      "colCenterDisplay": "none",
+      "colSquadDisplay": "flex",
+      "colInspectorDisplay": "none"
+    },
+    "inspectorTab": {
+      "activeTabAttr": "inspector",
+      "innerWidth": 390,
+      "scrollWidth": 390,
+      "hasHorizontalOverflow": false,
+      "colCenterDisplay": "none",
+      "colSquadDisplay": "none",
+      "colInspectorDisplay": "flex"
+    }
+  },
+  "localeSwitching": {
+    "zh-CN": {
+      "langSelectValue": "zh-CN",
+      "turnBarText": "TEAM B (Alice) — 1/11 — 第 2 步：重抽或选择球员",
+      "inspectorTitle": "球员详情",
+      "inspectorHeroName": "马尔蒂尼",
+      "confirmBtnText": "确认选入",
+      "viewport": {
+        "innerWidth": 1366,
+        "innerHeight": 768,
+        "clientWidth": 1366,
+        "clientHeight": 768,
+        "scrollWidth": 1366,
+        "scrollHeight": 768,
+        "hasVerticalPageOverflow": false,
+        "hasHorizontalPageOverflow": false,
+        "bodyHasInDraft": true,
+        "docOverflow": "visible",
+        "docOverflowY": "visible",
+        "bodyOverflow": "visible",
+        "bodyOverflowY": "visible",
+        "rects": {
+          "main": {
+            "x": 12,
+            "y": 0,
+            "width": 1342,
+            "height": 768,
+            "bottom": 768,
+            "right": 1354
+          },
+          "topbar": {
+            "x": 24,
+            "y": 6,
+            "width": 352.39,
+            "height": 34,
+            "bottom": 40,
+            "right": 376.39
+          },
+          "room": {
+            "x": 386.39,
+            "y": 6,
+            "width": 955.61,
+            "height": 34,
+            "bottom": 40,
+            "right": 1342
+          },
+          "dwRoot": {
+            "x": 24,
+            "y": 46,
+            "width": 1318,
+            "height": 716,
+            "bottom": 762,
+            "right": 1342
+          },
+          "dwHeaderDraft": {
+            "x": 24,
+            "y": 46,
+            "width": 1318,
+            "height": 41.92,
+            "bottom": 87.92,
+            "right": 1342
+          },
+          "dwWorkbench": {
+            "x": 24,
+            "y": 93.92,
+            "width": 1318,
+            "height": 668.08,
+            "bottom": 762,
+            "right": 1342
+          },
+          "colSquad": {
+            "x": 24,
+            "y": 93.92,
+            "width": 326,
+            "height": 668.08,
+            "bottom": 762,
+            "right": 350
+          },
+          "colCenter": {
+            "x": 360,
+            "y": 93.92,
+            "width": 636,
+            "height": 668.08,
+            "bottom": 762,
+            "right": 996
+          },
+          "colInspector": {
+            "x": 1006,
+            "y": 93.92,
+            "width": 336,
+            "height": 668.08,
+            "bottom": 762,
+            "right": 1342
+          },
+          "confirmBar": {
+            "x": 371,
+            "y": 658.53,
+            "width": 614,
+            "height": 48.47,
+            "bottom": 707,
+            "right": 985
+          },
+          "historyBox": {
+            "x": 371,
+            "y": 713,
+            "width": 614,
+            "height": 40,
+            "bottom": 753,
+            "right": 985
+          }
+        },
+        "internalScrollContainers": {
+          "candidatesScroll": {
+            "overflowY": "auto",
+            "clientHeight": 428,
+            "scrollHeight": 539
+          },
+          "teamBody": {
+            "overflowY": "auto",
+            "clientHeight": 536,
+            "scrollHeight": 536
+          },
+          "inspectorBody": {
+            "overflowY": "auto",
+            "clientHeight": 617,
+            "scrollHeight": 617
+          }
+        }
+      }
+    },
+    "ja": {
+      "langSelectValue": "ja",
+      "turnBarText": "TEAM B (Alice) — 1/11 — Step 2: REROLL または 選手指名",
+      "inspectorTitle": "選手詳細",
+      "inspectorHeroName": "パオロ・マルディーニ",
+      "confirmBtnText": "指名を確定",
+      "viewport": {
+        "innerWidth": 1366,
+        "innerHeight": 768,
+        "clientWidth": 1366,
+        "clientHeight": 768,
+        "scrollWidth": 1366,
+        "scrollHeight": 768,
+        "hasVerticalPageOverflow": false,
+        "hasHorizontalPageOverflow": false,
+        "bodyHasInDraft": true,
+        "docOverflow": "visible",
+        "docOverflowY": "visible",
+        "bodyOverflow": "visible",
+        "bodyOverflowY": "visible",
+        "rects": {
+          "main": {
+            "x": 12,
+            "y": 0,
+            "width": 1342,
+            "height": 768,
+            "bottom": 768,
+            "right": 1354
+          },
+          "topbar": {
+            "x": 24,
+            "y": 6,
+            "width": 352.39,
+            "height": 34,
+            "bottom": 40,
+            "right": 376.39
+          },
+          "room": {
+            "x": 386.39,
+            "y": 6,
+            "width": 955.61,
+            "height": 34,
+            "bottom": 40,
+            "right": 1342
+          },
+          "dwRoot": {
+            "x": 24,
+            "y": 46,
+            "width": 1318,
+            "height": 716,
+            "bottom": 762,
+            "right": 1342
+          },
+          "dwHeaderDraft": {
+            "x": 24,
+            "y": 46,
+            "width": 1318,
+            "height": 41.92,
+            "bottom": 87.92,
+            "right": 1342
+          },
+          "dwWorkbench": {
+            "x": 24,
+            "y": 93.92,
+            "width": 1318,
+            "height": 668.08,
+            "bottom": 762,
+            "right": 1342
+          },
+          "colSquad": {
+            "x": 24,
+            "y": 93.92,
+            "width": 326,
+            "height": 668.08,
+            "bottom": 762,
+            "right": 350
+          },
+          "colCenter": {
+            "x": 360,
+            "y": 93.92,
+            "width": 636,
+            "height": 668.08,
+            "bottom": 762,
+            "right": 996
+          },
+          "colInspector": {
+            "x": 1006,
+            "y": 93.92,
+            "width": 336,
+            "height": 668.08,
+            "bottom": 762,
+            "right": 1342
+          },
+          "confirmBar": {
+            "x": 371,
+            "y": 658.53,
+            "width": 614,
+            "height": 48.47,
+            "bottom": 707,
+            "right": 985
+          },
+          "historyBox": {
+            "x": 371,
+            "y": 713,
+            "width": 614,
+            "height": 40,
+            "bottom": 753,
+            "right": 985
+          }
+        },
+        "internalScrollContainers": {
+          "candidatesScroll": {
+            "overflowY": "auto",
+            "clientHeight": 428,
+            "scrollHeight": 557
+          },
+          "teamBody": {
+            "overflowY": "auto",
+            "clientHeight": 536,
+            "scrollHeight": 536
+          },
+          "inspectorBody": {
+            "overflowY": "auto",
+            "clientHeight": 617,
+            "scrollHeight": 617
+          }
+        }
+      }
+    },
+    "en": {
+      "langSelectValue": "en",
+      "turnBarText": "TEAM B (Alice) — 1/11 — Step 2: REROLL OR PICK PLAYER",
+      "inspectorTitle": "PLAYER INSPECTOR",
+      "inspectorHeroName": "Paolo Maldini",
+      "confirmBtnText": "CONFIRM PICK",
+      "viewport": {
+        "innerWidth": 1366,
+        "innerHeight": 768,
+        "clientWidth": 1366,
+        "clientHeight": 768,
+        "scrollWidth": 1366,
+        "scrollHeight": 768,
+        "hasVerticalPageOverflow": false,
+        "hasHorizontalPageOverflow": false,
+        "bodyHasInDraft": true,
+        "docOverflow": "visible",
+        "docOverflowY": "visible",
+        "bodyOverflow": "visible",
+        "bodyOverflowY": "visible",
+        "rects": {
+          "main": {
+            "x": 12,
+            "y": 0,
+            "width": 1342,
+            "height": 768,
+            "bottom": 768,
+            "right": 1354
+          },
+          "topbar": {
+            "x": 24,
+            "y": 6,
+            "width": 380.72,
+            "height": 34,
+            "bottom": 40,
+            "right": 404.72
+          },
+          "room": {
+            "x": 414.72,
+            "y": 6,
+            "width": 927.28,
+            "height": 34,
+            "bottom": 40,
+            "right": 1342
+          },
+          "dwRoot": {
+            "x": 24,
+            "y": 46,
+            "width": 1318,
+            "height": 716,
+            "bottom": 762,
+            "right": 1342
+          },
+          "dwHeaderDraft": {
+            "x": 24,
+            "y": 46,
+            "width": 1318,
+            "height": 41.92,
+            "bottom": 87.92,
+            "right": 1342
+          },
+          "dwWorkbench": {
+            "x": 24,
+            "y": 93.92,
+            "width": 1318,
+            "height": 668.08,
+            "bottom": 762,
+            "right": 1342
+          },
+          "colSquad": {
+            "x": 24,
+            "y": 93.92,
+            "width": 326,
+            "height": 668.08,
+            "bottom": 762,
+            "right": 350
+          },
+          "colCenter": {
+            "x": 360,
+            "y": 93.92,
+            "width": 636,
+            "height": 668.08,
+            "bottom": 762,
+            "right": 996
+          },
+          "colInspector": {
+            "x": 1006,
+            "y": 93.92,
+            "width": 336,
+            "height": 668.08,
+            "bottom": 762,
+            "right": 1342
+          },
+          "confirmBar": {
+            "x": 371,
+            "y": 658.53,
+            "width": 614,
+            "height": 48.47,
+            "bottom": 707,
+            "right": 985
+          },
+          "historyBox": {
+            "x": 371,
+            "y": 713,
+            "width": 614,
+            "height": 40,
+            "bottom": 753,
+            "right": 985
+          }
+        },
+        "internalScrollContainers": {
+          "candidatesScroll": {
+            "overflowY": "auto",
+            "clientHeight": 428,
+            "scrollHeight": 502
+          },
+          "teamBody": {
+            "overflowY": "auto",
+            "clientHeight": 536,
+            "scrollHeight": 536
+          },
+          "inspectorBody": {
+            "overflowY": "auto",
+            "clientHeight": 617,
+            "scrollHeight": 617
+          }
+        }
+      }
+    }
+  },
+  "revealMatchResult": {
+    "reveal": {
+      "bodyHasInDraft": false,
+      "portraitCount": 22,
+      "innerWidth": 1366,
+      "scrollWidth": 1351,
+      "hasHorizontalOverflow": false
+    },
+    "match": {
+      "bodyHasInDraft": false,
+      "scoreText": "0 - 0",
+      "feedCount": 4
+    },
+    "result": {
+      "bodyHasInDraft": false,
+      "finalScoreText": "0 - 0",
+      "winnerBannerText": "平局 (DRAW)"
+    }
+  }
+}

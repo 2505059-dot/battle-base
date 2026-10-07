@@ -337,9 +337,19 @@ console.log('[smoke-11v11] Running 11v11 Abstract 4-3-3 verification suite...');
         `UI must show role buttons ${JSON.stringify(multiPosPlayer.positions)}, not concrete slot IDs`
     );
 
-    // Click the second role button in UI -> must send concrete slot `${secondRole}2` over network!
+    // Click the second role button in UI -> previews concrete slot `${secondRole}2` locally, then confirm button sends PICK over network!
     const targetRoleBtn = roleBtns.find((b) => b.textContent === secondRole);
+    const sentBeforeRolePreview = sentByA.length;
     targetRoleBtn.click();
+    assert.equal(
+        sentByA.length,
+        sentBeforeRolePreview,
+        'Clicking role button must only update local slot preview without sending PICK immediately'
+    );
+
+    const confirmBtn = areaA.querySelector('.dw-confirm-btn');
+    assert.ok(confirmBtn && !confirmBtn.disabled, 'Confirm pick button must be enabled after selecting candidate and slot');
+    confirmBtn.click();
 
     const lastSent = sentByA.at(-1);
     assert.deepEqual(
@@ -349,7 +359,7 @@ console.log('[smoke-11v11] Running 11v11 Abstract 4-3-3 verification suite...');
             playerId: multiPosPlayer.id,
             slot: `${secondRole}2`,
         },
-        `Clicking role button ${secondRole} must send concrete slot ${secondRole}2`
+        `Confirming after role button ${secondRole} must send concrete slot ${secondRole}2`
     );
     assert.equal(ctrlA.getState().teams[0].roster[`${secondRole}2`]?.id, multiPosPlayer.id);
 

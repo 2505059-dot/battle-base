@@ -1,0 +1,1238 @@
+/*!
+ * AUTO-GENERATED FILE NOTICE:
+ * public/styles/app.css is compiled from public/styles/app.src.css via `npm run build:css` (Tailwind CSS v4.3.3).
+ * DO NOT EDIT public/styles/app.css DIRECTLY — edit public/styles/app.src.css and run `npm run build:css`.
+ */
+
+/* 1. Explicit cascade layer order:
+ *    - theme:      Tailwind default theme + UI Foundation v1 semantic tokens
+ *    - legacy:     Existing public/style.css imported intact without Preflight
+ *    - components: Scoped base, Draft Workbench v1 layout, & tactical surface helpers
+ *    - utilities:  Tailwind utility classes (always override legacy element/class rules without !important)
+ */
+@layer theme, legacy, components, utilities;
+
+/* 2. Import Tailwind theme & utilities separately (Tailwind Preflight is intentionally NOT imported
+ *    so existing headings, buttons, inputs, lists, sections, and images keep their exact behavior).
+ */
+@import "tailwindcss/theme.css" layer(theme);
+@import "../style.css" layer(legacy);
+@import "tailwindcss/utilities.css" layer(utilities) source(none);
+
+/* 3. Explicit source scanning scope (relative to public/styles/app.src.css):
+ *    Only scan actual HTML pages, native UI JS modules, and the UI foundation preview scripts.
+ *    Excludes data/, public/data/, research/, reports, scripts/, and external caches.
+ */
+@source "../index.html";
+@source "../ui-foundation.html";
+@source "../main.js";
+@source "../game.js";
+@source "../game/**/*.js";
+@source "../media/**/*.js";
+@source "../ui/**/*.js";
+
+/* 4. UI Foundation v1 Semantic Design Tokens (mapped to Tailwind theme utilities):
+ *    Reference direction: compact dark football tactical UI (FO3/3M visual organization reference).
+ *    Named by semantic purpose rather than raw palette numbers.
+ */
+@theme {
+  /* Backgrounds, Panels & Borders */
+  --color-canvas: #0b111e;
+  --color-canvas-subtle: #101826;
+  --color-panel: #151f32;
+  --color-panel-elevated: #1c2942;
+  --color-panel-inset: #0d1422;
+  --color-panel-header: #18253d;
+  --color-panel-border: #283959;
+  --color-panel-border-subtle: #1e2c46;
+  --color-panel-border-strong: #3b527e;
+
+  /* Primary, Secondary & Muted Text */
+  --color-fg: #eaf0ff;
+  --color-fg-secondary: #b6c5e3;
+  --color-fg-muted: #7e92b8;
+  --color-muted: #7e92b8;
+  --color-fg-on-accent: #ffffff;
+
+  /* Accent, Selected, Disabled & Danger Semantic States */
+  --color-accent: #2f8cff;
+  --color-accent-hover: #4ca0ff;
+  --color-accent-active: #1e70db;
+  --color-accent-soft: #162d52;
+
+  --color-selected: #38bdf8;
+  --color-selected-surface: #132a4a;
+  --color-selected-glow: #0ea5e9;
+
+  --color-disabled: #1b2436;
+  --color-disabled-fg: #596987;
+  --color-disabled-border: #233047;
+
+  --color-danger: #dc2626;
+  --color-danger-hover: #ef4444;
+  --color-danger-surface: #2c1621;
+  --color-danger-border: #7f1d1d;
+
+  /* Football Season & Position Semantic Accents */
+  --color-season-gold: #f59e0b;
+  --color-season-surface: #2b2111;
+  --color-pos-gk: #f59e0b;
+  --color-pos-df: #38bdf8;
+  --color-pos-mf: #22c55e;
+  --color-pos-fw: #f43f5e;
+
+  /* Typography Scale Extensions */
+  --text-2xs: 0.6875rem;
+  --text-2xs--line-height: 1rem;
+  --text-ovr: 1.375rem;
+  --text-ovr--line-height: 1.1;
+
+  /* Spacing Extensions */
+  --spacing-panel-xs: 0.5rem;
+  --spacing-panel-sm: 0.75rem;
+  --spacing-panel-md: 1rem;
+  --spacing-panel-lg: 1.25rem;
+
+  /* Border Radius Tokens */
+  --radius-badge: 0.25rem;
+  --radius-control: 0.375rem;
+  --radius-card: 0.5rem;
+  --radius-panel: 0.625rem;
+
+  /* Elevation & Selection Shadows */
+  --shadow-panel: 0 8px 24px -4px rgb(4 9 20 / 0.55), inset 0 1px 0 0 rgb(255 255 255 / 0.05);
+  --shadow-card: 0 4px 14px -2px rgb(4 9 20 / 0.45), inset 0 1px 0 0 rgb(255 255 255 / 0.04);
+  --shadow-selected: 0 0 0 1px var(--color-selected), 0 8px 20px -4px rgb(56 189 248 / 0.28);
+}
+
+@layer theme {
+  :root,
+  :host {
+    --color-canvas-subtle: #101826;
+    --color-panel-header: #18253d;
+    --color-selected-glow: #0ea5e9;
+    --color-danger-border: #7f1d1d;
+    --spacing-panel-xs: 0.5rem;
+    --spacing-panel-sm: 0.75rem;
+    --spacing-panel-md: 1rem;
+    --spacing-panel-lg: 1.25rem;
+    --shadow-panel: 0 8px 24px -4px rgb(4 9 20 / 0.55), inset 0 1px 0 0 rgb(255 255 255 / 0.05);
+    --shadow-card: 0 4px 14px -2px rgb(4 9 20 / 0.45), inset 0 1px 0 0 rgb(255 255 255 / 0.04);
+    --shadow-selected: 0 0 0 1px var(--color-selected), 0 8px 20px -4px rgb(56 189 248 / 0.28);
+    --z-base: 1;
+    --z-sticky: 20;
+    --z-overlay: 40;
+    --z-modal: 60;
+    --z-toast: 80;
+  }
+}
+
+/* 5. Scoped Base Rules, Draft Workbench v1 Layout, & Dedicated Visual Helpers:
+ *    - Provides local base normalization inside `.ui-scope` without global Preflight side effects.
+ *    - Preserves HTML [hidden] semantics inside `.ui-scope` via @layer utilities specificity (0,2,0)
+ *      without using !important and without altering legacy [hidden] behavior on formal pages.
+ *    - Scopes single-screen Draft Workbench layout to `body.in-draft` so Lobby, Help, Reveal, and Match
+ *      continue to behave as before.
+ */
+@layer components {
+  .ui-scope,
+  .ui-scope *,
+  .ui-scope *::before,
+  .ui-scope *::after {
+    box-sizing: border-box;
+  }
+
+  .ui-scope button,
+  .ui-scope input,
+  .ui-scope select,
+  .ui-scope textarea {
+    font-family: inherit;
+    line-height: inherit;
+  }
+
+  .ui-scope section {
+    margin-bottom: 0;
+  }
+
+  .ui-panel-header-sheen {
+    background-image: linear-gradient(
+      180deg,
+      rgb(255 255 255 / 0.05) 0%,
+      rgb(255 255 255 / 0) 100%
+    );
+  }
+
+  .ui-card-portrait-well {
+    background-image:
+      radial-gradient(circle at 50% 28%, rgb(56 189 248 / 0.16), transparent 68%),
+      linear-gradient(180deg, #121c30 0%, #0b1220 100%);
+  }
+
+  .ui-stat-bar-fill {
+    width: calc(var(--stat-pct, 0) * 1%);
+    transition: width 180ms ease-out;
+  }
+
+  /* =========================================================================
+   * Draft Workbench v1 — Adaptive Wide Game Container & Scoped Layout
+   * ========================================================================= */
+  body.in-game main {
+    max-width: min(1680px, calc(100vw - 24px));
+    width: 100%;
+  }
+
+  body.in-game .topbar,
+  body.in-game #room,
+  body.in-game #about,
+  body.in-game #toast {
+    max-width: min(1680px, calc(100vw - 24px));
+  }
+
+  /* Compact Draft Header & Side Opponent Progress Floating Pill */
+  .dw-header--draft {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 8px;
+    background: var(--color-panel-inset);
+    border: 1px solid var(--color-panel-border);
+    border-radius: 8px;
+    padding: 4px 10px;
+    flex-shrink: 0;
+  }
+
+  .dw-header--draft .fd-vs-player--self {
+    flex: 0 0 auto;
+    padding: 2px 8px;
+    gap: 8px;
+    background: var(--color-panel);
+    border-radius: 6px;
+  }
+
+  .dw-header--draft .fd-vs-meta {
+    margin-top: 0;
+  }
+
+  .dw-header--draft .fd-turn-bar {
+    padding: 4px 10px;
+    font-size: 0.79rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .dw-opponent-float {
+    padding: 3px 10px;
+    border-radius: 999px;
+    background: rgba(15, 23, 38, 0.94);
+    border: 1px dashed var(--color-panel-border-strong);
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+    box-shadow: var(--shadow-card);
+  }
+
+  .dw-opponent-float-row {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    padding: 0;
+    border: 0;
+  }
+
+  .dw-opponent-float-title {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .dw-opponent-float-tag {
+    font-size: 0.66rem;
+    font-weight: 800;
+    letter-spacing: 0.05em;
+    color: var(--color-fg-muted);
+    text-transform: uppercase;
+  }
+
+  .dw-opponent-float-name {
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--color-fg-secondary);
+    max-width: 110px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .dw-opponent-float-count {
+    font-size: 0.74rem;
+    font-weight: 800;
+    color: var(--color-season-gold);
+    background: var(--color-season-surface);
+    border: 1px solid rgba(245, 158, 11, 0.42);
+    padding: 1px 7px;
+    border-radius: 999px;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .dw-opponent-float-badges {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    flex-wrap: nowrap;
+  }
+
+  /* Mobile Workbench Tab Switcher (hidden on desktop >= 1024px) */
+  .dw-mobile-tabs {
+    display: none;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 6px;
+    background: var(--color-panel-inset);
+    border: 1px solid var(--color-panel-border);
+    border-radius: 8px;
+    padding: 4px;
+    flex-shrink: 0;
+  }
+
+  .dw-mobile-tab-btn {
+    padding: 6px 8px;
+    font-size: 0.76rem;
+    font-weight: 700;
+    border-radius: 6px;
+    background: transparent;
+    color: var(--color-fg-muted);
+    border: 1px solid transparent;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .dw-mobile-tab-btn--active {
+    background: var(--color-selected-surface);
+    color: var(--color-selected);
+    border-color: var(--color-selected);
+  }
+
+  /* Main 3-Column Draft Workbench */
+  .fd-main.dw-workbench {
+    display: grid;
+    grid-template-columns: minmax(276px, 326px) minmax(0, 1fr) minmax(276px, 336px);
+    gap: 10px;
+    align-items: stretch;
+    min-height: 0;
+  }
+
+  .dw-col-squad,
+  .dw-col-center,
+  .dw-col-inspector {
+    min-width: 0;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  /* Left Column: Own Squad & Interactive Slot Placement */
+  .dw-squad-panel {
+    padding: 8px 9px;
+    gap: 6px;
+  }
+
+  .dw-squad-panel .fd-team-head {
+    flex-shrink: 0;
+    gap: 4px;
+    padding-bottom: 5px;
+  }
+
+  .dw-squad-panel .fd-team-body {
+    flex: 1;
+    min-height: 0;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .dw-squad-panel .fd-pitch {
+    flex: 1;
+    min-height: 0;
+    padding: 6px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .dw-squad-panel .fd-pitch-grid {
+    flex: 1;
+    min-height: 0;
+    justify-content: space-around;
+    gap: 5px;
+  }
+
+  .dw-squad-panel .fd-pitch-node {
+    padding: 2px 3px 3px;
+    gap: 1px;
+  }
+
+  .dw-squad-panel .fd-pitch-node--empty {
+    min-height: 58px;
+  }
+
+  .dw-squad-panel .fd-pitch-avatar {
+    width: 28px;
+    height: 28px;
+  }
+
+  /* Interactive Slot States (Pitch & List) */
+  .fd-pitch-node.dw-slot--eligible,
+  .fd-slot-row.dw-slot--eligible {
+    cursor: pointer;
+    border: 1px solid var(--color-selected);
+    background: rgba(19, 42, 74, 0.82);
+    box-shadow: inset 0 0 0 1px rgba(56, 189, 248, 0.25);
+  }
+
+  .fd-pitch-node.dw-slot--eligible:hover,
+  .fd-slot-row.dw-slot--eligible:hover {
+    background: rgba(25, 58, 102, 0.94);
+    border-color: #7dd3fc;
+  }
+
+  .fd-pitch-node.dw-slot--preview,
+  .fd-slot-row.dw-slot--preview {
+    cursor: pointer;
+    border: 1.5px dashed var(--color-season-gold);
+    background: rgba(43, 33, 17, 0.9);
+    box-shadow: 0 0 0 1px rgba(245, 158, 11, 0.45), 0 4px 12px rgba(245, 158, 11, 0.22);
+  }
+
+  .fd-pitch-node.dw-slot--occupied,
+  .fd-slot-row.dw-slot--occupied {
+    cursor: not-allowed;
+    opacity: 0.72;
+  }
+
+  .fd-pitch-node.dw-slot--mismatch,
+  .fd-slot-row.dw-slot--mismatch {
+    cursor: not-allowed;
+    opacity: 0.42;
+  }
+
+  .dw-preview-badge {
+    font-size: 0.55rem;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+    padding: 1px 4px;
+    border-radius: 3px;
+    background: var(--color-season-gold);
+    color: #1a1100;
+    line-height: 1.2;
+    flex-shrink: 0;
+  }
+
+  .dw-slot-state-tag {
+    font-size: 0.56rem;
+    font-weight: 800;
+    padding: 0 4px;
+    border-radius: 3px;
+    background: rgba(56, 189, 248, 0.18);
+    color: var(--color-selected);
+    border: 1px solid rgba(56, 189, 248, 0.42);
+    line-height: 1.25;
+    flex-shrink: 0;
+  }
+
+  .dw-preview-avatar {
+    border-color: var(--color-season-gold);
+  }
+
+  .dw-preview-player-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center bottom;
+    display: block;
+  }
+
+  .dw-preview-name {
+    color: #fde68a;
+  }
+
+  .dw-preview-meta,
+  .dw-preview-rating {
+    color: var(--color-season-gold);
+    font-weight: 800;
+  }
+
+  .dw-slot-eligible-text {
+    color: var(--color-selected);
+    font-weight: 700;
+    flex: 1;
+  }
+
+  /* Center Column: Roll/Reroll Controls, Scrollable Candidate Pool, Pinned Confirm Bar */
+  .dw-center {
+    padding: 8px 10px;
+    gap: 6px;
+  }
+
+  .dw-center-top {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .dw-roll-header-bar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .dw-roll-header-bar .fd-pick-counter {
+    flex-shrink: 0;
+    background: var(--color-panel-inset);
+    border: 1px solid var(--color-panel-border);
+    border-radius: 6px;
+    padding: 5px 9px;
+    font-size: 0.72rem;
+    letter-spacing: 0.06em;
+  }
+
+  .dw-roll-header-bar .fd-roll-result {
+    flex: 1;
+    padding: 4px 8px;
+    gap: 6px;
+  }
+
+  .dw-center .fd-reroll-btn {
+    padding: 5px 8px;
+    font-size: 0.74rem;
+  }
+
+  .dw-center .fd-pick-guide {
+    font-size: 0.74rem;
+    padding: 1px 0;
+  }
+
+  .dw-candidates-scroll {
+    flex: 1;
+    min-height: 0;
+    overflow-y: auto;
+    padding: 2px 2px 4px;
+  }
+
+  .dw-center .fd-cards-grid {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 7px;
+  }
+
+  .dw-center .fd-card {
+    padding: 6px 8px;
+    gap: 4px;
+  }
+
+  .dw-center .fd-card-media {
+    height: 76px;
+  }
+
+  .dw-center .fd-card-player-img {
+    max-height: 70px;
+  }
+
+  .dw-center .fd-card-name {
+    font-size: 0.82rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .dw-center .fd-card-name-secondary {
+    font-size: 0.65rem;
+  }
+
+  .dw-center .fd-slot-actions {
+    margin-top: 2px;
+    padding-top: 4px;
+    gap: 3px;
+  }
+
+  .dw-center .fd-slot-btn {
+    padding: 2px 8px;
+    font-size: 0.7rem;
+  }
+
+  .fd-slot-btn--active {
+    background: var(--color-selected);
+    color: #061826;
+    box-shadow: 0 0 0 1px #ffffff inset;
+  }
+
+  /* Pinned Confirm Pick Bar */
+  .dw-confirm-bar {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 6px 10px;
+    background: var(--color-panel-header);
+    border: 1px solid var(--color-panel-border-strong);
+    border-radius: 8px;
+  }
+
+  .dw-confirm-bar--ready {
+    background: var(--color-selected-surface);
+    border-color: var(--color-selected);
+    box-shadow: var(--shadow-selected);
+  }
+
+  .dw-confirm-info {
+    min-width: 0;
+    flex: 1;
+  }
+
+  .dw-confirm-summary {
+    font-size: 0.82rem;
+    font-weight: 800;
+    color: var(--color-fg);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .dw-confirm-reason {
+    font-size: 0.76rem;
+    font-weight: 600;
+    color: var(--color-fg-secondary);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .dw-confirm-actions {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    flex-shrink: 0;
+  }
+
+  .dw-clear-preview-btn {
+    padding: 5px 10px;
+    font-size: 0.74rem;
+    font-weight: 700;
+    border-radius: 6px;
+    background: var(--color-panel-elevated);
+    color: var(--color-fg-secondary);
+    border: 1px solid var(--color-panel-border-strong);
+  }
+
+  .dw-clear-preview-btn:hover {
+    color: var(--color-fg);
+    border-color: var(--color-selected);
+  }
+
+  .dw-confirm-btn {
+    padding: 6px 14px;
+    font-size: 0.8rem;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+    border-radius: 6px;
+    background: linear-gradient(135deg, #22c55e, #16a34a);
+    color: #051b0e;
+    border: 1px solid #4ade80;
+    box-shadow: 0 2px 8px rgba(34, 197, 94, 0.28);
+  }
+
+  .dw-confirm-btn:hover:not(:disabled) {
+    background: linear-gradient(135deg, #4ade80, #22c55e);
+  }
+
+  .dw-confirm-btn:disabled {
+    background: var(--color-disabled);
+    color: var(--color-disabled-fg);
+    border-color: var(--color-disabled-border);
+    box-shadow: none;
+    opacity: 1;
+  }
+
+  .dw-center .fd-history {
+    flex-shrink: 0;
+    height: 40px;
+    max-height: 40px;
+    padding: 4px 8px;
+    margin-top: 0;
+  }
+
+  .dw-roll-box {
+    flex: 1;
+    min-height: 0;
+  }
+
+  .dw-ready-box {
+    flex: 1;
+    min-height: 0;
+    overflow: hidden;
+    padding: 10px 12px;
+    gap: 8px;
+  }
+
+  .dw-ready-roster-scroll {
+    flex: 1;
+    min-height: 0;
+    overflow-y: auto;
+    padding-right: 4px;
+  }
+
+  /* Right Column: Player Detail Inspector */
+  .dw-inspector {
+    padding: 8px 10px;
+    gap: 6px;
+  }
+
+  .dw-inspector-head {
+    flex-shrink: 0;
+    padding-bottom: 5px;
+  }
+
+  .dw-inspector-body {
+    flex: 1;
+    min-height: 0;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .dw-inspector-empty {
+    flex: 1;
+    min-height: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 8px;
+    padding: 16px 12px;
+    background: var(--color-panel-inset);
+    border: 1px dashed var(--color-panel-border);
+    border-radius: 8px;
+  }
+
+  .dw-inspector-empty-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 999px;
+    background: var(--color-panel);
+    border: 1px solid var(--color-panel-border-strong);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+  }
+
+  .dw-inspector-empty-title {
+    font-size: 0.88rem;
+    font-weight: 800;
+    color: var(--color-fg);
+  }
+
+  .dw-inspector-empty-guide {
+    margin: 0;
+    font-size: 0.76rem;
+    line-height: 1.45;
+    color: var(--color-fg-muted);
+  }
+
+  .dw-inspector-steps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 4px;
+  }
+
+  .dw-step-pill {
+    font-size: 0.66rem;
+    font-weight: 700;
+    padding: 2px 7px;
+    border-radius: 999px;
+    background: var(--color-panel);
+    border: 1px solid var(--color-panel-border);
+    color: var(--color-fg-secondary);
+  }
+
+  .dw-inspector-hero {
+    display: flex;
+    align-items: stretch;
+    gap: 10px;
+    padding: 8px;
+    background: var(--color-panel);
+    border: 1px solid var(--color-panel-border);
+    border-radius: 8px;
+    flex-shrink: 0;
+  }
+
+  .dw-inspector-portrait-well {
+    width: 84px;
+    height: 92px;
+    border-radius: 7px;
+    border: 1px solid var(--color-panel-border-strong);
+    overflow: hidden;
+    flex-shrink: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 4px 4px 0;
+  }
+
+  .dw-inspector-player-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center bottom;
+    display: block;
+  }
+
+  .dw-inspector-hero-info {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 4px;
+  }
+
+  .dw-inspector-top-meta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6px;
+  }
+
+  .dw-inspector-role-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+
+  .dw-inspector-ovr {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 4px;
+    background: rgba(10, 26, 20, 0.85);
+    border: 1px solid rgba(74, 222, 128, 0.4);
+    border-radius: 5px;
+    padding: 1px 6px;
+    flex-shrink: 0;
+  }
+
+  .dw-inspector-ovr-label {
+    font-size: 0.6rem;
+    font-weight: 700;
+    color: #86efac;
+    text-transform: uppercase;
+  }
+
+  .dw-inspector-ovr-val {
+    font-size: 1rem;
+    font-weight: 900;
+    color: #4ade80;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .dw-inspector-names {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+  }
+
+  .dw-inspector-name-primary {
+    font-size: 0.92rem;
+    font-weight: 800;
+    color: var(--color-fg);
+    line-height: 1.2;
+    overflow-wrap: anywhere;
+  }
+
+  .dw-inspector-name-secondary {
+    font-size: 0.7rem;
+    color: var(--color-fg-muted);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .dw-inspector-club-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+  }
+
+  .dw-inspector-meta-line {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    min-width: 0;
+    font-size: 0.72rem;
+    color: var(--color-fg-secondary);
+  }
+
+  .dw-inspector-logo {
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+    flex-shrink: 0;
+    display: block;
+  }
+
+  .dw-inspector-logo--league {
+    background: rgba(255, 255, 255, 0.92);
+    border-radius: 3px;
+    padding: 1px;
+  }
+
+  .dw-inspector-club-text,
+  .dw-inspector-league-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: 600;
+  }
+
+  .dw-inspector-season-pill {
+    font-size: 0.66rem;
+    font-weight: 800;
+    padding: 0 5px;
+    border-radius: 4px;
+    background: var(--color-season-surface);
+    color: var(--color-season-gold);
+    border: 1px solid rgba(245, 158, 11, 0.38);
+    flex-shrink: 0;
+  }
+
+  .dw-inspector-section {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 8px;
+    background: var(--color-panel);
+    border: 1px solid var(--color-panel-border);
+    border-radius: 8px;
+    flex-shrink: 0;
+  }
+
+  .dw-inspector-section-title {
+    font-size: 0.66rem;
+    font-weight: 800;
+    letter-spacing: 0.06em;
+    color: var(--color-fg-muted);
+    text-transform: uppercase;
+  }
+
+  .dw-inspector-slots {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 5px;
+  }
+
+  .dw-inspector-slot-chip {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4px;
+    padding: 4px 7px;
+    border-radius: 5px;
+    font-size: 0.72rem;
+    font-weight: 700;
+    border: 1px solid var(--color-panel-border);
+    background: var(--color-panel-inset);
+    color: var(--color-fg);
+  }
+
+  .dw-inspector-slot-chip--eligible {
+    border-color: var(--color-selected);
+    background: rgba(19, 42, 74, 0.75);
+    color: var(--color-selected);
+  }
+
+  .dw-inspector-slot-chip--eligible:hover {
+    background: rgba(26, 58, 102, 0.92);
+  }
+
+  .dw-inspector-slot-chip--preview {
+    border-color: var(--color-season-gold);
+    background: var(--color-season-surface);
+    color: #fde68a;
+  }
+
+  .dw-inspector-slot-chip--occupied {
+    opacity: 0.5;
+    background: var(--color-disabled);
+    color: var(--color-disabled-fg);
+    border-color: var(--color-disabled-border);
+  }
+
+  .dw-inspector-slot-code {
+    font-weight: 800;
+  }
+
+  .dw-inspector-slot-state {
+    font-size: 0.62rem;
+  }
+
+  .dw-inspector-pos-note {
+    font-size: 0.66rem;
+    color: var(--color-fg-muted);
+    line-height: 1.35;
+    padding-top: 2px;
+    border-top: 1px solid var(--color-panel-border-subtle);
+  }
+
+  .dw-inspector-stats-list {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .dw-inspector-stat-row {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .dw-inspector-stat-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.73rem;
+  }
+
+  .dw-inspector-stat-label {
+    color: var(--color-fg-secondary);
+    font-weight: 600;
+  }
+
+  .dw-inspector-stat-track {
+    height: 6px;
+    width: 100%;
+    border-radius: 999px;
+    background: var(--color-panel-inset);
+    border: 1px solid var(--color-panel-border-subtle);
+    overflow: hidden;
+  }
+
+  /* Focus ring visibility for keyboard accessibility across Draft Workbench */
+  .dw-root .fd-card:focus-visible,
+  .dw-root .fd-pitch-node:focus-visible,
+  .dw-root .fd-slot-row:focus-visible,
+  .dw-root button:focus-visible {
+    outline: 2px solid var(--color-selected);
+    outline-offset: 2px;
+  }
+
+  body.in-game #room.room--in-game #players[hidden],
+  body.in-game #room.room--in-game #wait-note[hidden] {
+    display: none;
+  }
+
+  /* Desktop Single-Screen Viewport Fit (>= 1024px) */
+  @media (min-width: 1024px) {
+    body.in-draft main {
+      height: 100dvh;
+      max-height: 100dvh;
+      padding: 6px 12px;
+      display: grid;
+      grid-template-columns: auto minmax(0, 1fr);
+      grid-template-rows: auto minmax(0, 1fr);
+      column-gap: 10px;
+      row-gap: 6px;
+      align-items: stretch;
+    }
+
+    body.in-draft .topbar {
+      max-width: none;
+      margin: 0;
+      padding: 3px 10px;
+      background: var(--color-panel-inset);
+      border: 1px solid var(--color-panel-border-subtle);
+      border-radius: 8px;
+      height: 34px;
+    }
+
+    body.in-draft .topbar h1 {
+      font-size: 0.95rem;
+    }
+
+    body.in-draft .help-toggle-btn,
+    body.in-draft .lang-switch select {
+      padding: 2px 8px;
+      font-size: 0.74rem;
+    }
+
+    body.in-draft #room.room--in-game {
+      max-width: none;
+      margin: 0;
+      padding: 3px 10px;
+      background: var(--color-panel-inset);
+      border: 1px solid var(--color-panel-border-subtle);
+      border-radius: 8px;
+      height: 34px;
+      display: flex;
+      align-items: center;
+    }
+
+    body.in-draft #room.room--in-game .room-header-bar {
+      width: 100%;
+      gap: 8px;
+      flex-wrap: nowrap;
+    }
+
+    body.in-draft #room.room--in-game .room-code-wrap {
+      font-size: 0.8rem;
+    }
+
+    body.in-draft #room.room--in-game .room-code-wrap strong {
+      font-size: 0.86rem;
+      padding: 0 6px;
+    }
+
+    body.in-draft #room.room--in-game .room-btn,
+    body.in-draft #room.room--in-game #copy-btn {
+      padding: 2px 8px;
+      font-size: 0.74rem;
+    }
+
+    body.in-draft #about:not([hidden]) {
+      position: fixed;
+      top: 46px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: var(--z-modal);
+      width: min(680px, calc(100vw - 32px));
+      max-height: calc(100dvh - 64px);
+      overflow-y: auto;
+      margin: 0;
+      box-shadow: var(--shadow-panel);
+    }
+
+    body.in-draft #toast {
+      position: fixed;
+      bottom: 12px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: var(--z-toast);
+      margin: 0;
+      padding: 4px 12px;
+      background: var(--color-panel-elevated);
+      border: 1px solid var(--color-season-gold);
+      border-radius: 6px;
+      pointer-events: none;
+    }
+
+    body.in-draft #game-area {
+      grid-column: 1 / -1;
+      min-height: 0;
+      height: 100%;
+      padding: 0;
+      margin: 0;
+      background: transparent;
+      border: 0;
+      border-radius: 0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    body.in-draft .dw-root {
+      flex: 1;
+      min-height: 0;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    body.in-draft .fd-main.dw-workbench {
+      flex: 1;
+      min-height: 0;
+      height: 100%;
+    }
+  }
+
+  /* Tablet / Mobile (< 1024px): Tabbed Workbench Layout without Horizontal Overflow */
+  @media (max-width: 1023px) {
+    body.in-draft #game-area {
+      padding: 0;
+      margin: 0;
+      background: transparent;
+      border: 0;
+    }
+
+    .dw-header--draft {
+      grid-template-columns: 1fr;
+      gap: 5px;
+    }
+
+    .dw-opponent-float {
+      width: 100%;
+      justify-content: space-between;
+      border-radius: 7px;
+    }
+
+    .dw-opponent-float-row {
+      width: 100%;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .dw-mobile-tabs {
+      display: grid;
+    }
+
+    .fd-main.dw-workbench {
+      grid-template-columns: 1fr;
+    }
+
+    .fd-main.dw-workbench[data-mobile-tab="candidates"] .dw-col-squad,
+    .fd-main.dw-workbench[data-mobile-tab="candidates"] .dw-col-inspector {
+      display: none;
+    }
+
+    .fd-main.dw-workbench[data-mobile-tab="squad"] .dw-col-center,
+    .fd-main.dw-workbench[data-mobile-tab="squad"] .dw-col-inspector {
+      display: none;
+    }
+
+    .fd-main.dw-workbench[data-mobile-tab="inspector"] .dw-col-squad,
+    .fd-main.dw-workbench[data-mobile-tab="inspector"] .dw-col-center {
+      display: none;
+    }
+
+    .dw-confirm-bar {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 6px;
+    }
+
+    .dw-confirm-actions {
+      justify-content: flex-end;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .dw-root *,
+    .dw-root *::before,
+    .dw-root *::after {
+      transition-duration: 0.01ms;
+      animation-duration: 0.01ms;
+    }
+  }
+}
+
+@layer utilities {
+  .ui-scope [hidden] {
+    display: none;
+  }
+}

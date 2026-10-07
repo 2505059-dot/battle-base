@@ -1,7 +1,6 @@
 # Draft Roll Policy v2 Audit Report
 
 - **Policy Version**: `teamseason-semantic-v2`
-- **Generated At**: 2026-10-07T06:22:17.640Z
 - **Dataset Counts**:
   - **TeamSeasons**: 62
   - **Leagues**: 7

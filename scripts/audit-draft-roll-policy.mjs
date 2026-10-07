@@ -188,7 +188,6 @@ export function runDraftRollPolicyAudit() {
 
     const auditData = {
         policyVersion: DRAFT_ROLL_POLICY_VERSION,
-        auditTimestamp: new Date().toISOString(),
         dataset: {
             teamSeasonCount,
             leagueCount,
@@ -262,7 +261,6 @@ export function generateMarkdownReport(data) {
     return `# Draft Roll Policy v2 Audit Report
 
 - **Policy Version**: \`${data.policyVersion}\`
-- **Generated At**: ${data.auditTimestamp}
 - **Dataset Counts**:
   - **TeamSeasons**: ${dataset.teamSeasonCount}
   - **Leagues**: ${dataset.leagueCount}

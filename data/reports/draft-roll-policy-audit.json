@@ -1,6 +1,5 @@
 {
   "policyVersion": "teamseason-semantic-v2",
-  "auditTimestamp": "2026-10-07T06:22:17.640Z",
   "dataset": {
     "teamSeasonCount": 62,
     "leagueCount": 7,

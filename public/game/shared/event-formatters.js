@@ -1,6 +1,6 @@
 // Pure UI formatters for structured Draft History events and Match Simulation events
 
-import { t } from '../../i18n/i18n.js';
+import { t, formatClubName, formatPlayerName } from '../../i18n/i18n.js';
 import { formatSlotLabel } from './constants.js';
 
 export function formatHistoryEvent(event, localeOverride = null) {
@@ -13,7 +13,7 @@ export function formatHistoryEvent(event, localeOverride = null) {
                 'history.rolled',
                 {
                     actorName: event.actorName,
-                    club: event.club,
+                    club: formatClubName(event.club, localeOverride),
                     year: event.year,
                 },
                 localeOverride
@@ -26,7 +26,7 @@ export function formatHistoryEvent(event, localeOverride = null) {
                 key,
                 {
                     actorName: event.actorName,
-                    club: event.club,
+                    club: formatClubName(event.club, localeOverride),
                     year: event.year,
                 },
                 localeOverride
@@ -37,7 +37,7 @@ export function formatHistoryEvent(event, localeOverride = null) {
                 'history.freeRedrawn',
                 {
                     actorName: event.actorName,
-                    club: event.club,
+                    club: formatClubName(event.club, localeOverride),
                     year: event.year,
                 },
                 localeOverride
@@ -47,7 +47,7 @@ export function formatHistoryEvent(event, localeOverride = null) {
                 'history.picked',
                 {
                     actorName: event.actorName,
-                    playerName: event.playerName,
+                    playerName: formatPlayerName(event.playerName, localeOverride),
                     slot: formatSlotLabel(event.slot),
                 },
                 localeOverride
@@ -89,9 +89,9 @@ export function formatMatchEvent(event, localeOverride = null) {
             return t(
                 `match.event.attack${variant}`,
                 {
-                    player: event.playerName ?? '',
+                    player: formatPlayerName(event.playerName ?? '', localeOverride),
                     zone: zoneLabel,
-                    defender: event.defenderName ?? '',
+                    defender: formatPlayerName(event.defenderName ?? '', localeOverride),
                 },
                 localeOverride
             );
@@ -101,8 +101,8 @@ export function formatMatchEvent(event, localeOverride = null) {
             return t(
                 'match.event.shotBlocked',
                 {
-                    player: event.playerName ?? '',
-                    defender: event.defenderName ?? '',
+                    player: formatPlayerName(event.playerName ?? '', localeOverride),
+                    defender: formatPlayerName(event.defenderName ?? '', localeOverride),
                 },
                 localeOverride
             );
@@ -112,7 +112,7 @@ export function formatMatchEvent(event, localeOverride = null) {
             return t(
                 `match.event.miss${variant}`,
                 {
-                    player: event.playerName ?? '',
+                    player: formatPlayerName(event.playerName ?? '', localeOverride),
                 },
                 localeOverride
             );
@@ -122,20 +122,21 @@ export function formatMatchEvent(event, localeOverride = null) {
             return t(
                 'match.event.save',
                 {
-                    player: event.playerName ?? '',
-                    goalkeeper: event.goalkeeperName ?? '',
+                    player: formatPlayerName(event.playerName ?? '', localeOverride),
+                    goalkeeper: formatPlayerName(event.goalkeeperName ?? '', localeOverride),
                 },
                 localeOverride
             );
 
         case 'goal': {
-            const scorer = event.scorerName ?? event.playerName ?? '';
+            const scorerRaw = event.scorerName ?? event.playerName ?? '';
+            const scorer = formatPlayerName(scorerRaw, localeOverride);
             if (event.assistName) {
                 return t(
                     'match.event.goalAssisted',
                     {
                         player: scorer,
-                        assist: event.assistName,
+                        assist: formatPlayerName(event.assistName, localeOverride),
                     },
                     localeOverride
                 );

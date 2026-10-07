@@ -87,6 +87,27 @@ async function main() {
     const buildReport = JSON.parse(
         fs.readFileSync(path.join(REPORTS_DIR, 'build-report.json'), 'utf8')
     );
+    const entityLocalizationsPath = path.join(MANUAL_DIR, 'entity-localizations.json');
+    const entityLocalizations = fs.existsSync(entityLocalizationsPath)
+        ? JSON.parse(fs.readFileSync(entityLocalizationsPath, 'utf8'))
+        : { players: {}, clubs: {}, leagues: {} };
+
+    function sanitizeAliases(arr, primaryName) {
+        if (!Array.isArray(arr)) return [];
+        const seen = new Set();
+        if (primaryName && typeof primaryName === 'string') {
+            seen.add(primaryName.trim());
+        }
+        const result = [];
+        for (const item of arr) {
+            if (typeof item !== 'string') continue;
+            const trimmed = item.trim();
+            if (!trimmed || seen.has(trimmed)) continue;
+            seen.add(trimmed);
+            result.push(trimmed);
+        }
+        return result;
+    }
 
     // Augmented club aliases in memory
     const clubAliases = {
@@ -374,19 +395,23 @@ async function main() {
         validHeadshots.sort((a, b) => a.year - b.year);
         const distinctHeadshotUrls = [...new Set(validHeadshotUrls)];
 
+        const playerLoc = entityLocalizations.players?.[slug] || null;
+        const playerZh = playerLoc?.['zh-CN'] ? String(playerLoc['zh-CN']).trim() : null;
+        const playerJa = playerLoc?.ja ? String(playerLoc.ja).trim() : null;
+
         playerEntities.push({
             id: slug,
             canonicalName: canonical,
             identityStatus: 'resolved',
             localizedNames: {
                 en: canonical,
-                'zh-CN': null,
-                ja: null,
+                'zh-CN': playerZh,
+                ja: playerJa,
             },
             aliases: {
                 en: [],
-                'zh-CN': [],
-                ja: [],
+                'zh-CN': sanitizeAliases(playerLoc?.aliases?.['zh-CN'], playerZh),
+                ja: sanitizeAliases(playerLoc?.aliases?.ja, playerJa),
             },
             externalIds: {
                 sofifa: sofifaId,
@@ -457,6 +482,9 @@ async function main() {
         const leagueId = slugify(league);
         const seasons = [...new Set(tsList.map((ts) => ts.year))].sort((a, b) => a - b);
         const teamSeasonIds = tsList.map((ts) => ts.id).sort();
+        const clubLoc = entityLocalizations.clubs?.[slug] || null;
+        const clubZh = clubLoc?.['zh-CN'] ? String(clubLoc['zh-CN']).trim() : null;
+        const clubJa = clubLoc?.ja ? String(clubLoc.ja).trim() : null;
 
         clubEntities.push({
             id: slug,
@@ -465,13 +493,13 @@ async function main() {
             leagueId,
             localizedNames: {
                 en: canonicalClub,
-                'zh-CN': null,
-                ja: null,
+                'zh-CN': clubZh,
+                ja: clubJa,
             },
             aliases: {
                 en: [],
-                'zh-CN': [],
-                ja: [],
+                'zh-CN': sanitizeAliases(clubLoc?.aliases?.['zh-CN'], clubZh),
+                ja: sanitizeAliases(clubLoc?.aliases?.ja, clubJa),
             },
             externalIds: {
                 footballData: null,
@@ -526,19 +554,22 @@ async function main() {
         const clubs = [...new Set(tsList.map((ts) => ts.club))].sort();
         const clubIds = clubs.map((c) => slugify(c));
         const teamSeasonIds = tsList.map((ts) => ts.id).sort();
+        const leagueLoc = entityLocalizations.leagues?.[slug] || null;
+        const leagueZh = leagueLoc?.['zh-CN'] ? String(leagueLoc['zh-CN']).trim() : null;
+        const leagueJa = leagueLoc?.ja ? String(leagueLoc.ja).trim() : null;
 
         leagueEntities.push({
             id: slug,
             canonicalName: canonicalLeague,
             localizedNames: {
                 en: canonicalLeague,
-                'zh-CN': null,
-                ja: null,
+                'zh-CN': leagueZh,
+                ja: leagueJa,
             },
             aliases: {
                 en: [],
-                'zh-CN': [],
-                ja: [],
+                'zh-CN': sanitizeAliases(leagueLoc?.aliases?.['zh-CN'], leagueZh),
+                ja: sanitizeAliases(leagueLoc?.aliases?.ja, leagueJa),
             },
             externalIds: {
                 footballData: null,

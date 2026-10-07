@@ -552,6 +552,13 @@ li { padding: 8px 12px; margin-bottom: 6px; background: #0d1424; border-radius: 
   color: #ffffff;
 }
 
+.fd-card-name-secondary {
+  font-size: .72rem;
+  font-weight: 500;
+  color: #8fa6cb;
+  margin-top: -2px;
+}
+
 .fd-card-stats {
   display: flex;
   flex-wrap: wrap;

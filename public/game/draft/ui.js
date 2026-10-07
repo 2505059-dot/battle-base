@@ -1,6 +1,12 @@
-// Draft UI rendering functions (localized via i18n t() & formatLeagueName())
+// Draft UI rendering functions (localized via i18n t() & entity formatters)
 
-import { t, formatLeagueName } from '../../i18n/i18n.js';
+import {
+    t,
+    formatLeagueName,
+    formatClubName,
+    formatPlayerName,
+    getPlayerDisplayName,
+} from '../../i18n/i18n.js';
 import { el } from '../shared/dom.js';
 import {
     ROLES,
@@ -180,7 +186,7 @@ export function renderRerollControls(curTeam, currentRoll, canInteract, onReroll
             el(
                 'div',
                 'fd-reroll-hint',
-                t('draft.rerollUnavailableYear', { club: currentRoll.club })
+                t('draft.rerollUnavailableYear', { club: formatClubName(currentRoll.club) })
             )
         );
     }
@@ -284,7 +290,7 @@ export function renderDraftZone(state, myTeam, handlers = {}, selectedPlayerIdOv
         const clubItem = el('div', 'fd-roll-meta');
         clubItem.append(
             el('span', 'fd-meta-label', t('draft.metaClub')),
-            el('strong', 'fd-meta-val', roll.club)
+            el('strong', 'fd-meta-val', formatClubName(roll.club))
         );
 
         const yearItem = el('div', 'fd-roll-meta');
@@ -337,8 +343,13 @@ export function renderDraftZone(state, myTeam, handlers = {}, selectedPlayerIdOv
                 el('span', 'fd-card-rating', t('draft.cardRating', { rating: ovr }))
             );
 
-            const nameEl = el('div', 'fd-card-name', player.name);
-            card.append(topRow, nameEl, renderPlayerMiniStats(player));
+            const displayName = getPlayerDisplayName(player.name);
+            const nameEl = el('div', 'fd-card-name', displayName.primary);
+            card.append(topRow, nameEl);
+            if (displayName.secondary) {
+                card.append(el('div', 'fd-card-name-secondary', displayName.secondary));
+            }
+            card.append(renderPlayerMiniStats(player));
 
             if (!team.draft.locked && hasRoles) {
                 card.addEventListener('click', () => onSelectCandidate(player.id));
@@ -395,8 +406,12 @@ export function renderDraftZone(state, myTeam, handlers = {}, selectedPlayerIdOv
                 const item = el('div', 'fd-ready-slot');
                 item.append(
                     el('span', 'fd-slot-tag', formatSlotLabel(slot)),
-                    el('span', 'fd-ready-player-name', p.name),
-                    el('span', 'fd-ready-player-meta', `${p.club} '${String(p.year).slice(-2)}`),
+                    el('span', 'fd-ready-player-name', formatPlayerName(p.name)),
+                    el(
+                        'span',
+                        'fd-ready-player-meta',
+                        `${formatClubName(p.club)} '${String(p.year).slice(-2)}`
+                    ),
                     el('span', 'fd-slot-player-rating', String(getPlayerOverall(p)))
                 );
                 group.append(item);
@@ -501,8 +516,12 @@ export function renderGroupedSlotList(teamState) {
             if (p) {
                 const playerBox = el('div', 'fd-slot-player');
                 playerBox.append(
-                    el('span', 'fd-slot-player-name', p.name),
-                    el('span', 'fd-slot-player-meta', `${p.club} '${String(p.year).slice(-2)}`)
+                    el('span', 'fd-slot-player-name', formatPlayerName(p.name)),
+                    el(
+                        'span',
+                        'fd-slot-player-meta',
+                        `${formatClubName(p.club)} '${String(p.year).slice(-2)}`
+                    )
                 );
                 row.append(playerBox, el('span', 'fd-slot-player-rating', String(getPlayerOverall(p))));
             } else {

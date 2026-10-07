@@ -11,13 +11,18 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Achraf Hakimi",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "阿什拉夫",
+        "ja": "アクラフ・ハキミ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "阿什拉夫·哈基米",
+          "哈基米"
+        ],
+        "ja": [
+          "ハキミ"
+        ]
       },
       "externalIds": {
         "sofifa": 235212,
@@ -54,13 +59,18 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Adrien Rabiot",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "拉比奥",
+        "ja": "アドリアン・ラビオ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "阿德里安·拉比奥",
+          "拉比奥特"
+        ],
+        "ja": [
+          "ラビオ"
+        ]
       },
       "externalIds": {
         "sofifa": 210008,
@@ -97,13 +107,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Alejandro Gomez",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "亚历杭德罗·戈麦斯",
+        "ja": "アレハンドロ・ゴメス"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "帕普·戈麦斯"
+        ],
+        "ja": [
+          "パプ・ゴメス"
+        ]
       },
       "externalIds": {
         "sofifa": 143076,
@@ -158,13 +172,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Alejandro Grimaldo",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "格里马尔多",
+        "ja": "アレハンドロ・グリマルド"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "亚历杭德罗·格里马尔多"
+        ],
+        "ja": [
+          "グリマルド"
+        ]
       },
       "externalIds": {
         "sofifa": 210035,
@@ -201,13 +219,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Aleksandr Hleb",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "赫莱布",
+        "ja": "アレクサンドル・フレブ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "亚历山大·赫莱布"
+        ],
+        "ja": [
+          "フレブ"
+        ]
       },
       "externalIds": {
         "sofifa": 45472,
@@ -262,13 +284,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Alessandro Bastoni",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "巴斯托尼",
+        "ja": "アレッサンドロ・バストーニ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "亚历山德罗·巴斯托尼"
+        ],
+        "ja": [
+          "バストーニ"
+        ]
       },
       "externalIds": {
         "sofifa": 237383,
@@ -307,13 +333,18 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Alessandro Del Piero",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "皮耶罗",
+        "ja": "アレッサンドロ・デル・ピエロ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "亚历山德罗·德尔·皮耶罗",
+          "德尔·皮耶罗"
+        ],
+        "ja": [
+          "デル・ピエロ"
+        ]
       },
       "externalIds": {
         "sofifa": 1075,
@@ -370,13 +401,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Alessandro Nesta",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "内斯塔",
+        "ja": "アレッサンドロ・ネスタ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "亚历山德罗·内斯塔"
+        ],
+        "ja": [
+          "ネスタ"
+        ]
       },
       "externalIds": {
         "sofifa": 1088,
@@ -451,13 +486,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Alex",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "阿莱士",
+        "ja": "アレックス"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "阿莱士·罗德里戈"
+        ],
+        "ja": [
+          "アレックス・ディアス・ダ・コスタ"
+        ]
       },
       "externalIds": {
         "sofifa": 136130,
@@ -531,13 +570,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Alex Meret",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "梅雷特",
+        "ja": "アレックス・メレト"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "亚历克斯·梅雷特"
+        ],
+        "ja": [
+          "メレト"
+        ]
       },
       "externalIds": {
         "sofifa": 225116,
@@ -574,13 +617,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Alex Sandro",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "阿莱士·桑德罗",
+        "ja": "アレックス・サンドロ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "桑德罗"
+        ],
+        "ja": [
+          "A・サンドロ"
+        ]
       },
       "externalIds": {
         "sofifa": 191043,
@@ -635,13 +682,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Alexandre Lacazette",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "拉卡泽特",
+        "ja": "アレクサンドル・ラカゼット"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "亚历山大·拉卡泽特"
+        ],
+        "ja": [
+          "ラカゼット"
+        ]
       },
       "externalIds": {
         "sofifa": 193301,
@@ -696,13 +747,18 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Alisson",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "阿利松",
+        "ja": "アリソン"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "阿利松·贝克尔",
+          "阿利森"
+        ],
+        "ja": [
+          "アリソン・ベッカー"
+        ]
       },
       "externalIds": {
         "sofifa": 212831,
@@ -757,13 +813,18 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Alphonso Davies",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "阿方索·戴维斯",
+        "ja": "アルフォンソ・デイヴィス"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "A·戴维斯"
+        ],
+        "ja": [
+          "アルフォンソ・デイビス",
+          "デイヴィス"
+        ]
       },
       "externalIds": {
         "sofifa": 234396,
@@ -820,13 +881,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Amedeo Carboni",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "卡博尼",
+        "ja": "アメデオ・カルボーニ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "阿梅代奥·卡博尼"
+        ],
+        "ja": [
+          "カルボーニ"
+        ]
       },
       "externalIds": {
         "sofifa": null,
@@ -863,13 +928,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Amir Rrahmani",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "拉赫马尼",
+        "ja": "アミール・ラフマニ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "阿米尔·拉赫马尼"
+        ],
+        "ja": [
+          "ラフマニ"
+        ]
       },
       "externalIds": {
         "sofifa": 244263,
@@ -906,13 +975,18 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Andre-Frank Zambo Anguissa",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "安古伊萨",
+        "ja": "アンドレ＝フランク・ザンボ・アンギサ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "赞博·安古伊萨"
+        ],
+        "ja": [
+          "ザンボ・アンギサ",
+          "アンギサ"
+        ]
       },
       "externalIds": {
         "sofifa": 227236,
@@ -949,13 +1023,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Andre Onana",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "奥纳纳",
+        "ja": "アンドレ・オナナ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "安德烈·奥纳纳"
+        ],
+        "ja": [
+          "オナナ"
+        ]
       },
       "externalIds": {
         "sofifa": 226753,
@@ -1010,13 +1088,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Andrea Barzagli",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "巴尔扎利",
+        "ja": "アンドレア・バルザーリ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "安德烈亚·巴尔扎利"
+        ],
+        "ja": [
+          "バルザーリ"
+        ]
       },
       "externalIds": {
         "sofifa": 137186,
@@ -1071,13 +1153,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Andrea Pirlo",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "皮尔洛",
+        "ja": "アンドレア・ピルロ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "安德烈亚·皮尔洛"
+        ],
+        "ja": [
+          "ピルロ"
+        ]
       },
       "externalIds": {
         "sofifa": 7763,
@@ -1150,13 +1236,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Andres Iniesta",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "伊涅斯塔",
+        "ja": "アンドレス・イニエスタ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "安德烈斯·伊涅斯塔"
+        ],
+        "ja": [
+          "イニエスタ"
+        ]
       },
       "externalIds": {
         "sofifa": 41,
@@ -1245,13 +1335,18 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Andrew Robertson",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "罗伯逊",
+        "ja": "アンドリュー・ロバートソン"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "安德鲁·罗伯逊"
+        ],
+        "ja": [
+          "アンディ・ロバートソン",
+          "ロバートソン"
+        ]
       },
       "externalIds": {
         "sofifa": 216267,
@@ -1306,13 +1401,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Angel Di Maria",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "迪马利亚",
+        "ja": "アンヘル・ディ・マリア"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "安赫尔·迪马利亚"
+        ],
+        "ja": [
+          "ディ・マリア"
+        ]
       },
       "externalIds": {
         "sofifa": 183898,
@@ -1367,13 +1466,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Antonio Rudiger",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "吕迪格",
+        "ja": "アントニオ・リュディガー"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "安东尼奥·吕迪格"
+        ],
+        "ja": [
+          "リュディガー"
+        ]
       },
       "externalIds": {
         "sofifa": 205452,
@@ -1410,13 +1513,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Arda Turan",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "阿尔达·图兰",
+        "ja": "アルダ・トゥラン"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "图兰"
+        ],
+        "ja": [
+          "トゥラン"
+        ]
       },
       "externalIds": {
         "sofifa": 143745,
@@ -1471,13 +1578,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Arjen Robben",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "罗本",
+        "ja": "アリエン・ロッベン"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "阿尔扬·罗本"
+        ],
+        "ja": [
+          "ロッベン"
+        ]
       },
       "externalIds": {
         "sofifa": 9014,
@@ -1551,13 +1662,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Arturo Vidal",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "比达尔",
+        "ja": "アルトゥーロ・ビダル"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "阿图罗·比达尔"
+        ],
+        "ja": [
+          "ビダル"
+        ]
       },
       "externalIds": {
         "sofifa": 181872,
@@ -1631,13 +1746,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Ashley Cole",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "阿什利·科尔",
+        "ja": "アシュリー・コール"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "A·科尔"
+        ],
+        "ja": [
+          "A・コール"
+        ]
       },
       "externalIds": {
         "sofifa": 34079,
@@ -1695,13 +1814,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Bacary Sagna",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "萨尼亚",
+        "ja": "バカリ・サニャ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "巴卡里·萨尼亚"
+        ],
+        "ja": [
+          "サニャ"
+        ]
       },
       "externalIds": {
         "sofifa": 163419,
@@ -1756,13 +1879,18 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Bastian Schweinsteiger",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "施魏因斯泰格",
+        "ja": "バスティアン・シュヴァインシュタイガー"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "巴斯蒂安·施魏因斯泰格"
+        ],
+        "ja": [
+          "シュヴァインシュタイガー",
+          "シュバインシュタイガー"
+        ]
       },
       "externalIds": {
         "sofifa": 121944,
@@ -1817,13 +1945,18 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Ben Chilwell",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "奇尔韦尔",
+        "ja": "ベン・チルウェル"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "本·奇尔韦尔",
+          "奇尔维尔"
+        ],
+        "ja": [
+          "チルウェル"
+        ]
       },
       "externalIds": {
         "sofifa": 229984,
@@ -1860,13 +1993,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Benjamin Andre",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "邦雅曼·安德烈",
+        "ja": "バンジャマン・アンドレ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "本杰明·安德烈"
+        ],
+        "ja": [
+          "B・アンドレ"
+        ]
       },
       "externalIds": {
         "sofifa": 190674,
@@ -1903,13 +2040,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Benjamin Mendy",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "邦雅曼·门迪",
+        "ja": "バンジャマン・メンディ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "本杰明·门迪"
+        ],
+        "ja": [
+          "B・メンディ"
+        ]
       },
       "externalIds": {
         "sofifa": 204884,
@@ -1964,13 +2105,18 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Benjamin Pavard",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "帕瓦尔",
+        "ja": "バンジャマン・パヴァール"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "邦雅曼·帕瓦尔"
+        ],
+        "ja": [
+          "パヴァール",
+          "パバール"
+        ]
       },
       "externalIds": {
         "sofifa": 226851,
@@ -2007,13 +2153,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Benni McCarthy",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "麦卡锡",
+        "ja": "ベニー・マッカーシー"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "本尼·麦卡锡"
+        ],
+        "ja": [
+          "マッカーシー"
+        ]
       },
       "externalIds": {
         "sofifa": null,
@@ -2050,13 +2200,18 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Berat Djimsiti",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "吉姆西蒂",
+        "ja": "ベラト・ジムシティ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "贝拉特·吉姆西蒂",
+          "吉姆什蒂"
+        ],
+        "ja": [
+          "ジムシティ"
+        ]
       },
       "externalIds": {
         "sofifa": 208165,
@@ -2111,13 +2266,19 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Bernardo Silva",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "伯纳多·席尔瓦",
+        "ja": "ベルナルド・シウバ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "B·席尔瓦",
+          "B席"
+        ],
+        "ja": [
+          "ベルナルド・シルバ",
+          "B・シウバ"
+        ]
       },
       "externalIds": {
         "sofifa": 218667,
@@ -2176,13 +2337,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Bernd Leno",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "莱诺",
+        "ja": "ベルント・レノ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "贝恩德·莱诺"
+        ],
+        "ja": [
+          "レノ"
+        ]
       },
       "externalIds": {
         "sofifa": 192563,
@@ -2237,13 +2402,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Bixente Lizarazu",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "利扎拉祖",
+        "ja": "ビセンテ・リザラズ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "比森特·利扎拉祖"
+        ],
+        "ja": [
+          "リザラズ"
+        ]
       },
       "externalIds": {
         "sofifa": null,
@@ -2280,13 +2449,18 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Branislav Ivanovic",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "伊万诺维奇",
+        "ja": "ブラニスラヴ・イヴァノヴィッチ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "布拉尼斯拉夫·伊万诺维奇"
+        ],
+        "ja": [
+          "イヴァノヴィッチ",
+          "イバノビッチ"
+        ]
       },
       "externalIds": {
         "sofifa": 178372,
@@ -2341,13 +2515,18 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Bruno Fernandes",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "布鲁诺·费尔南德斯",
+        "ja": "ブルーノ・フェルナンデス"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "B·费尔南德斯",
+          "B费"
+        ],
+        "ja": [
+          "B・フェルナンデス"
+        ]
       },
       "externalIds": {
         "sofifa": 212198,
@@ -2384,13 +2563,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Bukayo Saka",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "萨卡",
+        "ja": "ブカヨ・サカ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "布卡约·萨卡"
+        ],
+        "ja": [
+          "サカ"
+        ]
       },
       "externalIds": {
         "sofifa": 246669,
@@ -2445,13 +2628,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Burak Yilmaz",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "布拉克·伊尔马兹",
+        "ja": "ブラク・ユルマズ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "伊尔马兹"
+        ],
+        "ja": [
+          "ユルマズ"
+        ]
       },
       "externalIds": {
         "sofifa": 124375,
@@ -2488,13 +2675,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Cafu",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "卡福",
+        "ja": "カフー"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "马科斯·卡福"
+        ],
+        "ja": [
+          "マルコス・カフー"
+        ]
       },
       "externalIds": {
         "sofifa": 5003,
@@ -2552,13 +2743,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Carles Puyol",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "普约尔",
+        "ja": "カルレス・プジョル"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "卡莱斯·普约尔"
+        ],
+        "ja": [
+          "プジョル"
+        ]
       },
       "externalIds": {
         "sofifa": 13038,
@@ -2630,13 +2825,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Carlos Marchena",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "马切纳",
+        "ja": "カルロス・マルチェナ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "卡洛斯·马切纳"
+        ],
+        "ja": [
+          "マルチェナ"
+        ]
       },
       "externalIds": {
         "sofifa": null,
@@ -2673,13 +2872,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Carlos Tevez",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "特维斯",
+        "ja": "カルロス・テベス"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "卡洛斯·特维斯"
+        ],
+        "ja": [
+          "テベス"
+        ]
       },
       "externalIds": {
         "sofifa": 143001,
@@ -2734,13 +2937,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Casemiro",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "卡塞米罗",
+        "ja": "カゼミーロ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "卡洛斯·卡塞米罗"
+        ],
+        "ja": [
+          "カゼミロ"
+        ]
       },
       "externalIds": {
         "sofifa": 200145,
@@ -2814,13 +3021,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Cesar Azpilicueta",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "阿斯皮利奎塔",
+        "ja": "セサル・アスピリクエタ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "塞萨尔·阿斯皮利奎塔"
+        ],
+        "ja": [
+          "アスピリクエタ"
+        ]
       },
       "externalIds": {
         "sofifa": 184432,
@@ -2875,13 +3086,18 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Cesc Fabregas",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "法布雷加斯",
+        "ja": "セスク・ファブレガス"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "塞斯克·法布雷加斯"
+        ],
+        "ja": [
+          "ファブレガス",
+          "セスク"
+        ]
       },
       "externalIds": {
         "sofifa": 162895,
@@ -2954,13 +3170,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Christian Abbiati",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "阿比亚蒂",
+        "ja": "クリスティアン・アッビアーティ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "克里斯蒂安·阿比亚蒂"
+        ],
+        "ja": [
+          "アッビアーティ"
+        ]
       },
       "externalIds": {
         "sofifa": 1219,
@@ -3015,13 +3235,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Christian Eriksen",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "埃里克森",
+        "ja": "クリスティアン・エリクセン"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "克里斯蒂安·埃里克森"
+        ],
+        "ja": [
+          "エリクセン"
+        ]
       },
       "externalIds": {
         "sofifa": 190460,
@@ -3058,13 +3282,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Christian Fuchs",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "富克斯",
+        "ja": "クリスティアン・フクス"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "克里斯蒂安·富克斯"
+        ],
+        "ja": [
+          "フクス"
+        ]
       },
       "externalIds": {
         "sofifa": 139313,
@@ -3119,13 +3347,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Ciro Ferrara",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "费拉拉",
+        "ja": "チーロ・フェラーラ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "奇罗·费拉拉"
+        ],
+        "ja": [
+          "フェラーラ"
+        ]
       },
       "externalIds": {
         "sofifa": null,
@@ -3162,13 +3394,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Clarence Seedorf",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "西多夫",
+        "ja": "クラレンス・セードルフ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "克拉伦斯·西多夫"
+        ],
+        "ja": [
+          "セードルフ"
+        ]
       },
       "externalIds": {
         "sofifa": 1256,
@@ -3240,13 +3476,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Claude Makelele",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "马克莱莱",
+        "ja": "クロード・マケレレ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "克洛德·马克莱莱"
+        ],
+        "ja": [
+          "マケレレ"
+        ]
       },
       "externalIds": {
         "sofifa": null,
@@ -3305,13 +3545,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Claudio Marchisio",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "马尔基西奥",
+        "ja": "クラウディオ・マルキージオ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "克劳迪奥·马尔基西奥"
+        ],
+        "ja": [
+          "マルキージオ"
+        ]
       },
       "externalIds": {
         "sofifa": 173210,
@@ -3366,13 +3610,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Clement Lenglet",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "朗格莱",
+        "ja": "クレマン・ラングレ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "克莱芒·朗格莱"
+        ],
+        "ja": [
+          "ラングレ"
+        ]
       },
       "externalIds": {
         "sofifa": 220440,
@@ -3427,13 +3675,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Conor Gallagher",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "加拉格尔",
+        "ja": "コナー・ギャラガー"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "康纳·加拉格尔"
+        ],
+        "ja": [
+          "ギャラガー"
+        ]
       },
       "externalIds": {
         "sofifa": 238216,
@@ -3470,13 +3722,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Costinha",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "科斯蒂尼亚",
+        "ja": "コスチーニャ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "弗朗西斯科·科斯蒂尼亚"
+        ],
+        "ja": [
+          "フランシスコ・ダ・コスタ"
+        ]
       },
       "externalIds": {
         "sofifa": null,
@@ -3513,13 +3769,18 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Cristiano Ronaldo",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "C罗",
+        "ja": "クリスティアーノ・ロナウド"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "克里斯蒂亚诺·罗纳尔多"
+        ],
+        "ja": [
+          "C・ロナウド",
+          "ロナウド"
+        ]
       },
       "externalIds": {
         "sofifa": 20801,
@@ -3616,13 +3877,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Daley Blind",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "布林德",
+        "ja": "デイリー・ブリント"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "戴利·布林德"
+        ],
+        "ja": [
+          "ブリント"
+        ]
       },
       "externalIds": {
         "sofifa": 190815,
@@ -3677,13 +3942,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Damiano Tommasi",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "托马西",
+        "ja": "ダミアーノ・トンマージ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "达米亚诺·托马西"
+        ],
+        "ja": [
+          "トンマージ"
+        ]
       },
       "externalIds": {
         "sofifa": null,
@@ -3720,13 +3989,19 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Dani Alves",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "丹尼·阿尔维斯",
+        "ja": "ダニ・アウヴェス"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "阿尔维斯",
+          "丹尼尔·阿尔维斯"
+        ],
+        "ja": [
+          "ダニエウ・アウヴェス",
+          "アウヴェス"
+        ]
       },
       "externalIds": {
         "sofifa": 146530,
@@ -3815,13 +4090,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Dani Carvajal",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "卡瓦哈尔",
+        "ja": "ダニ・カルバハル"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "丹尼·卡瓦哈尔"
+        ],
+        "ja": [
+          "カルバハル"
+        ]
       },
       "externalIds": {
         "sofifa": 204963,
@@ -3878,13 +4157,18 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Dani Ceballos",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "塞瓦略斯",
+        "ja": "ダニ・セバージョス"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "丹尼·塞瓦略斯",
+          "塞巴略斯"
+        ],
+        "ja": [
+          "セバージョス"
+        ]
       },
       "externalIds": {
         "sofifa": 222509,
@@ -3939,13 +4223,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Danijel Subasic",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "苏巴西奇",
+        "ja": "ダニエル・スバシッチ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "达尼耶尔·苏巴西奇"
+        ],
+        "ja": [
+          "スバシッチ"
+        ]
       },
       "externalIds": {
         "sofifa": 192593,
@@ -4000,13 +4288,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Danilo",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "达尼洛",
+        "ja": "ダニーロ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "达尼洛·路易斯"
+        ],
+        "ja": [
+          "ダニーロ・ルイス"
+        ]
       },
       "externalIds": {
         "sofifa": 199304,
@@ -4043,13 +4335,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Danilo D'Ambrosio",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "丹布罗西奥",
+        "ja": "ダニーロ・ダンブロージオ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "达尼洛·丹布罗西奥"
+        ],
+        "ja": [
+          "ダンブロージオ"
+        ]
       },
       "externalIds": {
         "sofifa": 198946,
@@ -4092,13 +4388,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Danny Drinkwater",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "德林克沃特",
+        "ja": "ダニー・ドリンクウォーター"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "丹尼·德林克沃特"
+        ],
+        "ja": [
+          "ドリンクウォーター"
+        ]
       },
       "externalIds": {
         "sofifa": null,
@@ -4153,13 +4453,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Dante",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "丹特",
+        "ja": "ダンテ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "丹特·邦芬"
+        ],
+        "ja": [
+          "ダンテ・ボンフィム"
+        ]
       },
       "externalIds": {
         "sofifa": 158625,
@@ -4214,13 +4518,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "David Alaba",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "阿拉巴",
+        "ja": "ダヴィド・アラバ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "大卫·阿拉巴"
+        ],
+        "ja": [
+          "アラバ"
+        ]
       },
       "externalIds": {
         "sofifa": 197445,
@@ -4296,13 +4604,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "David Albelda",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "阿尔贝尔达",
+        "ja": "ダビド・アルベルダ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "大卫·阿尔贝尔达"
+        ],
+        "ja": [
+          "アルベルダ"
+        ]
       },
       "externalIds": {
         "sofifa": null,
@@ -4339,13 +4651,18 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "David Beckham",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "贝克汉姆",
+        "ja": "デヴィッド・ベッカム"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "大卫·贝克汉姆"
+        ],
+        "ja": [
+          "デビッド・ベッカム",
+          "ベッカム"
+        ]
       },
       "externalIds": {
         "sofifa": null,
@@ -4382,13 +4699,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "David de Gea",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "德赫亚",
+        "ja": "ダビド・デ・ヘア"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "大卫·德赫亚"
+        ],
+        "ja": [
+          "デ・ヘア"
+        ]
       },
       "externalIds": {
         "sofifa": 193080,
@@ -4445,13 +4766,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "David Luiz",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "大卫·路易斯",
+        "ja": "ダヴィド・ルイス"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "D·路易斯"
+        ],
+        "ja": [
+          "ダビド・ルイス"
+        ]
       },
       "externalIds": {
         "sofifa": 179944,
@@ -4506,13 +4831,18 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "David Silva",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "大卫·席尔瓦",
+        "ja": "ダビド・シルバ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "D·席尔瓦",
+          "D席"
+        ],
+        "ja": [
+          "D・シルバ"
+        ]
       },
       "externalIds": {
         "sofifa": 168542,
@@ -4567,13 +4897,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "David Trezeguet",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "特雷泽盖",
+        "ja": "ダヴィド・トレゼゲ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "大卫·特雷泽盖"
+        ],
+        "ja": [
+          "トレゼゲ"
+        ]
       },
       "externalIds": {
         "sofifa": null,
@@ -4610,13 +4944,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "David Villa",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "比利亚",
+        "ja": "ダビド・ビジャ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "大卫·比利亚"
+        ],
+        "ja": [
+          "ビジャ"
+        ]
       },
       "externalIds": {
         "sofifa": 113422,
@@ -4689,13 +5027,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Dayot Upamecano",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "于帕梅卡诺",
+        "ja": "ダヨ・ウパメカノ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "达约·于帕梅卡诺"
+        ],
+        "ja": [
+          "ウパメカノ"
+        ]
       },
       "externalIds": {
         "sofifa": 229558,
@@ -4732,13 +5074,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Deco",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "德科",
+        "ja": "デコ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "安德森·德科"
+        ],
+        "ja": [
+          "アンデルソン・デコ"
+        ]
       },
       "externalIds": {
         "sofifa": null,
@@ -4775,13 +5121,18 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Denis Irwin",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "埃尔文",
+        "ja": "デニス・アーウィン"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "丹尼斯·埃尔文",
+          "丹尼斯·欧文"
+        ],
+        "ja": [
+          "アーウィン"
+        ]
       },
       "externalIds": {
         "sofifa": null,
@@ -4818,13 +5169,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Dennis Bergkamp",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "博格坎普",
+        "ja": "デニス・ベルカンプ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "丹尼斯·博格坎普"
+        ],
+        "ja": [
+          "ベルカンプ"
+        ]
       },
       "externalIds": {
         "sofifa": null,
@@ -4861,13 +5216,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Derlei",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "德尔莱",
+        "ja": "デルレイ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "范德莱·德尔莱"
+        ],
+        "ja": [
+          "ヴァンデルレイ・フェルナンデス"
+        ]
       },
       "externalIds": {
         "sofifa": null,
@@ -4904,13 +5263,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Dida",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "迪达",
+        "ja": "ジーダ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "内尔松·迪达"
+        ],
+        "ja": [
+          "ネルソン・ジーダ"
+        ]
       },
       "externalIds": {
         "sofifa": 3712,
@@ -4965,13 +5328,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Didier Drogba",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "德罗巴",
+        "ja": "ディディエ・ドログバ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "迪迪埃·德罗巴"
+        ],
+        "ja": [
+          "ドログバ"
+        ]
       },
       "externalIds": {
         "sofifa": 31432,
@@ -5043,13 +5410,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Diego Costa",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "迭戈·科斯塔",
+        "ja": "ジエゴ・コスタ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "D·科斯塔"
+        ],
+        "ja": [
+          "ディエゴ・コスタ"
+        ]
       },
       "externalIds": {
         "sofifa": 179844,
@@ -5123,13 +5494,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Diego Fuser",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "富塞尔",
+        "ja": "ディエゴ・フゼール"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "迭戈·富塞尔"
+        ],
+        "ja": [
+          "フゼール"
+        ]
       },
       "externalIds": {
         "sofifa": null,
@@ -5166,13 +5541,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Diego Godin",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "戈丁",
+        "ja": "ディエゴ・ゴディン"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "迭戈·戈丁"
+        ],
+        "ja": [
+          "ゴディン"
+        ]
       },
       "externalIds": {
         "sofifa": 182493,
@@ -5227,13 +5606,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Diego Lopez",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "迭戈·洛佩斯",
+        "ja": "ディエゴ・ロペス"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "D·洛佩斯"
+        ],
+        "ja": [
+          "D・ロペス"
+        ]
       },
       "externalIds": {
         "sofifa": 146748,
@@ -5288,13 +5671,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Diego Milito",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "迭戈·米利托",
+        "ja": "ディエゴ・ミリート"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "米利托"
+        ],
+        "ja": [
+          "ミリート"
+        ]
       },
       "externalIds": {
         "sofifa": 142708,
@@ -5349,13 +5736,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Diego Simeone",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "西蒙尼",
+        "ja": "ディエゴ・シメオネ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "迭戈·西蒙尼"
+        ],
+        "ja": [
+          "シメオネ"
+        ]
       },
       "externalIds": {
         "sofifa": null,
@@ -5392,13 +5783,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Dino Baggio",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "迪诺·巴乔",
+        "ja": "ディノ・バッジョ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "D·巴乔"
+        ],
+        "ja": [
+          "D・バッジョ"
+        ]
       },
       "externalIds": {
         "sofifa": null,
@@ -5435,13 +5830,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Djalminha",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "贾尔米尼亚",
+        "ja": "ジャウミーニャ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "德贾尔米尼亚"
+        ],
+        "ja": [
+          "ジャルミーニャ"
+        ]
       },
       "externalIds": {
         "sofifa": null,
@@ -5478,13 +5877,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Djibril Sidibe",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "西迪贝",
+        "ja": "ジブリル・シディベ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "吉布里尔·西迪贝"
+        ],
+        "ja": [
+          "シディベ"
+        ]
       },
       "externalIds": {
         "sofifa": 201042,
@@ -5539,13 +5942,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Donato",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "多纳托",
+        "ja": "ドナト"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "多纳托·伽马"
+        ],
+        "ja": [
+          "ドナト・ガマ"
+        ]
       },
       "externalIds": {
         "sofifa": null,
@@ -5582,13 +5989,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Donny van de Beek",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "范德贝克",
+        "ja": "ドニー・ファン・デ・ベーク"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "唐尼·范德贝克"
+        ],
+        "ja": [
+          "ファン・デ・ベーク"
+        ]
       },
       "externalIds": {
         "sofifa": 221363,
@@ -5643,13 +6054,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Dusan Tadic",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "塔迪奇",
+        "ja": "ドゥシャン・タディッチ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "杜尚·塔迪奇"
+        ],
+        "ja": [
+          "タディッチ"
+        ]
       },
       "externalIds": {
         "sofifa": 199434,
@@ -5704,13 +6119,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Duvan Zapata",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "杜万·萨帕塔",
+        "ja": "ドゥバン・サパタ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "萨帕塔"
+        ],
+        "ja": [
+          "サパタ"
+        ]
       },
       "externalIds": {
         "sofifa": 215333,
@@ -5765,13 +6184,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Dwight Yorke",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "约克",
+        "ja": "ドワイト・ヨーク"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "德怀特·约克"
+        ],
+        "ja": [
+          "ヨーク"
+        ]
       },
       "externalIds": {
         "sofifa": null,
@@ -5808,13 +6231,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Eden Hazard",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "阿扎尔",
+        "ja": "エデン・アザール"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "埃登·阿扎尔"
+        ],
+        "ja": [
+          "アザール"
+        ]
       },
       "externalIds": {
         "sofifa": 183277,
@@ -5869,13 +6296,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Eder Militao",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "米利唐",
+        "ja": "エデル・ミリトン"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "埃德尔·米利唐"
+        ],
+        "ja": [
+          "ミリトン"
+        ]
       },
       "externalIds": {
         "sofifa": 240130,
@@ -5912,13 +6343,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Ederson",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "埃德森",
+        "ja": "エデルソン"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "埃德森·莫赖斯"
+        ],
+        "ja": [
+          "エデルソン・モラエス"
+        ]
       },
       "externalIds": {
         "sofifa": 210257,
@@ -5955,13 +6390,18 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Edgar Davids",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "埃德加·戴维斯",
+        "ja": "エドガー・ダーヴィッツ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "戴维斯"
+        ],
+        "ja": [
+          "ダーヴィッツ",
+          "ダービッツ"
+        ]
       },
       "externalIds": {
         "sofifa": null,
@@ -5998,13 +6438,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Edmond Tapsoba",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "塔普索巴",
+        "ja": "エドモン・タプソバ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "埃德蒙·塔普索巴"
+        ],
+        "ja": [
+          "タプソバ"
+        ]
       },
       "externalIds": {
         "sofifa": 247263,
@@ -6041,13 +6485,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Edouard Mendy",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "爱德华·门迪",
+        "ja": "エドゥアール・メンディ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "E·门迪"
+        ],
+        "ja": [
+          "E・メンディ"
+        ]
       },
       "externalIds": {
         "sofifa": 234642,
@@ -6084,13 +6532,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Edwin van der Sar",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "范德萨",
+        "ja": "エドウィン・ファン・デル・サール"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "埃德温·范德萨"
+        ],
+        "ja": [
+          "ファン・デル・サール"
+        ]
       },
       "externalIds": {
         "sofifa": 51539,
@@ -6145,13 +6597,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Emerson",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "埃默森",
+        "ja": "エメルソン"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "埃默森·费雷拉"
+        ],
+        "ja": [
+          "エメルソン・フェレイラ"
+        ]
       },
       "externalIds": {
         "sofifa": null,
@@ -6188,13 +6644,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Emmanuel Adebayor",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "阿德巴约",
+        "ja": "エマニュエル・アデバヨール"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "埃马纽埃尔·阿德巴约"
+        ],
+        "ja": [
+          "アデバヨール"
+        ]
       },
       "externalIds": {
         "sofifa": 53050,
@@ -6249,13 +6709,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Emre Can",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "埃姆雷·詹",
+        "ja": "エムレ・ジャン"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "詹"
+        ],
+        "ja": [
+          "E・ジャン"
+        ]
       },
       "externalIds": {
         "sofifa": 208333,
@@ -6292,13 +6756,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Enrico Chiesa",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "恩里科·基耶萨",
+        "ja": "エンリコ・キエーザ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "E·基耶萨"
+        ],
+        "ja": [
+          "E・キエーザ"
+        ]
       },
       "externalIds": {
         "sofifa": null,
@@ -6335,13 +6803,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Enzo Fernandez",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "恩佐·费尔南德斯",
+        "ja": "エンソ・フェルナンデス"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "恩佐"
+        ],
+        "ja": [
+          "E・フェルナンデス"
+        ]
       },
       "externalIds": {
         "sofifa": 247090,
@@ -6378,13 +6850,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Enzo Perez",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "恩佐·佩雷斯",
+        "ja": "エンソ・ペレス"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "E·佩雷斯"
+        ],
+        "ja": [
+          "E・ペレス"
+        ]
       },
       "externalIds": {
         "sofifa": 196432,
@@ -6439,13 +6915,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Erling Haaland",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "哈兰德",
+        "ja": "アーリング・ハーランド"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "埃尔林·哈兰德"
+        ],
+        "ja": [
+          "ハーランド"
+        ]
       },
       "externalIds": {
         "sofifa": 239085,
@@ -6482,13 +6962,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Esteban Cambiasso",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "坎比亚索",
+        "ja": "エステバン・カンビアッソ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "埃斯特班·坎比亚索"
+        ],
+        "ja": [
+          "カンビアッソ"
+        ]
       },
       "externalIds": {
         "sofifa": 138123,
@@ -6543,13 +7027,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Exequiel Palacios",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "帕拉西奥斯",
+        "ja": "エクセキエル・パラシオス"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "埃塞基耶尔·帕拉西奥斯"
+        ],
+        "ja": [
+          "パラシオス"
+        ]
       },
       "externalIds": {
         "sofifa": 231521,
@@ -6586,13 +7074,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Ezequiel Garay",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "加雷",
+        "ja": "エセキエル・ガライ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "埃塞基耶尔·加雷"
+        ],
+        "ja": [
+          "ガライ"
+        ]
       },
       "externalIds": {
         "sofifa": 170481,
@@ -6647,13 +7139,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Fabinho",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "法比尼奥",
+        "ja": "ファビーニョ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "法比奥·塔瓦雷斯"
+        ],
+        "ja": [
+          "ファビオ・タバレス"
+        ]
       },
       "externalIds": {
         "sofifa": 209499,
@@ -6727,13 +7223,18 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Fabio Cannavaro",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "卡纳瓦罗",
+        "ja": "ファビオ・カンナヴァーロ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "法比奥·卡纳瓦罗"
+        ],
+        "ja": [
+          "カンナヴァーロ",
+          "カンナバーロ"
+        ]
       },
       "externalIds": {
         "sofifa": null,
@@ -6770,13 +7271,18 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Federico Chiesa",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "费代里科·基耶萨",
+        "ja": "フェデリコ・キエーザ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "小基耶萨",
+          "基耶萨"
+        ],
+        "ja": [
+          "F・キエーザ"
+        ]
       },
       "externalIds": {
         "sofifa": 235805,
@@ -6813,13 +7319,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Federico Dimarco",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "迪马尔科",
+        "ja": "フェデリコ・ディマルコ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "费代里科·迪马尔科"
+        ],
+        "ja": [
+          "ディマルコ"
+        ]
       },
       "externalIds": {
         "sofifa": 226268,
@@ -6856,13 +7366,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Fernando Hierro",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "耶罗",
+        "ja": "フェルナンド・イエロ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "费尔南多·耶罗"
+        ],
+        "ja": [
+          "イエロ"
+        ]
       },
       "externalIds": {
         "sofifa": null,
@@ -6899,13 +7413,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Fernando Morientes",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "莫伦特斯",
+        "ja": "フェルナンド・モリエンテス"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "费尔南多·莫伦特斯"
+        ],
+        "ja": [
+          "モリエンテス"
+        ]
       },
       "externalIds": {
         "sofifa": null,
@@ -6942,13 +7460,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Fikayo Tomori",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "托莫里",
+        "ja": "フィカヨ・トモリ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "菲卡约·托莫里"
+        ],
+        "ja": [
+          "トモリ"
+        ]
       },
       "externalIds": {
         "sofifa": 232756,
@@ -6985,13 +7507,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Filipe Luis",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "费利佩·路易斯",
+        "ja": "フィリペ・ルイス"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "费利佩"
+        ],
+        "ja": [
+          "F・ルイス"
+        ]
       },
       "externalIds": {
         "sofifa": 164169,
@@ -7046,13 +7572,18 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Filippo Inzaghi",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "因扎吉",
+        "ja": "フィリッポ・インザーギ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "菲利波·因扎吉",
+          "大因扎吉"
+        ],
+        "ja": [
+          "インザーギ"
+        ]
       },
       "externalIds": {
         "sofifa": 1198,
@@ -7107,13 +7638,18 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Florian Wirtz",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "维尔茨",
+        "ja": "フロリアン・ヴィルツ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "弗洛里安·维尔茨"
+        ],
+        "ja": [
+          "ヴィルツ",
+          "ビルツ"
+        ]
       },
       "externalIds": {
         "sofifa": 256630,
@@ -7150,13 +7686,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Fran",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "弗兰",
+        "ja": "フラン"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "弗朗西斯科·冈萨雷斯"
+        ],
+        "ja": [
+          "フランシスコ・ゴンサレス"
+        ]
       },
       "externalIds": {
         "sofifa": null,
@@ -7193,13 +7733,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Francesco Antonioli",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "安东尼奥利",
+        "ja": "フランチェスコ・アントニオーリ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "弗朗切斯科·安东尼奥利"
+        ],
+        "ja": [
+          "アントニオーリ"
+        ]
       },
       "externalIds": {
         "sofifa": null,
@@ -7236,13 +7780,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Francesco Totti",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "托蒂",
+        "ja": "フランチェスコ・トッティ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "弗朗切斯科·托蒂"
+        ],
+        "ja": [
+          "トッティ"
+        ]
       },
       "externalIds": {
         "sofifa": null,
@@ -7279,13 +7827,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Franck Kessie",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "凯西",
+        "ja": "フランク・ケシエ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "弗兰克·凯西"
+        ],
+        "ja": [
+          "ケシエ"
+        ]
       },
       "externalIds": {
         "sofifa": 230938,
@@ -7322,13 +7874,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Franck Ribery",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "里贝里",
+        "ja": "フランク・リベリー"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "弗兰克·里贝里"
+        ],
+        "ja": [
+          "リベリー"
+        ]
       },
       "externalIds": {
         "sofifa": 156616,
@@ -7383,13 +7939,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Frank Lampard",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "兰帕德",
+        "ja": "フランク・ランパード"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "弗兰克·兰帕德"
+        ],
+        "ja": [
+          "ランパード"
+        ]
       },
       "externalIds": {
         "sofifa": 5471,
@@ -7461,13 +8021,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Fred",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "弗雷德",
+        "ja": "フレッジ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "弗雷德里科·桑托斯"
+        ],
+        "ja": [
+          "フレデリコ・サントス"
+        ]
       },
       "externalIds": {
         "sofifa": 209297,
@@ -7504,13 +8068,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Frenkie de Jong",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "弗朗基·德容",
+        "ja": "フレンキー・デ・ヨング"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "F·德容"
+        ],
+        "ja": [
+          "F・デ・ヨング"
+        ]
       },
       "externalIds": {
         "sofifa": 228702,
@@ -7586,13 +8154,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Gabi",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "加比",
+        "ja": "ガビ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "加布里埃尔·费尔南德斯"
+        ],
+        "ja": [
+          "ガブリエル・フェルナンデス"
+        ]
       },
       "externalIds": {
         "sofifa": 146954,
@@ -7647,13 +8219,19 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Gabriel Batistuta",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "巴蒂斯图塔",
+        "ja": "ガブリエル・バティストゥータ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "加布里埃尔·巴蒂斯图塔",
+          "巴蒂"
+        ],
+        "ja": [
+          "バティストゥータ",
+          "バティ"
+        ]
       },
       "externalIds": {
         "sofifa": null,
@@ -7690,13 +8268,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Gael Clichy",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "克里希",
+        "ja": "ガエル・クリシー"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "加埃尔·克里希"
+        ],
+        "ja": [
+          "クリシー"
+        ]
       },
       "externalIds": {
         "sofifa": 152554,
@@ -7769,13 +8351,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Gareth Barry",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "巴里",
+        "ja": "ギャレス・バリー"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "加雷斯·巴里"
+        ],
+        "ja": [
+          "バリー"
+        ]
       },
       "externalIds": {
         "sofifa": 6826,
@@ -7830,13 +8416,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Gary Cahill",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "加里·卡希尔",
+        "ja": "ガリー・ケーヒル"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "卡希尔"
+        ],
+        "ja": [
+          "ケーヒル"
+        ]
       },
       "externalIds": {
         "sofifa": 164468,
@@ -7891,13 +8481,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Gary Medel",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "梅德尔",
+        "ja": "ガリー・メデル"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "加里·梅德尔"
+        ],
+        "ja": [
+          "メデル"
+        ]
       },
       "externalIds": {
         "sofifa": 193532,
@@ -7952,13 +8546,19 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Gary Neville",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "加里·内维尔",
+        "ja": "ガリー・ネヴィル"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "大内维尔",
+          "内维尔"
+        ],
+        "ja": [
+          "G・ネヴィル",
+          "ネビル"
+        ]
       },
       "externalIds": {
         "sofifa": null,
@@ -7995,13 +8595,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Gennaro Gattuso",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "加图索",
+        "ja": "ジェンナーロ・ガットゥーゾ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "詹纳罗·加图索"
+        ],
+        "ja": [
+          "ガットゥーゾ"
+        ]
       },
       "externalIds": {
         "sofifa": 4202,
@@ -8056,13 +8660,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Geoffrey Kondogbia",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "孔多比亚",
+        "ja": "ジョフレイ・コンドグビア"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "热弗雷·孔多比亚"
+        ],
+        "ja": [
+          "コンドグビア"
+        ]
       },
       "externalIds": {
         "sofifa": 201455,
@@ -8117,13 +8725,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Georginio Wijnaldum",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "维纳尔杜姆",
+        "ja": "ジョルジニオ・ワイナルドゥム"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "乔治尼奥·维纳尔杜姆"
+        ],
+        "ja": [
+          "ワイナルドゥム"
+        ]
       },
       "externalIds": {
         "sofifa": 181291,
@@ -8178,13 +8790,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Gerard Pique",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "皮克",
+        "ja": "ジェラール・ピケ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "杰拉德·皮克"
+        ],
+        "ja": [
+          "ピケ"
+        ]
       },
       "externalIds": {
         "sofifa": 152729,
@@ -8292,13 +8908,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Giacomo Bonaventura",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "博纳文图拉",
+        "ja": "ジャコモ・ボナヴェントゥーラ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "贾科莫·博纳文图拉"
+        ],
+        "ja": [
+          "ボナヴェントゥーラ"
+        ]
       },
       "externalIds": {
         "sofifa": 189125,
@@ -8353,13 +8973,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Gianluca Zambrotta",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "赞布罗塔",
+        "ja": "ジャンルカ・ザンブロッタ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "詹卢卡·赞布罗塔"
+        ],
+        "ja": [
+          "ザンブロッタ"
+        ]
       },
       "externalIds": {
         "sofifa": null,
@@ -8396,13 +9020,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Gianluigi Buffon",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "布冯",
+        "ja": "ジャンルイジ・ブッフォン"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "詹路易吉·布冯"
+        ],
+        "ja": [
+          "ブッフォン"
+        ]
       },
       "externalIds": {
         "sofifa": 1179,
@@ -8479,13 +9107,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Gilberto Silva",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "吉尔伯托·席尔瓦",
+        "ja": "ジウベルト・シウバ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "吉尔伯托"
+        ],
+        "ja": [
+          "ジウベルト・シルバ"
+        ]
       },
       "externalIds": {
         "sofifa": null,
@@ -8522,13 +9154,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Giorgio Chiellini",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "基耶利尼",
+        "ja": "ジョルジョ・キエッリーニ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "乔治·基耶利尼"
+        ],
+        "ja": [
+          "キエッリーニ"
+        ]
       },
       "externalIds": {
         "sofifa": 138956,
@@ -8600,13 +9236,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Giovane Elber",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "埃尔伯",
+        "ja": "ジオヴァネ・エウベル"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "吉奥瓦内·埃尔伯"
+        ],
+        "ja": [
+          "エウベル"
+        ]
       },
       "externalIds": {
         "sofifa": null,
@@ -8643,13 +9283,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Giovanni Di Lorenzo",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "迪洛伦佐",
+        "ja": "ジョヴァンニ・ディ・ロレンツォ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "乔瓦尼·迪洛伦佐"
+        ],
+        "ja": [
+          "ディ・ロレンツォ"
+        ]
       },
       "externalIds": {
         "sofifa": 217870,
@@ -8686,13 +9330,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Giuseppe Pancaro",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "潘卡罗",
+        "ja": "ジュゼッペ・パンカロ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "朱塞佩·潘卡罗"
+        ],
+        "ja": [
+          "パンカロ"
+        ]
       },
       "externalIds": {
         "sofifa": null,
@@ -8729,13 +9377,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Gonzalo Castro",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "贡萨洛·卡斯特罗",
+        "ja": "ゴンサロ・カストロ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "卡斯特罗"
+        ],
+        "ja": [
+          "カストロ"
+        ]
       },
       "externalIds": {
         "sofifa": 167431,
@@ -8790,13 +9442,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Gonzalo Higuain",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "伊瓜因",
+        "ja": "ゴンサロ・イグアイン"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "冈萨洛·伊瓜因"
+        ],
+        "ja": [
+          "イグアイン"
+        ]
       },
       "externalIds": {
         "sofifa": 167664,
@@ -8851,13 +9507,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Granit Xhaka",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "扎卡",
+        "ja": "グラニト・ジャカ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "格拉尼特·扎卡"
+        ],
+        "ja": [
+          "ジャカ"
+        ]
       },
       "externalIds": {
         "sofifa": 199503,
@@ -8916,13 +9576,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Gregor Kobel",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "科贝尔",
+        "ja": "グレゴール・コベル"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "格雷戈尔·科贝尔"
+        ],
+        "ja": [
+          "コベル"
+        ]
       },
       "externalIds": {
         "sofifa": 235073,
@@ -8959,13 +9623,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Hakan Calhanoglu",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "恰尔汗奥卢",
+        "ja": "ハカン・チャルハノール"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "哈坎·恰尔汗奥卢"
+        ],
+        "ja": [
+          "チャルハノール"
+        ]
       },
       "externalIds": {
         "sofifa": 208128,
@@ -9002,13 +9670,18 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Hakim Ziyech",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "齐耶赫",
+        "ja": "ハキム・ツィエク"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "哈基姆·齐耶赫"
+        ],
+        "ja": [
+          "ツィエク",
+          "ジエシュ"
+        ]
       },
       "externalIds": {
         "sofifa": 208670,
@@ -9063,13 +9736,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Hans Hateboer",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "哈特鲍尔",
+        "ja": "ハンス・ハテブール"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "汉斯·哈特鲍尔"
+        ],
+        "ja": [
+          "ハテブール"
+        ]
       },
       "externalIds": {
         "sofifa": 220093,
@@ -9124,13 +9801,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Harry Maguire",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "马奎尔",
+        "ja": "ハリー・マグワイア"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "哈里·马奎尔"
+        ],
+        "ja": [
+          "マグワイア"
+        ]
       },
       "externalIds": {
         "sofifa": 203263,
@@ -9167,13 +9848,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Hector Bellerin",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "贝莱林",
+        "ja": "エクトル・ベジェリン"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "埃克托·贝莱林"
+        ],
+        "ja": [
+          "ベジェリン"
+        ]
       },
       "externalIds": {
         "sofifa": 203747,
@@ -9228,13 +9913,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Henrikh Mkhitaryan",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "姆希塔良",
+        "ja": "ヘンリク・ムヒタリアン"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "亨里克·姆希塔良"
+        ],
+        "ja": [
+          "ムヒタリアン"
+        ]
       },
       "externalIds": {
         "sofifa": 192883,
@@ -9293,13 +9982,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Hernan Crespo",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "克雷斯波",
+        "ja": "エルナン・クレスポ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "埃尔南·克雷斯波"
+        ],
+        "ja": [
+          "クレスポ"
+        ]
       },
       "externalIds": {
         "sofifa": null,
@@ -9336,13 +10029,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Heurelho Gomes",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "戈麦斯",
+        "ja": "エウレリョ・ゴメス"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "埃乌雷略·戈麦斯"
+        ],
+        "ja": [
+          "H・ゴメス"
+        ]
       },
       "externalIds": {
         "sofifa": null,
@@ -9397,13 +10094,18 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Hidetoshi Nakata",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "中田英寿",
+        "ja": "中田英寿"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "中田"
+        ],
+        "ja": [
+          "ナカタ",
+          "ヒデ"
+        ]
       },
       "externalIds": {
         "sofifa": null,
@@ -9440,13 +10142,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Ignazio Abate",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "阿巴特",
+        "ja": "イニャツィオ・アバーテ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "伊尼亚齐奥·阿巴特"
+        ],
+        "ja": [
+          "アバーテ"
+        ]
       },
       "externalIds": {
         "sofifa": 168312,
@@ -9518,13 +10224,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Iker Casillas",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "卡西利亚斯",
+        "ja": "イケル・カシージャス"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "伊克尔·卡西利亚斯"
+        ],
+        "ja": [
+          "カシージャス"
+        ]
       },
       "externalIds": {
         "sofifa": 5479,
@@ -9581,13 +10291,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Ilkay Gundogan",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "京多安",
+        "ja": "イルカイ・ギュンドアン"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "伊尔卡伊·京多安"
+        ],
+        "ja": [
+          "ギュンドアン"
+        ]
       },
       "externalIds": {
         "sofifa": 186942,
@@ -9659,13 +10373,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Ismael Bennacer",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "本纳赛尔",
+        "ja": "イスマエル・ベナセル"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "伊斯梅尔·本纳赛尔"
+        ],
+        "ja": [
+          "ベナセル"
+        ]
       },
       "externalIds": {
         "sofifa": 226754,
@@ -9702,13 +10420,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Ivan Perisic",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "佩里西奇",
+        "ja": "イヴァン・ペリシッチ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "伊万·佩里西奇"
+        ],
+        "ja": [
+          "ペリシッチ"
+        ]
       },
       "externalIds": {
         "sofifa": 181458,
@@ -9763,13 +10485,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Ivan Rakitic",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "拉基蒂奇",
+        "ja": "イヴァン・ラキティッチ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "伊万·拉基蒂奇"
+        ],
+        "ja": [
+          "ラキティッチ"
+        ]
       },
       "externalIds": {
         "sofifa": 168651,
@@ -9824,13 +10550,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Jaap Stam",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "斯塔姆",
+        "ja": "ヤープ・スタム"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "雅普·斯塔姆"
+        ],
+        "ja": [
+          "スタム"
+        ]
       },
       "externalIds": {
         "sofifa": null,
@@ -9867,13 +10597,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Jack Grealish",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "格拉利什",
+        "ja": "ジャック・グリーリッシュ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "杰克·格拉利什"
+        ],
+        "ja": [
+          "グリーリッシュ"
+        ]
       },
       "externalIds": {
         "sofifa": 206517,
@@ -9910,13 +10644,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Jacques Songo'o",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "松戈奥",
+        "ja": "ジャック・ソンゴォ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "雅克·松戈奥"
+        ],
+        "ja": [
+          "ソンゴォ"
+        ]
       },
       "externalIds": {
         "sofifa": null,
@@ -9953,13 +10691,19 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Jakub Blaszczykowski",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "布瓦什奇科夫斯基",
+        "ja": "ヤクブ・ブワシュチコフスキ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "库巴",
+          "雅库布·布瓦什奇科夫斯基"
+        ],
+        "ja": [
+          "ブワシュチコフスキ",
+          "クバ"
+        ]
       },
       "externalIds": {
         "sofifa": 164994,
@@ -10014,13 +10758,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Jamie Carragher",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "卡拉格",
+        "ja": "ジェイミー・キャラガー"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "杰米·卡拉格"
+        ],
+        "ja": [
+          "キャラガー"
+        ]
       },
       "externalIds": {
         "sofifa": null,
@@ -10075,13 +10823,18 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Jamie Vardy",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "瓦尔迪",
+        "ja": "ジェイミー・ヴァーディ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "杰米·瓦尔迪"
+        ],
+        "ja": [
+          "ヴァーディ",
+          "バーディ"
+        ]
       },
       "externalIds": {
         "sofifa": 208830,
@@ -10136,13 +10889,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Jan Oblak",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "奥布拉克",
+        "ja": "ヤン・オブラク"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "扬·奥布拉克"
+        ],
+        "ja": [
+          "オブラク"
+        ]
       },
       "externalIds": {
         "sofifa": 200389,
@@ -10185,13 +10942,18 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Jan Vennegoor of Hesselink",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "海塞林克",
+        "ja": "ヤン・フェネホール・オフ・ヘッセリンク"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "扬·文内胡尔·奥夫·海塞林克"
+        ],
+        "ja": [
+          "フェネホール・オフ・ヘッセリンク",
+          "ヘッセリンク"
+        ]
       },
       "externalIds": {
         "sofifa": null,
@@ -10246,13 +11008,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Javi Martinez",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "哈维·马丁内斯",
+        "ja": "ハビ・マルティネス"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "J·马丁内斯"
+        ],
+        "ja": [
+          "J・マルティネス"
+        ]
       },
       "externalIds": {
         "sofifa": 177610,
@@ -10307,13 +11073,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Javier Zanetti",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "萨内蒂",
+        "ja": "ハビエル・サネッティ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "哈维尔·萨内蒂"
+        ],
+        "ja": [
+          "サネッティ"
+        ]
       },
       "externalIds": {
         "sofifa": 1041,
@@ -10368,13 +11138,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Jefferson Farfan",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "法尔范",
+        "ja": "ジェフェルソン・ファルファン"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "杰斐逊·法尔范"
+        ],
+        "ja": [
+          "ファルファン"
+        ]
       },
       "externalIds": {
         "sofifa": null,
@@ -10429,13 +11203,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Jeison Murillo",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "穆里略",
+        "ja": "ジェイソン・ムリージョ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "杰森·穆里略"
+        ],
+        "ja": [
+          "ムリージョ"
+        ]
       },
       "externalIds": {
         "sofifa": 201377,
@@ -10490,13 +11268,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Jens Lehmann",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "莱曼",
+        "ja": "イェンス・レーマン"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "延斯·莱曼"
+        ],
+        "ja": [
+          "レーマン"
+        ]
       },
       "externalIds": {
         "sofifa": null,
@@ -10533,13 +11315,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Jeremie Frimpong",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "弗林蓬",
+        "ja": "ジェレミー・フリンポン"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "杰里米·弗林蓬"
+        ],
+        "ja": [
+          "フリンポン"
+        ]
       },
       "externalIds": {
         "sofifa": 253149,
@@ -10576,13 +11362,18 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Jeremy Menez",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "梅内",
+        "ja": "ジェレミー・メネズ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "热雷米·梅内",
+          "梅内斯"
+        ],
+        "ja": [
+          "メネズ"
+        ]
       },
       "externalIds": {
         "sofifa": 160766,
@@ -10637,13 +11428,18 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Jerome Boateng",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "热罗姆·博阿滕",
+        "ja": "ジェローム・ボアテング"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "J·博阿滕",
+          "博阿滕"
+        ],
+        "ja": [
+          "J・ボアテング"
+        ]
       },
       "externalIds": {
         "sofifa": 183907,
@@ -10715,13 +11511,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Jerzy Dudek",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "杜德克",
+        "ja": "イェジー・ドゥデク"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "耶日·杜德克"
+        ],
+        "ja": [
+          "ドゥデク"
+        ]
       },
       "externalIds": {
         "sofifa": null,
@@ -10776,13 +11576,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Joe Hart",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "乔·哈特",
+        "ja": "ジョー・ハート"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "哈特"
+        ],
+        "ja": [
+          "ハート"
+        ]
       },
       "externalIds": {
         "sofifa": 150724,
@@ -10837,13 +11641,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "John Arne Riise",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "里瑟",
+        "ja": "ヨン・アルネ・リーセ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "约翰·阿尔内·里瑟"
+        ],
+        "ja": [
+          "リーセ"
+        ]
       },
       "externalIds": {
         "sofifa": null,
@@ -10898,13 +11706,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "John Stones",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "斯通斯",
+        "ja": "ジョン・ストーンズ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "约翰·斯通斯"
+        ],
+        "ja": [
+          "ストーンズ"
+        ]
       },
       "externalIds": {
         "sofifa": 203574,
@@ -10941,13 +11753,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "John Terry",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "特里",
+        "ja": "ジョン・テリー"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "约翰·特里"
+        ],
+        "ja": [
+          "テリー"
+        ]
       },
       "externalIds": {
         "sofifa": 13732,
@@ -11036,13 +11852,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Jonathan Bamba",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "班巴",
+        "ja": "ジョナタン・バンバ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "乔纳森·班巴"
+        ],
+        "ja": [
+          "バンバ"
+        ]
       },
       "externalIds": {
         "sofifa": 225085,
@@ -11079,13 +11899,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Jonathan David",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "乔纳森·戴维",
+        "ja": "ジョナサン・デイヴィッド"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "乔纳森·大卫"
+        ],
+        "ja": [
+          "ジョナサン・デイビッド"
+        ]
       },
       "externalIds": {
         "sofifa": 243630,
@@ -11122,13 +11946,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Jonathan Tah",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "约纳坦·塔",
+        "ja": "ヨナタン・ター"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "塔"
+        ],
+        "ja": [
+          "ター"
+        ]
       },
       "externalIds": {
         "sofifa": 213331,
@@ -11165,13 +11993,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Jordan Henderson",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "亨德森",
+        "ja": "ジョーダン・ヘンダーソン"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "乔丹·亨德森"
+        ],
+        "ja": [
+          "ヘンダーソン"
+        ]
       },
       "externalIds": {
         "sofifa": 183711,
@@ -11226,13 +12058,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Jordi Alba",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "阿尔巴",
+        "ja": "ジョルディ・アルバ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "约尔迪·阿尔巴"
+        ],
+        "ja": [
+          "アルバ"
+        ]
       },
       "externalIds": {
         "sofifa": 189332,
@@ -11306,13 +12142,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Jorge Costa",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "若热·科斯塔",
+        "ja": "ジョルジュ・コスタ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "乔治·科斯塔"
+        ],
+        "ja": [
+          "J・コスタ"
+        ]
       },
       "externalIds": {
         "sofifa": null,
@@ -11349,13 +12189,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Jorginho",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "若日尼奥",
+        "ja": "ジョルジーニョ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "若热·路易斯·弗雷略"
+        ],
+        "ja": [
+          "ジョルジュ・ルイス・フレーロ"
+        ]
       },
       "externalIds": {
         "sofifa": 205498,
@@ -11392,13 +12236,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Jose Fonte",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "丰特",
+        "ja": "ジョゼ・フォンテ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "若泽·丰特"
+        ],
+        "ja": [
+          "フォンテ"
+        ]
       },
       "externalIds": {
         "sofifa": 171791,
@@ -11435,13 +12283,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Joshua Kimmich",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "基米希",
+        "ja": "ヨシュア・キミッヒ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "约书亚·基米希"
+        ],
+        "ja": [
+          "キミッヒ"
+        ]
       },
       "externalIds": {
         "sofifa": 212622,
@@ -11498,13 +12350,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Juan Cuadrado",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "夸德拉多",
+        "ja": "フアン・クアドラード"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "胡安·夸德拉多"
+        ],
+        "ja": [
+          "クアドラード"
+        ]
       },
       "externalIds": {
         "sofifa": 193082,
@@ -11541,13 +12397,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Juan Mata",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "马塔",
+        "ja": "フアン・マタ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "胡安·马塔"
+        ],
+        "ja": [
+          "マタ"
+        ]
       },
       "externalIds": {
         "sofifa": 178088,
@@ -11602,13 +12462,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Juan Sebastian Veron",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "贝隆",
+        "ja": "フアン・セバスティアン・ベロン"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "胡安·塞巴斯蒂安·贝隆"
+        ],
+        "ja": [
+          "ベロン"
+        ]
       },
       "externalIds": {
         "sofifa": null,
@@ -11648,13 +12512,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Jude Bellingham",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "贝林厄姆",
+        "ja": "ジュード・ベリンガム"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "祖德·贝林厄姆"
+        ],
+        "ja": [
+          "ベリンガム"
+        ]
       },
       "externalIds": {
         "sofifa": 252371,
@@ -11691,13 +12559,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Julian Brandt",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "布兰特",
+        "ja": "ユリアン・ブラント"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "尤利安·布兰特"
+        ],
+        "ja": [
+          "ブラント"
+        ]
       },
       "externalIds": {
         "sofifa": 212194,
@@ -11734,13 +12606,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Julian Weigl",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "魏格尔",
+        "ja": "ユリアン・ヴァイグル"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "尤利安·魏格尔"
+        ],
+        "ja": [
+          "ヴァイグル"
+        ]
       },
       "externalIds": {
         "sofifa": 222028,
@@ -11795,13 +12671,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Julio Cesar",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "朱利奥·塞萨尔",
+        "ja": "ジュリオ・セザール"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "塞萨尔"
+        ],
+        "ja": [
+          "J・セザール"
+        ]
       },
       "externalIds": {
         "sofifa": 48717,
@@ -11856,13 +12736,18 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Kai Havertz",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "哈弗茨",
+        "ja": "カイ・ハフェルツ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "凯·哈弗茨"
+        ],
+        "ja": [
+          "ハフェルツ",
+          "ハヴァーツ"
+        ]
       },
       "externalIds": {
         "sofifa": 235790,
@@ -11901,13 +12786,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Kaka",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "卡卡",
+        "ja": "カカ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "里卡多·卡卡"
+        ],
+        "ja": [
+          "リカルド・カカ"
+        ]
       },
       "externalIds": {
         "sofifa": 138449,
@@ -11962,13 +12851,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Kalidou Koulibaly",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "库利巴利",
+        "ja": "カリドゥ・クリバリ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "卡利杜·库利巴利"
+        ],
+        "ja": [
+          "クリバリ"
+        ]
       },
       "externalIds": {
         "sofifa": 201024,
@@ -12005,13 +12898,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Kamil Glik",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "格利克",
+        "ja": "カミル・グリク"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "卡米尔·格利克"
+        ],
+        "ja": [
+          "グリク"
+        ]
       },
       "externalIds": {
         "sofifa": 190547,
@@ -12066,13 +12963,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Karim Adeyemi",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "阿德耶米",
+        "ja": "カリム・アデイェミ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "卡里姆·阿德耶米"
+        ],
+        "ja": [
+          "アデイェミ"
+        ]
       },
       "externalIds": {
         "sofifa": 251852,
@@ -12109,13 +13010,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Karim Benzema",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "本泽马",
+        "ja": "カリム・ベンゼマ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "卡里姆·本泽马"
+        ],
+        "ja": [
+          "ベンゼマ"
+        ]
       },
       "externalIds": {
         "sofifa": 165153,
@@ -12206,13 +13111,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Kasper Schmeichel",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "卡斯帕·舒梅切尔",
+        "ja": "カスパー・シュマイケル"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "小舒梅切尔"
+        ],
+        "ja": [
+          "K・シュマイケル"
+        ]
       },
       "externalIds": {
         "sofifa": 163587,
@@ -12267,13 +13176,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Keisuke Honda",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "本田圭佑",
+        "ja": "本田圭佑"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "本田"
+        ],
+        "ja": [
+          "ホンダ"
+        ]
       },
       "externalIds": {
         "sofifa": 186581,
@@ -12328,13 +13241,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Kepa Arrizabalaga",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "凯帕",
+        "ja": "ケパ・アリサバラガ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "凯帕·阿里萨瓦拉加"
+        ],
+        "ja": [
+          "ケパ"
+        ]
       },
       "externalIds": {
         "sofifa": 206585,
@@ -12371,13 +13288,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Kevin De Bruyne",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "德布劳内",
+        "ja": "ケヴィン・デ・ブライネ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "凯文·德布劳内"
+        ],
+        "ja": [
+          "デ・ブライネ"
+        ]
       },
       "externalIds": {
         "sofifa": 192985,
@@ -12414,13 +13335,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Kevin-Prince Boateng",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "凯文-普林斯·博阿滕",
+        "ja": "ケヴィン＝プリンス・ボアテング"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "大博阿滕"
+        ],
+        "ja": [
+          "K・P・ボアテング"
+        ]
       },
       "externalIds": {
         "sofifa": 173909,
@@ -12475,13 +13400,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Keylor Navas",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "纳瓦斯",
+        "ja": "ケイロル・ナバス"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "凯洛尔·纳瓦斯"
+        ],
+        "ja": [
+          "ナバス"
+        ]
       },
       "externalIds": {
         "sofifa": 193041,
@@ -12536,13 +13465,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Khvicha Kvaratskhelia",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "克瓦拉茨赫利亚",
+        "ja": "フヴィチャ・クヴァラツヘリア"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "赫维恰·克瓦拉茨赫利亚"
+        ],
+        "ja": [
+          "クヴァラツヘリア"
+        ]
       },
       "externalIds": {
         "sofifa": 247635,
@@ -12579,13 +13512,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Kieran Tierney",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "蒂尔尼",
+        "ja": "キーラン・ティアニー"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "基兰·蒂尔尼"
+        ],
+        "ja": [
+          "ティアニー"
+        ]
       },
       "externalIds": {
         "sofifa": 226491,
@@ -12640,13 +13577,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Kim Min-jae",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "金玟哉",
+        "ja": "キム・ミンジェ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "金敏宰"
+        ],
+        "ja": [
+          "金玟哉"
+        ]
       },
       "externalIds": {
         "sofifa": 237086,
@@ -12683,13 +13624,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Kingsley Coman",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "科曼",
+        "ja": "キングスレイ・コマン"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "金斯利·科曼"
+        ],
+        "ja": [
+          "コマン"
+        ]
       },
       "externalIds": {
         "sofifa": 213345,
@@ -12726,13 +13671,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Koke",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "科克",
+        "ja": "コケ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "豪尔赫·科克"
+        ],
+        "ja": [
+          "ホルヘ・レスレクシオン"
+        ]
       },
       "externalIds": {
         "sofifa": 193747,
@@ -12787,13 +13736,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Kolo Toure",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "科洛·图雷",
+        "ja": "コロ・トゥーレ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "大图雷"
+        ],
+        "ja": [
+          "K・トゥーレ"
+        ]
       },
       "externalIds": {
         "sofifa": 119152,
@@ -12850,13 +13803,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Kyle Walker",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "凯尔·沃克",
+        "ja": "カイル・ウォーカー"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "沃克"
+        ],
+        "ja": [
+          "ウォーカー"
+        ]
       },
       "externalIds": {
         "sofifa": 188377,
@@ -12893,13 +13850,18 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Kylian Mbappe",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "姆巴佩",
+        "ja": "キリアン・エムバペ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "基利安·姆巴佩"
+        ],
+        "ja": [
+          "エムバペ",
+          "ムバッペ"
+        ]
       },
       "externalIds": {
         "sofifa": 231747,
@@ -12954,13 +13916,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Lasse Schone",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "舍内",
+        "ja": "ラッセ・シェーネ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "拉塞·舍内"
+        ],
+        "ja": [
+          "シェーネ"
+        ]
       },
       "externalIds": {
         "sofifa": 172143,
@@ -13015,13 +13981,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Lautaro Martinez",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "劳塔罗·马丁内斯",
+        "ja": "ラウタロ・マルティネス"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "劳塔罗"
+        ],
+        "ja": [
+          "ラウタロ"
+        ]
       },
       "externalIds": {
         "sofifa": 231478,
@@ -13060,13 +14030,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Lee Young-pyo",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "李荣杓",
+        "ja": "イ・ヨンピョ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "李永杓"
+        ],
+        "ja": [
+          "李栄杓"
+        ]
       },
       "externalIds": {
         "sofifa": null,
@@ -13121,13 +14095,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Leon Goretzka",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "格雷茨卡",
+        "ja": "レオン・ゴレツカ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "莱昂·格雷茨卡"
+        ],
+        "ja": [
+          "ゴレツカ"
+        ]
       },
       "externalIds": {
         "sofifa": 209658,
@@ -13184,13 +14162,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Leonardo Bonucci",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "博努奇",
+        "ja": "レオナルド・ボヌッチ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "莱昂纳多·博努奇"
+        ],
+        "ja": [
+          "ボヌッチ"
+        ]
       },
       "externalIds": {
         "sofifa": 184344,
@@ -13264,13 +14246,18 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Lilian Thuram",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "利利安·图拉姆",
+        "ja": "リリアン・テュラム"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "老图拉姆",
+          "图拉姆"
+        ],
+        "ja": [
+          "L・テュラム"
+        ]
       },
       "externalIds": {
         "sofifa": null,
@@ -13310,13 +14297,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Lima",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "利马",
+        "ja": "リマ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "罗德里戈·利马"
+        ],
+        "ja": [
+          "ロドリゴ・リマ"
+        ]
       },
       "externalIds": {
         "sofifa": 180695,
@@ -13371,13 +14362,18 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Lionel Messi",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "梅西",
+        "ja": "リオネル・メッシ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "里奥·梅西",
+          "莱昂内尔·梅西"
+        ],
+        "ja": [
+          "メッシ"
+        ]
       },
       "externalIds": {
         "sofifa": 158023,
@@ -13483,13 +14479,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Luca Marchegiani",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "马切吉亚尼",
+        "ja": "ルカ・マルケジャーニ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "卢卡·马切吉亚尼"
+        ],
+        "ja": [
+          "マルケジャーニ"
+        ]
       },
       "externalIds": {
         "sofifa": null,
@@ -13526,13 +14526,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Lucas Hernandez",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "卢卡斯·埃尔南德斯",
+        "ja": "リュカ・エルナンデス"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "L·埃尔南德斯"
+        ],
+        "ja": [
+          "L・エルナンデス"
+        ]
       },
       "externalIds": {
         "sofifa": 220814,
@@ -13569,13 +14573,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Lucio",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "卢西奥",
+        "ja": "ルシオ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "卢西马尔·费雷拉"
+        ],
+        "ja": [
+          "ルシマール・フェレイラ"
+        ]
       },
       "externalIds": {
         "sofifa": 107715,
@@ -13630,13 +14638,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Luis Figo",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "菲戈",
+        "ja": "ルイス・フィーゴ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "路易斯·菲戈"
+        ],
+        "ja": [
+          "フィーゴ"
+        ]
       },
       "externalIds": {
         "sofifa": null,
@@ -13673,13 +14685,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Luis Garcia",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "路易斯·加西亚",
+        "ja": "ルイス・ガルシア"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "加西亚"
+        ],
+        "ja": [
+          "L・ガルシア"
+        ]
       },
       "externalIds": {
         "sofifa": null,
@@ -13734,13 +14750,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Luis Suarez",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "苏亚雷斯",
+        "ja": "ルイス・スアレス"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "路易斯·苏亚雷斯"
+        ],
+        "ja": [
+          "スアレス"
+        ]
       },
       "externalIds": {
         "sofifa": 176580,
@@ -13812,13 +14832,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Luisao",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "路易松",
+        "ja": "ルイゾン"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "安德森·路易松"
+        ],
+        "ja": [
+          "アンデルソン・ルイゾン"
+        ]
       },
       "externalIds": {
         "sofifa": 148711,
@@ -13873,13 +14897,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Luka Modric",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "莫德里奇",
+        "ja": "ルカ・モドリッチ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "卢卡·莫德里奇"
+        ],
+        "ja": [
+          "モドリッチ"
+        ]
       },
       "externalIds": {
         "sofifa": 177003,
@@ -13953,13 +14981,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Lukas Hradecky",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "赫拉德茨基",
+        "ja": "ルーカス・フラデツキー"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "卢卡斯·赫拉德茨基"
+        ],
+        "ja": [
+          "フラデツキー"
+        ]
       },
       "externalIds": {
         "sofifa": 190941,
@@ -13996,13 +15028,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Lukasz Piszczek",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "皮什切克",
+        "ja": "ウカシュ・ピシュチェク"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "卢卡什·皮什切克"
+        ],
+        "ja": [
+          "ピシュチェク"
+        ]
       },
       "externalIds": {
         "sofifa": 173771,
@@ -14091,13 +15127,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Luke Shaw",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "卢克·肖",
+        "ja": "ルーク・ショー"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "肖"
+        ],
+        "ja": [
+          "ショー"
+        ]
       },
       "externalIds": {
         "sofifa": 205988,
@@ -14134,13 +15174,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Maicon",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "麦孔",
+        "ja": "マイコン"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "道格拉斯·麦孔"
+        ],
+        "ja": [
+          "マイコン・シセナンド"
+        ]
       },
       "externalIds": {
         "sofifa": 135455,
@@ -14195,13 +15239,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Maniche",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "马尼切",
+        "ja": "マニシェ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "努诺·马尼切"
+        ],
+        "ja": [
+          "ヌノ・リベイロ"
+        ]
       },
       "externalIds": {
         "sofifa": null,
@@ -14238,13 +15286,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Manuel Almunia",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "阿穆尼亚",
+        "ja": "マヌエル・アルムニア"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "曼努埃尔·阿穆尼亚"
+        ],
+        "ja": [
+          "アルムニア"
+        ]
       },
       "externalIds": {
         "sofifa": 113343,
@@ -14299,13 +15351,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Manuel Neuer",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "诺伊尔",
+        "ja": "マヌエル・ノイアー"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "曼努埃尔·诺伊尔"
+        ],
+        "ja": [
+          "ノイアー"
+        ]
       },
       "externalIds": {
         "sofifa": 167495,
@@ -14379,13 +15435,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Manuel Pablo",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "曼努埃尔·帕布罗",
+        "ja": "マヌエル・パブロ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "帕布罗"
+        ],
+        "ja": [
+          "M・パブロ"
+        ]
       },
       "externalIds": {
         "sofifa": null,
@@ -14422,13 +15482,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Marc Albrighton",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "奥尔布赖顿",
+        "ja": "マーク・オルブライトン"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "马克·奥尔布赖顿"
+        ],
+        "ja": [
+          "オルブライトン"
+        ]
       },
       "externalIds": {
         "sofifa": 183130,
@@ -14483,13 +15547,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Marc-Andre ter Stegen",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "特尔施特根",
+        "ja": "マルク＝アンドレ・テア・シュテーゲン"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "马克-安德烈·特尔施特根"
+        ],
+        "ja": [
+          "テア・シュテーゲン"
+        ]
       },
       "externalIds": {
         "sofifa": 192448,
@@ -14563,13 +15631,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Marcelo",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "马塞洛",
+        "ja": "マルセロ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "马塞洛·维埃拉"
+        ],
+        "ja": [
+          "マルセロ・ヴィエイラ"
+        ]
       },
       "externalIds": {
         "sofifa": 176676,
@@ -14658,13 +15730,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Marcelo Brozovic",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "布罗佐维奇",
+        "ja": "マルセロ・ブロゾヴィッチ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "马塞洛·布罗佐维奇"
+        ],
+        "ja": [
+          "ブロゾヴィッチ"
+        ]
       },
       "externalIds": {
         "sofifa": 216352,
@@ -14721,13 +15797,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Marcelo Salas",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "萨拉斯",
+        "ja": "マルセロ・サラス"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "马塞洛·萨拉斯"
+        ],
+        "ja": [
+          "サラス"
+        ]
       },
       "externalIds": {
         "sofifa": null,
@@ -14764,13 +15844,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Marco Reus",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "罗伊斯",
+        "ja": "マルコ・ロイス"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "马尔科·罗伊斯"
+        ],
+        "ja": [
+          "ロイス"
+        ]
       },
       "externalIds": {
         "sofifa": 188350,
@@ -14859,13 +15943,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Marcus Rashford",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "拉什福德",
+        "ja": "マーカス・ラッシュフォード"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "马库斯·拉什福德"
+        ],
+        "ja": [
+          "ラッシュフォード"
+        ]
       },
       "externalIds": {
         "sofifa": 231677,
@@ -14902,13 +15990,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Marcus Thuram",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "马库斯·图拉姆",
+        "ja": "マルクス・テュラム"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "小图拉姆"
+        ],
+        "ja": [
+          "M・テュラム"
+        ]
       },
       "externalIds": {
         "sofifa": 228093,
@@ -14945,13 +16037,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Mario Mandzukic",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "曼朱基奇",
+        "ja": "マリオ・マンジュキッチ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "马里奥·曼朱基奇"
+        ],
+        "ja": [
+          "マンジュキッチ"
+        ]
       },
       "externalIds": {
         "sofifa": 181783,
@@ -15006,13 +16102,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Mark van Bommel",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "范博梅尔",
+        "ja": "マルク・ファン・ボメル"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "马克·范博梅尔"
+        ],
+        "ja": [
+          "ファン・ボメル"
+        ]
       },
       "externalIds": {
         "sofifa": 19765,
@@ -15086,13 +16186,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Marten de Roon",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "德容恩",
+        "ja": "マルテン・デ・ローン"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "马尔滕·德容恩"
+        ],
+        "ja": [
+          "デ・ローン"
+        ]
       },
       "externalIds": {
         "sofifa": 208461,
@@ -15147,13 +16251,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Mason Mount",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "芒特",
+        "ja": "メイソン・マウント"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "梅森·芒特"
+        ],
+        "ja": [
+          "マウント"
+        ]
       },
       "externalIds": {
         "sofifa": 233064,
@@ -15190,13 +16298,19 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Mateo Kovacic",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "科瓦契奇",
+        "ja": "マテオ・コヴァチッチ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "马特奥·科瓦契奇",
+          "科瓦西奇"
+        ],
+        "ja": [
+          "コヴァチッチ",
+          "コバチッチ"
+        ]
       },
       "externalIds": {
         "sofifa": 207410,
@@ -15233,13 +16347,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Mathieu Flamini",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "弗拉米尼",
+        "ja": "マチュー・フラミニ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "马蒂厄·弗拉米尼"
+        ],
+        "ja": [
+          "フラミニ"
+        ]
       },
       "externalIds": {
         "sofifa": 156722,
@@ -15294,13 +16412,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Mats Hummels",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "胡梅尔斯",
+        "ja": "マッツ・フンメルス"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "马茨·胡梅尔斯"
+        ],
+        "ja": [
+          "フンメルス"
+        ]
       },
       "externalIds": {
         "sofifa": 178603,
@@ -15374,13 +16496,18 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Matthijs de Ligt",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "德利赫特",
+        "ja": "マタイス・デ・リフト"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "马泰斯·德利赫特",
+          "德里赫特"
+        ],
+        "ja": [
+          "デ・リフト"
+        ]
       },
       "externalIds": {
         "sofifa": 235243,
@@ -15439,13 +16566,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Mattia Destro",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "德斯特罗",
+        "ja": "マッティア・デストロ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "马蒂亚·德斯特罗"
+        ],
+        "ja": [
+          "デストロ"
+        ]
       },
       "externalIds": {
         "sofifa": 193338,
@@ -15500,13 +16631,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Mauro Camoranesi",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "卡莫拉内西",
+        "ja": "マウロ・カモラネージ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "毛罗·卡莫拉内西"
+        ],
+        "ja": [
+          "カモラネージ"
+        ]
       },
       "externalIds": {
         "sofifa": null,
@@ -15543,13 +16678,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Mauro Icardi",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "伊卡尔迪",
+        "ja": "マウロ・イカルディ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "毛罗·伊卡尔迪"
+        ],
+        "ja": [
+          "イカルディ"
+        ]
       },
       "externalIds": {
         "sofifa": 201399,
@@ -15604,13 +16743,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Mauro Silva",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "毛罗·席尔瓦",
+        "ja": "マウロ・シルバ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "M·席尔瓦"
+        ],
+        "ja": [
+          "マウロ・シウバ"
+        ]
       },
       "externalIds": {
         "sofifa": null,
@@ -15647,13 +16790,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Maxi Pereira",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "马克西·佩雷拉",
+        "ja": "マキシ・ペレイラ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "佩雷拉"
+        ],
+        "ja": [
+          "M・ペレイラ"
+        ]
       },
       "externalIds": {
         "sofifa": 182862,
@@ -15708,13 +16855,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Mehmet Scholl",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "绍尔",
+        "ja": "メーメット・ショル"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "梅赫梅特·绍尔"
+        ],
+        "ja": [
+          "ショル"
+        ]
       },
       "externalIds": {
         "sofifa": null,
@@ -15751,13 +16902,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Mesut Ozil",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "厄齐尔",
+        "ja": "メスト・エジル"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "梅苏特·厄齐尔"
+        ],
+        "ja": [
+          "エジル"
+        ]
       },
       "externalIds": {
         "sofifa": 176635,
@@ -15812,13 +16967,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Michael Carrick",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "卡里克",
+        "ja": "マイケル・キャリック"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "迈克尔·卡里克"
+        ],
+        "ja": [
+          "キャリック"
+        ]
       },
       "externalIds": {
         "sofifa": 21146,
@@ -15890,13 +17049,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Michel Salgado",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "萨尔加多",
+        "ja": "ミチェル・サルガド"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "米歇尔·萨尔加多"
+        ],
+        "ja": [
+          "サルガド"
+        ]
       },
       "externalIds": {
         "sofifa": null,
@@ -15933,13 +17096,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Mike Maignan",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "迈尼昂",
+        "ja": "マイク・メニャン"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "迈克·迈尼昂"
+        ],
+        "ja": [
+          "メニャン"
+        ]
       },
       "externalIds": {
         "sofifa": 215698,
@@ -15980,13 +17147,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Milan Baros",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "巴罗什",
+        "ja": "ミラン・バロシュ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "米兰·巴罗什"
+        ],
+        "ja": [
+          "バロシュ"
+        ]
       },
       "externalIds": {
         "sofifa": null,
@@ -16041,13 +17212,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Milan Skriniar",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "什克里尼亚尔",
+        "ja": "ミラン・シュクリニアル"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "米兰·什克里尼亚尔"
+        ],
+        "ja": [
+          "シュクリニアル"
+        ]
       },
       "externalIds": {
         "sofifa": 232363,
@@ -16084,13 +17259,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Miralem Pjanic",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "皮亚尼奇",
+        "ja": "ミラレム・ピャニッチ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "米拉勒姆·皮亚尼奇"
+        ],
+        "ja": [
+          "ピャニッチ"
+        ]
       },
       "externalIds": {
         "sofifa": 180206,
@@ -16145,13 +17324,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Miranda",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "米兰达",
+        "ja": "ミランダ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "若昂·米兰达"
+        ],
+        "ja": [
+          "ジョアン・ミランダ"
+        ]
       },
       "externalIds": {
         "sofifa": 168609,
@@ -16225,13 +17408,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Mirko Vucinic",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "武齐尼奇",
+        "ja": "ミルコ・ヴチニッチ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "米尔科·武齐尼奇"
+        ],
+        "ja": [
+          "ヴチニッチ"
+        ]
       },
       "externalIds": {
         "sofifa": 106850,
@@ -16286,13 +17473,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Mista",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "米斯塔",
+        "ja": "ミスタ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "米格尔·安赫尔·费雷尔"
+        ],
+        "ja": [
+          "ミゲル・アンヘル・フェレール"
+        ]
       },
       "externalIds": {
         "sofifa": null,
@@ -16329,13 +17520,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Mohamed Salah",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "萨拉赫",
+        "ja": "モハメド・サラー"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "穆罕默德·萨拉赫"
+        ],
+        "ja": [
+          "サラー"
+        ]
       },
       "externalIds": {
         "sofifa": 209331,
@@ -16390,13 +17585,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "N'Golo Kante",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "坎特",
+        "ja": "エンゴロ・カンテ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "恩戈洛·坎特"
+        ],
+        "ja": [
+          "カンテ"
+        ]
       },
       "externalIds": {
         "sofifa": 215914,
@@ -16442,13 +17641,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Nemanja Matic",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "马蒂奇",
+        "ja": "ネマニャ・マティッチ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "内马尼亚·马蒂奇"
+        ],
+        "ja": [
+          "マティッチ"
+        ]
       },
       "externalIds": {
         "sofifa": 191202,
@@ -16522,13 +17725,18 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Nemanja Vidic",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "维迪奇",
+        "ja": "ネマニャ・ヴィディッチ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "内马尼亚·维迪奇"
+        ],
+        "ja": [
+          "ヴィディッチ",
+          "ビディッチ"
+        ]
       },
       "externalIds": {
         "sofifa": 140601,
@@ -16583,13 +17791,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Neven Subotic",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "苏博蒂奇",
+        "ja": "ネヴェン・スボティッチ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "内文·苏博蒂奇"
+        ],
+        "ja": [
+          "スボティッチ"
+        ]
       },
       "externalIds": {
         "sofifa": 183556,
@@ -16644,13 +17856,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Nico Schlotterbeck",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "施洛特贝克",
+        "ja": "ニコ・シュロッターベック"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "尼科·施洛特贝克"
+        ],
+        "ja": [
+          "シュロッターベック"
+        ]
       },
       "externalIds": {
         "sofifa": 247819,
@@ -16687,13 +17903,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Nicolas Gaitan",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "盖坦",
+        "ja": "ニコラス・ガイタン"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "尼古拉斯·盖坦"
+        ],
+        "ja": [
+          "ガイタン"
+        ]
       },
       "externalIds": {
         "sofifa": 184144,
@@ -16748,13 +17968,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Nicolas Tagliafico",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "塔利亚菲科",
+        "ja": "ニコラス・タグリアフィコ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "尼古拉斯·塔利亚菲科"
+        ],
+        "ja": [
+          "タグリアフィコ"
+        ]
       },
       "externalIds": {
         "sofifa": 211256,
@@ -16809,13 +18033,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Nicolo Barella",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "巴雷拉",
+        "ja": "ニコロ・バレッラ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "尼科洛·巴雷拉"
+        ],
+        "ja": [
+          "バレッラ"
+        ]
       },
       "externalIds": {
         "sofifa": 224232,
@@ -16854,13 +18082,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Nigel de Jong",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "奈杰尔·德容",
+        "ja": "ナイジェル・デ・ヨング"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "N·德容"
+        ],
+        "ja": [
+          "N・デ・ヨング"
+        ]
       },
       "externalIds": {
         "sofifa": 53578,
@@ -16915,13 +18147,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Noureddine Naybet",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "奈贝特",
+        "ja": "ヌレディン・ナイベト"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "努尔丁·奈贝特"
+        ],
+        "ja": [
+          "ナイベト"
+        ]
       },
       "externalIds": {
         "sofifa": null,
@@ -16958,13 +18194,18 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Oliver Kahn",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "卡恩",
+        "ja": "オリヴァー・カーン"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "奥利弗·卡恩"
+        ],
+        "ja": [
+          "オリバー・カーン",
+          "カーン"
+        ]
       },
       "externalIds": {
         "sofifa": null,
@@ -17001,13 +18242,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Olivier Giroud",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "吉鲁",
+        "ja": "オリヴィエ・ジルー"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "奥利维耶·吉鲁"
+        ],
+        "ja": [
+          "ジルー"
+        ]
       },
       "externalIds": {
         "sofifa": 178509,
@@ -17044,13 +18289,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Ousmane Dembele",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "登贝莱",
+        "ja": "ウスマン・デンベレ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "奥斯曼·登贝莱"
+        ],
+        "ja": [
+          "デンベレ"
+        ]
       },
       "externalIds": {
         "sofifa": 231443,
@@ -17109,13 +18358,18 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Owen Hargreaves",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "哈格里夫斯",
+        "ja": "オーウェン・ハーグリーヴス"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "欧文·哈格里夫斯"
+        ],
+        "ja": [
+          "ハーグリーヴス",
+          "ハーグリーブス"
+        ]
       },
       "externalIds": {
         "sofifa": null,
@@ -17152,13 +18406,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Pablo Aimar",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "艾马尔",
+        "ja": "パブロ・アイマール"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "帕布罗·艾马尔"
+        ],
+        "ja": [
+          "アイマール"
+        ]
       },
       "externalIds": {
         "sofifa": null,
@@ -17195,13 +18453,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Pablo Zabaleta",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "萨巴莱塔",
+        "ja": "パブロ・サバレタ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "帕布罗·萨巴莱塔"
+        ],
+        "ja": [
+          "サバレタ"
+        ]
       },
       "externalIds": {
         "sofifa": 142784,
@@ -17256,13 +18518,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Paolo Maldini",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "马尔蒂尼",
+        "ja": "パオロ・マルディーニ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "保罗·马尔蒂尼"
+        ],
+        "ja": [
+          "マルディーニ"
+        ]
       },
       "externalIds": {
         "sofifa": null,
@@ -17317,13 +18583,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Park Ji-sung",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "朴智星",
+        "ja": "パク・チソン"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "朴知星"
+        ],
+        "ja": [
+          "朴智星"
+        ]
       },
       "externalIds": {
         "sofifa": null,
@@ -17378,13 +18648,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Patrice Evra",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "埃弗拉",
+        "ja": "パトリス・エヴラ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "帕特里斯·埃弗拉"
+        ],
+        "ja": [
+          "エヴラ"
+        ]
       },
       "externalIds": {
         "sofifa": 52091,
@@ -17456,13 +18730,18 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Patrick Vieira",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "维埃拉",
+        "ja": "パトリック・ヴィエラ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "帕特里克·维埃拉"
+        ],
+        "ja": [
+          "ヴィエラ",
+          "ビエラ"
+        ]
       },
       "externalIds": {
         "sofifa": null,
@@ -17499,13 +18778,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Patrik Andersson",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "帕特里克·安德森",
+        "ja": "パトリック・アンデルソン"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "安德森"
+        ],
+        "ja": [
+          "P・アンデルソン"
+        ]
       },
       "externalIds": {
         "sofifa": null,
@@ -17542,13 +18825,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Paul Scholes",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "斯科尔斯",
+        "ja": "ポール・スコールズ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "保罗·斯科尔斯"
+        ],
+        "ja": [
+          "スコールズ"
+        ]
       },
       "externalIds": {
         "sofifa": 246,
@@ -17605,13 +18892,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Pauleta",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "保莱塔",
+        "ja": "パウレタ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "佩德罗·保莱塔"
+        ],
+        "ja": [
+          "ペドロ・パウレタ"
+        ]
       },
       "externalIds": {
         "sofifa": null,
@@ -17648,13 +18939,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Paulo Dybala",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "迪巴拉",
+        "ja": "パウロ・ディバラ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "保罗·迪巴拉"
+        ],
+        "ja": [
+          "ディバラ"
+        ]
       },
       "externalIds": {
         "sofifa": 211110,
@@ -17709,13 +19004,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Paulo Ferreira",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "保罗·费雷拉",
+        "ja": "パウロ・フェレイラ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "费雷拉"
+        ],
+        "ja": [
+          "P・フェレイラ"
+        ]
       },
       "externalIds": {
         "sofifa": null,
@@ -17752,13 +19051,18 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Pavel Nedved",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "内德维德",
+        "ja": "パヴェル・ネドヴェド"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "帕维尔·内德维德"
+        ],
+        "ja": [
+          "ネドヴェド",
+          "ネドベド"
+        ]
       },
       "externalIds": {
         "sofifa": null,
@@ -17798,13 +19102,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Pedri",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "佩德里",
+        "ja": "ペドリ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "佩德罗·冈萨雷斯"
+        ],
+        "ja": [
+          "ペドロ・ゴンサレス"
+        ]
       },
       "externalIds": {
         "sofifa": 251854,
@@ -17841,13 +19149,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Pepe",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "佩佩",
+        "ja": "ペペ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "凯普勒·佩佩"
+        ],
+        "ja": [
+          "ケプレル・ペペ"
+        ]
       },
       "externalIds": {
         "sofifa": 120533,
@@ -17902,13 +19214,18 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Peter Schmeichel",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "彼得·舒梅切尔",
+        "ja": "ピーター・シュマイケル"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "老舒梅切尔",
+          "舒梅切尔"
+        ],
+        "ja": [
+          "P・シュマイケル"
+        ]
       },
       "externalIds": {
         "sofifa": null,
@@ -17945,13 +19262,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Petr Cech",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "切赫",
+        "ja": "ペトル・チェフ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "彼得·切赫"
+        ],
+        "ja": [
+          "チェフ"
+        ]
       },
       "externalIds": {
         "sofifa": 48940,
@@ -18023,13 +19344,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Philipp Lahm",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "拉姆",
+        "ja": "フィリップ・ラーム"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "菲利普·拉姆"
+        ],
+        "ja": [
+          "ラーム"
+        ]
       },
       "externalIds": {
         "sofifa": 121939,
@@ -18084,13 +19409,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Philippe Mexes",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "梅克斯",
+        "ja": "フィリップ・メクセス"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "菲利普·梅克斯"
+        ],
+        "ja": [
+          "メクセス"
+        ]
       },
       "externalIds": {
         "sofifa": 41635,
@@ -18145,13 +19474,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Phillip Cocu",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "科库",
+        "ja": "フィリップ・コクー"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "菲利普·科库"
+        ],
+        "ja": [
+          "コクー"
+        ]
       },
       "externalIds": {
         "sofifa": null,
@@ -18206,13 +19539,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Pierluigi Gollini",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "戈利尼",
+        "ja": "ピエルルイジ・ゴッリーニ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "皮耶路易吉·戈利尼"
+        ],
+        "ja": [
+          "ゴッリーニ"
+        ]
       },
       "externalIds": {
         "sofifa": 211515,
@@ -18267,13 +19604,18 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Pierre-Emerick Aubameyang",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "奥巴梅扬",
+        "ja": "ピエール＝エメリク・オーバメヤン"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "皮埃尔-埃默里克·奥巴梅扬"
+        ],
+        "ja": [
+          "オーバメヤン",
+          "オバメヤン"
+        ]
       },
       "externalIds": {
         "sofifa": 188567,
@@ -18368,13 +19710,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Pierre Kalulu",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "卡卢卢",
+        "ja": "ピエール・カルル"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "皮埃尔·卡卢卢"
+        ],
+        "ja": [
+          "カルル"
+        ]
       },
       "externalIds": {
         "sofifa": 255654,
@@ -18411,13 +19757,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Piotr Zielinski",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "泽林斯基",
+        "ja": "ピオトル・ジエリンスキ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "彼得·泽林斯基"
+        ],
+        "ja": [
+          "ジエリンスキ"
+        ]
       },
       "externalIds": {
         "sofifa": 210406,
@@ -18454,13 +19804,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Radamel Falcao",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "法尔考",
+        "ja": "ラダメル・ファルカオ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "拉达梅尔·法尔考"
+        ],
+        "ja": [
+          "ファルカオ"
+        ]
       },
       "externalIds": {
         "sofifa": 167397,
@@ -18515,13 +19869,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Rafael",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "拉斐尔",
+        "ja": "ラファエウ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "拉斐尔·达席尔瓦"
+        ],
+        "ja": [
+          "ラファエウ・ダ・シウバ"
+        ]
       },
       "externalIds": {
         "sofifa": 189681,
@@ -18576,13 +19934,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Rafael Leao",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "拉斐尔·莱奥",
+        "ja": "ラファエル・レオン"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "莱奥"
+        ],
+        "ja": [
+          "レオン"
+        ]
       },
       "externalIds": {
         "sofifa": 241721,
@@ -18619,13 +19981,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Rafael Toloi",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "托洛伊",
+        "ja": "ラファエル・トロイ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "拉斐尔·托洛伊"
+        ],
+        "ja": [
+          "トロイ"
+        ]
       },
       "externalIds": {
         "sofifa": 187598,
@@ -18680,13 +20046,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Raheem Sterling",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "斯特林",
+        "ja": "ラヒーム・スターリング"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "拉希姆·斯特林"
+        ],
+        "ja": [
+          "スターリング"
+        ]
       },
       "externalIds": {
         "sofifa": 202652,
@@ -18723,13 +20093,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Ramires",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "拉米雷斯",
+        "ja": "ラミレス"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "拉米雷斯·桑托斯"
+        ],
+        "ja": [
+          "ラミレス・サントス"
+        ]
       },
       "externalIds": {
         "sofifa": 184943,
@@ -18784,13 +20158,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Raphael Guerreiro",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "格雷罗",
+        "ja": "ラファエル・ゲレイロ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "拉斐尔·格雷罗"
+        ],
+        "ja": [
+          "ゲレイロ"
+        ]
       },
       "externalIds": {
         "sofifa": 209889,
@@ -18847,13 +20225,18 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Raphael Varane",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "瓦拉内",
+        "ja": "ラファエル・ヴァラン"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "拉斐尔·瓦拉内"
+        ],
+        "ja": [
+          "ヴァラン",
+          "バラン"
+        ]
       },
       "externalIds": {
         "sofifa": 201535,
@@ -18912,13 +20295,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Raul",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "劳尔",
+        "ja": "ラウール"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "劳尔·冈萨雷斯"
+        ],
+        "ja": [
+          "ラウール・ゴンサレス"
+        ]
       },
       "externalIds": {
         "sofifa": null,
@@ -18955,13 +20342,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Reece James",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "里斯·詹姆斯",
+        "ja": "リース・ジェームズ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "詹姆斯"
+        ],
+        "ja": [
+          "R・ジェームズ"
+        ]
       },
       "externalIds": {
         "sofifa": 238074,
@@ -18998,13 +20389,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Reinildo Mandava",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "雷尼尔多",
+        "ja": "ヘイニウド・マンダヴァ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "雷尼尔多·曼达瓦"
+        ],
+        "ja": [
+          "ヘイニウド"
+        ]
       },
       "externalIds": {
         "sofifa": 236045,
@@ -19041,13 +20436,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Remo Freuler",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "弗罗伊勒",
+        "ja": "レモ・フロイラー"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "雷莫·弗罗伊勒"
+        ],
+        "ja": [
+          "フロイラー"
+        ]
       },
       "externalIds": {
         "sofifa": 202024,
@@ -19102,13 +20501,18 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Renato Sanches",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "雷纳托·桑谢斯",
+        "ja": "レナト・サンチェス"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "桑谢斯",
+          "桑切斯"
+        ],
+        "ja": [
+          "R・サンチェス"
+        ]
       },
       "externalIds": {
         "sofifa": 230767,
@@ -19145,13 +20549,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Ricardo Carvalho",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "卡瓦略",
+        "ja": "リカルド・カルヴァーリョ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "里卡多·卡瓦略"
+        ],
+        "ja": [
+          "カルヴァーリョ"
+        ]
       },
       "externalIds": {
         "sofifa": null,
@@ -19210,13 +20618,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Rio Ferdinand",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "费迪南德",
+        "ja": "リオ・ファーディナンド"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "里奥·费迪南德"
+        ],
+        "ja": [
+          "ファーディナンド"
+        ]
       },
       "externalIds": {
         "sofifa": 7289,
@@ -19288,13 +20700,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Riyad Mahrez",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "马赫雷斯",
+        "ja": "リヤド・マフレズ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "里亚德·马赫雷斯"
+        ],
+        "ja": [
+          "マフレズ"
+        ]
       },
       "externalIds": {
         "sofifa": 204485,
@@ -19349,13 +20765,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Robert Huth",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "胡特",
+        "ja": "ロベルト・フート"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "罗伯特·胡特"
+        ],
+        "ja": [
+          "フート"
+        ]
       },
       "externalIds": {
         "sofifa": 137785,
@@ -19410,13 +20830,19 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Robert Lewandowski",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "莱万多夫斯基",
+        "ja": "ロベルト・レヴァンドフスキ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "罗伯特·莱万多夫斯基",
+          "莱万"
+        ],
+        "ja": [
+          "レヴァンドフスキ",
+          "レバンドフスキ"
+        ]
       },
       "externalIds": {
         "sofifa": 188545,
@@ -19491,13 +20917,18 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Robert Pires",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "皮雷",
+        "ja": "ロベール・ピレス"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "罗贝尔·皮雷",
+          "皮雷斯"
+        ],
+        "ja": [
+          "ピレス"
+        ]
       },
       "externalIds": {
         "sofifa": null,
@@ -19534,13 +20965,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Roberto Ayala",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "阿亚拉",
+        "ja": "ロベルト・アジャラ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "罗伯托·阿亚拉"
+        ],
+        "ja": [
+          "アジャラ"
+        ]
       },
       "externalIds": {
         "sofifa": null,
@@ -19577,13 +21012,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Roberto Carlos",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "罗伯托·卡洛斯",
+        "ja": "ロベルト・カルロス"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "卡洛斯"
+        ],
+        "ja": [
+          "R・カルロス"
+        ]
       },
       "externalIds": {
         "sofifa": null,
@@ -19620,13 +21059,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Roberto Mancini",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "曼奇尼",
+        "ja": "ロベルト・マンチーニ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "罗伯托·曼奇尼"
+        ],
+        "ja": [
+          "マンチーニ"
+        ]
       },
       "externalIds": {
         "sofifa": null,
@@ -19663,13 +21106,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Roberto Sensini",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "森西尼",
+        "ja": "ロベルト・センシーニ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "罗伯托·森西尼"
+        ],
+        "ja": [
+          "センシーニ"
+        ]
       },
       "externalIds": {
         "sofifa": null,
@@ -19706,13 +21153,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Robin Gosens",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "戈森斯",
+        "ja": "ロビン・ゴセンス"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "罗宾·戈森斯"
+        ],
+        "ja": [
+          "ゴセンス"
+        ]
       },
       "externalIds": {
         "sofifa": 223697,
@@ -19767,13 +21218,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Robin van Persie",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "范佩西",
+        "ja": "ロビン・ファン・ペルシー"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "罗宾·范佩西"
+        ],
+        "ja": [
+          "ファン・ペルシー"
+        ]
       },
       "externalIds": {
         "sofifa": 7826,
@@ -19846,13 +21301,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Robinho",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "罗比尼奥",
+        "ja": "ロビーニョ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "罗布森·德·索萨"
+        ],
+        "ja": [
+          "ロブソン・デ・ソウザ"
+        ]
       },
       "externalIds": {
         "sofifa": 136144,
@@ -19907,13 +21366,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Rodri",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "罗德里",
+        "ja": "ロドリ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "罗德里戈·埃尔南德斯"
+        ],
+        "ja": [
+          "ロドリゴ・エルナンデス"
+        ]
       },
       "externalIds": {
         "sofifa": 231866,
@@ -19950,13 +21413,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Rodrigo",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "罗德里戈",
+        "ja": "ロドリゴ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "罗德里戈·莫雷诺"
+        ],
+        "ja": [
+          "ロドリゴ・モレノ"
+        ]
       },
       "externalIds": {
         "sofifa": 198329,
@@ -20011,13 +21478,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Rodrigo Bentancur",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "本坦库尔",
+        "ja": "ロドリゴ・ベンタンクール"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "罗德里戈·本坦库尔"
+        ],
+        "ja": [
+          "ベンタンクール"
+        ]
       },
       "externalIds": {
         "sofifa": 227535,
@@ -20054,13 +21525,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Roman Burki",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "布尔基",
+        "ja": "ロマン・ビュルキ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "罗曼·布尔基"
+        ],
+        "ja": [
+          "ビュルキ"
+        ]
       },
       "externalIds": {
         "sofifa": 189117,
@@ -20115,13 +21590,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Roman Weidenfeller",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "魏登费勒",
+        "ja": "ロマン・ヴァイデンフェラー"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "罗曼·魏登费勒"
+        ],
+        "ja": [
+          "ヴァイデンフェラー"
+        ]
       },
       "externalIds": {
         "sofifa": 2196,
@@ -20193,13 +21672,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Romelu Lukaku",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "卢卡库",
+        "ja": "ロメル・ルカク"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "罗梅卢·卢卡库"
+        ],
+        "ja": [
+          "ルカク"
+        ]
       },
       "externalIds": {
         "sofifa": 192505,
@@ -20236,13 +21719,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Ronald Araujo",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "阿劳霍",
+        "ja": "ロナルド・アラウホ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "罗纳德·阿劳霍"
+        ],
+        "ja": [
+          "アラウホ"
+        ]
       },
       "externalIds": {
         "sofifa": 253163,
@@ -20279,13 +21766,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Roy Keane",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "罗伊·基恩",
+        "ja": "ロイ・キーン"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "基恩"
+        ],
+        "ja": [
+          "キーン"
+        ]
       },
       "externalIds": {
         "sofifa": null,
@@ -20322,13 +21813,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Roy Makaay",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "马凯",
+        "ja": "ロイ・マカーイ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "罗伊·马凯"
+        ],
+        "ja": [
+          "マカーイ"
+        ]
       },
       "externalIds": {
         "sofifa": null,
@@ -20365,13 +21860,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Ruben Baraja",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "巴拉哈",
+        "ja": "ルベン・バラハ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "鲁本·巴拉哈"
+        ],
+        "ja": [
+          "バラハ"
+        ]
       },
       "externalIds": {
         "sofifa": null,
@@ -20408,13 +21907,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Ruben Dias",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "鲁本·迪亚斯",
+        "ja": "ルベン・ディアス"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "迪亚斯"
+        ],
+        "ja": [
+          "R・ディアス"
+        ]
       },
       "externalIds": {
         "sofifa": 239818,
@@ -20451,13 +21954,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Ryan Giggs",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "吉格斯",
+        "ja": "ライアン・ギグス"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "瑞恩·吉格斯"
+        ],
+        "ja": [
+          "ギグス"
+        ]
       },
       "externalIds": {
         "sofifa": 241,
@@ -20514,13 +22021,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Sadio Mane",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "马内",
+        "ja": "サディオ・マネ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "萨迪奥·马内"
+        ],
+        "ja": [
+          "マネ"
+        ]
       },
       "externalIds": {
         "sofifa": 208722,
@@ -20575,13 +22086,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Sami Hyypia",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "海皮亚",
+        "ja": "サミ・ヒーピア"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "萨米·海皮亚"
+        ],
+        "ja": [
+          "ヒーピア"
+        ]
       },
       "externalIds": {
         "sofifa": null,
@@ -20636,13 +22151,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Sami Khedira",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "赫迪拉",
+        "ja": "サミ・ケディラ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "萨米·赫迪拉"
+        ],
+        "ja": [
+          "ケディラ"
+        ]
       },
       "externalIds": {
         "sofifa": 179846,
@@ -20697,13 +22216,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Samir Handanovic",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "汉达诺维奇",
+        "ja": "サミル・ハンダノヴィッチ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "萨米尔·汉达诺维奇"
+        ],
+        "ja": [
+          "ハンダノヴィッチ"
+        ]
       },
       "externalIds": {
         "sofifa": 162835,
@@ -20760,13 +22283,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Sammy Kuffour",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "库福尔",
+        "ja": "サミー・クフォー"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "萨米·库福尔"
+        ],
+        "ja": [
+          "クフォー"
+        ]
       },
       "externalIds": {
         "sofifa": null,
@@ -20803,13 +22330,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Samuel Eto'o",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "埃托奥",
+        "ja": "サミュエル・エトー"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "萨穆埃尔·埃托奥"
+        ],
+        "ja": [
+          "エトー"
+        ]
       },
       "externalIds": {
         "sofifa": 9676,
@@ -20856,13 +22387,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Sandro Tonali",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "托纳利",
+        "ja": "サンドロ・トナーリ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "桑德罗·托纳利"
+        ],
+        "ja": [
+          "トナーリ"
+        ]
       },
       "externalIds": {
         "sofifa": 241096,
@@ -20899,13 +22434,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Santiago Canizares",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "卡尼萨雷斯",
+        "ja": "サンティアゴ・カニサレス"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "圣地亚哥·卡尼萨雷斯"
+        ],
+        "ja": [
+          "カニサレス"
+        ]
       },
       "externalIds": {
         "sofifa": null,
@@ -20942,13 +22481,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Scott McTominay",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "麦克托米奈",
+        "ja": "スコット・マクトミネイ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "斯科特·麦克托米奈"
+        ],
+        "ja": [
+          "マクトミネイ"
+        ]
       },
       "externalIds": {
         "sofifa": 237238,
@@ -20985,13 +22528,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Sebastien Haller",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "阿莱",
+        "ja": "セバスティアン・アレ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "塞巴斯蒂安·阿莱"
+        ],
+        "ja": [
+          "アレ"
+        ]
       },
       "externalIds": {
         "sofifa": 205693,
@@ -21028,13 +22575,19 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Sergio Aguero",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "阿圭罗",
+        "ja": "セルヒオ・アグエロ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "塞尔希奥·阿圭罗",
+          "昆·阿圭罗"
+        ],
+        "ja": [
+          "アグエロ",
+          "クン・アグエロ"
+        ]
       },
       "externalIds": {
         "sofifa": 153079,
@@ -21089,13 +22642,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Sergio Busquets",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "布斯克茨",
+        "ja": "セルヒオ・ブスケツ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "塞尔希奥·布斯克茨"
+        ],
+        "ja": [
+          "ブスケツ"
+        ]
       },
       "externalIds": {
         "sofifa": 189511,
@@ -21186,13 +22743,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Sergio Ramos",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "拉莫斯",
+        "ja": "セルヒオ・ラモス"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "塞尔希奥·拉莫斯"
+        ],
+        "ja": [
+          "S・ラモス"
+        ]
       },
       "externalIds": {
         "sofifa": 155862,
@@ -21281,13 +22842,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Shinji Kagawa",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "香川真司",
+        "ja": "香川真司"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "香川"
+        ],
+        "ja": [
+          "カガワ"
+        ]
       },
       "externalIds": {
         "sofifa": 189358,
@@ -21361,13 +22926,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Sinisa Mihajlovic",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "米哈伊洛维奇",
+        "ja": "シニシャ・ミハイロヴィッチ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "西尼萨·米哈伊洛维奇"
+        ],
+        "ja": [
+          "ミハイロヴィッチ"
+        ]
       },
       "externalIds": {
         "sofifa": null,
@@ -21404,13 +22973,19 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Sokratis Papastathopoulos",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "帕帕斯塔索普洛斯",
+        "ja": "ソクラティス・パパスタソプーロス"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "索克拉蒂斯·帕帕斯塔索普洛斯",
+          "索克拉蒂斯"
+        ],
+        "ja": [
+          "パパスタソプーロス",
+          "ソクラティス"
+        ]
       },
       "externalIds": {
         "sofifa": 172879,
@@ -21482,13 +23057,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Sol Campbell",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "索尔·坎贝尔",
+        "ja": "ソル・キャンベル"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "坎贝尔"
+        ],
+        "ja": [
+          "キャンベル"
+        ]
       },
       "externalIds": {
         "sofifa": null,
@@ -21525,13 +23104,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Stanislav Lobotka",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "洛博特卡",
+        "ja": "スタニスラフ・ロボトカ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "斯坦尼斯拉夫·洛博特卡"
+        ],
+        "ja": [
+          "ロボトカ"
+        ]
       },
       "externalIds": {
         "sofifa": 216435,
@@ -21568,13 +23151,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Stefan Effenberg",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "埃芬博格",
+        "ja": "シュテファン・エッフェンベルク"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "斯特凡·埃芬博格"
+        ],
+        "ja": [
+          "エッフェンベルク"
+        ]
       },
       "externalIds": {
         "sofifa": null,
@@ -21611,13 +23198,18 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Steven Gerrard",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "杰拉德",
+        "ja": "スティーヴン・ジェラード"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "史蒂文·杰拉德"
+        ],
+        "ja": [
+          "スティーブン・ジェラード",
+          "ジェラード"
+        ]
       },
       "externalIds": {
         "sofifa": null,
@@ -21672,13 +23264,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Sven Bender",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "斯文·本德",
+        "ja": "スヴェン・ベンダー"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "S·本德"
+        ],
+        "ja": [
+          "S・ベンダー"
+        ]
       },
       "externalIds": {
         "sofifa": 177458,
@@ -21733,13 +23329,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Sven Botman",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "博特曼",
+        "ja": "スヴェン・ボトマン"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "斯文·博特曼"
+        ],
+        "ja": [
+          "ボトマン"
+        ]
       },
       "externalIds": {
         "sofifa": 251809,
@@ -21776,13 +23376,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Theo Hernandez",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "特奥·埃尔南德斯",
+        "ja": "テオ・エルナンデス"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "特奥"
+        ],
+        "ja": [
+          "T・エルナンデス"
+        ]
       },
       "externalIds": {
         "sofifa": 232656,
@@ -21819,13 +23423,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Thiago Alcantara",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "蒂亚戈",
+        "ja": "チアゴ・アルカンタラ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "蒂亚戈·阿尔坎塔拉"
+        ],
+        "ja": [
+          "チアゴ"
+        ]
       },
       "externalIds": {
         "sofifa": 189509,
@@ -21880,13 +23488,18 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Thiago Silva",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "蒂亚戈·席尔瓦",
+        "ja": "チアゴ・シウバ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "T·席尔瓦"
+        ],
+        "ja": [
+          "チアゴ・シルバ",
+          "T・シウバ"
+        ]
       },
       "externalIds": {
         "sofifa": 164240,
@@ -21947,13 +23560,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Thibaut Courtois",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "库尔图瓦",
+        "ja": "ティボー・クルトワ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "蒂博·库尔图瓦"
+        ],
+        "ja": [
+          "クルトワ"
+        ]
       },
       "externalIds": {
         "sofifa": 192119,
@@ -22047,13 +23664,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Thierry Henry",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "亨利",
+        "ja": "ティエリ・アンリ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "蒂埃里·亨利"
+        ],
+        "ja": [
+          "アンリ"
+        ]
       },
       "externalIds": {
         "sofifa": null,
@@ -22090,13 +23711,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Thomas Muller",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "托马斯·穆勒",
+        "ja": "トーマス・ミュラー"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "穆勒"
+        ],
+        "ja": [
+          "ミュラー"
+        ]
       },
       "externalIds": {
         "sofifa": 189596,
@@ -22153,13 +23778,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Tiemoue Bakayoko",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "巴卡约科",
+        "ja": "ティエムエ・バカヨコ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "蒂耶穆埃·巴卡约科"
+        ],
+        "ja": [
+          "バカヨコ"
+        ]
       },
       "externalIds": {
         "sofifa": 219809,
@@ -22214,13 +23843,18 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Timo Werner",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "维尔纳",
+        "ja": "ティモ・ヴェルナー"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "蒂莫·维尔纳"
+        ],
+        "ja": [
+          "ヴェルナー",
+          "ベルナー"
+        ]
       },
       "externalIds": {
         "sofifa": 212188,
@@ -22257,13 +23891,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Toni Kroos",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "克罗斯",
+        "ja": "トニ・クロース"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "托尼·克罗斯"
+        ],
+        "ja": [
+          "クロース"
+        ]
       },
       "externalIds": {
         "sofifa": 182521,
@@ -22337,13 +23975,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Trent Alexander-Arnold",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "阿诺德",
+        "ja": "トレント・アレクサンダー＝アーノルド"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "特伦特·亚历山大-阿诺德"
+        ],
+        "ja": [
+          "アレクサンダー＝アーノルド"
+        ]
       },
       "externalIds": {
         "sofifa": 231281,
@@ -22398,13 +24040,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Vicente",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "维森特",
+        "ja": "ビセンテ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "维森特·罗德里格斯"
+        ],
+        "ja": [
+          "ビセンテ・ロドリゲス"
+        ]
       },
       "externalIds": {
         "sofifa": null,
@@ -22441,13 +24087,18 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Victor Boniface",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "博尼费斯",
+        "ja": "ヴィクター・ボニフェイス"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "维克托·博尼费斯",
+          "博尼法斯"
+        ],
+        "ja": [
+          "ボニフェイス"
+        ]
       },
       "externalIds": {
         "sofifa": 247679,
@@ -22484,13 +24135,18 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Victor Osimhen",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "奥斯梅恩",
+        "ja": "ヴィクター・オシムヘン"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "维克托·奥斯梅恩",
+          "奥西姆亨"
+        ],
+        "ja": [
+          "オシムヘン"
+        ]
       },
       "externalIds": {
         "sofifa": 232293,
@@ -22527,13 +24183,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Victor Valdes",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "巴尔德斯",
+        "ja": "ビクトル・バルデス"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "维克托·巴尔德斯"
+        ],
+        "ja": [
+          "バルデス"
+        ]
       },
       "externalIds": {
         "sofifa": 106573,
@@ -22605,13 +24265,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Vincent Candela",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "坎德拉",
+        "ja": "ヴァンサン・カンデラ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "文森特·坎德拉"
+        ],
+        "ja": [
+          "カンデラ"
+        ]
       },
       "externalIds": {
         "sofifa": null,
@@ -22648,13 +24312,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Vincent Kompany",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "孔帕尼",
+        "ja": "ヴァンサン・コンパニ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "文森特·孔帕尼"
+        ],
+        "ja": [
+          "コンパニ"
+        ]
       },
       "externalIds": {
         "sofifa": 139720,
@@ -22709,13 +24377,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Vinicius Junior",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "维尼修斯",
+        "ja": "ヴィニシウス・ジュニオール"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "维尼修斯·儒尼奥尔"
+        ],
+        "ja": [
+          "ヴィニシウス"
+        ]
       },
       "externalIds": {
         "sofifa": 238794,
@@ -22772,13 +24444,18 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Virgil van Dijk",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "范戴克",
+        "ja": "フィルジル・ファン・ダイク"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "维吉尔·范戴克",
+          "范迪克"
+        ],
+        "ja": [
+          "ファン・ダイク"
+        ]
       },
       "externalIds": {
         "sofifa": 203376,
@@ -22833,13 +24510,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Vitor Baia",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "拜亚",
+        "ja": "ビトール・バイーア"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "维托尔·拜亚"
+        ],
+        "ja": [
+          "バイーア"
+        ]
       },
       "externalIds": {
         "sofifa": null,
@@ -22876,13 +24557,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Walter Samuel",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "萨穆埃尔",
+        "ja": "ワルテル・サムエル"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "瓦尔特·萨穆埃尔"
+        ],
+        "ja": [
+          "サムエル"
+        ]
       },
       "externalIds": {
         "sofifa": 23461,
@@ -22940,13 +24625,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Wayne Rooney",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "鲁尼",
+        "ja": "ウェイン・ルーニー"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "韦恩·鲁尼"
+        ],
+        "ja": [
+          "ルーニー"
+        ]
       },
       "externalIds": {
         "sofifa": 54050,
@@ -23018,13 +24707,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Wes Morgan",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "摩根",
+        "ja": "ウェズ・モーガン"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "韦斯·摩根"
+        ],
+        "ja": [
+          "モーガン"
+        ]
       },
       "externalIds": {
         "sofifa": 136113,
@@ -23079,13 +24772,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Wesley Sneijder",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "斯内德",
+        "ja": "ヴェスレイ・スナイデル"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "韦斯利·斯内德"
+        ],
+        "ja": [
+          "スナイデル"
+        ]
       },
       "externalIds": {
         "sofifa": 139869,
@@ -23140,13 +24837,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Wilfred Bouma",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "鲍马",
+        "ja": "ヴィルフレート・ボウマ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "威尔弗雷德·鲍马"
+        ],
+        "ja": [
+          "ボウマ"
+        ]
       },
       "externalIds": {
         "sofifa": null,
@@ -23201,13 +24902,18 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "William Gallas",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "加拉",
+        "ja": "ウィリアム・ギャラス"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "威廉·加拉",
+          "加拉斯"
+        ],
+        "ja": [
+          "ギャラス"
+        ]
       },
       "externalIds": {
         "sofifa": null,
@@ -23262,13 +24968,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Willian",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "威廉",
+        "ja": "ウィリアン"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "威廉·博尔热斯"
+        ],
+        "ja": [
+          "ウィリアン・ボルジェス"
+        ]
       },
       "externalIds": {
         "sofifa": 180403,
@@ -23323,13 +25033,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Willy Sagnol",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "萨尼奥尔",
+        "ja": "ウィリー・サニョル"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "威利·萨尼奥尔"
+        ],
+        "ja": [
+          "サニョル"
+        ]
       },
       "externalIds": {
         "sofifa": null,
@@ -23366,13 +25080,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Wojciech Szczesny",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "什琴斯尼",
+        "ja": "ヴォイチェフ・シュチェスニー"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "沃伊切赫·什琴斯尼"
+        ],
+        "ja": [
+          "シュチェスニー"
+        ]
       },
       "externalIds": {
         "sofifa": 186153,
@@ -23409,13 +25127,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Xabi Alonso",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "哈维·阿隆索",
+        "ja": "シャビ・アロンソ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "阿隆索"
+        ],
+        "ja": [
+          "X・アロンソ"
+        ]
       },
       "externalIds": {
         "sofifa": 45197,
@@ -23489,13 +25211,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Xavi",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "哈维",
+        "ja": "シャビ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "哈维·埃尔南德斯"
+        ],
+        "ja": [
+          "シャビ・エルナンデス"
+        ]
       },
       "externalIds": {
         "sofifa": 10535,
@@ -23567,13 +25293,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Yann Sommer",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "索默",
+        "ja": "ヤン・ゾマー"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "扬·索默"
+        ],
+        "ja": [
+          "ゾマー"
+        ]
       },
       "externalIds": {
         "sofifa": 177683,
@@ -23610,13 +25340,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Yaya Toure",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "亚亚·图雷",
+        "ja": "ヤヤ・トゥーレ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "Y·图雷"
+        ],
+        "ja": [
+          "Y・トゥーレ"
+        ]
       },
       "externalIds": {
         "sofifa": 20289,
@@ -23690,13 +25424,17 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Zinedine Zidane",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "齐达内",
+        "ja": "ジネディーヌ・ジダン"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "齐内丁·齐达内"
+        ],
+        "ja": [
+          "ジダン"
+        ]
       },
       "externalIds": {
         "sofifa": null,
@@ -23733,13 +25471,19 @@
       "identityStatus": "resolved",
       "localizedNames": {
         "en": "Zlatan Ibrahimovic",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "伊布拉希莫维奇",
+        "ja": "ズラタン・イブラヒモヴィッチ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "伊布",
+          "兹拉坦·伊布拉希莫维奇"
+        ],
+        "ja": [
+          "イブラヒモヴィッチ",
+          "イブラヒモビッチ"
+        ]
       },
       "externalIds": {
         "sofifa": 41236,

@@ -8,7 +8,7 @@
 
 import assert from 'node:assert/strict';
 import { TEAM_SEASONS, TEAM_SEASON_MAP } from '../public/data/team-seasons.js';
-import { setLocale, t } from '../public/i18n/i18n.js';
+import { setLocale, t, formatClubName } from '../public/i18n/i18n.js';
 import { ROLES, SLOTS } from '../public/game/shared/constants.js';
 import { formatHistoryEvent } from '../public/game/shared/event-formatters.js';
 import { createInitialState } from '../public/game/state.js';
@@ -283,9 +283,9 @@ function build10Of11RosterWithTwoFws(fw1, fw2) {
         const formatted = formatHistoryEvent(histEvent);
         assert(
             formatted.includes('Alice') &&
-                formatted.includes('Barcelona') &&
+                formatted.includes(formatClubName('Barcelona')) &&
                 formatted.includes('2011'),
-            `Formatted redraw history must include actor, club, and year in locale=${locale}`
+            `Formatted redraw history must include actor, localized club, and year in locale=${locale}`
         );
     }
 }

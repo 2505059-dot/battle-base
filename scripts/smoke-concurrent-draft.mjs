@@ -616,7 +616,7 @@ assert.ok(areaA.dumpText().includes('阵容揭晓'), 'Client A renders REVEAL in
 
 setLocale('ja', { persist: false });
 assert.equal(getLocale(), 'ja');
-assert.ok(areaB.dumpText().includes('両チームの11人制ロスターが公開されました'), 'Client B renders REVEAL in ja');
+assert.ok(areaB.dumpText().includes('両チームの先発メンバーが公開されました'), 'Client B renders REVEAL in ja');
 
 // Team A sends match_start
 const matchSeed = 20261006;

@@ -1,0 +1,158 @@
+{
+  "schemaVersion": "1.0.0",
+  "summary": {
+    "totalPlayerEntities": 418,
+    "zhPlayerCoverage": {
+      "covered": 418,
+      "total": 418,
+      "percent": 100
+    },
+    "jaPlayerCoverage": {
+      "covered": 418,
+      "total": 418,
+      "percent": 100
+    },
+    "totalClubCoverage": {
+      "total": 28,
+      "zhCovered": 28,
+      "jaCovered": 28,
+      "percent": 100
+    },
+    "totalLeagueCoverage": {
+      "total": 7,
+      "zhCovered": 7,
+      "jaCovered": 7,
+      "percent": 100
+    },
+    "duplicateLocalizedPlayerNamesCount": {
+      "zh-CN": 0,
+      "ja": 0
+    },
+    "aliasCollisionsCount": {
+      "playersZh": 0,
+      "playersJa": 0,
+      "clubsZh": 0,
+      "clubsJa": 0,
+      "leaguesZh": 0,
+      "leaguesJa": 0,
+      "total": 0
+    },
+    "suspiciousNamesCount": 0,
+    "manualReviewNamesCount": 12
+  },
+  "duplicateLocalizedNames": {
+    "players": {
+      "zh-CN": [],
+      "ja": []
+    },
+    "clubs": {
+      "zh-CN": [],
+      "ja": []
+    },
+    "leagues": {
+      "zh-CN": [],
+      "ja": []
+    }
+  },
+  "aliasCollisions": {
+    "players": {
+      "zh-CN": [],
+      "ja": []
+    },
+    "clubs": {
+      "zh-CN": [],
+      "ja": []
+    },
+    "leagues": {
+      "zh-CN": [],
+      "ja": []
+    }
+  },
+  "suspiciousNames": [],
+  "manualReviewNames": [
+    {
+      "entityId": "amedeo-carboni",
+      "canonicalName": "Amedeo Carboni",
+      "zh-CN": "卡博尼",
+      "ja": "アメデオ・カルボーニ",
+      "reason": "Historical Valencia defender (2004); multiple Chinese transliterations exist (卡博尼 / 阿梅代奥·卡博尼)."
+    },
+    {
+      "entityId": "berat-djimsiti",
+      "canonicalName": "Berat Djimsiti",
+      "zh-CN": "吉姆西蒂",
+      "ja": "ベラト・ジムシティ",
+      "reason": "Albanian/Swiss surname Djimsiti has multiple Chinese/Japanese media spellings (吉姆西蒂 / 迪짐시티 / ジムシティ)."
+    },
+    {
+      "entityId": "damiano-tommasi",
+      "canonicalName": "Damiano Tommasi",
+      "zh-CN": "托马西",
+      "ja": "ダミアーノ・トンマージ",
+      "reason": "Historical Roma midfielder (2001); transliterated as 托马西 / 达米亚诺·托马西."
+    },
+    {
+      "entityId": "diego-fuser",
+      "canonicalName": "Diego Fuser",
+      "zh-CN": "富塞尔",
+      "ja": "ディエゴ・フゼール",
+      "reason": "Historical Parma midfielder (1999); less common in modern FIFA databases (富塞尔 / 迭戈·富塞尔)."
+    },
+    {
+      "entityId": "francesco-antonioli",
+      "canonicalName": "Francesco Antonioli",
+      "zh-CN": "安东尼奥利",
+      "ja": "フランチェスコ・アントニオーリ",
+      "reason": "Historical Roma goalkeeper (2001); transliterated as 安东尼奥利."
+    },
+    {
+      "entityId": "giuseppe-pancaro",
+      "canonicalName": "Giuseppe Pancaro",
+      "zh-CN": "潘卡罗",
+      "ja": "ジュゼッペ・パンカロ",
+      "reason": "Historical Lazio defender (2000); transliterated as 潘卡罗."
+    },
+    {
+      "entityId": "jacques-songo-o",
+      "canonicalName": "Jacques Songo'o",
+      "zh-CN": "松戈奥",
+      "ja": "ジャック・ソンゴォ",
+      "reason": "Historical Deportivo goalkeeper (2000); apostrophe surname Songo'o has variants (松戈奥 / 宋戈奥)."
+    },
+    {
+      "entityId": "jan-vennegoor-of-hesselink",
+      "canonicalName": "Jan Vennegoor of Hesselink",
+      "zh-CN": "海塞林克",
+      "ja": "ヤン・フェネホール・オフ・ヘッセリンク",
+      "reason": "Compound Dutch surname Vennegoor of Hesselink has long and abbreviated forms in zh-CN/ja."
+    },
+    {
+      "entityId": "luca-marchegiani",
+      "canonicalName": "Luca Marchegiani",
+      "zh-CN": "马切吉亚尼",
+      "ja": "ルカ・マルケジャーニ",
+      "reason": "Historical Lazio goalkeeper (2000); transliterated as 马尔凯贾尼."
+    },
+    {
+      "entityId": "reinildo-mandava",
+      "canonicalName": "Reinildo Mandava",
+      "zh-CN": "雷尼尔多",
+      "ja": "ヘイニウド・マンダヴァ",
+      "reason": "Mozambican defender Reinildo Mandava; commonly referred to as 雷尼尔多 or 雷尼尔多·曼达瓦."
+    },
+    {
+      "entityId": "roberto-sensini",
+      "canonicalName": "Roberto Sensini",
+      "zh-CN": "森西尼",
+      "ja": "ロベルト・センシーニ",
+      "reason": "Historical Parma defender/midfielder (1999); transliterated as 森西尼 / 罗伯托·森西尼."
+    },
+    {
+      "entityId": "wilfred-bouma",
+      "canonicalName": "Wilfred Bouma",
+      "zh-CN": "鲍马",
+      "ja": "ヴィルフレート・ボウマ",
+      "reason": "Historical PSV defender (2005); transliterated as 鲍马 / 博马."
+    }
+  ]
+}

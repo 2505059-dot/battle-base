@@ -3,6 +3,14 @@
 import { ja } from './ja.js';
 import { en } from './en.js';
 import { zhCN } from './zh-CN.js';
+import {
+    PLAYER_LOCALIZATIONS,
+    CLUB_LOCALIZATIONS,
+    LEAGUE_LOCALIZATIONS,
+    PLAYER_CANONICAL_TO_ID,
+    CLUB_CANONICAL_TO_ID,
+    LEAGUE_CANONICAL_TO_ID,
+} from '../data/entity-localizations.js';
 
 export const SUPPORTED_LOCALES = ['ja', 'en', 'zh-CN'];
 export const DEFAULT_LOCALE = 'ja';
@@ -12,6 +20,21 @@ export const DICTIONARIES = {
     ja,
     en,
     'zh-CN': zhCN,
+};
+
+const ENTITY_TABLES = {
+    player: {
+        byId: PLAYER_LOCALIZATIONS,
+        canonicalToId: PLAYER_CANONICAL_TO_ID,
+    },
+    club: {
+        byId: CLUB_LOCALIZATIONS,
+        canonicalToId: CLUB_CANONICAL_TO_ID,
+    },
+    league: {
+        byId: LEAGUE_LOCALIZATIONS,
+        canonicalToId: LEAGUE_CANONICAL_TO_ID,
+    },
 };
 
 const listeners = new Set();
@@ -167,11 +190,116 @@ export function t(key, params = {}, localeOverride = null) {
     });
 }
 
+function resolveEntityRecord(type, canonicalOrId) {
+    if (!canonicalOrId || typeof canonicalOrId !== 'string') return null;
+    const raw = canonicalOrId.trim();
+    if (!raw) return null;
+    const table = ENTITY_TABLES[type];
+    if (!table) return null;
+
+    const mappedId = table.canonicalToId?.[raw];
+    if (mappedId && table.byId?.[mappedId]) {
+        return table.byId[mappedId];
+    }
+    if (table.byId?.[raw]) {
+        return table.byId[raw];
+    }
+    return null;
+}
+
+export function formatEntityName(type, canonicalName, localeOverride = null) {
+    try {
+        if (canonicalName === null || canonicalName === undefined) return '';
+        const raw = String(canonicalName).trim();
+        if (!raw) return '';
+
+        const activeLocale = localeOverride
+            ? (normalizeLocale(localeOverride) ?? DEFAULT_LOCALE)
+            : currentLocale;
+
+        const record = resolveEntityRecord(type, raw);
+        if (record) {
+            if (activeLocale === 'en') {
+                return record.localizedNames?.en || record.canonicalName || raw;
+            }
+            const localized = record.localizedNames?.[activeLocale];
+            if (typeof localized === 'string' && localized.trim().length > 0) {
+                return localized.trim();
+            }
+            return record.canonicalName || raw;
+        }
+
+        if (type === 'league') {
+            const dict = DICTIONARIES[activeLocale];
+            const dictVal = dict?.leagues?.[raw];
+            if (typeof dictVal === 'string' && dictVal.trim().length > 0) {
+                return dictVal.trim();
+            }
+        }
+
+        return raw;
+    } catch {
+        return canonicalName ? String(canonicalName) : '';
+    }
+}
+
+export function formatPlayerName(canonicalPlayer, localeOverride = null) {
+    return formatEntityName('player', canonicalPlayer, localeOverride);
+}
+
+export function formatClubName(canonicalClub, localeOverride = null) {
+    return formatEntityName('club', canonicalClub, localeOverride);
+}
+
 export function formatLeagueName(canonicalLeague, localeOverride = null) {
-    if (!canonicalLeague) return '';
-    const activeLocale = localeOverride
-        ? (normalizeLocale(localeOverride) ?? DEFAULT_LOCALE)
-        : currentLocale;
-    const dict = DICTIONARIES[activeLocale] ?? DICTIONARIES[DEFAULT_LOCALE];
-    return dict?.leagues?.[canonicalLeague] ?? DICTIONARIES[DEFAULT_LOCALE]?.leagues?.[canonicalLeague] ?? canonicalLeague;
+    return formatEntityName('league', canonicalLeague, localeOverride);
+}
+
+function buildEntityDisplayName(type, canonicalName, localeOverride = null) {
+    try {
+        if (canonicalName === null || canonicalName === undefined) {
+            return { primary: '', secondary: null };
+        }
+        const raw = String(canonicalName).trim();
+        if (!raw) {
+            return { primary: '', secondary: null };
+        }
+
+        const activeLocale = localeOverride
+            ? (normalizeLocale(localeOverride) ?? DEFAULT_LOCALE)
+            : currentLocale;
+
+        const record = resolveEntityRecord(type, raw);
+        const canonical = record?.canonicalName || raw;
+
+        if (activeLocale === 'en') {
+            return { primary: canonical, secondary: null };
+        }
+
+        const localized = record?.localizedNames?.[activeLocale];
+        if (typeof localized === 'string' && localized.trim().length > 0) {
+            return {
+                primary: localized.trim(),
+                secondary: canonical,
+            };
+        }
+
+        return {
+            primary: canonical,
+            secondary: null,
+        };
+    } catch {
+        return {
+            primary: canonicalName ? String(canonicalName) : '',
+            secondary: null,
+        };
+    }
+}
+
+export function getPlayerDisplayName(canonicalPlayer, localeOverride = null) {
+    return buildEntityDisplayName('player', canonicalPlayer, localeOverride);
+}
+
+export function getClubDisplayName(canonicalClub, localeOverride = null) {
+    return buildEntityDisplayName('club', canonicalClub, localeOverride);
 }

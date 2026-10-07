@@ -1,6 +1,6 @@
 // Match Ready, Live Match Center, and Full Time Result UI rendering helpers (localized via i18n)
 
-import { t } from '../../i18n/i18n.js';
+import { t, formatPlayerName, formatClubName } from '../../i18n/i18n.js';
 import { el } from '../shared/dom.js';
 import { ROLES, getSlotsForRole, formatSlotLabel } from '../shared/constants.js';
 import { clamp } from '../shared/math.js';
@@ -40,8 +40,12 @@ export function renderProfileCard(team, rating, profile) {
             const row = el('div', 'fd-reveal-player-row');
             row.append(
                 el('span', 'fd-reveal-slot-tag', formatSlotLabel(slot)),
-                el('span', 'fd-reveal-player-name', p.name),
-                el('span', 'fd-reveal-player-meta', `${p.club} '${String(p.year).slice(-2)}`),
+                el('span', 'fd-reveal-player-name', formatPlayerName(p.name)),
+                el(
+                    'span',
+                    'fd-reveal-player-meta',
+                    `${formatClubName(p.club)} '${String(p.year).slice(-2)}`
+                ),
                 el('span', 'fd-reveal-player-ovr', String(getPlayerOverall(p)))
             );
             roleGroup.append(row);

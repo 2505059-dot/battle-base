@@ -8,13 +8,17 @@
       "canonicalName": "Bundesliga",
       "localizedNames": {
         "en": "Bundesliga",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "德甲",
+        "ja": "ブンデスリーガ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "德国足球甲级联赛"
+        ],
+        "ja": [
+          "ドイツ・ブンデスリーガ"
+        ]
       },
       "externalIds": {
         "footballData": null,
@@ -52,13 +56,17 @@
       "canonicalName": "Eredivisie",
       "localizedNames": {
         "en": "Eredivisie",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "荷甲",
+        "ja": "エールディヴィジ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "荷兰足球甲级联赛"
+        ],
+        "ja": [
+          "オランダ・エールディヴィジ"
+        ]
       },
       "externalIds": {
         "footballData": null,
@@ -87,13 +95,18 @@
       "canonicalName": "La Liga",
       "localizedNames": {
         "en": "La Liga",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "西甲",
+        "ja": "ラ・リーガ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "西班牙足球甲级联赛"
+        ],
+        "ja": [
+          "リーガ・エスパニョーラ",
+          "プリメーラ・ディビシオン"
+        ]
       },
       "externalIds": {
         "footballData": null,
@@ -139,13 +152,17 @@
       "canonicalName": "Ligue 1",
       "localizedNames": {
         "en": "Ligue 1",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "法甲",
+        "ja": "リーグ・アン"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "法国足球甲级联赛"
+        ],
+        "ja": [
+          "フランス・リーグ・アン"
+        ]
       },
       "externalIds": {
         "footballData": null,
@@ -174,13 +191,18 @@
       "canonicalName": "Premier League",
       "localizedNames": {
         "en": "Premier League",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "英超",
+        "ja": "プレミアリーグ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "英格兰超级联赛",
+          "英格兰足球超级联赛"
+        ],
+        "ja": [
+          "イングランド・プレミアリーグ"
+        ]
       },
       "externalIds": {
         "footballData": null,
@@ -232,13 +254,17 @@
       "canonicalName": "Primeira Liga",
       "localizedNames": {
         "en": "Primeira Liga",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "葡超",
+        "ja": "プリメイラ・リーガ"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "葡萄牙足球超级联赛"
+        ],
+        "ja": [
+          "ポルトガル・プリメイラ・リーガ"
+        ]
       },
       "externalIds": {
         "footballData": null,
@@ -267,13 +293,17 @@
       "canonicalName": "Serie A",
       "localizedNames": {
         "en": "Serie A",
-        "zh-CN": null,
-        "ja": null
+        "zh-CN": "意甲",
+        "ja": "セリエA"
       },
       "aliases": {
         "en": [],
-        "zh-CN": [],
-        "ja": []
+        "zh-CN": [
+          "意大利足球甲级联赛"
+        ],
+        "ja": [
+          "イタリア・セリエA"
+        ]
       },
       "externalIds": {
         "footballData": null,

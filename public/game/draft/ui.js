@@ -18,6 +18,11 @@ import {
     formatSlotLabel,
 } from '../shared/constants.js';
 import { formatHistoryEvent } from '../shared/event-formatters.js';
+import {
+    createPlayerPortrait,
+    createClubCrest,
+    createLeagueEmblem,
+} from '../../media/media-ui.js';
 import { getMyTeam, isDraftPhase, isTeamDraftActive } from '../state.js';
 import {
     hasRerollOption,
@@ -282,22 +287,35 @@ export function renderDraftZone(state, myTeam, handlers = {}, selectedPlayerIdOv
         const rollInfo = el('div', 'fd-roll-result');
 
         const leagueItem = el('div', 'fd-roll-meta');
-        leagueItem.append(
-            el('span', 'fd-meta-label', t('draft.metaLeague')),
-            el('strong', 'fd-meta-val', formatLeagueName(roll.league))
-        );
+        const leagueContent = el('div', 'fd-roll-meta-content');
+        const leagueEmblem = createLeagueEmblem(roll.league, {
+            className: 'fd-roll-logo fd-roll-league-emblem',
+            loading: 'eager',
+            wrapperEl: leagueContent,
+        });
+        if (leagueEmblem) {
+            leagueContent.append(leagueEmblem);
+        }
+        leagueContent.append(el('strong', 'fd-meta-val', formatLeagueName(roll.league)));
+        leagueItem.append(el('span', 'fd-meta-label', t('draft.metaLeague')), leagueContent);
 
         const clubItem = el('div', 'fd-roll-meta');
-        clubItem.append(
-            el('span', 'fd-meta-label', t('draft.metaClub')),
-            el('strong', 'fd-meta-val', formatClubName(roll.club))
-        );
+        const clubContent = el('div', 'fd-roll-meta-content');
+        const clubCrest = createClubCrest(roll.club, {
+            className: 'fd-roll-logo fd-roll-club-crest',
+            loading: 'eager',
+            wrapperEl: clubContent,
+        });
+        if (clubCrest) {
+            clubContent.append(clubCrest);
+        }
+        clubContent.append(el('strong', 'fd-meta-val', formatClubName(roll.club)));
+        clubItem.append(el('span', 'fd-meta-label', t('draft.metaClub')), clubContent);
 
         const yearItem = el('div', 'fd-roll-meta');
-        yearItem.append(
-            el('span', 'fd-meta-label', t('draft.metaYear')),
-            el('strong', 'fd-meta-val', String(roll.year))
-        );
+        const yearContent = el('div', 'fd-roll-meta-content');
+        yearContent.append(el('strong', 'fd-meta-val fd-meta-val--year', String(roll.year)));
+        yearItem.append(el('span', 'fd-meta-label', t('draft.metaYear')), yearContent);
 
         rollInfo.append(leagueItem, clubItem, yearItem);
         zone.append(rollInfo);
@@ -343,9 +361,25 @@ export function renderDraftZone(state, myTeam, handlers = {}, selectedPlayerIdOv
                 el('span', 'fd-card-rating', t('draft.cardRating', { rating: ovr }))
             );
 
+            const mediaBox = el('div', 'fd-card-media');
+            mediaBox.append(
+                createPlayerPortrait(player, {
+                    className: 'fd-card-player-img',
+                    loading: 'eager',
+                })
+            );
+            const cardCrest = createClubCrest(player.club, {
+                className: 'fd-card-club-crest',
+                loading: 'eager',
+                wrapperEl: mediaBox,
+            });
+            if (cardCrest) {
+                mediaBox.append(cardCrest);
+            }
+
             const displayName = getPlayerDisplayName(player.name);
             const nameEl = el('div', 'fd-card-name', displayName.primary);
-            card.append(topRow, nameEl);
+            card.append(topRow, mediaBox, nameEl);
             if (displayName.secondary) {
                 card.append(el('div', 'fd-card-name-secondary', displayName.secondary));
             }
@@ -404,14 +438,36 @@ export function renderDraftZone(state, myTeam, handlers = {}, selectedPlayerIdOv
                 const p = team.roster[slot];
                 if (!p) continue;
                 const item = el('div', 'fd-ready-slot');
-                item.append(
-                    el('span', 'fd-slot-tag', formatSlotLabel(slot)),
-                    el('span', 'fd-ready-player-name', formatPlayerName(p.name)),
+                const avatarWrap = el('div', 'fd-ready-avatar');
+                avatarWrap.append(
+                    createPlayerPortrait(p, {
+                        className: 'fd-ready-player-img',
+                        loading: 'lazy',
+                    })
+                );
+
+                const metaWrap = el('span', 'fd-ready-player-meta-wrap');
+                const readyCrest = createClubCrest(p.club, {
+                    className: 'fd-ready-club-crest',
+                    loading: 'lazy',
+                    wrapperEl: metaWrap,
+                });
+                if (readyCrest) {
+                    metaWrap.append(readyCrest);
+                }
+                metaWrap.append(
                     el(
                         'span',
                         'fd-ready-player-meta',
                         `${formatClubName(p.club)} '${String(p.year).slice(-2)}`
-                    ),
+                    )
+                );
+
+                item.append(
+                    avatarWrap,
+                    el('span', 'fd-slot-tag', formatSlotLabel(slot)),
+                    el('span', 'fd-ready-player-name', formatPlayerName(p.name)),
+                    metaWrap,
                     el('span', 'fd-slot-player-rating', String(getPlayerOverall(p)))
                 );
                 group.append(item);
@@ -514,6 +570,13 @@ export function renderGroupedSlotList(teamState) {
             row.append(el('span', 'fd-slot-tag', formatSlotLabel(slot)));
 
             if (p) {
+                const miniAvatar = el('div', 'fd-slot-avatar');
+                miniAvatar.append(
+                    createPlayerPortrait(p, {
+                        className: 'fd-slot-player-img',
+                        loading: 'lazy',
+                    })
+                );
                 const playerBox = el('div', 'fd-slot-player');
                 playerBox.append(
                     el('span', 'fd-slot-player-name', formatPlayerName(p.name)),
@@ -523,7 +586,11 @@ export function renderGroupedSlotList(teamState) {
                         `${formatClubName(p.club)} '${String(p.year).slice(-2)}`
                     )
                 );
-                row.append(playerBox, el('span', 'fd-slot-player-rating', String(getPlayerOverall(p))));
+                row.append(
+                    miniAvatar,
+                    playerBox,
+                    el('span', 'fd-slot-player-rating', String(getPlayerOverall(p)))
+                );
             } else {
                 row.append(el('span', 'fd-slot-empty', t('common.emptySlot')));
             }

@@ -1,10 +1,11 @@
 // Match Ready, Live Match Center, and Full Time Result UI rendering helpers (localized via i18n)
 
-import { t, formatPlayerName, formatClubName } from '../../i18n/i18n.js';
+import { t, formatPlayerName, formatClubName, getPlayerDisplayName } from '../../i18n/i18n.js';
 import { el } from '../shared/dom.js';
 import { ROLES, getSlotsForRole, formatSlotLabel } from '../shared/constants.js';
 import { clamp } from '../shared/math.js';
 import { formatMatchEvent, formatMatchEventBadge } from '../shared/event-formatters.js';
+import { createPlayerPortrait, createClubCrest } from '../../media/media-ui.js';
 import { calculateTeamRating, getPlayerOverall } from '../draft/rules.js';
 import { renderHistoryBox } from '../draft/ui.js';
 import { calculateTeamProfile } from './team-profile.js';
@@ -34,22 +35,63 @@ export function renderProfileCard(team, rating, profile) {
     for (const role of ROLES) {
         const roleGroup = el('div', 'fd-reveal-role-group');
         roleGroup.append(el('div', 'fd-reveal-role-head', role));
+
+        const roleGrid = el(
+            'div',
+            `fd-reveal-role-grid fd-reveal-role-grid--${role.toLowerCase()}`
+        );
+
         for (const slot of getSlotsForRole(role)) {
             const p = team?.roster?.[slot];
             if (!p) continue;
-            const row = el('div', 'fd-reveal-player-row');
-            row.append(
+
+            const tile = el('div', 'fd-reveal-tile fd-reveal-player-row');
+
+            const topBar = el('div', 'fd-reveal-tile-top');
+            topBar.append(
                 el('span', 'fd-reveal-slot-tag', formatSlotLabel(slot)),
-                el('span', 'fd-reveal-player-name', formatPlayerName(p.name)),
+                el('span', 'fd-reveal-player-ovr', String(getPlayerOverall(p)))
+            );
+
+            const mediaWrap = el('div', 'fd-reveal-tile-media');
+            mediaWrap.append(
+                createPlayerPortrait(p, {
+                    className: 'fd-reveal-player-img',
+                    loading: 'lazy',
+                })
+            );
+
+            const body = el('div', 'fd-reveal-tile-body');
+            body.append(el('span', 'fd-reveal-player-name', formatPlayerName(p.name)));
+
+            const displayName = getPlayerDisplayName(p.name);
+            if (displayName.secondary) {
+                body.append(el('span', 'fd-reveal-player-name-sub', displayName.secondary));
+            }
+
+            const clubRow = el('div', 'fd-reveal-club-row');
+            const clubCrest = createClubCrest(p.club, {
+                className: 'fd-reveal-club-crest',
+                loading: 'lazy',
+                wrapperEl: clubRow,
+            });
+            if (clubCrest) {
+                clubRow.append(clubCrest);
+            }
+            clubRow.append(
                 el(
                     'span',
                     'fd-reveal-player-meta',
                     `${formatClubName(p.club)} '${String(p.year).slice(-2)}`
-                ),
-                el('span', 'fd-reveal-player-ovr', String(getPlayerOverall(p)))
+                )
             );
-            roleGroup.append(row);
+            body.append(clubRow);
+
+            tile.append(topBar, mediaWrap, body);
+            roleGrid.append(tile);
         }
+
+        roleGroup.append(roleGrid);
         lineupBox.append(roleGroup);
     }
     card.append(lineupBox);

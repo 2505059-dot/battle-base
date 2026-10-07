@@ -7,7 +7,7 @@ body {
   color: #e8eefc;
   line-height: 1.6;
 }
-main { max-width: 980px; margin: 0 auto; padding: 16px; }
+main { max-width: 1180px; margin: 0 auto; padding: 16px; }
 .topbar {
   display: flex;
   align-items: center;
@@ -324,6 +324,27 @@ li { padding: 8px 12px; margin-bottom: 6px; background: #0d1424; border-radius: 
   font-size: .84rem;
 }
 
+.fd-slot-avatar {
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  background: radial-gradient(circle at 50% 35%, #1d325a 0%, #0b1323 80%);
+  border: 1px solid #2b4370;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.fd-slot-player-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center bottom;
+  display: block;
+}
+
 .fd-slot-player {
   flex: 1;
   min-width: 0;
@@ -365,6 +386,7 @@ li { padding: 8px 12px; margin-bottom: 6px; background: #0d1424; border-radius: 
   display: flex;
   flex-direction: column;
   gap: 14px;
+  min-width: 0;
 }
 
 .fd-pick-counter {
@@ -408,8 +430,8 @@ li { padding: 8px 12px; margin-bottom: 6px; background: #0d1424; border-radius: 
 /* Rolled League / Club / Year Banner */
 .fd-roll-result {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 8px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
   background: #15223b;
   border: 1px solid #355184;
   border-radius: 8px;
@@ -420,7 +442,33 @@ li { padding: 8px 12px; margin-bottom: 6px; background: #0d1424; border-radius: 
 .fd-roll-meta {
   display: flex;
   flex-direction: column;
-  gap: 2px;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  min-width: 0;
+}
+
+.fd-roll-meta-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  min-width: 0;
+  max-width: 100%;
+}
+
+.fd-roll-logo {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  flex-shrink: 0;
+  display: block;
+}
+
+.fd-roll-league-emblem {
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 5px;
+  padding: 2px;
 }
 
 .fd-meta-label {
@@ -432,6 +480,14 @@ li { padding: 8px 12px; margin-bottom: 6px; background: #0d1424; border-radius: 
 .fd-meta-val {
   font-size: .95rem;
   color: #ffffff;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.fd-meta-val--year {
+  font-size: 1.05rem;
+  font-variant-numeric: tabular-nums;
 }
 
 /* Reroll Controls */
@@ -490,7 +546,7 @@ li { padding: 8px 12px; margin-bottom: 6px; background: #0d1424; border-radius: 
 /* Candidate Player Cards */
 .fd-cards-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(185px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(175px, 1fr));
   gap: 10px;
 }
 
@@ -498,10 +554,11 @@ li { padding: 8px 12px; margin-bottom: 6px; background: #0d1424; border-radius: 
   background: #141f36;
   border: 1px solid #2b3e66;
   border-radius: 8px;
-  padding: 10px 12px;
+  padding: 10px 11px;
   display: flex;
   flex-direction: column;
   gap: 6px;
+  min-width: 0;
   transition: border-color 0.15s, transform 0.1s, background 0.15s;
 }
 
@@ -546,10 +603,50 @@ li { padding: 8px 12px; margin-bottom: 6px; background: #0d1424; border-radius: 
   color: #4ade80;
 }
 
+.fd-card-media {
+  position: relative;
+  width: 100%;
+  height: 112px;
+  background: radial-gradient(circle at 50% 35%, #1f3560 0%, #0d1628 78%);
+  border: 1px solid #23375d;
+  border-radius: 7px;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 6px 8px 0;
+}
+
+.fd-card-player-img {
+  width: 100%;
+  height: 100%;
+  max-height: 104px;
+  object-fit: contain;
+  object-position: center bottom;
+  display: block;
+  user-select: none;
+}
+
+.fd-card-club-crest {
+  position: absolute;
+  left: 6px;
+  bottom: 6px;
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  background: rgba(11, 18, 33, 0.82);
+  border: 1px solid rgba(94, 224, 255, 0.3);
+  border-radius: 5px;
+  padding: 2px;
+  display: block;
+}
+
 .fd-card-name {
-  font-size: .96rem;
+  font-size: .94rem;
   font-weight: 700;
   color: #ffffff;
+  line-height: 1.25;
+  overflow-wrap: anywhere;
 }
 
 .fd-card-name-secondary {
@@ -557,6 +654,9 @@ li { padding: 8px 12px; margin-bottom: 6px; background: #0d1424; border-radius: 
   font-weight: 500;
   color: #8fa6cb;
   margin-top: -2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .fd-card-stats {
@@ -672,23 +772,22 @@ li { padding: 8px 12px; margin-bottom: 6px; background: #0d1424; border-radius: 
 
 .fd-complete-ratings {
   display: flex;
-  gap: 12px;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
+  gap: 16px;
   width: 100%;
   margin: 8px 0;
 }
 
 .fd-complete-rating-card {
-  flex: 1;
-  min-width: 180px;
+  width: 100%;
+  min-width: 0;
   background: #15223b;
   border: 1px solid #355184;
-  border-radius: 8px;
-  padding: 12px;
+  border-radius: 10px;
+  padding: 14px;
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 8px;
 }
 
 .fd-complete-team-name {
@@ -945,7 +1044,7 @@ li { padding: 8px 12px; margin-bottom: 6px; background: #0d1424; border-radius: 
   flex-direction: column;
   gap: 8px;
   width: 100%;
-  max-width: 440px;
+  max-width: 520px;
 }
 
 .fd-ready-role-group {
@@ -972,18 +1071,64 @@ li { padding: 8px 12px; margin-bottom: 6px; background: #0d1424; border-radius: 
   border: 1px solid #24385e;
   border-radius: 6px;
   text-align: left;
+  min-width: 0;
+}
+
+.fd-ready-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  background: radial-gradient(circle at 50% 35%, #1d325a 0%, #0b1323 80%);
+  border: 1px solid #2b4370;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.fd-ready-player-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center bottom;
+  display: block;
 }
 
 .fd-ready-player-name {
   flex: 1;
+  min-width: 0;
   font-size: .83rem;
   font-weight: 700;
   color: #eef4ff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.fd-ready-player-meta-wrap {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  max-width: 44%;
+  min-width: 0;
+  flex-shrink: 0;
+}
+
+.fd-ready-club-crest {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+  flex-shrink: 0;
+  display: block;
 }
 
 .fd-ready-player-meta {
   font-size: .72rem;
   color: #8da2c8;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .fd-lock-btn {
@@ -1026,34 +1171,68 @@ li { padding: 8px 12px; margin-bottom: 6px; background: #0d1424; border-radius: 
 .fd-reveal-lineup {
   display: flex;
   flex-direction: column;
-  gap: 6px;
-  margin-top: 6px;
-  padding-top: 8px;
+  gap: 10px;
+  margin-top: 8px;
+  padding-top: 10px;
   border-top: 1px solid #263c63;
   text-align: left;
+  width: 100%;
 }
 
 .fd-reveal-role-group {
   display: flex;
   flex-direction: column;
-  gap: 3px;
+  gap: 6px;
+  width: 100%;
 }
 
 .fd-reveal-role-head {
-  font-size: .65rem;
+  font-size: .68rem;
   font-weight: 800;
   letter-spacing: .08em;
   color: #7ea0d4;
 }
 
-.fd-reveal-player-row {
+.fd-reveal-role-grid {
+  display: grid;
+  gap: 8px;
+  width: 100%;
+}
+
+.fd-reveal-role-grid--gk {
+  grid-template-columns: minmax(0, 185px);
+  justify-content: center;
+}
+
+.fd-reveal-role-grid--df {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.fd-reveal-role-grid--mf,
+.fd-reveal-role-grid--fw {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.fd-reveal-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 5px;
+  padding: 7px 8px;
+  border-radius: 7px;
+  background: #0e182c;
+  border: 1px solid #24385e;
+  font-size: .76rem;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.fd-reveal-tile-top {
   display: flex;
   align-items: center;
-  gap: 6px;
-  padding: 3px 6px;
-  border-radius: 4px;
-  background: #0e182c;
-  font-size: .76rem;
+  justify-content: space-between;
+  gap: 4px;
+  width: 100%;
 }
 
 .fd-reveal-slot-tag {
@@ -1068,26 +1247,96 @@ li { padding: 8px 12px; margin-bottom: 6px; background: #0d1424; border-radius: 
   flex-shrink: 0;
 }
 
-.fd-reveal-player-name {
-  flex: 1;
+.fd-reveal-player-ovr {
+  font-size: .76rem;
+  font-weight: 800;
+  color: #4ade80;
+  flex-shrink: 0;
+}
+
+.fd-reveal-tile-media {
+  height: 68px;
+  width: 100%;
+  background: radial-gradient(circle at 50% 38%, #1d335c 0%, #0b1324 80%);
+  border: 1px solid #1e3154;
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 4px 4px 0;
+}
+
+.fd-reveal-player-img {
+  width: 100%;
+  height: 100%;
+  max-height: 64px;
+  object-fit: contain;
+  object-position: center bottom;
+  display: block;
+  user-select: none;
+}
+
+.fd-reveal-tile-body {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
   min-width: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.fd-reveal-player-name {
+  min-width: 0;
+  font-size: .76rem;
   font-weight: 700;
   color: #eef4ff;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  display: block;
+}
+
+.fd-reveal-player-name-sub {
+  min-width: 0;
+  font-size: .62rem;
+  color: #7e95bf;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+  line-height: 1.15;
+}
+
+.fd-reveal-club-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  min-width: 0;
+  width: 100%;
+  margin-top: 2px;
+}
+
+.fd-reveal-club-crest {
+  width: 14px;
+  height: 14px;
+  object-fit: contain;
+  flex-shrink: 0;
+  display: block;
 }
 
 .fd-reveal-player-meta {
-  font-size: .66rem;
+  font-size: .64rem;
   color: #8da2c8;
-  flex-shrink: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 0;
 }
 
-.fd-reveal-player-ovr {
-  font-weight: 800;
-  color: #4ade80;
-  flex-shrink: 0;
+.fd-logo-img--hidden {
+  display: none !important;
 }
 
 /* ===== Match Simulation v0 UI ===== */
@@ -1446,6 +1695,9 @@ li { padding: 8px 12px; margin-bottom: 6px; background: #0d1424; border-radius: 
   .fd-reroll-row {
     grid-template-columns: 1fr;
   }
+  .fd-reveal-role-grid--df {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
   .fd-scoreboard {
     padding: 10px 12px;
     gap: 8px;
@@ -1457,4 +1709,55 @@ li { padding: 8px 12px; margin-bottom: 6px; background: #0d1424; border-radius: 
     flex-wrap: wrap;
   }
 }
+
+@media (max-width: 520px) {
+  main {
+    padding: 10px;
+  }
+  .fd-center {
+    padding: 12px 10px;
+  }
+  .fd-cards-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+  }
+  .fd-card {
+    padding: 8px 9px;
+  }
+  .fd-card-media {
+    height: 96px;
+  }
+  .fd-card-player-img {
+    max-height: 88px;
+  }
+  .fd-card-name {
+    font-size: .84rem;
+  }
+  .fd-card-name-secondary {
+    font-size: .66rem;
+  }
+  .fd-ready-slot {
+    gap: 6px;
+    padding: 5px 7px;
+  }
+  .fd-ready-player-meta-wrap {
+    max-width: 38%;
+  }
+  .fd-complete-zone {
+    padding: 16px 10px;
+  }
+  .fd-complete-rating-card {
+    padding: 10px;
+  }
+  .fd-reveal-role-grid--gk {
+    grid-template-columns: minmax(0, 160px);
+  }
+  .fd-reveal-role-grid--df,
+  .fd-reveal-role-grid--mf,
+  .fd-reveal-role-grid--fw {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 6px;
+  }
+}
+
 

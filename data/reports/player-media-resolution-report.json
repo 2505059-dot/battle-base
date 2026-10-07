@@ -1,0 +1,4513 @@
+{
+  "schemaVersion": "1.0.0",
+  "policyVersion": "availability-v1",
+  "totalPlayerSeasons": 554,
+  "totalEntities": 418,
+  "exactCount": 454,
+  "nearestCount": 90,
+  "fo3Count": 4,
+  "fo4Count": 1,
+  "silhouetteCount": 5,
+  "externalMediaCount": 549,
+  "fallbackCount": 5,
+  "externalCoveragePercent": 99.1,
+  "fallbackPercent": 0.9,
+  "manualOverrideCount": 0,
+  "providerDistribution": {
+    "fifaindex-current": 544,
+    "fifaaddict-fo3": 4,
+    "fifaaddict-fo4": 1,
+    "local-fallback": 5
+  },
+  "resolutionTypeDistribution": {
+    "fifaindex-exact-year": 454,
+    "fifaindex-nearest-year": 90,
+    "fo3-supplemental": 4,
+    "fo4-supplemental": 1,
+    "silhouette": 5
+  },
+  "nearestYearAnalysis": {
+    "totalNearestCount": 90,
+    "minDistance": 1,
+    "maxDistance": 6,
+    "distanceDistribution": {
+      "1": 28,
+      "2": 9,
+      "3": 8,
+      "4": 15,
+      "5": 15,
+      "6": 15
+    }
+  },
+  "runtimeIndexCoverage": {
+    "resolvedCount": 554,
+    "totalPlayerSeasons": 554,
+    "coveragePercent": 100
+  },
+  "supplementalSelections": {
+    "fo3": [
+      {
+        "playerSeasonId": "bayern-munich-2001-5",
+        "entityId": "stefan-effenberg",
+        "canonicalName": "Stefan Effenberg",
+        "club": "Bayern Munich",
+        "targetYear": 2001,
+        "imageUrl": "https://fifaaddict.com/fo3img/players/p215558.png?2018",
+        "editionOrClass": "WORLD LEGEND"
+      },
+      {
+        "playerSeasonId": "manchester-united-1999-0",
+        "entityId": "peter-schmeichel",
+        "canonicalName": "Peter Schmeichel",
+        "club": "Manchester United",
+        "targetYear": 1999,
+        "imageUrl": "https://fifaaddict.com/fo3img/players/p190053.png?2018",
+        "editionOrClass": "WORLD LEGEND"
+      },
+      {
+        "playerSeasonId": "manchester-united-1999-3",
+        "entityId": "denis-irwin",
+        "canonicalName": "Denis Irwin",
+        "club": "Manchester United",
+        "targetYear": 1999,
+        "imageUrl": "https://fifaaddict.com/fo3img/players/p55053019.png?2018",
+        "editionOrClass": "MANCHESTER UNITED AMBASSADOR"
+      },
+      {
+        "playerSeasonId": "real-madrid-2002-2",
+        "entityId": "fernando-hierro",
+        "canonicalName": "Fernando Hierro",
+        "club": "Real Madrid",
+        "targetYear": 2002,
+        "imageUrl": "https://fifaaddict.com/fo3img/players/p93161840.png?2018",
+        "editionOrClass": "WORLD LEGEND"
+      }
+    ],
+    "fo4": [
+      {
+        "playerSeasonId": "roma-2001-8",
+        "entityId": "gabriel-batistuta",
+        "canonicalName": "Gabriel Batistuta",
+        "club": "Roma",
+        "targetYear": 2001,
+        "imageUrl": "https://s1.fifaaddict.com/fo4/players/wbgmlgqd.png?20260720",
+        "editionOrClass": "Eternal Legends"
+      }
+    ]
+  },
+  "missingExternalMediaPlayers": [
+    {
+      "playerSeasonId": "deportivo-la-coruna-2000-0",
+      "entityId": "jacques-songo-o",
+      "canonicalName": "Jacques Songo'o",
+      "club": "Deportivo La Coruna",
+      "targetYear": 2000,
+      "imageUrl": "/assets/player-silhouette.svg"
+    },
+    {
+      "playerSeasonId": "deportivo-la-coruna-2000-2",
+      "entityId": "donato",
+      "canonicalName": "Donato",
+      "club": "Deportivo La Coruna",
+      "targetYear": 2000,
+      "imageUrl": "/assets/player-silhouette.svg"
+    },
+    {
+      "playerSeasonId": "lazio-2000-8",
+      "entityId": "roberto-mancini",
+      "canonicalName": "Roberto Mancini",
+      "club": "Lazio",
+      "targetYear": 2000,
+      "imageUrl": "/assets/player-silhouette.svg"
+    },
+    {
+      "playerSeasonId": "parma-1999-6",
+      "entityId": "diego-fuser",
+      "canonicalName": "Diego Fuser",
+      "club": "Parma",
+      "targetYear": 1999,
+      "imageUrl": "/assets/player-silhouette.svg"
+    },
+    {
+      "playerSeasonId": "roma-2001-0",
+      "entityId": "francesco-antonioli",
+      "canonicalName": "Francesco Antonioli",
+      "club": "Roma",
+      "targetYear": 2001,
+      "imageUrl": "/assets/player-silhouette.svg"
+    }
+  ],
+  "multiProviderSummary": {
+    "entitiesWithMultipleReliableProvidersCount": 358,
+    "entitiesWithAllThreeProvidersCount": 294,
+    "playersWithMultipleReliableProviders": [
+      {
+        "entityId": "achraf-hakimi",
+        "canonicalName": "Achraf Hakimi",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "inter-milan-2021-3"
+        ]
+      },
+      {
+        "entityId": "adrien-rabiot",
+        "canonicalName": "Adrien Rabiot",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "juventus-2021-5"
+        ]
+      },
+      {
+        "entityId": "alejandro-gomez",
+        "canonicalName": "Alejandro Gomez",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "atalanta-2020-7"
+        ]
+      },
+      {
+        "entityId": "alejandro-grimaldo",
+        "canonicalName": "Alejandro Grimaldo",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "bayer-leverkusen-2024-2"
+        ]
+      },
+      {
+        "entityId": "aleksandr-hleb",
+        "canonicalName": "Aleksandr Hleb",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3"
+        ],
+        "playerSeasonIds": [
+          "arsenal-2008-5"
+        ]
+      },
+      {
+        "entityId": "alessandro-bastoni",
+        "canonicalName": "Alessandro Bastoni",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "inter-milan-2021-2",
+          "inter-milan-2024-1"
+        ]
+      },
+      {
+        "entityId": "alessandro-del-piero",
+        "canonicalName": "Alessandro Del Piero",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "juventus-2003-7",
+          "juventus-2012-8"
+        ]
+      },
+      {
+        "entityId": "alessandro-nesta",
+        "canonicalName": "Alessandro Nesta",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "ac-milan-2007-2",
+          "ac-milan-2011-2",
+          "lazio-2000-1"
+        ]
+      },
+      {
+        "entityId": "alex",
+        "canonicalName": "Alex",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3"
+        ],
+        "playerSeasonIds": [
+          "ac-milan-2015-1",
+          "psv-2005-1"
+        ]
+      },
+      {
+        "entityId": "alex-meret",
+        "canonicalName": "Alex Meret",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "napoli-2023-0"
+        ]
+      },
+      {
+        "entityId": "alex-sandro",
+        "canonicalName": "Alex Sandro",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "juventus-2017-3"
+        ]
+      },
+      {
+        "entityId": "alexandre-lacazette",
+        "canonicalName": "Alexandre Lacazette",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "arsenal-2020-8"
+        ]
+      },
+      {
+        "entityId": "alisson",
+        "canonicalName": "Alisson",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "liverpool-2019-0"
+        ]
+      },
+      {
+        "entityId": "alphonso-davies",
+        "canonicalName": "Alphonso Davies",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "bayern-munich-2020-2",
+          "bayern-munich-2022-3"
+        ]
+      },
+      {
+        "entityId": "amir-rrahmani",
+        "canonicalName": "Amir Rrahmani",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "napoli-2023-3"
+        ]
+      },
+      {
+        "entityId": "andre-frank-zambo-anguissa",
+        "canonicalName": "Andre-Frank Zambo Anguissa",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3"
+        ],
+        "playerSeasonIds": [
+          "napoli-2023-5"
+        ]
+      },
+      {
+        "entityId": "andre-onana",
+        "canonicalName": "Andre Onana",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "ajax-2019-0"
+        ]
+      },
+      {
+        "entityId": "andrea-barzagli",
+        "canonicalName": "Andrea Barzagli",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "juventus-2012-2"
+        ]
+      },
+      {
+        "entityId": "andrea-pirlo",
+        "canonicalName": "Andrea Pirlo",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "ac-milan-2007-4",
+          "juventus-2012-4"
+        ]
+      },
+      {
+        "entityId": "andres-iniesta",
+        "canonicalName": "Andres Iniesta",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "barcelona-2009-5",
+          "barcelona-2011-5",
+          "barcelona-2015-5"
+        ]
+      },
+      {
+        "entityId": "andrew-robertson",
+        "canonicalName": "Andrew Robertson",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "liverpool-2019-3"
+        ]
+      },
+      {
+        "entityId": "angel-di-maria",
+        "canonicalName": "Angel Di Maria",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "real-madrid-2012-6"
+        ]
+      },
+      {
+        "entityId": "antonio-rudiger",
+        "canonicalName": "Antonio Rudiger",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "chelsea-2021-2"
+        ]
+      },
+      {
+        "entityId": "arda-turan",
+        "canonicalName": "Arda Turan",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "atletico-madrid-2014-6"
+        ]
+      },
+      {
+        "entityId": "arjen-robben",
+        "canonicalName": "Arjen Robben",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "bayern-munich-2013-8",
+          "chelsea-2005-6"
+        ]
+      },
+      {
+        "entityId": "arturo-vidal",
+        "canonicalName": "Arturo Vidal",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "barcelona-2020-6",
+          "juventus-2012-5"
+        ]
+      },
+      {
+        "entityId": "ashley-cole",
+        "canonicalName": "Ashley Cole",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "arsenal-2004-2",
+          "chelsea-2012-2"
+        ]
+      },
+      {
+        "entityId": "bacary-sagna",
+        "canonicalName": "Bacary Sagna",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "arsenal-2008-3"
+        ]
+      },
+      {
+        "entityId": "bastian-schweinsteiger",
+        "canonicalName": "Bastian Schweinsteiger",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "bayern-munich-2013-5"
+        ]
+      },
+      {
+        "entityId": "ben-chilwell",
+        "canonicalName": "Ben Chilwell",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "chelsea-2023-3"
+        ]
+      },
+      {
+        "entityId": "benjamin-andre",
+        "canonicalName": "Benjamin Andre",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "lille-2021-4"
+        ]
+      },
+      {
+        "entityId": "benjamin-mendy",
+        "canonicalName": "Benjamin Mendy",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "monaco-2017-3"
+        ]
+      },
+      {
+        "entityId": "benjamin-pavard",
+        "canonicalName": "Benjamin Pavard",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "inter-milan-2024-3"
+        ]
+      },
+      {
+        "entityId": "berat-djimsiti",
+        "canonicalName": "Berat Djimsiti",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "atalanta-2020-2"
+        ]
+      },
+      {
+        "entityId": "bernardo-silva",
+        "canonicalName": "Bernardo Silva",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "manchester-city-2023-6",
+          "monaco-2017-6"
+        ]
+      },
+      {
+        "entityId": "bernd-leno",
+        "canonicalName": "Bernd Leno",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "arsenal-2020-0"
+        ]
+      },
+      {
+        "entityId": "bixente-lizarazu",
+        "canonicalName": "Bixente Lizarazu",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "bayern-munich-2001-3"
+        ]
+      },
+      {
+        "entityId": "branislav-ivanovic",
+        "canonicalName": "Branislav Ivanovic",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "chelsea-2012-3"
+        ]
+      },
+      {
+        "entityId": "bruno-fernandes",
+        "canonicalName": "Bruno Fernandes",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "manchester-united-2022-4"
+        ]
+      },
+      {
+        "entityId": "bukayo-saka",
+        "canonicalName": "Bukayo Saka",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "arsenal-2020-6"
+        ]
+      },
+      {
+        "entityId": "burak-yilmaz",
+        "canonicalName": "Burak Yilmaz",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "lille-2021-7"
+        ]
+      },
+      {
+        "entityId": "cafu",
+        "canonicalName": "Cafu",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3"
+        ],
+        "playerSeasonIds": [
+          "ac-milan-2007-3",
+          "roma-2001-2"
+        ]
+      },
+      {
+        "entityId": "carles-puyol",
+        "canonicalName": "Carles Puyol",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "barcelona-2009-1",
+          "barcelona-2011-1"
+        ]
+      },
+      {
+        "entityId": "carlos-tevez",
+        "canonicalName": "Carlos Tevez",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "manchester-city-2012-8"
+        ]
+      },
+      {
+        "entityId": "casemiro",
+        "canonicalName": "Casemiro",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "real-madrid-2017-6",
+          "real-madrid-2019-6",
+          "real-madrid-2022-6"
+        ]
+      },
+      {
+        "entityId": "cesar-azpilicueta",
+        "canonicalName": "Cesar Azpilicueta",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "chelsea-2016-1"
+        ]
+      },
+      {
+        "entityId": "cesc-fabregas",
+        "canonicalName": "Cesc Fabregas",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3"
+        ],
+        "playerSeasonIds": [
+          "arsenal-2008-4",
+          "chelsea-2016-4"
+        ]
+      },
+      {
+        "entityId": "christian-abbiati",
+        "canonicalName": "Christian Abbiati",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3"
+        ],
+        "playerSeasonIds": [
+          "ac-milan-2011-0"
+        ]
+      },
+      {
+        "entityId": "christian-eriksen",
+        "canonicalName": "Christian Eriksen",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "inter-milan-2021-6"
+        ]
+      },
+      {
+        "entityId": "christian-fuchs",
+        "canonicalName": "Christian Fuchs",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "leicester-city-2016-3"
+        ]
+      },
+      {
+        "entityId": "clarence-seedorf",
+        "canonicalName": "Clarence Seedorf",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "ac-milan-2007-5",
+          "ac-milan-2011-5"
+        ]
+      },
+      {
+        "entityId": "claude-makelele",
+        "canonicalName": "Claude Makelele",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "chelsea-2005-5",
+          "real-madrid-2002-5"
+        ]
+      },
+      {
+        "entityId": "claudio-marchisio",
+        "canonicalName": "Claudio Marchisio",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "juventus-2012-6"
+        ]
+      },
+      {
+        "entityId": "clement-lenglet",
+        "canonicalName": "Clement Lenglet",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "barcelona-2020-3"
+        ]
+      },
+      {
+        "entityId": "conor-gallagher",
+        "canonicalName": "Conor Gallagher",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "chelsea-2023-6"
+        ]
+      },
+      {
+        "entityId": "cristiano-ronaldo",
+        "canonicalName": "Cristiano Ronaldo",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3"
+        ],
+        "playerSeasonIds": [
+          "juventus-2021-8",
+          "manchester-united-2008-7",
+          "manchester-united-2022-7",
+          "real-madrid-2012-7",
+          "real-madrid-2017-7"
+        ]
+      },
+      {
+        "entityId": "daley-blind",
+        "canonicalName": "Daley Blind",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "ajax-2019-2"
+        ]
+      },
+      {
+        "entityId": "dani-alves",
+        "canonicalName": "Dani Alves",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "barcelona-2009-3",
+          "barcelona-2011-3",
+          "barcelona-2015-3"
+        ]
+      },
+      {
+        "entityId": "dani-carvajal",
+        "canonicalName": "Dani Carvajal",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "real-madrid-2017-3",
+          "real-madrid-2022-3"
+        ]
+      },
+      {
+        "entityId": "dani-ceballos",
+        "canonicalName": "Dani Ceballos",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "arsenal-2020-5"
+        ]
+      },
+      {
+        "entityId": "danijel-subasic",
+        "canonicalName": "Danijel Subasic",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "monaco-2017-0"
+        ]
+      },
+      {
+        "entityId": "danilo",
+        "canonicalName": "Danilo",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "juventus-2021-3"
+        ]
+      },
+      {
+        "entityId": "danilo-d-ambrosio",
+        "canonicalName": "Danilo D'Ambrosio",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "inter-milan-2016-3"
+        ]
+      },
+      {
+        "entityId": "danny-drinkwater",
+        "canonicalName": "Danny Drinkwater",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "leicester-city-2016-5"
+        ]
+      },
+      {
+        "entityId": "dante",
+        "canonicalName": "Dante",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "bayern-munich-2013-3"
+        ]
+      },
+      {
+        "entityId": "david-alaba",
+        "canonicalName": "David Alaba",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "bayern-munich-2013-4",
+          "bayern-munich-2020-1",
+          "real-madrid-2022-2"
+        ]
+      },
+      {
+        "entityId": "david-beckham",
+        "canonicalName": "David Beckham",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "manchester-united-1999-5"
+        ]
+      },
+      {
+        "entityId": "david-de-gea",
+        "canonicalName": "David de Gea",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "manchester-united-2013-0",
+          "manchester-united-2022-0"
+        ]
+      },
+      {
+        "entityId": "david-luiz",
+        "canonicalName": "David Luiz",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "arsenal-2020-1"
+        ]
+      },
+      {
+        "entityId": "david-silva",
+        "canonicalName": "David Silva",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "manchester-city-2012-5"
+        ]
+      },
+      {
+        "entityId": "david-trezeguet",
+        "canonicalName": "David Trezeguet",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "juventus-2003-8"
+        ]
+      },
+      {
+        "entityId": "david-villa",
+        "canonicalName": "David Villa",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "atletico-madrid-2014-8",
+          "barcelona-2011-8"
+        ]
+      },
+      {
+        "entityId": "dayot-upamecano",
+        "canonicalName": "Dayot Upamecano",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "bayern-munich-2022-2"
+        ]
+      },
+      {
+        "entityId": "deco",
+        "canonicalName": "Deco",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "porto-2004-6"
+        ]
+      },
+      {
+        "entityId": "dennis-bergkamp",
+        "canonicalName": "Dennis Bergkamp",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "arsenal-2004-8"
+        ]
+      },
+      {
+        "entityId": "didier-drogba",
+        "canonicalName": "Didier Drogba",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "chelsea-2005-7",
+          "chelsea-2012-7"
+        ]
+      },
+      {
+        "entityId": "diego-costa",
+        "canonicalName": "Diego Costa",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "atletico-madrid-2014-7",
+          "chelsea-2016-8"
+        ]
+      },
+      {
+        "entityId": "diego-godin",
+        "canonicalName": "Diego Godin",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "atletico-madrid-2014-1"
+        ]
+      },
+      {
+        "entityId": "diego-lopez",
+        "canonicalName": "Diego Lopez",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "ac-milan-2015-0"
+        ]
+      },
+      {
+        "entityId": "diego-milito",
+        "canonicalName": "Diego Milito",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "inter-milan-2010-7"
+        ]
+      },
+      {
+        "entityId": "djibril-sidibe",
+        "canonicalName": "Djibril Sidibe",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "monaco-2017-2"
+        ]
+      },
+      {
+        "entityId": "donny-van-de-beek",
+        "canonicalName": "Donny van de Beek",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "ajax-2019-5"
+        ]
+      },
+      {
+        "entityId": "dusan-tadic",
+        "canonicalName": "Dusan Tadic",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "ajax-2019-8"
+        ]
+      },
+      {
+        "entityId": "duvan-zapata",
+        "canonicalName": "Duvan Zapata",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "atalanta-2020-8"
+        ]
+      },
+      {
+        "entityId": "dwight-yorke",
+        "canonicalName": "Dwight Yorke",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3"
+        ],
+        "playerSeasonIds": [
+          "manchester-united-1999-8"
+        ]
+      },
+      {
+        "entityId": "eden-hazard",
+        "canonicalName": "Eden Hazard",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "chelsea-2016-7"
+        ]
+      },
+      {
+        "entityId": "eder-militao",
+        "canonicalName": "Eder Militao",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "real-madrid-2022-1"
+        ]
+      },
+      {
+        "entityId": "ederson",
+        "canonicalName": "Ederson",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3"
+        ],
+        "playerSeasonIds": [
+          "manchester-city-2023-0"
+        ]
+      },
+      {
+        "entityId": "edmond-tapsoba",
+        "canonicalName": "Edmond Tapsoba",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "bayer-leverkusen-2024-4"
+        ]
+      },
+      {
+        "entityId": "edouard-mendy",
+        "canonicalName": "Edouard Mendy",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "chelsea-2021-0"
+        ]
+      },
+      {
+        "entityId": "edwin-van-der-sar",
+        "canonicalName": "Edwin van der Sar",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "manchester-united-2008-0"
+        ]
+      },
+      {
+        "entityId": "emmanuel-adebayor",
+        "canonicalName": "Emmanuel Adebayor",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "arsenal-2008-7"
+        ]
+      },
+      {
+        "entityId": "emre-can",
+        "canonicalName": "Emre Can",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "borussia-dortmund-2023-5"
+        ]
+      },
+      {
+        "entityId": "enzo-fernandez",
+        "canonicalName": "Enzo Fernandez",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "chelsea-2023-4"
+        ]
+      },
+      {
+        "entityId": "enzo-perez",
+        "canonicalName": "Enzo Perez",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "benfica-2014-4"
+        ]
+      },
+      {
+        "entityId": "erling-haaland",
+        "canonicalName": "Erling Haaland",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "manchester-city-2023-7"
+        ]
+      },
+      {
+        "entityId": "esteban-cambiasso",
+        "canonicalName": "Esteban Cambiasso",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "inter-milan-2010-6"
+        ]
+      },
+      {
+        "entityId": "exequiel-palacios",
+        "canonicalName": "Exequiel Palacios",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "bayer-leverkusen-2024-6"
+        ]
+      },
+      {
+        "entityId": "ezequiel-garay",
+        "canonicalName": "Ezequiel Garay",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "benfica-2014-2"
+        ]
+      },
+      {
+        "entityId": "fabinho",
+        "canonicalName": "Fabinho",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "liverpool-2019-4",
+          "monaco-2017-4"
+        ]
+      },
+      {
+        "entityId": "fabio-cannavaro",
+        "canonicalName": "Fabio Cannavaro",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "parma-1999-2"
+        ]
+      },
+      {
+        "entityId": "federico-chiesa",
+        "canonicalName": "Federico Chiesa",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "juventus-2021-7"
+        ]
+      },
+      {
+        "entityId": "federico-dimarco",
+        "canonicalName": "Federico Dimarco",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "inter-milan-2024-2"
+        ]
+      },
+      {
+        "entityId": "fernando-hierro",
+        "canonicalName": "Fernando Hierro",
+        "providers": [
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "real-madrid-2002-2"
+        ]
+      },
+      {
+        "entityId": "fernando-morientes",
+        "canonicalName": "Fernando Morientes",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "real-madrid-2002-8"
+        ]
+      },
+      {
+        "entityId": "fikayo-tomori",
+        "canonicalName": "Fikayo Tomori",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "ac-milan-2022-1"
+        ]
+      },
+      {
+        "entityId": "filipe-luis",
+        "canonicalName": "Filipe Luis",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "atletico-madrid-2014-3"
+        ]
+      },
+      {
+        "entityId": "filippo-inzaghi",
+        "canonicalName": "Filippo Inzaghi",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "ac-milan-2007-8"
+        ]
+      },
+      {
+        "entityId": "florian-wirtz",
+        "canonicalName": "Florian Wirtz",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "bayer-leverkusen-2024-7"
+        ]
+      },
+      {
+        "entityId": "francesco-totti",
+        "canonicalName": "Francesco Totti",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "roma-2001-7"
+        ]
+      },
+      {
+        "entityId": "franck-kessie",
+        "canonicalName": "Franck Kessie",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "ac-milan-2022-6"
+        ]
+      },
+      {
+        "entityId": "franck-ribery",
+        "canonicalName": "Franck Ribery",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "bayern-munich-2013-7"
+        ]
+      },
+      {
+        "entityId": "frank-lampard",
+        "canonicalName": "Frank Lampard",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "chelsea-2005-4",
+          "chelsea-2012-4"
+        ]
+      },
+      {
+        "entityId": "fred",
+        "canonicalName": "Fred",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3"
+        ],
+        "playerSeasonIds": [
+          "manchester-united-2022-5"
+        ]
+      },
+      {
+        "entityId": "frenkie-de-jong",
+        "canonicalName": "Frenkie de Jong",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "ajax-2019-4",
+          "barcelona-2020-5",
+          "barcelona-2022-5"
+        ]
+      },
+      {
+        "entityId": "gabi",
+        "canonicalName": "Gabi",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "atletico-madrid-2014-4"
+        ]
+      },
+      {
+        "entityId": "gael-clichy",
+        "canonicalName": "Gael Clichy",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "arsenal-2008-2",
+          "manchester-city-2012-3"
+        ]
+      },
+      {
+        "entityId": "gareth-barry",
+        "canonicalName": "Gareth Barry",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "manchester-city-2012-6"
+        ]
+      },
+      {
+        "entityId": "gary-cahill",
+        "canonicalName": "Gary Cahill",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "chelsea-2016-2"
+        ]
+      },
+      {
+        "entityId": "gary-medel",
+        "canonicalName": "Gary Medel",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "inter-milan-2016-4"
+        ]
+      },
+      {
+        "entityId": "gary-neville",
+        "canonicalName": "Gary Neville",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "manchester-united-1999-2"
+        ]
+      },
+      {
+        "entityId": "gennaro-gattuso",
+        "canonicalName": "Gennaro Gattuso",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "ac-milan-2007-6"
+        ]
+      },
+      {
+        "entityId": "geoffrey-kondogbia",
+        "canonicalName": "Geoffrey Kondogbia",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "inter-milan-2016-6"
+        ]
+      },
+      {
+        "entityId": "georginio-wijnaldum",
+        "canonicalName": "Georginio Wijnaldum",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "liverpool-2019-6"
+        ]
+      },
+      {
+        "entityId": "gerard-pique",
+        "canonicalName": "Gerard Pique",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "barcelona-2009-2",
+          "barcelona-2011-2",
+          "barcelona-2015-1",
+          "barcelona-2020-1",
+          "barcelona-2022-3"
+        ]
+      },
+      {
+        "entityId": "giacomo-bonaventura",
+        "canonicalName": "Giacomo Bonaventura",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "ac-milan-2015-5"
+        ]
+      },
+      {
+        "entityId": "gianluca-zambrotta",
+        "canonicalName": "Gianluca Zambrotta",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "juventus-2003-3"
+        ]
+      },
+      {
+        "entityId": "gianluigi-buffon",
+        "canonicalName": "Gianluigi Buffon",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "juventus-2003-0",
+          "juventus-2012-0",
+          "juventus-2017-0",
+          "parma-1999-0"
+        ]
+      },
+      {
+        "entityId": "gilberto-silva",
+        "canonicalName": "Gilberto Silva",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "arsenal-2004-6"
+        ]
+      },
+      {
+        "entityId": "giorgio-chiellini",
+        "canonicalName": "Giorgio Chiellini",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "juventus-2012-1",
+          "juventus-2017-1"
+        ]
+      },
+      {
+        "entityId": "giovanni-di-lorenzo",
+        "canonicalName": "Giovanni Di Lorenzo",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "napoli-2023-2"
+        ]
+      },
+      {
+        "entityId": "gonzalo-castro",
+        "canonicalName": "Gonzalo Castro",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "borussia-dortmund-2017-5"
+        ]
+      },
+      {
+        "entityId": "gonzalo-higuain",
+        "canonicalName": "Gonzalo Higuain",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "juventus-2017-8"
+        ]
+      },
+      {
+        "entityId": "granit-xhaka",
+        "canonicalName": "Granit Xhaka",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "arsenal-2020-4",
+          "bayer-leverkusen-2024-5"
+        ]
+      },
+      {
+        "entityId": "gregor-kobel",
+        "canonicalName": "Gregor Kobel",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "borussia-dortmund-2023-0"
+        ]
+      },
+      {
+        "entityId": "hakan-calhanoglu",
+        "canonicalName": "Hakan Calhanoglu",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "inter-milan-2024-4"
+        ]
+      },
+      {
+        "entityId": "hakim-ziyech",
+        "canonicalName": "Hakim Ziyech",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "ajax-2019-7"
+        ]
+      },
+      {
+        "entityId": "hans-hateboer",
+        "canonicalName": "Hans Hateboer",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "atalanta-2020-4"
+        ]
+      },
+      {
+        "entityId": "harry-maguire",
+        "canonicalName": "Harry Maguire",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "manchester-united-2022-3"
+        ]
+      },
+      {
+        "entityId": "hector-bellerin",
+        "canonicalName": "Hector Bellerin",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "arsenal-2020-3"
+        ]
+      },
+      {
+        "entityId": "henrikh-mkhitaryan",
+        "canonicalName": "Henrikh Mkhitaryan",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "borussia-dortmund-2015-6",
+          "inter-milan-2024-6"
+        ]
+      },
+      {
+        "entityId": "hernan-crespo",
+        "canonicalName": "Hernan Crespo",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "parma-1999-7"
+        ]
+      },
+      {
+        "entityId": "heurelho-gomes",
+        "canonicalName": "Heurelho Gomes",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "psv-2005-0"
+        ]
+      },
+      {
+        "entityId": "hidetoshi-nakata",
+        "canonicalName": "Hidetoshi Nakata",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "roma-2001-6"
+        ]
+      },
+      {
+        "entityId": "ignazio-abate",
+        "canonicalName": "Ignazio Abate",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "ac-milan-2011-3",
+          "ac-milan-2015-3"
+        ]
+      },
+      {
+        "entityId": "iker-casillas",
+        "canonicalName": "Iker Casillas",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "real-madrid-2002-0",
+          "real-madrid-2012-0"
+        ]
+      },
+      {
+        "entityId": "ilkay-gundogan",
+        "canonicalName": "Ilkay Gundogan",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "borussia-dortmund-2013-4",
+          "borussia-dortmund-2015-4"
+        ]
+      },
+      {
+        "entityId": "ismael-bennacer",
+        "canonicalName": "Ismael Bennacer",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "ac-milan-2022-5"
+        ]
+      },
+      {
+        "entityId": "ivan-perisic",
+        "canonicalName": "Ivan Perisic",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "inter-milan-2016-8"
+        ]
+      },
+      {
+        "entityId": "ivan-rakitic",
+        "canonicalName": "Ivan Rakitic",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "barcelona-2015-6"
+        ]
+      },
+      {
+        "entityId": "jaap-stam",
+        "canonicalName": "Jaap Stam",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "manchester-united-1999-1"
+        ]
+      },
+      {
+        "entityId": "jack-grealish",
+        "canonicalName": "Jack Grealish",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "manchester-city-2023-8"
+        ]
+      },
+      {
+        "entityId": "jakub-blaszczykowski",
+        "canonicalName": "Jakub Blaszczykowski",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "borussia-dortmund-2013-6"
+        ]
+      },
+      {
+        "entityId": "jamie-carragher",
+        "canonicalName": "Jamie Carragher",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "liverpool-2005-1"
+        ]
+      },
+      {
+        "entityId": "jamie-vardy",
+        "canonicalName": "Jamie Vardy",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "leicester-city-2016-8"
+        ]
+      },
+      {
+        "entityId": "jan-oblak",
+        "canonicalName": "Jan Oblak",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "benfica-2014-0"
+        ]
+      },
+      {
+        "entityId": "javi-martinez",
+        "canonicalName": "Javi Martinez",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "bayern-munich-2013-6"
+        ]
+      },
+      {
+        "entityId": "javier-zanetti",
+        "canonicalName": "Javier Zanetti",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "inter-milan-2010-4"
+        ]
+      },
+      {
+        "entityId": "jefferson-farfan",
+        "canonicalName": "Jefferson Farfan",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "psv-2005-7"
+        ]
+      },
+      {
+        "entityId": "jeison-murillo",
+        "canonicalName": "Jeison Murillo",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "inter-milan-2016-2"
+        ]
+      },
+      {
+        "entityId": "jens-lehmann",
+        "canonicalName": "Jens Lehmann",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "arsenal-2004-0"
+        ]
+      },
+      {
+        "entityId": "jeremie-frimpong",
+        "canonicalName": "Jeremie Frimpong",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "bayer-leverkusen-2024-3"
+        ]
+      },
+      {
+        "entityId": "jeremy-menez",
+        "canonicalName": "Jeremy Menez",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "ac-milan-2015-7"
+        ]
+      },
+      {
+        "entityId": "jerome-boateng",
+        "canonicalName": "Jerome Boateng",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "bayern-munich-2013-2",
+          "bayern-munich-2020-3"
+        ]
+      },
+      {
+        "entityId": "jerzy-dudek",
+        "canonicalName": "Jerzy Dudek",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "liverpool-2005-0"
+        ]
+      },
+      {
+        "entityId": "joe-hart",
+        "canonicalName": "Joe Hart",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "manchester-city-2012-0"
+        ]
+      },
+      {
+        "entityId": "john-arne-riise",
+        "canonicalName": "John Arne Riise",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "liverpool-2005-3"
+        ]
+      },
+      {
+        "entityId": "john-stones",
+        "canonicalName": "John Stones",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "manchester-city-2023-2"
+        ]
+      },
+      {
+        "entityId": "john-terry",
+        "canonicalName": "John Terry",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "chelsea-2005-1",
+          "chelsea-2012-1",
+          "chelsea-2016-3"
+        ]
+      },
+      {
+        "entityId": "jonathan-bamba",
+        "canonicalName": "Jonathan Bamba",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "lille-2021-6"
+        ]
+      },
+      {
+        "entityId": "jonathan-david",
+        "canonicalName": "Jonathan David",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "lille-2021-8"
+        ]
+      },
+      {
+        "entityId": "jonathan-tah",
+        "canonicalName": "Jonathan Tah",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "bayer-leverkusen-2024-1"
+        ]
+      },
+      {
+        "entityId": "jordan-henderson",
+        "canonicalName": "Jordan Henderson",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "liverpool-2019-5"
+        ]
+      },
+      {
+        "entityId": "jordi-alba",
+        "canonicalName": "Jordi Alba",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "barcelona-2015-2",
+          "barcelona-2020-2",
+          "barcelona-2022-2"
+        ]
+      },
+      {
+        "entityId": "jorginho",
+        "canonicalName": "Jorginho",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3"
+        ],
+        "playerSeasonIds": [
+          "chelsea-2021-5"
+        ]
+      },
+      {
+        "entityId": "jose-fonte",
+        "canonicalName": "Jose Fonte",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "lille-2021-1"
+        ]
+      },
+      {
+        "entityId": "joshua-kimmich",
+        "canonicalName": "Joshua Kimmich",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "bayern-munich-2020-4",
+          "bayern-munich-2022-4"
+        ]
+      },
+      {
+        "entityId": "juan-cuadrado",
+        "canonicalName": "Juan Cuadrado",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "juventus-2021-4"
+        ]
+      },
+      {
+        "entityId": "juan-mata",
+        "canonicalName": "Juan Mata",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "chelsea-2012-5"
+        ]
+      },
+      {
+        "entityId": "juan-sebastian-veron",
+        "canonicalName": "Juan Sebastian Veron",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "lazio-2000-4",
+          "parma-1999-4"
+        ]
+      },
+      {
+        "entityId": "jude-bellingham",
+        "canonicalName": "Jude Bellingham",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "borussia-dortmund-2023-4"
+        ]
+      },
+      {
+        "entityId": "julian-brandt",
+        "canonicalName": "Julian Brandt",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "borussia-dortmund-2023-6"
+        ]
+      },
+      {
+        "entityId": "julian-weigl",
+        "canonicalName": "Julian Weigl",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "borussia-dortmund-2017-4"
+        ]
+      },
+      {
+        "entityId": "julio-cesar",
+        "canonicalName": "Julio Cesar",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "inter-milan-2010-0"
+        ]
+      },
+      {
+        "entityId": "kai-havertz",
+        "canonicalName": "Kai Havertz",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "chelsea-2021-7",
+          "chelsea-2023-8"
+        ]
+      },
+      {
+        "entityId": "kaka",
+        "canonicalName": "Kaka",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "ac-milan-2007-7"
+        ]
+      },
+      {
+        "entityId": "kalidou-koulibaly",
+        "canonicalName": "Kalidou Koulibaly",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "chelsea-2023-2"
+        ]
+      },
+      {
+        "entityId": "kamil-glik",
+        "canonicalName": "Kamil Glik",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "monaco-2017-1"
+        ]
+      },
+      {
+        "entityId": "karim-adeyemi",
+        "canonicalName": "Karim Adeyemi",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "borussia-dortmund-2023-7"
+        ]
+      },
+      {
+        "entityId": "karim-benzema",
+        "canonicalName": "Karim Benzema",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "real-madrid-2012-8",
+          "real-madrid-2017-8",
+          "real-madrid-2019-7",
+          "real-madrid-2022-7"
+        ]
+      },
+      {
+        "entityId": "kasper-schmeichel",
+        "canonicalName": "Kasper Schmeichel",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "leicester-city-2016-0"
+        ]
+      },
+      {
+        "entityId": "keisuke-honda",
+        "canonicalName": "Keisuke Honda",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "ac-milan-2015-6"
+        ]
+      },
+      {
+        "entityId": "kepa-arrizabalaga",
+        "canonicalName": "Kepa Arrizabalaga",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "chelsea-2023-0"
+        ]
+      },
+      {
+        "entityId": "kevin-de-bruyne",
+        "canonicalName": "Kevin De Bruyne",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "manchester-city-2023-5"
+        ]
+      },
+      {
+        "entityId": "kevin-prince-boateng",
+        "canonicalName": "Kevin-Prince Boateng",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "ac-milan-2011-6"
+        ]
+      },
+      {
+        "entityId": "keylor-navas",
+        "canonicalName": "Keylor Navas",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "real-madrid-2017-0"
+        ]
+      },
+      {
+        "entityId": "khvicha-kvaratskhelia",
+        "canonicalName": "Khvicha Kvaratskhelia",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "napoli-2023-7"
+        ]
+      },
+      {
+        "entityId": "kieran-tierney",
+        "canonicalName": "Kieran Tierney",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "arsenal-2020-2"
+        ]
+      },
+      {
+        "entityId": "kingsley-coman",
+        "canonicalName": "Kingsley Coman",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "bayern-munich-2022-7"
+        ]
+      },
+      {
+        "entityId": "koke",
+        "canonicalName": "Koke",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3"
+        ],
+        "playerSeasonIds": [
+          "atletico-madrid-2014-5"
+        ]
+      },
+      {
+        "entityId": "kolo-toure",
+        "canonicalName": "Kolo Toure",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3"
+        ],
+        "playerSeasonIds": [
+          "arsenal-2004-3",
+          "arsenal-2008-1"
+        ]
+      },
+      {
+        "entityId": "kyle-walker",
+        "canonicalName": "Kyle Walker",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "manchester-city-2023-3"
+        ]
+      },
+      {
+        "entityId": "kylian-mbappe",
+        "canonicalName": "Kylian Mbappe",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "monaco-2017-7"
+        ]
+      },
+      {
+        "entityId": "lasse-schone",
+        "canonicalName": "Lasse Schone",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "ajax-2019-6"
+        ]
+      },
+      {
+        "entityId": "lautaro-martinez",
+        "canonicalName": "Lautaro Martinez",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "inter-milan-2021-8",
+          "inter-milan-2024-7"
+        ]
+      },
+      {
+        "entityId": "leon-goretzka",
+        "canonicalName": "Leon Goretzka",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "bayern-munich-2020-6",
+          "bayern-munich-2022-5"
+        ]
+      },
+      {
+        "entityId": "leonardo-bonucci",
+        "canonicalName": "Leonardo Bonucci",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "juventus-2012-3",
+          "juventus-2017-2",
+          "juventus-2021-2"
+        ]
+      },
+      {
+        "entityId": "lilian-thuram",
+        "canonicalName": "Lilian Thuram",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "juventus-2003-1",
+          "parma-1999-1"
+        ]
+      },
+      {
+        "entityId": "lima",
+        "canonicalName": "Lima",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3"
+        ],
+        "playerSeasonIds": [
+          "benfica-2014-8"
+        ]
+      },
+      {
+        "entityId": "lionel-messi",
+        "canonicalName": "Lionel Messi",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "barcelona-2009-7",
+          "barcelona-2011-7",
+          "barcelona-2015-7",
+          "barcelona-2020-7"
+        ]
+      },
+      {
+        "entityId": "lucas-hernandez",
+        "canonicalName": "Lucas Hernandez",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "bayern-munich-2022-1"
+        ]
+      },
+      {
+        "entityId": "luis-figo",
+        "canonicalName": "Luis Figo",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "real-madrid-2002-6"
+        ]
+      },
+      {
+        "entityId": "luis-garcia",
+        "canonicalName": "Luis Garcia",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "liverpool-2005-6"
+        ]
+      },
+      {
+        "entityId": "luis-suarez",
+        "canonicalName": "Luis Suarez",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "barcelona-2015-8",
+          "barcelona-2020-8"
+        ]
+      },
+      {
+        "entityId": "luisao",
+        "canonicalName": "Luisao",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "benfica-2014-1"
+        ]
+      },
+      {
+        "entityId": "luka-modric",
+        "canonicalName": "Luka Modric",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "real-madrid-2017-4",
+          "real-madrid-2019-4",
+          "real-madrid-2022-4"
+        ]
+      },
+      {
+        "entityId": "lukas-hradecky",
+        "canonicalName": "Lukas Hradecky",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "bayer-leverkusen-2024-0"
+        ]
+      },
+      {
+        "entityId": "lukasz-piszczek",
+        "canonicalName": "Lukasz Piszczek",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "borussia-dortmund-2013-3",
+          "borussia-dortmund-2015-3",
+          "borussia-dortmund-2017-2"
+        ]
+      },
+      {
+        "entityId": "luke-shaw",
+        "canonicalName": "Luke Shaw",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "manchester-united-2022-2"
+        ]
+      },
+      {
+        "entityId": "maicon",
+        "canonicalName": "Maicon",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3"
+        ],
+        "playerSeasonIds": [
+          "inter-milan-2010-1"
+        ]
+      },
+      {
+        "entityId": "manuel-neuer",
+        "canonicalName": "Manuel Neuer",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "bayern-munich-2013-0",
+          "bayern-munich-2020-0",
+          "bayern-munich-2022-0"
+        ]
+      },
+      {
+        "entityId": "manuel-pablo",
+        "canonicalName": "Manuel Pablo",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3"
+        ],
+        "playerSeasonIds": [
+          "deportivo-la-coruna-2000-3"
+        ]
+      },
+      {
+        "entityId": "marc-albrighton",
+        "canonicalName": "Marc Albrighton",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "leicester-city-2016-6"
+        ]
+      },
+      {
+        "entityId": "marc-andre-ter-stegen",
+        "canonicalName": "Marc-Andre ter Stegen",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "barcelona-2015-0",
+          "barcelona-2020-0",
+          "barcelona-2022-0"
+        ]
+      },
+      {
+        "entityId": "marcelo",
+        "canonicalName": "Marcelo",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "real-madrid-2012-3",
+          "real-madrid-2017-2",
+          "real-madrid-2019-3"
+        ]
+      },
+      {
+        "entityId": "marcelo-brozovic",
+        "canonicalName": "Marcelo Brozovic",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "inter-milan-2016-5",
+          "inter-milan-2021-5"
+        ]
+      },
+      {
+        "entityId": "marco-reus",
+        "canonicalName": "Marco Reus",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "borussia-dortmund-2013-7",
+          "borussia-dortmund-2015-7",
+          "borussia-dortmund-2017-7"
+        ]
+      },
+      {
+        "entityId": "marcus-rashford",
+        "canonicalName": "Marcus Rashford",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "manchester-united-2022-8"
+        ]
+      },
+      {
+        "entityId": "marcus-thuram",
+        "canonicalName": "Marcus Thuram",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "inter-milan-2024-8"
+        ]
+      },
+      {
+        "entityId": "mario-mandzukic",
+        "canonicalName": "Mario Mandzukic",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "juventus-2017-6"
+        ]
+      },
+      {
+        "entityId": "marten-de-roon",
+        "canonicalName": "Marten de Roon",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "atalanta-2020-5"
+        ]
+      },
+      {
+        "entityId": "mason-mount",
+        "canonicalName": "Mason Mount",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "chelsea-2021-6"
+        ]
+      },
+      {
+        "entityId": "mateo-kovacic",
+        "canonicalName": "Mateo Kovacic",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "chelsea-2023-5"
+        ]
+      },
+      {
+        "entityId": "mathieu-flamini",
+        "canonicalName": "Mathieu Flamini",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "arsenal-2008-6"
+        ]
+      },
+      {
+        "entityId": "mats-hummels",
+        "canonicalName": "Mats Hummels",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "borussia-dortmund-2013-1",
+          "borussia-dortmund-2015-1",
+          "borussia-dortmund-2023-1"
+        ]
+      },
+      {
+        "entityId": "matthijs-de-ligt",
+        "canonicalName": "Matthijs de Ligt",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "ajax-2019-1",
+          "juventus-2021-1"
+        ]
+      },
+      {
+        "entityId": "mattia-destro",
+        "canonicalName": "Mattia Destro",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "ac-milan-2015-8"
+        ]
+      },
+      {
+        "entityId": "mauro-icardi",
+        "canonicalName": "Mauro Icardi",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "inter-milan-2016-7"
+        ]
+      },
+      {
+        "entityId": "maxi-pereira",
+        "canonicalName": "Maxi Pereira",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "benfica-2014-3"
+        ]
+      },
+      {
+        "entityId": "mesut-ozil",
+        "canonicalName": "Mesut Ozil",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "real-madrid-2012-5"
+        ]
+      },
+      {
+        "entityId": "michael-carrick",
+        "canonicalName": "Michael Carrick",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "manchester-united-2008-5",
+          "manchester-united-2013-4"
+        ]
+      },
+      {
+        "entityId": "mike-maignan",
+        "canonicalName": "Mike Maignan",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "ac-milan-2022-0",
+          "lille-2021-0"
+        ]
+      },
+      {
+        "entityId": "milan-skriniar",
+        "canonicalName": "Milan Skriniar",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "inter-milan-2021-1"
+        ]
+      },
+      {
+        "entityId": "miralem-pjanic",
+        "canonicalName": "Miralem Pjanic",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "juventus-2017-4"
+        ]
+      },
+      {
+        "entityId": "miranda",
+        "canonicalName": "Miranda",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "atletico-madrid-2014-2",
+          "inter-milan-2016-1"
+        ]
+      },
+      {
+        "entityId": "mohamed-salah",
+        "canonicalName": "Mohamed Salah",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "liverpool-2019-7"
+        ]
+      },
+      {
+        "entityId": "n-golo-kante",
+        "canonicalName": "N'Golo Kante",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "chelsea-2021-4",
+          "leicester-city-2016-4"
+        ]
+      },
+      {
+        "entityId": "nemanja-matic",
+        "canonicalName": "Nemanja Matic",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "benfica-2014-5",
+          "chelsea-2016-5"
+        ]
+      },
+      {
+        "entityId": "nemanja-vidic",
+        "canonicalName": "Nemanja Vidic",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "manchester-united-2008-2"
+        ]
+      },
+      {
+        "entityId": "neven-subotic",
+        "canonicalName": "Neven Subotic",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "borussia-dortmund-2013-2"
+        ]
+      },
+      {
+        "entityId": "nico-schlotterbeck",
+        "canonicalName": "Nico Schlotterbeck",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "borussia-dortmund-2023-2"
+        ]
+      },
+      {
+        "entityId": "nicolas-gaitan",
+        "canonicalName": "Nicolas Gaitan",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "benfica-2014-6"
+        ]
+      },
+      {
+        "entityId": "nicolas-tagliafico",
+        "canonicalName": "Nicolas Tagliafico",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "ajax-2019-3"
+        ]
+      },
+      {
+        "entityId": "nicolo-barella",
+        "canonicalName": "Nicolo Barella",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "inter-milan-2021-4",
+          "inter-milan-2024-5"
+        ]
+      },
+      {
+        "entityId": "nigel-de-jong",
+        "canonicalName": "Nigel de Jong",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "ac-milan-2015-4"
+        ]
+      },
+      {
+        "entityId": "oliver-kahn",
+        "canonicalName": "Oliver Kahn",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "bayern-munich-2001-0"
+        ]
+      },
+      {
+        "entityId": "olivier-giroud",
+        "canonicalName": "Olivier Giroud",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "ac-milan-2022-8"
+        ]
+      },
+      {
+        "entityId": "ousmane-dembele",
+        "canonicalName": "Ousmane Dembele",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "barcelona-2022-8",
+          "borussia-dortmund-2017-6"
+        ]
+      },
+      {
+        "entityId": "owen-hargreaves",
+        "canonicalName": "Owen Hargreaves",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "bayern-munich-2001-6"
+        ]
+      },
+      {
+        "entityId": "pablo-aimar",
+        "canonicalName": "Pablo Aimar",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "valencia-2004-6"
+        ]
+      },
+      {
+        "entityId": "pablo-zabaleta",
+        "canonicalName": "Pablo Zabaleta",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "manchester-city-2012-2"
+        ]
+      },
+      {
+        "entityId": "paolo-maldini",
+        "canonicalName": "Paolo Maldini",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "ac-milan-2007-1"
+        ]
+      },
+      {
+        "entityId": "patrice-evra",
+        "canonicalName": "Patrice Evra",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "manchester-united-2008-3",
+          "manchester-united-2013-2"
+        ]
+      },
+      {
+        "entityId": "patrick-vieira",
+        "canonicalName": "Patrick Vieira",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "arsenal-2004-4"
+        ]
+      },
+      {
+        "entityId": "paul-scholes",
+        "canonicalName": "Paul Scholes",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "manchester-united-1999-6",
+          "manchester-united-2008-4"
+        ]
+      },
+      {
+        "entityId": "pauleta",
+        "canonicalName": "Pauleta",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "deportivo-la-coruna-2000-8"
+        ]
+      },
+      {
+        "entityId": "paulo-dybala",
+        "canonicalName": "Paulo Dybala",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "juventus-2017-7"
+        ]
+      },
+      {
+        "entityId": "pavel-nedved",
+        "canonicalName": "Pavel Nedved",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "juventus-2003-4",
+          "lazio-2000-5"
+        ]
+      },
+      {
+        "entityId": "pedri",
+        "canonicalName": "Pedri",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "barcelona-2022-4"
+        ]
+      },
+      {
+        "entityId": "pepe",
+        "canonicalName": "Pepe",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "real-madrid-2012-2"
+        ]
+      },
+      {
+        "entityId": "peter-schmeichel",
+        "canonicalName": "Peter Schmeichel",
+        "providers": [
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "manchester-united-1999-0"
+        ]
+      },
+      {
+        "entityId": "petr-cech",
+        "canonicalName": "Petr Cech",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "chelsea-2005-0",
+          "chelsea-2012-0"
+        ]
+      },
+      {
+        "entityId": "philipp-lahm",
+        "canonicalName": "Philipp Lahm",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "bayern-munich-2013-1"
+        ]
+      },
+      {
+        "entityId": "philippe-mexes",
+        "canonicalName": "Philippe Mexes",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3"
+        ],
+        "playerSeasonIds": [
+          "ac-milan-2015-2"
+        ]
+      },
+      {
+        "entityId": "pierluigi-gollini",
+        "canonicalName": "Pierluigi Gollini",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "atalanta-2020-0"
+        ]
+      },
+      {
+        "entityId": "pierre-emerick-aubameyang",
+        "canonicalName": "Pierre-Emerick Aubameyang",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "arsenal-2020-7",
+          "barcelona-2022-7",
+          "borussia-dortmund-2015-8",
+          "borussia-dortmund-2017-8"
+        ]
+      },
+      {
+        "entityId": "pierre-kalulu",
+        "canonicalName": "Pierre Kalulu",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "ac-milan-2022-3"
+        ]
+      },
+      {
+        "entityId": "piotr-zielinski",
+        "canonicalName": "Piotr Zielinski",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "napoli-2023-6"
+        ]
+      },
+      {
+        "entityId": "radamel-falcao",
+        "canonicalName": "Radamel Falcao",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "monaco-2017-8"
+        ]
+      },
+      {
+        "entityId": "rafael",
+        "canonicalName": "Rafael",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "manchester-united-2013-3"
+        ]
+      },
+      {
+        "entityId": "rafael-leao",
+        "canonicalName": "Rafael Leao",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "ac-milan-2022-7"
+        ]
+      },
+      {
+        "entityId": "rafael-toloi",
+        "canonicalName": "Rafael Toloi",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "atalanta-2020-1"
+        ]
+      },
+      {
+        "entityId": "raheem-sterling",
+        "canonicalName": "Raheem Sterling",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "chelsea-2023-7"
+        ]
+      },
+      {
+        "entityId": "ramires",
+        "canonicalName": "Ramires",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3"
+        ],
+        "playerSeasonIds": [
+          "chelsea-2012-6"
+        ]
+      },
+      {
+        "entityId": "raphael-guerreiro",
+        "canonicalName": "Raphael Guerreiro",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "borussia-dortmund-2017-3",
+          "borussia-dortmund-2023-3"
+        ]
+      },
+      {
+        "entityId": "raphael-varane",
+        "canonicalName": "Raphael Varane",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "manchester-united-2022-1",
+          "real-madrid-2019-2"
+        ]
+      },
+      {
+        "entityId": "raul",
+        "canonicalName": "Raul",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "real-madrid-2002-7"
+        ]
+      },
+      {
+        "entityId": "reece-james",
+        "canonicalName": "Reece James",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "chelsea-2021-3"
+        ]
+      },
+      {
+        "entityId": "reinildo-mandava",
+        "canonicalName": "Reinildo Mandava",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "lille-2021-3"
+        ]
+      },
+      {
+        "entityId": "remo-freuler",
+        "canonicalName": "Remo Freuler",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "atalanta-2020-6"
+        ]
+      },
+      {
+        "entityId": "renato-sanches",
+        "canonicalName": "Renato Sanches",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "lille-2021-5"
+        ]
+      },
+      {
+        "entityId": "ricardo-carvalho",
+        "canonicalName": "Ricardo Carvalho",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "chelsea-2005-2",
+          "porto-2004-1"
+        ]
+      },
+      {
+        "entityId": "rio-ferdinand",
+        "canonicalName": "Rio Ferdinand",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "manchester-united-2008-1",
+          "manchester-united-2013-1"
+        ]
+      },
+      {
+        "entityId": "riyad-mahrez",
+        "canonicalName": "Riyad Mahrez",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "leicester-city-2016-7"
+        ]
+      },
+      {
+        "entityId": "robert-huth",
+        "canonicalName": "Robert Huth",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "leicester-city-2016-2"
+        ]
+      },
+      {
+        "entityId": "robert-lewandowski",
+        "canonicalName": "Robert Lewandowski",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "bayern-munich-2020-8",
+          "bayern-munich-2022-8",
+          "borussia-dortmund-2013-8"
+        ]
+      },
+      {
+        "entityId": "robert-pires",
+        "canonicalName": "Robert Pires",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "arsenal-2004-5"
+        ]
+      },
+      {
+        "entityId": "roberto-carlos",
+        "canonicalName": "Roberto Carlos",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "real-madrid-2002-1"
+        ]
+      },
+      {
+        "entityId": "robin-gosens",
+        "canonicalName": "Robin Gosens",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "atalanta-2020-3"
+        ]
+      },
+      {
+        "entityId": "robin-van-persie",
+        "canonicalName": "Robin van Persie",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "arsenal-2008-8",
+          "manchester-united-2013-6"
+        ]
+      },
+      {
+        "entityId": "robinho",
+        "canonicalName": "Robinho",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3"
+        ],
+        "playerSeasonIds": [
+          "ac-milan-2011-8"
+        ]
+      },
+      {
+        "entityId": "rodrigo",
+        "canonicalName": "Rodrigo",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3"
+        ],
+        "playerSeasonIds": [
+          "benfica-2014-7"
+        ]
+      },
+      {
+        "entityId": "rodrigo-bentancur",
+        "canonicalName": "Rodrigo Bentancur",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "juventus-2021-6"
+        ]
+      },
+      {
+        "entityId": "roman-burki",
+        "canonicalName": "Roman Burki",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "borussia-dortmund-2017-0"
+        ]
+      },
+      {
+        "entityId": "roman-weidenfeller",
+        "canonicalName": "Roman Weidenfeller",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "borussia-dortmund-2013-0",
+          "borussia-dortmund-2015-0"
+        ]
+      },
+      {
+        "entityId": "romelu-lukaku",
+        "canonicalName": "Romelu Lukaku",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "inter-milan-2021-7"
+        ]
+      },
+      {
+        "entityId": "ronald-araujo",
+        "canonicalName": "Ronald Araujo",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "barcelona-2022-1"
+        ]
+      },
+      {
+        "entityId": "roy-keane",
+        "canonicalName": "Roy Keane",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "manchester-united-1999-4"
+        ]
+      },
+      {
+        "entityId": "roy-makaay",
+        "canonicalName": "Roy Makaay",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "deportivo-la-coruna-2000-7"
+        ]
+      },
+      {
+        "entityId": "ruben-dias",
+        "canonicalName": "Ruben Dias",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "manchester-city-2023-1"
+        ]
+      },
+      {
+        "entityId": "ryan-giggs",
+        "canonicalName": "Ryan Giggs",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "manchester-united-1999-7",
+          "manchester-united-2008-6"
+        ]
+      },
+      {
+        "entityId": "sadio-mane",
+        "canonicalName": "Sadio Mane",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "liverpool-2019-8"
+        ]
+      },
+      {
+        "entityId": "sami-khedira",
+        "canonicalName": "Sami Khedira",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "juventus-2017-5"
+        ]
+      },
+      {
+        "entityId": "samir-handanovic",
+        "canonicalName": "Samir Handanovic",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "inter-milan-2016-0",
+          "inter-milan-2021-0"
+        ]
+      },
+      {
+        "entityId": "samuel-eto-o",
+        "canonicalName": "Samuel Eto'o",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "barcelona-2009-8",
+          "inter-milan-2010-8"
+        ]
+      },
+      {
+        "entityId": "sandro-tonali",
+        "canonicalName": "Sandro Tonali",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "ac-milan-2022-4"
+        ]
+      },
+      {
+        "entityId": "scott-mctominay",
+        "canonicalName": "Scott McTominay",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "manchester-united-2022-6"
+        ]
+      },
+      {
+        "entityId": "sebastien-haller",
+        "canonicalName": "Sebastien Haller",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "borussia-dortmund-2023-8"
+        ]
+      },
+      {
+        "entityId": "sergio-aguero",
+        "canonicalName": "Sergio Aguero",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "manchester-city-2012-7"
+        ]
+      },
+      {
+        "entityId": "sergio-busquets",
+        "canonicalName": "Sergio Busquets",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "barcelona-2011-6",
+          "barcelona-2015-4",
+          "barcelona-2020-4",
+          "barcelona-2022-6"
+        ]
+      },
+      {
+        "entityId": "sergio-ramos",
+        "canonicalName": "Sergio Ramos",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "real-madrid-2012-1",
+          "real-madrid-2017-1",
+          "real-madrid-2019-1"
+        ]
+      },
+      {
+        "entityId": "shinji-kagawa",
+        "canonicalName": "Shinji Kagawa",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "borussia-dortmund-2015-5",
+          "manchester-united-2013-5"
+        ]
+      },
+      {
+        "entityId": "sokratis-papastathopoulos",
+        "canonicalName": "Sokratis Papastathopoulos",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "borussia-dortmund-2015-2",
+          "borussia-dortmund-2017-1"
+        ]
+      },
+      {
+        "entityId": "sol-campbell",
+        "canonicalName": "Sol Campbell",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "arsenal-2004-1"
+        ]
+      },
+      {
+        "entityId": "stanislav-lobotka",
+        "canonicalName": "Stanislav Lobotka",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "napoli-2023-4"
+        ]
+      },
+      {
+        "entityId": "stefan-effenberg",
+        "canonicalName": "Stefan Effenberg",
+        "providers": [
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "bayern-munich-2001-5"
+        ]
+      },
+      {
+        "entityId": "steven-gerrard",
+        "canonicalName": "Steven Gerrard",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "liverpool-2005-4"
+        ]
+      },
+      {
+        "entityId": "sven-bender",
+        "canonicalName": "Sven Bender",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "borussia-dortmund-2013-5"
+        ]
+      },
+      {
+        "entityId": "sven-botman",
+        "canonicalName": "Sven Botman",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "lille-2021-2"
+        ]
+      },
+      {
+        "entityId": "theo-hernandez",
+        "canonicalName": "Theo Hernandez",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "ac-milan-2022-2"
+        ]
+      },
+      {
+        "entityId": "thiago-alcantara",
+        "canonicalName": "Thiago Alcantara",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "bayern-munich-2020-5"
+        ]
+      },
+      {
+        "entityId": "thiago-silva",
+        "canonicalName": "Thiago Silva",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "ac-milan-2011-1",
+          "chelsea-2021-1",
+          "chelsea-2023-1"
+        ]
+      },
+      {
+        "entityId": "thibaut-courtois",
+        "canonicalName": "Thibaut Courtois",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "atletico-madrid-2014-0",
+          "chelsea-2016-0",
+          "real-madrid-2019-0",
+          "real-madrid-2022-0"
+        ]
+      },
+      {
+        "entityId": "thierry-henry",
+        "canonicalName": "Thierry Henry",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "arsenal-2004-7"
+        ]
+      },
+      {
+        "entityId": "thomas-muller",
+        "canonicalName": "Thomas Muller",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "bayern-munich-2020-7",
+          "bayern-munich-2022-6"
+        ]
+      },
+      {
+        "entityId": "tiemoue-bakayoko",
+        "canonicalName": "Tiemoue Bakayoko",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "monaco-2017-5"
+        ]
+      },
+      {
+        "entityId": "timo-werner",
+        "canonicalName": "Timo Werner",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "chelsea-2021-8"
+        ]
+      },
+      {
+        "entityId": "toni-kroos",
+        "canonicalName": "Toni Kroos",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "real-madrid-2017-5",
+          "real-madrid-2019-5",
+          "real-madrid-2022-5"
+        ]
+      },
+      {
+        "entityId": "trent-alexander-arnold",
+        "canonicalName": "Trent Alexander-Arnold",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3"
+        ],
+        "playerSeasonIds": [
+          "liverpool-2019-2"
+        ]
+      },
+      {
+        "entityId": "victor-boniface",
+        "canonicalName": "Victor Boniface",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "bayer-leverkusen-2024-8"
+        ]
+      },
+      {
+        "entityId": "victor-osimhen",
+        "canonicalName": "Victor Osimhen",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "napoli-2023-8"
+        ]
+      },
+      {
+        "entityId": "victor-valdes",
+        "canonicalName": "Victor Valdes",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3"
+        ],
+        "playerSeasonIds": [
+          "barcelona-2009-0",
+          "barcelona-2011-0"
+        ]
+      },
+      {
+        "entityId": "vincent-kompany",
+        "canonicalName": "Vincent Kompany",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "manchester-city-2012-1"
+        ]
+      },
+      {
+        "entityId": "vinicius-junior",
+        "canonicalName": "Vinicius Junior",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "real-madrid-2019-8",
+          "real-madrid-2022-8"
+        ]
+      },
+      {
+        "entityId": "virgil-van-dijk",
+        "canonicalName": "Virgil van Dijk",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "liverpool-2019-1"
+        ]
+      },
+      {
+        "entityId": "vitor-baia",
+        "canonicalName": "Vitor Baia",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "porto-2004-0"
+        ]
+      },
+      {
+        "entityId": "walter-samuel",
+        "canonicalName": "Walter Samuel",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3"
+        ],
+        "playerSeasonIds": [
+          "inter-milan-2010-3",
+          "roma-2001-1"
+        ]
+      },
+      {
+        "entityId": "wayne-rooney",
+        "canonicalName": "Wayne Rooney",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "manchester-united-2008-8",
+          "manchester-united-2013-7"
+        ]
+      },
+      {
+        "entityId": "wes-morgan",
+        "canonicalName": "Wes Morgan",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "leicester-city-2016-1"
+        ]
+      },
+      {
+        "entityId": "wesley-sneijder",
+        "canonicalName": "Wesley Sneijder",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "inter-milan-2010-5"
+        ]
+      },
+      {
+        "entityId": "willian",
+        "canonicalName": "Willian",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "chelsea-2016-6"
+        ]
+      },
+      {
+        "entityId": "wojciech-szczesny",
+        "canonicalName": "Wojciech Szczesny",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "juventus-2021-0"
+        ]
+      },
+      {
+        "entityId": "xabi-alonso",
+        "canonicalName": "Xabi Alonso",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "liverpool-2005-5",
+          "real-madrid-2012-4"
+        ]
+      },
+      {
+        "entityId": "xavi",
+        "canonicalName": "Xavi",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "barcelona-2009-4",
+          "barcelona-2011-4"
+        ]
+      },
+      {
+        "entityId": "yann-sommer",
+        "canonicalName": "Yann Sommer",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "inter-milan-2024-0"
+        ]
+      },
+      {
+        "entityId": "yaya-toure",
+        "canonicalName": "Yaya Toure",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "barcelona-2009-6",
+          "manchester-city-2012-4"
+        ]
+      },
+      {
+        "entityId": "zinedine-zidane",
+        "canonicalName": "Zinedine Zidane",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "real-madrid-2002-4"
+        ]
+      },
+      {
+        "entityId": "zlatan-ibrahimovic",
+        "canonicalName": "Zlatan Ibrahimovic",
+        "providers": [
+          "fifaindex-current",
+          "fifaaddict-fo3",
+          "fifaaddict-fo4"
+        ],
+        "playerSeasonIds": [
+          "ac-milan-2011-7"
+        ]
+      }
+    ]
+  }
+}

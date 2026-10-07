@@ -61,7 +61,7 @@
 
 1366×768 桌面 Draft 截图确认三栏工作台同屏呈现。390×844 移动端实测页签 `候选池 / 阵容 / 详情` 与完整选人交互：在候选池选球员、切至阵容预览合法槽位、回到候选池最终确认；确认前计数保持不变，确认后增加 1。继续完成 11 人并 LOCK IN；移动端截图中对手状态为 `HIDDEN`。同一移动页签完成日语、英语、简体中文切换，页面文案随语言变化。详见 [screenshots/integration-baseline-v1](screenshots/integration-baseline-v1/)，指标见该目录 `metrics.json`。
 
-现场页面未使用浏览器网络面板或 WebSocket 诊断接口，因此不能独立声称抓到了每个 live `PICK` frame 的精确次数。候选/槽位预览未改变界面人数、最终确认让人数增加一的 live UI 行为已实测；精确“一次”由 `smoke-draft-workbench.mjs` 中的 mock sender 断言验证。控制台检查覆盖本次新建 Chrome 与 IAB 页签，未采集到 warn 或 error。离开 Draft 后没有在 live 页面单独量测 body class 或计算样式；清理行为由 `smoke-draft-workbench.mjs` 的 `stop()` 断言确认。
+现场页面未使用浏览器网络面板或 WebSocket 诊断接口，因此不能独立声称抓到了每个 live `PICK` frame 的精确次数。候选/槽位预览未改变界面人数、最终确认让人数增加一的 live UI 行为已实测；精确“一次”由 `smoke-draft-workbench.mjs` 中的 mock sender 断言验证。控制台检查覆盖两轮任务新建的 Chrome 与 IAB 页签，未采集到 warn 或 error。另在真实 Chrome 双页签 TSFR 房间采样 Draft 与离开房间回大厅后的 DOM：Draft 时两页 `body.className` 均为 `in-room in-game in-draft`，`#lobby` 隐藏，`#room` 与 `#game-area` 显示；body scrollWidth/clientWidth 均为 1920，main 为 1680×945（Host）与 1680×889（Guest）。离开 Draft 后两页 `body.className` 与 `documentElement.className` 均为空，`#lobby` 显示、`#room` 与 `#game-area` 隐藏，main 回到 1240×516，body scrollWidth/clientWidth 为 1920、无横向溢出。截图见 `lobby-after-draft-cleanup-1920x945.jpg`，详细数值见 metrics.json；`smoke-draft-workbench.mjs` 也独立断言 `stop()` 会移除 `body.in-draft`。
 
 刷新行为实测：活动比赛中刷新后页面回到大厅，再加入同一已开始房间会收到“该房间游戏已经开始”。只读对比 `origin/feature/draft-workbench-v1` 与集成分支的 `public/main.js`、`public/net.js`、`server.js` 无差异：Draft 启动时仅从 query 恢复房间，close handler 回大厅且无重连；服务端拒绝加入已开始房间。这是验收来源已有行为，不由本次集成引入，也未扩大为重连架构修复。功能回归里其余流程通过。
 

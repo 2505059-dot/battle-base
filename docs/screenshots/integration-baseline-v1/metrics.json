@@ -6,27 +6,56 @@
   "screenshots": [
     {
       "file": "draft-desktop-1366x768.jpg",
-      "viewport": { "width": 1366, "height": 768 },
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
       "status": "PASS",
       "observation": "Three-column Draft workbench visible in one viewport."
     },
     {
       "file": "draft-mobile-390x844-locked.jpg",
-      "viewport": { "width": 390, "height": 844 },
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
       "status": "PASS",
       "observation": "Mobile Candidate Pool tab shows 11/11 and LOCKED; opponent progress is HIDDEN."
     },
     {
       "file": "draft-mobile-390x844-lineup.jpg",
-      "viewport": { "width": 390, "height": 844 },
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
       "status": "PASS",
       "observation": "Mobile Lineup tab shows roster slots and LOCKED status; long lineup scrolls vertically."
+    },
+    {
+      "file": "lobby-after-draft-cleanup-1920x945.jpg",
+      "viewport": {
+        "width": 1920,
+        "height": 945
+      },
+      "status": "PASS",
+      "observation": "Lobby after leaving Draft; body classes are clear, lobby is visible, room and game area are hidden."
     }
   ],
   "browserFlow": {
     "status": "PASS",
-    "sequence": ["Lobby", "Room", "Draft", "Reveal", "Match", "Result", "Lobby"],
-    "viewport": { "width": 1280, "height": 720 },
+    "sequence": [
+      "Lobby",
+      "Room",
+      "Draft",
+      "Reveal",
+      "Match",
+      "Result",
+      "Lobby"
+    ],
+    "viewport": {
+      "width": 1280,
+      "height": 720
+    },
     "teamA": "11/11, locked",
     "teamB": "11/11, locked",
     "match": "90 minutes, 3-0, 28 reports",
@@ -75,8 +104,8 @@
     },
     {
       "name": "Draft layout scope cleanup",
-      "status": "PASS (smoke); live browser state NOT MEASURED",
-      "details": "smoke-draft-workbench asserts stop() removes body.in-draft; the live browser return-to-lobby flow did not separately sample body classes or computed styles."
+      "status": "PASS (live DOM + smoke)",
+      "details": "In the real two-tab room, both pages had body class in-room in-game in-draft during Draft; after leaving, body and documentElement classes were empty, lobby visible, room and game area hidden, main returned to 1240x516, and body width/scrollWidth both 1920. smoke-draft-workbench also asserts stop() removes body.in-draft."
     },
     {
       "name": "new-session console warnings/errors",
@@ -88,6 +117,57 @@
     "createdBrowserTabsClosed": true,
     "originalUserTabsTouched": false,
     "temporaryViewportReset": true,
-    "defaultSelectedViewportAfterReset": { "width": 1920, "height": 945 }
+    "defaultSelectedViewportAfterReset": {
+      "width": 1920,
+      "height": 945
+    }
+  },
+  "liveLayoutScopeCleanup": {
+    "status": "PASS",
+    "before": {
+      "host": {
+        "viewport": "1920x945",
+        "bodyClass": "in-room in-game in-draft",
+        "htmlClass": "",
+        "lobbyHidden": true,
+        "roomHidden": false,
+        "gameAreaHidden": false,
+        "bodyScrollWidth": 1920,
+        "bodyClientWidth": 1920,
+        "mainWidth": 1680,
+        "mainHeight": 945
+      },
+      "guest": {
+        "viewport": "1920x889",
+        "bodyClass": "in-room in-game in-draft",
+        "htmlClass": "",
+        "lobbyHidden": true,
+        "roomHidden": false,
+        "gameAreaHidden": false,
+        "bodyScrollWidth": 1920,
+        "bodyClientWidth": 1920,
+        "mainWidth": 1680,
+        "mainHeight": 889
+      }
+    },
+    "afterLeave": {
+      "bothTabs": {
+        "bodyClass": "",
+        "htmlClass": "",
+        "lobbyHidden": false,
+        "roomHidden": true,
+        "gameAreaHidden": true,
+        "mainWidth": 1240,
+        "mainHeight": 516,
+        "bodyScrollWidth": 1920,
+        "bodyClientWidth": 1920,
+        "bodyScrollHeight": 516,
+        "bodyClientHeight": 516,
+        "mainScrollWidth": 1240,
+        "mainClientWidth": 1240
+      }
+    },
+    "consoleWarnErrorCount": 0,
+    "screenshot": "lobby-after-draft-cleanup-1920x945.jpg"
   }
 }

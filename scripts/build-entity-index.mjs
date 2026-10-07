@@ -92,6 +92,21 @@ async function main() {
         ? JSON.parse(fs.readFileSync(entityLocalizationsPath, 'utf8'))
         : { players: {}, clubs: {}, leagues: {} };
 
+    const clubLeagueMediaPath = path.join(MANUAL_DIR, 'club-league-media.json');
+    const clubLeagueMedia = fs.existsSync(clubLeagueMediaPath)
+        ? JSON.parse(fs.readFileSync(clubLeagueMediaPath, 'utf8'))
+        : null;
+
+    const clubLeagueCandidatesPath = path.join(ENTITIES_DIR, 'club-league-media-candidates.json');
+    const clubLeagueCandidates = fs.existsSync(clubLeagueCandidatesPath)
+        ? JSON.parse(fs.readFileSync(clubLeagueCandidatesPath, 'utf8'))
+        : null;
+
+    const existingPlayersPath = path.join(ENTITIES_DIR, 'players.json');
+    const existingPlayersMap = fs.existsSync(existingPlayersPath)
+        ? new Map(JSON.parse(fs.readFileSync(existingPlayersPath, 'utf8')).entities.map((e) => [e.id, e]))
+        : null;
+
     function sanitizeAliases(arr, primaryName) {
         if (!Array.isArray(arr)) return [];
         const seen = new Set();
@@ -399,6 +414,13 @@ async function main() {
         const playerZh = playerLoc?.['zh-CN'] ? String(playerLoc['zh-CN']).trim() : null;
         const playerJa = playerLoc?.ja ? String(playerLoc.ja).trim() : null;
 
+        const existingEntity = existingPlayersMap?.get(slug);
+        const existingHeadshotsMap = new Map(existingEntity?.media?.fifaIndexHeadshots?.map((h) => [h.url, h.status]));
+        const finalizedHeadshots = validHeadshots.map((h) => ({
+            ...h,
+            status: existingHeadshotsMap.get(h.url) || h.status,
+        }));
+
         playerEntities.push({
             id: slug,
             canonicalName: canonical,
@@ -421,7 +443,7 @@ async function main() {
                 fifaIndexPageUrl: canonicalPageUrl,
                 fifaIndexPageUrls: pageUrls,
                 fifaIndexHeadshotUrls: distinctHeadshotUrls,
-                fifaIndexHeadshots: validHeadshots,
+                fifaIndexHeadshots: finalizedHeadshots,
                 preferredResolutionOrder: [
                     'same-season-fifa-index',
                     'nearest-season-fifa-index',
@@ -456,11 +478,14 @@ async function main() {
         unresolvedPlayerSeasons,
     };
 
-    fs.writeFileSync(
-        path.join(ENTITIES_DIR, 'players.json'),
-        JSON.stringify(playersOutput, null, 2) + '\n',
-        'utf8'
-    );
+    const playersJsonPath = path.join(ENTITIES_DIR, 'players.json');
+    const nextPlayersJson = JSON.stringify(playersOutput, null, 2) + '\n';
+    const currentPlayersJson = fs.existsSync(playersJsonPath)
+        ? fs.readFileSync(playersJsonPath, 'utf8').replace(/\r\n/g, '\n')
+        : null;
+    if (currentPlayersJson !== nextPlayersJson) {
+        fs.writeFileSync(playersJsonPath, nextPlayersJson, 'utf8');
+    }
 
     // 5. Build Club Entities (28 clubs)
     const clubsByCanonical = new Map();
@@ -486,6 +511,9 @@ async function main() {
         const clubZh = clubLoc?.['zh-CN'] ? String(clubLoc['zh-CN']).trim() : null;
         const clubJa = clubLoc?.ja ? String(clubLoc.ja).trim() : null;
 
+        const clubMediaInfo = clubLeagueMedia?.clubs?.[slug];
+        const clubCandList = clubLeagueCandidates?.clubs?.[slug] || [];
+
         clubEntities.push({
             id: slug,
             canonicalName: canonicalClub,
@@ -502,13 +530,14 @@ async function main() {
                 ja: sanitizeAliases(clubLoc?.aliases?.ja, clubJa),
             },
             externalIds: {
-                footballData: null,
-                theSportsDb: null,
-                wikidata: null,
+                footballData: clubMediaInfo?.externalIds?.footballData ?? null,
+                theSportsDb: clubMediaInfo?.externalIds?.theSportsDb ?? null,
+                wikidata: clubMediaInfo?.externalIds?.wikidata ?? null,
+                fifaIndexTeamId: clubMediaInfo?.externalIds?.fifaIndexTeamId ?? null,
             },
             media: {
-                crest: null,
-                crestCandidates: [],
+                crest: clubMediaInfo?.preferred ?? null,
+                crestCandidates: clubCandList.filter((c) => c && c.url),
             },
             seasons,
             teamSeasonIds,
@@ -558,6 +587,9 @@ async function main() {
         const leagueZh = leagueLoc?.['zh-CN'] ? String(leagueLoc['zh-CN']).trim() : null;
         const leagueJa = leagueLoc?.ja ? String(leagueLoc.ja).trim() : null;
 
+        const leagueMediaInfo = clubLeagueMedia?.leagues?.[slug];
+        const leagueCandList = clubLeagueCandidates?.leagues?.[slug] || [];
+
         leagueEntities.push({
             id: slug,
             canonicalName: canonicalLeague,
@@ -572,13 +604,14 @@ async function main() {
                 ja: sanitizeAliases(leagueLoc?.aliases?.ja, leagueJa),
             },
             externalIds: {
-                footballData: null,
-                theSportsDb: null,
-                wikidata: null,
+                footballData: leagueMediaInfo?.externalIds?.footballData ?? null,
+                theSportsDb: leagueMediaInfo?.externalIds?.theSportsDb ?? null,
+                wikidata: leagueMediaInfo?.externalIds?.wikidata ?? null,
+                fifaIndexLeagueId: leagueMediaInfo?.externalIds?.fifaIndexLeagueId ?? null,
             },
             media: {
-                emblem: null,
-                emblemCandidates: [],
+                emblem: leagueMediaInfo?.preferred ?? null,
+                emblemCandidates: leagueCandList.filter((c) => c && c.url),
             },
             clubs,
             clubIds,
@@ -611,12 +644,15 @@ async function main() {
     console.log(`- Clubs: ${clubEntities.length}`);
     console.log(`- Leagues: ${leagueEntities.length}`);
 
-    // 7. Invoke runMediaAudit to audit headshots, update statuses in players.json, and write reports
-    console.log('[build-entity-index] Invoking media audit...');
-    await runMediaAudit({
-        skipHttp: process.argv.includes('--skip-http') || process.argv.includes('--offline'),
-    });
-    console.log('[build-entity-index] Media audit and report generation complete.');
+    // 7. Invoke runMediaAudit only if requested or if entity-media-audit.json is missing
+    const entityMediaAuditPath = path.join(REPORTS_DIR, 'entity-media-audit.json');
+    if (process.argv.includes('--audit-media') || !fs.existsSync(entityMediaAuditPath)) {
+        console.log('[build-entity-index] Invoking media audit...');
+        await runMediaAudit({
+            skipHttp: process.argv.includes('--skip-http') || process.argv.includes('--offline'),
+        });
+        console.log('[build-entity-index] Media audit and report generation complete.');
+    }
 }
 
 main().catch((err) => {

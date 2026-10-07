@@ -1,0 +1,89 @@
+{
+  "schemaVersion": "1.0.0",
+  "summary": {
+    "clubEntitiesTotal": 28,
+    "clubPreferredReachable": 28,
+    "clubCoveragePercent": 100,
+    "leagueEntitiesTotal": 7,
+    "leaguePreferredReachable": 7,
+    "leagueCoveragePercent": 100,
+    "totalEntities": 35,
+    "totalPreferredReachable": 35,
+    "totalCoveragePercent": 100,
+    "duplicatePreferredUrls": 0,
+    "transparentKnownTrueCount": 35,
+    "placeholderRejectedCount": 0,
+    "blockedCount": 0,
+    "httpErrorCount": 0,
+    "manualReviewCount": 4
+  },
+  "fifaIndexCoverage": {
+    "fifaIndexClubMatched": "28 / 28",
+    "fifaIndexLeagueMatched": "7 / 7",
+    "fifaIndexTotal": "35 / 35",
+    "fifaIndexReachable": 35,
+    "fifaIndex404": 0,
+    "fifaIndexIdentityUnresolved": 0,
+    "fallbackRequired": 4,
+    "historicalAssetPatternObserved": true,
+    "historicalPatternNote": "Historical FIFA team crests observed at /fc24/teams/{id}.webp, /fifa23/teams/{id}.webp, and /fifa22/teams/{id}.png on images.fifaindex.com"
+  },
+  "providerDistribution": {
+    "preferred": {
+      "football-data": 4,
+      "fifaindex": 31
+    },
+    "allCandidates": {
+      "football-data": 58,
+      "wikimedia-commons": 39,
+      "thesportsdb": 34,
+      "fifaindex": 35,
+      "wikipedia": 23
+    }
+  },
+  "formatDistribution": {
+    "image/svg+xml": 4,
+    "image/webp": 31,
+    "image/png": 0,
+    "image/jpeg": 0
+  },
+  "licenseBreakdown": {
+    "external-provider": 35,
+    "verified-free": 0,
+    "unknown": 0
+  },
+  "manualReview": [
+    {
+      "entityType": "club",
+      "entityId": "ac-milan",
+      "canonicalName": "AC Milan",
+      "selectedCandidate": "https://crests.football-data.org/98.svg",
+      "reason": "Selected authentic vector SVG crest fallback over EA FC generic unlicensed shield (unlicensed generic shield in EA FC)",
+      "alternativeCandidates": 4
+    },
+    {
+      "entityType": "club",
+      "entityId": "atalanta",
+      "canonicalName": "Atalanta",
+      "selectedCandidate": "https://crests.football-data.org/102.svg",
+      "reason": "Selected authentic vector SVG crest fallback over EA FC generic unlicensed shield (unlicensed generic shield in EA FC)",
+      "alternativeCandidates": 5
+    },
+    {
+      "entityType": "club",
+      "entityId": "inter-milan",
+      "canonicalName": "Inter Milan",
+      "selectedCandidate": "https://crests.football-data.org/108.svg",
+      "reason": "Selected authentic vector SVG crest fallback over EA FC generic unlicensed shield (unlicensed generic shield in EA FC)",
+      "alternativeCandidates": 4
+    },
+    {
+      "entityType": "club",
+      "entityId": "lazio",
+      "canonicalName": "Lazio",
+      "selectedCandidate": "https://crests.football-data.org/110.svg",
+      "reason": "Selected authentic vector SVG crest fallback over EA FC generic unlicensed shield (unlicensed generic shield in EA FC)",
+      "alternativeCandidates": 6
+    }
+  ]
+}

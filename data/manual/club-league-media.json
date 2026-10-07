@@ -1,0 +1,707 @@
+{
+  "schemaVersion": "1.0.0",
+  "clubs": {
+    "ac-milan": {
+      "externalIds": {
+        "footballData": 98,
+        "theSportsDb": 133670,
+        "wikidata": "Q1543",
+        "fifaIndexTeamId": 131681
+      },
+      "preferred": {
+        "provider": "football-data",
+        "source": "football-data-crests",
+        "url": "https://crests.football-data.org/98.svg",
+        "sourcePageUrl": "https://www.football-data.org/",
+        "mimeType": "image/svg+xml",
+        "width": 200,
+        "height": 200,
+        "transparent": true,
+        "status": "reachable",
+        "licenseStatus": "external-provider"
+      }
+    },
+    "ajax": {
+      "externalIds": {
+        "footballData": 678,
+        "theSportsDb": 133772,
+        "wikidata": "Q81888",
+        "fifaIndexTeamId": 245
+      },
+      "preferred": {
+        "provider": "fifaindex",
+        "source": "fifaindex-fc27",
+        "url": "https://images.fifaindex.com/fc27/teams/245.webp",
+        "sourcePageUrl": "https://www.fifaindex.com/team/245/ajax/",
+        "mimeType": "image/webp",
+        "width": 256,
+        "height": 256,
+        "transparent": true,
+        "status": "reachable",
+        "licenseStatus": "external-provider"
+      }
+    },
+    "arsenal": {
+      "externalIds": {
+        "footballData": 57,
+        "theSportsDb": 133604,
+        "wikidata": "Q9617",
+        "fifaIndexTeamId": 1
+      },
+      "preferred": {
+        "provider": "fifaindex",
+        "source": "fifaindex-fc27",
+        "url": "https://images.fifaindex.com/fc27/teams/1.webp",
+        "sourcePageUrl": "https://www.fifaindex.com/team/1/arsenal/",
+        "mimeType": "image/webp",
+        "width": 256,
+        "height": 256,
+        "transparent": true,
+        "status": "reachable",
+        "licenseStatus": "external-provider"
+      }
+    },
+    "atalanta": {
+      "externalIds": {
+        "footballData": 102,
+        "theSportsDb": 133666,
+        "wikidata": "Q1886",
+        "fifaIndexTeamId": 115845
+      },
+      "preferred": {
+        "provider": "football-data",
+        "source": "football-data-crests",
+        "url": "https://crests.football-data.org/102.svg",
+        "sourcePageUrl": "https://www.football-data.org/",
+        "mimeType": "image/svg+xml",
+        "width": 200,
+        "height": 200,
+        "transparent": true,
+        "status": "reachable",
+        "licenseStatus": "external-provider"
+      }
+    },
+    "atletico-madrid": {
+      "externalIds": {
+        "footballData": 78,
+        "theSportsDb": 133729,
+        "wikidata": "Q8701",
+        "fifaIndexTeamId": 240
+      },
+      "preferred": {
+        "provider": "fifaindex",
+        "source": "fifaindex-fc27",
+        "url": "https://images.fifaindex.com/fc27/teams/240.webp",
+        "sourcePageUrl": "https://www.fifaindex.com/team/240/atletico-de-madrid/",
+        "mimeType": "image/webp",
+        "width": 256,
+        "height": 256,
+        "transparent": true,
+        "status": "reachable",
+        "licenseStatus": "external-provider"
+      }
+    },
+    "barcelona": {
+      "externalIds": {
+        "footballData": 81,
+        "theSportsDb": 133739,
+        "wikidata": "Q7156",
+        "fifaIndexTeamId": 241
+      },
+      "preferred": {
+        "provider": "fifaindex",
+        "source": "fifaindex-fc27",
+        "url": "https://images.fifaindex.com/fc27/teams/241.webp",
+        "sourcePageUrl": "https://www.fifaindex.com/team/241/fc-barcelona/",
+        "mimeType": "image/webp",
+        "width": 256,
+        "height": 256,
+        "transparent": true,
+        "status": "reachable",
+        "licenseStatus": "external-provider"
+      }
+    },
+    "bayer-leverkusen": {
+      "externalIds": {
+        "footballData": 3,
+        "theSportsDb": 133664,
+        "wikidata": "Q104761",
+        "fifaIndexTeamId": 32
+      },
+      "preferred": {
+        "provider": "fifaindex",
+        "source": "fifaindex-fc27",
+        "url": "https://images.fifaindex.com/fc27/teams/32.webp",
+        "sourcePageUrl": "https://www.fifaindex.com/team/32/bayer-04-leverkusen/",
+        "mimeType": "image/webp",
+        "width": 256,
+        "height": 256,
+        "transparent": true,
+        "status": "reachable",
+        "licenseStatus": "external-provider"
+      }
+    },
+    "bayern-munich": {
+      "externalIds": {
+        "footballData": 5,
+        "theSportsDb": 133663,
+        "wikidata": "Q15789",
+        "fifaIndexTeamId": 21
+      },
+      "preferred": {
+        "provider": "fifaindex",
+        "source": "fifaindex-fc27",
+        "url": "https://images.fifaindex.com/fc27/teams/21.webp",
+        "sourcePageUrl": "https://www.fifaindex.com/team/21/bayern-munchen/",
+        "mimeType": "image/webp",
+        "width": 256,
+        "height": 256,
+        "transparent": true,
+        "status": "reachable",
+        "licenseStatus": "external-provider"
+      }
+    },
+    "benfica": {
+      "externalIds": {
+        "footballData": 1903,
+        "theSportsDb": 133800,
+        "wikidata": "Q131499",
+        "fifaIndexTeamId": 234
+      },
+      "preferred": {
+        "provider": "fifaindex",
+        "source": "fifaindex-fc27",
+        "url": "https://images.fifaindex.com/fc27/teams/234.webp",
+        "sourcePageUrl": "https://www.fifaindex.com/team/234/benfica/",
+        "mimeType": "image/webp",
+        "width": 256,
+        "height": 256,
+        "transparent": true,
+        "status": "reachable",
+        "licenseStatus": "external-provider"
+      }
+    },
+    "borussia-dortmund": {
+      "externalIds": {
+        "footballData": 4,
+        "theSportsDb": 133665,
+        "wikidata": "Q41420",
+        "fifaIndexTeamId": 22
+      },
+      "preferred": {
+        "provider": "fifaindex",
+        "source": "fifaindex-fc27",
+        "url": "https://images.fifaindex.com/fc27/teams/22.webp",
+        "sourcePageUrl": "https://www.fifaindex.com/team/22/borussia-dortmund/",
+        "mimeType": "image/webp",
+        "width": 256,
+        "height": 256,
+        "transparent": true,
+        "status": "reachable",
+        "licenseStatus": "external-provider"
+      }
+    },
+    "chelsea": {
+      "externalIds": {
+        "footballData": 61,
+        "theSportsDb": 133610,
+        "wikidata": "Q9616",
+        "fifaIndexTeamId": 5
+      },
+      "preferred": {
+        "provider": "fifaindex",
+        "source": "fifaindex-fc27",
+        "url": "https://images.fifaindex.com/fc27/teams/5.webp",
+        "sourcePageUrl": "https://www.fifaindex.com/team/5/chelsea/",
+        "mimeType": "image/webp",
+        "width": 256,
+        "height": 256,
+        "transparent": true,
+        "status": "reachable",
+        "licenseStatus": "external-provider"
+      }
+    },
+    "deportivo-la-coruna": {
+      "externalIds": {
+        "footballData": 599,
+        "theSportsDb": 133734,
+        "wikidata": "Q8760",
+        "fifaIndexTeamId": 242
+      },
+      "preferred": {
+        "provider": "fifaindex",
+        "source": "fifaindex-fc27",
+        "url": "https://images.fifaindex.com/fc27/teams/242.webp",
+        "sourcePageUrl": "https://www.fifaindex.com/team/242/rc-deportivo/",
+        "mimeType": "image/webp",
+        "width": 256,
+        "height": 256,
+        "transparent": true,
+        "status": "reachable",
+        "licenseStatus": "external-provider"
+      }
+    },
+    "inter-milan": {
+      "externalIds": {
+        "footballData": 108,
+        "theSportsDb": 133681,
+        "wikidata": "Q631",
+        "fifaIndexTeamId": 131682
+      },
+      "preferred": {
+        "provider": "football-data",
+        "source": "football-data-crests",
+        "url": "https://crests.football-data.org/108.svg",
+        "sourcePageUrl": "https://www.football-data.org/",
+        "mimeType": "image/svg+xml",
+        "width": 200,
+        "height": 200,
+        "transparent": true,
+        "status": "reachable",
+        "licenseStatus": "external-provider"
+      }
+    },
+    "juventus": {
+      "externalIds": {
+        "footballData": 109,
+        "theSportsDb": 133676,
+        "wikidata": "Q1422",
+        "fifaIndexTeamId": 45
+      },
+      "preferred": {
+        "provider": "fifaindex",
+        "source": "fifaindex-fc27",
+        "url": "https://images.fifaindex.com/fc27/teams/45.webp",
+        "sourcePageUrl": "https://www.fifaindex.com/team/45/juventus/",
+        "mimeType": "image/webp",
+        "width": 256,
+        "height": 256,
+        "transparent": true,
+        "status": "reachable",
+        "licenseStatus": "external-provider"
+      }
+    },
+    "lazio": {
+      "externalIds": {
+        "footballData": 110,
+        "theSportsDb": 133678,
+        "wikidata": "Q2609",
+        "fifaIndexTeamId": 115841
+      },
+      "preferred": {
+        "provider": "football-data",
+        "source": "football-data-crests",
+        "url": "https://crests.football-data.org/110.svg",
+        "sourcePageUrl": "https://www.football-data.org/",
+        "mimeType": "image/svg+xml",
+        "width": 200,
+        "height": 200,
+        "transparent": true,
+        "status": "reachable",
+        "licenseStatus": "external-provider"
+      }
+    },
+    "leicester-city": {
+      "externalIds": {
+        "footballData": 338,
+        "theSportsDb": 133626,
+        "wikidata": "Q19481",
+        "fifaIndexTeamId": 95
+      },
+      "preferred": {
+        "provider": "fifaindex",
+        "source": "fifaindex-fc27",
+        "url": "https://images.fifaindex.com/fc27/teams/95.webp",
+        "sourcePageUrl": "https://www.fifaindex.com/team/95/leicester-city/",
+        "mimeType": "image/webp",
+        "width": 256,
+        "height": 256,
+        "transparent": true,
+        "status": "reachable",
+        "licenseStatus": "external-provider"
+      }
+    },
+    "lille": {
+      "externalIds": {
+        "footballData": 521,
+        "theSportsDb": 133714,
+        "wikidata": "Q19516",
+        "fifaIndexTeamId": 65
+      },
+      "preferred": {
+        "provider": "fifaindex",
+        "source": "fifaindex-fc27",
+        "url": "https://images.fifaindex.com/fc27/teams/65.webp",
+        "sourcePageUrl": "https://www.fifaindex.com/team/65/losc-lille/",
+        "mimeType": "image/webp",
+        "width": 256,
+        "height": 256,
+        "transparent": true,
+        "status": "reachable",
+        "licenseStatus": "external-provider"
+      }
+    },
+    "liverpool": {
+      "externalIds": {
+        "footballData": 64,
+        "theSportsDb": 133612,
+        "wikidata": "Q1130849",
+        "fifaIndexTeamId": 9
+      },
+      "preferred": {
+        "provider": "fifaindex",
+        "source": "fifaindex-fc27",
+        "url": "https://images.fifaindex.com/fc27/teams/9.webp",
+        "sourcePageUrl": "https://www.fifaindex.com/team/9/liverpool/",
+        "mimeType": "image/webp",
+        "width": 256,
+        "height": 256,
+        "transparent": true,
+        "status": "reachable",
+        "licenseStatus": "external-provider"
+      }
+    },
+    "manchester-city": {
+      "externalIds": {
+        "footballData": 65,
+        "theSportsDb": 133613,
+        "wikidata": "Q50602",
+        "fifaIndexTeamId": 10
+      },
+      "preferred": {
+        "provider": "fifaindex",
+        "source": "fifaindex-fc27",
+        "url": "https://images.fifaindex.com/fc27/teams/10.webp",
+        "sourcePageUrl": "https://www.fifaindex.com/team/10/manchester-city/",
+        "mimeType": "image/webp",
+        "width": 256,
+        "height": 256,
+        "transparent": true,
+        "status": "reachable",
+        "licenseStatus": "external-provider"
+      }
+    },
+    "manchester-united": {
+      "externalIds": {
+        "footballData": 66,
+        "theSportsDb": 133614,
+        "wikidata": "Q18656",
+        "fifaIndexTeamId": 11
+      },
+      "preferred": {
+        "provider": "fifaindex",
+        "source": "fifaindex-fc27",
+        "url": "https://images.fifaindex.com/fc27/teams/11.webp",
+        "sourcePageUrl": "https://www.fifaindex.com/team/11/manchester-united/",
+        "mimeType": "image/webp",
+        "width": 256,
+        "height": 256,
+        "transparent": true,
+        "status": "reachable",
+        "licenseStatus": "external-provider"
+      }
+    },
+    "monaco": {
+      "externalIds": {
+        "footballData": 548,
+        "theSportsDb": 133719,
+        "wikidata": "Q180305",
+        "fifaIndexTeamId": 69
+      },
+      "preferred": {
+        "provider": "fifaindex",
+        "source": "fifaindex-fc27",
+        "url": "https://images.fifaindex.com/fc27/teams/69.webp",
+        "sourcePageUrl": "https://www.fifaindex.com/team/69/as-monaco/",
+        "mimeType": "image/webp",
+        "width": 256,
+        "height": 256,
+        "transparent": true,
+        "status": "reachable",
+        "licenseStatus": "external-provider"
+      }
+    },
+    "napoli": {
+      "externalIds": {
+        "footballData": 113,
+        "theSportsDb": 133682,
+        "wikidata": "Q2641",
+        "fifaIndexTeamId": 48
+      },
+      "preferred": {
+        "provider": "fifaindex",
+        "source": "fifaindex-fc27",
+        "url": "https://images.fifaindex.com/fc27/teams/48.webp",
+        "sourcePageUrl": "https://www.fifaindex.com/team/48/napoli/",
+        "mimeType": "image/webp",
+        "width": 256,
+        "height": 256,
+        "transparent": true,
+        "status": "reachable",
+        "licenseStatus": "external-provider"
+      }
+    },
+    "parma": {
+      "externalIds": {
+        "footballData": 112,
+        "theSportsDb": 133684,
+        "wikidata": "Q2693",
+        "fifaIndexTeamId": 50
+      },
+      "preferred": {
+        "provider": "fifaindex",
+        "source": "fifaindex-fc27",
+        "url": "https://images.fifaindex.com/fc27/teams/50.webp",
+        "sourcePageUrl": "https://www.fifaindex.com/team/50/parma/",
+        "mimeType": "image/webp",
+        "width": 256,
+        "height": 256,
+        "transparent": true,
+        "status": "reachable",
+        "licenseStatus": "external-provider"
+      }
+    },
+    "porto": {
+      "externalIds": {
+        "footballData": 503,
+        "theSportsDb": 133802,
+        "wikidata": "Q128446",
+        "fifaIndexTeamId": 236
+      },
+      "preferred": {
+        "provider": "fifaindex",
+        "source": "fifaindex-fc27",
+        "url": "https://images.fifaindex.com/fc27/teams/236.webp",
+        "sourcePageUrl": "https://www.fifaindex.com/team/236/fc-porto/",
+        "mimeType": "image/webp",
+        "width": 256,
+        "height": 256,
+        "transparent": true,
+        "status": "reachable",
+        "licenseStatus": "external-provider"
+      }
+    },
+    "psv": {
+      "externalIds": {
+        "footballData": 674,
+        "theSportsDb": 133770,
+        "wikidata": "Q11938",
+        "fifaIndexTeamId": 247
+      },
+      "preferred": {
+        "provider": "fifaindex",
+        "source": "fifaindex-fc27",
+        "url": "https://images.fifaindex.com/fc27/teams/247.webp",
+        "sourcePageUrl": "https://www.fifaindex.com/team/247/psv/",
+        "mimeType": "image/webp",
+        "width": 256,
+        "height": 256,
+        "transparent": true,
+        "status": "reachable",
+        "licenseStatus": "external-provider"
+      }
+    },
+    "real-madrid": {
+      "externalIds": {
+        "footballData": 86,
+        "theSportsDb": 133738,
+        "wikidata": "Q8682",
+        "fifaIndexTeamId": 243
+      },
+      "preferred": {
+        "provider": "fifaindex",
+        "source": "fifaindex-fc27",
+        "url": "https://images.fifaindex.com/fc27/teams/243.webp",
+        "sourcePageUrl": "https://www.fifaindex.com/team/243/real-madrid/",
+        "mimeType": "image/webp",
+        "width": 256,
+        "height": 256,
+        "transparent": true,
+        "status": "reachable",
+        "licenseStatus": "external-provider"
+      }
+    },
+    "roma": {
+      "externalIds": {
+        "footballData": 100,
+        "theSportsDb": 133687,
+        "wikidata": "Q2739",
+        "fifaIndexTeamId": 52
+      },
+      "preferred": {
+        "provider": "fifaindex",
+        "source": "fifaindex-fc27",
+        "url": "https://images.fifaindex.com/fc27/teams/52.webp",
+        "sourcePageUrl": "https://www.fifaindex.com/team/52/roma/",
+        "mimeType": "image/webp",
+        "width": 256,
+        "height": 256,
+        "transparent": true,
+        "status": "reachable",
+        "licenseStatus": "external-provider"
+      }
+    },
+    "valencia": {
+      "externalIds": {
+        "footballData": 95,
+        "theSportsDb": 133742,
+        "wikidata": "Q10333",
+        "fifaIndexTeamId": 461
+      },
+      "preferred": {
+        "provider": "fifaindex",
+        "source": "fifaindex-fc27",
+        "url": "https://images.fifaindex.com/fc27/teams/461.webp",
+        "sourcePageUrl": "https://www.fifaindex.com/team/461/valencia-cf/",
+        "mimeType": "image/webp",
+        "width": 256,
+        "height": 256,
+        "transparent": true,
+        "status": "reachable",
+        "licenseStatus": "external-provider"
+      }
+    }
+  },
+  "leagues": {
+    "bundesliga": {
+      "externalIds": {
+        "footballData": "BL1",
+        "theSportsDb": 4331,
+        "wikidata": "Q82595",
+        "fifaIndexLeagueId": 19
+      },
+      "preferred": {
+        "provider": "fifaindex",
+        "source": "fifaindex-fc27",
+        "url": "https://images.fifaindex.com/fc27/leagues/19.webp",
+        "sourcePageUrl": "https://www.fifaindex.com/leagues/19-germany-1-bundesliga-1/",
+        "mimeType": "image/webp",
+        "width": 256,
+        "height": 256,
+        "transparent": true,
+        "status": "reachable",
+        "licenseStatus": "external-provider"
+      }
+    },
+    "eredivisie": {
+      "externalIds": {
+        "footballData": "DED",
+        "theSportsDb": 4337,
+        "wikidata": "Q167541",
+        "fifaIndexLeagueId": 10
+      },
+      "preferred": {
+        "provider": "fifaindex",
+        "source": "fifaindex-fc27",
+        "url": "https://images.fifaindex.com/fc27/leagues/10.webp",
+        "sourcePageUrl": "https://www.fifaindex.com/leagues/10-holland-eredivisie-1/",
+        "mimeType": "image/webp",
+        "width": 256,
+        "height": 256,
+        "transparent": true,
+        "status": "reachable",
+        "licenseStatus": "external-provider"
+      }
+    },
+    "la-liga": {
+      "externalIds": {
+        "footballData": "PD",
+        "theSportsDb": 4335,
+        "wikidata": "Q324867",
+        "fifaIndexLeagueId": 53
+      },
+      "preferred": {
+        "provider": "fifaindex",
+        "source": "fifaindex-fc27",
+        "url": "https://images.fifaindex.com/fc27/leagues/53.webp",
+        "sourcePageUrl": "https://www.fifaindex.com/leagues/53-spain-primera-division-1/",
+        "mimeType": "image/webp",
+        "width": 256,
+        "height": 256,
+        "transparent": true,
+        "status": "reachable",
+        "licenseStatus": "external-provider"
+      }
+    },
+    "ligue-1": {
+      "externalIds": {
+        "footballData": "FL1",
+        "theSportsDb": 4334,
+        "wikidata": "Q13394",
+        "fifaIndexLeagueId": 16
+      },
+      "preferred": {
+        "provider": "fifaindex",
+        "source": "fifaindex-fc27",
+        "url": "https://images.fifaindex.com/fc27/leagues/16.webp",
+        "sourcePageUrl": "https://www.fifaindex.com/leagues/16-france-ligue-1-1/",
+        "mimeType": "image/webp",
+        "width": 256,
+        "height": 256,
+        "transparent": true,
+        "status": "reachable",
+        "licenseStatus": "external-provider"
+      }
+    },
+    "premier-league": {
+      "externalIds": {
+        "footballData": "PL",
+        "theSportsDb": 4328,
+        "wikidata": "Q9448",
+        "fifaIndexLeagueId": 13
+      },
+      "preferred": {
+        "provider": "fifaindex",
+        "source": "fifaindex-fc27",
+        "url": "https://images.fifaindex.com/fc27/leagues/13.webp",
+        "sourcePageUrl": "https://www.fifaindex.com/leagues/13-england-premier-league-1/",
+        "mimeType": "image/webp",
+        "width": 256,
+        "height": 256,
+        "transparent": true,
+        "status": "reachable",
+        "licenseStatus": "external-provider"
+      }
+    },
+    "primeira-liga": {
+      "externalIds": {
+        "footballData": "PPL",
+        "theSportsDb": 4344,
+        "wikidata": "Q182994",
+        "fifaIndexLeagueId": 308
+      },
+      "preferred": {
+        "provider": "fifaindex",
+        "source": "fifaindex-fc27",
+        "url": "https://images.fifaindex.com/fc27/leagues/308.webp",
+        "sourcePageUrl": "https://www.fifaindex.com/leagues/308-portugal-primeira-liga-1/",
+        "mimeType": "image/webp",
+        "width": 256,
+        "height": 256,
+        "transparent": true,
+        "status": "reachable",
+        "licenseStatus": "external-provider"
+      }
+    },
+    "serie-a": {
+      "externalIds": {
+        "footballData": "SA",
+        "theSportsDb": 4332,
+        "wikidata": "Q15804",
+        "fifaIndexLeagueId": 31
+      },
+      "preferred": {
+        "provider": "fifaindex",
+        "source": "fifaindex-fc27",
+        "url": "https://images.fifaindex.com/fc27/leagues/31.webp",
+        "sourcePageUrl": "https://www.fifaindex.com/leagues/31-italy-serie-a-1/",
+        "mimeType": "image/webp",
+        "width": 256,
+        "height": 256,
+        "transparent": true,
+        "status": "reachable",
+        "licenseStatus": "external-provider"
+      }
+    }
+  }
+}

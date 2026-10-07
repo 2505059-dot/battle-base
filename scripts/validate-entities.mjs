@@ -220,19 +220,45 @@ async function main() {
         }
     }
 
-    for (const entity of [...clubsData.entities, ...leaguesData.entities]) {
+    for (const entity of clubsData.entities) {
         if (!entity.externalIds || typeof entity.externalIds !== 'object') {
-            errors.push(`Entity ${entity.id} missing externalIds object`);
+            errors.push(`Club ${entity.id} missing externalIds object`);
             continue;
         }
         const expectedKeys = ['footballData', 'theSportsDb', 'wikidata'];
         for (const k of expectedKeys) {
             if (!(k in entity.externalIds)) {
-                errors.push(`Entity ${entity.id} externalIds missing required provider key "${k}"`);
+                errors.push(`Club ${entity.id} externalIds missing required provider key "${k}"`);
+            }
+        }
+        if (entity.externalIds.fifaIndexTeamId !== undefined && entity.externalIds.fifaIndexTeamId !== null) {
+            if (!Number.isInteger(entity.externalIds.fifaIndexTeamId) || entity.externalIds.fifaIndexTeamId <= 0) {
+                errors.push(`Club ${entity.id} invalid fifaIndexTeamId: ${entity.externalIds.fifaIndexTeamId}`);
             }
         }
         if ('externalId' in entity) {
-            errors.push(`Entity ${entity.id} contains prohibited generic "externalId" property`);
+            errors.push(`Club ${entity.id} contains prohibited generic "externalId" property`);
+        }
+    }
+
+    for (const entity of leaguesData.entities) {
+        if (!entity.externalIds || typeof entity.externalIds !== 'object') {
+            errors.push(`League ${entity.id} missing externalIds object`);
+            continue;
+        }
+        const expectedKeys = ['footballData', 'theSportsDb', 'wikidata'];
+        for (const k of expectedKeys) {
+            if (!(k in entity.externalIds)) {
+                errors.push(`League ${entity.id} externalIds missing required provider key "${k}"`);
+            }
+        }
+        if (entity.externalIds.fifaIndexLeagueId !== undefined && entity.externalIds.fifaIndexLeagueId !== null) {
+            if (!Number.isInteger(entity.externalIds.fifaIndexLeagueId) || entity.externalIds.fifaIndexLeagueId <= 0) {
+                errors.push(`League ${entity.id} invalid fifaIndexLeagueId: ${entity.externalIds.fifaIndexLeagueId}`);
+            }
+        }
+        if ('externalId' in entity) {
+            errors.push(`League ${entity.id} contains prohibited generic "externalId" property`);
         }
     }
 
@@ -273,8 +299,11 @@ async function main() {
 
     for (const entity of clubsData.entities) {
         if (entity.media) {
-            if (entity.media.crest !== null && !isValidHttpUrl(entity.media.crest)) {
-                errors.push(`Club ${entity.id} malformed crest URL: "${entity.media.crest}"`);
+            if (entity.media.crest !== null) {
+                const crestUrl = typeof entity.media.crest === 'string' ? entity.media.crest : entity.media.crest?.url;
+                if (!isValidHttpUrl(crestUrl)) {
+                    errors.push(`Club ${entity.id} malformed crest URL: "${crestUrl}"`);
+                }
             }
             if (Array.isArray(entity.media.crestCandidates)) {
                 for (const c of entity.media.crestCandidates) {
@@ -288,8 +317,11 @@ async function main() {
 
     for (const entity of leaguesData.entities) {
         if (entity.media) {
-            if (entity.media.emblem !== null && !isValidHttpUrl(entity.media.emblem)) {
-                errors.push(`League ${entity.id} malformed emblem URL: "${entity.media.emblem}"`);
+            if (entity.media.emblem !== null) {
+                const emblemUrl = typeof entity.media.emblem === 'string' ? entity.media.emblem : entity.media.emblem?.url;
+                if (!isValidHttpUrl(emblemUrl)) {
+                    errors.push(`League ${entity.id} malformed emblem URL: "${emblemUrl}"`);
+                }
             }
             if (Array.isArray(entity.media.emblemCandidates)) {
                 for (const c of entity.media.emblemCandidates) {

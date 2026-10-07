@@ -1,0 +1,126 @@
+{
+  "version": "1.0.0",
+  "manifestPath": "research/fifa-rating-audit/source-manifest.json",
+  "idFields": {
+    "lbenz-fifaindex": {
+      "externalIdNamespace": "fifaIndex",
+      "field": "player_id"
+    },
+    "mzafram-sofifa": {
+      "externalIdNamespace": "sofifa",
+      "field": "sofifa_id"
+    },
+    "stefano-legacy": {
+      "externalIdNamespace": "sofifa",
+      "field": "player_id"
+    },
+    "fifa18-demo": {
+      "externalIdNamespace": "sofifa",
+      "field": "ID"
+    }
+  },
+  "sources": {
+    "lbenz-fifaindex": {
+      "manifestPath": "research/cache/fifa-rating-audit/lbenz_fifa05_20_player_stats.csv",
+      "revision": null,
+      "editionField": "year",
+      "sourceNameField": "name",
+      "sourceClubField": "club",
+      "overallField": "rating",
+      "potentialField": null,
+      "nativePositionFields": [
+        "preferred_positions",
+        "club_position"
+      ],
+      "updateDate": null,
+      "updateDateReason": "source dataset contains edition year but no per-row snapshot update timestamp",
+      "potentialFieldReason": "The manifest-pinned CSV has no potential column.",
+      "revisionReason": "The upstream master URL is mutable and supplies no pinned commit or release; exact payload SHA-256 pins the retrieved file."
+    },
+    "mzafram-sofifa": {
+      "manifestPathPattern": "research/cache/fifa-rating-audit/mzafram_{edition}.csv",
+      "revision": "90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0",
+      "editionField": "game_version",
+      "sourceNameField": "long_name",
+      "sourceClubField": "club_name",
+      "overallField": "overall",
+      "potentialField": "potential",
+      "nativePositionFields": [
+        "positions"
+      ],
+      "updateDate": null,
+      "updateDateReason": "edition files do not establish the date of the represented roster update"
+    },
+    "stefano-legacy": {
+      "manifestPath": "research/cache/fifa-rating-audit/stefanoleone_fifa23_complete.zip",
+      "member": "male_players (legacy).csv",
+      "revision": null,
+      "revisionReason": "Kaggle archive version identifier is unavailable; exact archive bytes are pinned by the manifest.",
+      "editionField": "fifa_version",
+      "sourceNameField": "long_name",
+      "sourceClubField": "club_name",
+      "overallField": "overall",
+      "potentialField": "potential",
+      "nativePositionFields": [
+        "player_positions"
+      ],
+      "updateDate": null,
+      "updateDateReason": "Preserve the source-native fifa_update_date when it is a valid calendar date; the raw field remains available.",
+      "licenseStatus": "listing declares CC0; underlying FIFA/SoFIFA rights unresolved",
+      "extractedPath": "research/cache/fifa-rating-audit/stefanoleone_legacy_member.csv",
+      "updateDateField": "fifa_update_date",
+      "updateDateFieldMissingReason": "The source row fifa_update_date is blank or invalid; its raw value remains in rawFields."
+    },
+    "fifa18-demo": {
+      "manifestPath": "research/cache/fifa-rating-audit/kaggle_fifa18_CompleteDataset.csv",
+      "editionYear": 2018,
+      "editionField": null,
+      "sourceNameField": "Name",
+      "sourceClubField": "Club",
+      "overallField": "Overall",
+      "potentialField": "Potential",
+      "nativePositionFields": [
+        "Preferred Positions"
+      ],
+      "updateDate": null,
+      "updateDateReason": "single-edition demo does not establish represented update date",
+      "licenseStatus": "listing declares CC BY-NC-SA 4.0; underlying SoFIFA rights unresolved",
+      "positionRatingFields": [
+        "CAM",
+        "CB",
+        "CDM",
+        "CF",
+        "CM",
+        "LAM",
+        "LB",
+        "LCB",
+        "LCM",
+        "LDM",
+        "LF",
+        "LM",
+        "LS",
+        "LW",
+        "LWB",
+        "RAM",
+        "RB",
+        "RCB",
+        "RCM",
+        "RDM",
+        "RF",
+        "RM",
+        "RS",
+        "RW",
+        "RWB",
+        "ST"
+      ],
+      "revision": null,
+      "revisionReason": "The dataset listing has no immutable revision; exact extracted payload bytes are pinned by the manifest."
+    }
+  },
+  "sourceLineageCaveats": [
+    "lbenz endpoint is mutable; every build must verify the exact manifest payload SHA-256.",
+    "Mzafram scraper/code is pinned to a commit, but historical CSV lineage and update vintage remain unresolved.",
+    "Underlying rights for SoFIFA/game data remain unresolved in the manifest.",
+    "The source manifest's research baseline differs from the current feature baseline; IDs and row mappings are revalidated from current players.json."
+  ]
+}

@@ -1,0 +1,776 @@
+{
+  "recordPlaceholders": {
+    "count": 554,
+    "expected": 554
+  },
+  "identity": {
+    "canonicalResolvedPlayerSeasonRecords": 554,
+    "total": 554,
+    "uniqueCanonicalEntities": 418,
+    "expectedEntities": 418
+  },
+  "reliableSourceSnapshots": {
+    "selected": 462,
+    "total": 554,
+    "coveragePercent": 83.394
+  },
+  "availability": {
+    "available": 462,
+    "partial": 0,
+    "unavailable": 92,
+    "unavailableCount": 92
+  },
+  "fieldLevelAttributeCoverage": {
+    "attacking_crossing": {
+      "observed": 429,
+      "missing": 125,
+      "unmapped": 0,
+      "total": 554,
+      "coveragePercent": 77.437
+    },
+    "attacking_finishing": {
+      "observed": 455,
+      "missing": 99,
+      "unmapped": 0,
+      "total": 554,
+      "coveragePercent": 82.13
+    },
+    "attacking_heading_accuracy": {
+      "observed": 172,
+      "missing": 92,
+      "unmapped": 290,
+      "total": 554,
+      "coveragePercent": 31.047
+    },
+    "attacking_short_passing": {
+      "observed": 172,
+      "missing": 92,
+      "unmapped": 290,
+      "total": 554,
+      "coveragePercent": 31.047
+    },
+    "attacking_volleys": {
+      "observed": 172,
+      "missing": 92,
+      "unmapped": 290,
+      "total": 554,
+      "coveragePercent": 31.047
+    },
+    "skill_dribbling": {
+      "observed": 462,
+      "missing": 92,
+      "unmapped": 0,
+      "total": 554,
+      "coveragePercent": 83.394
+    },
+    "skill_curve": {
+      "observed": 394,
+      "missing": 160,
+      "unmapped": 0,
+      "total": 554,
+      "coveragePercent": 71.119
+    },
+    "skill_fk_accuracy": {
+      "observed": 172,
+      "missing": 92,
+      "unmapped": 290,
+      "total": 554,
+      "coveragePercent": 31.047
+    },
+    "skill_long_passing": {
+      "observed": 172,
+      "missing": 92,
+      "unmapped": 290,
+      "total": 554,
+      "coveragePercent": 31.047
+    },
+    "skill_ball_control": {
+      "observed": 462,
+      "missing": 92,
+      "unmapped": 0,
+      "total": 554,
+      "coveragePercent": 83.394
+    },
+    "movement_acceleration": {
+      "observed": 429,
+      "missing": 125,
+      "unmapped": 0,
+      "total": 554,
+      "coveragePercent": 77.437
+    },
+    "movement_sprint_speed": {
+      "observed": 462,
+      "missing": 92,
+      "unmapped": 0,
+      "total": 554,
+      "coveragePercent": 83.394
+    },
+    "movement_agility": {
+      "observed": 394,
+      "missing": 160,
+      "unmapped": 0,
+      "total": 554,
+      "coveragePercent": 71.119
+    },
+    "movement_reactions": {
+      "observed": 462,
+      "missing": 92,
+      "unmapped": 0,
+      "total": 554,
+      "coveragePercent": 83.394
+    },
+    "movement_balance": {
+      "observed": 401,
+      "missing": 153,
+      "unmapped": 0,
+      "total": 554,
+      "coveragePercent": 72.383
+    },
+    "power_shot_power": {
+      "observed": 437,
+      "missing": 117,
+      "unmapped": 0,
+      "total": 554,
+      "coveragePercent": 78.881
+    },
+    "power_jumping": {
+      "observed": 394,
+      "missing": 160,
+      "unmapped": 0,
+      "total": 554,
+      "coveragePercent": 71.119
+    },
+    "power_stamina": {
+      "observed": 462,
+      "missing": 92,
+      "unmapped": 0,
+      "total": 554,
+      "coveragePercent": 83.394
+    },
+    "power_strength": {
+      "observed": 462,
+      "missing": 92,
+      "unmapped": 0,
+      "total": 554,
+      "coveragePercent": 83.394
+    },
+    "attacking_long_shots": {
+      "observed": 455,
+      "missing": 99,
+      "unmapped": 0,
+      "total": 554,
+      "coveragePercent": 82.13
+    },
+    "mentality_aggression": {
+      "observed": 462,
+      "missing": 92,
+      "unmapped": 0,
+      "total": 554,
+      "coveragePercent": 83.394
+    },
+    "mentality_interceptions": {
+      "observed": 386,
+      "missing": 168,
+      "unmapped": 0,
+      "total": 554,
+      "coveragePercent": 69.675
+    },
+    "mentality_positioning": {
+      "observed": 172,
+      "missing": 92,
+      "unmapped": 290,
+      "total": 554,
+      "coveragePercent": 31.047
+    },
+    "mentality_vision": {
+      "observed": 386,
+      "missing": 168,
+      "unmapped": 0,
+      "total": 554,
+      "coveragePercent": 69.675
+    },
+    "mentality_penalties": {
+      "observed": 394,
+      "missing": 160,
+      "unmapped": 0,
+      "total": 554,
+      "coveragePercent": 71.119
+    },
+    "mentality_composure": {
+      "observed": 338,
+      "missing": 216,
+      "unmapped": 0,
+      "total": 554,
+      "coveragePercent": 61.011
+    },
+    "defending_defensive_awareness": {
+      "observed": 172,
+      "missing": 92,
+      "unmapped": 290,
+      "total": 554,
+      "coveragePercent": 31.047
+    },
+    "defending_standing_tackle": {
+      "observed": 172,
+      "missing": 92,
+      "unmapped": 290,
+      "total": 554,
+      "coveragePercent": 31.047
+    },
+    "defending_sliding_tackle": {
+      "observed": 172,
+      "missing": 92,
+      "unmapped": 290,
+      "total": 554,
+      "coveragePercent": 31.047
+    },
+    "goalkeeping_diving": {
+      "observed": 455,
+      "missing": 99,
+      "unmapped": 0,
+      "total": 554,
+      "coveragePercent": 82.13
+    },
+    "goalkeeping_handling": {
+      "observed": 462,
+      "missing": 92,
+      "unmapped": 0,
+      "total": 554,
+      "coveragePercent": 83.394
+    },
+    "goalkeeping_kicking": {
+      "observed": 394,
+      "missing": 160,
+      "unmapped": 0,
+      "total": 554,
+      "coveragePercent": 71.119
+    },
+    "goalkeeping_positioning": {
+      "observed": 454,
+      "missing": 100,
+      "unmapped": 0,
+      "total": 554,
+      "coveragePercent": 81.949
+    },
+    "goalkeeping_reflexes": {
+      "observed": 437,
+      "missing": 117,
+      "unmapped": 0,
+      "total": 554,
+      "coveragePercent": 78.881
+    }
+  },
+  "sourceNativePositionCoverage": {
+    "selectedSnapshotRecordsWithNaturalPosition": 462,
+    "total": 554
+  },
+  "observedPositionRatingsCoverage": {
+    "selectedSnapshotRecordsWithRatings": 1,
+    "ratingEntryCount": 27,
+    "total": 554
+  },
+  "snapshotSelection": {
+    "strategies": {
+      "y_plus_1": 457,
+      "y_fallback": 1,
+      "bounded_nearest": 4,
+      "unavailable": 92
+    },
+    "yearOffsetsFromTargetEdition": {
+      "0": 457,
+      "1": 2,
+      "2": 2,
+      "-1": 1
+    },
+    "selectedBySource": {
+      "lbenz-fifaindex": 290,
+      "mzafram-sofifa": 171,
+      "stefano-legacy": 1
+    }
+  },
+  "manualFallbackUnavailable": {
+    "manualOverrides": 0,
+    "manualEstimates": 0,
+    "yFallback": 1,
+    "boundedNearestFallback": 4,
+    "unavailable": 92,
+    "legacyFallbackOriginKnown": 0,
+    "legacyFallbackOriginUnknown": 554
+  },
+  "bySeasonYear": {
+    "1999": {
+      "teamSeasons": 18,
+      "selected": 0,
+      "unavailable": 18,
+      "strategies": {
+        "unavailable": 18
+      }
+    },
+    "2000": {
+      "teamSeasons": 18,
+      "selected": 0,
+      "unavailable": 18,
+      "strategies": {
+        "unavailable": 18
+      }
+    },
+    "2001": {
+      "teamSeasons": 18,
+      "selected": 0,
+      "unavailable": 18,
+      "strategies": {
+        "unavailable": 18
+      }
+    },
+    "2002": {
+      "teamSeasons": 9,
+      "selected": 2,
+      "unavailable": 7,
+      "strategies": {
+        "bounded_nearest": 2,
+        "unavailable": 7
+      }
+    },
+    "2003": {
+      "teamSeasons": 9,
+      "selected": 2,
+      "unavailable": 7,
+      "strategies": {
+        "bounded_nearest": 2,
+        "unavailable": 7
+      }
+    },
+    "2004": {
+      "teamSeasons": 27,
+      "selected": 3,
+      "unavailable": 24,
+      "strategies": {
+        "unavailable": 24,
+        "y_plus_1": 3
+      }
+    },
+    "2005": {
+      "teamSeasons": 25,
+      "selected": 25,
+      "unavailable": 0,
+      "strategies": {
+        "y_plus_1": 25
+      }
+    },
+    "2007": {
+      "teamSeasons": 9,
+      "selected": 9,
+      "unavailable": 0,
+      "strategies": {
+        "y_plus_1": 9
+      }
+    },
+    "2008": {
+      "teamSeasons": 18,
+      "selected": 18,
+      "unavailable": 0,
+      "strategies": {
+        "y_plus_1": 18
+      }
+    },
+    "2009": {
+      "teamSeasons": 9,
+      "selected": 9,
+      "unavailable": 0,
+      "strategies": {
+        "y_plus_1": 9
+      }
+    },
+    "2010": {
+      "teamSeasons": 9,
+      "selected": 9,
+      "unavailable": 0,
+      "strategies": {
+        "y_plus_1": 9
+      }
+    },
+    "2011": {
+      "teamSeasons": 18,
+      "selected": 18,
+      "unavailable": 0,
+      "strategies": {
+        "y_plus_1": 18
+      }
+    },
+    "2012": {
+      "teamSeasons": 35,
+      "selected": 35,
+      "unavailable": 0,
+      "strategies": {
+        "y_plus_1": 35
+      }
+    },
+    "2013": {
+      "teamSeasons": 26,
+      "selected": 26,
+      "unavailable": 0,
+      "strategies": {
+        "y_plus_1": 26
+      }
+    },
+    "2014": {
+      "teamSeasons": 18,
+      "selected": 18,
+      "unavailable": 0,
+      "strategies": {
+        "y_plus_1": 18
+      }
+    },
+    "2015": {
+      "teamSeasons": 27,
+      "selected": 27,
+      "unavailable": 0,
+      "strategies": {
+        "y_plus_1": 27
+      }
+    },
+    "2016": {
+      "teamSeasons": 27,
+      "selected": 27,
+      "unavailable": 0,
+      "strategies": {
+        "y_plus_1": 27
+      }
+    },
+    "2017": {
+      "teamSeasons": 36,
+      "selected": 36,
+      "unavailable": 0,
+      "strategies": {
+        "y_plus_1": 36
+      }
+    },
+    "2019": {
+      "teamSeasons": 27,
+      "selected": 27,
+      "unavailable": 0,
+      "strategies": {
+        "y_plus_1": 27
+      }
+    },
+    "2020": {
+      "teamSeasons": 36,
+      "selected": 36,
+      "unavailable": 0,
+      "strategies": {
+        "y_plus_1": 36
+      }
+    },
+    "2021": {
+      "teamSeasons": 36,
+      "selected": 36,
+      "unavailable": 0,
+      "strategies": {
+        "y_plus_1": 36
+      }
+    },
+    "2022": {
+      "teamSeasons": 45,
+      "selected": 45,
+      "unavailable": 0,
+      "strategies": {
+        "y_plus_1": 45
+      }
+    },
+    "2023": {
+      "teamSeasons": 36,
+      "selected": 36,
+      "unavailable": 0,
+      "strategies": {
+        "y_plus_1": 35,
+        "y_fallback": 1
+      }
+    },
+    "2024": {
+      "teamSeasons": 18,
+      "selected": 18,
+      "unavailable": 0,
+      "strategies": {
+        "y_plus_1": 18
+      }
+    }
+  },
+  "byDecade": {
+    "2000-2009": {
+      "teamSeasons": 142,
+      "selected": 0,
+      "unavailable": 74,
+      "sources": {
+        "lbenz-fifaindex": 68
+      }
+    },
+    "2010-2019": {
+      "teamSeasons": 223,
+      "selected": 0,
+      "unavailable": 0,
+      "sources": {
+        "lbenz-fifaindex": 222,
+        "mzafram-sofifa": 1
+      }
+    },
+    "2020-2029": {
+      "teamSeasons": 171,
+      "selected": 0,
+      "unavailable": 0,
+      "sources": {
+        "mzafram-sofifa": 170,
+        "stefano-legacy": 1
+      }
+    },
+    "1990-1999": {
+      "teamSeasons": 18,
+      "selected": 0,
+      "unavailable": 18,
+      "sources": {}
+    }
+  },
+  "sourceLineageSummary": [
+    {
+      "sourceId": "lbenz-fifaindex",
+      "sourcePath": "research/cache/fifa-rating-audit/lbenz_fifa05_20_player_stats.csv",
+      "payloadSha256": "90403e4a7d30e94198b4c031d805fe06f170833efcae0d738e04108bba436758",
+      "sourceVersion": null,
+      "licenseStatus": null,
+      "rowsScanned": 168146,
+      "targetObservations": 1693,
+      "stableIdObservations": 1409,
+      "nameOrAmbiguousCandidates": 284
+    },
+    {
+      "sourceId": "mzafram-sofifa",
+      "sourcePath": "research/cache/fifa-rating-audit/mzafram_FC24.csv",
+      "payloadSha256": "1ddeb423c9271c50a301fde6fccca8aa19d1c11d8a92f3a25f5a5cec93f0e65b",
+      "sourceVersion": "90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0",
+      "licenseStatus": null,
+      "rowsScanned": 18508,
+      "targetObservations": 126,
+      "stableIdObservations": 124,
+      "nameOrAmbiguousCandidates": 2
+    },
+    {
+      "sourceId": "mzafram-sofifa",
+      "sourcePath": "research/cache/fifa-rating-audit/mzafram_FC25.csv",
+      "payloadSha256": "1b7794c5e6dca9c93f814ca89c3dbbd0e99648927bd670150be70a40e579a2b5",
+      "sourceVersion": "90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0",
+      "licenseStatus": null,
+      "rowsScanned": 18507,
+      "targetObservations": 95,
+      "stableIdObservations": 94,
+      "nameOrAmbiguousCandidates": 1
+    },
+    {
+      "sourceId": "mzafram-sofifa",
+      "sourcePath": "research/cache/fifa-rating-audit/mzafram_FIFA07.csv",
+      "payloadSha256": "945761dfce3f7c250fe3f902e824fcf477e48e64307ba37afd572756a5ee7836",
+      "sourceVersion": "90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0",
+      "licenseStatus": null,
+      "rowsScanned": 10907,
+      "targetObservations": 71,
+      "stableIdObservations": 36,
+      "nameOrAmbiguousCandidates": 35
+    },
+    {
+      "sourceId": "mzafram-sofifa",
+      "sourcePath": "research/cache/fifa-rating-audit/mzafram_FIFA08.csv",
+      "payloadSha256": "1a96b04b03447d925707a646e3b6d4c91304255ab5c621b7b9e2109534df1423",
+      "sourceVersion": "90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0",
+      "licenseStatus": null,
+      "rowsScanned": 12800,
+      "targetObservations": 62,
+      "stableIdObservations": 42,
+      "nameOrAmbiguousCandidates": 20
+    },
+    {
+      "sourceId": "mzafram-sofifa",
+      "sourcePath": "research/cache/fifa-rating-audit/mzafram_FIFA09.csv",
+      "payloadSha256": "4aca59d976167ab3b9079298587e11aeccc9a16e2baf7c67ae35ddb367a6c2d8",
+      "sourceVersion": "90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0",
+      "licenseStatus": null,
+      "rowsScanned": 16198,
+      "targetObservations": 58,
+      "stableIdObservations": 43,
+      "nameOrAmbiguousCandidates": 15
+    },
+    {
+      "sourceId": "mzafram-sofifa",
+      "sourcePath": "research/cache/fifa-rating-audit/mzafram_FIFA10.csv",
+      "payloadSha256": "4cac8ff557238aa965e96a4b746e7eb8eb0401bd37ab86752f9b180f4f0f3e6f",
+      "sourceVersion": "90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0",
+      "licenseStatus": null,
+      "rowsScanned": 16700,
+      "targetObservations": 75,
+      "stableIdObservations": 61,
+      "nameOrAmbiguousCandidates": 14
+    },
+    {
+      "sourceId": "mzafram-sofifa",
+      "sourcePath": "research/cache/fifa-rating-audit/mzafram_FIFA11.csv",
+      "payloadSha256": "2759c693ffcc4822d5a4516981681c19715ce2569b2e3f1700c89c33c99c7ae8",
+      "sourceVersion": "90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0",
+      "licenseStatus": null,
+      "rowsScanned": 15204,
+      "targetObservations": 89,
+      "stableIdObservations": 89,
+      "nameOrAmbiguousCandidates": 0
+    },
+    {
+      "sourceId": "mzafram-sofifa",
+      "sourcePath": "research/cache/fifa-rating-audit/mzafram_FIFA12.csv",
+      "payloadSha256": "97be5e33fed7b9fd77023a48aaf6b4ec34ed8430453c6b0d4bfd90be8944f9aa",
+      "sourceVersion": "90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0",
+      "licenseStatus": null,
+      "rowsScanned": 14455,
+      "targetObservations": 97,
+      "stableIdObservations": 97,
+      "nameOrAmbiguousCandidates": 0
+    },
+    {
+      "sourceId": "mzafram-sofifa",
+      "sourcePath": "research/cache/fifa-rating-audit/mzafram_FIFA13.csv",
+      "payloadSha256": "532bc125dc33b9fccb388ffeac83f5f0193fecf6b0a0f1d9e3e4f532b9fe9671",
+      "sourceVersion": "90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0",
+      "licenseStatus": null,
+      "rowsScanned": 14975,
+      "targetObservations": 103,
+      "stableIdObservations": 103,
+      "nameOrAmbiguousCandidates": 0
+    },
+    {
+      "sourceId": "mzafram-sofifa",
+      "sourcePath": "research/cache/fifa-rating-audit/mzafram_FIFA14.csv",
+      "payloadSha256": "8c6526c72be2ecd5f7a41d3ebb61e2346320b060b03334a37f6a1f2bb90d4044",
+      "sourceVersion": "90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0",
+      "licenseStatus": null,
+      "rowsScanned": 16607,
+      "targetObservations": 121,
+      "stableIdObservations": 120,
+      "nameOrAmbiguousCandidates": 1
+    },
+    {
+      "sourceId": "mzafram-sofifa",
+      "sourcePath": "research/cache/fifa-rating-audit/mzafram_FIFA15.csv",
+      "payloadSha256": "c127ea2d9ad240ae0b7d8b29e8eb2ed22b289cd71381846b3279e2f5e96ad74e",
+      "sourceVersion": "90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0",
+      "licenseStatus": null,
+      "rowsScanned": 16423,
+      "targetObservations": 130,
+      "stableIdObservations": 128,
+      "nameOrAmbiguousCandidates": 2
+    },
+    {
+      "sourceId": "mzafram-sofifa",
+      "sourcePath": "research/cache/fifa-rating-audit/mzafram_FIFA16.csv",
+      "payloadSha256": "688a706ef1fcdff37a89642c1101ee769f3ade9a876c41a8e3cd392cd23c5ba6",
+      "sourceVersion": "90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0",
+      "licenseStatus": null,
+      "rowsScanned": 17026,
+      "targetObservations": 132,
+      "stableIdObservations": 131,
+      "nameOrAmbiguousCandidates": 1
+    },
+    {
+      "sourceId": "mzafram-sofifa",
+      "sourcePath": "research/cache/fifa-rating-audit/mzafram_FIFA17.csv",
+      "payloadSha256": "028387a40c72ff89f4d0ef798df1231edaafaaefdff856944c77a8bf556a93d9",
+      "sourceVersion": "90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0",
+      "licenseStatus": null,
+      "rowsScanned": 17540,
+      "targetObservations": 103,
+      "stableIdObservations": 101,
+      "nameOrAmbiguousCandidates": 2
+    },
+    {
+      "sourceId": "mzafram-sofifa",
+      "sourcePath": "research/cache/fifa-rating-audit/mzafram_FIFA18.csv",
+      "payloadSha256": "9ebe3b423d6679cdb2352bba3b7d4eea852b5d91ecf5e5e8fffd1e407ce8ba2f",
+      "sourceVersion": "90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0",
+      "licenseStatus": null,
+      "rowsScanned": 17943,
+      "targetObservations": 114,
+      "stableIdObservations": 112,
+      "nameOrAmbiguousCandidates": 2
+    },
+    {
+      "sourceId": "mzafram-sofifa",
+      "sourcePath": "research/cache/fifa-rating-audit/mzafram_FIFA19.csv",
+      "payloadSha256": "5e0d91768dd5dd65d8fcacf9231104faf095496577013ad06980460ef17f8516",
+      "sourceVersion": "90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0",
+      "licenseStatus": null,
+      "rowsScanned": 17958,
+      "targetObservations": 122,
+      "stableIdObservations": 121,
+      "nameOrAmbiguousCandidates": 1
+    },
+    {
+      "sourceId": "mzafram-sofifa",
+      "sourcePath": "research/cache/fifa-rating-audit/mzafram_FIFA20.csv",
+      "payloadSha256": "084911f02fb106504ae46b8419ca8efb43357ad1aad219407962b2c972c9c959",
+      "sourceVersion": "90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0",
+      "licenseStatus": null,
+      "rowsScanned": 18490,
+      "targetObservations": 136,
+      "stableIdObservations": 134,
+      "nameOrAmbiguousCandidates": 2
+    },
+    {
+      "sourceId": "mzafram-sofifa",
+      "sourcePath": "research/cache/fifa-rating-audit/mzafram_FIFA21.csv",
+      "payloadSha256": "e85bb9ffeb3e8934365f493bee080dc87c256df0e4f7814157b5fa4d95cb56a4",
+      "sourceVersion": "90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0",
+      "licenseStatus": null,
+      "rowsScanned": 18483,
+      "targetObservations": 145,
+      "stableIdObservations": 143,
+      "nameOrAmbiguousCandidates": 2
+    },
+    {
+      "sourceId": "mzafram-sofifa",
+      "sourcePath": "research/cache/fifa-rating-audit/mzafram_FIFA22.csv",
+      "payloadSha256": "8a5b98643b3c6fac0afc1ed5499889ce2ca0f89f7eb69a37af6d95af5288b65f",
+      "sourceVersion": "90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0",
+      "licenseStatus": null,
+      "rowsScanned": 18474,
+      "targetObservations": 180,
+      "stableIdObservations": 178,
+      "nameOrAmbiguousCandidates": 2
+    },
+    {
+      "sourceId": "mzafram-sofifa",
+      "sourcePath": "research/cache/fifa-rating-audit/mzafram_FIFA23.csv",
+      "payloadSha256": "14561b7be4456c9827c50632d2ac75a2bde0c60a25a46441787f8ac2c14e630c",
+      "sourceVersion": "90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0",
+      "licenseStatus": null,
+      "rowsScanned": 18462,
+      "targetObservations": 165,
+      "stableIdObservations": 163,
+      "nameOrAmbiguousCandidates": 2
+    },
+    {
+      "sourceId": "stefano-legacy",
+      "sourcePath": "research/cache/fifa-rating-audit/stefanoleone_legacy_member.csv",
+      "payloadSha256": "1395ffeb21654873993367b1b09db450f4f4cb946e9a2e31233256ffdac59adc",
+      "sourceVersion": null,
+      "licenseStatus": "listing declares CC0; underlying FIFA/SoFIFA rights unresolved",
+      "rowsScanned": 161583,
+      "targetObservations": 1224,
+      "stableIdObservations": 1220,
+      "nameOrAmbiguousCandidates": 4
+    },
+    {
+      "sourceId": "fifa18-demo",
+      "sourcePath": "research/cache/fifa-rating-audit/kaggle_fifa18_CompleteDataset.csv",
+      "payloadSha256": "b1018e12bea62c715bf09ab838cfa8512ef1e7afcb970be173237117257f84b1",
+      "sourceVersion": null,
+      "licenseStatus": "listing declares CC BY-NC-SA 4.0; underlying SoFIFA rights unresolved",
+      "rowsScanned": 17981,
+      "targetObservations": 123,
+      "stableIdObservations": 113,
+      "nameOrAmbiguousCandidates": 10
+    }
+  ]
+}

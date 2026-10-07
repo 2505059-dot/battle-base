@@ -1,0 +1,293 @@
+{
+  "version": "1.0.0",
+  "canonicalPositions": [
+    "GK",
+    "CB",
+    "LB",
+    "RB",
+    "LWB",
+    "RWB",
+    "CDM",
+    "CM",
+    "CAM",
+    "LM",
+    "RM",
+    "LW",
+    "RW",
+    "CF",
+    "ST"
+  ],
+  "sources": {
+    "lbenz-fifaindex": {
+      "naturalPositionsField": "preferred_positions",
+      "rosterPositionField": "club_position",
+      "separator": "/",
+      "rosterStatuses": [
+        "SUB",
+        "RES"
+      ],
+      "knownAliases": {
+        "GK": {
+          "canonical": "GK",
+          "side": "center",
+          "status": "mapped"
+        },
+        "CB": {
+          "canonical": "CB",
+          "side": "center",
+          "status": "mapped"
+        },
+        "LB": {
+          "canonical": "LB",
+          "side": "left",
+          "status": "mapped"
+        },
+        "RB": {
+          "canonical": "RB",
+          "side": "right",
+          "status": "mapped"
+        },
+        "LWB": {
+          "canonical": "LWB",
+          "side": "left",
+          "status": "mapped"
+        },
+        "RWB": {
+          "canonical": "RWB",
+          "side": "right",
+          "status": "mapped"
+        },
+        "CDM": {
+          "canonical": "CDM",
+          "side": "center",
+          "status": "mapped"
+        },
+        "CM": {
+          "canonical": "CM",
+          "side": "center",
+          "status": "mapped"
+        },
+        "CAM": {
+          "canonical": "CAM",
+          "side": "center",
+          "status": "mapped"
+        },
+        "LM": {
+          "canonical": "LM",
+          "side": "left",
+          "status": "mapped"
+        },
+        "RM": {
+          "canonical": "RM",
+          "side": "right",
+          "status": "mapped"
+        },
+        "LW": {
+          "canonical": "LW",
+          "side": "left",
+          "status": "mapped"
+        },
+        "RW": {
+          "canonical": "RW",
+          "side": "right",
+          "status": "mapped"
+        },
+        "CF": {
+          "canonical": "CF",
+          "side": "center",
+          "status": "mapped"
+        },
+        "ST": {
+          "canonical": "ST",
+          "side": "center",
+          "status": "mapped"
+        },
+        "SW": {
+          "canonical": null,
+          "side": "center",
+          "status": "legacy-special"
+        },
+        "RS": {
+          "canonical": null,
+          "side": "right",
+          "status": "unresolved"
+        },
+        "LS": {
+          "canonical": null,
+          "side": "left",
+          "status": "unresolved"
+        },
+        "RF": {
+          "canonical": null,
+          "side": "right",
+          "status": "unresolved"
+        },
+        "LF": {
+          "canonical": null,
+          "side": "left",
+          "status": "unresolved"
+        },
+        "RWM": {
+          "canonical": null,
+          "side": "right",
+          "status": "unresolved"
+        }
+      }
+    },
+    "mzafram-sofifa": {
+      "naturalPositionsField": "positions",
+      "rosterPositionField": null,
+      "separator": ",",
+      "rosterStatuses": [
+        "SUB",
+        "RES"
+      ],
+      "knownAliases": {}
+    },
+    "stefano-legacy": {
+      "naturalPositionsField": "player_positions",
+      "rosterPositionField": "club_position",
+      "separator": ",",
+      "rosterStatuses": [
+        "SUB",
+        "RES"
+      ],
+      "knownAliases": {}
+    },
+    "fifa18-demo": {
+      "naturalPositionsField": "Preferred Positions",
+      "rosterPositionField": null,
+      "separator": "[\\s,]+",
+      "rosterStatuses": [
+        "SUB",
+        "RES"
+      ],
+      "knownAliases": {}
+    }
+  },
+  "sideAliases": {
+    "LCB": {
+      "family": "CB",
+      "side": "left"
+    },
+    "RCB": {
+      "family": "CB",
+      "side": "right"
+    },
+    "LCM": {
+      "family": "CM",
+      "side": "left"
+    },
+    "RCM": {
+      "family": "CM",
+      "side": "right"
+    },
+    "LAM": {
+      "family": "CAM",
+      "side": "left"
+    },
+    "RAM": {
+      "family": "CAM",
+      "side": "right"
+    },
+    "LDM": {
+      "family": "CDM",
+      "side": "left"
+    },
+    "RDM": {
+      "family": "CDM",
+      "side": "right"
+    },
+    "LF": {
+      "family": "CF",
+      "side": "left"
+    },
+    "RF": {
+      "family": "CF",
+      "side": "right"
+    },
+    "LS": {
+      "family": "ST",
+      "side": "left"
+    },
+    "RS": {
+      "family": "ST",
+      "side": "right"
+    }
+  },
+  "positionRatingFields": {
+    "sources": {
+      "stefano-legacy": {
+        "codeCase": "lowercase",
+        "codes": [
+          "cam",
+          "cb",
+          "cdm",
+          "cf",
+          "cm",
+          "gk",
+          "lam",
+          "lb",
+          "lcb",
+          "lcm",
+          "ldm",
+          "lf",
+          "lm",
+          "ls",
+          "lw",
+          "lwb",
+          "ram",
+          "rb",
+          "rcb",
+          "rcm",
+          "rdm",
+          "rf",
+          "rm",
+          "rs",
+          "rw",
+          "rwb",
+          "st"
+        ],
+        "parsePattern": "^([+-]?\\d+)(?:([+-]\\d+))?$"
+      },
+      "fifa18-demo": {
+        "codeCase": "uppercase",
+        "codes": [
+          "CAM",
+          "CB",
+          "CDM",
+          "CF",
+          "CM",
+          "LAM",
+          "LB",
+          "LCB",
+          "LCM",
+          "LDM",
+          "LF",
+          "LM",
+          "LS",
+          "LW",
+          "LWB",
+          "RAM",
+          "RB",
+          "RCB",
+          "RCM",
+          "RDM",
+          "RF",
+          "RM",
+          "RS",
+          "RW",
+          "RWB",
+          "ST"
+        ],
+        "parsePattern": "^(\\d+)(?:\\.0+)?(?:([+-]\\d+))?$"
+      }
+    },
+    "signedModifierRule": "The modifier is stored separately and is not added to base."
+  },
+  "semantics": {
+    "positionOrder": "Native order is preserved; first token is not asserted to be primary without source semantics.",
+    "formationSlot": "Not modeled in this data foundation.",
+    "tacticalRole": "Not modeled in this data foundation."
+  }
+}

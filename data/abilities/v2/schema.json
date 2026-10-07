@@ -1,0 +1,687 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://battle-base.local/schemas/player-season-abilities-v2.json",
+  "title": "PlayerSeason Ability Data v2",
+  "version": "2.0.0",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "mappingVersions",
+    "records"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": "player-season-abilities-v2.0.0"
+    },
+    "mappingVersions": {
+      "type": "object",
+      "required": [
+        "source",
+        "field",
+        "position",
+        "snapshot"
+      ],
+      "properties": {
+        "source": {
+          "type": "string"
+        },
+        "field": {
+          "type": "string"
+        },
+        "position": {
+          "type": "string"
+        },
+        "snapshot": {
+          "type": "string"
+        }
+      }
+    },
+    "records": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/playerSeason"
+      }
+    }
+  },
+  "$defs": {
+    "nullableNumber": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "position": {
+      "type": "object",
+      "required": [
+        "nativeCode",
+        "sourceField",
+        "sourceOrder",
+        "side",
+        "canonicalPosition",
+        "mappingStatus",
+        "positionKind"
+      ],
+      "properties": {
+        "nativeCode": {
+          "type": "string"
+        },
+        "sourceField": {
+          "type": "string"
+        },
+        "sourceOrder": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "side": {
+          "enum": [
+            "left",
+            "right",
+            "center",
+            "unknown"
+          ]
+        },
+        "canonicalPosition": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "mappingStatus": {
+          "enum": [
+            "mapped",
+            "legacy-special",
+            "unresolved",
+            "roster-status"
+          ]
+        },
+        "preferredClaim": {
+          "enum": [
+            "source-declared",
+            "not-declared"
+          ]
+        },
+        "positionKind": {
+          "enum": [
+            "natural",
+            "roster",
+            "status"
+          ]
+        }
+      }
+    },
+    "positionRating": {
+      "type": "object",
+      "required": [
+        "nativeCode",
+        "rawString",
+        "baseInteger",
+        "signedModifier",
+        "kind",
+        "sourceField",
+        "parseStatus"
+      ],
+      "properties": {
+        "nativeCode": {
+          "type": "string"
+        },
+        "rawString": {
+          "type": "string"
+        },
+        "baseInteger": {
+          "$ref": "#/$defs/nullableNumber"
+        },
+        "signedModifier": {
+          "$ref": "#/$defs/nullableNumber"
+        },
+        "kind": {
+          "enum": [
+            "observed",
+            "derived"
+          ]
+        },
+        "sourceField": {
+          "type": "string"
+        },
+        "mappingVersion": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "parseStatus": {
+          "enum": [
+            "valid",
+            "unparsed"
+          ]
+        }
+      }
+    },
+    "observation": {
+      "type": "object",
+      "required": [
+        "observationId",
+        "sourceId",
+        "sourceVersion",
+        "editionYear",
+        "updateDate",
+        "payloadSha256",
+        "rowNumber",
+        "sourcePlayerId",
+        "sourceName",
+        "sourceClub",
+        "rawOverall",
+        "rawPotential",
+        "rawFields",
+        "sourcePositions",
+        "observedPositionRatings",
+        "identityMatch",
+        "sourceVersionReason",
+        "sourcePath",
+        "sourceUrl",
+        "sourceMember",
+        "sourceMemberSha256",
+        "sourceArchiveSha256",
+        "rosterPosition"
+      ],
+      "properties": {
+        "observationId": {
+          "type": "string"
+        },
+        "sourceId": {
+          "type": "string"
+        },
+        "sourceVersion": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "editionYear": {
+          "type": "integer"
+        },
+        "updateDate": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date"
+        },
+        "updateDateReason": {
+          "type": "string"
+        },
+        "payloadSha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "rowNumber": {
+          "type": "integer",
+          "minimum": 2
+        },
+        "sourcePlayerId": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "sourceName": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "sourceClub": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "rawOverall": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "rawPotential": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "rawFields": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
+        },
+        "sourcePositions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/position"
+          }
+        },
+        "observedPositionRatings": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/positionRating"
+          }
+        },
+        "identityMatch": {
+          "type": "object",
+          "required": [
+            "status",
+            "keyType",
+            "confidence"
+          ],
+          "properties": {
+            "status": {
+              "enum": [
+                "stable_external_id",
+                "name_candidate",
+                "unresolved",
+                "ambiguous"
+              ]
+            },
+            "keyType": {
+              "enum": [
+                "fifaIndex",
+                "sofifa",
+                "name",
+                "none"
+              ]
+            },
+            "confidence": {
+              "enum": [
+                "high",
+                "low",
+                "none"
+              ]
+            }
+          }
+        },
+        "missingReasons": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "sourceVersionReason": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "sourcePath": {
+          "type": "string"
+        },
+        "sourceUrl": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "sourceMember": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "sourceMemberSha256": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^([0-9a-f]{64})?$"
+        },
+        "sourceArchiveSha256": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^([0-9a-f]{64})?$"
+        },
+        "rosterPosition": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/position"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      }
+    },
+    "playerSeason": {
+      "type": "object",
+      "required": [
+        "playerSeasonId",
+        "canonicalPlayerId",
+        "teamSeasonId",
+        "membershipClub",
+        "identityStatus",
+        "availability",
+        "snapshotSelection",
+        "observations",
+        "canonical",
+        "derived",
+        "legacy",
+        "overrides",
+        "positionModel"
+      ],
+      "properties": {
+        "playerSeasonId": {
+          "type": "string"
+        },
+        "canonicalPlayerId": {
+          "type": "string"
+        },
+        "teamSeasonId": {
+          "type": "string"
+        },
+        "membershipClub": {
+          "type": "string"
+        },
+        "identityStatus": {
+          "type": "string"
+        },
+        "availability": {
+          "enum": [
+            "available",
+            "partial",
+            "unavailable"
+          ]
+        },
+        "unavailableReason": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "snapshotSelection": {
+          "type": "object",
+          "required": [
+            "targetEditionYear",
+            "actualEditionYear",
+            "yearOffset",
+            "strategy",
+            "selectionStatus",
+            "primaryObservationId",
+            "rejected"
+          ],
+          "properties": {
+            "targetEditionYear": {
+              "type": "integer"
+            },
+            "actualEditionYear": {
+              "type": [
+                "integer",
+                "null"
+              ]
+            },
+            "yearOffset": {
+              "type": [
+                "integer",
+                "null"
+              ]
+            },
+            "strategy": {
+              "enum": [
+                "y_plus_1",
+                "y_fallback",
+                "bounded_nearest",
+                "unavailable"
+              ]
+            },
+            "selectionStatus": {
+              "enum": [
+                "selected",
+                "unavailable",
+                "ambiguous"
+              ]
+            },
+            "primaryObservationId": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "tieBreakRule": {
+              "type": "string"
+            },
+            "rejected": {
+              "type": "array",
+              "items": {
+                "type": "object"
+              }
+            }
+          }
+        },
+        "observations": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/observation"
+          }
+        },
+        "canonical": {
+          "type": "object",
+          "required": [
+            "mappingVersion",
+            "attributes",
+            "naturalPositions",
+            "overall",
+            "potential"
+          ],
+          "properties": {
+            "mappingVersion": {
+              "type": "string"
+            },
+            "attributes": {
+              "type": "object",
+              "additionalProperties": {
+                "$ref": "#/$defs/canonicalValue"
+              }
+            },
+            "naturalPositions": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/position"
+              }
+            },
+            "overall": {
+              "$ref": "#/$defs/canonicalValue"
+            },
+            "potential": {
+              "$ref": "#/$defs/canonicalValue"
+            }
+          }
+        },
+        "derived": {
+          "type": "object",
+          "required": [
+            "status",
+            "positionRatings"
+          ],
+          "properties": {
+            "status": {
+              "enum": [
+                "not_implemented",
+                "available"
+              ]
+            },
+            "positionRatings": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/positionRating"
+              }
+            }
+          }
+        },
+        "legacy": {
+          "type": "object",
+          "required": [
+            "source",
+            "isTrainingTruth",
+            "originStatus",
+            "dimensions"
+          ],
+          "properties": {
+            "originStatus": {
+              "type": "string"
+            },
+            "dimensions": {
+              "type": "object",
+              "required": [
+                "overall",
+                "attack",
+                "creation",
+                "defense",
+                "physical",
+                "goalkeeping"
+              ],
+              "properties": {
+                "overall": {
+                  "$ref": "#/$defs/nullableNumber"
+                },
+                "attack": {
+                  "$ref": "#/$defs/nullableNumber"
+                },
+                "creation": {
+                  "$ref": "#/$defs/nullableNumber"
+                },
+                "defense": {
+                  "$ref": "#/$defs/nullableNumber"
+                },
+                "physical": {
+                  "$ref": "#/$defs/nullableNumber"
+                },
+                "goalkeeping": {
+                  "$ref": "#/$defs/nullableNumber"
+                }
+              }
+            }
+          }
+        },
+        "overrides": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "unresolved": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "positionModel": {
+          "$ref": "#/$defs/positionModel"
+        }
+      }
+    },
+    "canonicalValue": {
+      "type": "object",
+      "required": [
+        "value",
+        "sourceField",
+        "observationId",
+        "mappingVersion",
+        "status",
+        "missingReason"
+      ],
+      "properties": {
+        "value": {
+          "$ref": "#/$defs/nullableNumber"
+        },
+        "sourceField": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "observationId": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "mappingVersion": {
+          "type": "string"
+        },
+        "status": {
+          "enum": [
+            "observed",
+            "missing",
+            "unavailable",
+            "invalid",
+            "unmapped"
+          ]
+        },
+        "missingReason": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "rawString": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "valueKind": {
+          "enum": [
+            "attribute",
+            "overall",
+            "potential"
+          ]
+        }
+      }
+    },
+    "positionModel": {
+      "type": "object",
+      "required": [
+        "naturalPositions",
+        "rosterPosition",
+        "formationSlots",
+        "tacticalRoles",
+        "tactics"
+      ],
+      "properties": {
+        "naturalPositions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/position"
+          }
+        },
+        "rosterPosition": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/position"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "formationSlots": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "tacticalRoles": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "tactics": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        }
+      }
+    }
+  }
+}

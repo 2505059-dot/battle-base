@@ -1,0 +1,9 @@
+{
+  "version": "1.0.0",
+  "overrides": [],
+  "rules": [
+    "Overrides are append-only records separate from source observations.",
+    "Each future override must include evidence, reason, applicable PlayerSeason/observation ID, mapping version, before value, and after value.",
+    "An override never mutates raw source values."
+  ]
+}

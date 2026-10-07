@@ -1,0 +1,358 @@
+{
+  "candidateTeamSeason": "benfica-2010",
+  "actualTeamOrCountry": "SL Benfica",
+  "actualLeagueOrType": "Primeira Liga",
+  "plannedGroup": "club-league",
+  "referenceSeasonOrEvent": "2009/10",
+  "gameSnapshot": {
+    "gameVersion": "FIFA 10",
+    "targetRevisionReference": null,
+    "versionConsistencyStatus": "FIFAIndex edition page identifies game version but does not disclose patch/update date",
+    "sourceCoverageStatus": "local-cache rows captured; does not establish complete authoritative squad coverage",
+    "sourceTeamName": "SL Benfica",
+    "snapshotStatus": "captured-game-edition-snapshot",
+    "observedUpdateIds": [
+      "100002"
+    ],
+    "observedUpdateDate": null,
+    "membershipEvidence": "source row club_name=SL Benfica in FIFA 10 edition dataset",
+    "capturedRowCount": 29,
+    "expectedSourcePageCount": 30,
+    "fifaIndexGameRosterAudit": {
+      "sourceName": "FIFAIndex team edition page",
+      "pageUrl": "https://fifaindex.com/teams/234-sport-lisboa-benfica/fifa10",
+      "teamId": 234,
+      "gameVersion": "FIFA 10",
+      "listedPlayerCount": 30,
+      "revisionDate": null,
+      "revisionDateStatus": "not disclosed on cited FIFAIndex edition page; unknown",
+      "namesTranscribed": false,
+      "pageReadInSourceAudit": true,
+      "eventRosterComparison": null
+    },
+    "members": [
+      {
+        "sourcePlayerId": "179752",
+        "rawName": "Óscar René Cardozo",
+        "rawPosition": "ST",
+        "rawOverall": "82",
+        "membershipEvidence": "source row club_name=SL Benfica",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/179752/oscar-rene-cardozo/100002/"
+      },
+      {
+        "sourcePlayerId": "10959",
+        "rawName": "Pablo César Aimar",
+        "rawPosition": "CAM",
+        "rawOverall": "82",
+        "membershipEvidence": "source row club_name=SL Benfica",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/10959/pablo-cesar-aimar/100002/"
+      },
+      {
+        "sourcePlayerId": "148711",
+        "rawName": "Luisão",
+        "rawPosition": "CB",
+        "rawOverall": "81",
+        "membershipEvidence": "source row club_name=SL Benfica",
+        "identityStatus": "confirmed-existing-by-exact-source-id",
+        "canonicalPlayerId": "luisao",
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/148711/luisao/100002/"
+      },
+      {
+        "sourcePlayerId": "183898",
+        "rawName": "Ángel Di María",
+        "rawPosition": "LM",
+        "rawOverall": "80",
+        "membershipEvidence": "source row club_name=SL Benfica",
+        "identityStatus": "confirmed-existing-by-exact-source-id",
+        "canonicalPlayerId": "angel-di-maria",
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/183898/angel-di-maria/100002/"
+      },
+      {
+        "sourcePlayerId": "1803",
+        "rawName": "Javier Saviola",
+        "rawPosition": "RF",
+        "rawOverall": "80",
+        "membershipEvidence": "source row club_name=SL Benfica",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/1803/javier-saviola/100002/"
+      },
+      {
+        "sourcePlayerId": "179944",
+        "rawName": "David Luiz",
+        "rawPosition": "CB",
+        "rawOverall": "79",
+        "membershipEvidence": "source row club_name=SL Benfica",
+        "identityStatus": "confirmed-existing-by-exact-source-id",
+        "canonicalPlayerId": "david-luiz",
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/179944/david-luiz/100002/"
+      },
+      {
+        "sourcePlayerId": "20731",
+        "rawName": "Quim",
+        "rawPosition": "GK",
+        "rawOverall": "79",
+        "membershipEvidence": "source row club_name=SL Benfica",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/20731/quim/100002/"
+      },
+      {
+        "sourcePlayerId": "184943",
+        "rawName": "Ramires",
+        "rawPosition": "CM",
+        "rawOverall": "78",
+        "membershipEvidence": "source row club_name=SL Benfica",
+        "identityStatus": "confirmed-existing-by-exact-source-id",
+        "canonicalPlayerId": "ramires",
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/184943/ramires/100002/"
+      },
+      {
+        "sourcePlayerId": "161754",
+        "rawName": "Javi García",
+        "rawPosition": "CDM",
+        "rawOverall": "78",
+        "membershipEvidence": "source row club_name=SL Benfica",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/161754/javi-garcia/100002/"
+      },
+      {
+        "sourcePlayerId": "171688",
+        "rawName": "Fábio Coentrão",
+        "rawPosition": "LM",
+        "rawOverall": "77",
+        "membershipEvidence": "source row club_name=SL Benfica",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/171688/fabio-coentrao/100002/"
+      },
+      {
+        "sourcePlayerId": "20798",
+        "rawName": "Carlos Martins",
+        "rawPosition": "CM",
+        "rawOverall": "77",
+        "membershipEvidence": "source row club_name=SL Benfica",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/20798/carlos-martins/100002/"
+      },
+      {
+        "sourcePlayerId": "3974",
+        "rawName": "Moreira",
+        "rawPosition": "GK",
+        "rawOverall": "77",
+        "membershipEvidence": "source row club_name=SL Benfica",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/3974/moreira/100002/"
+      },
+      {
+        "sourcePlayerId": "182862",
+        "rawName": "Maximiliano Pereira",
+        "rawPosition": "RWB",
+        "rawOverall": "76",
+        "membershipEvidence": "source row club_name=SL Benfica",
+        "identityStatus": "confirmed-existing-by-exact-source-id",
+        "canonicalPlayerId": "maxi-pereira",
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/182862/maximiliano-pereira/100002/"
+      },
+      {
+        "sourcePlayerId": "177831",
+        "rawName": "Júlio César",
+        "rawPosition": "GK",
+        "rawOverall": "76",
+        "membershipEvidence": "source row club_name=SL Benfica",
+        "identityStatus": "name-candidate-unconfirmed",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [
+          "julio-cesar"
+        ],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/177831/julio-cesar/100002/"
+      },
+      {
+        "sourcePlayerId": "138463",
+        "rawName": "Ruben Amorim",
+        "rawPosition": "CM",
+        "rawOverall": "76",
+        "membershipEvidence": "source row club_name=SL Benfica",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/138463/ruben-amorim/100002/"
+      },
+      {
+        "sourcePlayerId": "4205",
+        "rawName": "Nuno Gomes",
+        "rawPosition": "CF",
+        "rawOverall": "76",
+        "membershipEvidence": "source row club_name=SL Benfica",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/4205/nuno-gomes/100002/"
+      },
+      {
+        "sourcePlayerId": "182002",
+        "rawName": "Sidnei",
+        "rawPosition": "CB",
+        "rawOverall": "75",
+        "membershipEvidence": "source row club_name=SL Benfica",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/182002/sidnei/100002/"
+      },
+      {
+        "sourcePlayerId": "164157",
+        "rawName": "Weldon",
+        "rawPosition": "ST",
+        "rawOverall": "75",
+        "membershipEvidence": "source row club_name=SL Benfica",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/164157/weldon/100002/"
+      },
+      {
+        "sourcePlayerId": "20199",
+        "rawName": "César Peixoto",
+        "rawPosition": "LM",
+        "rawOverall": "75",
+        "membershipEvidence": "source row club_name=SL Benfica",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/20199/cesar-peixoto/100002/"
+      },
+      {
+        "sourcePlayerId": "176425",
+        "rawName": "Éder Luís",
+        "rawPosition": "RF",
+        "rawOverall": "74",
+        "membershipEvidence": "source row club_name=SL Benfica",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/176425/eder-luis/100002/"
+      },
+      {
+        "sourcePlayerId": "47956",
+        "rawName": "Mantorras",
+        "rawPosition": "ST",
+        "rawOverall": "74",
+        "membershipEvidence": "source row club_name=SL Benfica",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/47956/mantorras/100002/"
+      },
+      {
+        "sourcePlayerId": "185194",
+        "rawName": "Miguel Vítor",
+        "rawPosition": "CB",
+        "rawOverall": "74",
+        "membershipEvidence": "source row club_name=SL Benfica",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/185194/miguel-vitor/100002/"
+      },
+      {
+        "sourcePlayerId": "187954",
+        "rawName": "Airton",
+        "rawPosition": "CDM",
+        "rawOverall": "73",
+        "membershipEvidence": "source row club_name=SL Benfica",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/187954/airton/100002/"
+      },
+      {
+        "sourcePlayerId": "192988",
+        "rawName": "Felipe Menezes",
+        "rawPosition": "CAM",
+        "rawOverall": "73",
+        "membershipEvidence": "source row club_name=SL Benfica",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/192988/felipe-menezes/100002/"
+      },
+      {
+        "sourcePlayerId": "184858",
+        "rawName": "Alan Kardec",
+        "rawPosition": "ST",
+        "rawOverall": "72",
+        "membershipEvidence": "source row club_name=SL Benfica",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/184858/alan-kardec/100002/"
+      },
+      {
+        "sourcePlayerId": "193143",
+        "rawName": "Roderick Miranda",
+        "rawPosition": "CB",
+        "rawOverall": "72",
+        "membershipEvidence": "source row club_name=SL Benfica",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/193143/roderick-miranda/100002/"
+      },
+      {
+        "sourcePlayerId": "20166",
+        "rawName": "Jorge Ribeiro",
+        "rawPosition": "LWB",
+        "rawOverall": "71",
+        "membershipEvidence": "source row club_name=SL Benfica",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/20166/jorge-ribeiro/100002/"
+      },
+      {
+        "sourcePlayerId": "155631",
+        "rawName": "Marcel",
+        "rawPosition": "ST",
+        "rawOverall": "71",
+        "membershipEvidence": "source row club_name=SL Benfica",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/155631/marcel/100002/"
+      },
+      {
+        "sourcePlayerId": "20776",
+        "rawName": "Luís Filipe",
+        "rawPosition": "RWB",
+        "rawOverall": "69",
+        "membershipEvidence": "source row club_name=SL Benfica",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/20776/luis-filipe/100002/"
+      }
+    ]
+  },
+  "officialEventSnapshots": []
+}

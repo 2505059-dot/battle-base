@@ -1,0 +1,941 @@
+{
+  "schemaVersion": "wave1-coverage/1",
+  "generatedAt": "2026-10-07T15:25:04.192Z",
+  "denominators": {
+    "teams": "29 candidate TeamSeason IDs",
+    "rosterExtraction": "per-team raw player rows matching exact source team text in one locally cached game edition; this does not measure authoritative full squad coverage",
+    "rawAttributeCoverage": "non-empty and non-NA source cells divided by raw source attribute cells present in extracted rows; literal source 0 remains a value and is separately counted",
+    "identityCoverage": "extracted player records with exact external source-ID match divided by records having source IDs; name-only matches remain unconfirmed",
+    "eventRosterCoverage": "players printed in a cited formal competition roster source; event roster snapshots remain separate from game roster snapshots"
+  },
+  "totals": {
+    "candidateTeams": 29,
+    "teamsWithRawPlayerRows": 22,
+    "teamsWithOfficialEventRoster": 6,
+    "capturedRawPlayerRows": 636,
+    "rawAttributeSlots": 25980,
+    "rawAttributePresentValues": 25668,
+    "rawAttributeMissingValues": 312,
+    "explicitRawZeroValues": 1105,
+    "exactIdIdentityMatches": 98,
+    "nameOnlyIdentityCandidates": 50,
+    "proposedNewSourcePlayerRecords": 638,
+    "eventNamesWithoutSourceIDs": 161,
+    "teamsReadyForV2Integration": 0,
+    "identityRecordCount": 909,
+    "identityRecordCountsByKind": {
+      "main-game": 636,
+      "event-roster": 161,
+      "national-attribute-candidate": 112
+    },
+    "identityRecordStatusCounts": {
+      "confirmed-existing-by-exact-source-id": 98,
+      "proposed-new-source-player-needs-review": 638,
+      "name-candidate-unconfirmed": 50,
+      "identity-unconfirmed-no-source-id": 123
+    },
+    "distinctSourceIdKeys": 713,
+    "sourceIdRecordRows": 748,
+    "distinctSourceIdStatusCounts": {
+      "confirmed-existing-by-exact-source-id": 90,
+      "proposed-new-source-player-needs-review": 611,
+      "name-candidate-unconfirmed": 12
+    },
+    "sourceIdsWithConflictingStatuses": 0,
+    "recordsWithoutSourceIds": 161,
+    "eventRosterNamesWithExactNameNationalityCandidates": 112,
+    "eventRosterNamesWithoutExactCandidate": 27,
+    "officialEventSnapshotRosterEntries": 161,
+    "uniqueEventRosterNamesAcrossSnapshots": 139,
+    "finalEventRosterEntries": 138,
+    "uniqueFinalEventRosterNames": 138,
+    "finalEventRosterNamesWithCandidates": 111,
+    "finalEventRosterNamesWithoutCandidates": 27,
+    "finalNationalRosterCoverageDenominator": {
+      "entries": 138,
+      "uniqueNames": 138,
+      "withAttributeCandidates": 111,
+      "withoutAttributeCandidates": 27
+    },
+    "allEventSnapshotCoverageDenominator": {
+      "entries": 161,
+      "uniqueNames": 139,
+      "withAttributeCandidates": 112,
+      "withoutAttributeCandidates": 27
+    },
+    "supplementalNationalAttributeCandidateRows": 112,
+    "supplementalNationalRawAttributeSlots": 4592,
+    "supplementalNationalRawAttributePresentValues": 4592,
+    "supplementalNationalRawAttributeMissingValues": 0,
+    "supplementalNationalExplicitRawZeroValues": 122
+  },
+  "duplicates": [
+    {
+      "candidateId": "ac-milan-2018",
+      "duplicateSourceIds": []
+    },
+    {
+      "candidateId": "manchester-united-2014",
+      "duplicateSourceIds": []
+    },
+    {
+      "candidateId": "liverpool-2014",
+      "duplicateSourceIds": []
+    },
+    {
+      "candidateId": "real-madrid-2009",
+      "duplicateSourceIds": []
+    },
+    {
+      "candidateId": "arsenal-2019",
+      "duplicateSourceIds": []
+    },
+    {
+      "candidateId": "porto-2011",
+      "duplicateSourceIds": []
+    },
+    {
+      "candidateId": "paris-saint-germain-2018",
+      "duplicateSourceIds": []
+    },
+    {
+      "candidateId": "lyon-2010",
+      "duplicateSourceIds": []
+    },
+    {
+      "candidateId": "feyenoord-2017",
+      "duplicateSourceIds": []
+    },
+    {
+      "candidateId": "sporting-cp-2017",
+      "duplicateSourceIds": []
+    },
+    {
+      "candidateId": "benfica-2010",
+      "duplicateSourceIds": []
+    },
+    {
+      "candidateId": "bayer-leverkusen-2011",
+      "duplicateSourceIds": []
+    },
+    {
+      "candidateId": "spain-2010",
+      "duplicateSourceIds": []
+    },
+    {
+      "candidateId": "germany-2014",
+      "duplicateSourceIds": []
+    },
+    {
+      "candidateId": "france-2018",
+      "duplicateSourceIds": []
+    },
+    {
+      "candidateId": "russia-2018",
+      "duplicateSourceIds": []
+    },
+    {
+      "candidateId": "belgium-2018",
+      "duplicateSourceIds": []
+    },
+    {
+      "candidateId": "mexico-2018",
+      "duplicateSourceIds": []
+    },
+    {
+      "candidateId": "inter-miami-2024",
+      "duplicateSourceIds": []
+    },
+    {
+      "candidateId": "la-galaxy-2019",
+      "duplicateSourceIds": []
+    },
+    {
+      "candidateId": "sao-paulo-2005",
+      "duplicateSourceIds": []
+    },
+    {
+      "candidateId": "santos-2011",
+      "duplicateSourceIds": []
+    },
+    {
+      "candidateId": "river-plate-2018",
+      "duplicateSourceIds": []
+    },
+    {
+      "candidateId": "kashima-antlers-2016",
+      "duplicateSourceIds": []
+    },
+    {
+      "candidateId": "guangzhou-rf-2019",
+      "duplicateSourceIds": []
+    },
+    {
+      "candidateId": "anzhi-2013",
+      "duplicateSourceIds": []
+    },
+    {
+      "candidateId": "zenit-2015",
+      "duplicateSourceIds": []
+    },
+    {
+      "candidateId": "galatasaray-2013",
+      "duplicateSourceIds": []
+    },
+    {
+      "candidateId": "al-nassr-2024",
+      "duplicateSourceIds": []
+    }
+  ],
+  "unresolved": [
+    "Data v2 source-field and handoff contract is not yet defined; integration readiness is false for every team.",
+    "FIFAIndex edition-page counts and mirrored SoFIFA CSV row counts are separate observations and are not forced to match.",
+    "Most cache acquisition timestamps and most game revision dates are unavailable; see per-source metadata.",
+    "FIFAIndex game roster names are not transcribed for the six national teams; only edition, page URL, count and reviewed event-list comparison are available.",
+    "Possible-placeholder labels use a name-pattern heuristic only and do not establish that a player is fictional.",
+    "FIFAIndex edition pages do not disclose a verified patch/update date for the cited snapshots; unknown dates remain null.",
+    "National final-list attribute coverage is 111/138 unique final-list names; the submitted/final snapshot union is 112/139 unique names because Mexico replaced Diego Reyes with Erick Gutiérrez.",
+    "National-team attribute candidates are SoFIFA club rows linked to event names by exact full name and nationality; they remain separate from official and game national-team rosters."
+  ],
+  "perTeam": [
+    {
+      "candidateTeamSeason": "ac-milan-2018",
+      "mainGameRecords": 26,
+      "eventRosterEntries": 0,
+      "nationalAttributeCandidateRows": 0,
+      "identityRecordCount": 26,
+      "distinctSourceIdCount": 26,
+      "identityRecordsByKind": {
+        "main-game": {
+          "recordCount": 26,
+          "identityStatusCounts": {
+            "confirmed-existing-by-exact-source-id": 5,
+            "proposed-new-source-player-needs-review": 21
+          }
+        },
+        "event-roster": {
+          "recordCount": 0,
+          "identityStatusCounts": {}
+        },
+        "national-attribute-candidate": {
+          "recordCount": 0,
+          "identityStatusCounts": {}
+        }
+      }
+    },
+    {
+      "candidateTeamSeason": "manchester-united-2014",
+      "mainGameRecords": 32,
+      "eventRosterEntries": 0,
+      "nationalAttributeCandidateRows": 0,
+      "identityRecordCount": 32,
+      "distinctSourceIdCount": 32,
+      "identityRecordsByKind": {
+        "main-game": {
+          "recordCount": 32,
+          "identityStatusCounts": {
+            "confirmed-existing-by-exact-source-id": 10,
+            "proposed-new-source-player-needs-review": 21,
+            "name-candidate-unconfirmed": 1
+          }
+        },
+        "event-roster": {
+          "recordCount": 0,
+          "identityStatusCounts": {}
+        },
+        "national-attribute-candidate": {
+          "recordCount": 0,
+          "identityStatusCounts": {}
+        }
+      }
+    },
+    {
+      "candidateTeamSeason": "liverpool-2014",
+      "mainGameRecords": 33,
+      "eventRosterEntries": 0,
+      "nationalAttributeCandidateRows": 0,
+      "identityRecordCount": 33,
+      "distinctSourceIdCount": 33,
+      "identityRecordsByKind": {
+        "main-game": {
+          "recordCount": 33,
+          "identityStatusCounts": {
+            "confirmed-existing-by-exact-source-id": 4,
+            "proposed-new-source-player-needs-review": 28,
+            "name-candidate-unconfirmed": 1
+          }
+        },
+        "event-roster": {
+          "recordCount": 0,
+          "identityStatusCounts": {}
+        },
+        "national-attribute-candidate": {
+          "recordCount": 0,
+          "identityStatusCounts": {}
+        }
+      }
+    },
+    {
+      "candidateTeamSeason": "real-madrid-2009",
+      "mainGameRecords": 34,
+      "eventRosterEntries": 0,
+      "nationalAttributeCandidateRows": 0,
+      "identityRecordCount": 34,
+      "distinctSourceIdCount": 34,
+      "identityRecordsByKind": {
+        "main-game": {
+          "recordCount": 34,
+          "identityStatusCounts": {
+            "confirmed-existing-by-exact-source-id": 7,
+            "proposed-new-source-player-needs-review": 23,
+            "name-candidate-unconfirmed": 4
+          }
+        },
+        "event-roster": {
+          "recordCount": 0,
+          "identityStatusCounts": {}
+        },
+        "national-attribute-candidate": {
+          "recordCount": 0,
+          "identityStatusCounts": {}
+        }
+      }
+    },
+    {
+      "candidateTeamSeason": "arsenal-2019",
+      "mainGameRecords": 33,
+      "eventRosterEntries": 0,
+      "nationalAttributeCandidateRows": 0,
+      "identityRecordCount": 33,
+      "distinctSourceIdCount": 33,
+      "identityRecordsByKind": {
+        "main-game": {
+          "recordCount": 33,
+          "identityStatusCounts": {
+            "confirmed-existing-by-exact-source-id": 9,
+            "proposed-new-source-player-needs-review": 24
+          }
+        },
+        "event-roster": {
+          "recordCount": 0,
+          "identityStatusCounts": {}
+        },
+        "national-attribute-candidate": {
+          "recordCount": 0,
+          "identityStatusCounts": {}
+        }
+      }
+    },
+    {
+      "candidateTeamSeason": "porto-2011",
+      "mainGameRecords": 24,
+      "eventRosterEntries": 0,
+      "nationalAttributeCandidateRows": 0,
+      "identityRecordCount": 24,
+      "distinctSourceIdCount": 24,
+      "identityRecordsByKind": {
+        "main-game": {
+          "recordCount": 24,
+          "identityStatusCounts": {
+            "proposed-new-source-player-needs-review": 23,
+            "confirmed-existing-by-exact-source-id": 1
+          }
+        },
+        "event-roster": {
+          "recordCount": 0,
+          "identityStatusCounts": {}
+        },
+        "national-attribute-candidate": {
+          "recordCount": 0,
+          "identityStatusCounts": {}
+        }
+      }
+    },
+    {
+      "candidateTeamSeason": "paris-saint-germain-2018",
+      "mainGameRecords": 29,
+      "eventRosterEntries": 0,
+      "nationalAttributeCandidateRows": 0,
+      "identityRecordCount": 29,
+      "distinctSourceIdCount": 29,
+      "identityRecordsByKind": {
+        "main-game": {
+          "recordCount": 29,
+          "identityStatusCounts": {
+            "proposed-new-source-player-needs-review": 24,
+            "confirmed-existing-by-exact-source-id": 5
+          }
+        },
+        "event-roster": {
+          "recordCount": 0,
+          "identityStatusCounts": {}
+        },
+        "national-attribute-candidate": {
+          "recordCount": 0,
+          "identityStatusCounts": {}
+        }
+      }
+    },
+    {
+      "candidateTeamSeason": "lyon-2010",
+      "mainGameRecords": 35,
+      "eventRosterEntries": 0,
+      "nationalAttributeCandidateRows": 0,
+      "identityRecordCount": 35,
+      "distinctSourceIdCount": 35,
+      "identityRecordsByKind": {
+        "main-game": {
+          "recordCount": 35,
+          "identityStatusCounts": {
+            "proposed-new-source-player-needs-review": 32,
+            "name-candidate-unconfirmed": 1,
+            "confirmed-existing-by-exact-source-id": 2
+          }
+        },
+        "event-roster": {
+          "recordCount": 0,
+          "identityStatusCounts": {}
+        },
+        "national-attribute-candidate": {
+          "recordCount": 0,
+          "identityStatusCounts": {}
+        }
+      }
+    },
+    {
+      "candidateTeamSeason": "feyenoord-2017",
+      "mainGameRecords": 29,
+      "eventRosterEntries": 0,
+      "nationalAttributeCandidateRows": 0,
+      "identityRecordCount": 29,
+      "distinctSourceIdCount": 29,
+      "identityRecordsByKind": {
+        "main-game": {
+          "recordCount": 29,
+          "identityStatusCounts": {
+            "proposed-new-source-player-needs-review": 29
+          }
+        },
+        "event-roster": {
+          "recordCount": 0,
+          "identityStatusCounts": {}
+        },
+        "national-attribute-candidate": {
+          "recordCount": 0,
+          "identityStatusCounts": {}
+        }
+      }
+    },
+    {
+      "candidateTeamSeason": "sporting-cp-2017",
+      "mainGameRecords": 30,
+      "eventRosterEntries": 0,
+      "nationalAttributeCandidateRows": 0,
+      "identityRecordCount": 30,
+      "distinctSourceIdCount": 30,
+      "identityRecordsByKind": {
+        "main-game": {
+          "recordCount": 30,
+          "identityStatusCounts": {
+            "proposed-new-source-player-needs-review": 30
+          }
+        },
+        "event-roster": {
+          "recordCount": 0,
+          "identityStatusCounts": {}
+        },
+        "national-attribute-candidate": {
+          "recordCount": 0,
+          "identityStatusCounts": {}
+        }
+      }
+    },
+    {
+      "candidateTeamSeason": "benfica-2010",
+      "mainGameRecords": 29,
+      "eventRosterEntries": 0,
+      "nationalAttributeCandidateRows": 0,
+      "identityRecordCount": 29,
+      "distinctSourceIdCount": 29,
+      "identityRecordsByKind": {
+        "main-game": {
+          "recordCount": 29,
+          "identityStatusCounts": {
+            "proposed-new-source-player-needs-review": 23,
+            "confirmed-existing-by-exact-source-id": 5,
+            "name-candidate-unconfirmed": 1
+          }
+        },
+        "event-roster": {
+          "recordCount": 0,
+          "identityStatusCounts": {}
+        },
+        "national-attribute-candidate": {
+          "recordCount": 0,
+          "identityStatusCounts": {}
+        }
+      }
+    },
+    {
+      "candidateTeamSeason": "bayer-leverkusen-2011",
+      "mainGameRecords": 22,
+      "eventRosterEntries": 0,
+      "nationalAttributeCandidateRows": 0,
+      "identityRecordCount": 22,
+      "distinctSourceIdCount": 22,
+      "identityRecordsByKind": {
+        "main-game": {
+          "recordCount": 22,
+          "identityStatusCounts": {
+            "proposed-new-source-player-needs-review": 19,
+            "confirmed-existing-by-exact-source-id": 2,
+            "name-candidate-unconfirmed": 1
+          }
+        },
+        "event-roster": {
+          "recordCount": 0,
+          "identityStatusCounts": {}
+        },
+        "national-attribute-candidate": {
+          "recordCount": 0,
+          "identityStatusCounts": {}
+        }
+      }
+    },
+    {
+      "candidateTeamSeason": "spain-2010",
+      "mainGameRecords": 0,
+      "eventRosterEntries": 23,
+      "nationalAttributeCandidateRows": 11,
+      "identityRecordCount": 34,
+      "distinctSourceIdCount": 11,
+      "identityRecordsByKind": {
+        "main-game": {
+          "recordCount": 0,
+          "identityStatusCounts": {}
+        },
+        "event-roster": {
+          "recordCount": 23,
+          "identityStatusCounts": {
+            "name-candidate-unconfirmed": 14,
+            "identity-unconfirmed-no-source-id": 9
+          }
+        },
+        "national-attribute-candidate": {
+          "recordCount": 11,
+          "identityStatusCounts": {
+            "confirmed-existing-by-exact-source-id": 6,
+            "proposed-new-source-player-needs-review": 5
+          }
+        }
+      }
+    },
+    {
+      "candidateTeamSeason": "germany-2014",
+      "mainGameRecords": 0,
+      "eventRosterEntries": 23,
+      "nationalAttributeCandidateRows": 23,
+      "identityRecordCount": 46,
+      "distinctSourceIdCount": 23,
+      "identityRecordsByKind": {
+        "main-game": {
+          "recordCount": 0,
+          "identityStatusCounts": {}
+        },
+        "event-roster": {
+          "recordCount": 23,
+          "identityStatusCounts": {
+            "name-candidate-unconfirmed": 10,
+            "identity-unconfirmed-no-source-id": 13
+          }
+        },
+        "national-attribute-candidate": {
+          "recordCount": 23,
+          "identityStatusCounts": {
+            "confirmed-existing-by-exact-source-id": 10,
+            "proposed-new-source-player-needs-review": 13
+          }
+        }
+      }
+    },
+    {
+      "candidateTeamSeason": "france-2018",
+      "mainGameRecords": 0,
+      "eventRosterEntries": 23,
+      "nationalAttributeCandidateRows": 23,
+      "identityRecordCount": 46,
+      "distinctSourceIdCount": 23,
+      "identityRecordsByKind": {
+        "main-game": {
+          "recordCount": 0,
+          "identityStatusCounts": {}
+        },
+        "event-roster": {
+          "recordCount": 23,
+          "identityStatusCounts": {
+            "identity-unconfirmed-no-source-id": 14,
+            "name-candidate-unconfirmed": 9
+          }
+        },
+        "national-attribute-candidate": {
+          "recordCount": 23,
+          "identityStatusCounts": {
+            "confirmed-existing-by-exact-source-id": 9,
+            "proposed-new-source-player-needs-review": 14
+          }
+        }
+      }
+    },
+    {
+      "candidateTeamSeason": "russia-2018",
+      "mainGameRecords": 0,
+      "eventRosterEntries": 23,
+      "nationalAttributeCandidateRows": 13,
+      "identityRecordCount": 36,
+      "distinctSourceIdCount": 13,
+      "identityRecordsByKind": {
+        "main-game": {
+          "recordCount": 0,
+          "identityStatusCounts": {}
+        },
+        "event-roster": {
+          "recordCount": 23,
+          "identityStatusCounts": {
+            "identity-unconfirmed-no-source-id": 23
+          }
+        },
+        "national-attribute-candidate": {
+          "recordCount": 13,
+          "identityStatusCounts": {
+            "proposed-new-source-player-needs-review": 13
+          }
+        }
+      }
+    },
+    {
+      "candidateTeamSeason": "belgium-2018",
+      "mainGameRecords": 0,
+      "eventRosterEntries": 23,
+      "nationalAttributeCandidateRows": 22,
+      "identityRecordCount": 45,
+      "distinctSourceIdCount": 22,
+      "identityRecordsByKind": {
+        "main-game": {
+          "recordCount": 0,
+          "identityStatusCounts": {}
+        },
+        "event-roster": {
+          "recordCount": 23,
+          "identityStatusCounts": {
+            "name-candidate-unconfirmed": 5,
+            "identity-unconfirmed-no-source-id": 18
+          }
+        },
+        "national-attribute-candidate": {
+          "recordCount": 22,
+          "identityStatusCounts": {
+            "confirmed-existing-by-exact-source-id": 5,
+            "proposed-new-source-player-needs-review": 17
+          }
+        }
+      }
+    },
+    {
+      "candidateTeamSeason": "mexico-2018",
+      "mainGameRecords": 0,
+      "eventRosterEntries": 46,
+      "nationalAttributeCandidateRows": 20,
+      "identityRecordCount": 66,
+      "distinctSourceIdCount": 20,
+      "identityRecordsByKind": {
+        "main-game": {
+          "recordCount": 0,
+          "identityStatusCounts": {}
+        },
+        "event-roster": {
+          "recordCount": 46,
+          "identityStatusCounts": {
+            "identity-unconfirmed-no-source-id": 46
+          }
+        },
+        "national-attribute-candidate": {
+          "recordCount": 20,
+          "identityStatusCounts": {
+            "proposed-new-source-player-needs-review": 20
+          }
+        }
+      }
+    },
+    {
+      "candidateTeamSeason": "inter-miami-2024",
+      "mainGameRecords": 30,
+      "eventRosterEntries": 0,
+      "nationalAttributeCandidateRows": 0,
+      "identityRecordCount": 30,
+      "distinctSourceIdCount": 30,
+      "identityRecordsByKind": {
+        "main-game": {
+          "recordCount": 30,
+          "identityStatusCounts": {
+            "confirmed-existing-by-exact-source-id": 4,
+            "proposed-new-source-player-needs-review": 26
+          }
+        },
+        "event-roster": {
+          "recordCount": 0,
+          "identityStatusCounts": {}
+        },
+        "national-attribute-candidate": {
+          "recordCount": 0,
+          "identityStatusCounts": {}
+        }
+      }
+    },
+    {
+      "candidateTeamSeason": "la-galaxy-2019",
+      "mainGameRecords": 28,
+      "eventRosterEntries": 0,
+      "nationalAttributeCandidateRows": 0,
+      "identityRecordCount": 28,
+      "distinctSourceIdCount": 28,
+      "identityRecordsByKind": {
+        "main-game": {
+          "recordCount": 28,
+          "identityStatusCounts": {
+            "confirmed-existing-by-exact-source-id": 1,
+            "proposed-new-source-player-needs-review": 27
+          }
+        },
+        "event-roster": {
+          "recordCount": 0,
+          "identityStatusCounts": {}
+        },
+        "national-attribute-candidate": {
+          "recordCount": 0,
+          "identityStatusCounts": {}
+        }
+      }
+    },
+    {
+      "candidateTeamSeason": "sao-paulo-2005",
+      "mainGameRecords": 24,
+      "eventRosterEntries": 0,
+      "nationalAttributeCandidateRows": 0,
+      "identityRecordCount": 24,
+      "distinctSourceIdCount": 24,
+      "identityRecordsByKind": {
+        "main-game": {
+          "recordCount": 24,
+          "identityStatusCounts": {
+            "proposed-new-source-player-needs-review": 21,
+            "name-candidate-unconfirmed": 3
+          }
+        },
+        "event-roster": {
+          "recordCount": 0,
+          "identityStatusCounts": {}
+        },
+        "national-attribute-candidate": {
+          "recordCount": 0,
+          "identityStatusCounts": {}
+        }
+      }
+    },
+    {
+      "candidateTeamSeason": "santos-2011",
+      "mainGameRecords": 30,
+      "eventRosterEntries": 0,
+      "nationalAttributeCandidateRows": 0,
+      "identityRecordCount": 30,
+      "distinctSourceIdCount": 30,
+      "identityRecordsByKind": {
+        "main-game": {
+          "recordCount": 30,
+          "identityStatusCounts": {
+            "proposed-new-source-player-needs-review": 28,
+            "confirmed-existing-by-exact-source-id": 2
+          }
+        },
+        "event-roster": {
+          "recordCount": 0,
+          "identityStatusCounts": {}
+        },
+        "national-attribute-candidate": {
+          "recordCount": 0,
+          "identityStatusCounts": {}
+        }
+      }
+    },
+    {
+      "candidateTeamSeason": "river-plate-2018",
+      "mainGameRecords": 28,
+      "eventRosterEntries": 0,
+      "nationalAttributeCandidateRows": 0,
+      "identityRecordCount": 28,
+      "distinctSourceIdCount": 28,
+      "identityRecordsByKind": {
+        "main-game": {
+          "recordCount": 28,
+          "identityStatusCounts": {
+            "confirmed-existing-by-exact-source-id": 2,
+            "proposed-new-source-player-needs-review": 26
+          }
+        },
+        "event-roster": {
+          "recordCount": 0,
+          "identityStatusCounts": {}
+        },
+        "national-attribute-candidate": {
+          "recordCount": 0,
+          "identityStatusCounts": {}
+        }
+      }
+    },
+    {
+      "candidateTeamSeason": "kashima-antlers-2016",
+      "mainGameRecords": 28,
+      "eventRosterEntries": 0,
+      "nationalAttributeCandidateRows": 0,
+      "identityRecordCount": 28,
+      "distinctSourceIdCount": 28,
+      "identityRecordsByKind": {
+        "main-game": {
+          "recordCount": 28,
+          "identityStatusCounts": {
+            "proposed-new-source-player-needs-review": 28
+          }
+        },
+        "event-roster": {
+          "recordCount": 0,
+          "identityStatusCounts": {}
+        },
+        "national-attribute-candidate": {
+          "recordCount": 0,
+          "identityStatusCounts": {}
+        }
+      }
+    },
+    {
+      "candidateTeamSeason": "guangzhou-rf-2019",
+      "mainGameRecords": 0,
+      "eventRosterEntries": 0,
+      "nationalAttributeCandidateRows": 0,
+      "identityRecordCount": 0,
+      "distinctSourceIdCount": 0,
+      "identityRecordsByKind": {
+        "main-game": {
+          "recordCount": 0,
+          "identityStatusCounts": {}
+        },
+        "event-roster": {
+          "recordCount": 0,
+          "identityStatusCounts": {}
+        },
+        "national-attribute-candidate": {
+          "recordCount": 0,
+          "identityStatusCounts": {}
+        }
+      }
+    },
+    {
+      "candidateTeamSeason": "anzhi-2013",
+      "mainGameRecords": 27,
+      "eventRosterEntries": 0,
+      "nationalAttributeCandidateRows": 0,
+      "identityRecordCount": 27,
+      "distinctSourceIdCount": 27,
+      "identityRecordsByKind": {
+        "main-game": {
+          "recordCount": 27,
+          "identityStatusCounts": {
+            "confirmed-existing-by-exact-source-id": 2,
+            "proposed-new-source-player-needs-review": 25
+          }
+        },
+        "event-roster": {
+          "recordCount": 0,
+          "identityStatusCounts": {}
+        },
+        "national-attribute-candidate": {
+          "recordCount": 0,
+          "identityStatusCounts": {}
+        }
+      }
+    },
+    {
+      "candidateTeamSeason": "zenit-2015",
+      "mainGameRecords": 30,
+      "eventRosterEntries": 0,
+      "nationalAttributeCandidateRows": 0,
+      "identityRecordCount": 30,
+      "distinctSourceIdCount": 30,
+      "identityRecordsByKind": {
+        "main-game": {
+          "recordCount": 30,
+          "identityStatusCounts": {
+            "proposed-new-source-player-needs-review": 29,
+            "confirmed-existing-by-exact-source-id": 1
+          }
+        },
+        "event-roster": {
+          "recordCount": 0,
+          "identityStatusCounts": {}
+        },
+        "national-attribute-candidate": {
+          "recordCount": 0,
+          "identityStatusCounts": {}
+        }
+      }
+    },
+    {
+      "candidateTeamSeason": "galatasaray-2013",
+      "mainGameRecords": 25,
+      "eventRosterEntries": 0,
+      "nationalAttributeCandidateRows": 0,
+      "identityRecordCount": 25,
+      "distinctSourceIdCount": 25,
+      "identityRecordsByKind": {
+        "main-game": {
+          "recordCount": 25,
+          "identityStatusCounts": {
+            "confirmed-existing-by-exact-source-id": 3,
+            "proposed-new-source-player-needs-review": 22
+          }
+        },
+        "event-roster": {
+          "recordCount": 0,
+          "identityStatusCounts": {}
+        },
+        "national-attribute-candidate": {
+          "recordCount": 0,
+          "identityStatusCounts": {}
+        }
+      }
+    },
+    {
+      "candidateTeamSeason": "al-nassr-2024",
+      "mainGameRecords": 30,
+      "eventRosterEntries": 0,
+      "nationalAttributeCandidateRows": 0,
+      "identityRecordCount": 30,
+      "distinctSourceIdCount": 30,
+      "identityRecordsByKind": {
+        "main-game": {
+          "recordCount": 30,
+          "identityStatusCounts": {
+            "confirmed-existing-by-exact-source-id": 3,
+            "proposed-new-source-player-needs-review": 27
+          }
+        },
+        "event-roster": {
+          "recordCount": 0,
+          "identityStatusCounts": {}
+        },
+        "national-attribute-candidate": {
+          "recordCount": 0,
+          "identityStatusCounts": {}
+        }
+      }
+    }
+  ]
+}

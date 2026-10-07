@@ -1,0 +1,281 @@
+{
+  "candidateTeamSeason": "bayer-leverkusen-2011",
+  "actualTeamOrCountry": "Bayer 04 Leverkusen",
+  "actualLeagueOrType": "Bundesliga",
+  "plannedGroup": "club-league",
+  "referenceSeasonOrEvent": "2010/11",
+  "gameSnapshot": {
+    "gameVersion": "FIFA 11",
+    "targetRevisionReference": null,
+    "versionConsistencyStatus": "FIFAIndex edition page identifies game version but does not disclose patch/update date",
+    "sourceCoverageStatus": "local-cache rows captured; does not establish complete authoritative squad coverage",
+    "sourceTeamName": "Bayer 04 Leverkusen",
+    "snapshotStatus": "captured-game-edition-snapshot",
+    "observedUpdateIds": [
+      "110002"
+    ],
+    "observedUpdateDate": null,
+    "membershipEvidence": "source row club_name=Bayer 04 Leverkusen in FIFA 11 edition dataset",
+    "capturedRowCount": 22,
+    "expectedSourcePageCount": 24,
+    "fifaIndexGameRosterAudit": {
+      "sourceName": "FIFAIndex team edition page",
+      "pageUrl": "https://fifaindex.com/teams/32-bayer-04-leverkusen/fifa11",
+      "teamId": 32,
+      "gameVersion": "FIFA 11",
+      "listedPlayerCount": 24,
+      "revisionDate": null,
+      "revisionDateStatus": "not disclosed on cited FIFAIndex edition page; unknown",
+      "namesTranscribed": false,
+      "pageReadInSourceAudit": true,
+      "eventRosterComparison": null
+    },
+    "members": [
+      {
+        "sourcePlayerId": "121933",
+        "rawName": "René Adler",
+        "rawPosition": "GK",
+        "rawOverall": "84",
+        "membershipEvidence": "source row club_name=Bayer 04 Leverkusen",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/121933/rene-adler/110002/"
+      },
+      {
+        "sourcePlayerId": "181872",
+        "rawName": "Arturo Vidal",
+        "rawPosition": "CDM, CM, RM, CB",
+        "rawOverall": "82",
+        "membershipEvidence": "source row club_name=Bayer 04 Leverkusen",
+        "identityStatus": "confirmed-existing-by-exact-source-id",
+        "canonicalPlayerId": "arturo-vidal",
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/181872/arturo-vidal/110002/"
+      },
+      {
+        "sourcePlayerId": "3647",
+        "rawName": "Michael Ballack",
+        "rawPosition": "CM, CDM, CAM, RM",
+        "rawOverall": "82",
+        "membershipEvidence": "source row club_name=Bayer 04 Leverkusen",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/3647/michael-ballack/110002/"
+      },
+      {
+        "sourcePlayerId": "169195",
+        "rawName": "Renato Oliveira Augusto",
+        "rawPosition": "CAM, RM, CM, CF",
+        "rawOverall": "80",
+        "membershipEvidence": "source row club_name=Bayer 04 Leverkusen",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/169195/renato-oliveira-augusto/110002/"
+      },
+      {
+        "sourcePlayerId": "137262",
+        "rawName": "Stefan Kießling",
+        "rawPosition": "ST, CF, CAM, RW",
+        "rawOverall": "80",
+        "membershipEvidence": "source row club_name=Bayer 04 Leverkusen",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/137262/stefan-kiessling/110002/"
+      },
+      {
+        "sourcePlayerId": "121122",
+        "rawName": "Simon Rolfes",
+        "rawPosition": "CDM, CM, LM",
+        "rawOverall": "80",
+        "membershipEvidence": "source row club_name=Bayer 04 Leverkusen",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/121122/simon-rolfes/110002/"
+      },
+      {
+        "sourcePlayerId": "19977",
+        "rawName": "Sami Hyypiä",
+        "rawPosition": "CB, SW",
+        "rawOverall": "80",
+        "membershipEvidence": "source row club_name=Bayer 04 Leverkusen",
+        "identityStatus": "name-candidate-unconfirmed",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [
+          "sami-hyypia"
+        ],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/19977/sami-hyypia/110002/"
+      },
+      {
+        "sourcePlayerId": "179972",
+        "rawName": "Eren Derdiyok",
+        "rawPosition": "ST, RW",
+        "rawOverall": "79",
+        "membershipEvidence": "source row club_name=Bayer 04 Leverkusen",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/179972/eren-derdiyok/110002/"
+      },
+      {
+        "sourcePlayerId": "52752",
+        "rawName": "Tranquillo Barnetta",
+        "rawPosition": "LM, LW, RM, RW",
+        "rawOverall": "79",
+        "membershipEvidence": "source row club_name=Bayer 04 Leverkusen",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/52752/tranquillo-barnetta/110002/"
+      },
+      {
+        "sourcePlayerId": "167431",
+        "rawName": "Gonzalo Castro",
+        "rawPosition": "RB, CDM, LB, CM",
+        "rawOverall": "78",
+        "membershipEvidence": "source row club_name=Bayer 04 Leverkusen",
+        "identityStatus": "confirmed-existing-by-exact-source-id",
+        "canonicalPlayerId": "gonzalo-castro",
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/167431/gonzalo-castro/110002/"
+      },
+      {
+        "sourcePlayerId": "167308",
+        "rawName": "Michal Kadlec",
+        "rawPosition": "LB, LWB, CB",
+        "rawOverall": "77",
+        "membershipEvidence": "source row club_name=Bayer 04 Leverkusen",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/167308/michal-kadlec/110002/"
+      },
+      {
+        "sourcePlayerId": "51021",
+        "rawName": "Manuel Friedrich",
+        "rawPosition": "CB, RB",
+        "rawOverall": "77",
+        "membershipEvidence": "source row club_name=Bayer 04 Leverkusen",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/51021/manuel-friedrich/110002/"
+      },
+      {
+        "sourcePlayerId": "177934",
+        "rawName": "Sidney Sam",
+        "rawPosition": "LM, RM, LW, RW",
+        "rawOverall": "76",
+        "membershipEvidence": "source row club_name=Bayer 04 Leverkusen",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/177934/sidney-sam/110002/"
+      },
+      {
+        "sourcePlayerId": "189246",
+        "rawName": "Stefan Reinartz",
+        "rawPosition": "CB, CDM, CM",
+        "rawOverall": "75",
+        "membershipEvidence": "source row club_name=Bayer 04 Leverkusen",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/189246/stefan-reinartz/110002/"
+      },
+      {
+        "sourcePlayerId": "46826",
+        "rawName": "Hanno Balitsch",
+        "rawPosition": "CDM, RB, CM, RM",
+        "rawOverall": "75",
+        "membershipEvidence": "source row club_name=Bayer 04 Leverkusen",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/46826/hanno-balitsch/110002/"
+      },
+      {
+        "sourcePlayerId": "177457",
+        "rawName": "Lars Bender",
+        "rawPosition": "CDM, CM, LM, RM",
+        "rawOverall": "74",
+        "membershipEvidence": "source row club_name=Bayer 04 Leverkusen",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/177457/lars-bender/110002/"
+      },
+      {
+        "sourcePlayerId": "183426",
+        "rawName": "Daniel Schwaab",
+        "rawPosition": "RB, RWB, LWB, LB",
+        "rawOverall": "72",
+        "membershipEvidence": "source row club_name=Bayer 04 Leverkusen",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/183426/daniel-schwaab/110002/"
+      },
+      {
+        "sourcePlayerId": "199206",
+        "rawName": "Domagoj Vida",
+        "rawPosition": "CB, RB, CDM",
+        "rawOverall": "68",
+        "membershipEvidence": "source row club_name=Bayer 04 Leverkusen",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/199206/domagoj-vida/110002/"
+      },
+      {
+        "sourcePlayerId": "199852",
+        "rawName": "Nicolai Jörgensen",
+        "rawPosition": "CF, CAM, RW, LW",
+        "rawOverall": "68",
+        "membershipEvidence": "source row club_name=Bayer 04 Leverkusen",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/199852/nicolai-jorgensen/110002/"
+      },
+      {
+        "sourcePlayerId": "177465",
+        "rawName": "Benedikt Fernandez",
+        "rawPosition": "GK",
+        "rawOverall": "67",
+        "membershipEvidence": "source row club_name=Bayer 04 Leverkusen",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/177465/benedikt-fernandez/110002/"
+      },
+      {
+        "sourcePlayerId": "193222",
+        "rawName": "Fabian Giefer",
+        "rawPosition": "GK",
+        "rawOverall": "67",
+        "membershipEvidence": "source row club_name=Bayer 04 Leverkusen",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/193222/fabian-giefer/110002/"
+      },
+      {
+        "sourcePlayerId": "157533",
+        "rawName": "Tomasz Bobel",
+        "rawPosition": "GK",
+        "rawOverall": "65",
+        "membershipEvidence": "source row club_name=Bayer 04 Leverkusen",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/157533/tomasz-bobel/110002/"
+      }
+    ]
+  },
+  "officialEventSnapshots": []
+}

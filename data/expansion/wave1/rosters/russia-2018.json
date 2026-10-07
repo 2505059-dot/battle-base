@@ -1,0 +1,928 @@
+{
+  "candidateTeamSeason": "russia-2018",
+  "actualTeamOrCountry": "Russia",
+  "actualLeagueOrType": "National team",
+  "plannedGroup": "national-team",
+  "referenceSeasonOrEvent": "2018 World Cup",
+  "gameSnapshot": {
+    "gameVersion": "FIFA 18",
+    "targetRevisionReference": null,
+    "versionConsistencyStatus": "FIFAIndex edition page identifies game version but does not disclose patch/update date",
+    "sourceCoverageStatus": "no exact team-name match in local cache; source data absence is not established",
+    "sourceTeamName": "Russia",
+    "snapshotStatus": "no-exact-team-name-match-in-local-cache-source-coverage-unknown",
+    "observedUpdateIds": [],
+    "observedUpdateDate": null,
+    "membershipEvidence": "source row club_name=Russia in FIFA 18 edition dataset",
+    "capturedRowCount": 0,
+    "expectedSourcePageCount": 31,
+    "fifaIndexGameRosterAudit": {
+      "sourceName": "FIFAIndex team edition page",
+      "pageUrl": "https://fifaindex.com/teams/1357-russia/fifa18",
+      "teamId": 1357,
+      "gameVersion": "FIFA 18",
+      "listedPlayerCount": 31,
+      "revisionDate": null,
+      "revisionDateStatus": "not disclosed on cited FIFAIndex edition page; unknown",
+      "namesTranscribed": false,
+      "pageReadInSourceAudit": true,
+      "eventRosterComparison": {
+        "gameRosterSize": 31,
+        "officialRosterSize": 23,
+        "overlap": 16,
+        "officialNamesAbsentFromGame": [
+          "Sergey Ignashevich",
+          "Andrey Semenov",
+          "Denis Cheryshev",
+          "Roman Zobnin",
+          "Vladimir Granat",
+          "Anton Miranchuk",
+          "Artem Dzyuba"
+        ]
+      }
+    },
+    "members": []
+  },
+  "officialEventSnapshots": [
+    {
+      "rosterType": "official-event-roster",
+      "source": {
+        "sourceName": "FIFA 2018 squad list and Russian Football Union final announcement",
+        "title": "Russia 2018 final squad",
+        "url": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF",
+        "officialConfirmationUrl": "https://www.rfs.ru/news/207064?mobile=no",
+        "competition": "2018 FIFA World Cup",
+        "publicationDate": "2018-06-13T08:44:00",
+        "pageContentReadInSourceAudit": true
+      },
+      "records": [
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Igor Akinfeev",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Russia",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF",
+          "rawSourceFields": {
+            "playerName": "Igor Akinfeev"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Mario Fernandes",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Russia",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF",
+          "rawSourceFields": {
+            "playerName": "Mario Fernandes"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Ilya Kutepov",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Russia",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF",
+          "rawSourceFields": {
+            "playerName": "Ilya Kutepov"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Sergey Ignashevich",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Russia",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF",
+          "rawSourceFields": {
+            "playerName": "Sergey Ignashevich"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Andrey Semenov",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Russia",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF",
+          "rawSourceFields": {
+            "playerName": "Andrey Semenov"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Denis Cheryshev",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Russia",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF",
+          "rawSourceFields": {
+            "playerName": "Denis Cheryshev"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Daler Kuziaev",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Russia",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF",
+          "rawSourceFields": {
+            "playerName": "Daler Kuziaev"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Iury Gazinsky",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Russia",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF",
+          "rawSourceFields": {
+            "playerName": "Iury Gazinsky"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Alan Dzagoev",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Russia",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF",
+          "rawSourceFields": {
+            "playerName": "Alan Dzagoev"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Fedor Smolov",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Russia",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF",
+          "rawSourceFields": {
+            "playerName": "Fedor Smolov"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Roman Zobnin",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Russia",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF",
+          "rawSourceFields": {
+            "playerName": "Roman Zobnin"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Andrei Lunev",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Russia",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF",
+          "rawSourceFields": {
+            "playerName": "Andrei Lunev"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Fedor Kudriashov",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Russia",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF",
+          "rawSourceFields": {
+            "playerName": "Fedor Kudriashov"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Vladimir Granat",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Russia",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF",
+          "rawSourceFields": {
+            "playerName": "Vladimir Granat"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Alexey Miranchuk",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Russia",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF",
+          "rawSourceFields": {
+            "playerName": "Alexey Miranchuk"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Anton Miranchuk",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Russia",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF",
+          "rawSourceFields": {
+            "playerName": "Anton Miranchuk"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Aleksandr Golovin",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Russia",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF",
+          "rawSourceFields": {
+            "playerName": "Aleksandr Golovin"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Yury Zhirkov",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Russia",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF",
+          "rawSourceFields": {
+            "playerName": "Yury Zhirkov"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Alexander Samedov",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Russia",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF",
+          "rawSourceFields": {
+            "playerName": "Alexander Samedov"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Vladimir Gabulov",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Russia",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF",
+          "rawSourceFields": {
+            "playerName": "Vladimir Gabulov"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Aleksandr Erokhin",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Russia",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF",
+          "rawSourceFields": {
+            "playerName": "Aleksandr Erokhin"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Artem Dzyuba",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Russia",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF",
+          "rawSourceFields": {
+            "playerName": "Artem Dzyuba"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Igor Smolnikov",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Russia",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF",
+          "rawSourceFields": {
+            "playerName": "Igor Smolnikov"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+        }
+      ],
+      "replacements": []
+    }
+  ],
+  "supplementalAttributeCandidates": {
+    "sourceFile": "russia-2018.event-attribute-candidates.sofifa.json",
+    "gameVersion": "FIFA 18",
+    "count": 13,
+    "matchRule": "exact normalized source long_name + exact source nationality; not proof of game national-team membership",
+    "unmatchedOfficialRosterNames": [
+      "mariofernandes",
+      "sergeyignashevich",
+      "dalerkuziaev",
+      "iurygazinsky",
+      "andreilunev",
+      "fedorkudriashov",
+      "aleksandrgolovin",
+      "yuryzhirkov",
+      "alexandersamedov",
+      "aleksandrerokhin"
+    ],
+    "records": [
+      {
+        "sourcePlayerId": "187491",
+        "rawName": "Fedor Smolov",
+        "sourceNationality": "Russia",
+        "sourceClubName": "FC Krasnodar",
+        "rawPosition": "ST",
+        "rawOverall": "81",
+        "candidateEventRosterNames": [
+          {
+            "name": "Fedor Smolov",
+            "rosterType": "official-event-roster",
+            "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "sourcePlayerPageUrl": "https://sofifa.com/player/187491/fedor-smolov/180084/"
+      },
+      {
+        "sourcePlayerId": "187735",
+        "rawName": "Alan Dzagoev",
+        "sourceNationality": "Russia",
+        "sourceClubName": "PFC CSKA",
+        "rawPosition": "CM, CDM, CF",
+        "rawOverall": "80",
+        "candidateEventRosterNames": [
+          {
+            "name": "Alan Dzagoev",
+            "rosterType": "official-event-roster",
+            "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "sourcePlayerPageUrl": "https://sofifa.com/player/187735/alan-dzagoev/180084/"
+      },
+      {
+        "sourcePlayerId": "148119",
+        "rawName": "Igor Akinfeev",
+        "sourceNationality": "Russia",
+        "sourceClubName": "PFC CSKA",
+        "rawPosition": "GK",
+        "rawOverall": "80",
+        "candidateEventRosterNames": [
+          {
+            "name": "Igor Akinfeev",
+            "rosterType": "official-event-roster",
+            "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "sourcePlayerPageUrl": "https://sofifa.com/player/148119/igor-akinfeev/180084/"
+      },
+      {
+        "sourcePlayerId": "187347",
+        "rawName": "Igor Smolnikov",
+        "sourceNationality": "Russia",
+        "sourceClubName": "Zenit",
+        "rawPosition": "RB",
+        "rawOverall": "79",
+        "candidateEventRosterNames": [
+          {
+            "name": "Igor Smolnikov",
+            "rosterType": "official-event-roster",
+            "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "sourcePlayerPageUrl": "https://sofifa.com/player/187347/igor-smolnikov/180084/"
+      },
+      {
+        "sourcePlayerId": "213160",
+        "rawName": "Roman Zobnin",
+        "sourceNationality": "Russia",
+        "sourceClubName": "Spartak Moscow",
+        "rawPosition": "CDM, CM, LM",
+        "rawOverall": "78",
+        "candidateEventRosterNames": [
+          {
+            "name": "Roman Zobnin",
+            "rosterType": "official-event-roster",
+            "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "sourcePlayerPageUrl": "https://sofifa.com/player/213160/roman-zobnin/180084/"
+      },
+      {
+        "sourcePlayerId": "214092",
+        "rawName": "Alexey Miranchuk",
+        "sourceNationality": "Russia",
+        "sourceClubName": "FC Lokomotiv",
+        "rawPosition": "CAM, ST",
+        "rawOverall": "77",
+        "candidateEventRosterNames": [
+          {
+            "name": "Alexey Miranchuk",
+            "rosterType": "official-event-roster",
+            "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "sourcePlayerPageUrl": "https://sofifa.com/player/214092/alexey-miranchuk/180084/"
+      },
+      {
+        "sourcePlayerId": "187607",
+        "rawName": "Artem Dzyuba",
+        "sourceNationality": "Russia",
+        "sourceClubName": "Arsenal Tula",
+        "rawPosition": "ST",
+        "rawOverall": "77",
+        "candidateEventRosterNames": [
+          {
+            "name": "Artem Dzyuba",
+            "rosterType": "official-event-roster",
+            "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "sourcePlayerPageUrl": "https://sofifa.com/player/187607/artem-dzyuba/180084/"
+      },
+      {
+        "sourcePlayerId": "206225",
+        "rawName": "Denis Cheryshev",
+        "sourceNationality": "Russia",
+        "sourceClubName": "Villarreal CF",
+        "rawPosition": "LM, LW, ST",
+        "rawOverall": "76",
+        "candidateEventRosterNames": [
+          {
+            "name": "Denis Cheryshev",
+            "rosterType": "official-event-roster",
+            "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "sourcePlayerPageUrl": "https://sofifa.com/player/206225/denis-cheryshev/180084/"
+      },
+      {
+        "sourcePlayerId": "147579",
+        "rawName": "Vladimir Gabulov",
+        "sourceNationality": "Russia",
+        "sourceClubName": "Club Brugge KV",
+        "rawPosition": "GK",
+        "rawOverall": "74",
+        "candidateEventRosterNames": [
+          {
+            "name": "Vladimir Gabulov",
+            "rosterType": "official-event-roster",
+            "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "sourcePlayerPageUrl": "https://sofifa.com/player/147579/vladimir-gabulov/180084/"
+      },
+      {
+        "sourcePlayerId": "211592",
+        "rawName": "Andrey Semenov",
+        "sourceNationality": "Russia",
+        "sourceClubName": "Akhmat Grozny",
+        "rawPosition": "CB",
+        "rawOverall": "74",
+        "candidateEventRosterNames": [
+          {
+            "name": "Andrey Semenov",
+            "rosterType": "official-event-roster",
+            "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "sourcePlayerPageUrl": "https://sofifa.com/player/211592/andrey-semenov/180084/"
+      },
+      {
+        "sourcePlayerId": "210468",
+        "rawName": "Ilya Kutepov",
+        "sourceNationality": "Russia",
+        "sourceClubName": "Spartak Moscow",
+        "rawPosition": "CB",
+        "rawOverall": "73",
+        "candidateEventRosterNames": [
+          {
+            "name": "Ilya Kutepov",
+            "rosterType": "official-event-roster",
+            "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "sourcePlayerPageUrl": "https://sofifa.com/player/210468/ilya-kutepov/180084/"
+      },
+      {
+        "sourcePlayerId": "222368",
+        "rawName": "Anton Miranchuk",
+        "sourceNationality": "Russia",
+        "sourceClubName": "FC Lokomotiv",
+        "rawPosition": "CAM",
+        "rawOverall": "73",
+        "candidateEventRosterNames": [
+          {
+            "name": "Anton Miranchuk",
+            "rosterType": "official-event-roster",
+            "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "sourcePlayerPageUrl": "https://sofifa.com/player/222368/anton-miranchuk/180084/"
+      },
+      {
+        "sourcePlayerId": "187415",
+        "rawName": "Vladimir Granat",
+        "sourceNationality": "Russia",
+        "sourceClubName": "Rubin Kazan",
+        "rawPosition": "CB",
+        "rawOverall": "72",
+        "candidateEventRosterNames": [
+          {
+            "name": "Vladimir Granat",
+            "rosterType": "official-event-roster",
+            "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "sourcePlayerPageUrl": "https://sofifa.com/player/187415/vladimir-granat/180084/"
+      }
+    ]
+  }
+}

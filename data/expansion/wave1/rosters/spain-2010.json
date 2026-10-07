@@ -1,0 +1,916 @@
+{
+  "candidateTeamSeason": "spain-2010",
+  "actualTeamOrCountry": "Spain",
+  "actualLeagueOrType": "National team",
+  "plannedGroup": "national-team",
+  "referenceSeasonOrEvent": "2010 World Cup",
+  "gameSnapshot": {
+    "gameVersion": "FIFA 10",
+    "targetRevisionReference": null,
+    "versionConsistencyStatus": "FIFAIndex edition page identifies game version but does not disclose patch/update date",
+    "sourceCoverageStatus": "no exact team-name match in local cache; source data absence is not established",
+    "sourceTeamName": "Spain",
+    "snapshotStatus": "no-exact-team-name-match-in-local-cache-source-coverage-unknown",
+    "observedUpdateIds": [],
+    "observedUpdateDate": null,
+    "membershipEvidence": "source row club_name=Spain in FIFA 10 edition dataset",
+    "capturedRowCount": 0,
+    "expectedSourcePageCount": 30,
+    "fifaIndexGameRosterAudit": {
+      "sourceName": "FIFAIndex team edition page",
+      "pageUrl": "https://fifaindex.com/teams/1362-spain/fifa10",
+      "teamId": 1362,
+      "gameVersion": "FIFA 10",
+      "listedPlayerCount": 30,
+      "revisionDate": null,
+      "revisionDateStatus": "not disclosed on cited FIFAIndex edition page; unknown",
+      "namesTranscribed": false,
+      "pageReadInSourceAudit": true,
+      "eventRosterComparison": {
+        "gameRosterSize": 30,
+        "officialRosterSize": 23,
+        "overlap": 19,
+        "officialNamesAbsentFromGame": [
+          "Víctor Valdés",
+          "Javi Martínez",
+          "Jesús Navas",
+          "Pedro Rodríguez"
+        ]
+      }
+    },
+    "members": []
+  },
+  "officialEventSnapshots": [
+    {
+      "rosterType": "official-event-roster",
+      "source": {
+        "sourceName": "UEFA",
+        "title": "Spain look to future with World Cup 23",
+        "url": "https://www.uefa.com/european-qualifiers/news/01e5-0e74972c38f1-5eebe6815f4f-1000--spain-look-to-future-with-world-cup-23/",
+        "competition": "2010 FIFA World Cup",
+        "publicationDate": null,
+        "pageContentReadInSourceAudit": true
+      },
+      "records": [
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Iker Casillas",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Spain",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "name-candidate-unconfirmed",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [
+            "iker-casillas"
+          ],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.uefa.com/european-qualifiers/news/01e5-0e74972c38f1-5eebe6815f4f-1000--spain-look-to-future-with-world-cup-23/",
+          "rawSourceFields": {
+            "playerName": "Iker Casillas"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2010 FIFA World Cup",
+          "sourceUrl": "https://www.uefa.com/european-qualifiers/news/01e5-0e74972c38f1-5eebe6815f4f-1000--spain-look-to-future-with-world-cup-23/"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Pepe Reina",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Spain",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.uefa.com/european-qualifiers/news/01e5-0e74972c38f1-5eebe6815f4f-1000--spain-look-to-future-with-world-cup-23/",
+          "rawSourceFields": {
+            "playerName": "Pepe Reina"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2010 FIFA World Cup",
+          "sourceUrl": "https://www.uefa.com/european-qualifiers/news/01e5-0e74972c38f1-5eebe6815f4f-1000--spain-look-to-future-with-world-cup-23/"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Víctor Valdés",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Spain",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "name-candidate-unconfirmed",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [
+            "victor-valdes"
+          ],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.uefa.com/european-qualifiers/news/01e5-0e74972c38f1-5eebe6815f4f-1000--spain-look-to-future-with-world-cup-23/",
+          "rawSourceFields": {
+            "playerName": "Víctor Valdés"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2010 FIFA World Cup",
+          "sourceUrl": "https://www.uefa.com/european-qualifiers/news/01e5-0e74972c38f1-5eebe6815f4f-1000--spain-look-to-future-with-world-cup-23/"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Raúl Albiol",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Spain",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.uefa.com/european-qualifiers/news/01e5-0e74972c38f1-5eebe6815f4f-1000--spain-look-to-future-with-world-cup-23/",
+          "rawSourceFields": {
+            "playerName": "Raúl Albiol"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2010 FIFA World Cup",
+          "sourceUrl": "https://www.uefa.com/european-qualifiers/news/01e5-0e74972c38f1-5eebe6815f4f-1000--spain-look-to-future-with-world-cup-23/"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Álvaro Arbeloa",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Spain",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.uefa.com/european-qualifiers/news/01e5-0e74972c38f1-5eebe6815f4f-1000--spain-look-to-future-with-world-cup-23/",
+          "rawSourceFields": {
+            "playerName": "Álvaro Arbeloa"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2010 FIFA World Cup",
+          "sourceUrl": "https://www.uefa.com/european-qualifiers/news/01e5-0e74972c38f1-5eebe6815f4f-1000--spain-look-to-future-with-world-cup-23/"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Joan Capdevila",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Spain",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.uefa.com/european-qualifiers/news/01e5-0e74972c38f1-5eebe6815f4f-1000--spain-look-to-future-with-world-cup-23/",
+          "rawSourceFields": {
+            "playerName": "Joan Capdevila"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2010 FIFA World Cup",
+          "sourceUrl": "https://www.uefa.com/european-qualifiers/news/01e5-0e74972c38f1-5eebe6815f4f-1000--spain-look-to-future-with-world-cup-23/"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Carlos Marchena",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Spain",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "name-candidate-unconfirmed",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [
+            "carlos-marchena"
+          ],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.uefa.com/european-qualifiers/news/01e5-0e74972c38f1-5eebe6815f4f-1000--spain-look-to-future-with-world-cup-23/",
+          "rawSourceFields": {
+            "playerName": "Carlos Marchena"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2010 FIFA World Cup",
+          "sourceUrl": "https://www.uefa.com/european-qualifiers/news/01e5-0e74972c38f1-5eebe6815f4f-1000--spain-look-to-future-with-world-cup-23/"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Gerard Piqué",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Spain",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "name-candidate-unconfirmed",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [
+            "gerard-pique"
+          ],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.uefa.com/european-qualifiers/news/01e5-0e74972c38f1-5eebe6815f4f-1000--spain-look-to-future-with-world-cup-23/",
+          "rawSourceFields": {
+            "playerName": "Gerard Piqué"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2010 FIFA World Cup",
+          "sourceUrl": "https://www.uefa.com/european-qualifiers/news/01e5-0e74972c38f1-5eebe6815f4f-1000--spain-look-to-future-with-world-cup-23/"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Carles Puyol",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Spain",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "name-candidate-unconfirmed",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [
+            "carles-puyol"
+          ],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.uefa.com/european-qualifiers/news/01e5-0e74972c38f1-5eebe6815f4f-1000--spain-look-to-future-with-world-cup-23/",
+          "rawSourceFields": {
+            "playerName": "Carles Puyol"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2010 FIFA World Cup",
+          "sourceUrl": "https://www.uefa.com/european-qualifiers/news/01e5-0e74972c38f1-5eebe6815f4f-1000--spain-look-to-future-with-world-cup-23/"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Sergio Ramos",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Spain",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "name-candidate-unconfirmed",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [
+            "sergio-ramos"
+          ],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.uefa.com/european-qualifiers/news/01e5-0e74972c38f1-5eebe6815f4f-1000--spain-look-to-future-with-world-cup-23/",
+          "rawSourceFields": {
+            "playerName": "Sergio Ramos"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2010 FIFA World Cup",
+          "sourceUrl": "https://www.uefa.com/european-qualifiers/news/01e5-0e74972c38f1-5eebe6815f4f-1000--spain-look-to-future-with-world-cup-23/"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Xabi Alonso",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Spain",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "name-candidate-unconfirmed",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [
+            "xabi-alonso"
+          ],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.uefa.com/european-qualifiers/news/01e5-0e74972c38f1-5eebe6815f4f-1000--spain-look-to-future-with-world-cup-23/",
+          "rawSourceFields": {
+            "playerName": "Xabi Alonso"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2010 FIFA World Cup",
+          "sourceUrl": "https://www.uefa.com/european-qualifiers/news/01e5-0e74972c38f1-5eebe6815f4f-1000--spain-look-to-future-with-world-cup-23/"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Sergio Busquets",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Spain",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "name-candidate-unconfirmed",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [
+            "sergio-busquets"
+          ],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.uefa.com/european-qualifiers/news/01e5-0e74972c38f1-5eebe6815f4f-1000--spain-look-to-future-with-world-cup-23/",
+          "rawSourceFields": {
+            "playerName": "Sergio Busquets"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2010 FIFA World Cup",
+          "sourceUrl": "https://www.uefa.com/european-qualifiers/news/01e5-0e74972c38f1-5eebe6815f4f-1000--spain-look-to-future-with-world-cup-23/"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Cesc Fàbregas",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Spain",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "name-candidate-unconfirmed",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [
+            "cesc-fabregas"
+          ],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.uefa.com/european-qualifiers/news/01e5-0e74972c38f1-5eebe6815f4f-1000--spain-look-to-future-with-world-cup-23/",
+          "rawSourceFields": {
+            "playerName": "Cesc Fàbregas"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2010 FIFA World Cup",
+          "sourceUrl": "https://www.uefa.com/european-qualifiers/news/01e5-0e74972c38f1-5eebe6815f4f-1000--spain-look-to-future-with-world-cup-23/"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Andrés Iniesta",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Spain",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "name-candidate-unconfirmed",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [
+            "andres-iniesta"
+          ],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.uefa.com/european-qualifiers/news/01e5-0e74972c38f1-5eebe6815f4f-1000--spain-look-to-future-with-world-cup-23/",
+          "rawSourceFields": {
+            "playerName": "Andrés Iniesta"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2010 FIFA World Cup",
+          "sourceUrl": "https://www.uefa.com/european-qualifiers/news/01e5-0e74972c38f1-5eebe6815f4f-1000--spain-look-to-future-with-world-cup-23/"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Javi Martínez",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Spain",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "name-candidate-unconfirmed",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [
+            "javi-martinez"
+          ],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.uefa.com/european-qualifiers/news/01e5-0e74972c38f1-5eebe6815f4f-1000--spain-look-to-future-with-world-cup-23/",
+          "rawSourceFields": {
+            "playerName": "Javi Martínez"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2010 FIFA World Cup",
+          "sourceUrl": "https://www.uefa.com/european-qualifiers/news/01e5-0e74972c38f1-5eebe6815f4f-1000--spain-look-to-future-with-world-cup-23/"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "David Silva",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Spain",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "name-candidate-unconfirmed",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [
+            "david-silva"
+          ],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.uefa.com/european-qualifiers/news/01e5-0e74972c38f1-5eebe6815f4f-1000--spain-look-to-future-with-world-cup-23/",
+          "rawSourceFields": {
+            "playerName": "David Silva"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2010 FIFA World Cup",
+          "sourceUrl": "https://www.uefa.com/european-qualifiers/news/01e5-0e74972c38f1-5eebe6815f4f-1000--spain-look-to-future-with-world-cup-23/"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Xavi Hernández",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Spain",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.uefa.com/european-qualifiers/news/01e5-0e74972c38f1-5eebe6815f4f-1000--spain-look-to-future-with-world-cup-23/",
+          "rawSourceFields": {
+            "playerName": "Xavi Hernández"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2010 FIFA World Cup",
+          "sourceUrl": "https://www.uefa.com/european-qualifiers/news/01e5-0e74972c38f1-5eebe6815f4f-1000--spain-look-to-future-with-world-cup-23/"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Jesús Navas",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Spain",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.uefa.com/european-qualifiers/news/01e5-0e74972c38f1-5eebe6815f4f-1000--spain-look-to-future-with-world-cup-23/",
+          "rawSourceFields": {
+            "playerName": "Jesús Navas"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2010 FIFA World Cup",
+          "sourceUrl": "https://www.uefa.com/european-qualifiers/news/01e5-0e74972c38f1-5eebe6815f4f-1000--spain-look-to-future-with-world-cup-23/"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Juan Mata",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Spain",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "name-candidate-unconfirmed",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [
+            "juan-mata"
+          ],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.uefa.com/european-qualifiers/news/01e5-0e74972c38f1-5eebe6815f4f-1000--spain-look-to-future-with-world-cup-23/",
+          "rawSourceFields": {
+            "playerName": "Juan Mata"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2010 FIFA World Cup",
+          "sourceUrl": "https://www.uefa.com/european-qualifiers/news/01e5-0e74972c38f1-5eebe6815f4f-1000--spain-look-to-future-with-world-cup-23/"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Pedro Rodríguez",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Spain",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.uefa.com/european-qualifiers/news/01e5-0e74972c38f1-5eebe6815f4f-1000--spain-look-to-future-with-world-cup-23/",
+          "rawSourceFields": {
+            "playerName": "Pedro Rodríguez"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2010 FIFA World Cup",
+          "sourceUrl": "https://www.uefa.com/european-qualifiers/news/01e5-0e74972c38f1-5eebe6815f4f-1000--spain-look-to-future-with-world-cup-23/"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Fernando Llorente",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Spain",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.uefa.com/european-qualifiers/news/01e5-0e74972c38f1-5eebe6815f4f-1000--spain-look-to-future-with-world-cup-23/",
+          "rawSourceFields": {
+            "playerName": "Fernando Llorente"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2010 FIFA World Cup",
+          "sourceUrl": "https://www.uefa.com/european-qualifiers/news/01e5-0e74972c38f1-5eebe6815f4f-1000--spain-look-to-future-with-world-cup-23/"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Fernando Torres",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Spain",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.uefa.com/european-qualifiers/news/01e5-0e74972c38f1-5eebe6815f4f-1000--spain-look-to-future-with-world-cup-23/",
+          "rawSourceFields": {
+            "playerName": "Fernando Torres"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2010 FIFA World Cup",
+          "sourceUrl": "https://www.uefa.com/european-qualifiers/news/01e5-0e74972c38f1-5eebe6815f4f-1000--spain-look-to-future-with-world-cup-23/"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "David Villa",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Spain",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "name-candidate-unconfirmed",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [
+            "david-villa"
+          ],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.uefa.com/european-qualifiers/news/01e5-0e74972c38f1-5eebe6815f4f-1000--spain-look-to-future-with-world-cup-23/",
+          "rawSourceFields": {
+            "playerName": "David Villa"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2010 FIFA World Cup",
+          "sourceUrl": "https://www.uefa.com/european-qualifiers/news/01e5-0e74972c38f1-5eebe6815f4f-1000--spain-look-to-future-with-world-cup-23/"
+        }
+      ],
+      "replacements": []
+    }
+  ],
+  "supplementalAttributeCandidates": {
+    "sourceFile": "spain-2010.event-attribute-candidates.sofifa.json",
+    "gameVersion": "FIFA 10",
+    "count": 11,
+    "matchRule": "exact normalized source long_name + exact source nationality; not proof of game national-team membership",
+    "unmatchedOfficialRosterNames": [
+      "ikercasillas",
+      "victorvaldes",
+      "alvaroarbeloa",
+      "joancapdevila",
+      "carlosmarchena",
+      "gerardpique",
+      "carlespuyol",
+      "cescfabregas",
+      "andresiniesta",
+      "xavihernandez",
+      "juanmata",
+      "pedrorodriguez"
+    ],
+    "records": [
+      {
+        "sourcePlayerId": "113422",
+        "rawName": "David Villa",
+        "sourceNationality": "Spain",
+        "sourceClubName": "Valencia CF",
+        "rawPosition": "ST",
+        "rawOverall": "88",
+        "candidateEventRosterNames": [
+          {
+            "name": "David Villa",
+            "rosterType": "official-event-roster",
+            "sourceUrl": "https://www.uefa.com/european-qualifiers/news/01e5-0e74972c38f1-5eebe6815f4f-1000--spain-look-to-future-with-world-cup-23/"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "confirmed-existing-by-exact-source-id",
+        "canonicalPlayerId": "david-villa",
+        "sourcePlayerPageUrl": "https://sofifa.com/player/113422/david-villa/100002/"
+      },
+      {
+        "sourcePlayerId": "49369",
+        "rawName": "Fernando Torres",
+        "sourceNationality": "Spain",
+        "sourceClubName": "Liverpool FC",
+        "rawPosition": "ST",
+        "rawOverall": "88",
+        "candidateEventRosterNames": [
+          {
+            "name": "Fernando Torres",
+            "rosterType": "official-event-roster",
+            "sourceUrl": "https://www.uefa.com/european-qualifiers/news/01e5-0e74972c38f1-5eebe6815f4f-1000--spain-look-to-future-with-world-cup-23/"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "sourcePlayerPageUrl": "https://sofifa.com/player/49369/fernando-torres/100002/"
+      },
+      {
+        "sourcePlayerId": "168542",
+        "rawName": "David Silva",
+        "sourceNationality": "Spain",
+        "sourceClubName": "Valencia CF",
+        "rawPosition": "LM",
+        "rawOverall": "86",
+        "candidateEventRosterNames": [
+          {
+            "name": "David Silva",
+            "rosterType": "official-event-roster",
+            "sourceUrl": "https://www.uefa.com/european-qualifiers/news/01e5-0e74972c38f1-5eebe6815f4f-1000--spain-look-to-future-with-world-cup-23/"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "confirmed-existing-by-exact-source-id",
+        "canonicalPlayerId": "david-silva",
+        "sourcePlayerPageUrl": "https://sofifa.com/player/168542/david-silva/100002/"
+      },
+      {
+        "sourcePlayerId": "155862",
+        "rawName": "Sergio Ramos",
+        "sourceNationality": "Spain",
+        "sourceClubName": "Real Madrid",
+        "rawPosition": "RB",
+        "rawOverall": "85",
+        "candidateEventRosterNames": [
+          {
+            "name": "Sergio Ramos",
+            "rosterType": "official-event-roster",
+            "sourceUrl": "https://www.uefa.com/european-qualifiers/news/01e5-0e74972c38f1-5eebe6815f4f-1000--spain-look-to-future-with-world-cup-23/"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "confirmed-existing-by-exact-source-id",
+        "canonicalPlayerId": "sergio-ramos",
+        "sourcePlayerPageUrl": "https://sofifa.com/player/155862/sergio-ramos/100002/"
+      },
+      {
+        "sourcePlayerId": "146536",
+        "rawName": "Jesús Navas",
+        "sourceNationality": "Spain",
+        "sourceClubName": "Sevilla FC",
+        "rawPosition": "RM",
+        "rawOverall": "84",
+        "candidateEventRosterNames": [
+          {
+            "name": "Jesús Navas",
+            "rosterType": "official-event-roster",
+            "sourceUrl": "https://www.uefa.com/european-qualifiers/news/01e5-0e74972c38f1-5eebe6815f4f-1000--spain-look-to-future-with-world-cup-23/"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "sourcePlayerPageUrl": "https://sofifa.com/player/146536/jesus-navas/100002/"
+      },
+      {
+        "sourcePlayerId": "45197",
+        "rawName": "Xabi Alonso",
+        "sourceNationality": "Spain",
+        "sourceClubName": "Real Madrid",
+        "rawPosition": "CM",
+        "rawOverall": "84",
+        "candidateEventRosterNames": [
+          {
+            "name": "Xabi Alonso",
+            "rosterType": "official-event-roster",
+            "sourceUrl": "https://www.uefa.com/european-qualifiers/news/01e5-0e74972c38f1-5eebe6815f4f-1000--spain-look-to-future-with-world-cup-23/"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "confirmed-existing-by-exact-source-id",
+        "canonicalPlayerId": "xabi-alonso",
+        "sourcePlayerPageUrl": "https://sofifa.com/player/45197/xabi-alonso/100002/"
+      },
+      {
+        "sourcePlayerId": "24630",
+        "rawName": "Pepe Reina",
+        "sourceNationality": "Spain",
+        "sourceClubName": "Liverpool FC",
+        "rawPosition": "GK",
+        "rawOverall": "84",
+        "candidateEventRosterNames": [
+          {
+            "name": "Pepe Reina",
+            "rosterType": "official-event-roster",
+            "sourceUrl": "https://www.uefa.com/european-qualifiers/news/01e5-0e74972c38f1-5eebe6815f4f-1000--spain-look-to-future-with-world-cup-23/"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "sourcePlayerPageUrl": "https://sofifa.com/player/24630/pepe-reina/100002/"
+      },
+      {
+        "sourcePlayerId": "157481",
+        "rawName": "Raúl Albiol",
+        "sourceNationality": "Spain",
+        "sourceClubName": "Real Madrid",
+        "rawPosition": "CB",
+        "rawOverall": "83",
+        "candidateEventRosterNames": [
+          {
+            "name": "Raúl Albiol",
+            "rosterType": "official-event-roster",
+            "sourceUrl": "https://www.uefa.com/european-qualifiers/news/01e5-0e74972c38f1-5eebe6815f4f-1000--spain-look-to-future-with-world-cup-23/"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "sourcePlayerPageUrl": "https://sofifa.com/player/157481/raul-albiol/100002/"
+      },
+      {
+        "sourcePlayerId": "162131",
+        "rawName": "Fernando Llorente",
+        "sourceNationality": "Spain",
+        "sourceClubName": "Athletic Club",
+        "rawPosition": "ST",
+        "rawOverall": "80",
+        "candidateEventRosterNames": [
+          {
+            "name": "Fernando Llorente",
+            "rosterType": "official-event-roster",
+            "sourceUrl": "https://www.uefa.com/european-qualifiers/news/01e5-0e74972c38f1-5eebe6815f4f-1000--spain-look-to-future-with-world-cup-23/"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "sourcePlayerPageUrl": "https://sofifa.com/player/162131/fernando-llorente/100002/"
+      },
+      {
+        "sourcePlayerId": "189511",
+        "rawName": "Sergio Busquets",
+        "sourceNationality": "Spain",
+        "sourceClubName": "FC Barcelona",
+        "rawPosition": "CM",
+        "rawOverall": "78",
+        "candidateEventRosterNames": [
+          {
+            "name": "Sergio Busquets",
+            "rosterType": "official-event-roster",
+            "sourceUrl": "https://www.uefa.com/european-qualifiers/news/01e5-0e74972c38f1-5eebe6815f4f-1000--spain-look-to-future-with-world-cup-23/"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "confirmed-existing-by-exact-source-id",
+        "canonicalPlayerId": "sergio-busquets",
+        "sourcePlayerPageUrl": "https://sofifa.com/player/189511/sergio-busquets/100002/"
+      },
+      {
+        "sourcePlayerId": "177610",
+        "rawName": "Javi Martinez",
+        "sourceNationality": "Spain",
+        "sourceClubName": "Athletic Club",
+        "rawPosition": "CDM",
+        "rawOverall": "78",
+        "candidateEventRosterNames": [
+          {
+            "name": "Javi Martínez",
+            "rosterType": "official-event-roster",
+            "sourceUrl": "https://www.uefa.com/european-qualifiers/news/01e5-0e74972c38f1-5eebe6815f4f-1000--spain-look-to-future-with-world-cup-23/"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "confirmed-existing-by-exact-source-id",
+        "canonicalPlayerId": "javi-martinez",
+        "sourcePlayerPageUrl": "https://sofifa.com/player/177610/javi-martinez/100002/"
+      }
+    ]
+  }
+}

@@ -1,0 +1,296 @@
+{
+  "candidateTeamSeason": "sao-paulo-2005",
+  "actualTeamOrCountry": "São Paulo",
+  "actualLeagueOrType": "Campeonato Brasileiro Série A",
+  "plannedGroup": "Americas Wildcard",
+  "referenceSeasonOrEvent": "2004/05 ID convention; calendar-year club season needs confirmation",
+  "gameSnapshot": {
+    "gameVersion": "FIFA 05",
+    "targetRevisionReference": null,
+    "versionConsistencyStatus": "FIFAIndex-derived player dataset; no team-edition page or update date captured",
+    "sourceCoverageStatus": "local-cache rows captured; does not establish complete authoritative squad coverage",
+    "sourceTeamName": "São Paulo",
+    "snapshotStatus": "captured-game-edition-snapshot",
+    "observedUpdateIds": [
+      "05"
+    ],
+    "observedUpdateDate": null,
+    "membershipEvidence": "source row club=São Paulo in FIFA 05 edition dataset",
+    "capturedRowCount": 24,
+    "expectedSourcePageCount": null,
+    "fifaIndexGameRosterAudit": null,
+    "members": [
+      {
+        "sourcePlayerId": "21570",
+        "rawName": "Rogério Ceni",
+        "rawPosition": "GK",
+        "rawOverall": "85",
+        "membershipEvidence": "source row club=São Paulo",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://www.fifaindex.com/player/21570/rog%C3%A9rio-ceni/fifa05/"
+      },
+      {
+        "sourcePlayerId": "152818",
+        "rawName": "Fabão",
+        "rawPosition": "LCB/CB/RCB",
+        "rawOverall": "78",
+        "membershipEvidence": "source row club=São Paulo",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://www.fifaindex.com/player/152818/fab%C3%A3o/fifa05/"
+      },
+      {
+        "sourcePlayerId": "152820",
+        "rawName": "Grafite",
+        "rawPosition": "RF/RS/ST",
+        "rawOverall": "74",
+        "membershipEvidence": "source row club=São Paulo",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://www.fifaindex.com/player/152820/grafite/fifa05/"
+      },
+      {
+        "sourcePlayerId": "156161",
+        "rawName": "Rodrigo",
+        "rawPosition": "LCB/SW/CB",
+        "rawOverall": "73",
+        "membershipEvidence": "source row club=São Paulo",
+        "identityStatus": "name-candidate-unconfirmed",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [
+          "rodrigo"
+        ],
+        "sourcePlayerPageUrl": "https://www.fifaindex.com/player/156161/rodrigo/fifa05/"
+      },
+      {
+        "sourcePlayerId": "159352",
+        "rawName": "Alexander Rondón",
+        "rawPosition": "CF/LF/LS",
+        "rawOverall": "72",
+        "membershipEvidence": "source row club=São Paulo",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://www.fifaindex.com/player/159352/alexander-rond%C3%B3n/fifa05/"
+      },
+      {
+        "sourcePlayerId": "158928",
+        "rawName": "César Sampaio",
+        "rawPosition": "RCM/RM/CM",
+        "rawOverall": "71",
+        "membershipEvidence": "source row club=São Paulo",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://www.fifaindex.com/player/158928/c%C3%A9sar-sampaio/fifa05/"
+      },
+      {
+        "sourcePlayerId": "162003",
+        "rawName": "Alex",
+        "rawPosition": "RCB/LCB/CB",
+        "rawOverall": "70",
+        "membershipEvidence": "source row club=São Paulo",
+        "identityStatus": "name-candidate-unconfirmed",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [
+          "alex"
+        ],
+        "sourcePlayerPageUrl": "https://www.fifaindex.com/player/162003/alex/fifa05/"
+      },
+      {
+        "sourcePlayerId": "152822",
+        "rawName": "Danilo",
+        "rawPosition": "CM/LCM",
+        "rawOverall": "70",
+        "membershipEvidence": "source row club=São Paulo",
+        "identityStatus": "name-candidate-unconfirmed",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [
+          "danilo"
+        ],
+        "sourcePlayerPageUrl": "https://www.fifaindex.com/player/152822/danilo/fifa05/"
+      },
+      {
+        "sourcePlayerId": "138456",
+        "rawName": "Diego Tardelli",
+        "rawPosition": "ST/LF",
+        "rawOverall": "70",
+        "membershipEvidence": "source row club=São Paulo",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://www.fifaindex.com/player/138456/diego-tardelli/fifa05/"
+      },
+      {
+        "sourcePlayerId": "162197",
+        "rawName": "Flávio",
+        "rawPosition": "LCB/CB/RCB",
+        "rawOverall": "69",
+        "membershipEvidence": "source row club=São Paulo",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://www.fifaindex.com/player/162197/fl%C3%A1vio/fifa05/"
+      },
+      {
+        "sourcePlayerId": "138445",
+        "rawName": "Lugano",
+        "rawPosition": "CB/SW",
+        "rawOverall": "69",
+        "membershipEvidence": "source row club=São Paulo",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://www.fifaindex.com/player/138445/lugano/fifa05/"
+      },
+      {
+        "sourcePlayerId": "152826",
+        "rawName": "Edcarlos",
+        "rawPosition": "CB/RCB",
+        "rawOverall": "68",
+        "membershipEvidence": "source row club=São Paulo",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://www.fifaindex.com/player/152826/edcarlos/fifa05/"
+      },
+      {
+        "sourcePlayerId": "152823",
+        "rawName": "Vélber",
+        "rawPosition": "CM/RAM",
+        "rawOverall": "68",
+        "membershipEvidence": "source row club=São Paulo",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://www.fifaindex.com/player/152823/v%C3%A9lber/fifa05/"
+      },
+      {
+        "sourcePlayerId": "152819",
+        "rawName": "Fábio Santos",
+        "rawPosition": "LB/LWB",
+        "rawOverall": "67",
+        "membershipEvidence": "source row club=São Paulo",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://www.fifaindex.com/player/152819/f%C3%A1bio-santos/fifa05/"
+      },
+      {
+        "sourcePlayerId": "138451",
+        "rawName": "Souza",
+        "rawPosition": "RM/RWM",
+        "rawOverall": "67",
+        "membershipEvidence": "source row club=São Paulo",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://www.fifaindex.com/player/138451/souza/fifa05/"
+      },
+      {
+        "sourcePlayerId": "136175",
+        "rawName": "Roger",
+        "rawPosition": "GK",
+        "rawOverall": "67",
+        "membershipEvidence": "source row club=São Paulo",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://www.fifaindex.com/player/136175/roger/fifa05/"
+      },
+      {
+        "sourcePlayerId": "135423",
+        "rawName": "Cicinho",
+        "rawPosition": "RB/RWB",
+        "rawOverall": "67",
+        "membershipEvidence": "source row club=São Paulo",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://www.fifaindex.com/player/135423/cicinho/fifa05/"
+      },
+      {
+        "sourcePlayerId": "152825",
+        "rawName": "Renan",
+        "rawPosition": "CM",
+        "rawOverall": "66",
+        "membershipEvidence": "source row club=São Paulo",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://www.fifaindex.com/player/152825/renan/fifa05/"
+      },
+      {
+        "sourcePlayerId": "136176",
+        "rawName": "Mateus",
+        "rawPosition": "GK",
+        "rawOverall": "66",
+        "membershipEvidence": "source row club=São Paulo",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://www.fifaindex.com/player/136176/mateus/fifa05/"
+      },
+      {
+        "sourcePlayerId": "163411",
+        "rawName": "Alê",
+        "rawPosition": "CDM/RM",
+        "rawOverall": "65",
+        "membershipEvidence": "source row club=São Paulo",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://www.fifaindex.com/player/163411/al%C3%AA/fifa05/"
+      },
+      {
+        "sourcePlayerId": "136164",
+        "rawName": "Ramalho",
+        "rawPosition": "CDM/CM/RCM",
+        "rawOverall": "62",
+        "membershipEvidence": "source row club=São Paulo",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://www.fifaindex.com/player/136164/ramalho/fifa05/"
+      },
+      {
+        "sourcePlayerId": "157930",
+        "rawName": "Ailton",
+        "rawPosition": "RM/CAM",
+        "rawOverall": "61",
+        "membershipEvidence": "source row club=São Paulo",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://www.fifaindex.com/player/157930/ailton/fifa05/"
+      },
+      {
+        "sourcePlayerId": "152824",
+        "rawName": "Jean",
+        "rawPosition": "LS/LF/CF",
+        "rawOverall": "60",
+        "membershipEvidence": "source row club=São Paulo",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://www.fifaindex.com/player/152824/jean/fifa05/"
+      },
+      {
+        "sourcePlayerId": "138452",
+        "rawName": "Gabriel",
+        "rawPosition": "RB/RWB/RM",
+        "rawOverall": "60",
+        "membershipEvidence": "source row club=São Paulo",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://www.fifaindex.com/player/138452/gabriel/fifa05/"
+      }
+    ]
+  },
+  "officialEventSnapshots": []
+}

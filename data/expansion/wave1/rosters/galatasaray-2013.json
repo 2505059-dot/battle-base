@@ -1,0 +1,301 @@
+{
+  "candidateTeamSeason": "galatasaray-2013",
+  "actualTeamOrCountry": "Galatasaray SK",
+  "actualLeagueOrType": "Süper Lig",
+  "plannedGroup": "World Wildcard",
+  "referenceSeasonOrEvent": "2012/13",
+  "gameSnapshot": {
+    "gameVersion": "FIFA 13",
+    "targetRevisionReference": null,
+    "versionConsistencyStatus": "edition only; exact target update not audited",
+    "sourceCoverageStatus": "local-cache rows captured; does not establish complete authoritative squad coverage",
+    "sourceTeamName": "Galatasaray SK",
+    "snapshotStatus": "captured-game-edition-snapshot",
+    "observedUpdateIds": [
+      "130034"
+    ],
+    "observedUpdateDate": null,
+    "membershipEvidence": "source row club_name=Galatasaray SK in FIFA 13 edition dataset",
+    "capturedRowCount": 25,
+    "expectedSourcePageCount": null,
+    "fifaIndexGameRosterAudit": null,
+    "members": [
+      {
+        "sourcePlayerId": "139869",
+        "rawName": "Wesley Sneijder",
+        "rawPosition": "CAM, CM, LM, RM",
+        "rawOverall": "86",
+        "membershipEvidence": "source row club_name=Galatasaray SK",
+        "identityStatus": "confirmed-existing-by-exact-source-id",
+        "canonicalPlayerId": "wesley-sneijder",
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/139869/wesley-sneijder/130034/"
+      },
+      {
+        "sourcePlayerId": "31432",
+        "rawName": "Didier Drogba",
+        "rawPosition": "ST",
+        "rawOverall": "83",
+        "membershipEvidence": "source row club_name=Galatasaray SK",
+        "identityStatus": "confirmed-existing-by-exact-source-id",
+        "canonicalPlayerId": "didier-drogba",
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/31432/didier-drogba/130034/"
+      },
+      {
+        "sourcePlayerId": "182494",
+        "rawName": "Fernando Muslera",
+        "rawPosition": "GK",
+        "rawOverall": "81",
+        "membershipEvidence": "source row club_name=Galatasaray SK",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/182494/fernando-muslera/130034/"
+      },
+      {
+        "sourcePlayerId": "124607",
+        "rawName": "Selçuk İnan",
+        "rawPosition": "CM, CDM",
+        "rawOverall": "81",
+        "membershipEvidence": "source row club_name=Galatasaray SK",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/124607/selcuk-inan/130034/"
+      },
+      {
+        "sourcePlayerId": "124375",
+        "rawName": "Burak Yılmaz",
+        "rawPosition": "ST, CF, RW",
+        "rawOverall": "81",
+        "membershipEvidence": "source row club_name=Galatasaray SK",
+        "identityStatus": "confirmed-existing-by-exact-source-id",
+        "canonicalPlayerId": "burak-yilmaz",
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/124375/burak-yilmaz/130034/"
+      },
+      {
+        "sourcePlayerId": "167812",
+        "rawName": "Semih Kaya",
+        "rawPosition": "CB",
+        "rawOverall": "79",
+        "membershipEvidence": "source row club_name=Galatasaray SK",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/167812/semih-kaya/130034/"
+      },
+      {
+        "sourcePlayerId": "135475",
+        "rawName": "Felipe Melo de Carvalho",
+        "rawPosition": "CDM, CM",
+        "rawOverall": "79",
+        "membershipEvidence": "source row club_name=Galatasaray SK",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/135475/felipe-melo-de-carvalho/130034/"
+      },
+      {
+        "sourcePlayerId": "183108",
+        "rawName": "Nordin Amrabat",
+        "rawPosition": "LW, LM, CAM, CF",
+        "rawOverall": "78",
+        "membershipEvidence": "source row club_name=Galatasaray SK",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/183108/nordin-amrabat/130034/"
+      },
+      {
+        "sourcePlayerId": "44902",
+        "rawName": "Tomáš Ujfaluši",
+        "rawPosition": "CB, RB, LB",
+        "rawOverall": "78",
+        "membershipEvidence": "source row club_name=Galatasaray SK",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/44902/tomas-ujfalusi/130034/"
+      },
+      {
+        "sourcePlayerId": "192621",
+        "rawName": "Dany Nounkeu",
+        "rawPosition": "CB, CDM, RB",
+        "rawOverall": "77",
+        "membershipEvidence": "source row club_name=Galatasaray SK",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/192621/dany-nounkeu/130034/"
+      },
+      {
+        "sourcePlayerId": "2155",
+        "rawName": "Johan Elmander",
+        "rawPosition": "ST, CF, RW",
+        "rawOverall": "77",
+        "membershipEvidence": "source row club_name=Galatasaray SK",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/2155/johan-elmander/130034/"
+      },
+      {
+        "sourcePlayerId": "124949",
+        "rawName": "Sabri Sarıoğlu",
+        "rawPosition": "RB, RM",
+        "rawOverall": "75",
+        "membershipEvidence": "source row club_name=Galatasaray SK",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/124949/sabri-sarioglu/130034/"
+      },
+      {
+        "sourcePlayerId": "199952",
+        "rawName": "Emre Çolak",
+        "rawPosition": "LM, RM, CAM",
+        "rawOverall": "74",
+        "membershipEvidence": "source row club_name=Galatasaray SK",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/199952/emre-colak/130034/"
+      },
+      {
+        "sourcePlayerId": "107647",
+        "rawName": "Hamit Altintop",
+        "rawPosition": "RM, CM, CDM, RB",
+        "rawOverall": "74",
+        "membershipEvidence": "source row club_name=Galatasaray SK",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/107647/hamit-altintop/130034/"
+      },
+      {
+        "sourcePlayerId": "144280",
+        "rawName": "Gökhan Zan",
+        "rawPosition": "CB",
+        "rawOverall": "73",
+        "membershipEvidence": "source row club_name=Galatasaray SK",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/144280/gokhan-zan/130034/"
+      },
+      {
+        "sourcePlayerId": "143748",
+        "rawName": "Aydın Yılmaz",
+        "rawPosition": "RW, RM, LW, CAM",
+        "rawOverall": "72",
+        "membershipEvidence": "source row club_name=Galatasaray SK",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/143748/aydin-yilmaz/130034/"
+      },
+      {
+        "sourcePlayerId": "144010",
+        "rawName": "Yekta Kurtuluş",
+        "rawPosition": "CM, LM, LW, CDM",
+        "rawOverall": "72",
+        "membershipEvidence": "source row club_name=Galatasaray SK",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/144010/yekta-kurtulus/130034/"
+      },
+      {
+        "sourcePlayerId": "157840",
+        "rawName": "Engin Baytar",
+        "rawPosition": "CAM, LM, RM",
+        "rawOverall": "72",
+        "membershipEvidence": "source row club_name=Galatasaray SK",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/157840/engin-baytar/130034/"
+      },
+      {
+        "sourcePlayerId": "128529",
+        "rawName": "Ufuk Ceylan",
+        "rawPosition": "GK",
+        "rawOverall": "70",
+        "membershipEvidence": "source row club_name=Galatasaray SK",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/128529/ufuk-ceylan/130034/"
+      },
+      {
+        "sourcePlayerId": "110652",
+        "rawName": "Albert Riera Ortega",
+        "rawPosition": "LB, LM, LW",
+        "rawOverall": "70",
+        "membershipEvidence": "source row club_name=Galatasaray SK",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/110652/albert-riera-ortega/130034/"
+      },
+      {
+        "sourcePlayerId": "166093",
+        "rawName": "Hakan Balta",
+        "rawPosition": "LB, CB",
+        "rawOverall": "70",
+        "membershipEvidence": "source row club_name=Galatasaray SK",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/166093/hakan-balta/130034/"
+      },
+      {
+        "sourcePlayerId": "143869",
+        "rawName": "Çağlar Birinci",
+        "rawPosition": "LB",
+        "rawOverall": "69",
+        "membershipEvidence": "source row club_name=Galatasaray SK",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/143869/caglar-birinci/130034/"
+      },
+      {
+        "sourcePlayerId": "143740",
+        "rawName": "Aykut Erçetin",
+        "rawPosition": "GK",
+        "rawOverall": "66",
+        "membershipEvidence": "source row club_name=Galatasaray SK",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/143740/aykut-ercetin/130034/"
+      },
+      {
+        "sourcePlayerId": "200658",
+        "rawName": "Eray İşcan",
+        "rawPosition": "GK",
+        "rawOverall": "63",
+        "membershipEvidence": "source row club_name=Galatasaray SK",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/200658/eray-iscan/130034/"
+      },
+      {
+        "sourcePlayerId": "143224",
+        "rawName": "Furkan Özçal",
+        "rawPosition": "CAM, CF, CM",
+        "rawOverall": "61",
+        "membershipEvidence": "source row club_name=Galatasaray SK",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/143224/furkan-ozcal/130034/"
+      }
+    ]
+  },
+  "officialEventSnapshots": []
+}

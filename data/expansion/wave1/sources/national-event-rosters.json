@@ -1,0 +1,120 @@
+{
+  "spain-2010": {
+    "snapshots": [{
+      "rosterType": "official-event-roster",
+      "source": {
+        "sourceName": "UEFA",
+        "title": "Spain look to future with World Cup 23",
+        "url": "https://www.uefa.com/european-qualifiers/news/01e5-0e74972c38f1-5eebe6815f4f-1000--spain-look-to-future-with-world-cup-23/",
+        "competition": "2010 FIFA World Cup",
+        "publicationDate": null,
+        "pageContentReadInSourceAudit": true
+      },
+      "members": [
+        {"rawName":"Iker Casillas"},{"rawName":"Pepe Reina"},{"rawName":"Víctor Valdés"},{"rawName":"Raúl Albiol"},{"rawName":"Álvaro Arbeloa"},{"rawName":"Joan Capdevila"},{"rawName":"Carlos Marchena"},{"rawName":"Gerard Piqué"},{"rawName":"Carles Puyol"},{"rawName":"Sergio Ramos"},{"rawName":"Xabi Alonso"},{"rawName":"Sergio Busquets"},{"rawName":"Cesc Fàbregas"},{"rawName":"Andrés Iniesta"},{"rawName":"Javi Martínez"},{"rawName":"David Silva"},{"rawName":"Xavi Hernández"},{"rawName":"Jesús Navas"},{"rawName":"Juan Mata"},{"rawName":"Pedro Rodríguez"},{"rawName":"Fernando Llorente"},{"rawName":"Fernando Torres"},{"rawName":"David Villa"}
+      ]
+    }]
+  },
+  "germany-2014": {
+    "snapshots": [{
+      "rosterType": "official-event-roster",
+      "source": {
+        "sourceName": "FIFA",
+        "title": "2014 FIFA World Cup squad lists",
+        "url": "https://www.fifadata.com/document/fwc/2014/pdf/fwc_2014_squadlists.pdf?cid=facebook_fifaworldcup",
+        "competition": "2014 FIFA World Cup",
+        "publicationDate": null,
+        "pageContentReadInSourceAudit": true
+      },
+      "members": [
+        {"rawName":"Manuel Neuer"},{"rawName":"Kevin Großkreutz"},{"rawName":"Matthias Ginter"},{"rawName":"Benedikt Höwedes"},{"rawName":"Mats Hummels"},{"rawName":"Sami Khedira"},{"rawName":"Bastian Schweinsteiger"},{"rawName":"Mesut Özil"},{"rawName":"André Schürrle"},{"rawName":"Lukas Podolski"},{"rawName":"Miroslav Klose"},{"rawName":"Ron-Robert Zieler"},{"rawName":"Thomas Müller"},{"rawName":"Julian Draxler"},{"rawName":"Erik Durm"},{"rawName":"Philipp Lahm"},{"rawName":"Per Mertesacker"},{"rawName":"Toni Kroos"},{"rawName":"Mario Götze"},{"rawName":"Jérôme Boateng"},{"rawName":"Shkodran Mustafi"},{"rawName":"Roman Weidenfeller"},{"rawName":"Christoph Kramer"}
+      ]
+    }]
+  },
+  "france-2018": {
+    "snapshots": [{
+      "rosterType": "official-event-roster",
+      "source": {
+        "sourceName": "FIFA 2018 official squad-list PDF mirror",
+        "title": "Russia 2018 official squad list; FIFA document header dated 2018-06-13 08:44",
+        "url": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF",
+        "officialConfirmationUrl": "https://inside.fifa.com/tournaments/mens/worldcup/2018russia/news/russia-2018-squads-officially-confirmed",
+        "competition": "2018 FIFA World Cup",
+        "publicationDate": "2018-06-13T08:44:00",
+        "pageContentReadInSourceAudit": true
+      },
+      "members": [
+        {"rawName":"Hugo Lloris"},{"rawName":"Benjamin Pavard"},{"rawName":"Presnel Kimpembe"},{"rawName":"Raphaël Varane"},{"rawName":"Samuel Umtiti"},{"rawName":"Paul Pogba"},{"rawName":"Antoine Griezmann"},{"rawName":"Thomas Lemar"},{"rawName":"Olivier Giroud"},{"rawName":"Kylian Mbappé"},{"rawName":"Ousmane Dembélé"},{"rawName":"Corentin Tolisso"},{"rawName":"N’Golo Kanté"},{"rawName":"Blaise Matuidi"},{"rawName":"Steven Nzonzi"},{"rawName":"Steve Mandanda"},{"rawName":"Adil Rami"},{"rawName":"Nabil Fekir"},{"rawName":"Djibril Sidibé"},{"rawName":"Florian Thauvin"},{"rawName":"Lucas Hernández"},{"rawName":"Benjamin Mendy"},{"rawName":"Alphonse Areola"}
+      ]
+    }]
+  },
+  "russia-2018": {
+    "snapshots": [{
+      "rosterType": "official-event-roster",
+      "source": {
+        "sourceName": "FIFA 2018 squad list and Russian Football Union final announcement",
+        "title": "Russia 2018 final squad",
+        "url": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF",
+        "officialConfirmationUrl": "https://www.rfs.ru/news/207064?mobile=no",
+        "competition": "2018 FIFA World Cup",
+        "publicationDate": "2018-06-13T08:44:00",
+        "pageContentReadInSourceAudit": true
+      },
+      "members": [
+        {"rawName":"Igor Akinfeev"},{"rawName":"Mario Fernandes"},{"rawName":"Ilya Kutepov"},{"rawName":"Sergey Ignashevich"},{"rawName":"Andrey Semenov"},{"rawName":"Denis Cheryshev"},{"rawName":"Daler Kuziaev"},{"rawName":"Iury Gazinsky"},{"rawName":"Alan Dzagoev"},{"rawName":"Fedor Smolov"},{"rawName":"Roman Zobnin"},{"rawName":"Andrei Lunev"},{"rawName":"Fedor Kudriashov"},{"rawName":"Vladimir Granat"},{"rawName":"Alexey Miranchuk"},{"rawName":"Anton Miranchuk"},{"rawName":"Aleksandr Golovin"},{"rawName":"Yury Zhirkov"},{"rawName":"Alexander Samedov"},{"rawName":"Vladimir Gabulov"},{"rawName":"Aleksandr Erokhin"},{"rawName":"Artem Dzyuba"},{"rawName":"Igor Smolnikov"}
+      ]
+    }]
+  },
+  "belgium-2018": {
+    "snapshots": [{
+      "rosterType": "official-event-roster",
+      "source": {
+        "sourceName": "FIFA 2018 official squad-list PDF mirror",
+        "title": "Russia 2018 official squad list; FIFA document header dated 2018-06-13 08:44",
+        "url": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF",
+        "officialConfirmationUrl": "https://inside.fifa.com/tournaments/mens/worldcup/2018russia/news/russia-2018-squads-officially-confirmed",
+        "competition": "2018 FIFA World Cup",
+        "publicationDate": "2018-06-13T08:44:00",
+        "pageContentReadInSourceAudit": true
+      },
+      "members": [
+        {"rawName":"Thibaut Courtois"},{"rawName":"Toby Alderweireld"},{"rawName":"Thomas Vermaelen"},{"rawName":"Vincent Kompany"},{"rawName":"Jan Vertonghen"},{"rawName":"Axel Witsel"},{"rawName":"Kevin De Bruyne"},{"rawName":"Marouane Fellaini"},{"rawName":"Romelu Lukaku"},{"rawName":"Eden Hazard"},{"rawName":"Yannick Carrasco"},{"rawName":"Simon Mignolet"},{"rawName":"Koen Casteels"},{"rawName":"Dries Mertens"},{"rawName":"Thomas Meunier"},{"rawName":"Thorgan Hazard"},{"rawName":"Youri Tielemans"},{"rawName":"Adnan Januzaj"},{"rawName":"Mousa Dembélé"},{"rawName":"Dedryck Boyata"},{"rawName":"Michy Batshuayi"},{"rawName":"Nacer Chadli"},{"rawName":"Leander Dendoncker"}
+      ]
+    }]
+  },
+  "mexico-2018": {
+    "snapshots": [
+      {
+        "rosterType": "official-submitted-roster",
+        "source": {
+          "sourceName": "FIFA 2018 official squad-list PDF mirror",
+          "title": "Mexico submitted 23-player list before Diego Reyes replacement",
+          "url": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF",
+          "officialConfirmationUrl": "https://inside.fifa.com/tournaments/mens/worldcup/2018russia/news/russia-2018-squads-officially-confirmed",
+          "competition": "2018 FIFA World Cup",
+          "publicationDate": "2018-06-13T08:44:00",
+          "pageContentReadInSourceAudit": true
+        },
+        "members": [
+          {"rawName":"José Corona"},{"rawName":"Hugo Ayala"},{"rawName":"Carlos Salcedo"},{"rawName":"Rafael Márquez"},{"rawName":"Diego Reyes"},{"rawName":"Jonathan dos Santos"},{"rawName":"Miguel Layún"},{"rawName":"Marco Fabián"},{"rawName":"Raúl Jiménez"},{"rawName":"Giovani dos Santos"},{"rawName":"Carlos Vela"},{"rawName":"Alfredo Talavera"},{"rawName":"Guillermo Ochoa"},{"rawName":"Javier Hernández"},{"rawName":"Héctor Moreno"},{"rawName":"Héctor Herrera"},{"rawName":"Jesús Corona"},{"rawName":"Andrés Guardado"},{"rawName":"Oribe Peralta"},{"rawName":"Javier Aquino"},{"rawName":"Edson Álvarez"},{"rawName":"Hirving Lozano"},{"rawName":"Jesús Gallardo"}
+        ]
+      },
+      {
+        "rosterType": "official-final-roster",
+        "source": {
+          "sourceName": "Secondary ESPN reports quoting FMF replacement statement and FIFA portal roster update",
+          "title": "Mexico final roster after Diego Reyes was replaced by Erick Gutiérrez",
+          "url": "https://www.espn.co.cr/futbol/mundial/nota/_/id/4399840/diego-reyes-causa-baja-de-la-seleccion-mexicana",
+          "rosterUpdateUrl": "https://www.espn.com.co/futbol/mundial/nota/_/id/4408881/fifa-ya-incluye-a-erick-gutierrez-en-la-plantilla-oficial-de-mexico",
+          "competition": "2018 FIFA World Cup",
+          "publicationDate": "2018-06-14",
+          "pageContentReadInSourceAudit": true
+        },
+        "members": [
+          {"rawName":"José Corona"},{"rawName":"Hugo Ayala"},{"rawName":"Carlos Salcedo"},{"rawName":"Rafael Márquez"},{"rawName":"Erick Gutiérrez"},{"rawName":"Jonathan dos Santos"},{"rawName":"Miguel Layún"},{"rawName":"Marco Fabián"},{"rawName":"Raúl Jiménez"},{"rawName":"Giovani dos Santos"},{"rawName":"Carlos Vela"},{"rawName":"Alfredo Talavera"},{"rawName":"Guillermo Ochoa"},{"rawName":"Javier Hernández"},{"rawName":"Héctor Moreno"},{"rawName":"Héctor Herrera"},{"rawName":"Jesús Corona"},{"rawName":"Andrés Guardado"},{"rawName":"Oribe Peralta"},{"rawName":"Javier Aquino"},{"rawName":"Edson Álvarez"},{"rawName":"Hirving Lozano"},{"rawName":"Jesús Gallardo"}
+        ],
+        "replacements": [{"out":"Diego Reyes","in":"Erick Gutiérrez","reason":"injury / did not recover in time","sourceUrl":"https://www.espn.co.cr/futbol/mundial/nota/_/id/4399840/diego-reyes-causa-baja-de-la-seleccion-mexicana","rosterUpdateUrl":"https://www.espn.com.co/futbol/mundial/nota/_/id/4408881/fifa-ya-incluye-a-erick-gutierrez-en-la-plantilla-oficial-de-mexico","date":"2018-06-14"}]
+      }
+    ]
+  }
+}

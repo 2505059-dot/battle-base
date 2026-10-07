@@ -1,0 +1,1118 @@
+{
+  "candidateTeamSeason": "france-2018",
+  "actualTeamOrCountry": "France",
+  "actualLeagueOrType": "National team",
+  "plannedGroup": "national-team",
+  "referenceSeasonOrEvent": "2018 World Cup",
+  "gameSnapshot": {
+    "gameVersion": "FIFA 18",
+    "targetRevisionReference": null,
+    "versionConsistencyStatus": "FIFAIndex edition page identifies game version but does not disclose patch/update date",
+    "sourceCoverageStatus": "no exact team-name match in local cache; source data absence is not established",
+    "sourceTeamName": "France",
+    "snapshotStatus": "no-exact-team-name-match-in-local-cache-source-coverage-unknown",
+    "observedUpdateIds": [],
+    "observedUpdateDate": null,
+    "membershipEvidence": "source row club_name=France in FIFA 18 edition dataset",
+    "capturedRowCount": 0,
+    "expectedSourcePageCount": 33,
+    "fifaIndexGameRosterAudit": {
+      "sourceName": "FIFAIndex team edition page",
+      "pageUrl": "https://fifaindex.com/teams/1335-france/fifa18",
+      "teamId": 1335,
+      "gameVersion": "FIFA 18",
+      "listedPlayerCount": 33,
+      "revisionDate": null,
+      "revisionDateStatus": "not disclosed on cited FIFAIndex edition page; unknown",
+      "namesTranscribed": false,
+      "pageReadInSourceAudit": true,
+      "eventRosterComparison": {
+        "gameRosterSize": 33,
+        "officialRosterSize": 23,
+        "overlap": 23,
+        "gameOnlyCount": 10,
+        "gameOnlyNamesTranscribed": false
+      }
+    },
+    "members": []
+  },
+  "officialEventSnapshots": [
+    {
+      "rosterType": "official-event-roster",
+      "source": {
+        "sourceName": "FIFA 2018 official squad-list PDF mirror",
+        "title": "Russia 2018 official squad list; FIFA document header dated 2018-06-13 08:44",
+        "url": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF",
+        "officialConfirmationUrl": "https://inside.fifa.com/tournaments/mens/worldcup/2018russia/news/russia-2018-squads-officially-confirmed",
+        "competition": "2018 FIFA World Cup",
+        "publicationDate": "2018-06-13T08:44:00",
+        "pageContentReadInSourceAudit": true
+      },
+      "records": [
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Hugo Lloris",
+          "rawShortName": null,
+          "sourceClubOrCountry": "France",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF",
+          "rawSourceFields": {
+            "playerName": "Hugo Lloris"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Benjamin Pavard",
+          "rawShortName": null,
+          "sourceClubOrCountry": "France",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "name-candidate-unconfirmed",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [
+            "benjamin-pavard"
+          ],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF",
+          "rawSourceFields": {
+            "playerName": "Benjamin Pavard"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Presnel Kimpembe",
+          "rawShortName": null,
+          "sourceClubOrCountry": "France",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF",
+          "rawSourceFields": {
+            "playerName": "Presnel Kimpembe"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Raphaël Varane",
+          "rawShortName": null,
+          "sourceClubOrCountry": "France",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "name-candidate-unconfirmed",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [
+            "raphael-varane"
+          ],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF",
+          "rawSourceFields": {
+            "playerName": "Raphaël Varane"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Samuel Umtiti",
+          "rawShortName": null,
+          "sourceClubOrCountry": "France",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF",
+          "rawSourceFields": {
+            "playerName": "Samuel Umtiti"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Paul Pogba",
+          "rawShortName": null,
+          "sourceClubOrCountry": "France",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF",
+          "rawSourceFields": {
+            "playerName": "Paul Pogba"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Antoine Griezmann",
+          "rawShortName": null,
+          "sourceClubOrCountry": "France",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF",
+          "rawSourceFields": {
+            "playerName": "Antoine Griezmann"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Thomas Lemar",
+          "rawShortName": null,
+          "sourceClubOrCountry": "France",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF",
+          "rawSourceFields": {
+            "playerName": "Thomas Lemar"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Olivier Giroud",
+          "rawShortName": null,
+          "sourceClubOrCountry": "France",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "name-candidate-unconfirmed",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [
+            "olivier-giroud"
+          ],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF",
+          "rawSourceFields": {
+            "playerName": "Olivier Giroud"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Kylian Mbappé",
+          "rawShortName": null,
+          "sourceClubOrCountry": "France",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "name-candidate-unconfirmed",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [
+            "kylian-mbappe"
+          ],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF",
+          "rawSourceFields": {
+            "playerName": "Kylian Mbappé"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Ousmane Dembélé",
+          "rawShortName": null,
+          "sourceClubOrCountry": "France",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "name-candidate-unconfirmed",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [
+            "ousmane-dembele"
+          ],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF",
+          "rawSourceFields": {
+            "playerName": "Ousmane Dembélé"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Corentin Tolisso",
+          "rawShortName": null,
+          "sourceClubOrCountry": "France",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF",
+          "rawSourceFields": {
+            "playerName": "Corentin Tolisso"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "N’Golo Kanté",
+          "rawShortName": null,
+          "sourceClubOrCountry": "France",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "name-candidate-unconfirmed",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [
+            "n-golo-kante"
+          ],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF",
+          "rawSourceFields": {
+            "playerName": "N’Golo Kanté"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Blaise Matuidi",
+          "rawShortName": null,
+          "sourceClubOrCountry": "France",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF",
+          "rawSourceFields": {
+            "playerName": "Blaise Matuidi"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Steven Nzonzi",
+          "rawShortName": null,
+          "sourceClubOrCountry": "France",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF",
+          "rawSourceFields": {
+            "playerName": "Steven Nzonzi"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Steve Mandanda",
+          "rawShortName": null,
+          "sourceClubOrCountry": "France",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF",
+          "rawSourceFields": {
+            "playerName": "Steve Mandanda"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Adil Rami",
+          "rawShortName": null,
+          "sourceClubOrCountry": "France",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF",
+          "rawSourceFields": {
+            "playerName": "Adil Rami"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Nabil Fekir",
+          "rawShortName": null,
+          "sourceClubOrCountry": "France",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF",
+          "rawSourceFields": {
+            "playerName": "Nabil Fekir"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Djibril Sidibé",
+          "rawShortName": null,
+          "sourceClubOrCountry": "France",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "name-candidate-unconfirmed",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [
+            "djibril-sidibe"
+          ],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF",
+          "rawSourceFields": {
+            "playerName": "Djibril Sidibé"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Florian Thauvin",
+          "rawShortName": null,
+          "sourceClubOrCountry": "France",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF",
+          "rawSourceFields": {
+            "playerName": "Florian Thauvin"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Lucas Hernández",
+          "rawShortName": null,
+          "sourceClubOrCountry": "France",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "name-candidate-unconfirmed",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [
+            "lucas-hernandez"
+          ],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF",
+          "rawSourceFields": {
+            "playerName": "Lucas Hernández"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Benjamin Mendy",
+          "rawShortName": null,
+          "sourceClubOrCountry": "France",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "name-candidate-unconfirmed",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [
+            "benjamin-mendy"
+          ],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF",
+          "rawSourceFields": {
+            "playerName": "Benjamin Mendy"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Alphonse Areola",
+          "rawShortName": null,
+          "sourceClubOrCountry": "France",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF",
+          "rawSourceFields": {
+            "playerName": "Alphonse Areola"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+        }
+      ],
+      "replacements": []
+    }
+  ],
+  "supplementalAttributeCandidates": {
+    "sourceFile": "france-2018.event-attribute-candidates.sofifa.json",
+    "gameVersion": "FIFA 18",
+    "count": 23,
+    "matchRule": "exact normalized source long_name + exact source nationality; not proof of game national-team membership",
+    "unmatchedOfficialRosterNames": [],
+    "records": [
+      {
+        "sourcePlayerId": "215914",
+        "rawName": "N'Golo Kanté",
+        "sourceNationality": "France",
+        "sourceClubName": "Chelsea FC",
+        "rawPosition": "CDM, CM",
+        "rawOverall": "88",
+        "candidateEventRosterNames": [
+          {
+            "name": "N’Golo Kanté",
+            "rosterType": "official-event-roster",
+            "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "confirmed-existing-by-exact-source-id",
+        "canonicalPlayerId": "n-golo-kante",
+        "sourcePlayerPageUrl": "https://sofifa.com/player/215914/ngolo-kante/180084/"
+      },
+      {
+        "sourcePlayerId": "195864",
+        "rawName": "Paul Pogba",
+        "sourceNationality": "France",
+        "sourceClubName": "Manchester United",
+        "rawPosition": "CM, CDM",
+        "rawOverall": "88",
+        "candidateEventRosterNames": [
+          {
+            "name": "Paul Pogba",
+            "rosterType": "official-event-roster",
+            "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "sourcePlayerPageUrl": "https://sofifa.com/player/195864/paul-pogba/180084/"
+      },
+      {
+        "sourcePlayerId": "194765",
+        "rawName": "Antoine Griezmann",
+        "sourceNationality": "France",
+        "sourceClubName": "Atlético Madrid",
+        "rawPosition": "ST, RW, LW",
+        "rawOverall": "88",
+        "candidateEventRosterNames": [
+          {
+            "name": "Antoine Griezmann",
+            "rosterType": "official-event-roster",
+            "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "sourcePlayerPageUrl": "https://sofifa.com/player/194765/antoine-griezmann/180084/"
+      },
+      {
+        "sourcePlayerId": "167948",
+        "rawName": "Hugo Lloris",
+        "sourceNationality": "France",
+        "sourceClubName": "Tottenham Hotspur",
+        "rawPosition": "GK",
+        "rawOverall": "88",
+        "candidateEventRosterNames": [
+          {
+            "name": "Hugo Lloris",
+            "rosterType": "official-event-roster",
+            "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "sourcePlayerPageUrl": "https://sofifa.com/player/167948/hugo-lloris/180084/"
+      },
+      {
+        "sourcePlayerId": "201535",
+        "rawName": "Raphaël Varane",
+        "sourceNationality": "France",
+        "sourceClubName": "Real Madrid",
+        "rawPosition": "CB",
+        "rawOverall": "85",
+        "candidateEventRosterNames": [
+          {
+            "name": "Raphaël Varane",
+            "rosterType": "official-event-roster",
+            "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "confirmed-existing-by-exact-source-id",
+        "canonicalPlayerId": "raphael-varane",
+        "sourcePlayerPageUrl": "https://sofifa.com/player/201535/raphael-varane/180084/"
+      },
+      {
+        "sourcePlayerId": "170890",
+        "rawName": "Blaise Matuidi",
+        "sourceNationality": "France",
+        "sourceClubName": "Juventus FC",
+        "rawPosition": "CDM, CM",
+        "rawOverall": "85",
+        "candidateEventRosterNames": [
+          {
+            "name": "Blaise Matuidi",
+            "rosterType": "official-event-roster",
+            "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "sourcePlayerPageUrl": "https://sofifa.com/player/170890/blaise-matuidi/180084/"
+      },
+      {
+        "sourcePlayerId": "231747",
+        "rawName": "Kylian Mbappé",
+        "sourceNationality": "France",
+        "sourceClubName": "Paris Saint-Germain",
+        "rawPosition": "ST, RW",
+        "rawOverall": "84",
+        "candidateEventRosterNames": [
+          {
+            "name": "Kylian Mbappé",
+            "rosterType": "official-event-roster",
+            "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "confirmed-existing-by-exact-source-id",
+        "canonicalPlayerId": "kylian-mbappe",
+        "sourcePlayerPageUrl": "https://sofifa.com/player/231747/kylian-mbappe/180084/"
+      },
+      {
+        "sourcePlayerId": "216594",
+        "rawName": "Nabil Fekir",
+        "sourceNationality": "France",
+        "sourceClubName": "Olympique Lyonnais",
+        "rawPosition": "CAM, ST",
+        "rawOverall": "84",
+        "candidateEventRosterNames": [
+          {
+            "name": "Nabil Fekir",
+            "rosterType": "official-event-roster",
+            "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "sourcePlayerPageUrl": "https://sofifa.com/player/216594/nabil-fekir/180084/"
+      },
+      {
+        "sourcePlayerId": "205600",
+        "rawName": "Samuel Umtiti",
+        "sourceNationality": "France",
+        "sourceClubName": "FC Barcelona",
+        "rawPosition": "CB",
+        "rawOverall": "84",
+        "candidateEventRosterNames": [
+          {
+            "name": "Samuel Umtiti",
+            "rosterType": "official-event-roster",
+            "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "sourcePlayerPageUrl": "https://sofifa.com/player/205600/samuel-umtiti/180084/"
+      },
+      {
+        "sourcePlayerId": "231443",
+        "rawName": "Ousmane Dembélé",
+        "sourceNationality": "France",
+        "sourceClubName": "FC Barcelona",
+        "rawPosition": "RW, LW",
+        "rawOverall": "83",
+        "candidateEventRosterNames": [
+          {
+            "name": "Ousmane Dembélé",
+            "rosterType": "official-event-roster",
+            "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "confirmed-existing-by-exact-source-id",
+        "canonicalPlayerId": "ousmane-dembele",
+        "sourcePlayerPageUrl": "https://sofifa.com/player/231443/ousmane-dembele/180084/"
+      },
+      {
+        "sourcePlayerId": "213565",
+        "rawName": "Thomas Lemar",
+        "sourceNationality": "France",
+        "sourceClubName": "AS Monaco",
+        "rawPosition": "LM, CAM",
+        "rawOverall": "83",
+        "candidateEventRosterNames": [
+          {
+            "name": "Thomas Lemar",
+            "rosterType": "official-event-roster",
+            "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "sourcePlayerPageUrl": "https://sofifa.com/player/213565/thomas-lemar/180084/"
+      },
+      {
+        "sourcePlayerId": "204970",
+        "rawName": "Florian Thauvin",
+        "sourceNationality": "France",
+        "sourceClubName": "Olympique de Marseille",
+        "rawPosition": "RM, RW",
+        "rawOverall": "83",
+        "candidateEventRosterNames": [
+          {
+            "name": "Florian Thauvin",
+            "rosterType": "official-event-roster",
+            "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "sourcePlayerPageUrl": "https://sofifa.com/player/204970/florian-thauvin/180084/"
+      },
+      {
+        "sourcePlayerId": "187936",
+        "rawName": "Steven N'Zonzi",
+        "sourceNationality": "France",
+        "sourceClubName": "Sevilla FC",
+        "rawPosition": "CDM, CM",
+        "rawOverall": "83",
+        "candidateEventRosterNames": [
+          {
+            "name": "Steven Nzonzi",
+            "rosterType": "official-event-roster",
+            "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "sourcePlayerPageUrl": "https://sofifa.com/player/187936/steven-nzonzi/180084/"
+      },
+      {
+        "sourcePlayerId": "219683",
+        "rawName": "Corentin Tolisso",
+        "sourceNationality": "France",
+        "sourceClubName": "Bayern München",
+        "rawPosition": "CM, CDM",
+        "rawOverall": "82",
+        "candidateEventRosterNames": [
+          {
+            "name": "Corentin Tolisso",
+            "rosterType": "official-event-roster",
+            "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "sourcePlayerPageUrl": "https://sofifa.com/player/219683/corentin-tolisso/180084/"
+      },
+      {
+        "sourcePlayerId": "178509",
+        "rawName": "Olivier Giroud",
+        "sourceNationality": "France",
+        "sourceClubName": "Chelsea FC",
+        "rawPosition": "ST",
+        "rawOverall": "82",
+        "candidateEventRosterNames": [
+          {
+            "name": "Olivier Giroud",
+            "rosterType": "official-event-roster",
+            "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "confirmed-existing-by-exact-source-id",
+        "canonicalPlayerId": "olivier-giroud",
+        "sourcePlayerPageUrl": "https://sofifa.com/player/178509/olivier-giroud/180084/"
+      },
+      {
+        "sourcePlayerId": "163705",
+        "rawName": "Steve Mandanda",
+        "sourceNationality": "France",
+        "sourceClubName": "Olympique de Marseille",
+        "rawPosition": "GK",
+        "rawOverall": "82",
+        "candidateEventRosterNames": [
+          {
+            "name": "Steve Mandanda",
+            "rosterType": "official-event-roster",
+            "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "sourcePlayerPageUrl": "https://sofifa.com/player/163705/steve-mandanda/180084/"
+      },
+      {
+        "sourcePlayerId": "183280",
+        "rawName": "Adil Rami",
+        "sourceNationality": "France",
+        "sourceClubName": "Olympique de Marseille",
+        "rawPosition": "CB",
+        "rawOverall": "81",
+        "candidateEventRosterNames": [
+          {
+            "name": "Adil Rami",
+            "rosterType": "official-event-roster",
+            "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "sourcePlayerPageUrl": "https://sofifa.com/player/183280/adil-rami/180084/"
+      },
+      {
+        "sourcePlayerId": "225850",
+        "rawName": "Presnel Kimpembe",
+        "sourceNationality": "France",
+        "sourceClubName": "Paris Saint-Germain",
+        "rawPosition": "CB",
+        "rawOverall": "80",
+        "candidateEventRosterNames": [
+          {
+            "name": "Presnel Kimpembe",
+            "rosterType": "official-event-roster",
+            "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "sourcePlayerPageUrl": "https://sofifa.com/player/225850/presnel-kimpembe/180084/"
+      },
+      {
+        "sourcePlayerId": "193105",
+        "rawName": "Alphonse Areola",
+        "sourceNationality": "France",
+        "sourceClubName": "Paris Saint-Germain",
+        "rawPosition": "GK",
+        "rawOverall": "80",
+        "candidateEventRosterNames": [
+          {
+            "name": "Alphonse Areola",
+            "rosterType": "official-event-roster",
+            "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "sourcePlayerPageUrl": "https://sofifa.com/player/193105/alphonse-areola/180084/"
+      },
+      {
+        "sourcePlayerId": "220814",
+        "rawName": "Lucas Hernández",
+        "sourceNationality": "France",
+        "sourceClubName": "Atlético Madrid",
+        "rawPosition": "CB, LB",
+        "rawOverall": "79",
+        "candidateEventRosterNames": [
+          {
+            "name": "Lucas Hernández",
+            "rosterType": "official-event-roster",
+            "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "confirmed-existing-by-exact-source-id",
+        "canonicalPlayerId": "lucas-hernandez",
+        "sourcePlayerPageUrl": "https://sofifa.com/player/220814/lucas-hernandez/180084/"
+      },
+      {
+        "sourcePlayerId": "204884",
+        "rawName": "Benjamin Mendy",
+        "sourceNationality": "France",
+        "sourceClubName": "Manchester City",
+        "rawPosition": "LB, LWB",
+        "rawOverall": "79",
+        "candidateEventRosterNames": [
+          {
+            "name": "Benjamin Mendy",
+            "rosterType": "official-event-roster",
+            "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "confirmed-existing-by-exact-source-id",
+        "canonicalPlayerId": "benjamin-mendy",
+        "sourcePlayerPageUrl": "https://sofifa.com/player/204884/benjamin-mendy/180084/"
+      },
+      {
+        "sourcePlayerId": "201042",
+        "rawName": "Djibril Sidibé",
+        "sourceNationality": "France",
+        "sourceClubName": "AS Monaco",
+        "rawPosition": "RB, LB",
+        "rawOverall": "79",
+        "candidateEventRosterNames": [
+          {
+            "name": "Djibril Sidibé",
+            "rosterType": "official-event-roster",
+            "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "confirmed-existing-by-exact-source-id",
+        "canonicalPlayerId": "djibril-sidibe",
+        "sourcePlayerPageUrl": "https://sofifa.com/player/201042/djibril-sidibe/180084/"
+      },
+      {
+        "sourcePlayerId": "226851",
+        "rawName": "Benjamin Pavard",
+        "sourceNationality": "France",
+        "sourceClubName": "VfB Stuttgart",
+        "rawPosition": "CB, RB, CDM",
+        "rawOverall": "77",
+        "candidateEventRosterNames": [
+          {
+            "name": "Benjamin Pavard",
+            "rosterType": "official-event-roster",
+            "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "confirmed-existing-by-exact-source-id",
+        "canonicalPlayerId": "benjamin-pavard",
+        "sourcePlayerPageUrl": "https://sofifa.com/player/226851/benjamin-pavard/180084/"
+      }
+    ]
+  }
+}

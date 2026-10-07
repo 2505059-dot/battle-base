@@ -1,0 +1,23 @@
+{
+  "candidateTeamSeason": "guangzhou-rf-2019",
+  "actualTeamOrCountry": "Guangzhou R&F",
+  "actualLeagueOrType": "Chinese Super League",
+  "plannedGroup": "World Wildcard",
+  "referenceSeasonOrEvent": "2018/19",
+  "gameSnapshot": {
+    "gameVersion": "FIFA 19",
+    "targetRevisionReference": null,
+    "versionConsistencyStatus": "edition only; exact target update not audited",
+    "sourceCoverageStatus": "no exact team-name match in local cache; source data absence is not established",
+    "sourceTeamName": "Guangzhou R&F",
+    "snapshotStatus": "no-exact-team-name-match-in-local-cache-source-coverage-unknown",
+    "observedUpdateIds": [],
+    "observedUpdateDate": null,
+    "membershipEvidence": "source row club_name=Guangzhou R&F in FIFA 19 edition dataset",
+    "capturedRowCount": 0,
+    "expectedSourcePageCount": null,
+    "fifaIndexGameRosterAudit": null,
+    "members": []
+  },
+  "officialEventSnapshots": []
+}

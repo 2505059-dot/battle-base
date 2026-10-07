@@ -1,0 +1,105 @@
+{
+  "schemaVersion": "wave1-event-roster-source/1",
+  "candidateTeamSeason": "mexico-2018",
+  "rosterType": "official-final-roster",
+  "source": {
+    "sourceName": "Secondary ESPN reports quoting FMF replacement statement and FIFA portal roster update",
+    "title": "Mexico final roster after Diego Reyes was replaced by Erick Gutiérrez",
+    "url": "https://www.espn.co.cr/futbol/mundial/nota/_/id/4399840/diego-reyes-causa-baja-de-la-seleccion-mexicana",
+    "rosterUpdateUrl": "https://www.espn.com.co/futbol/mundial/nota/_/id/4408881/fifa-ya-incluye-a-erick-gutierrez-en-la-plantilla-oficial-de-mexico",
+    "competition": "2018 FIFA World Cup",
+    "publicationDate": "2018-06-14",
+    "pageContentReadInSourceAudit": true
+  },
+  "records": [
+    {
+      "rawName": "José Corona"
+    },
+    {
+      "rawName": "Hugo Ayala"
+    },
+    {
+      "rawName": "Carlos Salcedo"
+    },
+    {
+      "rawName": "Rafael Márquez"
+    },
+    {
+      "rawName": "Erick Gutiérrez"
+    },
+    {
+      "rawName": "Jonathan dos Santos"
+    },
+    {
+      "rawName": "Miguel Layún"
+    },
+    {
+      "rawName": "Marco Fabián"
+    },
+    {
+      "rawName": "Raúl Jiménez"
+    },
+    {
+      "rawName": "Giovani dos Santos"
+    },
+    {
+      "rawName": "Carlos Vela"
+    },
+    {
+      "rawName": "Alfredo Talavera"
+    },
+    {
+      "rawName": "Guillermo Ochoa"
+    },
+    {
+      "rawName": "Javier Hernández"
+    },
+    {
+      "rawName": "Héctor Moreno"
+    },
+    {
+      "rawName": "Héctor Herrera"
+    },
+    {
+      "rawName": "Jesús Corona"
+    },
+    {
+      "rawName": "Andrés Guardado"
+    },
+    {
+      "rawName": "Oribe Peralta"
+    },
+    {
+      "rawName": "Javier Aquino"
+    },
+    {
+      "rawName": "Edson Álvarez"
+    },
+    {
+      "rawName": "Hirving Lozano"
+    },
+    {
+      "rawName": "Jesús Gallardo"
+    }
+  ],
+  "replacements": [
+    {
+      "out": "Diego Reyes",
+      "in": "Erick Gutiérrez",
+      "reason": "injury / did not recover in time",
+      "sourceUrl": "https://www.espn.co.cr/futbol/mundial/nota/_/id/4399840/diego-reyes-causa-baja-de-la-seleccion-mexicana",
+      "rosterUpdateUrl": "https://www.espn.com.co/futbol/mundial/nota/_/id/4408881/fifa-ya-incluye-a-erick-gutierrez-en-la-plantilla-oficial-de-mexico",
+      "date": "2018-06-14"
+    }
+  ],
+  "fieldsNotProvidedBySource": [
+    "player source ID",
+    "position",
+    "overall",
+    "technical attributes"
+  ],
+  "sourceRetrievedAt": null,
+  "sourceRetrievedAtReason": "original page retrieval time is not recorded in the source audit",
+  "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+  "sourceAcquisitionTime": "original page retrieval time unknown"
+}

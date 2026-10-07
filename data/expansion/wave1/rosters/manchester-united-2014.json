@@ -1,0 +1,398 @@
+{
+  "candidateTeamSeason": "manchester-united-2014",
+  "actualTeamOrCountry": "Manchester United",
+  "actualLeagueOrType": "Premier League",
+  "plannedGroup": "story-club",
+  "referenceSeasonOrEvent": "2013/14",
+  "gameSnapshot": {
+    "gameVersion": "FIFA 14",
+    "targetRevisionReference": {
+      "platform": "SoFIFA",
+      "updateId": "140002",
+      "referenceDate": null,
+      "pageUrl": "https://sofifa.com/team/11/manchester-united/140002/",
+      "officialTeamRevisionConfirmed": true,
+      "note": "page read; update date not firmly established"
+    },
+    "versionConsistencyStatus": "SoFIFA target r140002 (date unconfirmed) differs from cached r140052; cached revision is supplemental",
+    "sourceCoverageStatus": "local-cache rows captured; does not establish complete authoritative squad coverage",
+    "sourceTeamName": "Manchester United",
+    "snapshotStatus": "captured-game-edition-snapshot",
+    "observedUpdateIds": [
+      "140052"
+    ],
+    "observedUpdateDate": null,
+    "membershipEvidence": "source row club_name=Manchester United in FIFA 14 edition dataset",
+    "capturedRowCount": 32,
+    "expectedSourcePageCount": 41,
+    "fifaIndexGameRosterAudit": {
+      "sourceName": "FIFAIndex team edition page",
+      "pageUrl": "https://fifaindex.com/teams/11-manchester-utd/fifa14",
+      "teamId": 11,
+      "gameVersion": "FIFA 14",
+      "listedPlayerCount": 41,
+      "revisionDate": null,
+      "revisionDateStatus": "not disclosed on cited FIFAIndex edition page; unknown",
+      "namesTranscribed": false,
+      "pageReadInSourceAudit": true,
+      "eventRosterComparison": null
+    },
+    "members": [
+      {
+        "sourcePlayerId": "7826",
+        "rawName": "Robin van Persie",
+        "rawPosition": "ST",
+        "rawOverall": "89",
+        "membershipEvidence": "source row club_name=Manchester United",
+        "identityStatus": "confirmed-existing-by-exact-source-id",
+        "canonicalPlayerId": "robin-van-persie",
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/7826/robin-van-persie/140052/"
+      },
+      {
+        "sourcePlayerId": "178088",
+        "rawName": "Juan Manuel Mata García",
+        "rawPosition": "CAM, RM",
+        "rawOverall": "87",
+        "membershipEvidence": "source row club_name=Manchester United",
+        "identityStatus": "confirmed-existing-by-exact-source-id",
+        "canonicalPlayerId": "juan-mata",
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/178088/juan-manuel-mata-garcia/140052/"
+      },
+      {
+        "sourcePlayerId": "54050",
+        "rawName": "Wayne Rooney",
+        "rawPosition": "CF, ST, CAM",
+        "rawOverall": "87",
+        "membershipEvidence": "source row club_name=Manchester United",
+        "identityStatus": "confirmed-existing-by-exact-source-id",
+        "canonicalPlayerId": "wayne-rooney",
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/54050/wayne-rooney/140052/"
+      },
+      {
+        "sourcePlayerId": "140601",
+        "rawName": "Nemanja Vidić",
+        "rawPosition": "CB",
+        "rawOverall": "85",
+        "membershipEvidence": "source row club_name=Manchester United",
+        "identityStatus": "confirmed-existing-by-exact-source-id",
+        "canonicalPlayerId": "nemanja-vidic",
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/140601/nemanja-vidic/140052/"
+      },
+      {
+        "sourcePlayerId": "193080",
+        "rawName": "David De Gea Quintana",
+        "rawPosition": "GK",
+        "rawOverall": "83",
+        "membershipEvidence": "source row club_name=Manchester United",
+        "identityStatus": "confirmed-existing-by-exact-source-id",
+        "canonicalPlayerId": "david-de-gea",
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/193080/david-de-gea-quintana/140052/"
+      },
+      {
+        "sourcePlayerId": "178224",
+        "rawName": "Javier Hernández",
+        "rawPosition": "ST",
+        "rawOverall": "82",
+        "membershipEvidence": "source row club_name=Manchester United",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/178224/javier-hernandez/140052/"
+      },
+      {
+        "sourcePlayerId": "139068",
+        "rawName": "Luís Carlos Almeida da Cunha",
+        "rawPosition": "RM, LM",
+        "rawOverall": "82",
+        "membershipEvidence": "source row club_name=Manchester United",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/139068/luis-carlos-almeida-da-cunha/140052/"
+      },
+      {
+        "sourcePlayerId": "189358",
+        "rawName": "Shinji Kagawa",
+        "rawPosition": "LM, CF, CAM",
+        "rawOverall": "81",
+        "membershipEvidence": "source row club_name=Manchester United",
+        "identityStatus": "confirmed-existing-by-exact-source-id",
+        "canonicalPlayerId": "shinji-kagawa",
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/189358/shinji-kagawa/140052/"
+      },
+      {
+        "sourcePlayerId": "167905",
+        "rawName": "Antonio Valencia",
+        "rawPosition": "RM",
+        "rawOverall": "81",
+        "membershipEvidence": "source row club_name=Manchester United",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/167905/antonio-valencia/140052/"
+      },
+      {
+        "sourcePlayerId": "176944",
+        "rawName": "Marouane Fellaini",
+        "rawPosition": "CDM, CM",
+        "rawOverall": "80",
+        "membershipEvidence": "source row club_name=Manchester United",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/176944/marouane-fellaini/140052/"
+      },
+      {
+        "sourcePlayerId": "52091",
+        "rawName": "Patrice Evra",
+        "rawPosition": "LB",
+        "rawOverall": "80",
+        "membershipEvidence": "source row club_name=Manchester United",
+        "identityStatus": "confirmed-existing-by-exact-source-id",
+        "canonicalPlayerId": "patrice-evra",
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/52091/patrice-evra/140052/"
+      },
+      {
+        "sourcePlayerId": "21146",
+        "rawName": "Michael Carrick",
+        "rawPosition": "CM, CDM",
+        "rawOverall": "80",
+        "membershipEvidence": "source row club_name=Manchester United",
+        "identityStatus": "confirmed-existing-by-exact-source-id",
+        "canonicalPlayerId": "michael-carrick",
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/21146/michael-carrick/140052/"
+      },
+      {
+        "sourcePlayerId": "194957",
+        "rawName": "Phil Jones",
+        "rawPosition": "CB, RB, CM",
+        "rawOverall": "79",
+        "membershipEvidence": "source row club_name=Manchester United",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/194957/phil-jones/140052/"
+      },
+      {
+        "sourcePlayerId": "169588",
+        "rawName": "Jonny Evans",
+        "rawPosition": "CB",
+        "rawOverall": "79",
+        "membershipEvidence": "source row club_name=Manchester United",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/169588/jonny-evans/140052/"
+      },
+      {
+        "sourcePlayerId": "152908",
+        "rawName": "Ashley Young",
+        "rawPosition": "LM, RM",
+        "rawOverall": "79",
+        "membershipEvidence": "source row club_name=Manchester United",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/152908/ashley-young/140052/"
+      },
+      {
+        "sourcePlayerId": "7289",
+        "rawName": "Rio Ferdinand",
+        "rawPosition": "CB",
+        "rawOverall": "79",
+        "membershipEvidence": "source row club_name=Manchester United",
+        "identityStatus": "confirmed-existing-by-exact-source-id",
+        "canonicalPlayerId": "rio-ferdinand",
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/7289/rio-ferdinand/140052/"
+      },
+      {
+        "sourcePlayerId": "186146",
+        "rawName": "Danny Welbeck",
+        "rawPosition": "ST, CF, LM",
+        "rawOverall": "78",
+        "membershipEvidence": "source row club_name=Manchester United",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/186146/danny-welbeck/140052/"
+      },
+      {
+        "sourcePlayerId": "189681",
+        "rawName": "Rafael Pereira da Silva",
+        "rawPosition": "RB",
+        "rawOverall": "77",
+        "membershipEvidence": "source row club_name=Manchester United",
+        "identityStatus": "confirmed-existing-by-exact-source-id",
+        "canonicalPlayerId": "rafael",
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/189681/rafael-pereira-da-silva/140052/"
+      },
+      {
+        "sourcePlayerId": "135043",
+        "rawName": "Anders Lindegaard",
+        "rawPosition": "GK",
+        "rawOverall": "77",
+        "membershipEvidence": "source row club_name=Manchester United",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/135043/anders-lindegaard/140052/"
+      },
+      {
+        "sourcePlayerId": "189881",
+        "rawName": "Chris Smalling",
+        "rawPosition": "CB, RB",
+        "rawOverall": "76",
+        "membershipEvidence": "source row club_name=Manchester United",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/189881/chris-smalling/140052/"
+      },
+      {
+        "sourcePlayerId": "189725",
+        "rawName": "Tom Cleverley",
+        "rawPosition": "CM, CDM, CAM",
+        "rawOverall": "74",
+        "membershipEvidence": "source row club_name=Manchester United",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/189725/tom-cleverley/140052/"
+      },
+      {
+        "sourcePlayerId": "186982",
+        "rawName": "Alexander Büttner",
+        "rawPosition": "LB",
+        "rawOverall": "73",
+        "membershipEvidence": "source row club_name=Manchester United",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/186982/alexander-buttner/140052/"
+      },
+      {
+        "sourcePlayerId": "208330",
+        "rawName": "Adnan Januzaj",
+        "rawPosition": "LM, RM, CAM",
+        "rawOverall": "73",
+        "membershipEvidence": "source row club_name=Manchester United",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/208330/adnan-januzaj/140052/"
+      },
+      {
+        "sourcePlayerId": "173531",
+        "rawName": "Ben Amos",
+        "rawPosition": "GK",
+        "rawOverall": "65",
+        "membershipEvidence": "source row club_name=Manchester United",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/173531/ben-amos/140052/"
+      },
+      {
+        "sourcePlayerId": "207599",
+        "rawName": "Michael Keane",
+        "rawPosition": "CB, RB",
+        "rawOverall": "65",
+        "membershipEvidence": "source row club_name=Manchester United",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/207599/michael-keane/140052/"
+      },
+      {
+        "sourcePlayerId": "219914",
+        "rawName": "Guillermo Varela",
+        "rawPosition": "RB",
+        "rawOverall": "60",
+        "membershipEvidence": "source row club_name=Manchester United",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/219914/guillermo-varela/140052/"
+      },
+      {
+        "sourcePlayerId": "213642",
+        "rawName": "James Wilson",
+        "rawPosition": "ST",
+        "rawOverall": "58",
+        "membershipEvidence": "source row club_name=Manchester United",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/213642/james-wilson/140052/"
+      },
+      {
+        "sourcePlayerId": "220172",
+        "rawName": "Saidy Janko",
+        "rawPosition": "RB, RM",
+        "rawOverall": "57",
+        "membershipEvidence": "source row club_name=Manchester United",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/220172/saidy-janko/140052/"
+      },
+      {
+        "sourcePlayerId": "211513",
+        "rawName": "Tom Lawrence",
+        "rawPosition": "LM, ST",
+        "rawOverall": "55",
+        "membershipEvidence": "source row club_name=Manchester United",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/211513/tom-lawrence/140052/"
+      },
+      {
+        "sourcePlayerId": "208450",
+        "rawName": "Andreas Pereira",
+        "rawPosition": "CAM, CM",
+        "rawOverall": "55",
+        "membershipEvidence": "source row club_name=Manchester United",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/208450/andreas-pereira/140052/"
+      },
+      {
+        "sourcePlayerId": "203271",
+        "rawName": "Charni Ekangamene",
+        "rawPosition": "CAM, LB",
+        "rawOverall": "53",
+        "membershipEvidence": "source row club_name=Manchester United",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/203271/charni-ekangamene/140052/"
+      },
+      {
+        "sourcePlayerId": "211514",
+        "rawName": "Reece James",
+        "rawPosition": "LB",
+        "rawOverall": "53",
+        "membershipEvidence": "source row club_name=Manchester United",
+        "identityStatus": "name-candidate-unconfirmed",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [
+          "reece-james"
+        ],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/211514/reece-james/140052/"
+      }
+    ]
+  },
+  "officialEventSnapshots": []
+}

@@ -1,0 +1,330 @@
+{
+  "candidateTeamSeason": "ac-milan-2018",
+  "actualTeamOrCountry": "AC Milan",
+  "actualLeagueOrType": "Serie A",
+  "plannedGroup": "story-club",
+  "referenceSeasonOrEvent": "2017/18",
+  "gameSnapshot": {
+    "gameVersion": "FIFA 18",
+    "targetRevisionReference": {
+      "platform": "SoFIFA",
+      "updateId": "180040",
+      "referenceDate": "2018-02-05",
+      "pageUrl": "https://sofifa.com/team/47/milan/180040",
+      "officialTeamRevisionConfirmed": true,
+      "note": "target; local cache is later r180084"
+    },
+    "versionConsistencyStatus": "later supplemental snapshot r180084 does not match target r180040",
+    "sourceCoverageStatus": "local-cache rows captured; does not establish complete authoritative squad coverage",
+    "sourceTeamName": "AC Milan",
+    "snapshotStatus": "captured-game-edition-snapshot",
+    "observedUpdateIds": [
+      "180084"
+    ],
+    "observedUpdateDate": "2018-09-12",
+    "membershipEvidence": "source row club_name=AC Milan in FIFA 18 edition dataset",
+    "capturedRowCount": 26,
+    "expectedSourcePageCount": 36,
+    "fifaIndexGameRosterAudit": {
+      "sourceName": "FIFAIndex team edition page",
+      "pageUrl": "https://fifaindex.com/teams/47-milan/fifa18",
+      "teamId": 47,
+      "gameVersion": "FIFA 18",
+      "listedPlayerCount": 36,
+      "revisionDate": null,
+      "revisionDateStatus": "not disclosed on cited FIFAIndex edition page; unknown",
+      "namesTranscribed": false,
+      "pageReadInSourceAudit": true,
+      "eventRosterComparison": null
+    },
+    "members": [
+      {
+        "sourcePlayerId": "184344",
+        "rawName": "Leonardo Bonucci",
+        "rawPosition": "CB",
+        "rawOverall": "86",
+        "membershipEvidence": "source row club_name=AC Milan",
+        "identityStatus": "confirmed-existing-by-exact-source-id",
+        "canonicalPlayerId": "leonardo-bonucci",
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/184344/leonardo-bonucci/180084/"
+      },
+      {
+        "sourcePlayerId": "230621",
+        "rawName": "Gianluigi Donnarumma",
+        "rawPosition": "GK",
+        "rawOverall": "82",
+        "membershipEvidence": "source row club_name=AC Milan",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/230621/gianluigi-donnarumma/180084/"
+      },
+      {
+        "sourcePlayerId": "202651",
+        "rawName": "Jesús Joaquín Fernández Sáez",
+        "rawPosition": "RW, CF",
+        "rawOverall": "82",
+        "membershipEvidence": "source row club_name=AC Milan",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/202651/jesus-joaquin-fernandez-saez/180084/"
+      },
+      {
+        "sourcePlayerId": "189125",
+        "rawName": "Giacomo Bonaventura",
+        "rawPosition": "CM, LW",
+        "rawOverall": "82",
+        "membershipEvidence": "source row club_name=AC Milan",
+        "identityStatus": "confirmed-existing-by-exact-source-id",
+        "canonicalPlayerId": "giacomo-bonaventura",
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/189125/giacomo-bonaventura/180084/"
+      },
+      {
+        "sourcePlayerId": "158963",
+        "rawName": "Lucas Biglia",
+        "rawPosition": "CDM, CM",
+        "rawOverall": "82",
+        "membershipEvidence": "source row club_name=AC Milan",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/158963/lucas-biglia/180084/"
+      },
+      {
+        "sourcePlayerId": "210413",
+        "rawName": "Alessio Romagnoli",
+        "rawPosition": "CB",
+        "rawOverall": "80",
+        "membershipEvidence": "source row club_name=AC Milan",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/210413/alessio-romagnoli/180084/"
+      },
+      {
+        "sourcePlayerId": "208128",
+        "rawName": "Hakan Çalhanoğlu",
+        "rawPosition": "LW, LM, CAM",
+        "rawOverall": "80",
+        "membershipEvidence": "source row club_name=AC Milan",
+        "identityStatus": "confirmed-existing-by-exact-source-id",
+        "canonicalPlayerId": "hakan-calhanoglu",
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/208128/hakan-calhanoglu/180084/"
+      },
+      {
+        "sourcePlayerId": "193352",
+        "rawName": "Ricardo Rodríguez",
+        "rawPosition": "LB, CB, LM",
+        "rawOverall": "80",
+        "membershipEvidence": "source row club_name=AC Milan",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/193352/ricardo-rodriguez/180084/"
+      },
+      {
+        "sourcePlayerId": "186547",
+        "rawName": "Mateo Musacchio",
+        "rawPosition": "CB",
+        "rawOverall": "80",
+        "membershipEvidence": "source row club_name=AC Milan",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/186547/mateo-musacchio/180084/"
+      },
+      {
+        "sourcePlayerId": "185431",
+        "rawName": "Nikola Kalinić",
+        "rawPosition": "ST",
+        "rawOverall": "79",
+        "membershipEvidence": "source row club_name=AC Milan",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/185431/nikola-kalinic/180084/"
+      },
+      {
+        "sourcePlayerId": "177983",
+        "rawName": "Cristian Zapata",
+        "rawPosition": "CB",
+        "rawOverall": "78",
+        "membershipEvidence": "source row club_name=AC Milan",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/177983/cristian-zapata/180084/"
+      },
+      {
+        "sourcePlayerId": "168312",
+        "rawName": "Ignazio Abate",
+        "rawPosition": "RB",
+        "rawOverall": "78",
+        "membershipEvidence": "source row club_name=AC Milan",
+        "identityStatus": "confirmed-existing-by-exact-source-id",
+        "canonicalPlayerId": "ignazio-abate",
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/168312/ignazio-abate/180084/"
+      },
+      {
+        "sourcePlayerId": "159287",
+        "rawName": "Riccardo Montolivo",
+        "rawPosition": "CDM, CM",
+        "rawOverall": "78",
+        "membershipEvidence": "source row club_name=AC Milan",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/159287/riccardo-montolivo/180084/"
+      },
+      {
+        "sourcePlayerId": "230938",
+        "rawName": "Franck Yannick Kessié",
+        "rawPosition": "CM, CDM",
+        "rawOverall": "77",
+        "membershipEvidence": "source row club_name=AC Milan",
+        "identityStatus": "confirmed-existing-by-exact-source-id",
+        "canonicalPlayerId": "franck-kessie",
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/230938/franck-yannick-kessie/180084/"
+      },
+      {
+        "sourcePlayerId": "228941",
+        "rawName": "André Miguel Valente da Silva",
+        "rawPosition": "ST",
+        "rawOverall": "77",
+        "membershipEvidence": "source row club_name=AC Milan",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/228941/andre-miguel-valente-da-silva/180084/"
+      },
+      {
+        "sourcePlayerId": "186200",
+        "rawName": "Fabio Borini",
+        "rawPosition": "LW, RM, ST",
+        "rawOverall": "76",
+        "membershipEvidence": "source row club_name=AC Milan",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/186200/fabio-borini/180084/"
+      },
+      {
+        "sourcePlayerId": "137854",
+        "rawName": "Marco Storari",
+        "rawPosition": "GK",
+        "rawOverall": "76",
+        "membershipEvidence": "source row club_name=AC Milan",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/137854/marco-storari/180084/"
+      },
+      {
+        "sourcePlayerId": "173204",
+        "rawName": "Luca Antonelli",
+        "rawPosition": "LB",
+        "rawOverall": "76",
+        "membershipEvidence": "source row club_name=AC Milan",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/173204/luca-antonelli/180084/"
+      },
+      {
+        "sourcePlayerId": "228881",
+        "rawName": "Davide Calabria",
+        "rawPosition": "RB",
+        "rawOverall": "75",
+        "membershipEvidence": "source row club_name=AC Milan",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/228881/davide-calabria/180084/"
+      },
+      {
+        "sourcePlayerId": "223329",
+        "rawName": "Andrea Conti",
+        "rawPosition": "RM, RB",
+        "rawOverall": "75",
+        "membershipEvidence": "source row club_name=AC Milan",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/223329/andrea-conti/180084/"
+      },
+      {
+        "sourcePlayerId": "222077",
+        "rawName": "Manuel Locatelli",
+        "rawPosition": "CDM",
+        "rawOverall": "74",
+        "membershipEvidence": "source row club_name=AC Milan",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/222077/manuel-locatelli/180084/"
+      },
+      {
+        "sourcePlayerId": "237715",
+        "rawName": "Patrick Cutrone",
+        "rawPosition": "ST",
+        "rawOverall": "74",
+        "membershipEvidence": "source row club_name=AC Milan",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/237715/patrick-cutrone/180084/"
+      },
+      {
+        "sourcePlayerId": "219998",
+        "rawName": "José Mauri",
+        "rawPosition": "CM, CDM",
+        "rawOverall": "71",
+        "membershipEvidence": "source row club_name=AC Milan",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/219998/jose-mauri/180084/"
+      },
+      {
+        "sourcePlayerId": "201179",
+        "rawName": "Antonio Donnarumma",
+        "rawPosition": "GK",
+        "rawOverall": "66",
+        "membershipEvidence": "source row club_name=AC Milan",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/201179/antonio-donnarumma/180084/"
+      },
+      {
+        "sourcePlayerId": "240277",
+        "rawName": "Matteo Gabbia",
+        "rawPosition": "CB",
+        "rawOverall": "61",
+        "membershipEvidence": "source row club_name=AC Milan",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/240277/matteo-gabbia/180084/"
+      },
+      {
+        "sourcePlayerId": "240276",
+        "rawName": "Alessandro Guarnone",
+        "rawPosition": "GK",
+        "rawOverall": "59",
+        "membershipEvidence": "source row club_name=AC Milan",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/240276/alessandro-guarnone/180084/"
+      }
+    ]
+  },
+  "officialEventSnapshots": []
+}

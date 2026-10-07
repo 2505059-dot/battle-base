@@ -1,0 +1,1093 @@
+{
+  "candidateTeamSeason": "belgium-2018",
+  "actualTeamOrCountry": "Belgium",
+  "actualLeagueOrType": "National team",
+  "plannedGroup": "national-team",
+  "referenceSeasonOrEvent": "2018 World Cup",
+  "gameSnapshot": {
+    "gameVersion": "FIFA 18",
+    "targetRevisionReference": null,
+    "versionConsistencyStatus": "FIFAIndex edition page identifies game version but does not disclose patch/update date",
+    "sourceCoverageStatus": "no exact team-name match in local cache; source data absence is not established",
+    "sourceTeamName": "Belgium",
+    "snapshotStatus": "no-exact-team-name-match-in-local-cache-source-coverage-unknown",
+    "observedUpdateIds": [],
+    "observedUpdateDate": null,
+    "membershipEvidence": "source row club_name=Belgium in FIFA 18 edition dataset",
+    "capturedRowCount": 0,
+    "expectedSourcePageCount": 30,
+    "fifaIndexGameRosterAudit": {
+      "sourceName": "FIFAIndex team edition page",
+      "pageUrl": "https://fifaindex.com/teams/1325-belgium/fifa18",
+      "teamId": 1325,
+      "gameVersion": "FIFA 18",
+      "listedPlayerCount": 30,
+      "revisionDate": null,
+      "revisionDateStatus": "not disclosed on cited FIFAIndex edition page; unknown",
+      "namesTranscribed": false,
+      "pageReadInSourceAudit": true,
+      "eventRosterComparison": {
+        "gameRosterSize": 30,
+        "officialRosterSize": 23,
+        "overlap": 23,
+        "gameOnlyCount": 7,
+        "gameOnlyNamesTranscribed": false
+      }
+    },
+    "members": []
+  },
+  "officialEventSnapshots": [
+    {
+      "rosterType": "official-event-roster",
+      "source": {
+        "sourceName": "FIFA 2018 official squad-list PDF mirror",
+        "title": "Russia 2018 official squad list; FIFA document header dated 2018-06-13 08:44",
+        "url": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF",
+        "officialConfirmationUrl": "https://inside.fifa.com/tournaments/mens/worldcup/2018russia/news/russia-2018-squads-officially-confirmed",
+        "competition": "2018 FIFA World Cup",
+        "publicationDate": "2018-06-13T08:44:00",
+        "pageContentReadInSourceAudit": true
+      },
+      "records": [
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Thibaut Courtois",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Belgium",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "name-candidate-unconfirmed",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [
+            "thibaut-courtois"
+          ],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF",
+          "rawSourceFields": {
+            "playerName": "Thibaut Courtois"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Toby Alderweireld",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Belgium",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF",
+          "rawSourceFields": {
+            "playerName": "Toby Alderweireld"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Thomas Vermaelen",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Belgium",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF",
+          "rawSourceFields": {
+            "playerName": "Thomas Vermaelen"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Vincent Kompany",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Belgium",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "name-candidate-unconfirmed",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [
+            "vincent-kompany"
+          ],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF",
+          "rawSourceFields": {
+            "playerName": "Vincent Kompany"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Jan Vertonghen",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Belgium",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF",
+          "rawSourceFields": {
+            "playerName": "Jan Vertonghen"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Axel Witsel",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Belgium",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF",
+          "rawSourceFields": {
+            "playerName": "Axel Witsel"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Kevin De Bruyne",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Belgium",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "name-candidate-unconfirmed",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [
+            "kevin-de-bruyne"
+          ],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF",
+          "rawSourceFields": {
+            "playerName": "Kevin De Bruyne"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Marouane Fellaini",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Belgium",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF",
+          "rawSourceFields": {
+            "playerName": "Marouane Fellaini"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Romelu Lukaku",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Belgium",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "name-candidate-unconfirmed",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [
+            "romelu-lukaku"
+          ],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF",
+          "rawSourceFields": {
+            "playerName": "Romelu Lukaku"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Eden Hazard",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Belgium",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "name-candidate-unconfirmed",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [
+            "eden-hazard"
+          ],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF",
+          "rawSourceFields": {
+            "playerName": "Eden Hazard"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Yannick Carrasco",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Belgium",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF",
+          "rawSourceFields": {
+            "playerName": "Yannick Carrasco"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Simon Mignolet",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Belgium",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF",
+          "rawSourceFields": {
+            "playerName": "Simon Mignolet"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Koen Casteels",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Belgium",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF",
+          "rawSourceFields": {
+            "playerName": "Koen Casteels"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Dries Mertens",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Belgium",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF",
+          "rawSourceFields": {
+            "playerName": "Dries Mertens"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Thomas Meunier",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Belgium",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF",
+          "rawSourceFields": {
+            "playerName": "Thomas Meunier"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Thorgan Hazard",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Belgium",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF",
+          "rawSourceFields": {
+            "playerName": "Thorgan Hazard"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Youri Tielemans",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Belgium",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF",
+          "rawSourceFields": {
+            "playerName": "Youri Tielemans"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Adnan Januzaj",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Belgium",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF",
+          "rawSourceFields": {
+            "playerName": "Adnan Januzaj"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Mousa Dembélé",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Belgium",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF",
+          "rawSourceFields": {
+            "playerName": "Mousa Dembélé"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Dedryck Boyata",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Belgium",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF",
+          "rawSourceFields": {
+            "playerName": "Dedryck Boyata"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Michy Batshuayi",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Belgium",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF",
+          "rawSourceFields": {
+            "playerName": "Michy Batshuayi"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Nacer Chadli",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Belgium",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF",
+          "rawSourceFields": {
+            "playerName": "Nacer Chadli"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Leander Dendoncker",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Belgium",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF",
+          "rawSourceFields": {
+            "playerName": "Leander Dendoncker"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+        }
+      ],
+      "replacements": []
+    }
+  ],
+  "supplementalAttributeCandidates": {
+    "sourceFile": "belgium-2018.event-attribute-candidates.sofifa.json",
+    "gameVersion": "FIFA 18",
+    "count": 22,
+    "matchRule": "exact normalized source long_name + exact source nationality; not proof of game national-team membership",
+    "unmatchedOfficialRosterNames": [
+      "mousadembele"
+    ],
+    "records": [
+      {
+        "sourcePlayerId": "192985",
+        "rawName": "Kevin De Bruyne",
+        "sourceNationality": "Belgium",
+        "sourceClubName": "Manchester City",
+        "rawPosition": "CAM, CM",
+        "rawOverall": "91",
+        "candidateEventRosterNames": [
+          {
+            "name": "Kevin De Bruyne",
+            "rosterType": "official-event-roster",
+            "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "confirmed-existing-by-exact-source-id",
+        "canonicalPlayerId": "kevin-de-bruyne",
+        "sourcePlayerPageUrl": "https://sofifa.com/player/192985/kevin-de-bruyne/180084/"
+      },
+      {
+        "sourcePlayerId": "183277",
+        "rawName": "Eden Hazard",
+        "sourceNationality": "Belgium",
+        "sourceClubName": "Chelsea FC",
+        "rawPosition": "LW, CF",
+        "rawOverall": "91",
+        "candidateEventRosterNames": [
+          {
+            "name": "Eden Hazard",
+            "rosterType": "official-event-roster",
+            "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "confirmed-existing-by-exact-source-id",
+        "canonicalPlayerId": "eden-hazard",
+        "sourcePlayerPageUrl": "https://sofifa.com/player/183277/eden-hazard/180084/"
+      },
+      {
+        "sourcePlayerId": "192119",
+        "rawName": "Thibaut Courtois",
+        "sourceNationality": "Belgium",
+        "sourceClubName": "Chelsea FC",
+        "rawPosition": "GK",
+        "rawOverall": "89",
+        "candidateEventRosterNames": [
+          {
+            "name": "Thibaut Courtois",
+            "rosterType": "official-event-roster",
+            "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "confirmed-existing-by-exact-source-id",
+        "canonicalPlayerId": "thibaut-courtois",
+        "sourcePlayerPageUrl": "https://sofifa.com/player/192119/thibaut-courtois/180084/"
+      },
+      {
+        "sourcePlayerId": "175943",
+        "rawName": "Dries Mertens",
+        "sourceNationality": "Belgium",
+        "sourceClubName": "SSC Napoli",
+        "rawPosition": "CF, ST",
+        "rawOverall": "87",
+        "candidateEventRosterNames": [
+          {
+            "name": "Dries Mertens",
+            "rosterType": "official-event-roster",
+            "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "sourcePlayerPageUrl": "https://sofifa.com/player/175943/dries-mertens/180084/"
+      },
+      {
+        "sourcePlayerId": "192505",
+        "rawName": "Romelu Lukaku",
+        "sourceNationality": "Belgium",
+        "sourceClubName": "Manchester United",
+        "rawPosition": "ST",
+        "rawOverall": "86",
+        "candidateEventRosterNames": [
+          {
+            "name": "Romelu Lukaku",
+            "rosterType": "official-event-roster",
+            "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "confirmed-existing-by-exact-source-id",
+        "canonicalPlayerId": "romelu-lukaku",
+        "sourcePlayerPageUrl": "https://sofifa.com/player/192505/romelu-lukaku/180084/"
+      },
+      {
+        "sourcePlayerId": "172871",
+        "rawName": "Jan Vertonghen",
+        "sourceNationality": "Belgium",
+        "sourceClubName": "Tottenham Hotspur",
+        "rawPosition": "CB",
+        "rawOverall": "86",
+        "candidateEventRosterNames": [
+          {
+            "name": "Jan Vertonghen",
+            "rosterType": "official-event-roster",
+            "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "sourcePlayerPageUrl": "https://sofifa.com/player/172871/jan-vertonghen/180084/"
+      },
+      {
+        "sourcePlayerId": "208418",
+        "rawName": "Yannick Carrasco",
+        "sourceNationality": "Belgium",
+        "sourceClubName": "",
+        "rawPosition": "LM, RM",
+        "rawOverall": "85",
+        "candidateEventRosterNames": [
+          {
+            "name": "Yannick Carrasco",
+            "rosterType": "official-event-roster",
+            "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "sourcePlayerPageUrl": "https://sofifa.com/player/208418/yannick-carrasco/180084/"
+      },
+      {
+        "sourcePlayerId": "184087",
+        "rawName": "Toby Alderweireld",
+        "sourceNationality": "Belgium",
+        "sourceClubName": "Tottenham Hotspur",
+        "rawPosition": "CB",
+        "rawOverall": "85",
+        "candidateEventRosterNames": [
+          {
+            "name": "Toby Alderweireld",
+            "rosterType": "official-event-roster",
+            "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "sourcePlayerPageUrl": "https://sofifa.com/player/184087/toby-alderweireld/180084/"
+      },
+      {
+        "sourcePlayerId": "139720",
+        "rawName": "Vincent Kompany",
+        "sourceNationality": "Belgium",
+        "sourceClubName": "Manchester City",
+        "rawPosition": "CB",
+        "rawOverall": "85",
+        "candidateEventRosterNames": [
+          {
+            "name": "Vincent Kompany",
+            "rosterType": "official-event-roster",
+            "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "confirmed-existing-by-exact-source-id",
+        "canonicalPlayerId": "vincent-kompany",
+        "sourcePlayerPageUrl": "https://sofifa.com/player/139720/vincent-kompany/180084/"
+      },
+      {
+        "sourcePlayerId": "203486",
+        "rawName": "Thorgan Hazard",
+        "sourceNationality": "Belgium",
+        "sourceClubName": "Borussia Mönchengladbach",
+        "rawPosition": "LM, RM, CF",
+        "rawOverall": "82",
+        "candidateEventRosterNames": [
+          {
+            "name": "Thorgan Hazard",
+            "rosterType": "official-event-roster",
+            "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "sourcePlayerPageUrl": "https://sofifa.com/player/203486/thorgan-hazard/180084/"
+      },
+      {
+        "sourcePlayerId": "177413",
+        "rawName": "Axel Witsel",
+        "sourceNationality": "Belgium",
+        "sourceClubName": "",
+        "rawPosition": "CM, CDM, CAM",
+        "rawOverall": "82",
+        "candidateEventRosterNames": [
+          {
+            "name": "Axel Witsel",
+            "rosterType": "official-event-roster",
+            "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "sourcePlayerPageUrl": "https://sofifa.com/player/177413/axel-witsel/180084/"
+      },
+      {
+        "sourcePlayerId": "204529",
+        "rawName": "Michy Batshuayi",
+        "sourceNationality": "Belgium",
+        "sourceClubName": "Borussia Dortmund",
+        "rawPosition": "ST",
+        "rawOverall": "81",
+        "candidateEventRosterNames": [
+          {
+            "name": "Michy Batshuayi",
+            "rosterType": "official-event-roster",
+            "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "sourcePlayerPageUrl": "https://sofifa.com/player/204529/michy-batshuayi/180084/"
+      },
+      {
+        "sourcePlayerId": "202371",
+        "rawName": "Thomas Meunier",
+        "sourceNationality": "Belgium",
+        "sourceClubName": "Paris Saint-Germain",
+        "rawPosition": "RB, RM",
+        "rawOverall": "81",
+        "candidateEventRosterNames": [
+          {
+            "name": "Thomas Meunier",
+            "rosterType": "official-event-roster",
+            "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "sourcePlayerPageUrl": "https://sofifa.com/player/202371/thomas-meunier/180084/"
+      },
+      {
+        "sourcePlayerId": "192984",
+        "rawName": "Koen Casteels",
+        "sourceNationality": "Belgium",
+        "sourceClubName": "VfL Wolfsburg",
+        "rawPosition": "GK",
+        "rawOverall": "80",
+        "candidateEventRosterNames": [
+          {
+            "name": "Koen Casteels",
+            "rosterType": "official-event-roster",
+            "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "sourcePlayerPageUrl": "https://sofifa.com/player/192984/koen-casteels/180084/"
+      },
+      {
+        "sourcePlayerId": "173426",
+        "rawName": "Simon Mignolet",
+        "sourceNationality": "Belgium",
+        "sourceClubName": "Liverpool FC",
+        "rawPosition": "GK",
+        "rawOverall": "80",
+        "candidateEventRosterNames": [
+          {
+            "name": "Simon Mignolet",
+            "rosterType": "official-event-roster",
+            "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "sourcePlayerPageUrl": "https://sofifa.com/player/173426/simon-mignolet/180084/"
+      },
+      {
+        "sourcePlayerId": "216393",
+        "rawName": "Youri Tielemans",
+        "sourceNationality": "Belgium",
+        "sourceClubName": "AS Monaco",
+        "rawPosition": "CM, CDM",
+        "rawOverall": "79",
+        "candidateEventRosterNames": [
+          {
+            "name": "Youri Tielemans",
+            "rosterType": "official-event-roster",
+            "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "sourcePlayerPageUrl": "https://sofifa.com/player/216393/youri-tielemans/180084/"
+      },
+      {
+        "sourcePlayerId": "208330",
+        "rawName": "Adnan Januzaj",
+        "sourceNationality": "Belgium",
+        "sourceClubName": "Real Sociedad",
+        "rawPosition": "RM, RW, LM, CAM",
+        "rawOverall": "79",
+        "candidateEventRosterNames": [
+          {
+            "name": "Adnan Januzaj",
+            "rosterType": "official-event-roster",
+            "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "sourcePlayerPageUrl": "https://sofifa.com/player/208330/adnan-januzaj/180084/"
+      },
+      {
+        "sourcePlayerId": "176944",
+        "rawName": "Marouane Fellaini",
+        "sourceNationality": "Belgium",
+        "sourceClubName": "Manchester United",
+        "rawPosition": "CM, CDM",
+        "rawOverall": "79",
+        "candidateEventRosterNames": [
+          {
+            "name": "Marouane Fellaini",
+            "rosterType": "official-event-roster",
+            "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "sourcePlayerPageUrl": "https://sofifa.com/player/176944/marouane-fellaini/180084/"
+      },
+      {
+        "sourcePlayerId": "200529",
+        "rawName": "Nacer Chadli",
+        "sourceNationality": "Belgium",
+        "sourceClubName": "West Bromwich Albion",
+        "rawPosition": "LM, RM, CAM",
+        "rawOverall": "78",
+        "candidateEventRosterNames": [
+          {
+            "name": "Nacer Chadli",
+            "rosterType": "official-event-roster",
+            "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "sourcePlayerPageUrl": "https://sofifa.com/player/200529/nacer-chadli/180084/"
+      },
+      {
+        "sourcePlayerId": "157304",
+        "rawName": "Thomas Vermaelen",
+        "sourceNationality": "Belgium",
+        "sourceClubName": "FC Barcelona",
+        "rawPosition": "CB, LB",
+        "rawOverall": "78",
+        "candidateEventRosterNames": [
+          {
+            "name": "Thomas Vermaelen",
+            "rosterType": "official-event-roster",
+            "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "sourcePlayerPageUrl": "https://sofifa.com/player/157304/thomas-vermaelen/180084/"
+      },
+      {
+        "sourcePlayerId": "212501",
+        "rawName": "Leander Dendoncker",
+        "sourceNationality": "Belgium",
+        "sourceClubName": "RSC Anderlecht",
+        "rawPosition": "CB, CDM, CM",
+        "rawOverall": "77",
+        "candidateEventRosterNames": [
+          {
+            "name": "Leander Dendoncker",
+            "rosterType": "official-event-roster",
+            "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "sourcePlayerPageUrl": "https://sofifa.com/player/212501/leander-dendoncker/180084/"
+      },
+      {
+        "sourcePlayerId": "197837",
+        "rawName": "Dedryck Boyata",
+        "sourceNationality": "Belgium",
+        "sourceClubName": "Celtic FC",
+        "rawPosition": "CB",
+        "rawOverall": "73",
+        "candidateEventRosterNames": [
+          {
+            "name": "Dedryck Boyata",
+            "rosterType": "official-event-roster",
+            "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "sourcePlayerPageUrl": "https://sofifa.com/player/197837/dedryck-boyata/180084/"
+      }
+    ]
+  }
+}

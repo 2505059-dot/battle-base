@@ -1,0 +1,93 @@
+{
+  "legacyBaseline": {
+    "source": "public/data/team-seasons.js",
+    "records": 554,
+    "dimensions": {
+      "overall": {
+        "present": 554,
+        "total": 554,
+        "min": 48,
+        "max": 96,
+        "mean": 84.56
+      },
+      "attack": {
+        "present": 554,
+        "total": 554,
+        "min": 12,
+        "max": 97,
+        "mean": 64.283
+      },
+      "creation": {
+        "present": 554,
+        "total": 554,
+        "min": 18,
+        "max": 98,
+        "mean": 72.439
+      },
+      "defense": {
+        "present": 554,
+        "total": 554,
+        "min": 8,
+        "max": 95,
+        "mean": 61.951
+      },
+      "physical": {
+        "present": 554,
+        "total": 554,
+        "min": 37,
+        "max": 94,
+        "mean": 75.798
+      },
+      "goalkeeping": {
+        "present": 554,
+        "total": 554,
+        "min": 2,
+        "max": 95,
+        "mean": 19.54
+      }
+    },
+    "isTrainingTruth": false,
+    "originStatus": "unknown_source_lineage"
+  },
+  "v2": {
+    "selectedSnapshots": 462,
+    "unavailable": 92,
+    "canonicalDetailedAttributeObservedCounts": {
+      "attacking_crossing": 429,
+      "attacking_finishing": 455,
+      "attacking_heading_accuracy": 172,
+      "attacking_short_passing": 172,
+      "attacking_volleys": 172,
+      "skill_dribbling": 462,
+      "skill_curve": 394,
+      "skill_fk_accuracy": 172,
+      "skill_long_passing": 172,
+      "skill_ball_control": 462,
+      "movement_acceleration": 429,
+      "movement_sprint_speed": 462,
+      "movement_agility": 394,
+      "movement_reactions": 462,
+      "movement_balance": 401,
+      "power_shot_power": 437,
+      "power_jumping": 394,
+      "power_stamina": 462,
+      "power_strength": 462,
+      "attacking_long_shots": 455,
+      "mentality_aggression": 462,
+      "mentality_interceptions": 386,
+      "mentality_positioning": 172,
+      "mentality_vision": 386,
+      "mentality_penalties": 394,
+      "mentality_composure": 338,
+      "defending_defensive_awareness": 172,
+      "defending_standing_tackle": 172,
+      "defending_sliding_tackle": 172,
+      "goalkeeping_diving": 455,
+      "goalkeeping_handling": 462,
+      "goalkeeping_kicking": 394,
+      "goalkeeping_positioning": 454,
+      "goalkeeping_reflexes": 437
+    }
+  },
+  "migrationRule": "Legacy six dimensions are retained for comparison only; no formula converts them into source observations or canonical detailed attributes."
+}

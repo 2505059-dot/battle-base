@@ -1,0 +1,59 @@
+{
+  "version": "1.0.0",
+  "teamSeasonYearSemantics": "Y is the full season ending in calendar year Y.",
+  "targetEditionOffset": 1,
+  "exactOrder": [
+    "y_plus_1",
+    "y_fallback"
+  ],
+  "boundedNearest": {
+    "enabled": true,
+    "maxAbsoluteOffsetFromTargetEdition": 2,
+    "excludedStrategies": [
+      "y_plus_1",
+      "y_fallback"
+    ],
+    "tieBreak": [
+      "prefer_later_edition",
+      "source_priority_ascending",
+      "source_id_ascending",
+      "source_row_number_ascending"
+    ],
+    "neverSelectBy": [
+      "overall",
+      "potential",
+      "attribute_mean"
+    ]
+  },
+  "sourcePriority": [
+    {
+      "sourceId": "lbenz-fifaindex",
+      "priority": 1,
+      "reason": "FIFA05/06 coverage and source-specific FIFAIndex IDs; payload is checksum-pinned but endpoint/version/license remain unresolved."
+    },
+    {
+      "sourceId": "mzafram-sofifa",
+      "priority": 2,
+      "reason": "Per-edition CSVs are pinned to the manifest repository commit; historical lineage and update vintage remain unresolved."
+    },
+    {
+      "sourceId": "stefano-legacy",
+      "priority": 3,
+      "reason": "Additional legacy observations including position ratings; archive version and underlying data rights remain unresolved."
+    },
+    {
+      "sourceId": "fifa18-demo",
+      "priority": 4,
+      "reason": "Single edition, listing schema differs from retrieved payload, and underlying rights remain unresolved."
+    }
+  ],
+  "selectionRequirements": [
+    "Select only a unique stable external ID match.",
+    "Never allow sourceClub to alter membershipClub.",
+    "Retain every eligible same-edition source observation even when another source is primary.",
+    "Duplicate source rows for the same player and edition are ambiguous unless the input record itself is uniquely identified.",
+    "An exact-year source with only a name candidate cannot be auto-selected."
+  ],
+  "updateDate": null,
+  "updateDateReason": "No single comparable update-date field exists across all sources. Preserve source-native update dates when available (currently Stefano fifa_update_date), but never use them to rank snapshots."
+}

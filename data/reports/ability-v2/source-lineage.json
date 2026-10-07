@@ -1,0 +1,521 @@
+{
+  "sourceManifestPath": "research/fifa-rating-audit/source-manifest.json",
+  "sourceManifestSha256": "57740836fbdaeba4248dee733f98341237ed378332206f9d418919aa77151097",
+  "manifestBaseline": null,
+  "sourceFiles": [
+    {
+      "cachePath": "research/cache/fifa-rating-audit/kaggle_fifa18_CompleteDataset.csv",
+      "url": "https://www.kaggle.com/api/v1/datasets/download/thec03u5/fifa-18-demo-player-dataset",
+      "bytes": 7695093,
+      "sha256": "b1018e12bea62c715bf09ab838cfa8512ef1e7afcb970be173237117257f84b1"
+    },
+    {
+      "cachePath": "research/cache/fifa-rating-audit/kaggle_fifa18_demo.zip",
+      "url": "https://www.kaggle.com/api/v1/datasets/download/thec03u5/fifa-18-demo-player-dataset",
+      "bytes": 4005705,
+      "sha256": "34df4bd41119ebe1796524b8c5f81a90a7252084e2a1ee8e2bf4a90f9fb38ae2"
+    },
+    {
+      "cachePath": "research/cache/fifa-rating-audit/lbenz_fifa05_20_player_stats.csv",
+      "url": "https://raw.githubusercontent.com/lbenz730/fifa_model/master/player_stats.csv",
+      "bytes": 62733624,
+      "sha256": "90403e4a7d30e94198b4c031d805fe06f170833efcae0d738e04108bba436758"
+    },
+    {
+      "cachePath": "research/cache/fifa-rating-audit/mzafram_FC24.csv",
+      "url": "https://raw.githubusercontent.com/mzafram2001/ea-fc/90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0/data/dataset_ea_fc_24.csv",
+      "bytes": 5761637,
+      "sha256": "1ddeb423c9271c50a301fde6fccca8aa19d1c11d8a92f3a25f5a5cec93f0e65b"
+    },
+    {
+      "cachePath": "research/cache/fifa-rating-audit/mzafram_FC25.csv",
+      "url": "https://raw.githubusercontent.com/mzafram2001/ea-fc/90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0/data/dataset_ea_fc_25.csv",
+      "bytes": 5703530,
+      "sha256": "1b7794c5e6dca9c93f814ca89c3dbbd0e99648927bd670150be70a40e579a2b5"
+    },
+    {
+      "cachePath": "research/cache/fifa-rating-audit/mzafram_FIFA07.csv",
+      "url": "https://raw.githubusercontent.com/mzafram2001/ea-fc/90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0/data/dataset_fifa_07.csv",
+      "bytes": 2898882,
+      "sha256": "945761dfce3f7c250fe3f902e824fcf477e48e64307ba37afd572756a5ee7836"
+    },
+    {
+      "cachePath": "research/cache/fifa-rating-audit/mzafram_FIFA08.csv",
+      "url": "https://raw.githubusercontent.com/mzafram2001/ea-fc/90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0/data/dataset_fifa_08.csv",
+      "bytes": 3440684,
+      "sha256": "1a96b04b03447d925707a646e3b6d4c91304255ab5c621b7b9e2109534df1423"
+    },
+    {
+      "cachePath": "research/cache/fifa-rating-audit/mzafram_FIFA09.csv",
+      "url": "https://raw.githubusercontent.com/mzafram2001/ea-fc/90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0/data/dataset_fifa_09.csv",
+      "bytes": 4359033,
+      "sha256": "4aca59d976167ab3b9079298587e11aeccc9a16e2baf7c67ae35ddb367a6c2d8"
+    },
+    {
+      "cachePath": "research/cache/fifa-rating-audit/mzafram_FIFA10.csv",
+      "url": "https://raw.githubusercontent.com/mzafram2001/ea-fc/90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0/data/dataset_fifa_10.csv",
+      "bytes": 4499766,
+      "sha256": "4cac8ff557238aa965e96a4b746e7eb8eb0401bd37ab86752f9b180f4f0f3e6f"
+    },
+    {
+      "cachePath": "research/cache/fifa-rating-audit/mzafram_FIFA11.csv",
+      "url": "https://raw.githubusercontent.com/mzafram2001/ea-fc/90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0/data/dataset_fifa_11.csv",
+      "bytes": 4411119,
+      "sha256": "2759c693ffcc4822d5a4516981681c19715ce2569b2e3f1700c89c33c99c7ae8"
+    },
+    {
+      "cachePath": "research/cache/fifa-rating-audit/mzafram_FIFA12.csv",
+      "url": "https://raw.githubusercontent.com/mzafram2001/ea-fc/90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0/data/dataset_fifa_12.csv",
+      "bytes": 4286908,
+      "sha256": "97be5e33fed7b9fd77023a48aaf6b4ec34ed8430453c6b0d4bfd90be8944f9aa"
+    },
+    {
+      "cachePath": "research/cache/fifa-rating-audit/mzafram_FIFA13.csv",
+      "url": "https://raw.githubusercontent.com/mzafram2001/ea-fc/90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0/data/dataset_fifa_13.csv",
+      "bytes": 4417984,
+      "sha256": "532bc125dc33b9fccb388ffeac83f5f0193fecf6b0a0f1d9e3e4f532b9fe9671"
+    },
+    {
+      "cachePath": "research/cache/fifa-rating-audit/mzafram_FIFA14.csv",
+      "url": "https://raw.githubusercontent.com/mzafram2001/ea-fc/90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0/data/dataset_fifa_14.csv",
+      "bytes": 4881236,
+      "sha256": "8c6526c72be2ecd5f7a41d3ebb61e2346320b060b03334a37f6a1f2bb90d4044"
+    },
+    {
+      "cachePath": "research/cache/fifa-rating-audit/mzafram_FIFA15.csv",
+      "url": "https://raw.githubusercontent.com/mzafram2001/ea-fc/90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0/data/dataset_fifa_15.csv",
+      "bytes": 4824967,
+      "sha256": "c127ea2d9ad240ae0b7d8b29e8eb2ed22b289cd71381846b3279e2f5e96ad74e"
+    },
+    {
+      "cachePath": "research/cache/fifa-rating-audit/mzafram_FIFA16.csv",
+      "url": "https://raw.githubusercontent.com/mzafram2001/ea-fc/90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0/data/dataset_fifa_16.csv",
+      "bytes": 5017554,
+      "sha256": "688a706ef1fcdff37a89642c1101ee769f3ade9a876c41a8e3cd392cd23c5ba6"
+    },
+    {
+      "cachePath": "research/cache/fifa-rating-audit/mzafram_FIFA17.csv",
+      "url": "https://raw.githubusercontent.com/mzafram2001/ea-fc/90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0/data/dataset_fifa_17.csv",
+      "bytes": 5187386,
+      "sha256": "028387a40c72ff89f4d0ef798df1231edaafaaefdff856944c77a8bf556a93d9"
+    },
+    {
+      "cachePath": "research/cache/fifa-rating-audit/mzafram_FIFA18.csv",
+      "url": "https://raw.githubusercontent.com/mzafram2001/ea-fc/90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0/data/dataset_fifa_18.csv",
+      "bytes": 5308580,
+      "sha256": "9ebe3b423d6679cdb2352bba3b7d4eea852b5d91ecf5e5e8fffd1e407ce8ba2f"
+    },
+    {
+      "cachePath": "research/cache/fifa-rating-audit/mzafram_FIFA19.csv",
+      "url": "https://raw.githubusercontent.com/mzafram2001/ea-fc/90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0/data/dataset_fifa_19.csv",
+      "bytes": 5305437,
+      "sha256": "5e0d91768dd5dd65d8fcacf9231104faf095496577013ad06980460ef17f8516"
+    },
+    {
+      "cachePath": "research/cache/fifa-rating-audit/mzafram_FIFA20.csv",
+      "url": "https://raw.githubusercontent.com/mzafram2001/ea-fc/90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0/data/dataset_fifa_20.csv",
+      "bytes": 5463083,
+      "sha256": "084911f02fb106504ae46b8419ca8efb43357ad1aad219407962b2c972c9c959"
+    },
+    {
+      "cachePath": "research/cache/fifa-rating-audit/mzafram_FIFA21.csv",
+      "url": "https://raw.githubusercontent.com/mzafram2001/ea-fc/90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0/data/dataset_fifa_21.csv",
+      "bytes": 5463195,
+      "sha256": "e85bb9ffeb3e8934365f493bee080dc87c256df0e4f7814157b5fa4d95cb56a4"
+    },
+    {
+      "cachePath": "research/cache/fifa-rating-audit/mzafram_FIFA22.csv",
+      "url": "https://raw.githubusercontent.com/mzafram2001/ea-fc/90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0/data/dataset_fifa_22.csv",
+      "bytes": 5464693,
+      "sha256": "8a5b98643b3c6fac0afc1ed5499889ce2ca0f89f7eb69a37af6d95af5288b65f"
+    },
+    {
+      "cachePath": "research/cache/fifa-rating-audit/mzafram_FIFA23.csv",
+      "url": "https://raw.githubusercontent.com/mzafram2001/ea-fc/90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0/data/dataset_fifa_23.csv",
+      "bytes": 5458116,
+      "sha256": "14561b7be4456c9827c50632d2ac75a2bde0c60a25a46441787f8ac2c14e630c"
+    },
+    {
+      "cachePath": "research/cache/fifa-rating-audit/stefanoleone_fifa23_complete.zip",
+      "url": "https://www.kaggle.com/api/v1/datasets/download/stefanoleone992/fifa-23-complete-player-dataset",
+      "bytes": 1696543355,
+      "sha256": "1395ffeb21654873993367b1b09db450f4f4cb946e9a2e31233256ffdac59adc"
+    }
+  ],
+  "extractedMembers": [
+    {
+      "path": "research/cache/fifa-rating-audit/kaggle_fifa18_CompleteDataset.csv",
+      "member": "CompleteDataset.csv",
+      "bytes": 7695093,
+      "sha256": "b1018e12bea62c715bf09ab838cfa8512ef1e7afcb970be173237117257f84b1",
+      "archiveSha256": "34df4bd41119ebe1796524b8c5f81a90a7252084e2a1ee8e2bf4a90f9fb38ae2"
+    },
+    {
+      "path": "research/cache/fifa-rating-audit/stefanoleone_legacy_member.csv",
+      "member": "male_players (legacy).csv",
+      "bytes": 90933390,
+      "sha256": "13389f463935d257e92811eebbd50405df1a982aa45233a63d1ce075daca133e",
+      "archiveSha256": "1395ffeb21654873993367b1b09db450f4f4cb946e9a2e31233256ffdac59adc"
+    }
+  ],
+  "scans": [
+    {
+      "sourceId": "fifa18-demo",
+      "sourcePath": "research/cache/fifa-rating-audit/kaggle_fifa18_CompleteDataset.csv",
+      "sourceMember": "CompleteDataset.csv",
+      "sourceMemberSha256": "b1018e12bea62c715bf09ab838cfa8512ef1e7afcb970be173237117257f84b1",
+      "sourceArchiveSha256": "34df4bd41119ebe1796524b8c5f81a90a7252084e2a1ee8e2bf4a90f9fb38ae2",
+      "sourceUrl": "https://www.kaggle.com/api/v1/datasets/download/thec03u5/fifa-18-demo-player-dataset",
+      "sourceVersion": null,
+      "sourceVersionReason": "The dataset listing has no immutable revision; exact extracted payload bytes are pinned by the manifest.",
+      "payloadSha256": "b1018e12bea62c715bf09ab838cfa8512ef1e7afcb970be173237117257f84b1",
+      "licenseStatus": "listing declares CC BY-NC-SA 4.0; underlying SoFIFA rights unresolved",
+      "rowsScanned": 17981,
+      "targetObservations": 123,
+      "stableIdObservations": 113,
+      "nameOrAmbiguousCandidates": 10
+    },
+    {
+      "sourceId": "lbenz-fifaindex",
+      "sourcePath": "research/cache/fifa-rating-audit/lbenz_fifa05_20_player_stats.csv",
+      "sourceMember": null,
+      "sourceMemberSha256": null,
+      "sourceArchiveSha256": null,
+      "sourceUrl": "https://raw.githubusercontent.com/lbenz730/fifa_model/master/player_stats.csv",
+      "sourceVersion": null,
+      "sourceVersionReason": "The upstream master URL is mutable and supplies no pinned commit or release; exact payload SHA-256 pins the retrieved file.",
+      "payloadSha256": "90403e4a7d30e94198b4c031d805fe06f170833efcae0d738e04108bba436758",
+      "licenseStatus": null,
+      "rowsScanned": 168146,
+      "targetObservations": 1693,
+      "stableIdObservations": 1409,
+      "nameOrAmbiguousCandidates": 284
+    },
+    {
+      "sourceId": "mzafram-sofifa",
+      "sourcePath": "research/cache/fifa-rating-audit/mzafram_FC24.csv",
+      "sourceMember": null,
+      "sourceMemberSha256": null,
+      "sourceArchiveSha256": null,
+      "sourceUrl": "https://raw.githubusercontent.com/mzafram2001/ea-fc/90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0/data/dataset_ea_fc_24.csv",
+      "sourceVersion": "90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0",
+      "sourceVersionReason": null,
+      "payloadSha256": "1ddeb423c9271c50a301fde6fccca8aa19d1c11d8a92f3a25f5a5cec93f0e65b",
+      "licenseStatus": null,
+      "rowsScanned": 18508,
+      "targetObservations": 126,
+      "stableIdObservations": 124,
+      "nameOrAmbiguousCandidates": 2
+    },
+    {
+      "sourceId": "mzafram-sofifa",
+      "sourcePath": "research/cache/fifa-rating-audit/mzafram_FC25.csv",
+      "sourceMember": null,
+      "sourceMemberSha256": null,
+      "sourceArchiveSha256": null,
+      "sourceUrl": "https://raw.githubusercontent.com/mzafram2001/ea-fc/90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0/data/dataset_ea_fc_25.csv",
+      "sourceVersion": "90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0",
+      "sourceVersionReason": null,
+      "payloadSha256": "1b7794c5e6dca9c93f814ca89c3dbbd0e99648927bd670150be70a40e579a2b5",
+      "licenseStatus": null,
+      "rowsScanned": 18507,
+      "targetObservations": 95,
+      "stableIdObservations": 94,
+      "nameOrAmbiguousCandidates": 1
+    },
+    {
+      "sourceId": "mzafram-sofifa",
+      "sourcePath": "research/cache/fifa-rating-audit/mzafram_FIFA07.csv",
+      "sourceMember": null,
+      "sourceMemberSha256": null,
+      "sourceArchiveSha256": null,
+      "sourceUrl": "https://raw.githubusercontent.com/mzafram2001/ea-fc/90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0/data/dataset_fifa_07.csv",
+      "sourceVersion": "90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0",
+      "sourceVersionReason": null,
+      "payloadSha256": "945761dfce3f7c250fe3f902e824fcf477e48e64307ba37afd572756a5ee7836",
+      "licenseStatus": null,
+      "rowsScanned": 10907,
+      "targetObservations": 71,
+      "stableIdObservations": 36,
+      "nameOrAmbiguousCandidates": 35
+    },
+    {
+      "sourceId": "mzafram-sofifa",
+      "sourcePath": "research/cache/fifa-rating-audit/mzafram_FIFA08.csv",
+      "sourceMember": null,
+      "sourceMemberSha256": null,
+      "sourceArchiveSha256": null,
+      "sourceUrl": "https://raw.githubusercontent.com/mzafram2001/ea-fc/90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0/data/dataset_fifa_08.csv",
+      "sourceVersion": "90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0",
+      "sourceVersionReason": null,
+      "payloadSha256": "1a96b04b03447d925707a646e3b6d4c91304255ab5c621b7b9e2109534df1423",
+      "licenseStatus": null,
+      "rowsScanned": 12800,
+      "targetObservations": 62,
+      "stableIdObservations": 42,
+      "nameOrAmbiguousCandidates": 20
+    },
+    {
+      "sourceId": "mzafram-sofifa",
+      "sourcePath": "research/cache/fifa-rating-audit/mzafram_FIFA09.csv",
+      "sourceMember": null,
+      "sourceMemberSha256": null,
+      "sourceArchiveSha256": null,
+      "sourceUrl": "https://raw.githubusercontent.com/mzafram2001/ea-fc/90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0/data/dataset_fifa_09.csv",
+      "sourceVersion": "90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0",
+      "sourceVersionReason": null,
+      "payloadSha256": "4aca59d976167ab3b9079298587e11aeccc9a16e2baf7c67ae35ddb367a6c2d8",
+      "licenseStatus": null,
+      "rowsScanned": 16198,
+      "targetObservations": 58,
+      "stableIdObservations": 43,
+      "nameOrAmbiguousCandidates": 15
+    },
+    {
+      "sourceId": "mzafram-sofifa",
+      "sourcePath": "research/cache/fifa-rating-audit/mzafram_FIFA10.csv",
+      "sourceMember": null,
+      "sourceMemberSha256": null,
+      "sourceArchiveSha256": null,
+      "sourceUrl": "https://raw.githubusercontent.com/mzafram2001/ea-fc/90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0/data/dataset_fifa_10.csv",
+      "sourceVersion": "90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0",
+      "sourceVersionReason": null,
+      "payloadSha256": "4cac8ff557238aa965e96a4b746e7eb8eb0401bd37ab86752f9b180f4f0f3e6f",
+      "licenseStatus": null,
+      "rowsScanned": 16700,
+      "targetObservations": 75,
+      "stableIdObservations": 61,
+      "nameOrAmbiguousCandidates": 14
+    },
+    {
+      "sourceId": "mzafram-sofifa",
+      "sourcePath": "research/cache/fifa-rating-audit/mzafram_FIFA11.csv",
+      "sourceMember": null,
+      "sourceMemberSha256": null,
+      "sourceArchiveSha256": null,
+      "sourceUrl": "https://raw.githubusercontent.com/mzafram2001/ea-fc/90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0/data/dataset_fifa_11.csv",
+      "sourceVersion": "90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0",
+      "sourceVersionReason": null,
+      "payloadSha256": "2759c693ffcc4822d5a4516981681c19715ce2569b2e3f1700c89c33c99c7ae8",
+      "licenseStatus": null,
+      "rowsScanned": 15204,
+      "targetObservations": 89,
+      "stableIdObservations": 89,
+      "nameOrAmbiguousCandidates": 0
+    },
+    {
+      "sourceId": "mzafram-sofifa",
+      "sourcePath": "research/cache/fifa-rating-audit/mzafram_FIFA12.csv",
+      "sourceMember": null,
+      "sourceMemberSha256": null,
+      "sourceArchiveSha256": null,
+      "sourceUrl": "https://raw.githubusercontent.com/mzafram2001/ea-fc/90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0/data/dataset_fifa_12.csv",
+      "sourceVersion": "90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0",
+      "sourceVersionReason": null,
+      "payloadSha256": "97be5e33fed7b9fd77023a48aaf6b4ec34ed8430453c6b0d4bfd90be8944f9aa",
+      "licenseStatus": null,
+      "rowsScanned": 14455,
+      "targetObservations": 97,
+      "stableIdObservations": 97,
+      "nameOrAmbiguousCandidates": 0
+    },
+    {
+      "sourceId": "mzafram-sofifa",
+      "sourcePath": "research/cache/fifa-rating-audit/mzafram_FIFA13.csv",
+      "sourceMember": null,
+      "sourceMemberSha256": null,
+      "sourceArchiveSha256": null,
+      "sourceUrl": "https://raw.githubusercontent.com/mzafram2001/ea-fc/90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0/data/dataset_fifa_13.csv",
+      "sourceVersion": "90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0",
+      "sourceVersionReason": null,
+      "payloadSha256": "532bc125dc33b9fccb388ffeac83f5f0193fecf6b0a0f1d9e3e4f532b9fe9671",
+      "licenseStatus": null,
+      "rowsScanned": 14975,
+      "targetObservations": 103,
+      "stableIdObservations": 103,
+      "nameOrAmbiguousCandidates": 0
+    },
+    {
+      "sourceId": "mzafram-sofifa",
+      "sourcePath": "research/cache/fifa-rating-audit/mzafram_FIFA14.csv",
+      "sourceMember": null,
+      "sourceMemberSha256": null,
+      "sourceArchiveSha256": null,
+      "sourceUrl": "https://raw.githubusercontent.com/mzafram2001/ea-fc/90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0/data/dataset_fifa_14.csv",
+      "sourceVersion": "90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0",
+      "sourceVersionReason": null,
+      "payloadSha256": "8c6526c72be2ecd5f7a41d3ebb61e2346320b060b03334a37f6a1f2bb90d4044",
+      "licenseStatus": null,
+      "rowsScanned": 16607,
+      "targetObservations": 121,
+      "stableIdObservations": 120,
+      "nameOrAmbiguousCandidates": 1
+    },
+    {
+      "sourceId": "mzafram-sofifa",
+      "sourcePath": "research/cache/fifa-rating-audit/mzafram_FIFA15.csv",
+      "sourceMember": null,
+      "sourceMemberSha256": null,
+      "sourceArchiveSha256": null,
+      "sourceUrl": "https://raw.githubusercontent.com/mzafram2001/ea-fc/90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0/data/dataset_fifa_15.csv",
+      "sourceVersion": "90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0",
+      "sourceVersionReason": null,
+      "payloadSha256": "c127ea2d9ad240ae0b7d8b29e8eb2ed22b289cd71381846b3279e2f5e96ad74e",
+      "licenseStatus": null,
+      "rowsScanned": 16423,
+      "targetObservations": 130,
+      "stableIdObservations": 128,
+      "nameOrAmbiguousCandidates": 2
+    },
+    {
+      "sourceId": "mzafram-sofifa",
+      "sourcePath": "research/cache/fifa-rating-audit/mzafram_FIFA16.csv",
+      "sourceMember": null,
+      "sourceMemberSha256": null,
+      "sourceArchiveSha256": null,
+      "sourceUrl": "https://raw.githubusercontent.com/mzafram2001/ea-fc/90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0/data/dataset_fifa_16.csv",
+      "sourceVersion": "90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0",
+      "sourceVersionReason": null,
+      "payloadSha256": "688a706ef1fcdff37a89642c1101ee769f3ade9a876c41a8e3cd392cd23c5ba6",
+      "licenseStatus": null,
+      "rowsScanned": 17026,
+      "targetObservations": 132,
+      "stableIdObservations": 131,
+      "nameOrAmbiguousCandidates": 1
+    },
+    {
+      "sourceId": "mzafram-sofifa",
+      "sourcePath": "research/cache/fifa-rating-audit/mzafram_FIFA17.csv",
+      "sourceMember": null,
+      "sourceMemberSha256": null,
+      "sourceArchiveSha256": null,
+      "sourceUrl": "https://raw.githubusercontent.com/mzafram2001/ea-fc/90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0/data/dataset_fifa_17.csv",
+      "sourceVersion": "90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0",
+      "sourceVersionReason": null,
+      "payloadSha256": "028387a40c72ff89f4d0ef798df1231edaafaaefdff856944c77a8bf556a93d9",
+      "licenseStatus": null,
+      "rowsScanned": 17540,
+      "targetObservations": 103,
+      "stableIdObservations": 101,
+      "nameOrAmbiguousCandidates": 2
+    },
+    {
+      "sourceId": "mzafram-sofifa",
+      "sourcePath": "research/cache/fifa-rating-audit/mzafram_FIFA18.csv",
+      "sourceMember": null,
+      "sourceMemberSha256": null,
+      "sourceArchiveSha256": null,
+      "sourceUrl": "https://raw.githubusercontent.com/mzafram2001/ea-fc/90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0/data/dataset_fifa_18.csv",
+      "sourceVersion": "90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0",
+      "sourceVersionReason": null,
+      "payloadSha256": "9ebe3b423d6679cdb2352bba3b7d4eea852b5d91ecf5e5e8fffd1e407ce8ba2f",
+      "licenseStatus": null,
+      "rowsScanned": 17943,
+      "targetObservations": 114,
+      "stableIdObservations": 112,
+      "nameOrAmbiguousCandidates": 2
+    },
+    {
+      "sourceId": "mzafram-sofifa",
+      "sourcePath": "research/cache/fifa-rating-audit/mzafram_FIFA19.csv",
+      "sourceMember": null,
+      "sourceMemberSha256": null,
+      "sourceArchiveSha256": null,
+      "sourceUrl": "https://raw.githubusercontent.com/mzafram2001/ea-fc/90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0/data/dataset_fifa_19.csv",
+      "sourceVersion": "90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0",
+      "sourceVersionReason": null,
+      "payloadSha256": "5e0d91768dd5dd65d8fcacf9231104faf095496577013ad06980460ef17f8516",
+      "licenseStatus": null,
+      "rowsScanned": 17958,
+      "targetObservations": 122,
+      "stableIdObservations": 121,
+      "nameOrAmbiguousCandidates": 1
+    },
+    {
+      "sourceId": "mzafram-sofifa",
+      "sourcePath": "research/cache/fifa-rating-audit/mzafram_FIFA20.csv",
+      "sourceMember": null,
+      "sourceMemberSha256": null,
+      "sourceArchiveSha256": null,
+      "sourceUrl": "https://raw.githubusercontent.com/mzafram2001/ea-fc/90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0/data/dataset_fifa_20.csv",
+      "sourceVersion": "90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0",
+      "sourceVersionReason": null,
+      "payloadSha256": "084911f02fb106504ae46b8419ca8efb43357ad1aad219407962b2c972c9c959",
+      "licenseStatus": null,
+      "rowsScanned": 18490,
+      "targetObservations": 136,
+      "stableIdObservations": 134,
+      "nameOrAmbiguousCandidates": 2
+    },
+    {
+      "sourceId": "mzafram-sofifa",
+      "sourcePath": "research/cache/fifa-rating-audit/mzafram_FIFA21.csv",
+      "sourceMember": null,
+      "sourceMemberSha256": null,
+      "sourceArchiveSha256": null,
+      "sourceUrl": "https://raw.githubusercontent.com/mzafram2001/ea-fc/90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0/data/dataset_fifa_21.csv",
+      "sourceVersion": "90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0",
+      "sourceVersionReason": null,
+      "payloadSha256": "e85bb9ffeb3e8934365f493bee080dc87c256df0e4f7814157b5fa4d95cb56a4",
+      "licenseStatus": null,
+      "rowsScanned": 18483,
+      "targetObservations": 145,
+      "stableIdObservations": 143,
+      "nameOrAmbiguousCandidates": 2
+    },
+    {
+      "sourceId": "mzafram-sofifa",
+      "sourcePath": "research/cache/fifa-rating-audit/mzafram_FIFA22.csv",
+      "sourceMember": null,
+      "sourceMemberSha256": null,
+      "sourceArchiveSha256": null,
+      "sourceUrl": "https://raw.githubusercontent.com/mzafram2001/ea-fc/90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0/data/dataset_fifa_22.csv",
+      "sourceVersion": "90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0",
+      "sourceVersionReason": null,
+      "payloadSha256": "8a5b98643b3c6fac0afc1ed5499889ce2ca0f89f7eb69a37af6d95af5288b65f",
+      "licenseStatus": null,
+      "rowsScanned": 18474,
+      "targetObservations": 180,
+      "stableIdObservations": 178,
+      "nameOrAmbiguousCandidates": 2
+    },
+    {
+      "sourceId": "mzafram-sofifa",
+      "sourcePath": "research/cache/fifa-rating-audit/mzafram_FIFA23.csv",
+      "sourceMember": null,
+      "sourceMemberSha256": null,
+      "sourceArchiveSha256": null,
+      "sourceUrl": "https://raw.githubusercontent.com/mzafram2001/ea-fc/90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0/data/dataset_fifa_23.csv",
+      "sourceVersion": "90c4a0dd4423803ec5d025a8a3611fae2fe7dbf0",
+      "sourceVersionReason": null,
+      "payloadSha256": "14561b7be4456c9827c50632d2ac75a2bde0c60a25a46441787f8ac2c14e630c",
+      "licenseStatus": null,
+      "rowsScanned": 18462,
+      "targetObservations": 165,
+      "stableIdObservations": 163,
+      "nameOrAmbiguousCandidates": 2
+    },
+    {
+      "sourceId": "stefano-legacy",
+      "sourcePath": "research/cache/fifa-rating-audit/stefanoleone_legacy_member.csv",
+      "sourceMember": "male_players (legacy).csv",
+      "sourceMemberSha256": "13389f463935d257e92811eebbd50405df1a982aa45233a63d1ce075daca133e",
+      "sourceArchiveSha256": "1395ffeb21654873993367b1b09db450f4f4cb946e9a2e31233256ffdac59adc",
+      "sourceUrl": "https://www.kaggle.com/api/v1/datasets/download/stefanoleone992/fifa-23-complete-player-dataset",
+      "sourceVersion": null,
+      "sourceVersionReason": "Kaggle archive version identifier is unavailable; exact archive bytes are pinned by the manifest.",
+      "payloadSha256": "1395ffeb21654873993367b1b09db450f4f4cb946e9a2e31233256ffdac59adc",
+      "licenseStatus": "listing declares CC0; underlying FIFA/SoFIFA rights unresolved",
+      "rowsScanned": 161583,
+      "targetObservations": 1224,
+      "stableIdObservations": 1220,
+      "nameOrAmbiguousCandidates": 4
+    }
+  ],
+  "limits": [
+    "The manifest pins downloaded bytes; it does not resolve underlying FIFA/SoFIFA rights.",
+    "lbenz upstream revision is mutable; exact retrieved payload is hash-pinned.",
+    "Source edition is not an update date; updateDate remains null with a reason.",
+    "Name matches are retained only as low-confidence candidates and never selected."
+  ]
+}

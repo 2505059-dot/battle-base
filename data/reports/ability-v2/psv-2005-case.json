@@ -1,0 +1,713 @@
+{
+  "teamSeasonId": "psv-2005",
+  "teamSeasonYear": 2005,
+  "targetEditionYear": 2006,
+  "players": [
+    {
+      "playerSeasonId": "psv-2005-0",
+      "canonicalPlayerId": "heurelho-gomes",
+      "auditName": "Heurelho Gomes",
+      "membershipClub": "PSV",
+      "selectedSnapshot": {
+        "strategy": "y_plus_1",
+        "actualEditionYear": 2006,
+        "observationId": "lbenz-fifaindex:2006:11671:psv-2005-0"
+      },
+      "sourceObservations": [
+        {
+          "editionYear": 2005,
+          "sourcePlayerId": "135451",
+          "sourceName": "Heurelho Gomes",
+          "sourceClub": "PSV Eindhoven",
+          "rawOverall": "74",
+          "rowNumber": 1394,
+          "identityMatch": {
+            "status": "stable_external_id",
+            "keyType": "fifaIndex",
+            "confidence": "high"
+          }
+        },
+        {
+          "editionYear": 2006,
+          "sourcePlayerId": "135451",
+          "sourceName": "Gomes",
+          "sourceClub": "PSV Eindhoven",
+          "rawOverall": "78",
+          "rowNumber": 11671,
+          "identityMatch": {
+            "status": "stable_external_id",
+            "keyType": "fifaIndex",
+            "confidence": "high"
+          }
+        },
+        {
+          "editionYear": 2007,
+          "sourcePlayerId": "135451",
+          "sourceName": "Gomes",
+          "sourceClub": "PSV Eindhoven",
+          "rawOverall": "80",
+          "rowNumber": 21580,
+          "identityMatch": {
+            "status": "stable_external_id",
+            "keyType": "fifaIndex",
+            "confidence": "high"
+          }
+        }
+      ]
+    },
+    {
+      "playerSeasonId": "psv-2005-1",
+      "canonicalPlayerId": "alex",
+      "auditName": "Alex",
+      "membershipClub": "PSV",
+      "selectedSnapshot": {
+        "strategy": "y_plus_1",
+        "actualEditionYear": 2006,
+        "observationId": "lbenz-fifaindex:2006:11462:psv-2005-1"
+      },
+      "sourceObservations": [
+        {
+          "editionYear": 2005,
+          "sourcePlayerId": "136130",
+          "sourceName": "Alex",
+          "sourceClub": "PSV Eindhoven",
+          "rawOverall": "79",
+          "rowNumber": 581,
+          "identityMatch": {
+            "status": "stable_external_id",
+            "keyType": "fifaIndex",
+            "confidence": "high"
+          }
+        },
+        {
+          "editionYear": 2005,
+          "sourcePlayerId": "135460",
+          "sourceName": "Alex",
+          "sourceClub": "NA",
+          "rawOverall": "76",
+          "rowNumber": 975,
+          "identityMatch": {
+            "status": "name_candidate",
+            "keyType": "name",
+            "confidence": "low"
+          }
+        },
+        {
+          "editionYear": 2005,
+          "sourcePlayerId": "146668",
+          "sourceName": "Álex",
+          "sourceClub": "RCD Espanyol",
+          "rawOverall": "73",
+          "rowNumber": 1602,
+          "identityMatch": {
+            "status": "name_candidate",
+            "keyType": "name",
+            "confidence": "low"
+          }
+        },
+        {
+          "editionYear": 2005,
+          "sourcePlayerId": "152850",
+          "sourceName": "Alex",
+          "sourceClub": "Internacional",
+          "rawOverall": "72",
+          "rowNumber": 1824,
+          "identityMatch": {
+            "status": "name_candidate",
+            "keyType": "name",
+            "confidence": "low"
+          }
+        },
+        {
+          "editionYear": 2005,
+          "sourcePlayerId": "162003",
+          "sourceName": "Alex",
+          "sourceClub": "São Paulo",
+          "rawOverall": "70",
+          "rowNumber": 2389,
+          "identityMatch": {
+            "status": "name_candidate",
+            "keyType": "name",
+            "confidence": "low"
+          }
+        },
+        {
+          "editionYear": 2005,
+          "sourcePlayerId": "160316",
+          "sourceName": "Alex",
+          "sourceClub": "Fluminense",
+          "rawOverall": "70",
+          "rowNumber": 2392,
+          "identityMatch": {
+            "status": "name_candidate",
+            "keyType": "name",
+            "confidence": "low"
+          }
+        },
+        {
+          "editionYear": 2005,
+          "sourcePlayerId": "139183",
+          "sourceName": "Alex",
+          "sourceClub": "Monterrey",
+          "rawOverall": "70",
+          "rowNumber": 2477,
+          "identityMatch": {
+            "status": "name_candidate",
+            "keyType": "name",
+            "confidence": "low"
+          }
+        },
+        {
+          "editionYear": 2005,
+          "sourcePlayerId": "113087",
+          "sourceName": "Álex",
+          "sourceClub": "Recreativo de Huelva",
+          "rawOverall": "62",
+          "rowNumber": 5822,
+          "identityMatch": {
+            "status": "name_candidate",
+            "keyType": "name",
+            "confidence": "low"
+          }
+        },
+        {
+          "editionYear": 2005,
+          "sourcePlayerId": "20613",
+          "sourceName": "Alex",
+          "sourceClub": "Vitória SC",
+          "rawOverall": "48",
+          "rowNumber": 10451,
+          "identityMatch": {
+            "status": "name_candidate",
+            "keyType": "name",
+            "confidence": "low"
+          }
+        },
+        {
+          "editionYear": 2006,
+          "sourcePlayerId": "135460",
+          "sourceName": "Alex",
+          "sourceClub": "Fenerbahçe SK",
+          "rawOverall": "83",
+          "rowNumber": 11238,
+          "identityMatch": {
+            "status": "name_candidate",
+            "keyType": "name",
+            "confidence": "low"
+          }
+        },
+        {
+          "editionYear": 2006,
+          "sourcePlayerId": "136130",
+          "sourceName": "Alex",
+          "sourceClub": "PSV Eindhoven",
+          "rawOverall": "80",
+          "rowNumber": 11462,
+          "identityMatch": {
+            "status": "stable_external_id",
+            "keyType": "fifaIndex",
+            "confidence": "high"
+          }
+        },
+        {
+          "editionYear": 2006,
+          "sourcePlayerId": "152850",
+          "sourceName": "Alex",
+          "sourceClub": "Internacional",
+          "rawOverall": "74",
+          "rowNumber": 12246,
+          "identityMatch": {
+            "status": "name_candidate",
+            "keyType": "name",
+            "confidence": "low"
+          }
+        },
+        {
+          "editionYear": 2006,
+          "sourcePlayerId": "146668",
+          "sourceName": "Álex",
+          "sourceClub": "Xerez",
+          "rawOverall": "73",
+          "rowNumber": 12501,
+          "identityMatch": {
+            "status": "name_candidate",
+            "keyType": "name",
+            "confidence": "low"
+          }
+        },
+        {
+          "editionYear": 2006,
+          "sourcePlayerId": "160316",
+          "sourceName": "Alex",
+          "sourceClub": "Nacional",
+          "rawOverall": "70",
+          "rowNumber": 13358,
+          "identityMatch": {
+            "status": "name_candidate",
+            "keyType": "name",
+            "confidence": "low"
+          }
+        },
+        {
+          "editionYear": 2006,
+          "sourcePlayerId": "20613",
+          "sourceName": "Alex",
+          "sourceClub": "Benfica",
+          "rawOverall": "70",
+          "rowNumber": 13599,
+          "identityMatch": {
+            "status": "name_candidate",
+            "keyType": "name",
+            "confidence": "low"
+          }
+        },
+        {
+          "editionYear": 2006,
+          "sourcePlayerId": "162003",
+          "sourceName": "Alex",
+          "sourceClub": "São Paulo",
+          "rawOverall": "68",
+          "rowNumber": 14104,
+          "identityMatch": {
+            "status": "name_candidate",
+            "keyType": "name",
+            "confidence": "low"
+          }
+        },
+        {
+          "editionYear": 2007,
+          "sourcePlayerId": "136130",
+          "sourceName": "Alex",
+          "sourceClub": "PSV Eindhoven",
+          "rawOverall": "86",
+          "rowNumber": 21220,
+          "identityMatch": {
+            "status": "stable_external_id",
+            "keyType": "fifaIndex",
+            "confidence": "high"
+          }
+        },
+        {
+          "editionYear": 2007,
+          "sourcePlayerId": "135460",
+          "sourceName": "Alex",
+          "sourceClub": "Fenerbahçe SK",
+          "rawOverall": "85",
+          "rowNumber": 21251,
+          "identityMatch": {
+            "status": "name_candidate",
+            "keyType": "name",
+            "confidence": "low"
+          }
+        },
+        {
+          "editionYear": 2007,
+          "sourcePlayerId": "152850",
+          "sourceName": "Alex",
+          "sourceClub": "Internacional",
+          "rawOverall": "72",
+          "rowNumber": 23274,
+          "identityMatch": {
+            "status": "name_candidate",
+            "keyType": "name",
+            "confidence": "low"
+          }
+        },
+        {
+          "editionYear": 2007,
+          "sourcePlayerId": "162003",
+          "sourceName": "Alex",
+          "sourceClub": "São Paulo",
+          "rawOverall": "69",
+          "rowNumber": 24399,
+          "identityMatch": {
+            "status": "name_candidate",
+            "keyType": "name",
+            "confidence": "low"
+          }
+        }
+      ]
+    },
+    {
+      "playerSeasonId": "psv-2005-2",
+      "canonicalPlayerId": "wilfred-bouma",
+      "auditName": "Wilfred Bouma",
+      "membershipClub": "PSV",
+      "selectedSnapshot": {
+        "strategy": "y_plus_1",
+        "actualEditionYear": 2006,
+        "observationId": "lbenz-fifaindex:2006:11613:psv-2005-2"
+      },
+      "sourceObservations": [
+        {
+          "editionYear": 2005,
+          "sourcePlayerId": "5741",
+          "sourceName": "Wilfred Bouma",
+          "sourceClub": "PSV Eindhoven",
+          "rawOverall": "79",
+          "rowNumber": 642,
+          "identityMatch": {
+            "status": "stable_external_id",
+            "keyType": "fifaIndex",
+            "confidence": "high"
+          }
+        },
+        {
+          "editionYear": 2006,
+          "sourcePlayerId": "5741",
+          "sourceName": "Wilfred Bouma",
+          "sourceClub": "PSV Eindhoven",
+          "rawOverall": "79",
+          "rowNumber": 11613,
+          "identityMatch": {
+            "status": "stable_external_id",
+            "keyType": "fifaIndex",
+            "confidence": "high"
+          }
+        },
+        {
+          "editionYear": 2007,
+          "sourcePlayerId": "5741",
+          "sourceName": "Wilfred Bouma",
+          "sourceClub": "Aston Villa",
+          "rawOverall": "72",
+          "rowNumber": 23502,
+          "identityMatch": {
+            "status": "stable_external_id",
+            "keyType": "fifaIndex",
+            "confidence": "high"
+          }
+        }
+      ]
+    },
+    {
+      "playerSeasonId": "psv-2005-3",
+      "canonicalPlayerId": "lee-young-pyo",
+      "auditName": "Lee Young-pyo",
+      "membershipClub": "PSV",
+      "selectedSnapshot": {
+        "strategy": "y_plus_1",
+        "actualEditionYear": 2006,
+        "observationId": "lbenz-fifaindex:2006:11591:psv-2005-3"
+      },
+      "sourceObservations": [
+        {
+          "editionYear": 2005,
+          "sourcePlayerId": "34666",
+          "sourceName": "Young-Pyo Lee",
+          "sourceClub": "PSV Eindhoven",
+          "rawOverall": "79",
+          "rowNumber": 606,
+          "identityMatch": {
+            "status": "stable_external_id",
+            "keyType": "fifaIndex",
+            "confidence": "high"
+          }
+        },
+        {
+          "editionYear": 2006,
+          "sourcePlayerId": "34666",
+          "sourceName": "Lee Y. P.",
+          "sourceClub": "PSV Eindhoven",
+          "rawOverall": "79",
+          "rowNumber": 11591,
+          "identityMatch": {
+            "status": "stable_external_id",
+            "keyType": "fifaIndex",
+            "confidence": "high"
+          }
+        },
+        {
+          "editionYear": 2007,
+          "sourcePlayerId": "34666",
+          "sourceName": "Lee Young Pyo",
+          "sourceClub": "Tottenham Hotspur",
+          "rawOverall": "79",
+          "rowNumber": 21743,
+          "identityMatch": {
+            "status": "stable_external_id",
+            "keyType": "fifaIndex",
+            "confidence": "high"
+          }
+        }
+      ]
+    },
+    {
+      "playerSeasonId": "psv-2005-4",
+      "canonicalPlayerId": "mark-van-bommel",
+      "auditName": "Mark van Bommel",
+      "membershipClub": "PSV",
+      "selectedSnapshot": {
+        "strategy": "y_plus_1",
+        "actualEditionYear": 2006,
+        "observationId": "lbenz-fifaindex:2006:11408:psv-2005-4"
+      },
+      "sourceObservations": [
+        {
+          "editionYear": 2005,
+          "sourcePlayerId": "19765",
+          "sourceName": "Mark van Bommel",
+          "sourceClub": "PSV Eindhoven",
+          "rawOverall": "78",
+          "rowNumber": 757,
+          "identityMatch": {
+            "status": "stable_external_id",
+            "keyType": "fifaIndex",
+            "confidence": "high"
+          }
+        },
+        {
+          "editionYear": 2006,
+          "sourcePlayerId": "19765",
+          "sourceName": "Mark Van Bommel",
+          "sourceClub": "FC Barcelona",
+          "rawOverall": "81",
+          "rowNumber": 11408,
+          "identityMatch": {
+            "status": "stable_external_id",
+            "keyType": "fifaIndex",
+            "confidence": "high"
+          }
+        },
+        {
+          "editionYear": 2007,
+          "sourcePlayerId": "19765",
+          "sourceName": "Mark van Bommel",
+          "sourceClub": "Bayern Munich",
+          "rawOverall": "82",
+          "rowNumber": 21418,
+          "identityMatch": {
+            "status": "stable_external_id",
+            "keyType": "fifaIndex",
+            "confidence": "high"
+          }
+        }
+      ]
+    },
+    {
+      "playerSeasonId": "psv-2005-5",
+      "canonicalPlayerId": "phillip-cocu",
+      "auditName": "Phillip Cocu",
+      "membershipClub": "PSV",
+      "selectedSnapshot": {
+        "strategy": "y_plus_1",
+        "actualEditionYear": 2006,
+        "observationId": "lbenz-fifaindex:2006:11614:psv-2005-5"
+      },
+      "sourceObservations": [
+        {
+          "editionYear": 2005,
+          "sourcePlayerId": "5736",
+          "sourceName": "Philip Cocu",
+          "sourceClub": "PSV Eindhoven",
+          "rawOverall": "79",
+          "rowNumber": 643,
+          "identityMatch": {
+            "status": "stable_external_id",
+            "keyType": "fifaIndex",
+            "confidence": "high"
+          }
+        },
+        {
+          "editionYear": 2006,
+          "sourcePlayerId": "5736",
+          "sourceName": "Philip Cocu",
+          "sourceClub": "PSV Eindhoven",
+          "rawOverall": "79",
+          "rowNumber": 11614,
+          "identityMatch": {
+            "status": "stable_external_id",
+            "keyType": "fifaIndex",
+            "confidence": "high"
+          }
+        },
+        {
+          "editionYear": 2007,
+          "sourcePlayerId": "5736",
+          "sourceName": "Philip Cocu",
+          "sourceClub": "PSV Eindhoven",
+          "rawOverall": "87",
+          "rowNumber": 21207,
+          "identityMatch": {
+            "status": "stable_external_id",
+            "keyType": "fifaIndex",
+            "confidence": "high"
+          }
+        }
+      ]
+    },
+    {
+      "playerSeasonId": "psv-2005-6",
+      "canonicalPlayerId": "park-ji-sung",
+      "auditName": "Park Ji-sung",
+      "membershipClub": "PSV",
+      "selectedSnapshot": {
+        "strategy": "y_plus_1",
+        "actualEditionYear": 2006,
+        "observationId": "lbenz-fifaindex:2006:11326:psv-2005-6"
+      },
+      "sourceObservations": [
+        {
+          "editionYear": 2005,
+          "sourcePlayerId": "39943",
+          "sourceName": "J. S. Park",
+          "sourceClub": "PSV Eindhoven",
+          "rawOverall": "77",
+          "rowNumber": 869,
+          "identityMatch": {
+            "status": "stable_external_id",
+            "keyType": "fifaIndex",
+            "confidence": "high"
+          }
+        },
+        {
+          "editionYear": 2006,
+          "sourcePlayerId": "39943",
+          "sourceName": "Park J. S.",
+          "sourceClub": "Manchester United",
+          "rawOverall": "82",
+          "rowNumber": 11326,
+          "identityMatch": {
+            "status": "stable_external_id",
+            "keyType": "fifaIndex",
+            "confidence": "high"
+          }
+        },
+        {
+          "editionYear": 2007,
+          "sourcePlayerId": "39943",
+          "sourceName": "Park Ji Sung",
+          "sourceClub": "Manchester United",
+          "rawOverall": "79",
+          "rowNumber": 21742,
+          "identityMatch": {
+            "status": "stable_external_id",
+            "keyType": "fifaIndex",
+            "confidence": "high"
+          }
+        }
+      ]
+    },
+    {
+      "playerSeasonId": "psv-2005-7",
+      "canonicalPlayerId": "jefferson-farfan",
+      "auditName": "Jefferson Farfan",
+      "membershipClub": "PSV",
+      "selectedSnapshot": {
+        "strategy": "y_plus_1",
+        "actualEditionYear": 2006,
+        "observationId": "lbenz-fifaindex:2006:13724:psv-2005-7"
+      },
+      "sourceObservations": [
+        {
+          "editionYear": 2005,
+          "sourcePlayerId": "158133",
+          "sourceName": "Jefferson Farfán",
+          "sourceClub": "PSV Eindhoven",
+          "rawOverall": "48",
+          "rowNumber": 10370,
+          "identityMatch": {
+            "status": "stable_external_id",
+            "keyType": "fifaIndex",
+            "confidence": "high"
+          }
+        },
+        {
+          "editionYear": 2006,
+          "sourcePlayerId": "158133",
+          "sourceName": "Jefferson Farfán",
+          "sourceClub": "PSV Eindhoven",
+          "rawOverall": "69",
+          "rowNumber": 13724,
+          "identityMatch": {
+            "status": "stable_external_id",
+            "keyType": "fifaIndex",
+            "confidence": "high"
+          }
+        },
+        {
+          "editionYear": 2007,
+          "sourcePlayerId": "158133",
+          "sourceName": "Jefferson Farfán",
+          "sourceClub": "PSV Eindhoven",
+          "rawOverall": "73",
+          "rowNumber": 22909,
+          "identityMatch": {
+            "status": "stable_external_id",
+            "keyType": "fifaIndex",
+            "confidence": "high"
+          }
+        }
+      ]
+    },
+    {
+      "playerSeasonId": "psv-2005-8",
+      "canonicalPlayerId": "jan-vennegoor-of-hesselink",
+      "auditName": "Jan Vennegoor of Hesselink",
+      "membershipClub": "PSV",
+      "selectedSnapshot": {
+        "strategy": "y_plus_1",
+        "actualEditionYear": 2006,
+        "observationId": "lbenz-fifaindex:2006:12369:psv-2005-8"
+      },
+      "sourceObservations": [
+        {
+          "editionYear": 2005,
+          "sourcePlayerId": "27488",
+          "sourceName": "Jan Vennegoor of H.",
+          "sourceClub": "PSV Eindhoven",
+          "rawOverall": "70",
+          "rowNumber": 2641,
+          "identityMatch": {
+            "status": "stable_external_id",
+            "keyType": "fifaIndex",
+            "confidence": "high"
+          }
+        },
+        {
+          "editionYear": 2006,
+          "sourcePlayerId": "27488",
+          "sourceName": "Jan Vennegoor of H.",
+          "sourceClub": "PSV Eindhoven",
+          "rawOverall": "74",
+          "rowNumber": 12369,
+          "identityMatch": {
+            "status": "stable_external_id",
+            "keyType": "fifaIndex",
+            "confidence": "high"
+          }
+        },
+        {
+          "editionYear": 2007,
+          "sourcePlayerId": "27488",
+          "sourceName": "Jan Vennegoor of H.",
+          "sourceClub": "Celtic",
+          "rawOverall": "81",
+          "rowNumber": 21510,
+          "identityMatch": {
+            "status": "stable_external_id",
+            "keyType": "fifaIndex",
+            "confidence": "high"
+          }
+        }
+      ]
+    }
+  ],
+  "farfanCheck": {
+    "sourcePlayerId": "158133",
+    "rawOverallByEdition": {
+      "2005": [
+        "48"
+      ],
+      "2006": [
+        "69"
+      ],
+      "2007": [
+        "73"
+      ]
+    },
+    "selectedEdition": 2006,
+    "selectedRawOverall": "69"
+  },
+  "interpretation": "These are source-native edition observations. The change 48→69→73 is not assigned a causal explanation; the Y+1 policy selects the FIFA06 observation for PSV 2005 while membership remains PSV."
+}

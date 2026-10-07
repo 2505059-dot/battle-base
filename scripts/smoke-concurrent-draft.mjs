@@ -716,6 +716,98 @@ dispatchAction('p1', { kind: 'match_start', matchSeed });
     assert.deepEqual(s1, s2, 'generateMatchScript must be 100% deterministic for 11v11 rosters');
 }
 
-console.log('[smoke-concurrent-draft] PASS — All 11v11 Concurrent Blind Draft, Reveal, Security, i18n, and Match tests succeeded.');
+// 10. Draft UI Polish v1 Verification (Pitch View 4-3-3, View Toggle, Compact Activity Feed)
+{
+    const h3 = createTwoClientHarness(77777);
+    const barca = TEAM_SEASON_MAP.get('barcelona-2011');
+    const madrid = TEAM_SEASON_MAP.get('real-madrid-2017');
+
+    // Verify default squad view is Pitch View (.fd-pitch with 4 rows and 11 empty nodes) on own panel
+    // while opponent panel is blind (.fd-team-panel--blind) and does NOT render .fd-pitch
+    assert.equal(
+        h3.areaA.querySelectorAll('.fd-pitch').length,
+        1,
+        'Client A should render exactly 1 Pitch View (for own team) during blind draft'
+    );
+    assert.equal(
+        h3.areaA.querySelectorAll('.fd-pitch-row').length,
+        4,
+        '4-3-3 Pitch View must have 4 tactical rows (FW, MF, DF, GK)'
+    );
+    assert.equal(
+        h3.areaA.querySelectorAll('.fd-pitch-node--empty').length,
+        11,
+        'Initial Pitch View must show 11 empty slot cards'
+    );
+    assert.equal(
+        h3.areaA.querySelectorAll('.fd-pitch-node--filled').length,
+        0,
+        'Initial Pitch View must have 0 filled slot cards'
+    );
+
+    // Perform 5 actions on Client A so history has 5 entries, and verify compact activity feed renders at most 3 items
+    h3.dispatchAction('p1', { kind: 'roll', teamSeasonId: barca.id });
+    const p1Fw = barca.players.find((p) => p.positions.includes('FW'));
+    h3.dispatchAction('p1', { kind: 'pick', playerId: p1Fw.id, slot: 'FW1' });
+    h3.dispatchAction('p1', { kind: 'roll', teamSeasonId: madrid.id });
+    const p1Mf = madrid.players.find((p) => p.positions.includes('MF'));
+    h3.dispatchAction('p1', { kind: 'pick', playerId: p1Mf.id, slot: 'MF2' });
+    h3.dispatchAction('p1', { kind: 'roll', teamSeasonId: barca.id });
+
+    assert.equal(
+        h3.getTeamState('p1').draft.history.length,
+        5,
+        'Underlying team draft history state retains all 5 events'
+    );
+    const historyItemsDom = h3.areaA.querySelectorAll('.fd-history-item');
+    assert.equal(
+        historyItemsDom.length,
+        3,
+        'Compact Recent Activity feed must cap rendered items to 3'
+    );
+    assert.ok(
+        historyItemsDom[0].classList.contains('fd-history-item--latest'),
+        'Newest activity item must have .fd-history-item--latest'
+    );
+
+    // Verify Pitch View updated to 2 filled nodes and 9 empty nodes
+    assert.equal(
+        h3.areaA.querySelectorAll('.fd-pitch-node--filled').length,
+        2,
+        'Pitch View must show 2 filled player nodes after 2 picks'
+    );
+    assert.equal(
+        h3.areaA.querySelectorAll('.fd-pitch-node--empty').length,
+        9,
+        'Pitch View must show 9 empty placeholder nodes after 2 picks'
+    );
+
+    // Verify View Toggle switches between Pitch View (.fd-pitch) and List View (.fd-slot-list)
+    const toggleBtns = h3.areaA.querySelectorAll('.fd-view-toggle-btn');
+    assert.equal(toggleBtns.length, 2, 'Own team panel must render Pitch / List toggle buttons');
+    const [pitchToggleBtn, listToggleBtn] = toggleBtns;
+    listToggleBtn.click();
+    assert.equal(
+        h3.areaA.querySelectorAll('.fd-slot-list').length,
+        1,
+        'Clicking List toggle button must switch to .fd-slot-list'
+    );
+    assert.equal(
+        h3.areaA.querySelectorAll('.fd-pitch').length,
+        0,
+        'Clicking List toggle button must unmount .fd-pitch'
+    );
+    pitchToggleBtn.click();
+    assert.equal(
+        h3.areaA.querySelectorAll('.fd-pitch').length,
+        1,
+        'Clicking Pitch toggle button must restore .fd-pitch'
+    );
+
+    h3.controllerA.stop();
+    h3.controllerB.stop();
+}
+
+console.log('[smoke-concurrent-draft] PASS — All 11v11 Concurrent Blind Draft, Reveal, Security, i18n, Match, and Draft UI Polish v1 tests succeeded.');
 process.exit(0);
 

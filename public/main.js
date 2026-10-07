@@ -10,6 +10,8 @@ const net = createNet();
 let me = null;
 let hostId = null;
 let started = false;
+let inRoom = false;
+let helpExpandedInRoom = false;
 let players = [];
 let messageHandlers = [];
 let playersHandlers = [];
@@ -30,15 +32,16 @@ if (params.get('room')) $('room-code').value = params.get('room').toUpperCase().
 $('name').value = localStorage.getItem('battle-base-name') ?? '';
 
 function renderToast() {
+    const toastEl = $('toast');
+    if (!toastEl) return;
     if (!lastToastSpec) {
-        $('toast').textContent = '';
+        toastEl.textContent = '';
+        toastEl.hidden = true;
         return;
     }
-    if (lastToastSpec.key) {
-        $('toast').textContent = t(lastToastSpec.key);
-    } else {
-        $('toast').textContent = lastToastSpec.rawText ?? '';
-    }
+    const text = lastToastSpec.key ? t(lastToastSpec.key) : (lastToastSpec.rawText ?? '');
+    toastEl.textContent = text;
+    toastEl.hidden = !text;
 }
 
 function toastKey(key) {
@@ -55,6 +58,30 @@ function toastRaw(text) {
         lastToastSpec = { rawText: text };
     }
     renderToast();
+}
+
+function syncAboutVisibility() {
+    const aboutEl = $('about');
+    const toggleBtn = $('help-toggle-btn');
+    if (!aboutEl) return;
+
+    if (!inRoom) {
+        aboutEl.hidden = false;
+        if (toggleBtn) {
+            toggleBtn.hidden = true;
+            toggleBtn.setAttribute('aria-expanded', 'true');
+        }
+        return;
+    }
+
+    aboutEl.hidden = !helpExpandedInRoom;
+    if (toggleBtn) {
+        toggleBtn.hidden = false;
+        toggleBtn.setAttribute('aria-expanded', String(helpExpandedInRoom));
+        toggleBtn.textContent = helpExpandedInRoom
+            ? t('lobby.hideHelpBtn')
+            : t('lobby.showHelpBtn');
+    }
 }
 
 function applyLobbyTranslations() {
@@ -83,6 +110,7 @@ function applyLobbyTranslations() {
     if ($('back-btn')) $('back-btn').textContent = t('lobby.backToLobbyBtn');
     if ($('leave-btn')) $('leave-btn').textContent = t('lobby.leaveRoomBtn');
 
+    syncAboutVisibility();
     renderRoom();
     renderToast();
 }
@@ -114,27 +142,50 @@ function renderRoom() {
     $('start-btn').hidden = started || !isHost;
     $('start-btn').disabled = players.length < 2;
     $('back-btn').hidden = !started || !isHost;
-    $('wait-note').textContent = started
+    const waitText = started
         ? ''
         : isHost
             ? (players.length < 2 ? t('lobby.waitNeedMorePlayers') : '')
             : t('lobby.waitForHost');
+    $('wait-note').textContent = waitText;
+    $('wait-note').hidden = !waitText;
+
+    const roomSection = $('room');
+    if (roomSection) {
+        roomSection.classList.toggle('room--in-game', started);
+    }
+    document.body.classList.toggle('in-room', inRoom);
+    document.body.classList.toggle('in-game', inRoom && started);
 }
 
 function showRoom() {
+    inRoom = true;
+    helpExpandedInRoom = false;
     $('lobby').hidden = true;
     $('room').hidden = false;
+    syncAboutVisibility();
 }
 
 function showLobby() {
     me = null;
     hostId = null;
     started = false;
+    inRoom = false;
+    helpExpandedInRoom = false;
     players = [];
     $('room').hidden = true;
     $('game-area').hidden = true;
     $('game-area').replaceChildren();
     $('lobby').hidden = false;
+    document.body.classList.remove('in-room', 'in-game');
+    syncAboutVisibility();
+}
+
+if ($('help-toggle-btn')) {
+    $('help-toggle-btn').addEventListener('click', () => {
+        helpExpandedInRoom = !helpExpandedInRoom;
+        syncAboutVisibility();
+    });
 }
 
 if ($('lang-select')) {

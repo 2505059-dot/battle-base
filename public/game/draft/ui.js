@@ -223,9 +223,32 @@ export function renderRerollControls(curTeam, currentRoll, canInteract, onReroll
     return box;
 }
 
+export const COMPACT_HISTORY_LIMIT = 3;
+
+const PITCH_FORMATION_ROWS = [
+    { role: 'FW', slots: ['FW1', 'FW2', 'FW3'] },
+    { role: 'MF', slots: ['MF1', 'MF2', 'MF3'] },
+    { role: 'DF', slots: ['DF1', 'DF2', 'DF3', 'DF4'] },
+    { role: 'GK', slots: ['GK1'] },
+];
+
+let currentSquadViewMode = 'pitch';
+
+export function getSquadViewMode() {
+    return currentSquadViewMode;
+}
+
+export function setSquadViewMode(mode) {
+    if (mode === 'pitch' || mode === 'list') {
+        currentSquadViewMode = mode;
+    }
+}
+
 export function renderHistoryBox(teamOrState) {
-    const box = el('div', 'fd-history');
-    box.append(el('div', 'fd-history-title', t('draft.recentHistory')));
+    const box = el('div', 'fd-history fd-history--compact');
+    const head = el('div', 'fd-history-head');
+    head.append(el('span', 'fd-history-title', t('draft.recentActivity')));
+    box.append(head);
 
     let items = [];
     if (Array.isArray(teamOrState)) {
@@ -241,9 +264,12 @@ export function renderHistoryBox(teamOrState) {
         return box;
     }
 
+    const recentItems = items.slice(-COMPACT_HISTORY_LIMIT).reverse();
     const list = el('div', 'fd-history-list');
-    for (const item of items) {
-        list.append(el('div', 'fd-history-item', formatHistoryEvent(item)));
+    for (let i = 0; i < recentItems.length; i++) {
+        const item = recentItems[i];
+        const cls = i === 0 ? 'fd-history-item fd-history-item--latest' : 'fd-history-item';
+        list.append(el('div', cls, formatHistoryEvent(item)));
     }
     box.append(list);
     return box;
@@ -574,6 +600,88 @@ export function renderBlindOpponentPanel(teamState) {
     return panel;
 }
 
+export function renderPitchView(teamState) {
+    const pitch = el('div', 'fd-pitch');
+
+    const markings = el('div', 'fd-pitch-markings');
+    if (typeof markings.setAttribute === 'function') {
+        markings.setAttribute('aria-hidden', 'true');
+    }
+    markings.append(
+        el('div', 'fd-pitch-halfline'),
+        el('div', 'fd-pitch-circle'),
+        el('div', 'fd-pitch-box'),
+        el('div', 'fd-pitch-goal-box')
+    );
+    pitch.append(markings);
+
+    const grid = el('div', 'fd-pitch-grid');
+    for (const rowDef of PITCH_FORMATION_ROWS) {
+        const rowEl = el('div', `fd-pitch-row fd-pitch-row--${rowDef.role.toLowerCase()}`);
+        if (rowEl.dataset) {
+            rowEl.dataset.pitchRow = rowDef.role;
+        }
+
+        for (const slot of rowDef.slots) {
+            const p = teamState.roster[slot];
+            const node = el(
+                'div',
+                'fd-pitch-node ' + (p ? 'fd-pitch-node--filled' : 'fd-pitch-node--empty')
+            );
+            if (node.dataset) {
+                node.dataset.slot = slot;
+                node.dataset.role = rowDef.role;
+            }
+
+            const topBar = el('div', 'fd-pitch-node-top');
+            topBar.append(el('span', 'fd-pitch-slot-tag', formatSlotLabel(slot)));
+            if (p) {
+                topBar.append(
+                    el('span', 'fd-pitch-rating fd-slot-player-rating', String(getPlayerOverall(p)))
+                );
+            }
+            node.append(topBar);
+
+            if (p) {
+                const avatarWrap = el('div', 'fd-pitch-avatar');
+                avatarWrap.append(
+                    createPlayerPortrait(p, {
+                        className: 'fd-slot-player-img fd-pitch-player-img',
+                        loading: 'lazy',
+                    })
+                );
+
+                const playerNameText = formatPlayerName(p.name);
+                const clubMetaText = `${formatClubName(p.club)} '${String(p.year).slice(-2)}`;
+                if (typeof node.setAttribute === 'function') {
+                    node.setAttribute(
+                        'title',
+                        `${formatSlotLabel(slot)} — ${playerNameText} (${clubMetaText})`
+                    );
+                }
+
+                node.append(
+                    avatarWrap,
+                    el('div', 'fd-pitch-name', playerNameText),
+                    el('div', 'fd-pitch-meta', clubMetaText)
+                );
+            } else {
+                node.append(
+                    el('div', 'fd-pitch-empty-token', '+'),
+                    el('div', 'fd-pitch-empty-label fd-slot-empty', t('common.emptySlot'))
+                );
+            }
+
+            rowEl.append(node);
+        }
+
+        grid.append(rowEl);
+    }
+
+    pitch.append(grid);
+    return pitch;
+}
+
 export function renderGroupedSlotList(teamState) {
     const slotList = el('div', 'fd-slot-list');
     const roleProgress = getRoleProgress(teamState);
@@ -647,8 +755,17 @@ export function renderTeamPanel(state, teamState, idx, meId) {
         )
     );
 
+    const subRow = el('div', 'fd-team-subrow');
     const formationBadge = el('div', 'fd-team-formation', t('draft.formation'));
+    const viewToggle = el('div', 'fd-view-toggle');
+    const pitchBtn = el('button', 'fd-view-toggle-btn', t('draft.pitchView'));
+    pitchBtn.type = 'button';
+    const listBtn = el('button', 'fd-view-toggle-btn', t('draft.listView'));
+    listBtn.type = 'button';
+    viewToggle.append(pitchBtn, listBtn);
+    subRow.append(formationBadge, viewToggle);
 
+    const metaRow = el('div', 'fd-team-meta-row');
     const ratingVal = calculateTeamRating(teamState);
     const ratingBadge = el(
         'div',
@@ -666,6 +783,7 @@ export function renderTeamPanel(state, teamState, idx, meId) {
         `fd-team-status fd-team-status--${phaseMod}`,
         getTeamPhaseBadgeText(teamState, isSelf)
     );
+    metaRow.append(ratingBadge, statusBadge);
 
     const rerollChips = el('div', 'fd-team-rerolls');
     for (const type of REROLL_TYPES) {
@@ -681,9 +799,38 @@ export function renderTeamPanel(state, teamState, idx, meId) {
         rerollChips.append(chip);
     }
 
-    head.append(titleWrap, formationBadge, ratingBadge, statusBadge, rerollChips);
+    head.append(titleWrap, subRow, metaRow, rerollChips);
     panel.append(head);
-    panel.append(renderGroupedSlotList(teamState));
+
+    const bodyWrap = el('div', 'fd-team-body');
+    const renderBody = () => {
+        const isPitch = currentSquadViewMode === 'pitch';
+        pitchBtn.className =
+            'fd-view-toggle-btn' + (isPitch ? ' fd-view-toggle-btn--active' : '');
+        listBtn.className =
+            'fd-view-toggle-btn' + (!isPitch ? ' fd-view-toggle-btn--active' : '');
+        const nextView = isPitch ? renderPitchView(teamState) : renderGroupedSlotList(teamState);
+        if (typeof bodyWrap.replaceChildren === 'function') {
+            bodyWrap.replaceChildren(nextView);
+        } else {
+            bodyWrap.children = [];
+            bodyWrap.append(nextView);
+        }
+    };
+
+    pitchBtn.addEventListener('click', () => {
+        if (currentSquadViewMode === 'pitch') return;
+        currentSquadViewMode = 'pitch';
+        renderBody();
+    });
+    listBtn.addEventListener('click', () => {
+        if (currentSquadViewMode === 'list') return;
+        currentSquadViewMode = 'list';
+        renderBody();
+    });
+
+    renderBody();
+    panel.append(bodyWrap);
     return panel;
 }
 

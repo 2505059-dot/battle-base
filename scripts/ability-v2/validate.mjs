@@ -5,6 +5,7 @@ import { fileURLToPath, pathToFileURL } from 'node:url';
 import { hashFile, verifyManifestInputs } from './source-adapters.mjs';
 import { validateData, verifyRejectionCases, runFocusedFixtures } from './validation-core.mjs';
 import { parseStrictJson, verifyStrictJsonFixtures } from './strict-json.mjs';
+import { verifyObservationSources } from './source-verification.mjs';
 
 const ROOT=resolve(dirname(fileURLToPath(import.meta.url)),'../..');
 const readJson=async path=>parseStrictJson(await readFile(join(ROOT,path),'utf8'),path);
@@ -26,15 +27,15 @@ async function main(){
   const expectedRecords=new Map();
   for(const ts of team.TEAM_SEASONS) for(const player of ts.players){const canonicalPlayerId=identity.playerSeasonMap[player.id];const entity=identity.entities.find(x=>x.id===canonicalPlayerId);if(!entity)throw new Error('Dangling current identity mapping: '+player.id);expectedRecords.set(player.id,{canonicalPlayerId,teamSeasonId:ts.id,membershipClub:ts.club,identityStatus:entity.identityStatus||'unknown',seasonYear:Number(ts.year)});}
   if(team.TEAM_SEASONS.length!==62||expectedRecords.size!==554||identity.entities.length!==418) throw new Error('Current baseline counts differ from 62/554/418.');
-  const context={expectedRecords,entities:identity.entities,manifest:manifestInputs.manifest,acquisition:manifestInputs.acquisition,sourceConfigs,fieldMappings,positionMappings,snapshotPolicy,overrides,schema,schemaVersion:schema.properties.schemaVersion.const};
+  const context={expectedRecords,entities:identity.entities,manifest:manifestInputs.manifest,acquisition:manifestInputs.acquisition,manifestInputs,sourceConfigs,fieldMappings,positionMappings,snapshotPolicy,overrides,schema,schemaVersion:schema.properties.schemaVersion.const};
   const strictJsonFixtures=verifyStrictJsonFixtures();
-  const result=validateData(data,context); const rejectionCases=verifyRejectionCases(data,context); const fixtures=runFocusedFixtures(context);
+  const result=validateData(data,context); const rejectionCases=verifyRejectionCases(data,context); const fixtures=runFocusedFixtures(context); const sourceVerification=await verifyObservationSources(data,context,ROOT);
   const coverage=await readJson('data/reports/ability-v2/coverage.json');
   const lineage=await readJson('data/reports/ability-v2/source-lineage.json');
   const psv=await readJson('data/reports/ability-v2/psv-2005-case.json');
   if(coverage.recordPlaceholders.count!==554||coverage.recordPlaceholders.expected!==554) throw new Error('Coverage report does not account for 554 placeholders.');
   if(lineage.sourceManifestSha256!==data.inputs.sourceManifestSha256) throw new Error('Lineage report manifest hash differs from dataset.');
   if(psv.players.length!==9||psv.farfanCheck.selectedRawOverall!=='69'||psv.farfanCheck.rawOverallByEdition['2005'][0]!=='48'||psv.farfanCheck.rawOverallByEdition['2007'][0]!=='73') throw new Error('PSV 2005/Farfán acceptance report failed.');
-  console.log(JSON.stringify({status:'passed',...result,rejectionCases,strictJsonFixtures,fixtures,manifestSourcesVerified:manifestInputs.manifest.source_files.length,psvPlayers:psv.players.length,farfan:psv.farfanCheck.rawOverallByEdition}));
+  console.log(JSON.stringify({status:'passed',...result,rejectionCases,strictJsonFixtures,fixtures,sourceVerification,manifestSourcesVerified:manifestInputs.manifest.source_files.length,psvPlayers:psv.players.length,farfan:psv.farfanCheck.rawOverallByEdition}));
 }
 main().catch(error=>{console.error('[ability-v2-validate] '+error.message);process.exitCode=1;});

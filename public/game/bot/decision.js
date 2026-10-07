@@ -6,6 +6,7 @@ import { canTeamRoll, canTeamPick, canTeamLock } from '../state.js';
 import {
     getFirstAvailableSlotForRole,
     isPlayerInRoster,
+    isPlayerEntityInRoster,
     isRosterComplete,
     getLegalPickActions,
     getLegalRerollActions,
@@ -51,8 +52,10 @@ export function diagnoseDeadRoll(team) {
     const roleMatchingPlayers = players.filter(
         (p) => Array.isArray(p.positions) && p.positions.some((r) => openRoles.includes(r))
     );
-    const duplicateRolePlayers = roleMatchingPlayers.filter((p) => isPlayerInRoster(roster, p));
-    const unpickedPlayers = players.filter((p) => !isPlayerInRoster(roster, p));
+    const duplicateRolePlayers = roleMatchingPlayers.filter((p) =>
+        isPlayerEntityInRoster(roster, p)
+    );
+    const unpickedPlayers = players.filter((p) => !isPlayerEntityInRoster(roster, p));
 
     const noLegalPick = legalPicks.length === 0;
     const noRerollRemaining = legalRerolls.length === 0;

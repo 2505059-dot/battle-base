@@ -27,6 +27,7 @@ import { getMyTeam, isDraftPhase, isTeamDraftActive } from '../state.js';
 import {
     hasRerollOption,
     isPlayerInRoster,
+    isPlayerEntityInRoster,
     getAvailableRolesForPlayer,
     getFirstAvailableSlotForRole,
     getRoleProgress,
@@ -393,7 +394,7 @@ export function renderDraftZone(state, myTeam, handlers = {}, selectedPlayerIdOv
 
         const cardsGrid = el('div', 'fd-cards-grid');
         for (const player of roll.players) {
-            const isDuplicate = isPlayerInRoster(team.roster, player);
+            const isDuplicate = isPlayerEntityInRoster(team.roster, player);
             const availableRoles = getAvailableRolesForPlayer(team.roster, player);
             const isSelected = selectedPlayerId === player.id;
             const hasRoles = availableRoles.length > 0;
@@ -402,6 +403,7 @@ export function renderDraftZone(state, myTeam, handlers = {}, selectedPlayerIdOv
             let cardClass = 'fd-card';
             if (isSelected) cardClass += ' fd-card--selected';
             if (!hasRoles) cardClass += ' fd-card--disabled';
+            if (isDuplicate) cardClass += ' fd-card--duplicate';
             if (!team.draft.locked && hasRoles) cardClass += ' fd-card--interactive';
 
             const card = el('div', cardClass);

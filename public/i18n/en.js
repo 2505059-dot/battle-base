@@ -99,7 +99,7 @@ export const en = {
         pickGuideOpponent: '{playerName} is selecting a player...',
         cardRating: 'Rating {rating}',
         noAvailableSlot: 'No open slot',
-        duplicatePlayer: 'Already in roster',
+        duplicatePlayer: 'Already drafted',
         chooseSlotPrompt: 'Choose role:',
         formation: 'Formation: 4-3-3',
         startingXI: 'Starting XI',

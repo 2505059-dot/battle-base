@@ -99,7 +99,7 @@ export const ja = {
         pickGuideOpponent: '{playerName} が選手を選択しています...',
         cardRating: 'Rating {rating}',
         noAvailableSlot: '空き枠なし',
-        duplicatePlayer: '指名済み',
+        duplicatePlayer: 'この選手はすでに獲得済み',
         chooseSlotPrompt: 'ポジションを選択:',
         formation: 'フォーメーション: 4-3-3',
         startingXI: '先発11人',

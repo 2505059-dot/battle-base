@@ -9,6 +9,8 @@ import {
     hasRerollOption,
     getFirstAvailableSlotForRole,
     isPlayerInRoster,
+    isPlayerEntityInRoster,
+    getPlayerIdentityKey,
     getRoleProgress,
     getPickedCount,
 } from '../draft/rules.js';
@@ -125,7 +127,7 @@ function evaluateBestPickInTeamSeasonFast(
     teamSeason,
     openRoles,
     roleOffsets,
-    pickedPlayerIds,
+    pickedIdentityKeys,
     hasOverlapWithSeason,
     difficulty,
     persona
@@ -142,11 +144,12 @@ function evaluateBestPickInTeamSeasonFast(
         return bestVal;
     }
 
-    // Fallback when at least one player from this TeamSeason is already in the team's roster
+    // Fallback when at least one player (or canonical entity) from this TeamSeason is already in the team's roster
     let bestVal = -Infinity;
     const players = teamSeason?.players ?? [];
     for (const player of players) {
-        if (pickedPlayerIds.has(player.id)) continue;
+        const key = getPlayerIdentityKey(player);
+        if (key && pickedIdentityKeys.has(key)) continue;
         if (!Array.isArray(player.positions)) continue;
         for (const role of player.positions) {
             if (!openRoles.includes(role)) continue;
@@ -300,15 +303,20 @@ export function estimateRerollValue({
         roleOffsets[role] = (evalRes.roleWeaknessBonus ?? 0) + (evalRes.urgencyBonus ?? 0);
     }
 
-    const pickedPlayerIds = new Set();
+    const pickedIdentityKeys = new Set();
     const pickedSeasonPrefixes = new Set();
     for (const slot of SLOTS) {
         const p = roster[slot];
-        if (p?.id) {
-            pickedPlayerIds.add(p.id);
-            const dashIdx = p.id.lastIndexOf('-');
-            if (dashIdx > 0) {
-                pickedSeasonPrefixes.add(p.id.slice(0, dashIdx));
+        if (p) {
+            const key = getPlayerIdentityKey(p);
+            if (key) {
+                pickedIdentityKeys.add(key);
+            }
+            if (p.id) {
+                const dashIdx = p.id.lastIndexOf('-');
+                if (dashIdx > 0) {
+                    pickedSeasonPrefixes.add(p.id.slice(0, dashIdx));
+                }
             }
         }
     }
@@ -323,14 +331,18 @@ export function estimateRerollValue({
     for (const { teamSeason, probability } of outcomes) {
         const hasOverlap =
             pickedSeasonPrefixes.has(teamSeason.id) ||
-            (teamSeason.players && teamSeason.players.some((p) => pickedPlayerIds.has(p.id)));
+            (teamSeason.players &&
+                teamSeason.players.some((p) => {
+                    const key = getPlayerIdentityKey(p);
+                    return key ? pickedIdentityKeys.has(key) : false;
+                }));
 
         const bestVal = evaluateBestPickInTeamSeasonFast(
             team,
             teamSeason,
             openRoles,
             roleOffsets,
-            pickedPlayerIds,
+            pickedIdentityKeys,
             hasOverlap,
             normDiff,
             resolvedPersona

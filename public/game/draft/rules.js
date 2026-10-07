@@ -15,6 +15,11 @@ import {
     sampleOutcomeDistribution,
     isLegalRerollDestination,
 } from '../roll-policy.js';
+import {
+    getPlayerEntityId,
+    getPlayerIdentityKey,
+    isSameCanonicalPlayer,
+} from '../player-identity.js';
 
 export {
     ROLES,
@@ -25,6 +30,9 @@ export {
     getSlotRole,
     getSlotsForRole,
     formatSlotLabel,
+    getPlayerEntityId,
+    getPlayerIdentityKey,
+    isSameCanonicalPlayer,
 };
 
 export function hasRerollOption(currentRoll, type) {
@@ -88,6 +96,18 @@ export function isPlayerInRoster(teamOrRoster, playerOrId) {
     return SLOTS.some((slotId) => roster[slotId]?.id === targetId);
 }
 
+export function isPlayerEntityInRoster(teamOrRoster, playerOrId) {
+    const roster = teamOrRoster?.roster ?? teamOrRoster;
+    if (!roster) return false;
+    const targetKey = getPlayerIdentityKey(playerOrId);
+    if (!targetKey) return false;
+    return SLOTS.some((slotId) => {
+        const existing = roster[slotId];
+        if (!existing) return false;
+        return getPlayerIdentityKey(existing) === targetKey;
+    });
+}
+
 export function getFirstAvailableSlotForRole(teamOrRoster, role) {
     const roster = teamOrRoster?.roster ?? teamOrRoster;
     if (!roster) return null;
@@ -103,7 +123,7 @@ export function getFirstAvailableSlotForRole(teamOrRoster, role) {
 export function getAvailableRolesForPlayer(teamOrRoster, player) {
     const roster = teamOrRoster?.roster ?? teamOrRoster;
     if (!roster || !player || !Array.isArray(player.positions)) return [];
-    if (isPlayerInRoster(roster, player)) return [];
+    if (isPlayerEntityInRoster(roster, player)) return [];
     return ROLES.filter(
         (role) =>
             player.positions.includes(role) &&
@@ -114,7 +134,7 @@ export function getAvailableRolesForPlayer(teamOrRoster, player) {
 export function getAvailableSlotsForPlayer(teamOrRoster, player) {
     const roster = teamOrRoster?.roster ?? teamOrRoster;
     if (!roster || !player) return [];
-    if (isPlayerInRoster(roster, player)) return [];
+    if (isPlayerEntityInRoster(roster, player)) return [];
     return SLOTS.filter((slot) => roster[slot] === null && canPlayerFitSlot(player, slot));
 }
 

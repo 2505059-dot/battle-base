@@ -10,6 +10,9 @@ import {
     isRosterComplete,
     calculateTeamRating,
     getLegalPickActions,
+    isPlayerInRoster,
+    isPlayerEntityInRoster,
+    getPlayerIdentityKey,
 } from '../public/game/draft/rules.js';
 import {
     applyBotDraftAction,
@@ -56,6 +59,9 @@ export function simulateSingleBotDraft({
         year: 0,
     };
     let freeRedrawCount = 0;
+    let canonicalDuplicateRejectionCount = 0;
+    let crossSeasonDuplicateRejectionCount = 0;
+    let exactSeasonDuplicateRejectionCount = 0;
 
     // Track pre-reroll best candidate score vs eventual picked score in that round
     let roundPreRerollBestScore = null;
@@ -65,6 +71,19 @@ export function simulateSingleBotDraft({
     while (stepIndex < maxSteps && !team.draft.locked && team.draft.phase !== 'LOCKED') {
         const pickedBefore = getPickedCount(team);
         const decisionSeed = hashBotSeed(`decision::${seed}::${stepIndex}`);
+
+        if (team.draft.phase === 'PICK' && Array.isArray(team.draft.currentRoll?.players)) {
+            for (const candidate of team.draft.currentRoll.players) {
+                if (isPlayerEntityInRoster(team.roster, candidate)) {
+                    canonicalDuplicateRejectionCount += 1;
+                    if (isPlayerInRoster(team.roster, candidate)) {
+                        exactSeasonDuplicateRejectionCount += 1;
+                    } else {
+                        crossSeasonDuplicateRejectionCount += 1;
+                    }
+                }
+            }
+        }
 
         const action = chooseDraftAction({
             team,
@@ -198,10 +217,15 @@ export function simulateSingleBotDraft({
         team.draft.locked && team.draft.phase === 'LOCKED' && isRosterComplete(team)
     );
 
-    // Check duplicate violations
-    const pickedIds = SLOTS.map((slot) => team.roster[slot]?.id).filter(Boolean);
+    // Check duplicate violations (both exact PlayerSeason ID and canonical PlayerEntity ID)
+    const pickedPlayers = SLOTS.map((slot) => team.roster[slot]).filter(Boolean);
+    const pickedIds = pickedPlayers.map((p) => p.id);
     const uniqueIds = new Set(pickedIds);
-    const duplicateViolations = pickedIds.length - uniqueIds.size;
+    const pickedIdentityKeys = pickedPlayers.map((p) => getPlayerIdentityKey(p)).filter(Boolean);
+    const uniqueIdentityKeys = new Set(pickedIdentityKeys);
+    const exactDuplicateViolations = pickedIds.length - uniqueIds.size;
+    const canonicalDuplicateViolations = pickedIdentityKeys.length - uniqueIdentityKeys.size;
+    const duplicateViolations = Math.max(exactDuplicateViolations, canonicalDuplicateViolations);
 
     const teamRating = calculateTeamRating(team);
     const profile = calculateTeamProfile(team);
@@ -231,6 +255,9 @@ export function simulateSingleBotDraft({
         decisions,
         invalidActions,
         duplicateViolations,
+        canonicalDuplicateRejectionCount,
+        crossSeasonDuplicateRejectionCount,
+        exactSeasonDuplicateRejectionCount,
         rerollsUsed,
         freeRedrawCount,
         rerollTransitions,
@@ -251,6 +278,9 @@ export function simulateBotDraftBatch({
     let completed = 0;
     let stuck = 0;
     let duplicateViolations = 0;
+    let canonicalDuplicateRejectionCount = 0;
+    let crossSeasonDuplicateRejectionCount = 0;
+    let exactSeasonDuplicateRejectionCount = 0;
     let invalidActions = 0;
     let totalDecisions = 0;
     let freeRedrawCount = 0;
@@ -300,6 +330,9 @@ export function simulateBotDraftBatch({
 
         totalDecisions += res.decisions;
         duplicateViolations += res.duplicateViolations;
+        canonicalDuplicateRejectionCount += res.canonicalDuplicateRejectionCount;
+        crossSeasonDuplicateRejectionCount += res.crossSeasonDuplicateRejectionCount;
+        exactSeasonDuplicateRejectionCount += res.exactSeasonDuplicateRejectionCount;
         invalidActions += res.invalidActions;
 
         freeRedrawCount += res.freeRedrawCount;
@@ -362,6 +395,9 @@ export function simulateBotDraftBatch({
         freeRedrawCount,
         draftsUsingFreeRedraw,
         freeRedrawRate: round4((draftsUsingFreeRedraw / Math.max(1, runs)) * 100),
+        canonicalDuplicateRejectionCount,
+        crossSeasonDuplicateRejectionCount,
+        exactSeasonDuplicateRejectionCount,
         avgTeamRating: round2(sumTeamRating / denom),
         avgProfile: {
             attack: round2(sumProfile.attack / denom),
@@ -449,6 +485,10 @@ if (isMain) {
     let totalStuck = 0;
     let totalFreeRedrawCount = 0;
     let totalDraftsUsingFreeRedraw = 0;
+    let totalCanonicalDuplicateRejectionCount = 0;
+    let totalCrossSeasonDuplicateRejectionCount = 0;
+    let totalExactSeasonDuplicateRejectionCount = 0;
+    let totalDuplicateViolations = 0;
     const aggregateStuckByReason = {
         no_legal_pick: 0,
         no_reroll_remaining: 0,
@@ -471,6 +511,10 @@ if (isMain) {
         totalStuck += summary.stuck;
         totalFreeRedrawCount += summary.freeRedrawCount;
         totalDraftsUsingFreeRedraw += summary.draftsUsingFreeRedraw;
+        totalCanonicalDuplicateRejectionCount += summary.canonicalDuplicateRejectionCount;
+        totalCrossSeasonDuplicateRejectionCount += summary.crossSeasonDuplicateRejectionCount;
+        totalExactSeasonDuplicateRejectionCount += summary.exactSeasonDuplicateRejectionCount;
+        totalDuplicateViolations += summary.duplicateViolations;
         aggregateStuckByReason.no_legal_pick += summary.stuckByReason.no_legal_pick;
         aggregateStuckByReason.no_reroll_remaining += summary.stuckByReason.no_reroll_remaining;
         aggregateStuckByReason.duplicate_only += summary.stuckByReason.duplicate_only;
@@ -500,6 +544,10 @@ if (isMain) {
                     Math.round(
                         (totalDraftsUsingFreeRedraw / Math.max(1, totalAttempts)) * 1000000
                     ) / 10000,
+                canonicalDuplicateRejectionCount: totalCanonicalDuplicateRejectionCount,
+                crossSeasonDuplicateRejectionCount: totalCrossSeasonDuplicateRejectionCount,
+                exactSeasonDuplicateRejectionCount: totalExactSeasonDuplicateRejectionCount,
+                duplicateViolations: totalDuplicateViolations,
                 aggregateStuckByReason,
                 elapsedSeconds: Number(elapsedSec),
                 byDifficulty: results,

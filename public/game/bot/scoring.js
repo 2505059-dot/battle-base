@@ -5,6 +5,7 @@ import {
     getPlayerOverall,
     getFirstAvailableSlotForRole,
     isPlayerInRoster,
+    isPlayerEntityInRoster,
     findPlayersByRole,
     getRoleProgress,
     getPickedCount,
@@ -138,7 +139,7 @@ export function evaluateCandidatePick(team, player, role, context = {}) {
         !player ||
         !ROLES.includes(role) ||
         getFirstAvailableSlotForRole(roster, role) === null ||
-        isPlayerInRoster(roster, player) ||
+        isPlayerEntityInRoster(roster, player) ||
         (Array.isArray(player.positions) && !player.positions.includes(role))
     ) {
         return {

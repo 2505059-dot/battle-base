@@ -16,6 +16,7 @@ import { ROSTER_SLOTS, SLOTS, getSlotRole } from '../public/game/shared/constant
 import {
     getFirstAvailableSlotForRole,
     isPlayerInRoster,
+    isPlayerEntityInRoster,
 } from '../public/game/draft/rules.js';
 import { startGame } from '../public/game/controller.js';
 import { generateMatchScript } from '../public/game/match/engine.js';
@@ -277,12 +278,12 @@ function createTwoClientHarness(seed = 123456) {
 }
 
 function findCandidateForRole(teamSeason, role, rosterOrUsedIds = {}) {
-    const isUsed = (playerId) => {
-        if (rosterOrUsedIds instanceof Set) return rosterOrUsedIds.has(playerId);
-        return isPlayerInRoster(rosterOrUsedIds, playerId);
+    const isUsed = (player) => {
+        if (rosterOrUsedIds instanceof Set) return rosterOrUsedIds.has(player.id);
+        return isPlayerEntityInRoster(rosterOrUsedIds, player);
     };
     for (const p of teamSeason.players) {
-        if (isUsed(p.id)) continue;
+        if (isUsed(p)) continue;
         if (p.positions.includes(role)) return p;
     }
     return null;

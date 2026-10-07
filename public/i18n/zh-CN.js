@@ -95,7 +95,7 @@ export const zhCN = {
         pickGuideOpponent: '{playerName} 正在选择球员...',
         cardRating: '总评 {rating}',
         noAvailableSlot: '无可用位置',
-        duplicatePlayer: '已在阵容中',
+        duplicatePlayer: '已拥有该球员',
         chooseSlotPrompt: '选择位置：',
         formation: '阵型: 4-3-3',
         startingXI: '首发 11 人',

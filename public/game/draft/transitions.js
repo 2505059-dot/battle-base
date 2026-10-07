@@ -16,6 +16,7 @@ import {
     isValidRerollTransition,
     canPlayerFitSlot,
     isPlayerInRoster,
+    isPlayerEntityInRoster,
     getFirstAvailableSlotForRole,
     isRosterComplete,
     canFreeRedraw,
@@ -146,7 +147,7 @@ export function applyDraftPick(state, actorId, playerId, slot) {
     if (!candidate) {
         return { ok: false, reason: 'candidate_not_in_roll' };
     }
-    if (isPlayerInRoster(actorTeam.roster, candidate)) {
+    if (isPlayerEntityInRoster(actorTeam.roster, candidate)) {
         return { ok: false, reason: 'duplicate_player' };
     }
     if (!canPlayerFitSlot(candidate, slot)) {

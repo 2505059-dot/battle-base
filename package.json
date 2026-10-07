@@ -4,6 +4,7 @@
   "description": "対戦ゲームの土台（部屋・人数上限・メッセージ中継）。授業用。",
   "type": "module",
   "scripts": {
+    "build": "npm run build:css",
     "start": "node server.js",
     "build:css": "tailwindcss -i ./public/styles/app.src.css -o ./public/styles/app.css",
     "watch:css": "tailwindcss -i ./public/styles/app.src.css -o ./public/styles/app.css --watch"

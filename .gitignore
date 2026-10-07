@@ -8,3 +8,4 @@ data/raw/fifa/*.json
 data/cache/
 research/cache/
 research/fifa-rating-audit/src/__pycache__/
+data/raw/fifa/expansion-wave1/

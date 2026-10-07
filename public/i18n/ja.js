@@ -125,7 +125,7 @@ export const ja = {
         inspectorReadyGuide: '先発11人が揃いました。中央パネルからLOCK INしてください。',
         inspectorAbilitiesTitle: '5大能力スコア',
         inspectorPositionsTitle: '適性ポジション＆空き枠',
-        inspectorPosRatingUnavailable: 'ポジション別評価なし（総合評価と適性枠のみ使用）',
+        inspectorPosRatingUnavailable: '位置別の独立評価なし（現在の総合評価と適性枠のみ使用）',
         abilityAttack: '攻撃 (ATK)',
         abilityCreation: '創造 (CRE)',
         abilityDefense: '守備 (DEF)',

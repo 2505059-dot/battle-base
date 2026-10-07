@@ -1,0 +1,93 @@
+{
+  "schema": "battle-base-integration-baseline-v1-browser-evidence",
+  "capturedOn": "2026-10-08",
+  "server": "http://127.0.0.1:18000/",
+  "browser": "Chrome extension + Codex in-app browser via documented browser controls",
+  "screenshots": [
+    {
+      "file": "draft-desktop-1366x768.jpg",
+      "viewport": { "width": 1366, "height": 768 },
+      "status": "PASS",
+      "observation": "Three-column Draft workbench visible in one viewport."
+    },
+    {
+      "file": "draft-mobile-390x844-locked.jpg",
+      "viewport": { "width": 390, "height": 844 },
+      "status": "PASS",
+      "observation": "Mobile Candidate Pool tab shows 11/11 and LOCKED; opponent progress is HIDDEN."
+    },
+    {
+      "file": "draft-mobile-390x844-lineup.jpg",
+      "viewport": { "width": 390, "height": 844 },
+      "status": "PASS",
+      "observation": "Mobile Lineup tab shows roster slots and LOCKED status; long lineup scrolls vertically."
+    }
+  ],
+  "browserFlow": {
+    "status": "PASS",
+    "sequence": ["Lobby", "Room", "Draft", "Reveal", "Match", "Result", "Lobby"],
+    "viewport": { "width": 1280, "height": 720 },
+    "teamA": "11/11, locked",
+    "teamB": "11/11, locked",
+    "match": "90 minutes, 3-0, 28 reports",
+    "returnedToLobby": true
+  },
+  "checks": [
+    {
+      "name": "mobile tabs and full selection flow",
+      "status": "PASS",
+      "details": "At 390x844, candidate -> position preview -> final confirm repeated through 11 distinct starters; lineup locked. Guest remained at 0/11 in this separate mobile room."
+    },
+    {
+      "name": "candidate and position preview before final confirmation",
+      "status": "PASS (UI evidence)",
+      "details": "Visible team count stayed unchanged while a candidate and legal slot were previewed, then rose by one after final confirmation."
+    },
+    {
+      "name": "exact live WebSocket PICK count",
+      "status": "NOT OBSERVED",
+      "details": "No browser network/WebSocket inspection was used. The client contract is separately verified by smoke-draft-workbench, whose mock sender asserts candidate/slot actions send zero PICK and final confirm sends exactly one."
+    },
+    {
+      "name": "opponent blind-selection boundary",
+      "status": "PASS",
+      "details": "Opponent card showed only progress, status, and HIDDEN; no lineup identities were shown."
+    },
+    {
+      "name": "three language switching",
+      "status": "PASS",
+      "details": "Japanese, English, and Simplified Chinese were switched in the same real mobile page and translated navigation appeared."
+    },
+    {
+      "name": "refresh during started room",
+      "status": "FAIL (pre-existing source behavior)",
+      "details": "Refresh returns to lobby; rejoining the same started room is rejected. public/main.js, public/net.js, and server.js match the accepted Draft source branch exactly; no reconnect behavior exists there."
+    },
+    {
+      "name": "11-player completion and lock",
+      "status": "PASS",
+      "details": "Mobile host reached 11/11 and LOCKED; two-player 11/11 and both locks also completed in the full lifecycle flow."
+    },
+    {
+      "name": "duplicate player lock",
+      "status": "PASS (smoke); live browser state NOT MEASURED",
+      "details": "smoke-unique-player-lock passed for 554/554 PlayerSeasons and 418 canonical entities; live mobile roster completed with 11 players."
+    },
+    {
+      "name": "Draft layout scope cleanup",
+      "status": "PASS (smoke); live browser state NOT MEASURED",
+      "details": "smoke-draft-workbench asserts stop() removes body.in-draft; the live browser return-to-lobby flow did not separately sample body classes or computed styles."
+    },
+    {
+      "name": "new-session console warnings/errors",
+      "status": "PASS",
+      "details": "No warn or error entries were captured in the task-created Chrome or in-app browser tabs."
+    }
+  ],
+  "cleanup": {
+    "createdBrowserTabsClosed": true,
+    "originalUserTabsTouched": false,
+    "temporaryViewportReset": true,
+    "defaultSelectedViewportAfterReset": { "width": 1920, "height": 945 }
+  }
+}

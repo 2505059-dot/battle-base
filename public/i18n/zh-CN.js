@@ -121,7 +121,7 @@ export const zhCN = {
         inspectorReadyGuide: '首发 11 人已全部选满，可在中央确认并锁定阵容。',
         inspectorAbilitiesTitle: '五维能力 (Abilities)',
         inspectorPositionsTitle: '可司职位置与槽位',
-        inspectorPosRatingUnavailable: '暂无各位置独立评分（仅使用官方总评与位置资格）',
+        inspectorPosRatingUnavailable: '暂无独立位置评分（仅使用当前总评与位置资格）',
         abilityAttack: '进攻 (ATK)',
         abilityCreation: '组织 (CRE)',
         abilityDefense: '防守 (DEF)',

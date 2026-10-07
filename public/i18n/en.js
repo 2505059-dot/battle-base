@@ -125,7 +125,7 @@ export const en = {
         inspectorReadyGuide: 'All 11 starters are drafted. Review and LOCK IN from the center panel.',
         inspectorAbilitiesTitle: 'CORE ABILITIES',
         inspectorPositionsTitle: 'ELIGIBLE POSITIONS & SLOTS',
-        inspectorPosRatingUnavailable: 'Per-position ratings N/A (uses official OVR & role eligibility)',
+        inspectorPosRatingUnavailable: 'No independent position ratings (current overall & role eligibility)',
         abilityAttack: 'Attack (ATK)',
         abilityCreation: 'Creation (CRE)',
         abilityDefense: 'Defense (DEF)',

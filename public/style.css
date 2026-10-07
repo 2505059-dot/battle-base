@@ -1395,66 +1395,6 @@ li { padding: 8px 12px; margin-bottom: 6px; background: #0d1424; border-radius: 
   color: #7e95bf;
 }
 
-.fd-blind-role-list {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-}
-
-.fd-blind-role-row {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 8px;
-  padding: 7px 10px;
-  background: #11192b;
-  border: 1px solid #1f2d4a;
-  border-radius: 7px;
-}
-
-.fd-blind-role-row--done {
-  background: #13253d;
-  border-color: #2f548f;
-}
-
-.fd-blind-role-text {
-  font-size: .8rem;
-  font-weight: 800;
-  letter-spacing: .04em;
-  color: #cfe0ff;
-  font-variant-numeric: tabular-nums;
-}
-
-.fd-blind-pips {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-}
-
-.fd-blind-pip {
-  width: 9px;
-  height: 9px;
-  border-radius: 999px;
-  background: #1c2942;
-  border: 1px solid #354c78;
-}
-
-.fd-blind-pip--filled {
-  background: #5ee0ff;
-  border-color: #5ee0ff;
-  box-shadow: 0 0 6px #5ee0ff66;
-}
-
-.fd-blind-note {
-  font-size: .74rem;
-  color: #7e95bf;
-  text-align: center;
-  padding: 6px 8px;
-  background: #111a2e;
-  border: 1px dashed #25385c;
-  border-radius: 6px;
-}
-
 /* Ready & Lock In Center Box */
 .fd-ready-box,
 .fd-locked-box {

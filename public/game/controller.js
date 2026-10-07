@@ -2,7 +2,7 @@
 
 import { t, subscribeLocaleChange } from '../i18n/i18n.js';
 import { el } from './shared/dom.js';
-import { SLOTS, REROLL_TYPES } from './shared/constants.js';
+import { REROLL_TYPES } from './shared/constants.js';
 import {
     createInitialState,
     getMyTeam,
@@ -14,8 +14,6 @@ import {
 import { generateInitialRollTeamSeason } from './draft/random.js';
 import {
     generateRerollTeamSeason,
-    getAvailableRolesForPlayer,
-    getFirstAvailableSlotForRole,
     canFreeRedraw,
 } from './draft/rules.js';
 import {
@@ -25,20 +23,102 @@ import {
     applyDraftPick,
     applyDraftLock as applyDraftLockTransition,
 } from './draft/transitions.js';
-import { renderHeader, renderDraftZone, renderTeamPanel } from './draft/ui.js';
+import {
+    MOBILE_TABS,
+    createDraftPreviewState,
+    clearDraftPreview,
+    reconcileDraftPreview,
+    selectPreviewCandidate,
+    selectPreviewSlot,
+    getConfirmPickStatus,
+} from './draft/preview-state.js';
+import {
+    renderHeader,
+    renderMobileWorkbenchTabs,
+    renderDraftZone,
+    renderTeamPanel,
+} from './draft/ui.js';
+import { renderPlayerInspector } from './draft/inspector-ui.js';
 import { MATCH_SIM_CONFIG } from './match/config.js';
 import { generateMatchScript } from './match/engine.js';
 import { renderCompleteZone, renderMatchZone, scrollFeedToBottom } from './match/ui.js';
+
+function syncDraftBodyScope(isDraft) {
+    if (typeof document !== 'undefined' && document.body && document.body.classList) {
+        if (typeof document.body.classList.toggle === 'function') {
+            document.body.classList.toggle('in-draft', Boolean(isDraft));
+        }
+    }
+}
+
+function captureFocusAndScroll(root) {
+    const snapshot = {
+        focusKey: null,
+        scrollBySelector: {},
+    };
+    if (!root || typeof root.querySelector !== 'function') return snapshot;
+
+    for (const sel of ['.dw-candidates-scroll', '.fd-team-body', '.dw-inspector-body', '.dw-ready-roster-scroll']) {
+        const container = root.querySelector(sel);
+        if (container && typeof container.scrollTop === 'number' && container.scrollTop > 0) {
+            snapshot.scrollBySelector[sel] = container.scrollTop;
+        }
+    }
+
+    if (typeof document !== 'undefined' && document.activeElement) {
+        let cur = document.activeElement;
+        while (cur && cur !== root) {
+            if (cur.dataset && cur.dataset.focusKey) {
+                snapshot.focusKey = cur.dataset.focusKey;
+                break;
+            }
+            cur = cur.parentNode ?? null;
+        }
+    }
+
+    return snapshot;
+}
+
+function restoreFocusAndScroll(root, snapshot) {
+    if (!root || !snapshot || typeof root.querySelector !== 'function') return;
+
+    for (const [sel, top] of Object.entries(snapshot.scrollBySelector)) {
+        const container = root.querySelector(sel);
+        if (container) {
+            container.scrollTop = top;
+        }
+    }
+
+    if (snapshot.focusKey && typeof root.querySelectorAll === 'function') {
+        const candidates = [
+            ...root.querySelectorAll('.fd-card'),
+            ...root.querySelectorAll('button'),
+            ...root.querySelectorAll('.fd-pitch-node'),
+            ...root.querySelectorAll('.fd-slot-row'),
+        ];
+        const target = candidates.find(
+            (node) => node?.dataset?.focusKey === snapshot.focusKey && !node.disabled
+        );
+        if (target && typeof target.focus === 'function') {
+            try {
+                target.focus({ preventScroll: true });
+            } catch {
+                target.focus();
+            }
+        }
+    }
+}
 
 export function startGame(ctx) {
     ctx.area.replaceChildren();
     ctx.area.hidden = false;
 
-    const root = el('div', 'fd-root');
+    const root = el('div', 'fd-root ui-scope');
     ctx.area.append(root);
 
     // 2-player only check
     if (!Array.isArray(ctx.order) || ctx.order.length !== 2 || ctx.players.length !== 2) {
+        syncDraftBodyScope(false);
         const renderOnlyTwoNotice = () => {
             root.replaceChildren(el('div', 'fd-only-two', t('draft.onlyTwoPlayers')));
         };
@@ -54,7 +134,8 @@ export function startGame(ctx) {
     }
 
     const state = createInitialState(ctx);
-    let localSelectedPlayerId = null;
+    const preview = createDraftPreviewState();
+    let submittingPick = false;
     let playbackTimer = null;
 
     function stopPlaybackTimer() {
@@ -74,7 +155,8 @@ export function startGame(ctx) {
         const res = applyDraftRoll(state, actorId, teamSeasonId);
         if (!res.ok) return;
         if (actorId === ctx.me) {
-            localSelectedPlayerId = null;
+            clearDraftPreview(preview);
+            submittingPick = false;
         }
         render();
     }
@@ -83,7 +165,8 @@ export function startGame(ctx) {
         const res = applyDraftReroll(state, actorId, type, teamSeasonId);
         if (!res.ok) return;
         if (actorId === ctx.me) {
-            localSelectedPlayerId = null;
+            clearDraftPreview(preview);
+            submittingPick = false;
         }
         render();
     }
@@ -92,16 +175,24 @@ export function startGame(ctx) {
         const res = applyDraftRedraw(state, actorId, teamSeasonId);
         if (!res.ok) return;
         if (actorId === ctx.me) {
-            localSelectedPlayerId = null;
+            clearDraftPreview(preview);
+            submittingPick = false;
         }
         render();
     }
 
     function applyPick(actorId, playerId, slot) {
         const res = applyDraftPick(state, actorId, playerId, slot);
-        if (!res.ok) return;
+        if (!res.ok) {
+            if (actorId === ctx.me) {
+                preview.pendingPickKey = null;
+                submittingPick = false;
+            }
+            return;
+        }
         if (actorId === ctx.me) {
-            localSelectedPlayerId = null;
+            clearDraftPreview(preview);
+            submittingPick = false;
         }
         render();
     }
@@ -110,19 +201,13 @@ export function startGame(ctx) {
         const res = applyDraftLockTransition(state, actorId);
         if (!res.ok) return;
         if (actorId === ctx.me) {
-            localSelectedPlayerId = null;
+            clearDraftPreview(preview);
+            submittingPick = false;
         }
         render();
     }
 
-
     function applyMatchStart(actorId, matchSeed) {
-        // Validate:
-        // 1. State phase is REVEAL
-        // 2. Both rosters are complete and locked
-        // 3. actorId === ctx.order[0] (Team A)
-        // 4. Match has not started yet
-        // 5. matchSeed is a valid safe integer
         if (state.phase !== 'REVEAL') return;
         if (!areBothTeamsLocked(state)) return;
         if (actorId !== ctx.order[0]) return;
@@ -193,6 +278,7 @@ export function startGame(ctx) {
         if (state.phase !== 'DRAFT' || !canTeamRoll(myTeam)) return;
         const chosen = generateInitialRollTeamSeason();
         if (!chosen) return;
+        clearDraftPreview(preview);
         ctx.send({ kind: 'roll', teamSeasonId: chosen.id });
         applyRoll(ctx.me, chosen.id);
     }
@@ -205,6 +291,7 @@ export function startGame(ctx) {
         const nextTeamSeason = generateRerollTeamSeason(myTeam.draft.currentRoll, type);
         if (!nextTeamSeason) return;
 
+        clearDraftPreview(preview);
         ctx.send({ kind: 'reroll', type, teamSeasonId: nextTeamSeason.id });
         applyReroll(ctx.me, type, nextTeamSeason.id);
     }
@@ -216,28 +303,53 @@ export function startGame(ctx) {
         const nextTeamSeason = generateInitialRollTeamSeason();
         if (!nextTeamSeason) return;
 
+        clearDraftPreview(preview);
         ctx.send({ kind: 'redraw', teamSeasonId: nextTeamSeason.id });
         applyRedraw(ctx.me, nextTeamSeason.id);
     }
 
     function handleSelectCandidate(playerId) {
         const myTeam = getMyTeam(state, ctx.me);
-        if (state.phase !== 'DRAFT' || !canTeamPick(myTeam)) return;
-        const candidate = myTeam.draft.currentRoll?.players?.find((p) => p.id === playerId);
-        if (!candidate || getAvailableRolesForPlayer(myTeam.roster, candidate).length === 0) return;
-        localSelectedPlayerId = localSelectedPlayerId === playerId ? null : playerId;
+        const res = selectPreviewCandidate(state, myTeam, preview, playerId);
+        if (!res.changed) return;
         render();
     }
 
-    function handlePickSlot(playerId, slotOrRole) {
+    function handleSelectSlot(slotOrRole) {
         const myTeam = getMyTeam(state, ctx.me);
-        if (state.phase !== 'DRAFT' || !canTeamPick(myTeam)) return;
-        const slot = SLOTS.includes(slotOrRole)
-            ? slotOrRole
-            : getFirstAvailableSlotForRole(myTeam.roster, slotOrRole);
-        if (!slot) return;
-        ctx.send({ kind: 'pick', playerId, slot });
-        applyPick(ctx.me, playerId, slot);
+        const res = selectPreviewSlot(state, myTeam, preview, slotOrRole);
+        if (!res.changed) return;
+        render();
+    }
+
+    function handleClearPreview() {
+        if (!preview.selectedPlayerId && !preview.selectedSlot) return;
+        clearDraftPreview(preview);
+        render();
+    }
+
+    function handleConfirmPick() {
+        if (submittingPick) return;
+        const myTeam = getMyTeam(state, ctx.me);
+        const status = getConfirmPickStatus(state, myTeam, preview);
+        if (!status.canConfirm || !status.candidate || !status.slot) return;
+
+        const { candidate, slot } = status;
+        const pickKey = `${myTeam.draft.currentRoll?.id ?? 'roll'}:${candidate.id}:${slot}`;
+        if (preview.pendingPickKey === pickKey) return;
+
+        submittingPick = true;
+        preview.pendingPickKey = pickKey;
+
+        ctx.send({ kind: 'pick', playerId: candidate.id, slot });
+        applyPick(ctx.me, candidate.id, slot);
+        submittingPick = false;
+    }
+
+    function handleSelectMobileTab(tabId) {
+        if (!MOBILE_TABS.includes(tabId) || preview.mobileTab === tabId) return;
+        preview.mobileTab = tabId;
+        render();
     }
 
     function handleLockClick() {
@@ -265,7 +377,15 @@ export function startGame(ctx) {
     // ----- Rendering -----
 
     function render() {
+        const myTeam = getMyTeam(state, ctx.me) ?? state.teams[0];
+        reconcileDraftPreview(state, myTeam, preview);
+
+        const isDraft = state.phase === 'DRAFT';
+        syncDraftBodyScope(isDraft);
+
+        const uiSnapshot = captureFocusAndScroll(root);
         root.replaceChildren();
+        root.className = isDraft ? 'fd-root ui-scope dw-root' : 'fd-root ui-scope';
 
         root.append(renderHeader(state, ctx.me));
 
@@ -273,16 +393,22 @@ export function startGame(ctx) {
             root.append(el('div', 'fd-alert', t('draft.opponentLeft')));
         }
 
-        const mainGrid = el('div', 'fd-main');
-        const teamAPanel = renderTeamPanel(state, state.teams[0], 0, ctx.me);
-        let centerZone;
-        if (state.phase === 'REVEAL') {
-            centerZone = renderCompleteZone(state, isTeamAPlayer(), handleMatchStartClick);
-        } else if (state.phase === 'MATCH' || state.phase === 'RESULT') {
-            centerZone = renderMatchZone(state);
-        } else {
-            const myTeam = getMyTeam(state, ctx.me);
-            centerZone = renderDraftZone(
+        if (isDraft) {
+            root.append(renderMobileWorkbenchTabs(myTeam, preview, handleSelectMobileTab));
+
+            const mainGrid = el('div', 'fd-main dw-workbench');
+            if (mainGrid.dataset) {
+                mainGrid.dataset.mobileTab = preview.mobileTab;
+            }
+
+            const myIndex = state.teams[0]?.id === myTeam.id ? 0 : 1;
+            const ownSquadCol = renderTeamPanel(state, myTeam, myIndex, ctx.me, {
+                preview,
+                onSelectSlot: handleSelectSlot,
+            });
+            ownSquadCol.classList.add('dw-col-squad');
+
+            const centerZone = renderDraftZone(
                 state,
                 myTeam,
                 {
@@ -290,23 +416,52 @@ export function startGame(ctx) {
                     onRerollClick: handleRerollClick,
                     onRedrawClick: handleRedrawClick,
                     onSelectCandidate: handleSelectCandidate,
-                    onPickSlot: handlePickSlot,
+                    onSelectSlot: handleSelectSlot,
+                    onConfirmPick: handleConfirmPick,
+                    onClearPreview: handleClearPreview,
                     onLockClick: handleLockClick,
-                    selectedPlayerId: localSelectedPlayerId,
+                    selectedPlayerId: preview.selectedPlayerId,
+                    selectedSlot: preview.selectedSlot,
+                    preview,
                 },
-                localSelectedPlayerId
+                preview.selectedPlayerId
             );
+            centerZone.classList.add('dw-col-center');
+
+            const inspectorCol = renderPlayerInspector(
+                state,
+                myTeam,
+                {
+                    onSelectSlot: handleSelectSlot,
+                },
+                preview
+            );
+            inspectorCol.classList.add('dw-col-inspector');
+
+            mainGrid.append(ownSquadCol, centerZone, inspectorCol);
+            root.append(mainGrid);
+            restoreFocusAndScroll(root, uiSnapshot);
+            return;
         }
+
+        const mainGrid = el('div', 'fd-main');
+        const teamAPanel = renderTeamPanel(state, state.teams[0], 0, ctx.me);
+        const centerZone =
+            state.phase === 'REVEAL'
+                ? renderCompleteZone(state, isTeamAPlayer(), handleMatchStartClick)
+                : renderMatchZone(state);
         const teamBPanel = renderTeamPanel(state, state.teams[1], 1, ctx.me);
 
         mainGrid.append(teamAPanel, centerZone, teamBPanel);
         root.append(mainGrid);
+        restoreFocusAndScroll(root, uiSnapshot);
     }
 
     // Re-render in-place whenever the user changes locale (without resetting state or match playback)
     const unsubscribeLocale = subscribeLocaleChange(() => {
         if (root.isConnected === false) {
             unsubscribeLocale();
+            syncDraftBodyScope(false);
             return;
         }
         render();
@@ -370,7 +525,10 @@ export function startGame(ctx) {
 
     return {
         getState: () => state,
-        stop: stopPlaybackTimer,
+        getPreviewState: () => ({ ...preview }),
+        stop: () => {
+            stopPlaybackTimer();
+            syncDraftBodyScope(false);
+        },
     };
 }
-

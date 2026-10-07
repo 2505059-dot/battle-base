@@ -156,7 +156,12 @@ function renderRoom() {
     }
     document.body.classList.toggle('in-room', inRoom);
     document.body.classList.toggle('in-game', inRoom && started);
+    if (!inRoom || !started) {
+        document.body.classList.remove('in-draft');
+    }
 }
+
+let activeGame = null;
 
 function showRoom() {
     inRoom = true;
@@ -167,6 +172,10 @@ function showRoom() {
 }
 
 function showLobby() {
+    if (activeGame && typeof activeGame.stop === 'function') {
+        activeGame.stop();
+        activeGame = null;
+    }
     me = null;
     hostId = null;
     started = false;
@@ -177,7 +186,7 @@ function showLobby() {
     $('game-area').hidden = true;
     $('game-area').replaceChildren();
     $('lobby').hidden = false;
-    document.body.classList.remove('in-room', 'in-game');
+    document.body.classList.remove('in-room', 'in-game', 'in-draft');
     syncAboutVisibility();
 }
 
@@ -221,12 +230,16 @@ net.on('players', (msg) => {
 });
 
 net.on('started', (msg) => {
+    if (activeGame && typeof activeGame.stop === 'function') {
+        activeGame.stop();
+        activeGame = null;
+    }
     started = true;
     players = msg.players;
     messageHandlers = [];
     playersHandlers = [];
     renderRoom();
-    startGame({
+    activeGame = startGame({
         area: $('game-area'),
         me,
         players,
@@ -243,6 +256,10 @@ net.on('message', (msg) => {
 });
 
 net.on('lobby', () => {
+    if (activeGame && typeof activeGame.stop === 'function') {
+        activeGame.stop();
+        activeGame = null;
+    }
     started = false;
     $('game-area').hidden = true;
     $('game-area').replaceChildren();

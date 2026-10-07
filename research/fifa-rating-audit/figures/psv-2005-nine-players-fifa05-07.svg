@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="520" viewBox="0 0 980 520">
+<rect width="100%" height="100%" fill="white"/>
+<text x="490.0" y="30" text-anchor="middle" font-size="20" font-family="Arial">PSV 2005 case: nine players in FIFAIndex editions</text>
+<line x1="75" y1="445.0" x2="950" y2="445.0" stroke="#ddd"/>
+<text x="67" y="449.0" text-anchor="end" font-size="11" fill="#444" font-family="Arial">44.9</text>
+<line x1="75" y1="369.0" x2="950" y2="369.0" stroke="#ddd"/>
+<text x="67" y="373.0" text-anchor="end" font-size="11" fill="#444" font-family="Arial">53.9</text>
+<line x1="75" y1="293.0" x2="950" y2="293.0" stroke="#ddd"/>
+<text x="67" y="297.0" text-anchor="end" font-size="11" fill="#444" font-family="Arial">63.0</text>
+<line x1="75" y1="217.0" x2="950" y2="217.0" stroke="#ddd"/>
+<text x="67" y="221.0" text-anchor="end" font-size="11" fill="#444" font-family="Arial">72.0</text>
+<line x1="75" y1="141.0" x2="950" y2="141.0" stroke="#ddd"/>
+<text x="67" y="145.0" text-anchor="end" font-size="11" fill="#444" font-family="Arial">81.1</text>
+<line x1="75" y1="65.0" x2="950" y2="65.0" stroke="#ddd"/>
+<text x="67" y="69.0" text-anchor="end" font-size="11" fill="#444" font-family="Arial">90.1</text>
+<line x1="75.0" y1="65" x2="75.0" y2="445" stroke="#f0f0f0"/>
+<text x="75.0" y="465" text-anchor="middle" font-size="10" fill="#444" font-family="Arial">2005</text>
+<line x1="512.5" y1="65" x2="512.5" y2="445" stroke="#f0f0f0"/>
+<text x="512.5" y="465" text-anchor="middle" font-size="10" fill="#444" font-family="Arial">2006</text>
+<line x1="950.0" y1="65" x2="950.0" y2="445" stroke="#f0f0f0"/>
+<text x="950.0" y="465" text-anchor="middle" font-size="10" fill="#444" font-family="Arial">2007</text>
+<line x1="75" y1="445" x2="950" y2="445" stroke="#333"/><line x1="75" y1="65" x2="75" y2="445" stroke="#333"/>
+<polyline points="75.0,200.4 512.5,166.8 950.0,150.0" fill="none" stroke="#1769aa" stroke-width="2"/>
+<circle cx="75.0" cy="200.4" r="3" fill="#1769aa"/>
+<circle cx="512.5" cy="166.8" r="3" fill="#1769aa"/>
+<circle cx="950.0" cy="150.0" r="3" fill="#1769aa"/>
+<line x1="85" y1="50" x2="103" y2="50" stroke="#1769aa" stroke-width="3"/><text x="108" y="54" font-size="11" font-family="Arial">Heurelho Gomes</text>
+<polyline points="75.0,158.4 512.5,150.0 950.0,99.6" fill="none" stroke="#d45500" stroke-width="2"/>
+<circle cx="75.0" cy="158.4" r="3" fill="#d45500"/>
+<circle cx="512.5" cy="150.0" r="3" fill="#d45500"/>
+<circle cx="950.0" cy="99.6" r="3" fill="#d45500"/>
+<line x1="375" y1="50" x2="393" y2="50" stroke="#d45500" stroke-width="3"/><text x="398" y="54" font-size="11" font-family="Arial">Alex</text>
+<polyline points="75.0,158.4 512.5,158.4 950.0,217.2" fill="none" stroke="#168a55" stroke-width="2"/>
+<circle cx="75.0" cy="158.4" r="3" fill="#168a55"/>
+<circle cx="512.5" cy="158.4" r="3" fill="#168a55"/>
+<circle cx="950.0" cy="217.2" r="3" fill="#168a55"/>
+<line x1="665" y1="50" x2="683" y2="50" stroke="#168a55" stroke-width="3"/><text x="688" y="54" font-size="11" font-family="Arial">Wilfred Bouma</text>
+<polyline points="75.0,158.4 512.5,158.4 950.0,158.4" fill="none" stroke="#8a58a6" stroke-width="2"/>
+<circle cx="75.0" cy="158.4" r="3" fill="#8a58a6"/>
+<circle cx="512.5" cy="158.4" r="3" fill="#8a58a6"/>
+<circle cx="950.0" cy="158.4" r="3" fill="#8a58a6"/>
+<line x1="85" y1="66" x2="103" y2="66" stroke="#8a58a6" stroke-width="3"/><text x="108" y="70" font-size="11" font-family="Arial">Lee Young-pyo</text>
+<polyline points="75.0,166.8 512.5,141.6 950.0,133.2" fill="none" stroke="#b23b65" stroke-width="2"/>
+<circle cx="75.0" cy="166.8" r="3" fill="#b23b65"/>
+<circle cx="512.5" cy="141.6" r="3" fill="#b23b65"/>
+<circle cx="950.0" cy="133.2" r="3" fill="#b23b65"/>
+<line x1="375" y1="66" x2="393" y2="66" stroke="#b23b65" stroke-width="3"/><text x="398" y="70" font-size="11" font-family="Arial">Mark van Bommel</text>
+<polyline points="75.0,158.4 512.5,158.4 950.0,91.2" fill="none" stroke="#777700" stroke-width="2"/>
+<circle cx="75.0" cy="158.4" r="3" fill="#777700"/>
+<circle cx="512.5" cy="158.4" r="3" fill="#777700"/>
+<circle cx="950.0" cy="91.2" r="3" fill="#777700"/>
+<line x1="665" y1="66" x2="683" y2="66" stroke="#777700" stroke-width="3"/><text x="688" y="70" font-size="11" font-family="Arial">Phillip Cocu</text>
+<polyline points="75.0,175.2 512.5,133.2 950.0,158.4" fill="none" stroke="#1769aa" stroke-width="2"/>
+<circle cx="75.0" cy="175.2" r="3" fill="#1769aa"/>
+<circle cx="512.5" cy="133.2" r="3" fill="#1769aa"/>
+<circle cx="950.0" cy="158.4" r="3" fill="#1769aa"/>
+<line x1="85" y1="82" x2="103" y2="82" stroke="#1769aa" stroke-width="3"/><text x="108" y="86" font-size="11" font-family="Arial">Park Ji-sung</text>
+<polyline points="75.0,418.8 512.5,242.4 950.0,208.8" fill="none" stroke="#d45500" stroke-width="2"/>
+<circle cx="75.0" cy="418.8" r="3" fill="#d45500"/>
+<circle cx="512.5" cy="242.4" r="3" fill="#d45500"/>
+<circle cx="950.0" cy="208.8" r="3" fill="#d45500"/>
+<line x1="375" y1="82" x2="393" y2="82" stroke="#d45500" stroke-width="3"/><text x="398" y="86" font-size="11" font-family="Arial">Jefferson Farfan</text>
+<polyline points="75.0,234.0 512.5,200.4 950.0,141.6" fill="none" stroke="#168a55" stroke-width="2"/>
+<circle cx="75.0" cy="234.0" r="3" fill="#168a55"/>
+<circle cx="512.5" cy="200.4" r="3" fill="#168a55"/>
+<circle cx="950.0" cy="141.6" r="3" fill="#168a55"/>
+<line x1="665" y1="82" x2="683" y2="82" stroke="#168a55" stroke-width="3"/><text x="688" y="86" font-size="11" font-family="Arial">Jan Vennegoor of Hesselink</text>
+</svg>

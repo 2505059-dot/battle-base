@@ -1,0 +1,1120 @@
+{
+  "candidateTeamSeason": "germany-2014",
+  "actualTeamOrCountry": "Germany",
+  "actualLeagueOrType": "National team",
+  "plannedGroup": "national-team",
+  "referenceSeasonOrEvent": "2014 World Cup",
+  "gameSnapshot": {
+    "gameVersion": "FIFA 14",
+    "targetRevisionReference": null,
+    "versionConsistencyStatus": "FIFAIndex edition page identifies game version but does not disclose patch/update date",
+    "sourceCoverageStatus": "no exact team-name match in local cache; source data absence is not established",
+    "sourceTeamName": "Germany",
+    "snapshotStatus": "no-exact-team-name-match-in-local-cache-source-coverage-unknown",
+    "observedUpdateIds": [],
+    "observedUpdateDate": null,
+    "membershipEvidence": "source row club_name=Germany in FIFA 14 edition dataset",
+    "capturedRowCount": 0,
+    "expectedSourcePageCount": 30,
+    "fifaIndexGameRosterAudit": {
+      "sourceName": "FIFAIndex team edition page",
+      "pageUrl": "https://fifaindex.com/teams/1337-germany/fifa14",
+      "teamId": 1337,
+      "gameVersion": "FIFA 14",
+      "listedPlayerCount": 30,
+      "revisionDate": null,
+      "revisionDateStatus": "not disclosed on cited FIFAIndex edition page; unknown",
+      "namesTranscribed": false,
+      "pageReadInSourceAudit": true,
+      "eventRosterComparison": {
+        "gameRosterSize": 30,
+        "officialRosterSize": 23,
+        "overlap": 22,
+        "officialNamesAbsentFromGame": [
+          "Shkodran Mustafi"
+        ]
+      }
+    },
+    "members": []
+  },
+  "officialEventSnapshots": [
+    {
+      "rosterType": "official-event-roster",
+      "source": {
+        "sourceName": "FIFA",
+        "title": "2014 FIFA World Cup squad lists",
+        "url": "https://www.fifadata.com/document/fwc/2014/pdf/fwc_2014_squadlists.pdf?cid=facebook_fifaworldcup",
+        "competition": "2014 FIFA World Cup",
+        "publicationDate": null,
+        "pageContentReadInSourceAudit": true
+      },
+      "records": [
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Manuel Neuer",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Germany",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "name-candidate-unconfirmed",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [
+            "manuel-neuer"
+          ],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.fifadata.com/document/fwc/2014/pdf/fwc_2014_squadlists.pdf?cid=facebook_fifaworldcup",
+          "rawSourceFields": {
+            "playerName": "Manuel Neuer"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2014 FIFA World Cup",
+          "sourceUrl": "https://www.fifadata.com/document/fwc/2014/pdf/fwc_2014_squadlists.pdf?cid=facebook_fifaworldcup"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Kevin Großkreutz",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Germany",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.fifadata.com/document/fwc/2014/pdf/fwc_2014_squadlists.pdf?cid=facebook_fifaworldcup",
+          "rawSourceFields": {
+            "playerName": "Kevin Großkreutz"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2014 FIFA World Cup",
+          "sourceUrl": "https://www.fifadata.com/document/fwc/2014/pdf/fwc_2014_squadlists.pdf?cid=facebook_fifaworldcup"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Matthias Ginter",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Germany",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.fifadata.com/document/fwc/2014/pdf/fwc_2014_squadlists.pdf?cid=facebook_fifaworldcup",
+          "rawSourceFields": {
+            "playerName": "Matthias Ginter"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2014 FIFA World Cup",
+          "sourceUrl": "https://www.fifadata.com/document/fwc/2014/pdf/fwc_2014_squadlists.pdf?cid=facebook_fifaworldcup"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Benedikt Höwedes",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Germany",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.fifadata.com/document/fwc/2014/pdf/fwc_2014_squadlists.pdf?cid=facebook_fifaworldcup",
+          "rawSourceFields": {
+            "playerName": "Benedikt Höwedes"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2014 FIFA World Cup",
+          "sourceUrl": "https://www.fifadata.com/document/fwc/2014/pdf/fwc_2014_squadlists.pdf?cid=facebook_fifaworldcup"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Mats Hummels",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Germany",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "name-candidate-unconfirmed",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [
+            "mats-hummels"
+          ],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.fifadata.com/document/fwc/2014/pdf/fwc_2014_squadlists.pdf?cid=facebook_fifaworldcup",
+          "rawSourceFields": {
+            "playerName": "Mats Hummels"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2014 FIFA World Cup",
+          "sourceUrl": "https://www.fifadata.com/document/fwc/2014/pdf/fwc_2014_squadlists.pdf?cid=facebook_fifaworldcup"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Sami Khedira",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Germany",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "name-candidate-unconfirmed",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [
+            "sami-khedira"
+          ],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.fifadata.com/document/fwc/2014/pdf/fwc_2014_squadlists.pdf?cid=facebook_fifaworldcup",
+          "rawSourceFields": {
+            "playerName": "Sami Khedira"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2014 FIFA World Cup",
+          "sourceUrl": "https://www.fifadata.com/document/fwc/2014/pdf/fwc_2014_squadlists.pdf?cid=facebook_fifaworldcup"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Bastian Schweinsteiger",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Germany",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "name-candidate-unconfirmed",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [
+            "bastian-schweinsteiger"
+          ],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.fifadata.com/document/fwc/2014/pdf/fwc_2014_squadlists.pdf?cid=facebook_fifaworldcup",
+          "rawSourceFields": {
+            "playerName": "Bastian Schweinsteiger"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2014 FIFA World Cup",
+          "sourceUrl": "https://www.fifadata.com/document/fwc/2014/pdf/fwc_2014_squadlists.pdf?cid=facebook_fifaworldcup"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Mesut Özil",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Germany",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "name-candidate-unconfirmed",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [
+            "mesut-ozil"
+          ],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.fifadata.com/document/fwc/2014/pdf/fwc_2014_squadlists.pdf?cid=facebook_fifaworldcup",
+          "rawSourceFields": {
+            "playerName": "Mesut Özil"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2014 FIFA World Cup",
+          "sourceUrl": "https://www.fifadata.com/document/fwc/2014/pdf/fwc_2014_squadlists.pdf?cid=facebook_fifaworldcup"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "André Schürrle",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Germany",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.fifadata.com/document/fwc/2014/pdf/fwc_2014_squadlists.pdf?cid=facebook_fifaworldcup",
+          "rawSourceFields": {
+            "playerName": "André Schürrle"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2014 FIFA World Cup",
+          "sourceUrl": "https://www.fifadata.com/document/fwc/2014/pdf/fwc_2014_squadlists.pdf?cid=facebook_fifaworldcup"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Lukas Podolski",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Germany",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.fifadata.com/document/fwc/2014/pdf/fwc_2014_squadlists.pdf?cid=facebook_fifaworldcup",
+          "rawSourceFields": {
+            "playerName": "Lukas Podolski"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2014 FIFA World Cup",
+          "sourceUrl": "https://www.fifadata.com/document/fwc/2014/pdf/fwc_2014_squadlists.pdf?cid=facebook_fifaworldcup"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Miroslav Klose",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Germany",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.fifadata.com/document/fwc/2014/pdf/fwc_2014_squadlists.pdf?cid=facebook_fifaworldcup",
+          "rawSourceFields": {
+            "playerName": "Miroslav Klose"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2014 FIFA World Cup",
+          "sourceUrl": "https://www.fifadata.com/document/fwc/2014/pdf/fwc_2014_squadlists.pdf?cid=facebook_fifaworldcup"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Ron-Robert Zieler",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Germany",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.fifadata.com/document/fwc/2014/pdf/fwc_2014_squadlists.pdf?cid=facebook_fifaworldcup",
+          "rawSourceFields": {
+            "playerName": "Ron-Robert Zieler"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2014 FIFA World Cup",
+          "sourceUrl": "https://www.fifadata.com/document/fwc/2014/pdf/fwc_2014_squadlists.pdf?cid=facebook_fifaworldcup"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Thomas Müller",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Germany",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "name-candidate-unconfirmed",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [
+            "thomas-muller"
+          ],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.fifadata.com/document/fwc/2014/pdf/fwc_2014_squadlists.pdf?cid=facebook_fifaworldcup",
+          "rawSourceFields": {
+            "playerName": "Thomas Müller"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2014 FIFA World Cup",
+          "sourceUrl": "https://www.fifadata.com/document/fwc/2014/pdf/fwc_2014_squadlists.pdf?cid=facebook_fifaworldcup"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Julian Draxler",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Germany",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.fifadata.com/document/fwc/2014/pdf/fwc_2014_squadlists.pdf?cid=facebook_fifaworldcup",
+          "rawSourceFields": {
+            "playerName": "Julian Draxler"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2014 FIFA World Cup",
+          "sourceUrl": "https://www.fifadata.com/document/fwc/2014/pdf/fwc_2014_squadlists.pdf?cid=facebook_fifaworldcup"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Erik Durm",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Germany",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.fifadata.com/document/fwc/2014/pdf/fwc_2014_squadlists.pdf?cid=facebook_fifaworldcup",
+          "rawSourceFields": {
+            "playerName": "Erik Durm"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2014 FIFA World Cup",
+          "sourceUrl": "https://www.fifadata.com/document/fwc/2014/pdf/fwc_2014_squadlists.pdf?cid=facebook_fifaworldcup"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Philipp Lahm",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Germany",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "name-candidate-unconfirmed",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [
+            "philipp-lahm"
+          ],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.fifadata.com/document/fwc/2014/pdf/fwc_2014_squadlists.pdf?cid=facebook_fifaworldcup",
+          "rawSourceFields": {
+            "playerName": "Philipp Lahm"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2014 FIFA World Cup",
+          "sourceUrl": "https://www.fifadata.com/document/fwc/2014/pdf/fwc_2014_squadlists.pdf?cid=facebook_fifaworldcup"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Per Mertesacker",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Germany",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.fifadata.com/document/fwc/2014/pdf/fwc_2014_squadlists.pdf?cid=facebook_fifaworldcup",
+          "rawSourceFields": {
+            "playerName": "Per Mertesacker"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2014 FIFA World Cup",
+          "sourceUrl": "https://www.fifadata.com/document/fwc/2014/pdf/fwc_2014_squadlists.pdf?cid=facebook_fifaworldcup"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Toni Kroos",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Germany",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "name-candidate-unconfirmed",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [
+            "toni-kroos"
+          ],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.fifadata.com/document/fwc/2014/pdf/fwc_2014_squadlists.pdf?cid=facebook_fifaworldcup",
+          "rawSourceFields": {
+            "playerName": "Toni Kroos"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2014 FIFA World Cup",
+          "sourceUrl": "https://www.fifadata.com/document/fwc/2014/pdf/fwc_2014_squadlists.pdf?cid=facebook_fifaworldcup"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Mario Götze",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Germany",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.fifadata.com/document/fwc/2014/pdf/fwc_2014_squadlists.pdf?cid=facebook_fifaworldcup",
+          "rawSourceFields": {
+            "playerName": "Mario Götze"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2014 FIFA World Cup",
+          "sourceUrl": "https://www.fifadata.com/document/fwc/2014/pdf/fwc_2014_squadlists.pdf?cid=facebook_fifaworldcup"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Jérôme Boateng",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Germany",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "name-candidate-unconfirmed",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [
+            "jerome-boateng"
+          ],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.fifadata.com/document/fwc/2014/pdf/fwc_2014_squadlists.pdf?cid=facebook_fifaworldcup",
+          "rawSourceFields": {
+            "playerName": "Jérôme Boateng"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2014 FIFA World Cup",
+          "sourceUrl": "https://www.fifadata.com/document/fwc/2014/pdf/fwc_2014_squadlists.pdf?cid=facebook_fifaworldcup"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Shkodran Mustafi",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Germany",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.fifadata.com/document/fwc/2014/pdf/fwc_2014_squadlists.pdf?cid=facebook_fifaworldcup",
+          "rawSourceFields": {
+            "playerName": "Shkodran Mustafi"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2014 FIFA World Cup",
+          "sourceUrl": "https://www.fifadata.com/document/fwc/2014/pdf/fwc_2014_squadlists.pdf?cid=facebook_fifaworldcup"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Roman Weidenfeller",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Germany",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "name-candidate-unconfirmed",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [
+            "roman-weidenfeller"
+          ],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.fifadata.com/document/fwc/2014/pdf/fwc_2014_squadlists.pdf?cid=facebook_fifaworldcup",
+          "rawSourceFields": {
+            "playerName": "Roman Weidenfeller"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2014 FIFA World Cup",
+          "sourceUrl": "https://www.fifadata.com/document/fwc/2014/pdf/fwc_2014_squadlists.pdf?cid=facebook_fifaworldcup"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Christoph Kramer",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Germany",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-event-roster list at https://www.fifadata.com/document/fwc/2014/pdf/fwc_2014_squadlists.pdf?cid=facebook_fifaworldcup",
+          "rawSourceFields": {
+            "playerName": "Christoph Kramer"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2014 FIFA World Cup",
+          "sourceUrl": "https://www.fifadata.com/document/fwc/2014/pdf/fwc_2014_squadlists.pdf?cid=facebook_fifaworldcup"
+        }
+      ],
+      "replacements": []
+    }
+  ],
+  "supplementalAttributeCandidates": {
+    "sourceFile": "germany-2014.event-attribute-candidates.sofifa.json",
+    "gameVersion": "FIFA 14",
+    "count": 23,
+    "matchRule": "exact normalized source long_name + exact source nationality; not proof of game national-team membership",
+    "unmatchedOfficialRosterNames": [],
+    "records": [
+      {
+        "sourcePlayerId": "121944",
+        "rawName": "Bastian Schweinsteiger",
+        "sourceNationality": "Germany",
+        "sourceClubName": "Bayern München",
+        "rawPosition": "CM, CDM",
+        "rawOverall": "88",
+        "candidateEventRosterNames": [
+          {
+            "name": "Bastian Schweinsteiger",
+            "rosterType": "official-event-roster",
+            "sourceUrl": "https://www.fifadata.com/document/fwc/2014/pdf/fwc_2014_squadlists.pdf?cid=facebook_fifaworldcup"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "confirmed-existing-by-exact-source-id",
+        "canonicalPlayerId": "bastian-schweinsteiger",
+        "sourcePlayerPageUrl": "https://sofifa.com/player/121944/bastian-schweinsteiger/140052/"
+      },
+      {
+        "sourcePlayerId": "176635",
+        "rawName": "Mesut Özil",
+        "sourceNationality": "Germany",
+        "sourceClubName": "Arsenal FC",
+        "rawPosition": "CAM",
+        "rawOverall": "87",
+        "candidateEventRosterNames": [
+          {
+            "name": "Mesut Özil",
+            "rosterType": "official-event-roster",
+            "sourceUrl": "https://www.fifadata.com/document/fwc/2014/pdf/fwc_2014_squadlists.pdf?cid=facebook_fifaworldcup"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "confirmed-existing-by-exact-source-id",
+        "canonicalPlayerId": "mesut-ozil",
+        "sourcePlayerPageUrl": "https://sofifa.com/player/176635/mesut-ozil/140052/"
+      },
+      {
+        "sourcePlayerId": "167495",
+        "rawName": "Manuel Neuer",
+        "sourceNationality": "Germany",
+        "sourceClubName": "Bayern München",
+        "rawPosition": "GK",
+        "rawOverall": "87",
+        "candidateEventRosterNames": [
+          {
+            "name": "Manuel Neuer",
+            "rosterType": "official-event-roster",
+            "sourceUrl": "https://www.fifadata.com/document/fwc/2014/pdf/fwc_2014_squadlists.pdf?cid=facebook_fifaworldcup"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "confirmed-existing-by-exact-source-id",
+        "canonicalPlayerId": "manuel-neuer",
+        "sourcePlayerPageUrl": "https://sofifa.com/player/167495/manuel-neuer/140052/"
+      },
+      {
+        "sourcePlayerId": "121939",
+        "rawName": "Philipp Lahm",
+        "sourceNationality": "Germany",
+        "sourceClubName": "Bayern München",
+        "rawPosition": "CDM, RB, LB, CM",
+        "rawOverall": "87",
+        "candidateEventRosterNames": [
+          {
+            "name": "Philipp Lahm",
+            "rosterType": "official-event-roster",
+            "sourceUrl": "https://www.fifadata.com/document/fwc/2014/pdf/fwc_2014_squadlists.pdf?cid=facebook_fifaworldcup"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "confirmed-existing-by-exact-source-id",
+        "canonicalPlayerId": "philipp-lahm",
+        "sourcePlayerPageUrl": "https://sofifa.com/player/121939/philipp-lahm/140052/"
+      },
+      {
+        "sourcePlayerId": "192318",
+        "rawName": "Mario Götze",
+        "sourceNationality": "Germany",
+        "sourceClubName": "Bayern München",
+        "rawPosition": "CAM, CF, CM, RM",
+        "rawOverall": "85",
+        "candidateEventRosterNames": [
+          {
+            "name": "Mario Götze",
+            "rosterType": "official-event-roster",
+            "sourceUrl": "https://www.fifadata.com/document/fwc/2014/pdf/fwc_2014_squadlists.pdf?cid=facebook_fifaworldcup"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "sourcePlayerPageUrl": "https://sofifa.com/player/192318/mario-gotze/140052/"
+      },
+      {
+        "sourcePlayerId": "189596",
+        "rawName": "Thomas Müller",
+        "sourceNationality": "Germany",
+        "sourceClubName": "Bayern München",
+        "rawPosition": "RM, CAM, ST, LM",
+        "rawOverall": "85",
+        "candidateEventRosterNames": [
+          {
+            "name": "Thomas Müller",
+            "rosterType": "official-event-roster",
+            "sourceUrl": "https://www.fifadata.com/document/fwc/2014/pdf/fwc_2014_squadlists.pdf?cid=facebook_fifaworldcup"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "confirmed-existing-by-exact-source-id",
+        "canonicalPlayerId": "thomas-muller",
+        "sourcePlayerPageUrl": "https://sofifa.com/player/189596/thomas-muller/140052/"
+      },
+      {
+        "sourcePlayerId": "178603",
+        "rawName": "Mats Hummels",
+        "sourceNationality": "Germany",
+        "sourceClubName": "Borussia Dortmund",
+        "rawPosition": "CB",
+        "rawOverall": "85",
+        "candidateEventRosterNames": [
+          {
+            "name": "Mats Hummels",
+            "rosterType": "official-event-roster",
+            "sourceUrl": "https://www.fifadata.com/document/fwc/2014/pdf/fwc_2014_squadlists.pdf?cid=facebook_fifaworldcup"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "confirmed-existing-by-exact-source-id",
+        "canonicalPlayerId": "mats-hummels",
+        "sourcePlayerPageUrl": "https://sofifa.com/player/178603/mats-hummels/140052/"
+      },
+      {
+        "sourcePlayerId": "183907",
+        "rawName": "Jérôme Boateng",
+        "sourceNationality": "Germany",
+        "sourceClubName": "Bayern München",
+        "rawPosition": "CB, RB",
+        "rawOverall": "84",
+        "candidateEventRosterNames": [
+          {
+            "name": "Jérôme Boateng",
+            "rosterType": "official-event-roster",
+            "sourceUrl": "https://www.fifadata.com/document/fwc/2014/pdf/fwc_2014_squadlists.pdf?cid=facebook_fifaworldcup"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "confirmed-existing-by-exact-source-id",
+        "canonicalPlayerId": "jerome-boateng",
+        "sourcePlayerPageUrl": "https://sofifa.com/player/183907/jerome-boateng/140052/"
+      },
+      {
+        "sourcePlayerId": "182521",
+        "rawName": "Toni Kroos",
+        "sourceNationality": "Germany",
+        "sourceClubName": "Bayern München",
+        "rawPosition": "CAM, CM, CDM",
+        "rawOverall": "84",
+        "candidateEventRosterNames": [
+          {
+            "name": "Toni Kroos",
+            "rosterType": "official-event-roster",
+            "sourceUrl": "https://www.fifadata.com/document/fwc/2014/pdf/fwc_2014_squadlists.pdf?cid=facebook_fifaworldcup"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "confirmed-existing-by-exact-source-id",
+        "canonicalPlayerId": "toni-kroos",
+        "sourcePlayerPageUrl": "https://sofifa.com/player/182521/toni-kroos/140052/"
+      },
+      {
+        "sourcePlayerId": "179846",
+        "rawName": "Sami Khedira",
+        "sourceNationality": "Germany",
+        "sourceClubName": "Real Madrid",
+        "rawPosition": "CDM, CM",
+        "rawOverall": "84",
+        "candidateEventRosterNames": [
+          {
+            "name": "Sami Khedira",
+            "rosterType": "official-event-roster",
+            "sourceUrl": "https://www.fifadata.com/document/fwc/2014/pdf/fwc_2014_squadlists.pdf?cid=facebook_fifaworldcup"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "confirmed-existing-by-exact-source-id",
+        "canonicalPlayerId": "sami-khedira",
+        "sourcePlayerPageUrl": "https://sofifa.com/player/179846/sami-khedira/140052/"
+      },
+      {
+        "sourcePlayerId": "2196",
+        "rawName": "Roman Weidenfeller",
+        "sourceNationality": "Germany",
+        "sourceClubName": "Borussia Dortmund",
+        "rawPosition": "GK",
+        "rawOverall": "83",
+        "candidateEventRosterNames": [
+          {
+            "name": "Roman Weidenfeller",
+            "rosterType": "official-event-roster",
+            "sourceUrl": "https://www.fifadata.com/document/fwc/2014/pdf/fwc_2014_squadlists.pdf?cid=facebook_fifaworldcup"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "confirmed-existing-by-exact-source-id",
+        "canonicalPlayerId": "roman-weidenfeller",
+        "sourcePlayerPageUrl": "https://sofifa.com/player/2196/roman-weidenfeller/140052/"
+      },
+      {
+        "sourcePlayerId": "53612",
+        "rawName": "Per Mertesacker",
+        "sourceNationality": "Germany",
+        "sourceClubName": "Arsenal FC",
+        "rawPosition": "CB",
+        "rawOverall": "82",
+        "candidateEventRosterNames": [
+          {
+            "name": "Per Mertesacker",
+            "rosterType": "official-event-roster",
+            "sourceUrl": "https://www.fifadata.com/document/fwc/2014/pdf/fwc_2014_squadlists.pdf?cid=facebook_fifaworldcup"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "sourcePlayerPageUrl": "https://sofifa.com/player/53612/per-mertesacker/140052/"
+      },
+      {
+        "sourcePlayerId": "11141",
+        "rawName": "Miroslav Klose",
+        "sourceNationality": "Germany",
+        "sourceClubName": "SS Lazio",
+        "rawPosition": "ST",
+        "rawOverall": "82",
+        "candidateEventRosterNames": [
+          {
+            "name": "Miroslav Klose",
+            "rosterType": "official-event-roster",
+            "sourceUrl": "https://www.fifadata.com/document/fwc/2014/pdf/fwc_2014_squadlists.pdf?cid=facebook_fifaworldcup"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "sourcePlayerPageUrl": "https://sofifa.com/player/11141/miroslav-klose/140052/"
+      },
+      {
+        "sourcePlayerId": "179784",
+        "rawName": "Benedikt Höwedes",
+        "sourceNationality": "Germany",
+        "sourceClubName": "Schalke 04",
+        "rawPosition": "CB, RB",
+        "rawOverall": "81",
+        "candidateEventRosterNames": [
+          {
+            "name": "Benedikt Höwedes",
+            "rosterType": "official-event-roster",
+            "sourceUrl": "https://www.fifadata.com/document/fwc/2014/pdf/fwc_2014_squadlists.pdf?cid=facebook_fifaworldcup"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "sourcePlayerPageUrl": "https://sofifa.com/player/179784/benedikt-howedes/140052/"
+      },
+      {
+        "sourcePlayerId": "202166",
+        "rawName": "Julian Draxler",
+        "sourceNationality": "Germany",
+        "sourceClubName": "Schalke 04",
+        "rawPosition": "LM, CAM, RM",
+        "rawOverall": "80",
+        "candidateEventRosterNames": [
+          {
+            "name": "Julian Draxler",
+            "rosterType": "official-event-roster",
+            "sourceUrl": "https://www.fifadata.com/document/fwc/2014/pdf/fwc_2014_squadlists.pdf?cid=facebook_fifaworldcup"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "sourcePlayerPageUrl": "https://sofifa.com/player/202166/julian-draxler/140052/"
+      },
+      {
+        "sourcePlayerId": "193130",
+        "rawName": "André Schürrle",
+        "sourceNationality": "Germany",
+        "sourceClubName": "Chelsea FC",
+        "rawPosition": "LM, RM",
+        "rawOverall": "80",
+        "candidateEventRosterNames": [
+          {
+            "name": "André Schürrle",
+            "rosterType": "official-event-roster",
+            "sourceUrl": "https://www.fifadata.com/document/fwc/2014/pdf/fwc_2014_squadlists.pdf?cid=facebook_fifaworldcup"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "sourcePlayerPageUrl": "https://sofifa.com/player/193130/andre-schurrle/140052/"
+      },
+      {
+        "sourcePlayerId": "186148",
+        "rawName": "Ron-Robert Zieler",
+        "sourceNationality": "Germany",
+        "sourceClubName": "Hannover 96",
+        "rawPosition": "GK",
+        "rawOverall": "78",
+        "candidateEventRosterNames": [
+          {
+            "name": "Ron-Robert Zieler",
+            "rosterType": "official-event-roster",
+            "sourceUrl": "https://www.fifadata.com/document/fwc/2014/pdf/fwc_2014_squadlists.pdf?cid=facebook_fifaworldcup"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "sourcePlayerPageUrl": "https://sofifa.com/player/186148/ron-robert-zieler/140052/"
+      },
+      {
+        "sourcePlayerId": "150516",
+        "rawName": "Lukas Podolski",
+        "sourceNationality": "Germany",
+        "sourceClubName": "Arsenal FC",
+        "rawPosition": "LM, LW, ST",
+        "rawOverall": "77",
+        "candidateEventRosterNames": [
+          {
+            "name": "Lukas Podolski",
+            "rosterType": "official-event-roster",
+            "sourceUrl": "https://www.fifadata.com/document/fwc/2014/pdf/fwc_2014_squadlists.pdf?cid=facebook_fifaworldcup"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "sourcePlayerPageUrl": "https://sofifa.com/player/150516/lukas-podolski/140052/"
+      },
+      {
+        "sourcePlayerId": "207862",
+        "rawName": "Matthias Ginter",
+        "sourceNationality": "Germany",
+        "sourceClubName": "SC Freiburg",
+        "rawPosition": "CB, CDM, CM",
+        "rawOverall": "76",
+        "candidateEventRosterNames": [
+          {
+            "name": "Matthias Ginter",
+            "rosterType": "official-event-roster",
+            "sourceUrl": "https://www.fifadata.com/document/fwc/2014/pdf/fwc_2014_squadlists.pdf?cid=facebook_fifaworldcup"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "sourcePlayerPageUrl": "https://sofifa.com/player/207862/matthias-ginter/140052/"
+      },
+      {
+        "sourcePlayerId": "192227",
+        "rawName": "Shkodran Mustafi",
+        "sourceNationality": "Germany",
+        "sourceClubName": "Sampdoria",
+        "rawPosition": "CB, RB",
+        "rawOverall": "76",
+        "candidateEventRosterNames": [
+          {
+            "name": "Shkodran Mustafi",
+            "rosterType": "official-event-roster",
+            "sourceUrl": "https://www.fifadata.com/document/fwc/2014/pdf/fwc_2014_squadlists.pdf?cid=facebook_fifaworldcup"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "sourcePlayerPageUrl": "https://sofifa.com/player/192227/shkodran-mustafi/140052/"
+      },
+      {
+        "sourcePlayerId": "188352",
+        "rawName": "Kevin Großkreutz",
+        "sourceNationality": "Germany",
+        "sourceClubName": "Borussia Dortmund",
+        "rawPosition": "RB, LM, LB",
+        "rawOverall": "76",
+        "candidateEventRosterNames": [
+          {
+            "name": "Kevin Großkreutz",
+            "rosterType": "official-event-roster",
+            "sourceUrl": "https://www.fifadata.com/document/fwc/2014/pdf/fwc_2014_squadlists.pdf?cid=facebook_fifaworldcup"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "sourcePlayerPageUrl": "https://sofifa.com/player/188352/kevin-grosskreutz/140052/"
+      },
+      {
+        "sourcePlayerId": "204024",
+        "rawName": "Christoph Kramer",
+        "sourceNationality": "Germany",
+        "sourceClubName": "Borussia Mönchengladbach",
+        "rawPosition": "CDM, CM",
+        "rawOverall": "75",
+        "candidateEventRosterNames": [
+          {
+            "name": "Christoph Kramer",
+            "rosterType": "official-event-roster",
+            "sourceUrl": "https://www.fifadata.com/document/fwc/2014/pdf/fwc_2014_squadlists.pdf?cid=facebook_fifaworldcup"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "sourcePlayerPageUrl": "https://sofifa.com/player/204024/christoph-kramer/140052/"
+      },
+      {
+        "sourcePlayerId": "207920",
+        "rawName": "Erik Durm",
+        "sourceNationality": "Germany",
+        "sourceClubName": "Borussia Dortmund",
+        "rawPosition": "LB, RB",
+        "rawOverall": "71",
+        "candidateEventRosterNames": [
+          {
+            "name": "Erik Durm",
+            "rosterType": "official-event-roster",
+            "sourceUrl": "https://www.fifadata.com/document/fwc/2014/pdf/fwc_2014_squadlists.pdf?cid=facebook_fifaworldcup"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "sourcePlayerPageUrl": "https://sofifa.com/player/207920/erik-durm/140052/"
+      }
+    ]
+  }
+}

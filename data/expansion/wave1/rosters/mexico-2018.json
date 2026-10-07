@@ -1,0 +1,1767 @@
+{
+  "candidateTeamSeason": "mexico-2018",
+  "actualTeamOrCountry": "Mexico",
+  "actualLeagueOrType": "National team",
+  "plannedGroup": "national-team",
+  "referenceSeasonOrEvent": "2018 World Cup",
+  "gameSnapshot": {
+    "gameVersion": "FIFA 18",
+    "targetRevisionReference": null,
+    "versionConsistencyStatus": "FIFAIndex edition page identifies game version but does not disclose patch/update date",
+    "sourceCoverageStatus": "no exact team-name match in local cache; source data absence is not established",
+    "sourceTeamName": "Mexico",
+    "snapshotStatus": "no-exact-team-name-match-in-local-cache-source-coverage-unknown",
+    "observedUpdateIds": [],
+    "observedUpdateDate": null,
+    "membershipEvidence": "source row club_name=Mexico in FIFA 18 edition dataset",
+    "capturedRowCount": 0,
+    "expectedSourcePageCount": 36,
+    "fifaIndexGameRosterAudit": {
+      "sourceName": "FIFAIndex team edition page",
+      "pageUrl": "https://fifaindex.com/teams/1386-mexico/fifa18",
+      "teamId": 1386,
+      "gameVersion": "FIFA 18",
+      "listedPlayerCount": 36,
+      "revisionDate": null,
+      "revisionDateStatus": "not disclosed on cited FIFAIndex edition page; unknown",
+      "namesTranscribed": false,
+      "pageReadInSourceAudit": true,
+      "eventRosterComparison": {
+        "gameRosterSize": 36,
+        "submittedRosterSize": 23,
+        "submittedRosterOverlap": 23,
+        "finalRosterSize": 23,
+        "finalRosterOverlap": 22,
+        "finalNamesAbsentFromGame": [
+          "Rafael Márquez"
+        ],
+        "gameContainsBothReplacementNames": [
+          "Diego Reyes",
+          "Erick Gutiérrez"
+        ]
+      }
+    },
+    "members": []
+  },
+  "officialEventSnapshots": [
+    {
+      "rosterType": "official-submitted-roster",
+      "source": {
+        "sourceName": "FIFA 2018 official squad-list PDF mirror",
+        "title": "Mexico submitted 23-player list before Diego Reyes replacement",
+        "url": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF",
+        "officialConfirmationUrl": "https://inside.fifa.com/tournaments/mens/worldcup/2018russia/news/russia-2018-squads-officially-confirmed",
+        "competition": "2018 FIFA World Cup",
+        "publicationDate": "2018-06-13T08:44:00",
+        "pageContentReadInSourceAudit": true
+      },
+      "records": [
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "José Corona",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Mexico",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-submitted-roster list at https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF",
+          "rawSourceFields": {
+            "playerName": "José Corona"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Hugo Ayala",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Mexico",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-submitted-roster list at https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF",
+          "rawSourceFields": {
+            "playerName": "Hugo Ayala"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Carlos Salcedo",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Mexico",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-submitted-roster list at https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF",
+          "rawSourceFields": {
+            "playerName": "Carlos Salcedo"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Rafael Márquez",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Mexico",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-submitted-roster list at https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF",
+          "rawSourceFields": {
+            "playerName": "Rafael Márquez"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Diego Reyes",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Mexico",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-submitted-roster list at https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF",
+          "rawSourceFields": {
+            "playerName": "Diego Reyes"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Jonathan dos Santos",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Mexico",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-submitted-roster list at https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF",
+          "rawSourceFields": {
+            "playerName": "Jonathan dos Santos"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Miguel Layún",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Mexico",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-submitted-roster list at https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF",
+          "rawSourceFields": {
+            "playerName": "Miguel Layún"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Marco Fabián",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Mexico",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-submitted-roster list at https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF",
+          "rawSourceFields": {
+            "playerName": "Marco Fabián"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Raúl Jiménez",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Mexico",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-submitted-roster list at https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF",
+          "rawSourceFields": {
+            "playerName": "Raúl Jiménez"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Giovani dos Santos",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Mexico",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-submitted-roster list at https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF",
+          "rawSourceFields": {
+            "playerName": "Giovani dos Santos"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Carlos Vela",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Mexico",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-submitted-roster list at https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF",
+          "rawSourceFields": {
+            "playerName": "Carlos Vela"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Alfredo Talavera",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Mexico",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-submitted-roster list at https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF",
+          "rawSourceFields": {
+            "playerName": "Alfredo Talavera"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Guillermo Ochoa",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Mexico",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-submitted-roster list at https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF",
+          "rawSourceFields": {
+            "playerName": "Guillermo Ochoa"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Javier Hernández",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Mexico",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-submitted-roster list at https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF",
+          "rawSourceFields": {
+            "playerName": "Javier Hernández"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Héctor Moreno",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Mexico",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-submitted-roster list at https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF",
+          "rawSourceFields": {
+            "playerName": "Héctor Moreno"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Héctor Herrera",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Mexico",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-submitted-roster list at https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF",
+          "rawSourceFields": {
+            "playerName": "Héctor Herrera"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Jesús Corona",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Mexico",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-submitted-roster list at https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF",
+          "rawSourceFields": {
+            "playerName": "Jesús Corona"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Andrés Guardado",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Mexico",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-submitted-roster list at https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF",
+          "rawSourceFields": {
+            "playerName": "Andrés Guardado"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Oribe Peralta",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Mexico",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-submitted-roster list at https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF",
+          "rawSourceFields": {
+            "playerName": "Oribe Peralta"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Javier Aquino",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Mexico",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-submitted-roster list at https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF",
+          "rawSourceFields": {
+            "playerName": "Javier Aquino"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Edson Álvarez",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Mexico",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-submitted-roster list at https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF",
+          "rawSourceFields": {
+            "playerName": "Edson Álvarez"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Hirving Lozano",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Mexico",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-submitted-roster list at https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF",
+          "rawSourceFields": {
+            "playerName": "Hirving Lozano"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Jesús Gallardo",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Mexico",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-submitted-roster list at https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF",
+          "rawSourceFields": {
+            "playerName": "Jesús Gallardo"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+        }
+      ],
+      "replacements": []
+    },
+    {
+      "rosterType": "official-final-roster",
+      "source": {
+        "sourceName": "Secondary ESPN reports quoting FMF replacement statement and FIFA portal roster update",
+        "title": "Mexico final roster after Diego Reyes was replaced by Erick Gutiérrez",
+        "url": "https://www.espn.co.cr/futbol/mundial/nota/_/id/4399840/diego-reyes-causa-baja-de-la-seleccion-mexicana",
+        "rosterUpdateUrl": "https://www.espn.com.co/futbol/mundial/nota/_/id/4408881/fifa-ya-incluye-a-erick-gutierrez-en-la-plantilla-oficial-de-mexico",
+        "competition": "2018 FIFA World Cup",
+        "publicationDate": "2018-06-14",
+        "pageContentReadInSourceAudit": true
+      },
+      "records": [
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "José Corona",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Mexico",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-final-roster list at https://www.espn.co.cr/futbol/mundial/nota/_/id/4399840/diego-reyes-causa-baja-de-la-seleccion-mexicana",
+          "rawSourceFields": {
+            "playerName": "José Corona"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.espn.co.cr/futbol/mundial/nota/_/id/4399840/diego-reyes-causa-baja-de-la-seleccion-mexicana"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Hugo Ayala",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Mexico",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-final-roster list at https://www.espn.co.cr/futbol/mundial/nota/_/id/4399840/diego-reyes-causa-baja-de-la-seleccion-mexicana",
+          "rawSourceFields": {
+            "playerName": "Hugo Ayala"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.espn.co.cr/futbol/mundial/nota/_/id/4399840/diego-reyes-causa-baja-de-la-seleccion-mexicana"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Carlos Salcedo",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Mexico",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-final-roster list at https://www.espn.co.cr/futbol/mundial/nota/_/id/4399840/diego-reyes-causa-baja-de-la-seleccion-mexicana",
+          "rawSourceFields": {
+            "playerName": "Carlos Salcedo"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.espn.co.cr/futbol/mundial/nota/_/id/4399840/diego-reyes-causa-baja-de-la-seleccion-mexicana"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Rafael Márquez",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Mexico",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-final-roster list at https://www.espn.co.cr/futbol/mundial/nota/_/id/4399840/diego-reyes-causa-baja-de-la-seleccion-mexicana",
+          "rawSourceFields": {
+            "playerName": "Rafael Márquez"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.espn.co.cr/futbol/mundial/nota/_/id/4399840/diego-reyes-causa-baja-de-la-seleccion-mexicana"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Erick Gutiérrez",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Mexico",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-final-roster list at https://www.espn.co.cr/futbol/mundial/nota/_/id/4399840/diego-reyes-causa-baja-de-la-seleccion-mexicana",
+          "rawSourceFields": {
+            "playerName": "Erick Gutiérrez"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.espn.co.cr/futbol/mundial/nota/_/id/4399840/diego-reyes-causa-baja-de-la-seleccion-mexicana"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Jonathan dos Santos",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Mexico",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-final-roster list at https://www.espn.co.cr/futbol/mundial/nota/_/id/4399840/diego-reyes-causa-baja-de-la-seleccion-mexicana",
+          "rawSourceFields": {
+            "playerName": "Jonathan dos Santos"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.espn.co.cr/futbol/mundial/nota/_/id/4399840/diego-reyes-causa-baja-de-la-seleccion-mexicana"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Miguel Layún",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Mexico",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-final-roster list at https://www.espn.co.cr/futbol/mundial/nota/_/id/4399840/diego-reyes-causa-baja-de-la-seleccion-mexicana",
+          "rawSourceFields": {
+            "playerName": "Miguel Layún"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.espn.co.cr/futbol/mundial/nota/_/id/4399840/diego-reyes-causa-baja-de-la-seleccion-mexicana"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Marco Fabián",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Mexico",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-final-roster list at https://www.espn.co.cr/futbol/mundial/nota/_/id/4399840/diego-reyes-causa-baja-de-la-seleccion-mexicana",
+          "rawSourceFields": {
+            "playerName": "Marco Fabián"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.espn.co.cr/futbol/mundial/nota/_/id/4399840/diego-reyes-causa-baja-de-la-seleccion-mexicana"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Raúl Jiménez",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Mexico",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-final-roster list at https://www.espn.co.cr/futbol/mundial/nota/_/id/4399840/diego-reyes-causa-baja-de-la-seleccion-mexicana",
+          "rawSourceFields": {
+            "playerName": "Raúl Jiménez"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.espn.co.cr/futbol/mundial/nota/_/id/4399840/diego-reyes-causa-baja-de-la-seleccion-mexicana"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Giovani dos Santos",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Mexico",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-final-roster list at https://www.espn.co.cr/futbol/mundial/nota/_/id/4399840/diego-reyes-causa-baja-de-la-seleccion-mexicana",
+          "rawSourceFields": {
+            "playerName": "Giovani dos Santos"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.espn.co.cr/futbol/mundial/nota/_/id/4399840/diego-reyes-causa-baja-de-la-seleccion-mexicana"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Carlos Vela",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Mexico",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-final-roster list at https://www.espn.co.cr/futbol/mundial/nota/_/id/4399840/diego-reyes-causa-baja-de-la-seleccion-mexicana",
+          "rawSourceFields": {
+            "playerName": "Carlos Vela"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.espn.co.cr/futbol/mundial/nota/_/id/4399840/diego-reyes-causa-baja-de-la-seleccion-mexicana"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Alfredo Talavera",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Mexico",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-final-roster list at https://www.espn.co.cr/futbol/mundial/nota/_/id/4399840/diego-reyes-causa-baja-de-la-seleccion-mexicana",
+          "rawSourceFields": {
+            "playerName": "Alfredo Talavera"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.espn.co.cr/futbol/mundial/nota/_/id/4399840/diego-reyes-causa-baja-de-la-seleccion-mexicana"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Guillermo Ochoa",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Mexico",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-final-roster list at https://www.espn.co.cr/futbol/mundial/nota/_/id/4399840/diego-reyes-causa-baja-de-la-seleccion-mexicana",
+          "rawSourceFields": {
+            "playerName": "Guillermo Ochoa"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.espn.co.cr/futbol/mundial/nota/_/id/4399840/diego-reyes-causa-baja-de-la-seleccion-mexicana"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Javier Hernández",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Mexico",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-final-roster list at https://www.espn.co.cr/futbol/mundial/nota/_/id/4399840/diego-reyes-causa-baja-de-la-seleccion-mexicana",
+          "rawSourceFields": {
+            "playerName": "Javier Hernández"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.espn.co.cr/futbol/mundial/nota/_/id/4399840/diego-reyes-causa-baja-de-la-seleccion-mexicana"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Héctor Moreno",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Mexico",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-final-roster list at https://www.espn.co.cr/futbol/mundial/nota/_/id/4399840/diego-reyes-causa-baja-de-la-seleccion-mexicana",
+          "rawSourceFields": {
+            "playerName": "Héctor Moreno"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.espn.co.cr/futbol/mundial/nota/_/id/4399840/diego-reyes-causa-baja-de-la-seleccion-mexicana"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Héctor Herrera",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Mexico",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-final-roster list at https://www.espn.co.cr/futbol/mundial/nota/_/id/4399840/diego-reyes-causa-baja-de-la-seleccion-mexicana",
+          "rawSourceFields": {
+            "playerName": "Héctor Herrera"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.espn.co.cr/futbol/mundial/nota/_/id/4399840/diego-reyes-causa-baja-de-la-seleccion-mexicana"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Jesús Corona",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Mexico",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-final-roster list at https://www.espn.co.cr/futbol/mundial/nota/_/id/4399840/diego-reyes-causa-baja-de-la-seleccion-mexicana",
+          "rawSourceFields": {
+            "playerName": "Jesús Corona"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.espn.co.cr/futbol/mundial/nota/_/id/4399840/diego-reyes-causa-baja-de-la-seleccion-mexicana"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Andrés Guardado",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Mexico",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-final-roster list at https://www.espn.co.cr/futbol/mundial/nota/_/id/4399840/diego-reyes-causa-baja-de-la-seleccion-mexicana",
+          "rawSourceFields": {
+            "playerName": "Andrés Guardado"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.espn.co.cr/futbol/mundial/nota/_/id/4399840/diego-reyes-causa-baja-de-la-seleccion-mexicana"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Oribe Peralta",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Mexico",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-final-roster list at https://www.espn.co.cr/futbol/mundial/nota/_/id/4399840/diego-reyes-causa-baja-de-la-seleccion-mexicana",
+          "rawSourceFields": {
+            "playerName": "Oribe Peralta"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.espn.co.cr/futbol/mundial/nota/_/id/4399840/diego-reyes-causa-baja-de-la-seleccion-mexicana"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Javier Aquino",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Mexico",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-final-roster list at https://www.espn.co.cr/futbol/mundial/nota/_/id/4399840/diego-reyes-causa-baja-de-la-seleccion-mexicana",
+          "rawSourceFields": {
+            "playerName": "Javier Aquino"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.espn.co.cr/futbol/mundial/nota/_/id/4399840/diego-reyes-causa-baja-de-la-seleccion-mexicana"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Edson Álvarez",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Mexico",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-final-roster list at https://www.espn.co.cr/futbol/mundial/nota/_/id/4399840/diego-reyes-causa-baja-de-la-seleccion-mexicana",
+          "rawSourceFields": {
+            "playerName": "Edson Álvarez"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.espn.co.cr/futbol/mundial/nota/_/id/4399840/diego-reyes-causa-baja-de-la-seleccion-mexicana"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Hirving Lozano",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Mexico",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-final-roster list at https://www.espn.co.cr/futbol/mundial/nota/_/id/4399840/diego-reyes-causa-baja-de-la-seleccion-mexicana",
+          "rawSourceFields": {
+            "playerName": "Hirving Lozano"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.espn.co.cr/futbol/mundial/nota/_/id/4399840/diego-reyes-causa-baja-de-la-seleccion-mexicana"
+        },
+        {
+          "recordKind": "event-roster",
+          "sourcePlayerId": null,
+          "rawName": "Jesús Gallardo",
+          "rawShortName": null,
+          "sourceClubOrCountry": "Mexico",
+          "rawPosition": null,
+          "rawOverall": null,
+          "missingFields": [
+            "sourcePlayerId",
+            "rawPosition",
+            "rawOverall",
+            "technicalAttributes"
+          ],
+          "identityStatus": "identity-unconfirmed-no-source-id",
+          "canonicalPlayerId": null,
+          "candidateCanonicalIds": [],
+          "sourcePlayerPageUrl": null,
+          "membershipEvidence": "official-final-roster list at https://www.espn.co.cr/futbol/mundial/nota/_/id/4399840/diego-reyes-causa-baja-de-la-seleccion-mexicana",
+          "rawSourceFields": {
+            "playerName": "Jesús Gallardo"
+          },
+          "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+          "sourceVersion": "2018 FIFA World Cup",
+          "sourceUrl": "https://www.espn.co.cr/futbol/mundial/nota/_/id/4399840/diego-reyes-causa-baja-de-la-seleccion-mexicana"
+        }
+      ],
+      "replacements": [
+        {
+          "out": "Diego Reyes",
+          "in": "Erick Gutiérrez",
+          "reason": "injury / did not recover in time",
+          "sourceUrl": "https://www.espn.co.cr/futbol/mundial/nota/_/id/4399840/diego-reyes-causa-baja-de-la-seleccion-mexicana",
+          "rosterUpdateUrl": "https://www.espn.com.co/futbol/mundial/nota/_/id/4408881/fifa-ya-incluye-a-erick-gutierrez-en-la-plantilla-oficial-de-mexico",
+          "date": "2018-06-14"
+        }
+      ]
+    }
+  ],
+  "supplementalAttributeCandidates": {
+    "sourceFile": "mexico-2018.event-attribute-candidates.sofifa.json",
+    "gameVersion": "FIFA 18",
+    "count": 20,
+    "matchRule": "exact normalized source long_name + exact source nationality; not proof of game national-team membership",
+    "unmatchedOfficialRosterNames": [
+      "josecorona",
+      "rafaelmarquez",
+      "alfredotalavera",
+      "guillermoochoa"
+    ],
+    "records": [
+      {
+        "sourcePlayerId": "193165",
+        "rawName": "Jesús Corona",
+        "sourceNationality": "Mexico",
+        "sourceClubName": "FC Porto",
+        "rawPosition": "RM",
+        "rawOverall": "81",
+        "candidateEventRosterNames": [
+          {
+            "name": "Jesús Corona",
+            "rosterType": "official-submitted-roster",
+            "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+          },
+          {
+            "name": "Jesús Corona",
+            "rosterType": "official-final-roster",
+            "sourceUrl": "https://www.espn.co.cr/futbol/mundial/nota/_/id/4399840/diego-reyes-causa-baja-de-la-seleccion-mexicana"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "sourcePlayerPageUrl": "https://sofifa.com/player/193165/jesus-corona/180084/"
+      },
+      {
+        "sourcePlayerId": "171897",
+        "rawName": "Andrés Guardado",
+        "sourceNationality": "Mexico",
+        "sourceClubName": "Real Betis Balompié",
+        "rawPosition": "CM, CDM",
+        "rawOverall": "81",
+        "candidateEventRosterNames": [
+          {
+            "name": "Andrés Guardado",
+            "rosterType": "official-submitted-roster",
+            "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+          },
+          {
+            "name": "Andrés Guardado",
+            "rosterType": "official-final-roster",
+            "sourceUrl": "https://www.espn.co.cr/futbol/mundial/nota/_/id/4399840/diego-reyes-causa-baja-de-la-seleccion-mexicana"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "sourcePlayerPageUrl": "https://sofifa.com/player/171897/andres-guardado/180084/"
+      },
+      {
+        "sourcePlayerId": "169416",
+        "rawName": "Carlos Vela",
+        "sourceNationality": "Mexico",
+        "sourceClubName": "",
+        "rawPosition": "RW, LW, CAM, ST",
+        "rawOverall": "80",
+        "candidateEventRosterNames": [
+          {
+            "name": "Carlos Vela",
+            "rosterType": "official-submitted-roster",
+            "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+          },
+          {
+            "name": "Carlos Vela",
+            "rosterType": "official-final-roster",
+            "sourceUrl": "https://www.espn.co.cr/futbol/mundial/nota/_/id/4399840/diego-reyes-causa-baja-de-la-seleccion-mexicana"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "sourcePlayerPageUrl": "https://sofifa.com/player/169416/carlos-vela/180084/"
+      },
+      {
+        "sourcePlayerId": "156519",
+        "rawName": "Héctor Herrera",
+        "sourceNationality": "Mexico",
+        "sourceClubName": "FC Porto",
+        "rawPosition": "CM",
+        "rawOverall": "80",
+        "candidateEventRosterNames": [
+          {
+            "name": "Héctor Herrera",
+            "rosterType": "official-submitted-roster",
+            "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+          },
+          {
+            "name": "Héctor Herrera",
+            "rosterType": "official-final-roster",
+            "sourceUrl": "https://www.espn.co.cr/futbol/mundial/nota/_/id/4399840/diego-reyes-causa-baja-de-la-seleccion-mexicana"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "sourcePlayerPageUrl": "https://sofifa.com/player/156519/hector-herrera/180084/"
+      },
+      {
+        "sourcePlayerId": "221992",
+        "rawName": "Hirving Lozano",
+        "sourceNationality": "Mexico",
+        "sourceClubName": "PSV",
+        "rawPosition": "RW, LW",
+        "rawOverall": "79",
+        "candidateEventRosterNames": [
+          {
+            "name": "Hirving Lozano",
+            "rosterType": "official-submitted-roster",
+            "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+          },
+          {
+            "name": "Hirving Lozano",
+            "rosterType": "official-final-roster",
+            "sourceUrl": "https://www.espn.co.cr/futbol/mundial/nota/_/id/4399840/diego-reyes-causa-baja-de-la-seleccion-mexicana"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "sourcePlayerPageUrl": "https://sofifa.com/player/221992/hirving-lozano/180084/"
+      },
+      {
+        "sourcePlayerId": "186307",
+        "rawName": "Marco Fabián",
+        "sourceNationality": "Mexico",
+        "sourceClubName": "Eintracht Frankfurt",
+        "rawPosition": "CAM, RM, LM",
+        "rawOverall": "79",
+        "candidateEventRosterNames": [
+          {
+            "name": "Marco Fabián",
+            "rosterType": "official-submitted-roster",
+            "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+          },
+          {
+            "name": "Marco Fabián",
+            "rosterType": "official-final-roster",
+            "sourceUrl": "https://www.espn.co.cr/futbol/mundial/nota/_/id/4399840/diego-reyes-causa-baja-de-la-seleccion-mexicana"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "sourcePlayerPageUrl": "https://sofifa.com/player/186307/marco-fabian/180084/"
+      },
+      {
+        "sourcePlayerId": "178224",
+        "rawName": "Javier Hernández",
+        "sourceNationality": "Mexico",
+        "sourceClubName": "West Ham United",
+        "rawPosition": "ST",
+        "rawOverall": "79",
+        "candidateEventRosterNames": [
+          {
+            "name": "Javier Hernández",
+            "rosterType": "official-submitted-roster",
+            "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+          },
+          {
+            "name": "Javier Hernández",
+            "rosterType": "official-final-roster",
+            "sourceUrl": "https://www.espn.co.cr/futbol/mundial/nota/_/id/4399840/diego-reyes-causa-baja-de-la-seleccion-mexicana"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "sourcePlayerPageUrl": "https://sofifa.com/player/178224/javier-hernandez/180084/"
+      },
+      {
+        "sourcePlayerId": "173432",
+        "rawName": "Héctor Moreno",
+        "sourceNationality": "Mexico",
+        "sourceClubName": "Real Sociedad",
+        "rawPosition": "CB, LB",
+        "rawOverall": "79",
+        "candidateEventRosterNames": [
+          {
+            "name": "Héctor Moreno",
+            "rosterType": "official-submitted-roster",
+            "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+          },
+          {
+            "name": "Héctor Moreno",
+            "rosterType": "official-final-roster",
+            "sourceUrl": "https://www.espn.co.cr/futbol/mundial/nota/_/id/4399840/diego-reyes-causa-baja-de-la-seleccion-mexicana"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "sourcePlayerPageUrl": "https://sofifa.com/player/173432/hector-moreno/180084/"
+      },
+      {
+        "sourcePlayerId": "178322",
+        "rawName": "Miguel Layún",
+        "sourceNationality": "Mexico",
+        "sourceClubName": "Sevilla FC",
+        "rawPosition": "RB, LB",
+        "rawOverall": "78",
+        "candidateEventRosterNames": [
+          {
+            "name": "Miguel Layún",
+            "rosterType": "official-submitted-roster",
+            "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+          },
+          {
+            "name": "Miguel Layún",
+            "rosterType": "official-final-roster",
+            "sourceUrl": "https://www.espn.co.cr/futbol/mundial/nota/_/id/4399840/diego-reyes-causa-baja-de-la-seleccion-mexicana"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "sourcePlayerPageUrl": "https://sofifa.com/player/178322/miguel-layun/180084/"
+      },
+      {
+        "sourcePlayerId": "204838",
+        "rawName": "Raúl Jiménez",
+        "sourceNationality": "Mexico",
+        "sourceClubName": "SL Benfica",
+        "rawPosition": "ST",
+        "rawOverall": "77",
+        "candidateEventRosterNames": [
+          {
+            "name": "Raúl Jiménez",
+            "rosterType": "official-submitted-roster",
+            "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+          },
+          {
+            "name": "Raúl Jiménez",
+            "rosterType": "official-final-roster",
+            "sourceUrl": "https://www.espn.co.cr/futbol/mundial/nota/_/id/4399840/diego-reyes-causa-baja-de-la-seleccion-mexicana"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "sourcePlayerPageUrl": "https://sofifa.com/player/204838/raul-jimenez/180084/"
+      },
+      {
+        "sourcePlayerId": "192350",
+        "rawName": "Javier Aquino",
+        "sourceNationality": "Mexico",
+        "sourceClubName": "Tigres UANL",
+        "rawPosition": "LM, LW",
+        "rawOverall": "77",
+        "candidateEventRosterNames": [
+          {
+            "name": "Javier Aquino",
+            "rosterType": "official-submitted-roster",
+            "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+          },
+          {
+            "name": "Javier Aquino",
+            "rosterType": "official-final-roster",
+            "sourceUrl": "https://www.espn.co.cr/futbol/mundial/nota/_/id/4399840/diego-reyes-causa-baja-de-la-seleccion-mexicana"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "sourcePlayerPageUrl": "https://sofifa.com/player/192350/javier-aquino/180084/"
+      },
+      {
+        "sourcePlayerId": "192012",
+        "rawName": "Diego Reyes",
+        "sourceNationality": "Mexico",
+        "sourceClubName": "FC Porto",
+        "rawPosition": "CB",
+        "rawOverall": "77",
+        "candidateEventRosterNames": [
+          {
+            "name": "Diego Reyes",
+            "rosterType": "official-submitted-roster",
+            "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "sourcePlayerPageUrl": "https://sofifa.com/player/192012/diego-reyes/180084/"
+      },
+      {
+        "sourcePlayerId": "170370",
+        "rawName": "Jonathan dos Santos",
+        "sourceNationality": "Mexico",
+        "sourceClubName": "LA Galaxy",
+        "rawPosition": "CM, RM",
+        "rawOverall": "77",
+        "candidateEventRosterNames": [
+          {
+            "name": "Jonathan dos Santos",
+            "rosterType": "official-submitted-roster",
+            "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+          },
+          {
+            "name": "Jonathan dos Santos",
+            "rosterType": "official-final-roster",
+            "sourceUrl": "https://www.espn.co.cr/futbol/mundial/nota/_/id/4399840/diego-reyes-causa-baja-de-la-seleccion-mexicana"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "sourcePlayerPageUrl": "https://sofifa.com/player/170370/jonathan-dos-santos/180084/"
+      },
+      {
+        "sourcePlayerId": "170369",
+        "rawName": "Giovani dos Santos",
+        "sourceNationality": "Mexico",
+        "sourceClubName": "LA Galaxy",
+        "rawPosition": "CF, CAM, ST",
+        "rawOverall": "76",
+        "candidateEventRosterNames": [
+          {
+            "name": "Giovani dos Santos",
+            "rosterType": "official-submitted-roster",
+            "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+          },
+          {
+            "name": "Giovani dos Santos",
+            "rosterType": "official-final-roster",
+            "sourceUrl": "https://www.espn.co.cr/futbol/mundial/nota/_/id/4399840/diego-reyes-causa-baja-de-la-seleccion-mexicana"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "sourcePlayerPageUrl": "https://sofifa.com/player/170369/giovani-dos-santos/180084/"
+      },
+      {
+        "sourcePlayerId": "220854",
+        "rawName": "Erick Gutiérrez",
+        "sourceNationality": "Mexico",
+        "sourceClubName": "Pachuca",
+        "rawPosition": "CM",
+        "rawOverall": "76",
+        "candidateEventRosterNames": [
+          {
+            "name": "Erick Gutiérrez",
+            "rosterType": "official-final-roster",
+            "sourceUrl": "https://www.espn.co.cr/futbol/mundial/nota/_/id/4399840/diego-reyes-causa-baja-de-la-seleccion-mexicana"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "sourcePlayerPageUrl": "https://sofifa.com/player/220854/erick-gutierrez/180084/"
+      },
+      {
+        "sourcePlayerId": "158543",
+        "rawName": "Oribe Peralta",
+        "sourceNationality": "Mexico",
+        "sourceClubName": "Club América",
+        "rawPosition": "ST",
+        "rawOverall": "75",
+        "candidateEventRosterNames": [
+          {
+            "name": "Oribe Peralta",
+            "rosterType": "official-submitted-roster",
+            "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+          },
+          {
+            "name": "Oribe Peralta",
+            "rosterType": "official-final-roster",
+            "sourceUrl": "https://www.espn.co.cr/futbol/mundial/nota/_/id/4399840/diego-reyes-causa-baja-de-la-seleccion-mexicana"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "sourcePlayerPageUrl": "https://sofifa.com/player/158543/oribe-peralta/180084/"
+      },
+      {
+        "sourcePlayerId": "171896",
+        "rawName": "Hugo Ayala",
+        "sourceNationality": "Mexico",
+        "sourceClubName": "Tigres UANL",
+        "rawPosition": "CB",
+        "rawOverall": "75",
+        "candidateEventRosterNames": [
+          {
+            "name": "Hugo Ayala",
+            "rosterType": "official-submitted-roster",
+            "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+          },
+          {
+            "name": "Hugo Ayala",
+            "rosterType": "official-final-roster",
+            "sourceUrl": "https://www.espn.co.cr/futbol/mundial/nota/_/id/4399840/diego-reyes-causa-baja-de-la-seleccion-mexicana"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "sourcePlayerPageUrl": "https://sofifa.com/player/171896/hugo-ayala/180084/"
+      },
+      {
+        "sourcePlayerId": "212888",
+        "rawName": "Carlos Salcedo",
+        "sourceNationality": "Mexico",
+        "sourceClubName": "Eintracht Frankfurt",
+        "rawPosition": "CB",
+        "rawOverall": "75",
+        "candidateEventRosterNames": [
+          {
+            "name": "Carlos Salcedo",
+            "rosterType": "official-submitted-roster",
+            "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+          },
+          {
+            "name": "Carlos Salcedo",
+            "rosterType": "official-final-roster",
+            "sourceUrl": "https://www.espn.co.cr/futbol/mundial/nota/_/id/4399840/diego-reyes-causa-baja-de-la-seleccion-mexicana"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "sourcePlayerPageUrl": "https://sofifa.com/player/212888/carlos-salcedo/180084/"
+      },
+      {
+        "sourcePlayerId": "226045",
+        "rawName": "Jesús Gallardo",
+        "sourceNationality": "Mexico",
+        "sourceClubName": "Pumas UNAM",
+        "rawPosition": "LM, LB",
+        "rawOverall": "73",
+        "candidateEventRosterNames": [
+          {
+            "name": "Jesús Gallardo",
+            "rosterType": "official-submitted-roster",
+            "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+          },
+          {
+            "name": "Jesús Gallardo",
+            "rosterType": "official-final-roster",
+            "sourceUrl": "https://www.espn.co.cr/futbol/mundial/nota/_/id/4399840/diego-reyes-causa-baja-de-la-seleccion-mexicana"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "sourcePlayerPageUrl": "https://sofifa.com/player/226045/jesus-gallardo/180084/"
+      },
+      {
+        "sourcePlayerId": "235844",
+        "rawName": "Edson Álvarez",
+        "sourceNationality": "Mexico",
+        "sourceClubName": "Club América",
+        "rawPosition": "CB, CDM",
+        "rawOverall": "72",
+        "candidateEventRosterNames": [
+          {
+            "name": "Edson Álvarez",
+            "rosterType": "official-submitted-roster",
+            "sourceUrl": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF"
+          },
+          {
+            "name": "Edson Álvarez",
+            "rosterType": "official-final-roster",
+            "sourceUrl": "https://www.espn.co.cr/futbol/mundial/nota/_/id/4399840/diego-reyes-causa-baja-de-la-seleccion-mexicana"
+          }
+        ],
+        "eventRosterLinkStatus": "exact normalized long_name plus exact nationality; review candidate only",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "sourcePlayerPageUrl": "https://sofifa.com/player/235844/edson-alvarez/180084/"
+      }
+    ]
+  }
+}

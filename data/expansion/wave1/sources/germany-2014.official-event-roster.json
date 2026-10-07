@@ -1,0 +1,95 @@
+{
+  "schemaVersion": "wave1-event-roster-source/1",
+  "candidateTeamSeason": "germany-2014",
+  "rosterType": "official-event-roster",
+  "source": {
+    "sourceName": "FIFA",
+    "title": "2014 FIFA World Cup squad lists",
+    "url": "https://www.fifadata.com/document/fwc/2014/pdf/fwc_2014_squadlists.pdf?cid=facebook_fifaworldcup",
+    "competition": "2014 FIFA World Cup",
+    "publicationDate": null,
+    "pageContentReadInSourceAudit": true
+  },
+  "records": [
+    {
+      "rawName": "Manuel Neuer"
+    },
+    {
+      "rawName": "Kevin Großkreutz"
+    },
+    {
+      "rawName": "Matthias Ginter"
+    },
+    {
+      "rawName": "Benedikt Höwedes"
+    },
+    {
+      "rawName": "Mats Hummels"
+    },
+    {
+      "rawName": "Sami Khedira"
+    },
+    {
+      "rawName": "Bastian Schweinsteiger"
+    },
+    {
+      "rawName": "Mesut Özil"
+    },
+    {
+      "rawName": "André Schürrle"
+    },
+    {
+      "rawName": "Lukas Podolski"
+    },
+    {
+      "rawName": "Miroslav Klose"
+    },
+    {
+      "rawName": "Ron-Robert Zieler"
+    },
+    {
+      "rawName": "Thomas Müller"
+    },
+    {
+      "rawName": "Julian Draxler"
+    },
+    {
+      "rawName": "Erik Durm"
+    },
+    {
+      "rawName": "Philipp Lahm"
+    },
+    {
+      "rawName": "Per Mertesacker"
+    },
+    {
+      "rawName": "Toni Kroos"
+    },
+    {
+      "rawName": "Mario Götze"
+    },
+    {
+      "rawName": "Jérôme Boateng"
+    },
+    {
+      "rawName": "Shkodran Mustafi"
+    },
+    {
+      "rawName": "Roman Weidenfeller"
+    },
+    {
+      "rawName": "Christoph Kramer"
+    }
+  ],
+  "replacements": [],
+  "fieldsNotProvidedBySource": [
+    "player source ID",
+    "position",
+    "overall",
+    "technical attributes"
+  ],
+  "sourceRetrievedAt": null,
+  "sourceRetrievedAtReason": "original page retrieval time is not recorded in the source audit",
+  "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+  "sourceAcquisitionTime": "original page retrieval time unknown"
+}

@@ -1,0 +1,430 @@
+{
+  "candidateTeamSeason": "lyon-2010",
+  "actualTeamOrCountry": "Olympique Lyonnais",
+  "actualLeagueOrType": "Ligue 1",
+  "plannedGroup": "club-league",
+  "referenceSeasonOrEvent": "2009/10",
+  "gameSnapshot": {
+    "gameVersion": "FIFA 10",
+    "targetRevisionReference": {
+      "platform": "SoFIFA",
+      "updateId": "100002",
+      "referenceDate": "2010-02-22",
+      "pageUrl": "https://sofifa.com/team/66/olympique-lyonnais/100002",
+      "officialTeamRevisionConfirmed": true
+    },
+    "versionConsistencyStatus": "SoFIFA target r100002 dated 2010-02-22 matches observed cached revision r100002",
+    "sourceCoverageStatus": "local-cache rows captured; does not establish complete authoritative squad coverage",
+    "sourceTeamName": "Olympique Lyonnais",
+    "snapshotStatus": "captured-game-edition-snapshot",
+    "observedUpdateIds": [
+      "100002"
+    ],
+    "observedUpdateDate": "2010-02-22",
+    "membershipEvidence": "source row club_name=Olympique Lyonnais in FIFA 10 edition dataset",
+    "capturedRowCount": 35,
+    "expectedSourcePageCount": 34,
+    "fifaIndexGameRosterAudit": {
+      "sourceName": "FIFAIndex team edition page",
+      "pageUrl": "https://fifaindex.com/teams/66-olympique-lyonnais/fifa10",
+      "teamId": 66,
+      "gameVersion": "FIFA 10",
+      "listedPlayerCount": 34,
+      "revisionDate": null,
+      "revisionDateStatus": "not disclosed on cited FIFAIndex edition page; unknown",
+      "namesTranscribed": false,
+      "pageReadInSourceAudit": true,
+      "eventRosterComparison": null
+    },
+    "members": [
+      {
+        "sourcePlayerId": "167948",
+        "rawName": "Hugo Lloris",
+        "rawPosition": "GK",
+        "rawOverall": "84",
+        "membershipEvidence": "source row club_name=Olympique Lyonnais",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/167948/hugo-lloris/100002/"
+      },
+      {
+        "sourcePlayerId": "142707",
+        "rawName": "Lisandro López",
+        "rawPosition": "ST",
+        "rawOverall": "83",
+        "membershipEvidence": "source row club_name=Olympique Lyonnais",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/142707/lisandro-lopez/100002/"
+      },
+      {
+        "sourcePlayerId": "112253",
+        "rawName": "Jérémy Toulalan",
+        "rawPosition": "CDM",
+        "rawOverall": "83",
+        "membershipEvidence": "source row club_name=Olympique Lyonnais",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/112253/jeremy-toulalan/100002/"
+      },
+      {
+        "sourcePlayerId": "139843",
+        "rawName": "Michel Bastos",
+        "rawPosition": "LM",
+        "rawOverall": "82",
+        "membershipEvidence": "source row club_name=Olympique Lyonnais",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/139843/michel-bastos/100002/"
+      },
+      {
+        "sourcePlayerId": "159145",
+        "rawName": "Bafétimbi Gomis",
+        "rawPosition": "ST",
+        "rawOverall": "80",
+        "membershipEvidence": "source row club_name=Olympique Lyonnais",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/159145/bafetimbi-gomis/100002/"
+      },
+      {
+        "sourcePlayerId": "40898",
+        "rawName": "Sidney Govou",
+        "rawPosition": "RW",
+        "rawOverall": "80",
+        "membershipEvidence": "source row club_name=Olympique Lyonnais",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/40898/sidney-govou/100002/"
+      },
+      {
+        "sourcePlayerId": "31831",
+        "rawName": "Kim Källström",
+        "rawPosition": "CM",
+        "rawOverall": "80",
+        "membershipEvidence": "source row club_name=Olympique Lyonnais",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/31831/kim-kallstrom/100002/"
+      },
+      {
+        "sourcePlayerId": "156272",
+        "rawName": "Ederson",
+        "rawPosition": "CAM",
+        "rawOverall": "79",
+        "membershipEvidence": "source row club_name=Olympique Lyonnais",
+        "identityStatus": "name-candidate-unconfirmed",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [
+          "ederson"
+        ],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/156272/ederson/100002/"
+      },
+      {
+        "sourcePlayerId": "135859",
+        "rawName": "Anthony Réveillère",
+        "rawPosition": "RB",
+        "rawOverall": "79",
+        "membershipEvidence": "source row club_name=Olympique Lyonnais",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/135859/anthony-reveillere/100002/"
+      },
+      {
+        "sourcePlayerId": "135479",
+        "rawName": "Cris",
+        "rawPosition": "CB",
+        "rawOverall": "79",
+        "membershipEvidence": "source row club_name=Olympique Lyonnais",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/135479/cris/100002/"
+      },
+      {
+        "sourcePlayerId": "120304",
+        "rawName": "Jean II Makoun",
+        "rawPosition": "CDM",
+        "rawOverall": "79",
+        "membershipEvidence": "source row club_name=Olympique Lyonnais",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/120304/jean-ii-makoun/100002/"
+      },
+      {
+        "sourcePlayerId": "51123",
+        "rawName": "Mathieu Bodmer",
+        "rawPosition": "CDM",
+        "rawOverall": "79",
+        "membershipEvidence": "source row club_name=Olympique Lyonnais",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/51123/mathieu-bodmer/100002/"
+      },
+      {
+        "sourcePlayerId": "180206",
+        "rawName": "Miralem Pjanic",
+        "rawPosition": "CAM",
+        "rawOverall": "78",
+        "membershipEvidence": "source row club_name=Olympique Lyonnais",
+        "identityStatus": "confirmed-existing-by-exact-source-id",
+        "canonicalPlayerId": "miralem-pjanic",
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/180206/miralem-pjanic/100002/"
+      },
+      {
+        "sourcePlayerId": "161700",
+        "rawName": "François Clerc",
+        "rawPosition": "RB",
+        "rawOverall": "78",
+        "membershipEvidence": "source row club_name=Olympique Lyonnais",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/161700/francois-clerc/100002/"
+      },
+      {
+        "sourcePlayerId": "181455",
+        "rawName": "Aly Cissokho",
+        "rawPosition": "LB",
+        "rawOverall": "77",
+        "membershipEvidence": "source row club_name=Olympique Lyonnais",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/181455/aly-cissokho/100002/"
+      },
+      {
+        "sourcePlayerId": "140276",
+        "rawName": "César Delgado",
+        "rawPosition": "RF",
+        "rawOverall": "76",
+        "membershipEvidence": "source row club_name=Olympique Lyonnais",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/140276/cesar-delgado/100002/"
+      },
+      {
+        "sourcePlayerId": "8376",
+        "rawName": "Jean-Alain Boumsong",
+        "rawPosition": "CB",
+        "rawOverall": "75",
+        "membershipEvidence": "source row club_name=Olympique Lyonnais",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/8376/jean-alain-boumsong/100002/"
+      },
+      {
+        "sourcePlayerId": "135083",
+        "rawName": "Anderson",
+        "rawPosition": "CB",
+        "rawOverall": "73",
+        "membershipEvidence": "source row club_name=Olympique Lyonnais",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/135083/anderson/100002/"
+      },
+      {
+        "sourcePlayerId": "5594",
+        "rawName": "Rémi Vercoutre",
+        "rawPosition": "GK",
+        "rawOverall": "72",
+        "membershipEvidence": "source row club_name=Olympique Lyonnais",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/5594/remi-vercoutre/100002/"
+      },
+      {
+        "sourcePlayerId": "195086",
+        "rawName": "Dejan Lovren",
+        "rawPosition": "CB",
+        "rawOverall": "71",
+        "membershipEvidence": "source row club_name=Olympique Lyonnais",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/195086/dejan-lovren/100002/"
+      },
+      {
+        "sourcePlayerId": "187925",
+        "rawName": "Yanis Tafer",
+        "rawPosition": "ST",
+        "rawOverall": "67",
+        "membershipEvidence": "source row club_name=Olympique Lyonnais",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/187925/yanis-tafer/100002/"
+      },
+      {
+        "sourcePlayerId": "193116",
+        "rawName": "Maxime Gonalons",
+        "rawPosition": "CM",
+        "rawOverall": "67",
+        "membershipEvidence": "source row club_name=Olympique Lyonnais",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/193116/maxime-gonalons/100002/"
+      },
+      {
+        "sourcePlayerId": "189944",
+        "rawName": "Lamine Gassama",
+        "rawPosition": "RB",
+        "rawOverall": "67",
+        "membershipEvidence": "source row club_name=Olympique Lyonnais",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/189944/lamine-gassama/100002/"
+      },
+      {
+        "sourcePlayerId": "194728",
+        "rawName": "Ishak Belfodil",
+        "rawPosition": "ST",
+        "rawOverall": "66",
+        "membershipEvidence": "source row club_name=Olympique Lyonnais",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/194728/ishak-belfodil/100002/"
+      },
+      {
+        "sourcePlayerId": "187924",
+        "rawName": "Clément Grenier",
+        "rawPosition": "RW",
+        "rawOverall": "63",
+        "membershipEvidence": "source row club_name=Olympique Lyonnais",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/187924/clement-grenier/100002/"
+      },
+      {
+        "sourcePlayerId": "192682",
+        "rawName": "Loïc Abenzoar",
+        "rawPosition": "RB",
+        "rawOverall": "63",
+        "membershipEvidence": "source row club_name=Olympique Lyonnais",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/192682/loic-abenzoar/100002/"
+      },
+      {
+        "sourcePlayerId": "190034",
+        "rawName": "Thimothée Kolodzieczak",
+        "rawPosition": "LB",
+        "rawOverall": "62",
+        "membershipEvidence": "source row club_name=Olympique Lyonnais",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/190034/thimothee-kolodzieczak/100002/"
+      },
+      {
+        "sourcePlayerId": "161646",
+        "rawName": "Johan Hartock",
+        "rawPosition": "GK",
+        "rawOverall": "62",
+        "membershipEvidence": "source row club_name=Olympique Lyonnais",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/161646/johan-hartock/100002/"
+      },
+      {
+        "sourcePlayerId": "193683",
+        "rawName": "Xavier Chavalerin",
+        "rawPosition": "LM",
+        "rawOverall": "62",
+        "membershipEvidence": "source row club_name=Olympique Lyonnais",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/193683/xavier-chavalerin/100002/"
+      },
+      {
+        "sourcePlayerId": "193301",
+        "rawName": "Alexandre Lacazette",
+        "rawPosition": "RF",
+        "rawOverall": "60",
+        "membershipEvidence": "source row club_name=Olympique Lyonnais",
+        "identityStatus": "confirmed-existing-by-exact-source-id",
+        "canonicalPlayerId": "alexandre-lacazette",
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/193301/alexandre-lacazette/100002/"
+      },
+      {
+        "sourcePlayerId": "190163",
+        "rawName": "Sébastien Faure",
+        "rawPosition": "CB",
+        "rawOverall": "59",
+        "membershipEvidence": "source row club_name=Olympique Lyonnais",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/190163/sebastien-faure/100002/"
+      },
+      {
+        "sourcePlayerId": "193074",
+        "rawName": "Nicolas Seguin",
+        "rawPosition": "CB",
+        "rawOverall": "54",
+        "membershipEvidence": "source row club_name=Olympique Lyonnais",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/193074/nicolas-seguin/100002/"
+      },
+      {
+        "sourcePlayerId": "190530",
+        "rawName": "Thomas Fontaine",
+        "rawPosition": "LB",
+        "rawOverall": "54",
+        "membershipEvidence": "source row club_name=Olympique Lyonnais",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/190530/thomas-fontaine/100002/"
+      },
+      {
+        "sourcePlayerId": "188790",
+        "rawName": "Saïd Mehamha",
+        "rawPosition": "CDM",
+        "rawOverall": "54",
+        "membershipEvidence": "source row club_name=Olympique Lyonnais",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/188790/said-mehamha/100002/"
+      },
+      {
+        "sourcePlayerId": "197768",
+        "rawName": "Enzo Réale",
+        "rawPosition": "CM",
+        "rawOverall": "41",
+        "membershipEvidence": "source row club_name=Olympique Lyonnais",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/197768/enzo-reale/100002/"
+      }
+    ]
+  },
+  "officialEventSnapshots": []
+}

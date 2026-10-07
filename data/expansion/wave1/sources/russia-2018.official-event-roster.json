@@ -1,0 +1,96 @@
+{
+  "schemaVersion": "wave1-event-roster-source/1",
+  "candidateTeamSeason": "russia-2018",
+  "rosterType": "official-event-roster",
+  "source": {
+    "sourceName": "FIFA 2018 squad list and Russian Football Union final announcement",
+    "title": "Russia 2018 final squad",
+    "url": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF",
+    "officialConfirmationUrl": "https://www.rfs.ru/news/207064?mobile=no",
+    "competition": "2018 FIFA World Cup",
+    "publicationDate": "2018-06-13T08:44:00",
+    "pageContentReadInSourceAudit": true
+  },
+  "records": [
+    {
+      "rawName": "Igor Akinfeev"
+    },
+    {
+      "rawName": "Mario Fernandes"
+    },
+    {
+      "rawName": "Ilya Kutepov"
+    },
+    {
+      "rawName": "Sergey Ignashevich"
+    },
+    {
+      "rawName": "Andrey Semenov"
+    },
+    {
+      "rawName": "Denis Cheryshev"
+    },
+    {
+      "rawName": "Daler Kuziaev"
+    },
+    {
+      "rawName": "Iury Gazinsky"
+    },
+    {
+      "rawName": "Alan Dzagoev"
+    },
+    {
+      "rawName": "Fedor Smolov"
+    },
+    {
+      "rawName": "Roman Zobnin"
+    },
+    {
+      "rawName": "Andrei Lunev"
+    },
+    {
+      "rawName": "Fedor Kudriashov"
+    },
+    {
+      "rawName": "Vladimir Granat"
+    },
+    {
+      "rawName": "Alexey Miranchuk"
+    },
+    {
+      "rawName": "Anton Miranchuk"
+    },
+    {
+      "rawName": "Aleksandr Golovin"
+    },
+    {
+      "rawName": "Yury Zhirkov"
+    },
+    {
+      "rawName": "Alexander Samedov"
+    },
+    {
+      "rawName": "Vladimir Gabulov"
+    },
+    {
+      "rawName": "Aleksandr Erokhin"
+    },
+    {
+      "rawName": "Artem Dzyuba"
+    },
+    {
+      "rawName": "Igor Smolnikov"
+    }
+  ],
+  "replacements": [],
+  "fieldsNotProvidedBySource": [
+    "player source ID",
+    "position",
+    "overall",
+    "technical attributes"
+  ],
+  "sourceRetrievedAt": null,
+  "sourceRetrievedAtReason": "original page retrieval time is not recorded in the source audit",
+  "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+  "sourceAcquisitionTime": "original page retrieval time unknown"
+}

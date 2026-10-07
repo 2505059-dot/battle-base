@@ -1,0 +1,409 @@
+{
+  "candidateTeamSeason": "liverpool-2014",
+  "actualTeamOrCountry": "Liverpool FC",
+  "actualLeagueOrType": "Premier League",
+  "plannedGroup": "story-club",
+  "referenceSeasonOrEvent": "2013/14",
+  "gameSnapshot": {
+    "gameVersion": "FIFA 14",
+    "targetRevisionReference": {
+      "platform": "SoFIFA",
+      "updateId": "140052",
+      "referenceDate": "2014-09-19",
+      "pageUrl": "https://sofifa.com/team/9/liverpool/140052",
+      "officialTeamRevisionConfirmed": true,
+      "note": "snapshot still lists Suárez at Liverpool"
+    },
+    "versionConsistencyStatus": "2014-09-19 snapshot still lists Luis Suárez; story-season content needs review",
+    "sourceCoverageStatus": "local-cache rows captured; does not establish complete authoritative squad coverage",
+    "sourceTeamName": "Liverpool FC",
+    "snapshotStatus": "captured-game-edition-snapshot",
+    "observedUpdateIds": [
+      "140052"
+    ],
+    "observedUpdateDate": "2014-09-19",
+    "membershipEvidence": "source row club_name=Liverpool FC in FIFA 14 edition dataset",
+    "capturedRowCount": 33,
+    "expectedSourcePageCount": 41,
+    "fifaIndexGameRosterAudit": {
+      "sourceName": "FIFAIndex team edition page",
+      "pageUrl": "https://fifaindex.com/teams/9-liverpool/fifa14",
+      "teamId": 9,
+      "gameVersion": "FIFA 14",
+      "listedPlayerCount": 41,
+      "revisionDate": null,
+      "revisionDateStatus": "not disclosed on cited FIFAIndex edition page; unknown",
+      "namesTranscribed": false,
+      "pageReadInSourceAudit": true,
+      "eventRosterComparison": null
+    },
+    "members": [
+      {
+        "sourcePlayerId": "176580",
+        "rawName": "Luis Suárez",
+        "rawPosition": "ST, CF",
+        "rawOverall": "89",
+        "membershipEvidence": "source row club_name=Liverpool FC",
+        "identityStatus": "confirmed-existing-by-exact-source-id",
+        "canonicalPlayerId": "luis-suarez",
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/176580/luis-suarez/140052/"
+      },
+      {
+        "sourcePlayerId": "171833",
+        "rawName": "Daniel Sturridge",
+        "rawPosition": "ST, RW",
+        "rawOverall": "83",
+        "membershipEvidence": "source row club_name=Liverpool FC",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/171833/daniel-sturridge/140052/"
+      },
+      {
+        "sourcePlayerId": "13743",
+        "rawName": "Steven Gerrard",
+        "rawPosition": "CM, CDM",
+        "rawOverall": "83",
+        "membershipEvidence": "source row club_name=Liverpool FC",
+        "identityStatus": "name-candidate-unconfirmed",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [
+          "steven-gerrard"
+        ],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/13743/steven-gerrard/140052/"
+      },
+      {
+        "sourcePlayerId": "173426",
+        "rawName": "Simon Mignolet",
+        "rawPosition": "GK",
+        "rawOverall": "82",
+        "membershipEvidence": "source row club_name=Liverpool FC",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/173426/simon-mignolet/140052/"
+      },
+      {
+        "sourcePlayerId": "189242",
+        "rawName": "Philippe Coutinho Correia",
+        "rawPosition": "CAM, LM",
+        "rawOverall": "81",
+        "membershipEvidence": "source row club_name=Liverpool FC",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/189242/philippe-coutinho-correia/140052/"
+      },
+      {
+        "sourcePlayerId": "183285",
+        "rawName": "Mamadou Sakho",
+        "rawPosition": "CB",
+        "rawOverall": "81",
+        "membershipEvidence": "source row club_name=Liverpool FC",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/183285/mamadou-sakho/140052/"
+      },
+      {
+        "sourcePlayerId": "166706",
+        "rawName": "Martin Škrtel",
+        "rawPosition": "CB",
+        "rawOverall": "81",
+        "membershipEvidence": "source row club_name=Liverpool FC",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/166706/martin-skrtel/140052/"
+      },
+      {
+        "sourcePlayerId": "152039",
+        "rawName": "Daniel Agger",
+        "rawPosition": "CB",
+        "rawOverall": "81",
+        "membershipEvidence": "source row club_name=Liverpool FC",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/152039/daniel-agger/140052/"
+      },
+      {
+        "sourcePlayerId": "176266",
+        "rawName": "Lucas Pezzini Leiva",
+        "rawPosition": "CDM, CM",
+        "rawOverall": "80",
+        "membershipEvidence": "source row club_name=Liverpool FC",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/176266/lucas-pezzini-leiva/140052/"
+      },
+      {
+        "sourcePlayerId": "202652",
+        "rawName": "Raheem Sterling",
+        "rawPosition": "RW, LW, CAM",
+        "rawOverall": "79",
+        "membershipEvidence": "source row club_name=Liverpool FC",
+        "identityStatus": "confirmed-existing-by-exact-source-id",
+        "canonicalPlayerId": "raheem-sterling",
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/202652/raheem-sterling/140052/"
+      },
+      {
+        "sourcePlayerId": "170770",
+        "rawName": "José Enrique Sánchez Díaz",
+        "rawPosition": "LB",
+        "rawOverall": "79",
+        "membershipEvidence": "source row club_name=Liverpool FC",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/170770/jose-enrique-sanchez-diaz/140052/"
+      },
+      {
+        "sourcePlayerId": "119152",
+        "rawName": "Kolo Touré",
+        "rawPosition": "CB",
+        "rawOverall": "79",
+        "membershipEvidence": "source row club_name=Liverpool FC",
+        "identityStatus": "confirmed-existing-by-exact-source-id",
+        "canonicalPlayerId": "kolo-toure",
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/119152/kolo-toure/140052/"
+      },
+      {
+        "sourcePlayerId": "183711",
+        "rawName": "Jordan Henderson",
+        "rawPosition": "CM, RM",
+        "rawOverall": "78",
+        "membershipEvidence": "source row club_name=Liverpool FC",
+        "identityStatus": "confirmed-existing-by-exact-source-id",
+        "canonicalPlayerId": "jordan-henderson",
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/183711/jordan-henderson/140052/"
+      },
+      {
+        "sourcePlayerId": "137782",
+        "rawName": "Glen Johnson",
+        "rawPosition": "RB, LB",
+        "rawOverall": "78",
+        "membershipEvidence": "source row club_name=Liverpool FC",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/137782/glen-johnson/140052/"
+      },
+      {
+        "sourcePlayerId": "184716",
+        "rawName": "Joe Allen",
+        "rawPosition": "CM, CDM",
+        "rawOverall": "77",
+        "membershipEvidence": "source row club_name=Liverpool FC",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/184716/joe-allen/140052/"
+      },
+      {
+        "sourcePlayerId": "192629",
+        "rawName": "Iago Aspas Juncal",
+        "rawPosition": "ST, CF",
+        "rawOverall": "76",
+        "membershipEvidence": "source row club_name=Liverpool FC",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/192629/iago-aspas-juncal/140052/"
+      },
+      {
+        "sourcePlayerId": "172962",
+        "rawName": "Victor Moses",
+        "rawPosition": "RM, RW, LW",
+        "rawOverall": "75",
+        "membershipEvidence": "source row club_name=Liverpool FC",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/172962/victor-moses/140052/"
+      },
+      {
+        "sourcePlayerId": "181455",
+        "rawName": "Aly Cissokho",
+        "rawPosition": "LB",
+        "rawOverall": "74",
+        "membershipEvidence": "source row club_name=Liverpool FC",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/181455/aly-cissokho/140052/"
+      },
+      {
+        "sourcePlayerId": "184037",
+        "rawName": "Martin Kelly",
+        "rawPosition": "RB",
+        "rawOverall": "74",
+        "membershipEvidence": "source row club_name=Liverpool FC",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/184037/martin-kelly/140052/"
+      },
+      {
+        "sourcePlayerId": "198706",
+        "rawName": "Luis Alberto Romero Alconchel",
+        "rawPosition": "CF, CAM, ST",
+        "rawOverall": "72",
+        "membershipEvidence": "source row club_name=Liverpool FC",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/198706/luis-alberto-romero-alconchel/140052/"
+      },
+      {
+        "sourcePlayerId": "165735",
+        "rawName": "Brad Jones",
+        "rawPosition": "GK",
+        "rawOverall": "71",
+        "membershipEvidence": "source row club_name=Liverpool FC",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/165735/brad-jones/140052/"
+      },
+      {
+        "sourcePlayerId": "201999",
+        "rawName": "Jon Flanagan",
+        "rawPosition": "LB, RB",
+        "rawOverall": "70",
+        "membershipEvidence": "source row club_name=Liverpool FC",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/201999/jon-flanagan/140052/"
+      },
+      {
+        "sourcePlayerId": "204782",
+        "rawName": "Samed Yesil",
+        "rawPosition": "ST, CF",
+        "rawOverall": "64",
+        "membershipEvidence": "source row club_name=Liverpool FC",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/204782/samed-yesil/140052/"
+      },
+      {
+        "sourcePlayerId": "204515",
+        "rawName": "Stephen Sama",
+        "rawPosition": "CB",
+        "rawOverall": "62",
+        "membershipEvidence": "source row club_name=Liverpool FC",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/204515/stephen-sama/140052/"
+      },
+      {
+        "sourcePlayerId": "210377",
+        "rawName": "João Carlos Vilaça Teixeira",
+        "rawPosition": "CAM",
+        "rawOverall": "58",
+        "membershipEvidence": "source row club_name=Liverpool FC",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/210377/joao-carlos-vilaca-teixeira/140052/"
+      },
+      {
+        "sourcePlayerId": "210387",
+        "rawName": "Yalany Baio",
+        "rawPosition": "CDM",
+        "rawOverall": "58",
+        "membershipEvidence": "source row club_name=Liverpool FC",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/210387/yalany-baio/140052/"
+      },
+      {
+        "sourcePlayerId": "207998",
+        "rawName": "Danny Ward",
+        "rawPosition": "GK",
+        "rawOverall": "57",
+        "membershipEvidence": "source row club_name=Liverpool FC",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/207998/danny-ward/140052/"
+      },
+      {
+        "sourcePlayerId": "215301",
+        "rawName": "Lloyd Jones",
+        "rawPosition": "CB",
+        "rawOverall": "56",
+        "membershipEvidence": "source row club_name=Liverpool FC",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/215301/lloyd-jones/140052/"
+      },
+      {
+        "sourcePlayerId": "220940",
+        "rawName": "Cameron Brannagan",
+        "rawPosition": "CAM, RW, LW",
+        "rawOverall": "56",
+        "membershipEvidence": "source row club_name=Liverpool FC",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/220940/cameron-brannagan/140052/"
+      },
+      {
+        "sourcePlayerId": "220710",
+        "rawName": "Harry Wilson",
+        "rawPosition": "LM, LW",
+        "rawOverall": "56",
+        "membershipEvidence": "source row club_name=Liverpool FC",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/220710/harry-wilson/140052/"
+      },
+      {
+        "sourcePlayerId": "207467",
+        "rawName": "Marc Pelosi",
+        "rawPosition": "LM, CM, LB",
+        "rawOverall": "56",
+        "membershipEvidence": "source row club_name=Liverpool FC",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/207467/marc-pelosi/140052/"
+      },
+      {
+        "sourcePlayerId": "202141",
+        "rawName": "Yusuf Mersin",
+        "rawPosition": "GK",
+        "rawOverall": "56",
+        "membershipEvidence": "source row club_name=Liverpool FC",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/202141/yusuf-mersin/140052/"
+      },
+      {
+        "sourcePlayerId": "205997",
+        "rawName": "Villyan Bijev",
+        "rawPosition": "ST",
+        "rawOverall": "56",
+        "membershipEvidence": "source row club_name=Liverpool FC",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/205997/villyan-bijev/140052/"
+      }
+    ]
+  },
+  "officialEventSnapshots": []
+}

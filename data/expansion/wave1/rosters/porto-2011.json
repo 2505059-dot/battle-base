@@ -1,0 +1,308 @@
+{
+  "candidateTeamSeason": "porto-2011",
+  "actualTeamOrCountry": "FC Porto",
+  "actualLeagueOrType": "Primeira Liga",
+  "plannedGroup": "story-club",
+  "referenceSeasonOrEvent": "2010/11",
+  "gameSnapshot": {
+    "gameVersion": "FIFA 11",
+    "targetRevisionReference": {
+      "platform": "SoFIFA",
+      "updateId": "110001",
+      "referenceDate": "2010-08-30",
+      "pageUrl": "https://sofifa.com/team/236/fc-porto/110001/",
+      "officialTeamRevisionConfirmed": true,
+      "note": "local cache records r110002, a different revision"
+    },
+    "versionConsistencyStatus": "SoFIFA target r110001 dated 2010-08-30 differs from cached r110002; cache is supplemental",
+    "sourceCoverageStatus": "local-cache rows captured; does not establish complete authoritative squad coverage",
+    "sourceTeamName": "FC Porto",
+    "snapshotStatus": "captured-game-edition-snapshot",
+    "observedUpdateIds": [
+      "110002"
+    ],
+    "observedUpdateDate": null,
+    "membershipEvidence": "source row club_name=FC Porto in FIFA 11 edition dataset",
+    "capturedRowCount": 24,
+    "expectedSourcePageCount": 26,
+    "fifaIndexGameRosterAudit": {
+      "sourceName": "FIFAIndex team edition page",
+      "pageUrl": "https://fifaindex.com/teams/236-fc-porto/fifa11",
+      "teamId": 236,
+      "gameVersion": "FIFA 11",
+      "listedPlayerCount": 26,
+      "revisionDate": null,
+      "revisionDateStatus": "not disclosed on cited FIFAIndex edition page; unknown",
+      "namesTranscribed": false,
+      "pageReadInSourceAudit": true,
+      "eventRosterComparison": null
+    },
+    "members": [
+      {
+        "sourcePlayerId": "189362",
+        "rawName": "Givanildo Vieira de Souza",
+        "rawPosition": "RW, CF, RF, ST",
+        "rawOverall": "84",
+        "membershipEvidence": "source row club_name=FC Porto",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/189362/givanildo-vieira-de-souza/110002/"
+      },
+      {
+        "sourcePlayerId": "167397",
+        "rawName": "Radamel Falcao García Zarate",
+        "rawPosition": "ST, CF, RF, LF",
+        "rawOverall": "83",
+        "membershipEvidence": "source row club_name=FC Porto",
+        "identityStatus": "confirmed-existing-by-exact-source-id",
+        "canonicalPlayerId": "radamel-falcao",
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/167397/radamel-falcao-garcia-zarate/110002/"
+      },
+      {
+        "sourcePlayerId": "162347",
+        "rawName": "João Filipe Iria Santos Moutinho",
+        "rawPosition": "CM, CAM, RM, LM",
+        "rawOverall": "81",
+        "membershipEvidence": "source row club_name=FC Porto",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/162347/joao-filipe-iria-santos-moutinho/110002/"
+      },
+      {
+        "sourcePlayerId": "139094",
+        "rawName": "Helton da Silva Arruda",
+        "rawPosition": "GK",
+        "rawOverall": "81",
+        "membershipEvidence": "source row club_name=FC Porto",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/139094/helton-da-silva-arruda/110002/"
+      },
+      {
+        "sourcePlayerId": "192366",
+        "rawName": "Nicolás Otamendi",
+        "rawPosition": "CB, RB, LB",
+        "rawOverall": "79",
+        "membershipEvidence": "source row club_name=FC Porto",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/192366/nicolas-otamendi/110002/"
+      },
+      {
+        "sourcePlayerId": "172672",
+        "rawName": "Silvestre Manuel Gonçalves Varela",
+        "rawPosition": "LF, RW, LW, RM",
+        "rawOverall": "79",
+        "membershipEvidence": "source row club_name=FC Porto",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/172672/silvestre-manuel-goncalves-varela/110002/"
+      },
+      {
+        "sourcePlayerId": "163083",
+        "rawName": "Rolando Jorge Pires da Fonseca",
+        "rawPosition": "CB",
+        "rawOverall": "79",
+        "membershipEvidence": "source row club_name=FC Porto",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/163083/rolando-jorge-pires-da-fonseca/110002/"
+      },
+      {
+        "sourcePlayerId": "143587",
+        "rawName": "Fernando Belluschi",
+        "rawPosition": "CM, CAM, RM, RW",
+        "rawOverall": "79",
+        "membershipEvidence": "source row club_name=FC Porto",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/143587/fernando-belluschi/110002/"
+      },
+      {
+        "sourcePlayerId": "190779",
+        "rawName": "Rúben Micael Freitas da Ressureição",
+        "rawPosition": "CM, CAM",
+        "rawOverall": "78",
+        "membershipEvidence": "source row club_name=FC Porto",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/190779/ruben-micael-freitas-da-ressureicao/110002/"
+      },
+      {
+        "sourcePlayerId": "184134",
+        "rawName": "Fernando Francisco Reges",
+        "rawPosition": "CDM, CM, RB",
+        "rawOverall": "78",
+        "membershipEvidence": "source row club_name=FC Porto",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/184134/fernando-francisco-reges/110002/"
+      },
+      {
+        "sourcePlayerId": "170664",
+        "rawName": "Cristian Rodríguez",
+        "rawPosition": "LW, LF, LM, CM",
+        "rawOverall": "78",
+        "membershipEvidence": "source row club_name=FC Porto",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/170664/cristian-rodriguez/110002/"
+      },
+      {
+        "sourcePlayerId": "198710",
+        "rawName": "James Rodríguez",
+        "rawPosition": "LF, LW, CAM, RW",
+        "rawOverall": "77",
+        "membershipEvidence": "source row club_name=FC Porto",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/198710/james-rodriguez/110002/"
+      },
+      {
+        "sourcePlayerId": "172098",
+        "rawName": "Álvaro Pereira",
+        "rawPosition": "LB, LWB, LM, LW",
+        "rawOverall": "77",
+        "membershipEvidence": "source row club_name=FC Porto",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/172098/alvaro-pereira/110002/"
+      },
+      {
+        "sourcePlayerId": "191687",
+        "rawName": "Maicon Pereira Roque",
+        "rawPosition": "CB, RB",
+        "rawOverall": "76",
+        "membershipEvidence": "source row club_name=FC Porto",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/191687/maicon-pereira-roque/110002/"
+      },
+      {
+        "sourcePlayerId": "188860",
+        "rawName": "Walter Henrique da Silva",
+        "rawPosition": "ST, LF",
+        "rawOverall": "76",
+        "membershipEvidence": "source row club_name=FC Porto",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/188860/walter-henrique-da-silva/110002/"
+      },
+      {
+        "sourcePlayerId": "182629",
+        "rawName": "António Alberto Bastos Pimparel",
+        "rawPosition": "GK",
+        "rawOverall": "76",
+        "membershipEvidence": "source row club_name=FC Porto",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/182629/antonio-alberto-bastos-pimparel/110002/"
+      },
+      {
+        "sourcePlayerId": "178691",
+        "rawName": "Jorge Fucile",
+        "rawPosition": "RB, LWB, RWB, LB",
+        "rawOverall": "76",
+        "membershipEvidence": "source row club_name=FC Porto",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/178691/jorge-fucile/110002/"
+      },
+      {
+        "sourcePlayerId": "169051",
+        "rawName": "Freddy Guarín",
+        "rawPosition": "CDM, CM, CAM, RM",
+        "rawOverall": "76",
+        "membershipEvidence": "source row club_name=FC Porto",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/169051/freddy-guarin/110002/"
+      },
+      {
+        "sourcePlayerId": "171635",
+        "rawName": "Henrique Sereno Fonseca",
+        "rawPosition": "CB, LB, RB",
+        "rawOverall": "75",
+        "membershipEvidence": "source row club_name=FC Porto",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/171635/henrique-sereno-fonseca/110002/"
+      },
+      {
+        "sourcePlayerId": "156221",
+        "rawName": "Cristian Săpunaru",
+        "rawPosition": "RB, CB",
+        "rawOverall": "75",
+        "membershipEvidence": "source row club_name=FC Porto",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/156221/cristian-sapunaru/110002/"
+      },
+      {
+        "sourcePlayerId": "142705",
+        "rawName": "Mariano González",
+        "rawPosition": "RM, RW, CAM, LM",
+        "rawOverall": "75",
+        "membershipEvidence": "source row club_name=FC Porto",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/142705/mariano-gonzalez/110002/"
+      },
+      {
+        "sourcePlayerId": "148526",
+        "rawName": "Paweł Kieszek",
+        "rawPosition": "GK",
+        "rawOverall": "70",
+        "membershipEvidence": "source row club_name=FC Porto",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/148526/pawel-kieszek/110002/"
+      },
+      {
+        "sourcePlayerId": "189423",
+        "rawName": "Josef de Souza Dias",
+        "rawPosition": "CDM, CM",
+        "rawOverall": "70",
+        "membershipEvidence": "source row club_name=FC Porto",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/189423/josef-de-souza-dias/110002/"
+      },
+      {
+        "sourcePlayerId": "193006",
+        "rawName": "Emidio Rafael Augusto Silva",
+        "rawPosition": "LB, LWB",
+        "rawOverall": "69",
+        "membershipEvidence": "source row club_name=FC Porto",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/193006/emidio-rafael-augusto-silva/110002/"
+      }
+    ]
+  },
+  "officialEventSnapshots": []
+}

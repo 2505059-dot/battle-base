@@ -1,0 +1,95 @@
+{
+  "schemaVersion": "wave1-event-roster-source/1",
+  "candidateTeamSeason": "spain-2010",
+  "rosterType": "official-event-roster",
+  "source": {
+    "sourceName": "UEFA",
+    "title": "Spain look to future with World Cup 23",
+    "url": "https://www.uefa.com/european-qualifiers/news/01e5-0e74972c38f1-5eebe6815f4f-1000--spain-look-to-future-with-world-cup-23/",
+    "competition": "2010 FIFA World Cup",
+    "publicationDate": null,
+    "pageContentReadInSourceAudit": true
+  },
+  "records": [
+    {
+      "rawName": "Iker Casillas"
+    },
+    {
+      "rawName": "Pepe Reina"
+    },
+    {
+      "rawName": "Víctor Valdés"
+    },
+    {
+      "rawName": "Raúl Albiol"
+    },
+    {
+      "rawName": "Álvaro Arbeloa"
+    },
+    {
+      "rawName": "Joan Capdevila"
+    },
+    {
+      "rawName": "Carlos Marchena"
+    },
+    {
+      "rawName": "Gerard Piqué"
+    },
+    {
+      "rawName": "Carles Puyol"
+    },
+    {
+      "rawName": "Sergio Ramos"
+    },
+    {
+      "rawName": "Xabi Alonso"
+    },
+    {
+      "rawName": "Sergio Busquets"
+    },
+    {
+      "rawName": "Cesc Fàbregas"
+    },
+    {
+      "rawName": "Andrés Iniesta"
+    },
+    {
+      "rawName": "Javi Martínez"
+    },
+    {
+      "rawName": "David Silva"
+    },
+    {
+      "rawName": "Xavi Hernández"
+    },
+    {
+      "rawName": "Jesús Navas"
+    },
+    {
+      "rawName": "Juan Mata"
+    },
+    {
+      "rawName": "Pedro Rodríguez"
+    },
+    {
+      "rawName": "Fernando Llorente"
+    },
+    {
+      "rawName": "Fernando Torres"
+    },
+    {
+      "rawName": "David Villa"
+    }
+  ],
+  "replacements": [],
+  "fieldsNotProvidedBySource": [
+    "player source ID",
+    "position",
+    "overall",
+    "technical attributes"
+  ],
+  "sourceRetrievedAt": null,
+  "sourceRetrievedAtReason": "original page retrieval time is not recorded in the source audit",
+  "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+  "sourceAcquisitionTime": "original page retrieval time unknown"
+}

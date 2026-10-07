@@ -1,0 +1,427 @@
+{
+  "candidateTeamSeason": "real-madrid-2009",
+  "actualTeamOrCountry": "Real Madrid",
+  "actualLeagueOrType": "La Liga",
+  "plannedGroup": "story-club",
+  "referenceSeasonOrEvent": "2008/09",
+  "gameSnapshot": {
+    "gameVersion": "FIFA 09",
+    "targetRevisionReference": {
+      "platform": "SoFIFA",
+      "updateId": "090002",
+      "referenceDate": "2009-02-22",
+      "pageUrl": "https://sofifa.com/squad/2600297",
+      "referenceType": "community squad page",
+      "officialTeamRevisionConfirmed": false,
+      "note": "squad page confirms edition/date context only"
+    },
+    "versionConsistencyStatus": "FIFAIndex FIFA09 list excludes Cristiano Ronaldo; SoFIFA date is a community squad page, not a confirmed official team revision",
+    "sourceCoverageStatus": "local-cache rows captured; does not establish complete authoritative squad coverage",
+    "sourceTeamName": "Real Madrid",
+    "snapshotStatus": "captured-game-edition-snapshot",
+    "observedUpdateIds": [
+      "090002"
+    ],
+    "observedUpdateDate": null,
+    "membershipEvidence": "source row club_name=Real Madrid in FIFA 09 edition dataset",
+    "capturedRowCount": 34,
+    "expectedSourcePageCount": 24,
+    "fifaIndexGameRosterAudit": {
+      "sourceName": "FIFAIndex team edition page",
+      "pageUrl": "https://fifaindex.com/es-mx/equipos/243-real-madrid-c-f/fifa09",
+      "teamId": 243,
+      "gameVersion": "FIFA 09",
+      "listedPlayerCount": 24,
+      "revisionDate": null,
+      "revisionDateStatus": "not disclosed on cited FIFAIndex edition page; unknown",
+      "namesTranscribed": false,
+      "pageReadInSourceAudit": true,
+      "eventRosterComparison": null
+    },
+    "members": [
+      {
+        "sourcePlayerId": "5479",
+        "rawName": "Casillas",
+        "rawPosition": "GK",
+        "rawOverall": "91",
+        "membershipEvidence": "source row club_name=Real Madrid",
+        "identityStatus": "confirmed-existing-by-exact-source-id",
+        "canonicalPlayerId": "iker-casillas",
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/5479/casillas/090002/"
+      },
+      {
+        "sourcePlayerId": "139869",
+        "rawName": "Wesley Sneijder",
+        "rawPosition": "CAM",
+        "rawOverall": "86",
+        "membershipEvidence": "source row club_name=Real Madrid",
+        "identityStatus": "confirmed-existing-by-exact-source-id",
+        "canonicalPlayerId": "wesley-sneijder",
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/139869/wesley-sneijder/090002/"
+      },
+      {
+        "sourcePlayerId": "9014",
+        "rawName": "Arjen Robben",
+        "rawPosition": "LM",
+        "rawOverall": "86",
+        "membershipEvidence": "source row club_name=Real Madrid",
+        "identityStatus": "confirmed-existing-by-exact-source-id",
+        "canonicalPlayerId": "arjen-robben",
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/9014/arjen-robben/090002/"
+      },
+      {
+        "sourcePlayerId": "45574",
+        "rawName": "Rafael van der Vaart",
+        "rawPosition": "CAM",
+        "rawOverall": "85",
+        "membershipEvidence": "source row club_name=Real Madrid",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/45574/rafael-van-der-vaart/090002/"
+      },
+      {
+        "sourcePlayerId": "10264",
+        "rawName": "Ruud Van Nistelrooy",
+        "rawPosition": "ST",
+        "rawOverall": "85",
+        "membershipEvidence": "source row club_name=Real Madrid",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/10264/ruud-van-nistelrooy/090002/"
+      },
+      {
+        "sourcePlayerId": "155862",
+        "rawName": "Sergio Ramos",
+        "rawPosition": "RB",
+        "rawOverall": "84",
+        "membershipEvidence": "source row club_name=Real Madrid",
+        "identityStatus": "confirmed-existing-by-exact-source-id",
+        "canonicalPlayerId": "sergio-ramos",
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/155862/sergio-ramos/090002/"
+      },
+      {
+        "sourcePlayerId": "148803",
+        "rawName": "Klaas Jan Huntelaar",
+        "rawPosition": "ST",
+        "rawOverall": "84",
+        "membershipEvidence": "source row club_name=Real Madrid",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/148803/klaas-jan-huntelaar/090002/"
+      },
+      {
+        "sourcePlayerId": "120533",
+        "rawName": "Pepe",
+        "rawPosition": "CB",
+        "rawOverall": "84",
+        "membershipEvidence": "source row club_name=Real Madrid",
+        "identityStatus": "confirmed-existing-by-exact-source-id",
+        "canonicalPlayerId": "pepe",
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/120533/pepe/090002/"
+      },
+      {
+        "sourcePlayerId": "1183",
+        "rawName": "Fabio Cannavaro",
+        "rawPosition": "CB",
+        "rawOverall": "84",
+        "membershipEvidence": "source row club_name=Real Madrid",
+        "identityStatus": "name-candidate-unconfirmed",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [
+          "fabio-cannavaro"
+        ],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/1183/fabio-cannavaro/090002/"
+      },
+      {
+        "sourcePlayerId": "9593",
+        "rawName": "Guti",
+        "rawPosition": "CAM",
+        "rawOverall": "83",
+        "membershipEvidence": "source row club_name=Real Madrid",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/9593/guti/090002/"
+      },
+      {
+        "sourcePlayerId": "167664",
+        "rawName": "Gonzalo Higuaín",
+        "rawPosition": "ST",
+        "rawOverall": "82",
+        "membershipEvidence": "source row club_name=Real Madrid",
+        "identityStatus": "confirmed-existing-by-exact-source-id",
+        "canonicalPlayerId": "gonzalo-higuain",
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/167664/gonzalo-higuain/090002/"
+      },
+      {
+        "sourcePlayerId": "45661",
+        "rawName": "Raúl",
+        "rawPosition": "CF",
+        "rawOverall": "82",
+        "membershipEvidence": "source row club_name=Real Madrid",
+        "identityStatus": "name-candidate-unconfirmed",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [
+          "raul"
+        ],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/45661/raul/090002/"
+      },
+      {
+        "sourcePlayerId": "163711",
+        "rawName": "Lassana Diarra",
+        "rawPosition": "CDM",
+        "rawOverall": "81",
+        "membershipEvidence": "source row club_name=Real Madrid",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/163711/lassana-diarra/090002/"
+      },
+      {
+        "sourcePlayerId": "52058",
+        "rawName": "Mahamadou Diarra",
+        "rawPosition": "CDM",
+        "rawOverall": "81",
+        "membershipEvidence": "source row club_name=Real Madrid",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/52058/mahamadou-diarra/090002/"
+      },
+      {
+        "sourcePlayerId": "163891",
+        "rawName": "De la Red",
+        "rawPosition": "CM",
+        "rawOverall": "80",
+        "membershipEvidence": "source row club_name=Real Madrid",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/163891/de-la-red/090002/"
+      },
+      {
+        "sourcePlayerId": "30663",
+        "rawName": "Christoph Metzelder",
+        "rawPosition": "CB",
+        "rawOverall": "80",
+        "membershipEvidence": "source row club_name=Real Madrid",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/30663/christoph-metzelder/090002/"
+      },
+      {
+        "sourcePlayerId": "165517",
+        "rawName": "Fernando Gago",
+        "rawPosition": "CM",
+        "rawOverall": "79",
+        "membershipEvidence": "source row club_name=Real Madrid",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/165517/fernando-gago/090002/"
+      },
+      {
+        "sourcePlayerId": "8222",
+        "rawName": "Gabriel Heinze",
+        "rawPosition": "LB",
+        "rawOverall": "79",
+        "membershipEvidence": "source row club_name=Real Madrid",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/8222/gabriel-heinze/090002/"
+      },
+      {
+        "sourcePlayerId": "1803",
+        "rawName": "Javier Saviola",
+        "rawPosition": "RF",
+        "rawOverall": "78",
+        "membershipEvidence": "source row club_name=Real Madrid",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/1803/javier-saviola/090002/"
+      },
+      {
+        "sourcePlayerId": "178746",
+        "rawName": "Torres",
+        "rawPosition": "RB",
+        "rawOverall": "75",
+        "membershipEvidence": "source row club_name=Real Madrid",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/178746/torres/090002/"
+      },
+      {
+        "sourcePlayerId": "177752",
+        "rawName": "Royston Drenthe",
+        "rawPosition": "LM",
+        "rawOverall": "75",
+        "membershipEvidence": "source row club_name=Real Madrid",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/177752/royston-drenthe/090002/"
+      },
+      {
+        "sourcePlayerId": "176676",
+        "rawName": "Marcelo",
+        "rawPosition": "LWB",
+        "rawOverall": "75",
+        "membershipEvidence": "source row club_name=Real Madrid",
+        "identityStatus": "confirmed-existing-by-exact-source-id",
+        "canonicalPlayerId": "marcelo",
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/176676/marcelo/090002/"
+      },
+      {
+        "sourcePlayerId": "44897",
+        "rawName": "Jerzy Dudek",
+        "rawPosition": "GK",
+        "rawOverall": "75",
+        "membershipEvidence": "source row club_name=Real Madrid",
+        "identityStatus": "name-candidate-unconfirmed",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [
+          "jerzy-dudek"
+        ],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/44897/jerzy-dudek/090002/"
+      },
+      {
+        "sourcePlayerId": "146744",
+        "rawName": "Codina",
+        "rawPosition": "GK",
+        "rawOverall": "72",
+        "membershipEvidence": "source row club_name=Real Madrid",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/146744/codina/090002/"
+      },
+      {
+        "sourcePlayerId": "8348",
+        "rawName": "Michel Salgado",
+        "rawPosition": "RB",
+        "rawOverall": "71",
+        "membershipEvidence": "source row club_name=Real Madrid",
+        "identityStatus": "name-candidate-unconfirmed",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [
+          "michel-salgado"
+        ],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/8348/michel-salgado/090002/"
+      },
+      {
+        "sourcePlayerId": "161754",
+        "rawName": "Javi García",
+        "rawPosition": "CM",
+        "rawOverall": "70",
+        "membershipEvidence": "source row club_name=Real Madrid",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/161754/javi-garcia/090002/"
+      },
+      {
+        "sourcePlayerId": "190561",
+        "rawName": "Palanca",
+        "rawPosition": "ST",
+        "rawOverall": "69",
+        "membershipEvidence": "source row club_name=Real Madrid",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/190561/palanca/090002/"
+      },
+      {
+        "sourcePlayerId": "178087",
+        "rawName": "Bueno",
+        "rawPosition": "ST",
+        "rawOverall": "68",
+        "membershipEvidence": "source row club_name=Real Madrid",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/178087/bueno/090002/"
+      },
+      {
+        "sourcePlayerId": "190534",
+        "rawName": "Chema Antón",
+        "rawPosition": "LB",
+        "rawOverall": "67",
+        "membershipEvidence": "source row club_name=Real Madrid",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/190534/chema-anton/090002/"
+      },
+      {
+        "sourcePlayerId": "189513",
+        "rawName": "Dani Parejo",
+        "rawPosition": "CAM",
+        "rawOverall": "65",
+        "membershipEvidence": "source row club_name=Real Madrid",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/189513/dani-parejo/090002/"
+      },
+      {
+        "sourcePlayerId": "184802",
+        "rawName": "Felipe Ramos",
+        "rawPosition": "GK",
+        "rawOverall": "62",
+        "membershipEvidence": "source row club_name=Real Madrid",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/184802/felipe-ramos/090002/"
+      },
+      {
+        "sourcePlayerId": "184789",
+        "rawName": "Adam Szalai",
+        "rawPosition": "ST",
+        "rawOverall": "60",
+        "membershipEvidence": "source row club_name=Real Madrid",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/184789/adam-szalai/090002/"
+      },
+      {
+        "sourcePlayerId": "185015",
+        "rawName": "Velayos",
+        "rawPosition": "CB",
+        "rawOverall": "57",
+        "membershipEvidence": "source row club_name=Real Madrid",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/185015/velayos/090002/"
+      },
+      {
+        "sourcePlayerId": "178625",
+        "rawName": "Mosquera",
+        "rawPosition": "CDM",
+        "rawOverall": "53",
+        "membershipEvidence": "source row club_name=Real Madrid",
+        "identityStatus": "proposed-new-source-player-needs-review",
+        "canonicalPlayerId": null,
+        "candidateCanonicalIds": [],
+        "sourcePlayerPageUrl": "https://sofifa.com/player/178625/mosquera/090002/"
+      }
+    ]
+  },
+  "officialEventSnapshots": []
+}

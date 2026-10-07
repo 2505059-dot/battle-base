@@ -1,0 +1,96 @@
+{
+  "schemaVersion": "wave1-event-roster-source/1",
+  "candidateTeamSeason": "belgium-2018",
+  "rosterType": "official-event-roster",
+  "source": {
+    "sourceName": "FIFA 2018 official squad-list PDF mirror",
+    "title": "Russia 2018 official squad list; FIFA document header dated 2018-06-13 08:44",
+    "url": "https://www.tff.org/Resources/TFF/Auto/c09d754a33074fd5ac627282b1f062b3.PDF",
+    "officialConfirmationUrl": "https://inside.fifa.com/tournaments/mens/worldcup/2018russia/news/russia-2018-squads-officially-confirmed",
+    "competition": "2018 FIFA World Cup",
+    "publicationDate": "2018-06-13T08:44:00",
+    "pageContentReadInSourceAudit": true
+  },
+  "records": [
+    {
+      "rawName": "Thibaut Courtois"
+    },
+    {
+      "rawName": "Toby Alderweireld"
+    },
+    {
+      "rawName": "Thomas Vermaelen"
+    },
+    {
+      "rawName": "Vincent Kompany"
+    },
+    {
+      "rawName": "Jan Vertonghen"
+    },
+    {
+      "rawName": "Axel Witsel"
+    },
+    {
+      "rawName": "Kevin De Bruyne"
+    },
+    {
+      "rawName": "Marouane Fellaini"
+    },
+    {
+      "rawName": "Romelu Lukaku"
+    },
+    {
+      "rawName": "Eden Hazard"
+    },
+    {
+      "rawName": "Yannick Carrasco"
+    },
+    {
+      "rawName": "Simon Mignolet"
+    },
+    {
+      "rawName": "Koen Casteels"
+    },
+    {
+      "rawName": "Dries Mertens"
+    },
+    {
+      "rawName": "Thomas Meunier"
+    },
+    {
+      "rawName": "Thorgan Hazard"
+    },
+    {
+      "rawName": "Youri Tielemans"
+    },
+    {
+      "rawName": "Adnan Januzaj"
+    },
+    {
+      "rawName": "Mousa Dembélé"
+    },
+    {
+      "rawName": "Dedryck Boyata"
+    },
+    {
+      "rawName": "Michy Batshuayi"
+    },
+    {
+      "rawName": "Nacer Chadli"
+    },
+    {
+      "rawName": "Leander Dendoncker"
+    }
+  ],
+  "replacements": [],
+  "fieldsNotProvidedBySource": [
+    "player source ID",
+    "position",
+    "overall",
+    "technical attributes"
+  ],
+  "sourceRetrievedAt": null,
+  "sourceRetrievedAtReason": "original page retrieval time is not recorded in the source audit",
+  "packageProcessedAt": "2026-10-07T15:25:04.192Z",
+  "sourceAcquisitionTime": "original page retrieval time unknown"
+}

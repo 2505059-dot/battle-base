@@ -1,0 +1,4247 @@
+{
+  "candidate_source": "../evidence.json, 181 fifaindex_name_candidates",
+  "cohort_source": "public/data/team-seasons.js and public/data/player-identities.js",
+  "counts": {
+    "candidate_records": 181,
+    "canonical_candidate_groups": 66,
+    "fresh_multi_selected": 6,
+    "fresh_selected_ids": 61,
+    "fresh_single_confirmed": 55,
+    "multi_id_groups": 6,
+    "partial_multigroups": 5,
+    "rejected_single_candidates": 1,
+    "single_id_groups": 60,
+    "unresolved_single_groups": 4
+  },
+  "created_on": "2026-10-08",
+  "fresh_mappings": [
+    {
+      "candidate_ids": [
+        {
+          "candidate_editions": [
+            "FIFA 05",
+            "FIFA 06"
+          ],
+          "candidate_record_ids": [
+            "candidate-8853-05",
+            "candidate-8853-06"
+          ],
+          "candidate_source_urls": [
+            "https://www.fifaindex.com/player/8853/amedeo-carboni/fifa05/",
+            "https://www.fifaindex.com/player/8853/amedeo-carboni/fifa06/"
+          ],
+          "fifaindex_id": "8853",
+          "identity_observation": {
+            "age_at_game_edition": 39,
+            "date_of_birth": "1965-04-06",
+            "date_of_birth_observation": "observed",
+            "decision_note": "DF compatible",
+            "evidence_basis": "Manual page-name, nationality, edition-age and broad-position/era comparison; no unique-name auto-match.",
+            "game_version": "FIFA 05",
+            "nationality": "Italy",
+            "page_name": "Amedeo Carboni",
+            "page_url": "https://www.fifaindex.com/player/8853/amedeo-carboni/fifa05/",
+            "positions": [
+              "LWB",
+              "LB",
+              "CB"
+            ]
+          },
+          "identity_status": "fresh_page_confirmed"
+        }
+      ],
+      "canonical_name": "Amedeo Carboni",
+      "canonical_player_id": "amedeo-carboni",
+      "cohort_team_positions": [
+        "DF"
+      ],
+      "cohort_team_seasons": [
+        "valencia-2004"
+      ],
+      "decision_basis": "DF compatible",
+      "group_status": "fresh_single_id_confirmed",
+      "inherited_v1_baseline_records": [],
+      "selected_fresh_fifaindex_id": "8853",
+      "target_season_years": [
+        2004
+      ]
+    },
+    {
+      "candidate_ids": [
+        {
+          "candidate_editions": [
+            "FIFA 05",
+            "FIFA 06"
+          ],
+          "candidate_record_ids": [
+            "candidate-5454-05",
+            "candidate-5454-06"
+          ],
+          "candidate_source_urls": [
+            "https://www.fifaindex.com/player/5454/bixente-lizarazu/fifa05/",
+            "https://www.fifaindex.com/player/5454/bixente-lizarazu/fifa06/"
+          ],
+          "fifaindex_id": "5454",
+          "identity_observation": {
+            "age_at_game_edition": 34,
+            "date_of_birth": "1969-12-09",
+            "date_of_birth_observation": "observed",
+            "decision_note": "DF compatible",
+            "evidence_basis": "Manual page-name, nationality, edition-age and broad-position/era comparison; no unique-name auto-match.",
+            "game_version": "FIFA 05",
+            "nationality": "France",
+            "page_name": "Bixente Lizarazu",
+            "page_url": "https://www.fifaindex.com/player/5454/bixente-lizarazu/fifa05/",
+            "positions": [
+              "LWB",
+              "LB",
+              "LM"
+            ]
+          },
+          "identity_status": "fresh_page_confirmed"
+        }
+      ],
+      "canonical_name": "Bixente Lizarazu",
+      "canonical_player_id": "bixente-lizarazu",
+      "cohort_team_positions": [
+        "DF"
+      ],
+      "cohort_team_seasons": [
+        "bayern-munich-2001"
+      ],
+      "decision_basis": "DF compatible",
+      "group_status": "fresh_single_id_confirmed",
+      "inherited_v1_baseline_records": [],
+      "selected_fresh_fifaindex_id": "5454",
+      "target_season_years": [
+        2001
+      ]
+    },
+    {
+      "candidate_ids": [
+        {
+          "candidate_editions": [
+            "FIFA 05",
+            "FIFA 06",
+            "FIFA 07"
+          ],
+          "candidate_record_ids": [
+            "candidate-3215-05",
+            "candidate-3215-06",
+            "candidate-3215-07"
+          ],
+          "candidate_source_urls": [
+            "https://www.fifaindex.com/player/3215/caf%C3%BA/fifa05/",
+            "https://www.fifaindex.com/player/3215/caf%C3%BA/fifa06/",
+            "https://www.fifaindex.com/player/3215/caf%C3%BA/fifa07/"
+          ],
+          "fifaindex_id": "3215",
+          "identity_observation": {
+            "age_at_game_edition": 26,
+            "date_of_birth": null,
+            "date_of_birth_observation": "not_captured",
+            "decision_note": "Reject 3215; keep inherited v1 ID 5003 separate.",
+            "evidence_basis": "Search snippet conflicts with the cohort right-back context; full page/nationality unavailable.",
+            "game_version": "FIFA 05",
+            "nationality": null,
+            "page_name": "Cafú",
+            "page_url": "https://fifaindex.com/cs/hraci/3215-cafu/fifa05",
+            "positions": [
+              "PO",
+              "SÚ"
+            ]
+          },
+          "identity_status": "rejected_wrong_namesake"
+        }
+      ],
+      "canonical_name": "Cafu",
+      "canonical_player_id": "cafu",
+      "cohort_team_positions": [
+        "DF",
+        "MF"
+      ],
+      "cohort_team_seasons": [
+        "roma-2001"
+      ],
+      "decision_basis": "Candidate 3215 is rejected as a namesake based on the search snippet/position conflict. Existing v1 ID 5003 remains a separate inherited mapping.",
+      "group_status": "unresolved_after_rejected_candidate",
+      "inherited_v1_baseline_records": [
+        {
+          "fifaindex_id": "5003",
+          "game_version": "FIFA 05",
+          "mapping_status": "inherited_v1_not_reverified",
+          "record_id": "fifaindex-5003-05",
+          "source_url": "https://www.fifaindex.com/player/5003/caf%C3%BA/fifa05/"
+        },
+        {
+          "fifaindex_id": "5003",
+          "game_version": "FIFA 06",
+          "mapping_status": "inherited_v1_not_reverified",
+          "record_id": "fifaindex-5003-06",
+          "source_url": "https://www.fifaindex.com/player/5003/cafu/fifa06/"
+        },
+        {
+          "fifaindex_id": "5003",
+          "game_version": "FIFA 07",
+          "mapping_status": "inherited_v1_not_reverified",
+          "record_id": "fifaindex-5003-07",
+          "source_url": "https://www.fifaindex.com/player/5003/cafu/fifa07/"
+        }
+      ],
+      "selected_fresh_fifaindex_id": null,
+      "target_season_years": [
+        2001
+      ]
+    },
+    {
+      "candidate_ids": [
+        {
+          "candidate_editions": [
+            "FIFA 06"
+          ],
+          "candidate_record_ids": [
+            "candidate-11576-06"
+          ],
+          "candidate_source_urls": [
+            "https://www.fifaindex.com/player/11576/carlos-marchena/fifa06/"
+          ],
+          "fifaindex_id": "11576",
+          "identity_observation": {
+            "age_at_game_edition": 26,
+            "date_of_birth": null,
+            "date_of_birth_observation": "not_exposed",
+            "decision_note": "DF/MF compatible",
+            "evidence_basis": "Manual page-name, nationality, edition-age and broad-position/era comparison; no unique-name auto-match.",
+            "game_version": "FIFA 06",
+            "nationality": "Spain",
+            "page_name": "Carlos Marchena",
+            "page_url": "https://fifaindex.com/players/11576-carlos-marchena/fifa06",
+            "positions": [
+              "CB"
+            ]
+          },
+          "identity_status": "fresh_page_confirmed"
+        }
+      ],
+      "canonical_name": "Carlos Marchena",
+      "canonical_player_id": "carlos-marchena",
+      "cohort_team_positions": [
+        "DF",
+        "MF"
+      ],
+      "cohort_team_seasons": [
+        "valencia-2004"
+      ],
+      "decision_basis": "DF/MF compatible",
+      "group_status": "fresh_single_id_confirmed",
+      "inherited_v1_baseline_records": [],
+      "selected_fresh_fifaindex_id": "11576",
+      "target_season_years": [
+        2004
+      ]
+    },
+    {
+      "candidate_ids": [
+        {
+          "candidate_editions": [
+            "FIFA 05"
+          ],
+          "candidate_record_ids": [
+            "candidate-1059-05"
+          ],
+          "candidate_source_urls": [
+            "https://www.fifaindex.com/player/1059/ciro-ferrara/fifa05/"
+          ],
+          "fifaindex_id": "1059",
+          "identity_observation": {
+            "age_at_game_edition": 37,
+            "date_of_birth": null,
+            "date_of_birth_observation": "not_exposed",
+            "decision_note": "DF compatible",
+            "evidence_basis": "Manual page-name, nationality, edition-age and broad-position/era comparison; no unique-name auto-match.",
+            "game_version": "FIFA 05",
+            "nationality": "Italy",
+            "page_name": "Ciro Ferrara",
+            "page_url": "https://fifaindex.com/players/1059-ciro-ferrara/fifa05",
+            "positions": [
+              "CB",
+              "RB",
+              "SW"
+            ]
+          },
+          "identity_status": "fresh_page_confirmed"
+        }
+      ],
+      "canonical_name": "Ciro Ferrara",
+      "canonical_player_id": "ciro-ferrara",
+      "cohort_team_positions": [
+        "DF"
+      ],
+      "cohort_team_seasons": [
+        "juventus-2003"
+      ],
+      "decision_basis": "DF compatible",
+      "group_status": "fresh_single_id_confirmed",
+      "inherited_v1_baseline_records": [],
+      "selected_fresh_fifaindex_id": "1059",
+      "target_season_years": [
+        2003
+      ]
+    },
+    {
+      "candidate_ids": [
+        {
+          "candidate_editions": [
+            "FIFA 05",
+            "FIFA 06",
+            "FIFA 07"
+          ],
+          "candidate_record_ids": [
+            "candidate-20169-05",
+            "candidate-20169-06",
+            "candidate-20169-07"
+          ],
+          "candidate_source_urls": [
+            "https://www.fifaindex.com/player/20169/costinha/fifa05/",
+            "https://www.fifaindex.com/player/20169/costinha/fifa06/",
+            "https://www.fifaindex.com/player/20169/costinha/fifa07/"
+          ],
+          "fifaindex_id": "20169",
+          "identity_observation": {
+            "additional_page_observations": [
+              {
+                "age_at_game_edition": 30,
+                "date_of_birth": null,
+                "game_version": "FIFA 06",
+                "nationality": "Portugal",
+                "page_url": "https://fifaindex.com/players/20169-costinha/fifa06",
+                "positions": [
+                  "CM"
+                ]
+              }
+            ],
+            "age_at_game_edition": 29,
+            "date_of_birth": null,
+            "date_of_birth_observation": "not_exposed",
+            "decision_note": "Selected supported ID; unread alternatives are not mapped.",
+            "evidence_basis": "Positive ID supported individually by page facts and cohort role/era; other candidate IDs remain separate.",
+            "game_version": "FIFA 05",
+            "nationality": "Portugal",
+            "page_name": "Costinha",
+            "page_url": "https://fifaindex.com/players/20169-costinha/fifa05",
+            "positions": [
+              "CM",
+              "CDM"
+            ]
+          },
+          "identity_status": "fresh_page_confirmed_selected_id"
+        },
+        {
+          "candidate_editions": [
+            "FIFA 06",
+            "FIFA 07"
+          ],
+          "candidate_record_ids": [
+            "candidate-157961-06",
+            "candidate-157961-07"
+          ],
+          "candidate_source_urls": [
+            "https://www.fifaindex.com/player/157961/costinha/fifa06/",
+            "https://www.fifaindex.com/player/157961/costinha/fifa07/"
+          ],
+          "fifaindex_id": "157961",
+          "identity_observation": {
+            "age_at_game_edition": null,
+            "date_of_birth": null,
+            "date_of_birth_observation": "not_observed",
+            "decision_note": "Alternative numeric ID remains unresolved; only a separately supported positive ID is mapped.",
+            "evidence_basis": "Candidate page was unreadable in the bounded audit; no inference from ID uniqueness.",
+            "game_version": "FIFA 06",
+            "nationality": null,
+            "page_url": "https://www.fifaindex.com/player/157961/costinha/fifa06/",
+            "positions": null
+          },
+          "identity_status": "unresolved_alternative_not_read"
+        },
+        {
+          "candidate_editions": [
+            "FIFA 06"
+          ],
+          "candidate_record_ids": [
+            "candidate-159482-06"
+          ],
+          "candidate_source_urls": [
+            "https://www.fifaindex.com/player/159482/costinha/fifa06/"
+          ],
+          "fifaindex_id": "159482",
+          "identity_observation": {
+            "age_at_game_edition": null,
+            "date_of_birth": null,
+            "date_of_birth_observation": "not_observed",
+            "decision_note": "Alternative numeric ID remains unresolved; only a separately supported positive ID is mapped.",
+            "evidence_basis": "Candidate page was unreadable in the bounded audit; no inference from ID uniqueness.",
+            "game_version": "FIFA 06",
+            "nationality": null,
+            "page_url": "https://www.fifaindex.com/player/159482/costinha/fifa06/",
+            "positions": null
+          },
+          "identity_status": "unresolved_alternative_not_read"
+        }
+      ],
+      "canonical_name": "Costinha",
+      "canonical_player_id": "costinha",
+      "cohort_team_positions": [
+        "MF"
+      ],
+      "cohort_team_seasons": [
+        "porto-2004"
+      ],
+      "decision_basis": "Positive ID 20169 is supported; unread alternative IDs 157961, 159482 remain unresolved.",
+      "group_status": "partial_disambiguation",
+      "inherited_v1_baseline_records": [],
+      "selected_fresh_fifaindex_id": "20169",
+      "target_season_years": [
+        2004
+      ]
+    },
+    {
+      "candidate_ids": [
+        {
+          "candidate_editions": [
+            "FIFA 05",
+            "FIFA 06",
+            "FIFA 07"
+          ],
+          "candidate_record_ids": [
+            "candidate-4781-05",
+            "candidate-4781-06",
+            "candidate-4781-07"
+          ],
+          "candidate_source_urls": [
+            "https://www.fifaindex.com/player/4781/damiano-tommasi/fifa05/",
+            "https://www.fifaindex.com/player/4781/damiano-tommasi/fifa06/",
+            "https://www.fifaindex.com/player/4781/damiano-tommasi/fifa07/"
+          ],
+          "fifaindex_id": "4781",
+          "identity_observation": {
+            "age_at_game_edition": null,
+            "date_of_birth": null,
+            "date_of_birth_observation": "not_observed",
+            "decision_note": "Page and modern-route retry inaccessible.",
+            "evidence_basis": "Bounded page attempts yielded no identity facts; unique ID is not sufficient.",
+            "game_version": "FIFA 05",
+            "nationality": null,
+            "page_url": "https://www.fifaindex.com/player/4781/damiano-tommasi/fifa05/",
+            "positions": null
+          },
+          "identity_status": "unresolved_page_inaccessible"
+        }
+      ],
+      "canonical_name": "Damiano Tommasi",
+      "canonical_player_id": "damiano-tommasi",
+      "cohort_team_positions": [
+        "MF"
+      ],
+      "cohort_team_seasons": [
+        "roma-2001"
+      ],
+      "decision_basis": "Page and modern-route retry inaccessible.",
+      "group_status": "unresolved",
+      "inherited_v1_baseline_records": [],
+      "selected_fresh_fifaindex_id": null,
+      "target_season_years": [
+        2001
+      ]
+    },
+    {
+      "candidate_ids": [
+        {
+          "candidate_editions": [
+            "FIFA 06"
+          ],
+          "candidate_record_ids": [
+            "candidate-111008-06"
+          ],
+          "candidate_source_urls": [
+            "https://www.fifaindex.com/player/111008/david-albelda/fifa06/"
+          ],
+          "fifaindex_id": "111008",
+          "identity_observation": {
+            "age_at_game_edition": 27,
+            "date_of_birth": null,
+            "date_of_birth_observation": "not_exposed",
+            "decision_note": "MF compatible",
+            "evidence_basis": "Manual page-name, nationality, edition-age and broad-position/era comparison; no unique-name auto-match.",
+            "game_version": "FIFA 06",
+            "nationality": "Spain",
+            "page_name": "David Albelda",
+            "page_url": "https://www.fifaindex.com/player/111008/david-albelda/fifa06/",
+            "positions": [
+              "CDM",
+              "LCM"
+            ]
+          },
+          "identity_status": "fresh_page_confirmed"
+        }
+      ],
+      "canonical_name": "David Albelda",
+      "canonical_player_id": "david-albelda",
+      "cohort_team_positions": [
+        "MF"
+      ],
+      "cohort_team_seasons": [
+        "valencia-2004"
+      ],
+      "decision_basis": "MF compatible",
+      "group_status": "fresh_single_id_confirmed",
+      "inherited_v1_baseline_records": [],
+      "selected_fresh_fifaindex_id": "111008",
+      "target_season_years": [
+        2004
+      ]
+    },
+    {
+      "candidate_ids": [
+        {
+          "candidate_editions": [
+            "FIFA 05",
+            "FIFA 06",
+            "FIFA 07"
+          ],
+          "candidate_record_ids": [
+            "candidate-250-05",
+            "candidate-250-06",
+            "candidate-250-07"
+          ],
+          "candidate_source_urls": [
+            "https://www.fifaindex.com/player/250/david-beckham/fifa05/",
+            "https://www.fifaindex.com/player/250/david-beckham/fifa06/",
+            "https://www.fifaindex.com/player/250/david-beckham/fifa07/"
+          ],
+          "fifaindex_id": "250",
+          "identity_observation": {
+            "age_at_game_edition": 29,
+            "date_of_birth": null,
+            "date_of_birth_observation": "not_exposed",
+            "decision_note": "MF compatible",
+            "evidence_basis": "Manual page-name, nationality, edition-age and broad-position/era comparison; no unique-name auto-match.",
+            "game_version": "FIFA 05",
+            "nationality": "England",
+            "page_name": "David Beckham",
+            "page_url": "https://fifaindex.com/players/250-david-beckham/fifa05",
+            "positions": [
+              "RM",
+              "RWM",
+              "CM"
+            ]
+          },
+          "identity_status": "fresh_page_confirmed"
+        }
+      ],
+      "canonical_name": "David Beckham",
+      "canonical_player_id": "david-beckham",
+      "cohort_team_positions": [
+        "MF"
+      ],
+      "cohort_team_seasons": [
+        "manchester-united-1999"
+      ],
+      "decision_basis": "MF compatible",
+      "group_status": "fresh_single_id_confirmed",
+      "inherited_v1_baseline_records": [],
+      "selected_fresh_fifaindex_id": "250",
+      "target_season_years": [
+        1999
+      ]
+    },
+    {
+      "candidate_ids": [
+        {
+          "candidate_editions": [
+            "FIFA 05",
+            "FIFA 06",
+            "FIFA 07"
+          ],
+          "candidate_record_ids": [
+            "candidate-5984-05",
+            "candidate-5984-06",
+            "candidate-5984-07"
+          ],
+          "candidate_source_urls": [
+            "https://www.fifaindex.com/player/5984/david-trezeguet/fifa05/",
+            "https://www.fifaindex.com/player/5984/david-trezeguet/fifa06/",
+            "https://www.fifaindex.com/player/5984/david-trezeguet/fifa07/"
+          ],
+          "fifaindex_id": "5984",
+          "identity_observation": {
+            "age_at_game_edition": 26,
+            "date_of_birth": null,
+            "date_of_birth_observation": "not_exposed",
+            "decision_note": "FW compatible",
+            "evidence_basis": "Manual page-name, nationality, edition-age and broad-position/era comparison; no unique-name auto-match.",
+            "game_version": "FIFA 05",
+            "nationality": "France",
+            "page_name": "David Trezeguet",
+            "page_url": "https://fifaindex.com/players/5984-david-trezeguet/fifa05",
+            "positions": [
+              "ST"
+            ]
+          },
+          "identity_status": "fresh_page_confirmed"
+        }
+      ],
+      "canonical_name": "David Trezeguet",
+      "canonical_player_id": "david-trezeguet",
+      "cohort_team_positions": [
+        "FW"
+      ],
+      "cohort_team_seasons": [
+        "juventus-2003"
+      ],
+      "decision_basis": "FW compatible",
+      "group_status": "fresh_single_id_confirmed",
+      "inherited_v1_baseline_records": [],
+      "selected_fresh_fifaindex_id": "5984",
+      "target_season_years": [
+        2003
+      ]
+    },
+    {
+      "candidate_ids": [
+        {
+          "candidate_editions": [
+            "FIFA 05",
+            "FIFA 06",
+            "FIFA 07"
+          ],
+          "candidate_record_ids": [
+            "candidate-53769-05",
+            "candidate-53769-06",
+            "candidate-53769-07"
+          ],
+          "candidate_source_urls": [
+            "https://www.fifaindex.com/player/53769/deco/fifa05/",
+            "https://www.fifaindex.com/player/53769/deco/fifa06/",
+            "https://www.fifaindex.com/player/53769/deco/fifa07/"
+          ],
+          "fifaindex_id": "53769",
+          "identity_observation": {
+            "age_at_game_edition": 27,
+            "date_of_birth": "1977-08-27",
+            "date_of_birth_observation": "observed",
+            "decision_note": "MF compatible",
+            "evidence_basis": "Manual page-name, nationality, edition-age and broad-position/era comparison; no unique-name auto-match.",
+            "game_version": "FIFA 05",
+            "nationality": "Portugal",
+            "page_name": "Deco",
+            "page_url": "https://www.fifaindex.com/player/53769/deco/fifa05/",
+            "positions": [
+              "CAM",
+              "RCAM",
+              "RM"
+            ]
+          },
+          "identity_status": "fresh_page_confirmed"
+        }
+      ],
+      "canonical_name": "Deco",
+      "canonical_player_id": "deco",
+      "cohort_team_positions": [
+        "MF"
+      ],
+      "cohort_team_seasons": [
+        "porto-2004"
+      ],
+      "decision_basis": "MF compatible",
+      "group_status": "fresh_single_id_confirmed",
+      "inherited_v1_baseline_records": [],
+      "selected_fresh_fifaindex_id": "53769",
+      "target_season_years": [
+        2004
+      ]
+    },
+    {
+      "candidate_ids": [
+        {
+          "candidate_editions": [
+            "FIFA 05"
+          ],
+          "candidate_record_ids": [
+            "candidate-20204-05"
+          ],
+          "candidate_source_urls": [
+            "https://www.fifaindex.com/player/20204/derlei/fifa05/"
+          ],
+          "fifaindex_id": "20204",
+          "identity_observation": {
+            "age_at_game_edition": 29,
+            "date_of_birth": null,
+            "date_of_birth_observation": "not_exposed",
+            "decision_note": "Preferred roles fit; FIFA05 club position LCAM discrepancy",
+            "evidence_basis": "Manual page-name, nationality, edition-age and broad-position/era comparison; no unique-name auto-match.",
+            "game_version": "FIFA 05",
+            "nationality": "Brazil",
+            "page_name": "Derlei",
+            "page_url": "https://fifaindex.com/players/20204-derlei/fifa05",
+            "positions": [
+              "ST",
+              "CF",
+              "RW"
+            ]
+          },
+          "identity_status": "fresh_page_confirmed"
+        }
+      ],
+      "canonical_name": "Derlei",
+      "canonical_player_id": "derlei",
+      "cohort_team_positions": [
+        "FW"
+      ],
+      "cohort_team_seasons": [
+        "porto-2004"
+      ],
+      "decision_basis": "Preferred roles fit; FIFA05 club position LCAM discrepancy",
+      "group_status": "fresh_single_id_confirmed",
+      "inherited_v1_baseline_records": [],
+      "selected_fresh_fifaindex_id": "20204",
+      "target_season_years": [
+        2004
+      ]
+    },
+    {
+      "candidate_ids": [
+        {
+          "candidate_editions": [
+            "FIFA 05",
+            "FIFA 06"
+          ],
+          "candidate_record_ids": [
+            "candidate-1190-05",
+            "candidate-1190-06"
+          ],
+          "candidate_source_urls": [
+            "https://www.fifaindex.com/player/1190/dino-baggio/fifa05/",
+            "https://www.fifaindex.com/player/1190/dino-baggio/fifa06/"
+          ],
+          "fifaindex_id": "1190",
+          "identity_observation": {
+            "age_at_game_edition": 33,
+            "date_of_birth": null,
+            "date_of_birth_observation": "not_exposed",
+            "decision_note": "MF compatible via CM",
+            "evidence_basis": "Manual page-name, nationality, edition-age and broad-position/era comparison; no unique-name auto-match.",
+            "game_version": "FIFA 05",
+            "nationality": "Italy",
+            "page_name": "Dino Baggio",
+            "page_url": "https://fifaindex.com/players/1190-dino-baggio/fifa05",
+            "positions": [
+              "CB",
+              "LCB",
+              "CM"
+            ]
+          },
+          "identity_status": "fresh_page_confirmed"
+        }
+      ],
+      "canonical_name": "Dino Baggio",
+      "canonical_player_id": "dino-baggio",
+      "cohort_team_positions": [
+        "MF"
+      ],
+      "cohort_team_seasons": [
+        "parma-1999"
+      ],
+      "decision_basis": "MF compatible via CM",
+      "group_status": "fresh_single_id_confirmed",
+      "inherited_v1_baseline_records": [],
+      "selected_fresh_fifaindex_id": "1190",
+      "target_season_years": [
+        1999
+      ]
+    },
+    {
+      "candidate_ids": [
+        {
+          "candidate_editions": [
+            "FIFA 05"
+          ],
+          "candidate_record_ids": [
+            "candidate-110137-05"
+          ],
+          "candidate_source_urls": [
+            "https://www.fifaindex.com/player/110137/djalminha/fifa05/"
+          ],
+          "fifaindex_id": "110137",
+          "identity_observation": {
+            "age_at_game_edition": 34,
+            "date_of_birth": "1970-02-09",
+            "date_of_birth_observation": "observed",
+            "decision_note": "Attacking midfielder; MF/FW compatible",
+            "evidence_basis": "Manual page-name, nationality, edition-age and broad-position/era comparison; no unique-name auto-match.",
+            "game_version": "FIFA 05",
+            "nationality": "Brazil",
+            "page_name": "Djalminha",
+            "page_url": "https://www.fifaindex.com/player/110137/djalminha/fifa05/",
+            "positions": [
+              "CAM",
+              "RCM",
+              "RS"
+            ]
+          },
+          "identity_status": "fresh_page_confirmed"
+        }
+      ],
+      "canonical_name": "Djalminha",
+      "canonical_player_id": "djalminha",
+      "cohort_team_positions": [
+        "FW",
+        "MF"
+      ],
+      "cohort_team_seasons": [
+        "deportivo-la-coruna-2000"
+      ],
+      "decision_basis": "Attacking midfielder; MF/FW compatible",
+      "group_status": "fresh_single_id_confirmed",
+      "inherited_v1_baseline_records": [],
+      "selected_fresh_fifaindex_id": "110137",
+      "target_season_years": [
+        2000
+      ]
+    },
+    {
+      "candidate_ids": [
+        {
+          "candidate_editions": [
+            "FIFA 05"
+          ],
+          "candidate_record_ids": [
+            "candidate-36-05"
+          ],
+          "candidate_source_urls": [
+            "https://www.fifaindex.com/player/36/dwight-yorke/fifa05/"
+          ],
+          "fifaindex_id": "36",
+          "identity_observation": {
+            "age_at_game_edition": 32,
+            "date_of_birth": null,
+            "date_of_birth_observation": "not_exposed",
+            "decision_note": "FW compatible",
+            "evidence_basis": "Manual page-name, nationality, edition-age and broad-position/era comparison; no unique-name auto-match.",
+            "game_version": "FIFA 05",
+            "nationality": "Trinidad and Tobago",
+            "page_name": "Dwight Yorke",
+            "page_url": "https://fifaindex.com/players/36-dwight-yorke/fifa05",
+            "positions": [
+              "ST",
+              "CF"
+            ]
+          },
+          "identity_status": "fresh_page_confirmed"
+        }
+      ],
+      "canonical_name": "Dwight Yorke",
+      "canonical_player_id": "dwight-yorke",
+      "cohort_team_positions": [
+        "FW"
+      ],
+      "cohort_team_seasons": [
+        "manchester-united-1999"
+      ],
+      "decision_basis": "FW compatible",
+      "group_status": "fresh_single_id_confirmed",
+      "inherited_v1_baseline_records": [],
+      "selected_fresh_fifaindex_id": "36",
+      "target_season_years": [
+        1999
+      ]
+    },
+    {
+      "candidate_ids": [
+        {
+          "candidate_editions": [
+            "FIFA 05",
+            "FIFA 06",
+            "FIFA 07"
+          ],
+          "candidate_record_ids": [
+            "candidate-5672-05",
+            "candidate-5672-06",
+            "candidate-5672-07"
+          ],
+          "candidate_source_urls": [
+            "https://www.fifaindex.com/player/5672/edgar-davids/fifa05/",
+            "https://www.fifaindex.com/player/5672/edgar-davids/fifa06/",
+            "https://www.fifaindex.com/player/5672/edgar-davids/fifa07/"
+          ],
+          "fifaindex_id": "5672",
+          "identity_observation": {
+            "age_at_game_edition": 31,
+            "date_of_birth": null,
+            "date_of_birth_observation": "not_exposed",
+            "decision_note": "MF compatible",
+            "evidence_basis": "Manual page-name, nationality, edition-age and broad-position/era comparison; no unique-name auto-match.",
+            "game_version": "FIFA 05",
+            "nationality": "Netherlands",
+            "page_name": "Edgar Davids",
+            "page_url": "https://fifaindex.com/players/5672-edgar-davids/fifa05",
+            "positions": [
+              "CM",
+              "CDM",
+              "LM"
+            ]
+          },
+          "identity_status": "fresh_page_confirmed"
+        }
+      ],
+      "canonical_name": "Edgar Davids",
+      "canonical_player_id": "edgar-davids",
+      "cohort_team_positions": [
+        "MF"
+      ],
+      "cohort_team_seasons": [
+        "juventus-2003"
+      ],
+      "decision_basis": "MF compatible",
+      "group_status": "fresh_single_id_confirmed",
+      "inherited_v1_baseline_records": [],
+      "selected_fresh_fifaindex_id": "5672",
+      "target_season_years": [
+        2003
+      ]
+    },
+    {
+      "candidate_ids": [
+        {
+          "candidate_editions": [
+            "FIFA 06",
+            "FIFA 07"
+          ],
+          "candidate_record_ids": [
+            "candidate-4767-06",
+            "candidate-4767-07"
+          ],
+          "candidate_source_urls": [
+            "https://www.fifaindex.com/player/4767/emerson/fifa06/",
+            "https://www.fifaindex.com/player/4767/emerson/fifa07/"
+          ],
+          "fifaindex_id": "4767",
+          "identity_observation": {
+            "age_at_game_edition": 29,
+            "date_of_birth": null,
+            "date_of_birth_observation": "not_exposed",
+            "decision_note": "Game club is identity context only, not historical roster proof.",
+            "evidence_basis": "Positive ID supported individually by page facts and cohort role/era; other candidate IDs remain separate.",
+            "game_club": "Juventus",
+            "game_version": "FIFA 06",
+            "national_team_position": "CDM",
+            "nationality": "Brazil",
+            "overall": 82,
+            "page_name": "Emerson",
+            "page_url": "https://fifaindex.com/players/4767-emerson/fifa06",
+            "positions": [
+              "CM"
+            ]
+          },
+          "identity_status": "fresh_page_confirmed_selected_id"
+        },
+        {
+          "candidate_editions": [
+            "FIFA 07"
+          ],
+          "candidate_record_ids": [
+            "candidate-18128-07"
+          ],
+          "candidate_source_urls": [
+            "https://www.fifaindex.com/player/18128/emerson/fifa07/"
+          ],
+          "fifaindex_id": "18128",
+          "identity_observation": {
+            "age_at_game_edition": null,
+            "date_of_birth": null,
+            "date_of_birth_observation": "not_observed",
+            "decision_note": "Alternative numeric ID remains unresolved; only a separately supported positive ID is mapped.",
+            "evidence_basis": "Candidate page was unreadable in the bounded audit; no inference from ID uniqueness.",
+            "game_version": "FIFA 07",
+            "nationality": null,
+            "page_url": "https://www.fifaindex.com/player/18128/emerson/fifa07/",
+            "positions": null
+          },
+          "identity_status": "unresolved_alternative_not_read"
+        },
+        {
+          "candidate_editions": [
+            "FIFA 05",
+            "FIFA 07"
+          ],
+          "candidate_record_ids": [
+            "candidate-112566-05",
+            "candidate-112566-07"
+          ],
+          "candidate_source_urls": [
+            "https://www.fifaindex.com/player/112566/emerson/fifa05/",
+            "https://www.fifaindex.com/player/112566/emerson/fifa07/"
+          ],
+          "fifaindex_id": "112566",
+          "identity_observation": {
+            "age_at_game_edition": null,
+            "date_of_birth": null,
+            "date_of_birth_observation": "not_observed",
+            "decision_note": "Alternative numeric ID remains unresolved; only a separately supported positive ID is mapped.",
+            "evidence_basis": "Candidate page was unreadable in the bounded audit; no inference from ID uniqueness.",
+            "game_version": "FIFA 05",
+            "nationality": null,
+            "page_url": "https://www.fifaindex.com/player/112566/emerson/fifa05/",
+            "positions": null
+          },
+          "identity_status": "unresolved_alternative_not_read"
+        },
+        {
+          "candidate_editions": [
+            "FIFA 05",
+            "FIFA 06"
+          ],
+          "candidate_record_ids": [
+            "candidate-136059-05",
+            "candidate-136059-06"
+          ],
+          "candidate_source_urls": [
+            "https://www.fifaindex.com/player/136059/%C3%A9merson/fifa05/",
+            "https://www.fifaindex.com/player/136059/%C3%A9merson/fifa06/"
+          ],
+          "fifaindex_id": "136059",
+          "identity_observation": {
+            "age_at_game_edition": null,
+            "date_of_birth": null,
+            "date_of_birth_observation": "not_observed",
+            "decision_note": "Alternative numeric ID remains unresolved; only a separately supported positive ID is mapped.",
+            "evidence_basis": "Candidate page was unreadable in the bounded audit; no inference from ID uniqueness.",
+            "game_version": "FIFA 05",
+            "nationality": null,
+            "page_url": "https://www.fifaindex.com/player/136059/%C3%A9merson/fifa05/",
+            "positions": null
+          },
+          "identity_status": "unresolved_alternative_not_read"
+        },
+        {
+          "candidate_editions": [
+            "FIFA 06",
+            "FIFA 07"
+          ],
+          "candidate_record_ids": [
+            "candidate-148598-06",
+            "candidate-148598-07"
+          ],
+          "candidate_source_urls": [
+            "https://www.fifaindex.com/player/148598/emerson/fifa06/",
+            "https://www.fifaindex.com/player/148598/emerson/fifa07/"
+          ],
+          "fifaindex_id": "148598",
+          "identity_observation": {
+            "age_at_game_edition": 27,
+            "date_of_birth": null,
+            "decision_note": "Wrong namesake; not mapped.",
+            "evidence_basis": "Observed page fields conflict with cohort identity/role; rejected.",
+            "game_club": "Pacos Ferreira",
+            "game_version": "FIFA 06",
+            "nationality": "Brazil",
+            "overall": 70,
+            "page_name": "Emerson",
+            "page_url": "https://fifaindex.com/players/148598-emerson/fifa06",
+            "positions": [
+              "CB"
+            ]
+          },
+          "identity_status": "rejected_wrong_namesake"
+        },
+        {
+          "candidate_editions": [
+            "FIFA 05"
+          ],
+          "candidate_record_ids": [
+            "candidate-156665-05"
+          ],
+          "candidate_source_urls": [
+            "https://www.fifaindex.com/player/156665/emerson/fifa05/"
+          ],
+          "fifaindex_id": "156665",
+          "identity_observation": {
+            "age_at_game_edition": null,
+            "date_of_birth": null,
+            "date_of_birth_observation": "not_observed",
+            "decision_note": "Alternative numeric ID remains unresolved; only a separately supported positive ID is mapped.",
+            "evidence_basis": "Candidate page was unreadable in the bounded audit; no inference from ID uniqueness.",
+            "game_version": "FIFA 05",
+            "nationality": null,
+            "page_url": "https://www.fifaindex.com/player/156665/emerson/fifa05/",
+            "positions": null
+          },
+          "identity_status": "unresolved_alternative_not_read"
+        },
+        {
+          "candidate_editions": [
+            "FIFA 05",
+            "FIFA 06",
+            "FIFA 07"
+          ],
+          "candidate_record_ids": [
+            "candidate-163000-05",
+            "candidate-163000-06",
+            "candidate-163000-07"
+          ],
+          "candidate_source_urls": [
+            "https://www.fifaindex.com/player/163000/emerson/fifa05/",
+            "https://www.fifaindex.com/player/163000/emerson/fifa06/",
+            "https://www.fifaindex.com/player/163000/emerson/fifa07/"
+          ],
+          "fifaindex_id": "163000",
+          "identity_observation": {
+            "age_at_game_edition": 22,
+            "date_of_birth": null,
+            "decision_note": "Wrong namesake; not mapped.",
+            "evidence_basis": "Observed page fields conflict with cohort identity/role; rejected.",
+            "game_club": "Nacional",
+            "game_version": "FIFA 05",
+            "nationality": "Brazil",
+            "overall": 56,
+            "page_name": "Emerson",
+            "page_url": "https://fifaindex.com/players/163000-emerson/fifa05",
+            "positions": [
+              "CB"
+            ]
+          },
+          "identity_status": "rejected_wrong_namesake"
+        },
+        {
+          "candidate_editions": [
+            "FIFA 06",
+            "FIFA 07"
+          ],
+          "candidate_record_ids": [
+            "candidate-165477-06",
+            "candidate-165477-07"
+          ],
+          "candidate_source_urls": [
+            "https://www.fifaindex.com/player/165477/emerson/fifa06/",
+            "https://www.fifaindex.com/player/165477/emerson/fifa07/"
+          ],
+          "fifaindex_id": "165477",
+          "identity_observation": {
+            "age_at_game_edition": null,
+            "date_of_birth": null,
+            "date_of_birth_observation": "not_observed",
+            "decision_note": "Alternative numeric ID remains unresolved; only a separately supported positive ID is mapped.",
+            "evidence_basis": "Candidate page was unreadable in the bounded audit; no inference from ID uniqueness.",
+            "game_version": "FIFA 06",
+            "nationality": null,
+            "page_url": "https://www.fifaindex.com/player/165477/emerson/fifa06/",
+            "positions": null
+          },
+          "identity_status": "unresolved_alternative_not_read"
+        },
+        {
+          "candidate_editions": [
+            "FIFA 07"
+          ],
+          "candidate_record_ids": [
+            "candidate-177941-07"
+          ],
+          "candidate_source_urls": [
+            "https://www.fifaindex.com/player/177941/emerson/fifa07/"
+          ],
+          "fifaindex_id": "177941",
+          "identity_observation": {
+            "age_at_game_edition": null,
+            "date_of_birth": null,
+            "date_of_birth_observation": "not_observed",
+            "decision_note": "Alternative numeric ID remains unresolved; only a separately supported positive ID is mapped.",
+            "evidence_basis": "Candidate page was unreadable in the bounded audit; no inference from ID uniqueness.",
+            "game_version": "FIFA 07",
+            "nationality": null,
+            "page_url": "https://www.fifaindex.com/player/177941/emerson/fifa07/",
+            "positions": null
+          },
+          "identity_status": "unresolved_alternative_not_read"
+        }
+      ],
+      "canonical_name": "Emerson",
+      "canonical_player_id": "emerson",
+      "cohort_team_positions": [
+        "MF"
+      ],
+      "cohort_team_seasons": [
+        "roma-2001"
+      ],
+      "decision_basis": "Positive ID 4767 is supported; unread alternative IDs 18128, 112566, 136059, 156665, 165477, 177941 remain unresolved.",
+      "group_status": "partial_disambiguation",
+      "inherited_v1_baseline_records": [],
+      "selected_fresh_fifaindex_id": "4767",
+      "target_season_years": [
+        2001
+      ]
+    },
+    {
+      "candidate_ids": [
+        {
+          "candidate_editions": [
+            "FIFA 05",
+            "FIFA 06",
+            "FIFA 07"
+          ],
+          "candidate_record_ids": [
+            "candidate-1249-05",
+            "candidate-1249-06",
+            "candidate-1249-07"
+          ],
+          "candidate_source_urls": [
+            "https://www.fifaindex.com/player/1249/enrico-chiesa/fifa05/",
+            "https://www.fifaindex.com/player/1249/enrico-chiesa/fifa06/",
+            "https://www.fifaindex.com/player/1249/enrico-chiesa/fifa07/"
+          ],
+          "fifaindex_id": "1249",
+          "identity_observation": {
+            "age_at_game_edition": 33,
+            "date_of_birth": null,
+            "date_of_birth_observation": "not_exposed",
+            "decision_note": "FW compatible",
+            "evidence_basis": "Manual page-name, nationality, edition-age and broad-position/era comparison; no unique-name auto-match.",
+            "game_version": "FIFA 05",
+            "nationality": "Italy",
+            "page_name": "Enrico Chiesa",
+            "page_url": "https://fifaindex.com/players/1249-enrico-chiesa/fifa05",
+            "positions": [
+              "ST"
+            ]
+          },
+          "identity_status": "fresh_page_confirmed"
+        }
+      ],
+      "canonical_name": "Enrico Chiesa",
+      "canonical_player_id": "enrico-chiesa",
+      "cohort_team_positions": [
+        "FW"
+      ],
+      "cohort_team_seasons": [
+        "parma-1999"
+      ],
+      "decision_basis": "FW compatible",
+      "group_status": "fresh_single_id_confirmed",
+      "inherited_v1_baseline_records": [],
+      "selected_fresh_fifaindex_id": "1249",
+      "target_season_years": [
+        1999
+      ]
+    },
+    {
+      "candidate_ids": [
+        {
+          "candidate_editions": [
+            "FIFA 05",
+            "FIFA 06",
+            "FIFA 07"
+          ],
+          "candidate_record_ids": [
+            "candidate-1183-05",
+            "candidate-1183-06",
+            "candidate-1183-07"
+          ],
+          "candidate_source_urls": [
+            "https://www.fifaindex.com/player/1183/fabio-cannavaro/fifa05/",
+            "https://www.fifaindex.com/player/1183/fabio-cannavaro/fifa06/",
+            "https://www.fifaindex.com/player/1183/fabio-cannavaro/fifa07/"
+          ],
+          "fifaindex_id": "1183",
+          "identity_observation": {
+            "age_at_game_edition": 31,
+            "date_of_birth": null,
+            "date_of_birth_observation": "not_exposed",
+            "decision_note": "DF compatible",
+            "evidence_basis": "Manual page-name, nationality, edition-age and broad-position/era comparison; no unique-name auto-match.",
+            "game_version": "FIFA 05",
+            "nationality": "Italy",
+            "page_name": "Fabio Cannavaro",
+            "page_url": "https://fifaindex.com/players/1183-fabio-cannavaro/fifa05",
+            "positions": [
+              "CB",
+              "LB",
+              "RB"
+            ]
+          },
+          "identity_status": "fresh_page_confirmed"
+        }
+      ],
+      "canonical_name": "Fabio Cannavaro",
+      "canonical_player_id": "fabio-cannavaro",
+      "cohort_team_positions": [
+        "DF"
+      ],
+      "cohort_team_seasons": [
+        "parma-1999"
+      ],
+      "decision_basis": "DF compatible",
+      "group_status": "fresh_single_id_confirmed",
+      "inherited_v1_baseline_records": [],
+      "selected_fresh_fifaindex_id": "1183",
+      "target_season_years": [
+        1999
+      ]
+    },
+    {
+      "candidate_ids": [
+        {
+          "candidate_editions": [
+            "FIFA 05"
+          ],
+          "candidate_record_ids": [
+            "candidate-161840-05"
+          ],
+          "candidate_source_urls": [
+            "https://www.fifaindex.com/player/161840/fernando-hierro/fifa05/"
+          ],
+          "fifaindex_id": "161840",
+          "identity_observation": {
+            "age_at_game_edition": 36,
+            "date_of_birth": null,
+            "date_of_birth_observation": "not_exposed",
+            "decision_note": "DF compatible",
+            "evidence_basis": "Manual page-name, nationality, edition-age and broad-position/era comparison; no unique-name auto-match.",
+            "game_version": "FIFA 05",
+            "nationality": "Spain",
+            "page_name": "Fernando Hierro",
+            "page_url": "https://fifaindex.com/players/161840-fernando-hierro/fifa05",
+            "positions": [
+              "CB",
+              "CDM"
+            ]
+          },
+          "identity_status": "fresh_page_confirmed"
+        }
+      ],
+      "canonical_name": "Fernando Hierro",
+      "canonical_player_id": "fernando-hierro",
+      "cohort_team_positions": [
+        "DF"
+      ],
+      "cohort_team_seasons": [
+        "real-madrid-2002"
+      ],
+      "decision_basis": "DF compatible",
+      "group_status": "fresh_single_id_confirmed",
+      "inherited_v1_baseline_records": [],
+      "selected_fresh_fifaindex_id": "161840",
+      "target_season_years": [
+        2002
+      ]
+    },
+    {
+      "candidate_ids": [
+        {
+          "candidate_editions": [
+            "FIFA 06",
+            "FIFA 07"
+          ],
+          "candidate_record_ids": [
+            "candidate-5661-06",
+            "candidate-5661-07"
+          ],
+          "candidate_source_urls": [
+            "https://www.fifaindex.com/player/5661/fernando-morientes/fifa06/",
+            "https://www.fifaindex.com/player/5661/fernando-morientes/fifa07/"
+          ],
+          "fifaindex_id": "5661",
+          "identity_observation": {
+            "age_at_game_edition": 29,
+            "date_of_birth": null,
+            "date_of_birth_observation": "not_exposed",
+            "decision_note": "FW compatible",
+            "evidence_basis": "Manual page-name, nationality, edition-age and broad-position/era comparison; no unique-name auto-match.",
+            "game_version": "FIFA 06",
+            "nationality": "Spain",
+            "page_name": "Fernando Morientes",
+            "page_url": "https://fifaindex.com/players/5661-fernando-morientes/fifa06",
+            "positions": [
+              "ST"
+            ]
+          },
+          "identity_status": "fresh_page_confirmed"
+        }
+      ],
+      "canonical_name": "Fernando Morientes",
+      "canonical_player_id": "fernando-morientes",
+      "cohort_team_positions": [
+        "FW"
+      ],
+      "cohort_team_seasons": [
+        "real-madrid-2002"
+      ],
+      "decision_basis": "FW compatible",
+      "group_status": "fresh_single_id_confirmed",
+      "inherited_v1_baseline_records": [],
+      "selected_fresh_fifaindex_id": "5661",
+      "target_season_years": [
+        2002
+      ]
+    },
+    {
+      "candidate_ids": [
+        {
+          "candidate_editions": [
+            "FIFA 05"
+          ],
+          "candidate_record_ids": [
+            "candidate-44918-05"
+          ],
+          "candidate_source_urls": [
+            "https://www.fifaindex.com/player/44918/fran/fifa05/"
+          ],
+          "fifaindex_id": "44918",
+          "identity_observation": {
+            "age_at_game_edition": 35,
+            "date_of_birth": null,
+            "date_of_birth_observation": "not_exposed",
+            "decision_note": "Selected supported ID; unread alternatives are not mapped.",
+            "evidence_basis": "Positive ID supported individually by page facts and cohort role/era; other candidate IDs remain separate.",
+            "game_version": "FIFA 05",
+            "nationality": "Spain",
+            "page_name": "Fran",
+            "page_url": "https://fifaindex.com/players/44918-fran/fifa05",
+            "positions": [
+              "LM",
+              "LWB",
+              "LAM"
+            ]
+          },
+          "identity_status": "fresh_page_confirmed_selected_id"
+        },
+        {
+          "candidate_editions": [
+            "FIFA 06"
+          ],
+          "candidate_record_ids": [
+            "candidate-145017-06"
+          ],
+          "candidate_source_urls": [
+            "https://www.fifaindex.com/player/145017/fran/fifa06/"
+          ],
+          "fifaindex_id": "145017",
+          "identity_observation": {
+            "age_at_game_edition": null,
+            "date_of_birth": null,
+            "date_of_birth_observation": "not_observed",
+            "decision_note": "Alternative numeric ID remains unresolved; only a separately supported positive ID is mapped.",
+            "evidence_basis": "Candidate page was unreadable in the bounded audit; no inference from ID uniqueness.",
+            "game_version": "FIFA 06",
+            "nationality": null,
+            "page_url": "https://www.fifaindex.com/player/145017/fran/fifa06/",
+            "positions": null
+          },
+          "identity_status": "unresolved_alternative_not_read"
+        },
+        {
+          "candidate_editions": [
+            "FIFA 07"
+          ],
+          "candidate_record_ids": [
+            "candidate-145350-07"
+          ],
+          "candidate_source_urls": [
+            "https://www.fifaindex.com/player/145350/fran/fifa07/"
+          ],
+          "fifaindex_id": "145350",
+          "identity_observation": {
+            "age_at_game_edition": null,
+            "date_of_birth": null,
+            "date_of_birth_observation": "not_observed",
+            "decision_note": "Alternative numeric ID remains unresolved; only a separately supported positive ID is mapped.",
+            "evidence_basis": "Candidate page was unreadable in the bounded audit; no inference from ID uniqueness.",
+            "game_version": "FIFA 07",
+            "nationality": null,
+            "page_url": "https://www.fifaindex.com/player/145350/fran/fifa07/",
+            "positions": null
+          },
+          "identity_status": "unresolved_alternative_not_read"
+        },
+        {
+          "candidate_editions": [
+            "FIFA 05"
+          ],
+          "candidate_record_ids": [
+            "candidate-146399-05"
+          ],
+          "candidate_source_urls": [
+            "https://www.fifaindex.com/player/146399/fran/fifa05/"
+          ],
+          "fifaindex_id": "146399",
+          "identity_observation": {
+            "age_at_game_edition": null,
+            "date_of_birth": null,
+            "date_of_birth_observation": "not_observed",
+            "decision_note": "Alternative numeric ID remains unresolved; only a separately supported positive ID is mapped.",
+            "evidence_basis": "Candidate page was unreadable in the bounded audit; no inference from ID uniqueness.",
+            "game_version": "FIFA 05",
+            "nationality": null,
+            "page_url": "https://www.fifaindex.com/player/146399/fran/fifa05/",
+            "positions": null
+          },
+          "identity_status": "unresolved_alternative_not_read"
+        }
+      ],
+      "canonical_name": "Fran",
+      "canonical_player_id": "fran",
+      "cohort_team_positions": [
+        "MF"
+      ],
+      "cohort_team_seasons": [
+        "deportivo-la-coruna-2000"
+      ],
+      "decision_basis": "Positive ID 44918 is supported; unread alternative IDs 145017, 145350, 146399 remain unresolved.",
+      "group_status": "partial_disambiguation",
+      "inherited_v1_baseline_records": [],
+      "selected_fresh_fifaindex_id": "44918",
+      "target_season_years": [
+        2000
+      ]
+    },
+    {
+      "candidate_ids": [
+        {
+          "candidate_editions": [
+            "FIFA 05",
+            "FIFA 06",
+            "FIFA 07"
+          ],
+          "candidate_record_ids": [
+            "candidate-137129-05",
+            "candidate-137129-06",
+            "candidate-137129-07"
+          ],
+          "candidate_source_urls": [
+            "https://www.fifaindex.com/player/137129/francesco-antonioli/fifa05/",
+            "https://www.fifaindex.com/player/137129/francesco-antonioli/fifa06/",
+            "https://www.fifaindex.com/player/137129/francesco-antonioli/fifa07/"
+          ],
+          "fifaindex_id": "137129",
+          "identity_observation": {
+            "age_at_game_edition": 35,
+            "date_of_birth": "1969-09-14",
+            "date_of_birth_observation": "observed",
+            "decision_note": "GK compatible",
+            "evidence_basis": "Manual page-name, nationality, edition-age and broad-position/era comparison; no unique-name auto-match.",
+            "game_version": "FIFA 05",
+            "nationality": "Italy",
+            "page_name": "Francesco Antonioli",
+            "page_url": "https://www.fifaindex.com/player/137129/francesco-antonioli/fifa05/",
+            "positions": [
+              "GK"
+            ]
+          },
+          "identity_status": "fresh_page_confirmed"
+        }
+      ],
+      "canonical_name": "Francesco Antonioli",
+      "canonical_player_id": "francesco-antonioli",
+      "cohort_team_positions": [
+        "GK"
+      ],
+      "cohort_team_seasons": [
+        "roma-2001"
+      ],
+      "decision_basis": "GK compatible",
+      "group_status": "fresh_single_id_confirmed",
+      "inherited_v1_baseline_records": [],
+      "selected_fresh_fifaindex_id": "137129",
+      "target_season_years": [
+        2001
+      ]
+    },
+    {
+      "candidate_ids": [
+        {
+          "candidate_editions": [
+            "FIFA 05",
+            "FIFA 06",
+            "FIFA 07"
+          ],
+          "candidate_record_ids": [
+            "candidate-1238-05",
+            "candidate-1238-06",
+            "candidate-1238-07"
+          ],
+          "candidate_source_urls": [
+            "https://www.fifaindex.com/player/1238/francesco-totti/fifa05/",
+            "https://www.fifaindex.com/player/1238/francesco-totti/fifa06/",
+            "https://www.fifaindex.com/player/1238/francesco-totti/fifa07/"
+          ],
+          "fifaindex_id": "1238",
+          "identity_observation": {
+            "age_at_game_edition": 28,
+            "date_of_birth": null,
+            "date_of_birth_observation": "not_exposed",
+            "decision_note": "Preferred CAM roles; FIFA05 roles LS/CF",
+            "evidence_basis": "Manual page-name, nationality, edition-age and broad-position/era comparison; no unique-name auto-match.",
+            "game_version": "FIFA 05",
+            "nationality": "Italy",
+            "page_name": "Francesco Totti",
+            "page_url": "https://fifaindex.com/players/1238-francesco-totti/fifa05",
+            "positions": [
+              "CAM",
+              "RCAM",
+              "LCAM"
+            ]
+          },
+          "identity_status": "fresh_page_confirmed"
+        }
+      ],
+      "canonical_name": "Francesco Totti",
+      "canonical_player_id": "francesco-totti",
+      "cohort_team_positions": [
+        "FW",
+        "MF"
+      ],
+      "cohort_team_seasons": [
+        "roma-2001"
+      ],
+      "decision_basis": "Preferred CAM roles; FIFA05 roles LS/CF",
+      "group_status": "fresh_single_id_confirmed",
+      "inherited_v1_baseline_records": [],
+      "selected_fresh_fifaindex_id": "1238",
+      "target_season_years": [
+        2001
+      ]
+    },
+    {
+      "candidate_ids": [
+        {
+          "candidate_editions": [
+            "FIFA 05",
+            "FIFA 06",
+            "FIFA 07"
+          ],
+          "candidate_record_ids": [
+            "candidate-244-05",
+            "candidate-244-06",
+            "candidate-244-07"
+          ],
+          "candidate_source_urls": [
+            "https://www.fifaindex.com/player/244/gary-neville/fifa05/",
+            "https://www.fifaindex.com/player/244/gary-neville/fifa06/",
+            "https://www.fifaindex.com/player/244/gary-neville/fifa07/"
+          ],
+          "fifaindex_id": "244",
+          "identity_observation": {
+            "age_at_game_edition": 29,
+            "date_of_birth": null,
+            "date_of_birth_observation": "not_exposed",
+            "decision_note": "DF compatible",
+            "evidence_basis": "Manual page-name, nationality, edition-age and broad-position/era comparison; no unique-name auto-match.",
+            "game_version": "FIFA 05",
+            "nationality": "England",
+            "page_name": "Gary Neville",
+            "page_url": "https://fifaindex.com/players/244-gary-neville/fifa05",
+            "positions": [
+              "RB",
+              "CB",
+              "RWB"
+            ]
+          },
+          "identity_status": "fresh_page_confirmed"
+        }
+      ],
+      "canonical_name": "Gary Neville",
+      "canonical_player_id": "gary-neville",
+      "cohort_team_positions": [
+        "DF"
+      ],
+      "cohort_team_seasons": [
+        "manchester-united-1999"
+      ],
+      "decision_basis": "DF compatible",
+      "group_status": "fresh_single_id_confirmed",
+      "inherited_v1_baseline_records": [],
+      "selected_fresh_fifaindex_id": "244",
+      "target_season_years": [
+        1999
+      ]
+    },
+    {
+      "candidate_ids": [
+        {
+          "candidate_editions": [
+            "FIFA 05",
+            "FIFA 06",
+            "FIFA 07"
+          ],
+          "candidate_record_ids": [
+            "candidate-5099-05",
+            "candidate-5099-06",
+            "candidate-5099-07"
+          ],
+          "candidate_source_urls": [
+            "https://www.fifaindex.com/player/5099/gianluca-zambrotta/fifa05/",
+            "https://www.fifaindex.com/player/5099/gianluca-zambrotta/fifa06/",
+            "https://www.fifaindex.com/player/5099/gianluca-zambrotta/fifa07/"
+          ],
+          "fifaindex_id": "5099",
+          "identity_observation": {
+            "age_at_game_edition": 27,
+            "date_of_birth": null,
+            "date_of_birth_observation": "not_exposed",
+            "decision_note": "MF/DF compatible",
+            "evidence_basis": "Manual page-name, nationality, edition-age and broad-position/era comparison; no unique-name auto-match.",
+            "game_version": "FIFA 05",
+            "nationality": "Italy",
+            "page_name": "Gianluca Zambrotta",
+            "page_url": "https://fifaindex.com/players/5099-gianluca-zambrotta/fifa05",
+            "positions": [
+              "RM",
+              "RWB",
+              "LWB"
+            ]
+          },
+          "identity_status": "fresh_page_confirmed"
+        }
+      ],
+      "canonical_name": "Gianluca Zambrotta",
+      "canonical_player_id": "gianluca-zambrotta",
+      "cohort_team_positions": [
+        "DF",
+        "MF"
+      ],
+      "cohort_team_seasons": [
+        "juventus-2003"
+      ],
+      "decision_basis": "MF/DF compatible",
+      "group_status": "fresh_single_id_confirmed",
+      "inherited_v1_baseline_records": [],
+      "selected_fresh_fifaindex_id": "5099",
+      "target_season_years": [
+        2003
+      ]
+    },
+    {
+      "candidate_ids": [
+        {
+          "candidate_editions": [
+            "FIFA 07"
+          ],
+          "candidate_record_ids": [
+            "candidate-47390-07"
+          ],
+          "candidate_source_urls": [
+            "https://www.fifaindex.com/player/47390/gilberto-silva/fifa07/"
+          ],
+          "fifaindex_id": "47390",
+          "identity_observation": {
+            "age_at_game_edition": 29,
+            "date_of_birth": null,
+            "date_of_birth_observation": "not_exposed",
+            "decision_note": "MF compatible",
+            "evidence_basis": "Manual page-name, nationality, edition-age and broad-position/era comparison; no unique-name auto-match.",
+            "game_version": "FIFA 07",
+            "nationality": "Brazil",
+            "page_name": "Gilberto Silva",
+            "page_url": "https://fifaindex.com/players/47390-gilberto-silva/fifa07",
+            "positions": [
+              "CM"
+            ]
+          },
+          "identity_status": "fresh_page_confirmed"
+        }
+      ],
+      "canonical_name": "Gilberto Silva",
+      "canonical_player_id": "gilberto-silva",
+      "cohort_team_positions": [
+        "MF"
+      ],
+      "cohort_team_seasons": [
+        "arsenal-2004"
+      ],
+      "decision_basis": "MF compatible",
+      "group_status": "fresh_single_id_confirmed",
+      "inherited_v1_baseline_records": [],
+      "selected_fresh_fifaindex_id": "47390",
+      "target_season_years": [
+        2004
+      ]
+    },
+    {
+      "candidate_ids": [
+        {
+          "candidate_editions": [
+            "FIFA 05",
+            "FIFA 06",
+            "FIFA 07"
+          ],
+          "candidate_record_ids": [
+            "candidate-870-05",
+            "candidate-870-06",
+            "candidate-870-07"
+          ],
+          "candidate_source_urls": [
+            "https://www.fifaindex.com/player/870/giovane-%C3%A9lber/fifa07/",
+            "https://www.fifaindex.com/player/870/giovane-elber/fifa05/",
+            "https://www.fifaindex.com/player/870/giovane-elber/fifa06/"
+          ],
+          "fifaindex_id": "870",
+          "identity_observation": {
+            "age_at_game_edition": 32,
+            "date_of_birth": null,
+            "date_of_birth_observation": "not_exposed",
+            "decision_note": "FW compatible",
+            "evidence_basis": "Manual page-name, nationality, edition-age and broad-position/era comparison; no unique-name auto-match.",
+            "game_version": "FIFA 05",
+            "nationality": "Brazil",
+            "page_name": "Giovane Elber",
+            "page_url": "https://fifaindex.com/players/870-giovane-elber/fifa05",
+            "positions": [
+              "ST"
+            ]
+          },
+          "identity_status": "fresh_page_confirmed"
+        }
+      ],
+      "canonical_name": "Giovane Elber",
+      "canonical_player_id": "giovane-elber",
+      "cohort_team_positions": [
+        "FW"
+      ],
+      "cohort_team_seasons": [
+        "bayern-munich-2001"
+      ],
+      "decision_basis": "FW compatible",
+      "group_status": "fresh_single_id_confirmed",
+      "inherited_v1_baseline_records": [],
+      "selected_fresh_fifaindex_id": "870",
+      "target_season_years": [
+        2001
+      ]
+    },
+    {
+      "candidate_ids": [
+        {
+          "candidate_editions": [
+            "FIFA 05",
+            "FIFA 06",
+            "FIFA 07"
+          ],
+          "candidate_record_ids": [
+            "candidate-106778-05",
+            "candidate-106778-06",
+            "candidate-106778-07"
+          ],
+          "candidate_source_urls": [
+            "https://www.fifaindex.com/player/106778/giuseppe-pancaro/fifa05/",
+            "https://www.fifaindex.com/player/106778/giuseppe-pancaro/fifa06/",
+            "https://www.fifaindex.com/player/106778/giuseppe-pancaro/fifa07/"
+          ],
+          "fifaindex_id": "106778",
+          "identity_observation": {
+            "age_at_game_edition": 33,
+            "date_of_birth": null,
+            "date_of_birth_observation": "not_exposed",
+            "decision_note": "DF compatible",
+            "evidence_basis": "Manual page-name, nationality, edition-age and broad-position/era comparison; no unique-name auto-match.",
+            "game_version": "FIFA 05",
+            "nationality": "Italy",
+            "page_name": "Giuseppe Pancaro",
+            "page_url": "https://fifaindex.com/players/106778-giuseppe-pancaro/fifa05",
+            "positions": [
+              "RB",
+              "CB"
+            ]
+          },
+          "identity_status": "fresh_page_confirmed"
+        }
+      ],
+      "canonical_name": "Giuseppe Pancaro",
+      "canonical_player_id": "giuseppe-pancaro",
+      "cohort_team_positions": [
+        "DF"
+      ],
+      "cohort_team_seasons": [
+        "lazio-2000"
+      ],
+      "decision_basis": "DF compatible",
+      "group_status": "fresh_single_id_confirmed",
+      "inherited_v1_baseline_records": [],
+      "selected_fresh_fifaindex_id": "106778",
+      "target_season_years": [
+        2000
+      ]
+    },
+    {
+      "candidate_ids": [
+        {
+          "candidate_editions": [
+            "FIFA 05",
+            "FIFA 06",
+            "FIFA 07"
+          ],
+          "candidate_record_ids": [
+            "candidate-7512-05",
+            "candidate-7512-06",
+            "candidate-7512-07"
+          ],
+          "candidate_source_urls": [
+            "https://www.fifaindex.com/player/7512/hern%C3%A1n-crespo/fifa05/",
+            "https://www.fifaindex.com/player/7512/hern%C3%A1n-crespo/fifa06/",
+            "https://www.fifaindex.com/player/7512/hern%C3%A1n-crespo/fifa07/"
+          ],
+          "fifaindex_id": "7512",
+          "identity_observation": {
+            "age_at_game_edition": 29,
+            "date_of_birth": null,
+            "date_of_birth_observation": "not_exposed",
+            "decision_note": "FW compatible",
+            "evidence_basis": "Manual page-name, nationality, edition-age and broad-position/era comparison; no unique-name auto-match.",
+            "game_version": "FIFA 05",
+            "nationality": "Argentina",
+            "page_name": "Hernán Crespo",
+            "page_url": "https://fifaindex.com/players/7512-hernan-crespo/fifa05",
+            "positions": [
+              "ST",
+              "CF"
+            ]
+          },
+          "identity_status": "fresh_page_confirmed"
+        }
+      ],
+      "canonical_name": "Hernan Crespo",
+      "canonical_player_id": "hernan-crespo",
+      "cohort_team_positions": [
+        "FW"
+      ],
+      "cohort_team_seasons": [
+        "parma-1999"
+      ],
+      "decision_basis": "FW compatible",
+      "group_status": "fresh_single_id_confirmed",
+      "inherited_v1_baseline_records": [],
+      "selected_fresh_fifaindex_id": "7512",
+      "target_season_years": [
+        1999
+      ]
+    },
+    {
+      "candidate_ids": [
+        {
+          "candidate_editions": [
+            "FIFA 05",
+            "FIFA 06"
+          ],
+          "candidate_record_ids": [
+            "candidate-13383-05",
+            "candidate-13383-06"
+          ],
+          "candidate_source_urls": [
+            "https://www.fifaindex.com/player/13383/hidetoshi-nakata/fifa05/",
+            "https://www.fifaindex.com/player/13383/hidetoshi-nakata/fifa06/"
+          ],
+          "fifaindex_id": "13383",
+          "identity_observation": {
+            "age_at_game_edition": 27,
+            "date_of_birth": null,
+            "date_of_birth_observation": "not_exposed",
+            "decision_note": "MF compatible",
+            "evidence_basis": "Manual page-name, nationality, edition-age and broad-position/era comparison; no unique-name auto-match.",
+            "game_version": "FIFA 05",
+            "nationality": "Japan",
+            "page_name": "Hidetoshi Nakata",
+            "page_url": "https://fifaindex.com/players/13383-hidetoshi-nakata/fifa05",
+            "positions": [
+              "CAM",
+              "RCDM",
+              "RCM"
+            ]
+          },
+          "identity_status": "fresh_page_confirmed"
+        }
+      ],
+      "canonical_name": "Hidetoshi Nakata",
+      "canonical_player_id": "hidetoshi-nakata",
+      "cohort_team_positions": [
+        "MF"
+      ],
+      "cohort_team_seasons": [
+        "roma-2001"
+      ],
+      "decision_basis": "MF compatible",
+      "group_status": "fresh_single_id_confirmed",
+      "inherited_v1_baseline_records": [],
+      "selected_fresh_fifaindex_id": "13383",
+      "target_season_years": [
+        2001
+      ]
+    },
+    {
+      "candidate_ids": [
+        {
+          "candidate_editions": [
+            "FIFA 05",
+            "FIFA 06",
+            "FIFA 07"
+          ],
+          "candidate_record_ids": [
+            "candidate-5740-05",
+            "candidate-5740-06",
+            "candidate-5740-07"
+          ],
+          "candidate_source_urls": [
+            "https://www.fifaindex.com/player/5740/jaap-stam/fifa05/",
+            "https://www.fifaindex.com/player/5740/jaap-stam/fifa06/",
+            "https://www.fifaindex.com/player/5740/jaap-stam/fifa07/"
+          ],
+          "fifaindex_id": "5740",
+          "identity_observation": {
+            "age_at_game_edition": 32,
+            "date_of_birth": null,
+            "date_of_birth_observation": "not_exposed",
+            "decision_note": "DF compatible",
+            "evidence_basis": "Manual page-name, nationality, edition-age and broad-position/era comparison; no unique-name auto-match.",
+            "game_version": "FIFA 05",
+            "nationality": "Netherlands",
+            "page_name": "Jaap Stam",
+            "page_url": "https://fifaindex.com/players/5740-jaap-stam/fifa05",
+            "positions": [
+              "CB",
+              "SW",
+              "RWB"
+            ]
+          },
+          "identity_status": "fresh_page_confirmed"
+        }
+      ],
+      "canonical_name": "Jaap Stam",
+      "canonical_player_id": "jaap-stam",
+      "cohort_team_positions": [
+        "DF"
+      ],
+      "cohort_team_seasons": [
+        "manchester-united-1999"
+      ],
+      "decision_basis": "DF compatible",
+      "group_status": "fresh_single_id_confirmed",
+      "inherited_v1_baseline_records": [],
+      "selected_fresh_fifaindex_id": "5740",
+      "target_season_years": [
+        1999
+      ]
+    },
+    {
+      "candidate_ids": [
+        {
+          "candidate_editions": [
+            "FIFA 05",
+            "FIFA 06",
+            "FIFA 07"
+          ],
+          "candidate_record_ids": [
+            "candidate-805-05",
+            "candidate-805-06",
+            "candidate-805-07"
+          ],
+          "candidate_source_urls": [
+            "https://www.fifaindex.com/player/805/jens-lehmann/fifa05/",
+            "https://www.fifaindex.com/player/805/jens-lehmann/fifa06/",
+            "https://www.fifaindex.com/player/805/jens-lehmann/fifa07/"
+          ],
+          "fifaindex_id": "805",
+          "identity_observation": {
+            "age_at_game_edition": 34,
+            "date_of_birth": null,
+            "date_of_birth_observation": "not_exposed",
+            "decision_note": "GK compatible",
+            "evidence_basis": "Manual page-name, nationality, edition-age and broad-position/era comparison; no unique-name auto-match.",
+            "game_version": "FIFA 05",
+            "nationality": "Germany",
+            "page_name": "Jens Lehmann",
+            "page_url": "https://fifaindex.com/players/805-jens-lehmann/fifa05",
+            "positions": [
+              "GK"
+            ]
+          },
+          "identity_status": "fresh_page_confirmed"
+        }
+      ],
+      "canonical_name": "Jens Lehmann",
+      "canonical_player_id": "jens-lehmann",
+      "cohort_team_positions": [
+        "GK"
+      ],
+      "cohort_team_seasons": [
+        "arsenal-2004"
+      ],
+      "decision_basis": "GK compatible",
+      "group_status": "fresh_single_id_confirmed",
+      "inherited_v1_baseline_records": [],
+      "selected_fresh_fifaindex_id": "805",
+      "target_season_years": [
+        2004
+      ]
+    },
+    {
+      "candidate_ids": [
+        {
+          "candidate_editions": [
+            "FIFA 05"
+          ],
+          "candidate_record_ids": [
+            "candidate-20206-05"
+          ],
+          "candidate_source_urls": [
+            "https://www.fifaindex.com/player/20206/jorge-costa/fifa05/"
+          ],
+          "fifaindex_id": "20206",
+          "identity_observation": {
+            "age_at_game_edition": 32,
+            "date_of_birth": null,
+            "date_of_birth_observation": "not_exposed",
+            "decision_note": "DF compatible",
+            "evidence_basis": "Manual page-name, nationality, edition-age and broad-position/era comparison; no unique-name auto-match.",
+            "game_version": "FIFA 05",
+            "nationality": "Portugal",
+            "page_name": "Jorge Costa",
+            "page_url": "https://www.fifaindex.com/players/20206-jorge-costa/fifa05",
+            "positions": [
+              "CB",
+              "SW"
+            ]
+          },
+          "identity_status": "fresh_page_confirmed"
+        }
+      ],
+      "canonical_name": "Jorge Costa",
+      "canonical_player_id": "jorge-costa",
+      "cohort_team_positions": [
+        "DF"
+      ],
+      "cohort_team_seasons": [
+        "porto-2004"
+      ],
+      "decision_basis": "DF compatible",
+      "group_status": "fresh_single_id_confirmed",
+      "inherited_v1_baseline_records": [],
+      "selected_fresh_fifaindex_id": "20206",
+      "target_season_years": [
+        2004
+      ]
+    },
+    {
+      "candidate_ids": [
+        {
+          "candidate_editions": [
+            "FIFA 05",
+            "FIFA 06"
+          ],
+          "candidate_record_ids": [
+            "candidate-7518-05",
+            "candidate-7518-06"
+          ],
+          "candidate_source_urls": [
+            "https://www.fifaindex.com/player/7518/juan-sebasti%C3%A1n-ver%C3%B3n/fifa05/",
+            "https://www.fifaindex.com/player/7518/juan-sebasti%C3%A1n-ver%C3%B3n/fifa06/"
+          ],
+          "fifaindex_id": "7518",
+          "identity_observation": {
+            "age_at_game_edition": 29,
+            "date_of_birth": null,
+            "date_of_birth_observation": "not_exposed",
+            "decision_note": "MF compatible",
+            "evidence_basis": "Manual page-name, nationality, edition-age and broad-position/era comparison; no unique-name auto-match.",
+            "game_version": "FIFA 05",
+            "nationality": "Argentina",
+            "page_name": "Juan Sebastián Verón",
+            "page_url": "https://www.fifaindex.com/players/7518-juan-sebastian-veron/fifa05",
+            "positions": [
+              "CDM",
+              "RCDM",
+              "CM"
+            ]
+          },
+          "identity_status": "fresh_page_confirmed"
+        }
+      ],
+      "canonical_name": "Juan Sebastian Veron",
+      "canonical_player_id": "juan-sebastian-veron",
+      "cohort_team_positions": [
+        "MF"
+      ],
+      "cohort_team_seasons": [
+        "lazio-2000",
+        "parma-1999"
+      ],
+      "decision_basis": "MF compatible",
+      "group_status": "fresh_single_id_confirmed",
+      "inherited_v1_baseline_records": [],
+      "selected_fresh_fifaindex_id": "7518",
+      "target_season_years": [
+        1999,
+        2000
+      ]
+    },
+    {
+      "candidate_ids": [
+        {
+          "candidate_editions": [
+            "FIFA 05",
+            "FIFA 06",
+            "FIFA 07"
+          ],
+          "candidate_record_ids": [
+            "candidate-1615-05",
+            "candidate-1615-06",
+            "candidate-1615-07"
+          ],
+          "candidate_source_urls": [
+            "https://www.fifaindex.com/player/1615/lilian-thuram/fifa05/",
+            "https://www.fifaindex.com/player/1615/lilian-thuram/fifa06/",
+            "https://www.fifaindex.com/player/1615/lilian-thuram/fifa07/"
+          ],
+          "fifaindex_id": "1615",
+          "identity_observation": {
+            "age_at_game_edition": 32,
+            "date_of_birth": null,
+            "date_of_birth_observation": "not_exposed",
+            "decision_note": "DF compatible",
+            "evidence_basis": "Manual page-name, nationality, edition-age and broad-position/era comparison; no unique-name auto-match.",
+            "game_version": "FIFA 05",
+            "nationality": "France",
+            "page_name": "Lilian Thuram",
+            "page_url": "https://www.fifaindex.com/players/1615-lilian-thuram/fifa05",
+            "positions": [
+              "RB",
+              "RWB",
+              "CB"
+            ]
+          },
+          "identity_status": "fresh_page_confirmed"
+        }
+      ],
+      "canonical_name": "Lilian Thuram",
+      "canonical_player_id": "lilian-thuram",
+      "cohort_team_positions": [
+        "DF"
+      ],
+      "cohort_team_seasons": [
+        "juventus-2003",
+        "parma-1999"
+      ],
+      "decision_basis": "DF compatible",
+      "group_status": "fresh_single_id_confirmed",
+      "inherited_v1_baseline_records": [],
+      "selected_fresh_fifaindex_id": "1615",
+      "target_season_years": [
+        1999,
+        2003
+      ]
+    },
+    {
+      "candidate_ids": [
+        {
+          "candidate_editions": [
+            "FIFA 05"
+          ],
+          "candidate_record_ids": [
+            "candidate-1079-05"
+          ],
+          "candidate_source_urls": [
+            "https://www.fifaindex.com/player/1079/luca-marchegiani/fifa05/"
+          ],
+          "fifaindex_id": "1079",
+          "identity_observation": {
+            "age_at_game_edition": null,
+            "date_of_birth": null,
+            "date_of_birth_observation": "not_observed",
+            "decision_note": "FIFA05 and modern-route page inaccessible.",
+            "evidence_basis": "Bounded page attempts yielded no identity facts; unique ID is not sufficient.",
+            "game_version": "FIFA 05",
+            "nationality": null,
+            "page_url": "https://www.fifaindex.com/player/1079/luca-marchegiani/fifa05/",
+            "positions": null
+          },
+          "identity_status": "unresolved_page_inaccessible"
+        }
+      ],
+      "canonical_name": "Luca Marchegiani",
+      "canonical_player_id": "luca-marchegiani",
+      "cohort_team_positions": [
+        "GK"
+      ],
+      "cohort_team_seasons": [
+        "lazio-2000"
+      ],
+      "decision_basis": "FIFA05 and modern-route page inaccessible.",
+      "group_status": "unresolved",
+      "inherited_v1_baseline_records": [],
+      "selected_fresh_fifaindex_id": null,
+      "target_season_years": [
+        2000
+      ]
+    },
+    {
+      "candidate_ids": [
+        {
+          "candidate_editions": [
+            "FIFA 05",
+            "FIFA 06",
+            "FIFA 07"
+          ],
+          "candidate_record_ids": [
+            "candidate-20212-05",
+            "candidate-20212-06",
+            "candidate-20212-07"
+          ],
+          "candidate_source_urls": [
+            "https://www.fifaindex.com/player/20212/maniche/fifa05/",
+            "https://www.fifaindex.com/player/20212/maniche/fifa06/",
+            "https://www.fifaindex.com/player/20212/maniche/fifa07/"
+          ],
+          "fifaindex_id": "20212",
+          "identity_observation": {
+            "age_at_game_edition": 26,
+            "date_of_birth": null,
+            "date_of_birth_observation": "not_exposed",
+            "decision_note": "MF compatible",
+            "evidence_basis": "Manual page-name, nationality, edition-age and broad-position/era comparison; no unique-name auto-match.",
+            "game_version": "FIFA 05",
+            "nationality": "Portugal",
+            "page_name": "Maniche",
+            "page_url": "https://www.fifaindex.com/players/20212-maniche/fifa05",
+            "positions": [
+              "CM"
+            ]
+          },
+          "identity_status": "fresh_page_confirmed"
+        }
+      ],
+      "canonical_name": "Maniche",
+      "canonical_player_id": "maniche",
+      "cohort_team_positions": [
+        "MF"
+      ],
+      "cohort_team_seasons": [
+        "porto-2004"
+      ],
+      "decision_basis": "MF compatible",
+      "group_status": "fresh_single_id_confirmed",
+      "inherited_v1_baseline_records": [],
+      "selected_fresh_fifaindex_id": "20212",
+      "target_season_years": [
+        2004
+      ]
+    },
+    {
+      "candidate_ids": [
+        {
+          "candidate_editions": [
+            "FIFA 06",
+            "FIFA 07"
+          ],
+          "candidate_record_ids": [
+            "candidate-8963-06",
+            "candidate-8963-07"
+          ],
+          "candidate_source_urls": [
+            "https://www.fifaindex.com/player/8963/manuel-pablo/fifa06/",
+            "https://www.fifaindex.com/player/8963/manuel-pablo/fifa07/"
+          ],
+          "fifaindex_id": "8963",
+          "identity_observation": {
+            "age_at_game_edition": null,
+            "date_of_birth": null,
+            "date_of_birth_observation": "not_observed",
+            "decision_note": "FIFA06/FIFA07 and modern-route pages inaccessible.",
+            "evidence_basis": "Bounded page attempts yielded no identity facts; unique ID is not sufficient.",
+            "game_version": "FIFA 06",
+            "nationality": null,
+            "page_url": "https://www.fifaindex.com/player/8963/manuel-pablo/fifa06/",
+            "positions": null
+          },
+          "identity_status": "unresolved_page_inaccessible"
+        }
+      ],
+      "canonical_name": "Manuel Pablo",
+      "canonical_player_id": "manuel-pablo",
+      "cohort_team_positions": [
+        "DF"
+      ],
+      "cohort_team_seasons": [
+        "deportivo-la-coruna-2000"
+      ],
+      "decision_basis": "FIFA06/FIFA07 and modern-route pages inaccessible.",
+      "group_status": "unresolved",
+      "inherited_v1_baseline_records": [],
+      "selected_fresh_fifaindex_id": null,
+      "target_season_years": [
+        2000
+      ]
+    },
+    {
+      "candidate_ids": [
+        {
+          "candidate_editions": [
+            "FIFA 05"
+          ],
+          "candidate_record_ids": [
+            "candidate-10961-05"
+          ],
+          "candidate_source_urls": [
+            "https://www.fifaindex.com/player/10961/marcelo-salas/fifa05/"
+          ],
+          "fifaindex_id": "10961",
+          "identity_observation": {
+            "age_at_game_edition": 29,
+            "date_of_birth": null,
+            "date_of_birth_observation": "not_exposed",
+            "decision_note": "FW compatible",
+            "evidence_basis": "Manual page-name, nationality, edition-age and broad-position/era comparison; no unique-name auto-match.",
+            "game_version": "FIFA 05",
+            "nationality": "Chile",
+            "page_name": "Marcelo Salas",
+            "page_url": "https://www.fifaindex.com/player/10961/marcelo-salas/fifa05/",
+            "positions": [
+              "ST"
+            ]
+          },
+          "identity_status": "fresh_page_confirmed"
+        }
+      ],
+      "canonical_name": "Marcelo Salas",
+      "canonical_player_id": "marcelo-salas",
+      "cohort_team_positions": [
+        "FW"
+      ],
+      "cohort_team_seasons": [
+        "lazio-2000"
+      ],
+      "decision_basis": "FW compatible",
+      "group_status": "fresh_single_id_confirmed",
+      "inherited_v1_baseline_records": [],
+      "selected_fresh_fifaindex_id": "10961",
+      "target_season_years": [
+        2000
+      ]
+    },
+    {
+      "candidate_ids": [
+        {
+          "candidate_editions": [
+            "FIFA 05",
+            "FIFA 06",
+            "FIFA 07"
+          ],
+          "candidate_record_ids": [
+            "candidate-45461-05",
+            "candidate-45461-06",
+            "candidate-45461-07"
+          ],
+          "candidate_source_urls": [
+            "https://www.fifaindex.com/player/45461/mauro-camoranesi/fifa05/",
+            "https://www.fifaindex.com/player/45461/mauro-camoranesi/fifa06/",
+            "https://www.fifaindex.com/player/45461/mauro-camoranesi/fifa07/"
+          ],
+          "fifaindex_id": "45461",
+          "identity_observation": {
+            "age_at_game_edition": 28,
+            "date_of_birth": "1976-10-04",
+            "date_of_birth_observation": "observed",
+            "decision_note": "MF/DF compatible",
+            "evidence_basis": "Manual page-name, nationality, edition-age and broad-position/era comparison; no unique-name auto-match.",
+            "game_version": "FIFA 05",
+            "nationality": "Italy",
+            "page_name": "Mauro Camoranesi",
+            "page_url": "https://www.fifaindex.com/player/45461/mauro-camoranesi/fifa05/",
+            "positions": [
+              "RM",
+              "LM"
+            ]
+          },
+          "identity_status": "fresh_page_confirmed"
+        }
+      ],
+      "canonical_name": "Mauro Camoranesi",
+      "canonical_player_id": "mauro-camoranesi",
+      "cohort_team_positions": [
+        "MF"
+      ],
+      "cohort_team_seasons": [
+        "juventus-2003"
+      ],
+      "decision_basis": "MF/DF compatible",
+      "group_status": "fresh_single_id_confirmed",
+      "inherited_v1_baseline_records": [],
+      "selected_fresh_fifaindex_id": "45461",
+      "target_season_years": [
+        2003
+      ]
+    },
+    {
+      "candidate_ids": [
+        {
+          "candidate_editions": [
+            "FIFA 05"
+          ],
+          "candidate_record_ids": [
+            "candidate-5813-05"
+          ],
+          "candidate_source_urls": [
+            "https://www.fifaindex.com/player/5813/mauro-silva/fifa05/"
+          ],
+          "fifaindex_id": "5813",
+          "identity_observation": {
+            "age_at_game_edition": 36,
+            "date_of_birth": null,
+            "date_of_birth_observation": "not_exposed",
+            "decision_note": "MF compatible",
+            "evidence_basis": "Manual page-name, nationality, edition-age and broad-position/era comparison; no unique-name auto-match.",
+            "game_version": "FIFA 05",
+            "nationality": "Brazil",
+            "page_name": "Mauro Silva",
+            "page_url": "https://www.fifaindex.com/players/5813-mauro-silva/fifa05",
+            "positions": [
+              "CDM",
+              "RCDM",
+              "LCDM"
+            ]
+          },
+          "identity_status": "fresh_page_confirmed"
+        }
+      ],
+      "canonical_name": "Mauro Silva",
+      "canonical_player_id": "mauro-silva",
+      "cohort_team_positions": [
+        "MF"
+      ],
+      "cohort_team_seasons": [
+        "deportivo-la-coruna-2000"
+      ],
+      "decision_basis": "MF compatible",
+      "group_status": "fresh_single_id_confirmed",
+      "inherited_v1_baseline_records": [],
+      "selected_fresh_fifaindex_id": "5813",
+      "target_season_years": [
+        2000
+      ]
+    },
+    {
+      "candidate_ids": [
+        {
+          "candidate_editions": [
+            "FIFA 05",
+            "FIFA 06",
+            "FIFA 07"
+          ],
+          "candidate_record_ids": [
+            "candidate-499-05",
+            "candidate-499-06",
+            "candidate-499-07"
+          ],
+          "candidate_source_urls": [
+            "https://www.fifaindex.com/player/499/mehmet-scholl/fifa05/",
+            "https://www.fifaindex.com/player/499/mehmet-scholl/fifa06/",
+            "https://www.fifaindex.com/player/499/mehmet-scholl/fifa07/"
+          ],
+          "fifaindex_id": "499",
+          "identity_observation": {
+            "age_at_game_edition": 33,
+            "date_of_birth": null,
+            "date_of_birth_observation": "not_exposed",
+            "decision_note": "MF compatible",
+            "evidence_basis": "Manual page-name, nationality, edition-age and broad-position/era comparison; no unique-name auto-match.",
+            "game_version": "FIFA 05",
+            "nationality": "Germany",
+            "page_name": "Mehmet Scholl",
+            "page_url": "https://www.fifaindex.com/players/499-mehmet-scholl/fifa05",
+            "positions": [
+              "CAM",
+              "RAM",
+              "RWM"
+            ]
+          },
+          "identity_status": "fresh_page_confirmed"
+        }
+      ],
+      "canonical_name": "Mehmet Scholl",
+      "canonical_player_id": "mehmet-scholl",
+      "cohort_team_positions": [
+        "FW",
+        "MF"
+      ],
+      "cohort_team_seasons": [
+        "bayern-munich-2001"
+      ],
+      "decision_basis": "MF compatible",
+      "group_status": "fresh_single_id_confirmed",
+      "inherited_v1_baseline_records": [],
+      "selected_fresh_fifaindex_id": "499",
+      "target_season_years": [
+        2001
+      ]
+    },
+    {
+      "candidate_ids": [
+        {
+          "candidate_editions": [
+            "FIFA 06",
+            "FIFA 07"
+          ],
+          "candidate_record_ids": [
+            "candidate-8348-06",
+            "candidate-8348-07"
+          ],
+          "candidate_source_urls": [
+            "https://www.fifaindex.com/player/8348/m%C3%ADchel-salgado/fifa06/",
+            "https://www.fifaindex.com/player/8348/michel-salgado/fifa07/"
+          ],
+          "fifaindex_id": "8348",
+          "identity_observation": {
+            "age_at_game_edition": 30,
+            "date_of_birth": "1975-10-22",
+            "date_of_birth_observation": "observed",
+            "decision_note": "FIFA06 failed; FIFA07 page read",
+            "evidence_basis": "Manual page-name, nationality, edition-age and broad-position/era comparison; no unique-name auto-match.",
+            "game_version": "FIFA 07",
+            "nationality": "Spain",
+            "page_name": "Michel Salgado",
+            "page_url": "https://www.fifaindex.com/player/8348/michel-salgado/fifa07/",
+            "positions": [
+              "RB"
+            ]
+          },
+          "identity_status": "fresh_page_confirmed"
+        }
+      ],
+      "canonical_name": "Michel Salgado",
+      "canonical_player_id": "michel-salgado",
+      "cohort_team_positions": [
+        "DF"
+      ],
+      "cohort_team_seasons": [
+        "real-madrid-2002"
+      ],
+      "decision_basis": "FIFA06 failed; FIFA07 page read",
+      "group_status": "fresh_single_id_confirmed",
+      "inherited_v1_baseline_records": [],
+      "selected_fresh_fifaindex_id": "8348",
+      "target_season_years": [
+        2002
+      ]
+    },
+    {
+      "candidate_ids": [
+        {
+          "candidate_editions": [
+            "FIFA 05",
+            "FIFA 06",
+            "FIFA 07"
+          ],
+          "candidate_record_ids": [
+            "candidate-111016-05",
+            "candidate-111016-06",
+            "candidate-111016-07"
+          ],
+          "candidate_source_urls": [
+            "https://www.fifaindex.com/player/111016/mista/fifa05/",
+            "https://www.fifaindex.com/player/111016/mista/fifa06/",
+            "https://www.fifaindex.com/player/111016/mista/fifa07/"
+          ],
+          "fifaindex_id": "111016",
+          "identity_observation": {
+            "age_at_game_edition": null,
+            "date_of_birth": null,
+            "date_of_birth_observation": "not_observed",
+            "decision_note": "FIFA05/FIFA06 and modern-route pages inaccessible.",
+            "evidence_basis": "Bounded page attempts yielded no identity facts; unique ID is not sufficient.",
+            "game_version": "FIFA 05",
+            "nationality": null,
+            "page_url": "https://www.fifaindex.com/player/111016/mista/fifa05/",
+            "positions": null
+          },
+          "identity_status": "unresolved_page_inaccessible"
+        }
+      ],
+      "canonical_name": "Mista",
+      "canonical_player_id": "mista",
+      "cohort_team_positions": [
+        "FW"
+      ],
+      "cohort_team_seasons": [
+        "valencia-2004"
+      ],
+      "decision_basis": "FIFA05/FIFA06 and modern-route pages inaccessible.",
+      "group_status": "unresolved",
+      "inherited_v1_baseline_records": [],
+      "selected_fresh_fifaindex_id": null,
+      "target_season_years": [
+        2004
+      ]
+    },
+    {
+      "candidate_ids": [
+        {
+          "candidate_editions": [
+            "FIFA 05",
+            "FIFA 06",
+            "FIFA 07"
+          ],
+          "candidate_record_ids": [
+            "candidate-488-05",
+            "candidate-488-06",
+            "candidate-488-07"
+          ],
+          "candidate_source_urls": [
+            "https://www.fifaindex.com/player/488/oliver-kahn/fifa05/",
+            "https://www.fifaindex.com/player/488/oliver-kahn/fifa06/",
+            "https://www.fifaindex.com/player/488/oliver-kahn/fifa07/"
+          ],
+          "fifaindex_id": "488",
+          "identity_observation": {
+            "age_at_game_edition": 35,
+            "date_of_birth": null,
+            "date_of_birth_observation": "not_exposed",
+            "decision_note": "GK compatible",
+            "evidence_basis": "Manual page-name, nationality, edition-age and broad-position/era comparison; no unique-name auto-match.",
+            "game_version": "FIFA 05",
+            "nationality": "Germany",
+            "page_name": "Oliver Kahn",
+            "page_url": "https://www.fifaindex.com/players/488-oliver-kahn/fifa05",
+            "positions": [
+              "GK"
+            ]
+          },
+          "identity_status": "fresh_page_confirmed"
+        }
+      ],
+      "canonical_name": "Oliver Kahn",
+      "canonical_player_id": "oliver-kahn",
+      "cohort_team_positions": [
+        "GK"
+      ],
+      "cohort_team_seasons": [
+        "bayern-munich-2001"
+      ],
+      "decision_basis": "GK compatible",
+      "group_status": "fresh_single_id_confirmed",
+      "inherited_v1_baseline_records": [],
+      "selected_fresh_fifaindex_id": "488",
+      "target_season_years": [
+        2001
+      ]
+    },
+    {
+      "candidate_ids": [
+        {
+          "candidate_editions": [
+            "FIFA 05",
+            "FIFA 06",
+            "FIFA 07"
+          ],
+          "candidate_record_ids": [
+            "candidate-12265-05",
+            "candidate-12265-06",
+            "candidate-12265-07"
+          ],
+          "candidate_source_urls": [
+            "https://www.fifaindex.com/player/12265/owen-hargreaves/fifa05/",
+            "https://www.fifaindex.com/player/12265/owen-hargreaves/fifa06/",
+            "https://www.fifaindex.com/player/12265/owen-hargreaves/fifa07/"
+          ],
+          "fifaindex_id": "12265",
+          "identity_observation": {
+            "age_at_game_edition": 23,
+            "date_of_birth": null,
+            "date_of_birth_observation": "not_exposed",
+            "decision_note": "MF compatible",
+            "evidence_basis": "Manual page-name, nationality, edition-age and broad-position/era comparison; no unique-name auto-match.",
+            "game_version": "FIFA 05",
+            "nationality": "England",
+            "page_name": "Owen Hargreaves",
+            "page_url": "https://www.fifaindex.com/players/12265-owen-hargreaves/fifa05",
+            "positions": [
+              "CDM",
+              "RWM",
+              "RM"
+            ]
+          },
+          "identity_status": "fresh_page_confirmed"
+        }
+      ],
+      "canonical_name": "Owen Hargreaves",
+      "canonical_player_id": "owen-hargreaves",
+      "cohort_team_positions": [
+        "MF"
+      ],
+      "cohort_team_seasons": [
+        "bayern-munich-2001"
+      ],
+      "decision_basis": "MF compatible",
+      "group_status": "fresh_single_id_confirmed",
+      "inherited_v1_baseline_records": [],
+      "selected_fresh_fifaindex_id": "12265",
+      "target_season_years": [
+        2001
+      ]
+    },
+    {
+      "candidate_ids": [
+        {
+          "candidate_editions": [
+            "FIFA 05",
+            "FIFA 06"
+          ],
+          "candidate_record_ids": [
+            "candidate-140387-05",
+            "candidate-140387-06"
+          ],
+          "candidate_source_urls": [
+            "https://www.fifaindex.com/player/140387/patrik-andersson/fifa05/",
+            "https://www.fifaindex.com/player/140387/patrik-andersson/fifa06/"
+          ],
+          "fifaindex_id": "140387",
+          "identity_observation": {
+            "age_at_game_edition": 33,
+            "date_of_birth": "1971-08-18",
+            "date_of_birth_observation": "observed",
+            "decision_note": "FIFAIndex DOB observed, not independently sourced from cohort",
+            "evidence_basis": "Manual page-name, nationality, edition-age and broad-position/era comparison; no unique-name auto-match.",
+            "game_version": "FIFA 05",
+            "nationality": "Sweden",
+            "page_name": "Patrik Andersson",
+            "page_url": "https://fifaindex.com/players/140387-patrik-andersson/fifa05",
+            "positions": [
+              "CB"
+            ]
+          },
+          "identity_status": "fresh_page_confirmed"
+        }
+      ],
+      "canonical_name": "Patrik Andersson",
+      "canonical_player_id": "patrik-andersson",
+      "cohort_team_positions": [
+        "DF"
+      ],
+      "cohort_team_seasons": [
+        "bayern-munich-2001"
+      ],
+      "decision_basis": "FIFAIndex DOB observed, not independently sourced from cohort",
+      "group_status": "fresh_single_id_confirmed",
+      "inherited_v1_baseline_records": [],
+      "selected_fresh_fifaindex_id": "140387",
+      "target_season_years": [
+        2001
+      ]
+    },
+    {
+      "candidate_ids": [
+        {
+          "candidate_editions": [
+            "FIFA 05",
+            "FIFA 06",
+            "FIFA 07"
+          ],
+          "candidate_record_ids": [
+            "candidate-117106-05",
+            "candidate-117106-06",
+            "candidate-117106-07"
+          ],
+          "candidate_source_urls": [
+            "https://www.fifaindex.com/player/117106/pauleta/fifa05/",
+            "https://www.fifaindex.com/player/117106/pauleta/fifa06/",
+            "https://www.fifaindex.com/player/117106/pauleta/fifa07/"
+          ],
+          "fifaindex_id": "117106",
+          "identity_observation": {
+            "age_at_game_edition": 31,
+            "date_of_birth": "1973-04-28",
+            "date_of_birth_observation": "observed",
+            "decision_note": "FW compatible",
+            "evidence_basis": "Manual page-name, nationality, edition-age and broad-position/era comparison; no unique-name auto-match.",
+            "game_version": "FIFA 05",
+            "nationality": "Portugal",
+            "page_name": "Pauleta",
+            "page_url": "https://www.fifaindex.com/player/117106/pauleta/fifa05/",
+            "positions": [
+              "ST",
+              "CF"
+            ]
+          },
+          "identity_status": "fresh_page_confirmed"
+        }
+      ],
+      "canonical_name": "Pauleta",
+      "canonical_player_id": "pauleta",
+      "cohort_team_positions": [
+        "FW"
+      ],
+      "cohort_team_seasons": [
+        "deportivo-la-coruna-2000"
+      ],
+      "decision_basis": "FW compatible",
+      "group_status": "fresh_single_id_confirmed",
+      "inherited_v1_baseline_records": [],
+      "selected_fresh_fifaindex_id": "117106",
+      "target_season_years": [
+        2000
+      ]
+    },
+    {
+      "candidate_ids": [
+        {
+          "candidate_editions": [
+            "FIFA 05",
+            "FIFA 06",
+            "FIFA 07"
+          ],
+          "candidate_record_ids": [
+            "candidate-120202-05",
+            "candidate-120202-06",
+            "candidate-120202-07"
+          ],
+          "candidate_source_urls": [
+            "https://www.fifaindex.com/player/120202/paulo-ferreira/fifa05/",
+            "https://www.fifaindex.com/player/120202/paulo-ferreira/fifa06/",
+            "https://www.fifaindex.com/player/120202/paulo-ferreira/fifa07/"
+          ],
+          "fifaindex_id": "120202",
+          "identity_observation": {
+            "age_at_game_edition": 25,
+            "date_of_birth": null,
+            "date_of_birth_observation": "not_exposed",
+            "decision_note": "DF/MF compatible",
+            "evidence_basis": "Manual page-name, nationality, edition-age and broad-position/era comparison; no unique-name auto-match.",
+            "game_version": "FIFA 05",
+            "nationality": "Portugal",
+            "page_name": "Paulo Ferreira",
+            "page_url": "https://www.fifaindex.com/players/120202-paulo-ferreira/fifa05",
+            "positions": [
+              "RB",
+              "RWB",
+              "RCM"
+            ]
+          },
+          "identity_status": "fresh_page_confirmed"
+        }
+      ],
+      "canonical_name": "Paulo Ferreira",
+      "canonical_player_id": "paulo-ferreira",
+      "cohort_team_positions": [
+        "DF"
+      ],
+      "cohort_team_seasons": [
+        "porto-2004"
+      ],
+      "decision_basis": "DF/MF compatible",
+      "group_status": "fresh_single_id_confirmed",
+      "inherited_v1_baseline_records": [],
+      "selected_fresh_fifaindex_id": "120202",
+      "target_season_years": [
+        2004
+      ]
+    },
+    {
+      "candidate_ids": [
+        {
+          "candidate_editions": [
+            "FIFA 05",
+            "FIFA 06",
+            "FIFA 07"
+          ],
+          "candidate_record_ids": [
+            "candidate-6235-05",
+            "candidate-6235-06",
+            "candidate-6235-07"
+          ],
+          "candidate_source_urls": [
+            "https://www.fifaindex.com/player/6235/pavel-nedved/fifa05/",
+            "https://www.fifaindex.com/player/6235/pavel-nedved/fifa06/",
+            "https://www.fifaindex.com/player/6235/pavel-nedved/fifa07/"
+          ],
+          "fifaindex_id": "6235",
+          "identity_observation": {
+            "age_at_game_edition": 32,
+            "date_of_birth": null,
+            "date_of_birth_observation": "not_exposed",
+            "decision_note": "MF compatible",
+            "evidence_basis": "Manual page-name, nationality, edition-age and broad-position/era comparison; no unique-name auto-match.",
+            "game_version": "FIFA 05",
+            "nationality": "Czechia",
+            "page_name": "Pavel Nedved",
+            "page_url": "https://www.fifaindex.com/players/6235-pavel-nedved/fifa05",
+            "positions": [
+              "CAM",
+              "CM",
+              "LM"
+            ]
+          },
+          "identity_status": "fresh_page_confirmed"
+        }
+      ],
+      "canonical_name": "Pavel Nedved",
+      "canonical_player_id": "pavel-nedved",
+      "cohort_team_positions": [
+        "FW",
+        "MF"
+      ],
+      "cohort_team_seasons": [
+        "juventus-2003",
+        "lazio-2000"
+      ],
+      "decision_basis": "MF compatible",
+      "group_status": "fresh_single_id_confirmed",
+      "inherited_v1_baseline_records": [],
+      "selected_fresh_fifaindex_id": "6235",
+      "target_season_years": [
+        2000,
+        2003
+      ]
+    },
+    {
+      "candidate_ids": [
+        {
+          "candidate_editions": [
+            "FIFA 05",
+            "FIFA 06",
+            "FIFA 07"
+          ],
+          "candidate_record_ids": [
+            "candidate-45661-05",
+            "candidate-45661-06",
+            "candidate-45661-07"
+          ],
+          "candidate_source_urls": [
+            "https://www.fifaindex.com/player/45661/ra%C3%BAl/fifa05/",
+            "https://www.fifaindex.com/player/45661/ra%C3%BAl/fifa06/",
+            "https://www.fifaindex.com/player/45661/ra%C3%BAl/fifa07/"
+          ],
+          "fifaindex_id": "45661",
+          "identity_observation": {
+            "age_at_game_edition": 29,
+            "date_of_birth": "1977-06-27",
+            "date_of_birth_observation": "observed",
+            "decision_note": "Game page club is identity context, not 2002 roster evidence.",
+            "evidence_basis": "Positive ID supported individually by page facts and cohort role/era; other candidate IDs remain separate.",
+            "game_club": "Real Madrid C.F.",
+            "game_version": "FIFA 05",
+            "nationality": "Spain",
+            "overall": 83,
+            "page_name": "Raúl",
+            "page_url": "https://www.fifaindex.com/players/45661-raul/fifa07",
+            "positions": [
+              "CF",
+              "forward"
+            ]
+          },
+          "identity_status": "fresh_page_confirmed_selected_id"
+        },
+        {
+          "candidate_editions": [
+            "FIFA 05",
+            "FIFA 06"
+          ],
+          "candidate_record_ids": [
+            "candidate-112508-05",
+            "candidate-112508-06"
+          ],
+          "candidate_source_urls": [
+            "https://www.fifaindex.com/player/112508/ra%C3%BAl/fifa05/",
+            "https://www.fifaindex.com/player/112508/ra%C3%BAl/fifa06/"
+          ],
+          "fifaindex_id": "112508",
+          "identity_observation": {
+            "age_at_game_edition": null,
+            "date_of_birth": null,
+            "date_of_birth_observation": "not_observed",
+            "decision_note": "Alternative numeric ID remains unresolved; only a separately supported positive ID is mapped.",
+            "evidence_basis": "Candidate page was unreadable in the bounded audit; no inference from ID uniqueness.",
+            "game_version": "FIFA 05",
+            "nationality": null,
+            "page_url": "https://www.fifaindex.com/player/112508/ra%C3%BAl/fifa05/",
+            "positions": null
+          },
+          "identity_status": "unresolved_alternative_not_read"
+        },
+        {
+          "candidate_editions": [
+            "FIFA 06"
+          ],
+          "candidate_record_ids": [
+            "candidate-113710-06"
+          ],
+          "candidate_source_urls": [
+            "https://www.fifaindex.com/player/113710/ra%C3%BAl/fifa06/"
+          ],
+          "fifaindex_id": "113710",
+          "identity_observation": {
+            "age_at_game_edition": null,
+            "date_of_birth": null,
+            "date_of_birth_observation": "not_observed",
+            "decision_note": "Alternative numeric ID remains unresolved; only a separately supported positive ID is mapped.",
+            "evidence_basis": "Candidate page was unreadable in the bounded audit; no inference from ID uniqueness.",
+            "game_version": "FIFA 06",
+            "nationality": null,
+            "page_url": "https://www.fifaindex.com/player/113710/ra%C3%BAl/fifa06/",
+            "positions": null
+          },
+          "identity_status": "unresolved_alternative_not_read"
+        },
+        {
+          "candidate_editions": [
+            "FIFA 07"
+          ],
+          "candidate_record_ids": [
+            "candidate-146453-07"
+          ],
+          "candidate_source_urls": [
+            "https://www.fifaindex.com/player/146453/ra%C3%BAl/fifa07/"
+          ],
+          "fifaindex_id": "146453",
+          "identity_observation": {
+            "age_at_game_edition": null,
+            "date_of_birth": null,
+            "date_of_birth_observation": "not_observed",
+            "decision_note": "Alternative numeric ID remains unresolved; only a separately supported positive ID is mapped.",
+            "evidence_basis": "Candidate page was unreadable in the bounded audit; no inference from ID uniqueness.",
+            "game_version": "FIFA 07",
+            "nationality": null,
+            "page_url": "https://www.fifaindex.com/player/146453/ra%C3%BAl/fifa07/",
+            "positions": null
+          },
+          "identity_status": "unresolved_alternative_not_read"
+        }
+      ],
+      "canonical_name": "Raul",
+      "canonical_player_id": "raul",
+      "cohort_team_positions": [
+        "FW"
+      ],
+      "cohort_team_seasons": [
+        "real-madrid-2002"
+      ],
+      "decision_basis": "Positive ID 45661 is supported; unread alternative IDs 112508, 113710, 146453 remain unresolved.",
+      "group_status": "partial_disambiguation",
+      "inherited_v1_baseline_records": [],
+      "selected_fresh_fifaindex_id": "45661",
+      "target_season_years": [
+        2002
+      ]
+    },
+    {
+      "candidate_ids": [
+        {
+          "candidate_editions": [
+            "FIFA 05",
+            "FIFA 06",
+            "FIFA 07"
+          ],
+          "candidate_record_ids": [
+            "candidate-1605-05",
+            "candidate-1605-06",
+            "candidate-1605-07"
+          ],
+          "candidate_source_urls": [
+            "https://www.fifaindex.com/player/1605/robert-pir%C3%A8s/fifa05/",
+            "https://www.fifaindex.com/player/1605/robert-pires/fifa06/",
+            "https://www.fifaindex.com/player/1605/robert-pires/fifa07/"
+          ],
+          "fifaindex_id": "1605",
+          "identity_observation": {
+            "age_at_game_edition": 31,
+            "date_of_birth": "1973-01-29",
+            "date_of_birth_observation": "observed",
+            "decision_note": "French national-team label; MF/FW compatible",
+            "evidence_basis": "Manual page-name, nationality, edition-age and broad-position/era comparison; no unique-name auto-match.",
+            "game_version": "FIFA 05",
+            "nationality": "France",
+            "page_name": "Robert Pires",
+            "page_url": "https://www.fifaindex.com/player/1605/robert-pir%C3%A8s/fifa05/",
+            "positions": [
+              "LM",
+              "CM",
+              "RM"
+            ]
+          },
+          "identity_status": "fresh_page_confirmed"
+        }
+      ],
+      "canonical_name": "Robert Pires",
+      "canonical_player_id": "robert-pires",
+      "cohort_team_positions": [
+        "FW",
+        "MF"
+      ],
+      "cohort_team_seasons": [
+        "arsenal-2004"
+      ],
+      "decision_basis": "French national-team label; MF/FW compatible",
+      "group_status": "fresh_single_id_confirmed",
+      "inherited_v1_baseline_records": [],
+      "selected_fresh_fifaindex_id": "1605",
+      "target_season_years": [
+        2004
+      ]
+    },
+    {
+      "candidate_ids": [
+        {
+          "candidate_editions": [
+            "FIFA 07"
+          ],
+          "candidate_record_ids": [
+            "candidate-1131-07"
+          ],
+          "candidate_source_urls": [
+            "https://www.fifaindex.com/player/1131/roberto-ayala/fifa07/"
+          ],
+          "fifaindex_id": "1131",
+          "identity_observation": {
+            "age_at_game_edition": 33,
+            "date_of_birth": null,
+            "date_of_birth_observation": "not_exposed",
+            "decision_note": "DF compatible",
+            "evidence_basis": "Manual page-name, nationality, edition-age and broad-position/era comparison; no unique-name auto-match.",
+            "game_version": "FIFA 07",
+            "nationality": "Argentina",
+            "page_name": "Roberto Ayala",
+            "page_url": "https://www.fifaindex.com/players/1131-roberto-ayala/fifa07",
+            "positions": [
+              "CB",
+              "RCB"
+            ]
+          },
+          "identity_status": "fresh_page_confirmed"
+        }
+      ],
+      "canonical_name": "Roberto Ayala",
+      "canonical_player_id": "roberto-ayala",
+      "cohort_team_positions": [
+        "DF"
+      ],
+      "cohort_team_seasons": [
+        "valencia-2004"
+      ],
+      "decision_basis": "DF compatible",
+      "group_status": "fresh_single_id_confirmed",
+      "inherited_v1_baseline_records": [],
+      "selected_fresh_fifaindex_id": "1131",
+      "target_season_years": [
+        2004
+      ]
+    },
+    {
+      "candidate_ids": [
+        {
+          "candidate_editions": [
+            "FIFA 06",
+            "FIFA 07"
+          ],
+          "candidate_record_ids": [
+            "candidate-1040-06",
+            "candidate-1040-07"
+          ],
+          "candidate_source_urls": [
+            "https://www.fifaindex.com/player/1040/roberto-carlos/fifa06/",
+            "https://www.fifaindex.com/player/1040/roberto-carlos/fifa07/"
+          ],
+          "fifaindex_id": "1040",
+          "identity_observation": {
+            "age_at_game_edition": 32,
+            "date_of_birth": null,
+            "date_of_birth_observation": "not_exposed",
+            "decision_note": "Selected supported ID; unread alternatives are not mapped.",
+            "evidence_basis": "Positive ID supported individually by page facts and cohort role/era; other candidate IDs remain separate.",
+            "game_version": "FIFA 06",
+            "nationality": "Brazil",
+            "page_name": "Roberto Carlos",
+            "page_url": "https://fifaindex.com/players/1040-roberto-carlos/fifa06",
+            "positions": [
+              "LWB"
+            ]
+          },
+          "identity_status": "fresh_page_confirmed_selected_id"
+        },
+        {
+          "candidate_editions": [
+            "FIFA 05",
+            "FIFA 06"
+          ],
+          "candidate_record_ids": [
+            "candidate-146299-05",
+            "candidate-146299-06"
+          ],
+          "candidate_source_urls": [
+            "https://www.fifaindex.com/player/146299/roberto-carlos/fifa05/",
+            "https://www.fifaindex.com/player/146299/roberto-carlos/fifa06/"
+          ],
+          "fifaindex_id": "146299",
+          "identity_observation": {
+            "age_at_game_edition": 22,
+            "date_of_birth": "1982-08-31",
+            "decision_note": "Wrong namesake; not mapped.",
+            "evidence_basis": "Observed page fields conflict with cohort identity/role; rejected.",
+            "game_version": "FIFA 05",
+            "nationality": "Spain",
+            "page_name": "Roberto Carlos",
+            "page_url": "https://www.fifaindex.com/player/146299/roberto-carlos/fifa05/",
+            "positions": [
+              "CM"
+            ]
+          },
+          "identity_status": "rejected_wrong_namesake"
+        }
+      ],
+      "canonical_name": "Roberto Carlos",
+      "canonical_player_id": "roberto-carlos",
+      "cohort_team_positions": [
+        "DF"
+      ],
+      "cohort_team_seasons": [
+        "real-madrid-2002"
+      ],
+      "decision_basis": "ID 1040 is supported; ID 146299 is rejected as a different Spain/CM namesake, resolving the two-ID candidate set.",
+      "group_status": "fully_disambiguated_within_candidates",
+      "inherited_v1_baseline_records": [],
+      "selected_fresh_fifaindex_id": "1040",
+      "target_season_years": [
+        2002
+      ]
+    },
+    {
+      "candidate_ids": [
+        {
+          "candidate_editions": [
+            "FIFA 05",
+            "FIFA 06"
+          ],
+          "candidate_record_ids": [
+            "candidate-240-05",
+            "candidate-240-06"
+          ],
+          "candidate_source_urls": [
+            "https://www.fifaindex.com/player/240/roy-keane/fifa05/",
+            "https://www.fifaindex.com/player/240/roy-keane/fifa06/"
+          ],
+          "fifaindex_id": "240",
+          "identity_observation": {
+            "age_at_game_edition": 33,
+            "date_of_birth": null,
+            "date_of_birth_observation": "not_exposed",
+            "decision_note": "MF compatible",
+            "evidence_basis": "Manual page-name, nationality, edition-age and broad-position/era comparison; no unique-name auto-match.",
+            "game_version": "FIFA 05",
+            "nationality": "Republic of Ireland",
+            "page_name": "Roy Keane",
+            "page_url": "https://www.fifaindex.com/players/240-roy-keane/fifa05",
+            "positions": [
+              "CM",
+              "CDM"
+            ]
+          },
+          "identity_status": "fresh_page_confirmed"
+        }
+      ],
+      "canonical_name": "Roy Keane",
+      "canonical_player_id": "roy-keane",
+      "cohort_team_positions": [
+        "MF"
+      ],
+      "cohort_team_seasons": [
+        "manchester-united-1999"
+      ],
+      "decision_basis": "MF compatible",
+      "group_status": "fresh_single_id_confirmed",
+      "inherited_v1_baseline_records": [],
+      "selected_fresh_fifaindex_id": "240",
+      "target_season_years": [
+        1999
+      ]
+    },
+    {
+      "candidate_ids": [
+        {
+          "candidate_editions": [
+            "FIFA 05",
+            "FIFA 06",
+            "FIFA 07"
+          ],
+          "candidate_record_ids": [
+            "candidate-10704-05",
+            "candidate-10704-06",
+            "candidate-10704-07"
+          ],
+          "candidate_source_urls": [
+            "https://www.fifaindex.com/player/10704/roy-makaay/fifa05/",
+            "https://www.fifaindex.com/player/10704/roy-makaay/fifa06/",
+            "https://www.fifaindex.com/player/10704/roy-makaay/fifa07/"
+          ],
+          "fifaindex_id": "10704",
+          "identity_observation": {
+            "age_at_game_edition": 29,
+            "date_of_birth": null,
+            "date_of_birth_observation": "not_exposed",
+            "decision_note": "FW compatible",
+            "evidence_basis": "Manual page-name, nationality, edition-age and broad-position/era comparison; no unique-name auto-match.",
+            "game_version": "FIFA 05",
+            "nationality": "Netherlands",
+            "page_name": "Roy Makaay",
+            "page_url": "https://www.fifaindex.com/players/10704-roy-makaay/fifa05",
+            "positions": [
+              "ST"
+            ]
+          },
+          "identity_status": "fresh_page_confirmed"
+        }
+      ],
+      "canonical_name": "Roy Makaay",
+      "canonical_player_id": "roy-makaay",
+      "cohort_team_positions": [
+        "FW"
+      ],
+      "cohort_team_seasons": [
+        "deportivo-la-coruna-2000"
+      ],
+      "decision_basis": "FW compatible",
+      "group_status": "fresh_single_id_confirmed",
+      "inherited_v1_baseline_records": [],
+      "selected_fresh_fifaindex_id": "10704",
+      "target_season_years": [
+        2000
+      ]
+    },
+    {
+      "candidate_ids": [
+        {
+          "candidate_editions": [
+            "FIFA 06"
+          ],
+          "candidate_record_ids": [
+            "candidate-141317-06"
+          ],
+          "candidate_source_urls": [
+            "https://www.fifaindex.com/player/141317/ruben-baraja/fifa06/"
+          ],
+          "fifaindex_id": "141317",
+          "identity_observation": {
+            "age_at_game_edition": 30,
+            "date_of_birth": "1975-07-11",
+            "date_of_birth_observation": "observed",
+            "decision_note": "MF compatible",
+            "evidence_basis": "Manual page-name, nationality, edition-age and broad-position/era comparison; no unique-name auto-match.",
+            "game_version": "FIFA 06",
+            "nationality": "Spain",
+            "page_name": "Ruben Baraja",
+            "page_url": "https://www.fifaindex.com/player/141317/ruben-baraja/fifa06/",
+            "positions": [
+              "CDM"
+            ]
+          },
+          "identity_status": "fresh_page_confirmed"
+        }
+      ],
+      "canonical_name": "Ruben Baraja",
+      "canonical_player_id": "ruben-baraja",
+      "cohort_team_positions": [
+        "MF"
+      ],
+      "cohort_team_seasons": [
+        "valencia-2004"
+      ],
+      "decision_basis": "MF compatible",
+      "group_status": "fresh_single_id_confirmed",
+      "inherited_v1_baseline_records": [],
+      "selected_fresh_fifaindex_id": "141317",
+      "target_season_years": [
+        2004
+      ]
+    },
+    {
+      "candidate_ids": [
+        {
+          "candidate_editions": [
+            "FIFA 06"
+          ],
+          "candidate_record_ids": [
+            "candidate-5623-06"
+          ],
+          "candidate_source_urls": [
+            "https://www.fifaindex.com/player/5623/santiago-ca%C3%B1izares/fifa06/"
+          ],
+          "fifaindex_id": "5623",
+          "identity_observation": {
+            "age_at_game_edition": 35,
+            "date_of_birth": null,
+            "date_of_birth_observation": "not_exposed",
+            "decision_note": "GK compatible",
+            "evidence_basis": "Manual page-name, nationality, edition-age and broad-position/era comparison; no unique-name auto-match.",
+            "game_version": "FIFA 06",
+            "nationality": "Spain",
+            "page_name": "Santiago Cañizares",
+            "page_url": "https://www.fifaindex.com/players/5623-santiago-canizares/fifa06",
+            "positions": [
+              "GK"
+            ]
+          },
+          "identity_status": "fresh_page_confirmed"
+        }
+      ],
+      "canonical_name": "Santiago Canizares",
+      "canonical_player_id": "santiago-canizares",
+      "cohort_team_positions": [
+        "GK"
+      ],
+      "cohort_team_seasons": [
+        "valencia-2004"
+      ],
+      "decision_basis": "GK compatible",
+      "group_status": "fresh_single_id_confirmed",
+      "inherited_v1_baseline_records": [],
+      "selected_fresh_fifaindex_id": "5623",
+      "target_season_years": [
+        2004
+      ]
+    },
+    {
+      "candidate_ids": [
+        {
+          "candidate_editions": [
+            "FIFA 05",
+            "FIFA 06"
+          ],
+          "candidate_record_ids": [
+            "candidate-1254-05",
+            "candidate-1254-06"
+          ],
+          "candidate_source_urls": [
+            "https://www.fifaindex.com/player/1254/sinisa-mihajlovic/fifa05/",
+            "https://www.fifaindex.com/player/1254/sinisa-mihajlovic/fifa06/"
+          ],
+          "fifaindex_id": "1254",
+          "identity_observation": {
+            "age_at_game_edition": 35,
+            "date_of_birth": "1969-02-20",
+            "date_of_birth_observation": "observed",
+            "decision_note": "Narrative identifies centre-back",
+            "evidence_basis": "Manual page-name, nationality, edition-age and broad-position/era comparison; no unique-name auto-match.",
+            "game_version": "FIFA 05",
+            "nationality": "Serbia",
+            "page_name": "Sinisa Mihajlovic",
+            "page_url": "https://www.fifaindex.com/player/1254/sinisa-mihajlovic/fifa05/",
+            "positions": [
+              "LCB",
+              "SW",
+              "LCAM"
+            ]
+          },
+          "identity_status": "fresh_page_confirmed"
+        }
+      ],
+      "canonical_name": "Sinisa Mihajlovic",
+      "canonical_player_id": "sinisa-mihajlovic",
+      "cohort_team_positions": [
+        "DF"
+      ],
+      "cohort_team_seasons": [
+        "lazio-2000"
+      ],
+      "decision_basis": "Narrative identifies centre-back",
+      "group_status": "fresh_single_id_confirmed",
+      "inherited_v1_baseline_records": [],
+      "selected_fresh_fifaindex_id": "1254",
+      "target_season_years": [
+        2000
+      ]
+    },
+    {
+      "candidate_ids": [
+        {
+          "candidate_editions": [
+            "FIFA 05",
+            "FIFA 06",
+            "FIFA 07"
+          ],
+          "candidate_record_ids": [
+            "candidate-388-05",
+            "candidate-388-06",
+            "candidate-388-07"
+          ],
+          "candidate_source_urls": [
+            "https://www.fifaindex.com/player/388/sol-campbell/fifa05/",
+            "https://www.fifaindex.com/player/388/sol-campbell/fifa06/",
+            "https://www.fifaindex.com/player/388/sol-campbell/fifa07/"
+          ],
+          "fifaindex_id": "388",
+          "identity_observation": {
+            "age_at_game_edition": 30,
+            "date_of_birth": null,
+            "date_of_birth_observation": "not_exposed",
+            "decision_note": "DF compatible",
+            "evidence_basis": "Manual page-name, nationality, edition-age and broad-position/era comparison; no unique-name auto-match.",
+            "game_version": "FIFA 05",
+            "nationality": "England",
+            "page_name": "Sol Campbell",
+            "page_url": "https://www.fifaindex.com/players/388-sol-campbell/fifa05",
+            "positions": [
+              "CB"
+            ]
+          },
+          "identity_status": "fresh_page_confirmed"
+        }
+      ],
+      "canonical_name": "Sol Campbell",
+      "canonical_player_id": "sol-campbell",
+      "cohort_team_positions": [
+        "DF"
+      ],
+      "cohort_team_seasons": [
+        "arsenal-2004"
+      ],
+      "decision_basis": "DF compatible",
+      "group_status": "fresh_single_id_confirmed",
+      "inherited_v1_baseline_records": [],
+      "selected_fresh_fifaindex_id": "388",
+      "target_season_years": [
+        2004
+      ]
+    },
+    {
+      "candidate_ids": [
+        {
+          "candidate_editions": [
+            "FIFA 05",
+            "FIFA 06",
+            "FIFA 07"
+          ],
+          "candidate_record_ids": [
+            "candidate-111010-05",
+            "candidate-111010-06",
+            "candidate-111010-07"
+          ],
+          "candidate_source_urls": [
+            "https://www.fifaindex.com/player/111010/vicente/fifa05/",
+            "https://www.fifaindex.com/player/111010/vicente/fifa06/",
+            "https://www.fifaindex.com/player/111010/vicente/fifa07/"
+          ],
+          "fifaindex_id": "111010",
+          "identity_observation": {
+            "age_at_game_edition": 23,
+            "date_of_birth": "1981-07-16",
+            "date_of_birth_observation": "observed",
+            "decision_note": "Game club is identity context only.",
+            "evidence_basis": "Positive ID supported individually by page facts and cohort role/era; other candidate IDs remain separate.",
+            "game_club": "Valencia",
+            "game_version": "FIFA 05",
+            "nationality": "Spain",
+            "page_name": "Vicente",
+            "page_url": "https://www.fifaindex.com/player/111010/vicente/fifa05/",
+            "positions": [
+              "LM"
+            ]
+          },
+          "identity_status": "fresh_page_confirmed_selected_id"
+        },
+        {
+          "candidate_editions": [
+            "FIFA 05"
+          ],
+          "candidate_record_ids": [
+            "candidate-113830-05"
+          ],
+          "candidate_source_urls": [
+            "https://www.fifaindex.com/player/113830/vicente/fifa05/"
+          ],
+          "fifaindex_id": "113830",
+          "identity_observation": {
+            "age_at_game_edition": null,
+            "date_of_birth": null,
+            "date_of_birth_observation": "not_observed",
+            "decision_note": "Alternative numeric ID remains unresolved; only a separately supported positive ID is mapped.",
+            "evidence_basis": "Candidate page was unreadable in the bounded audit; no inference from ID uniqueness.",
+            "game_version": "FIFA 05",
+            "nationality": null,
+            "page_url": "https://www.fifaindex.com/player/113830/vicente/fifa05/",
+            "positions": null
+          },
+          "identity_status": "unresolved_alternative_not_read"
+        },
+        {
+          "candidate_editions": [
+            "FIFA 06"
+          ],
+          "candidate_record_ids": [
+            "candidate-145025-06"
+          ],
+          "candidate_source_urls": [
+            "https://www.fifaindex.com/player/145025/vicente/fifa06/"
+          ],
+          "fifaindex_id": "145025",
+          "identity_observation": {
+            "age_at_game_edition": null,
+            "date_of_birth": null,
+            "date_of_birth_observation": "not_observed",
+            "decision_note": "Alternative numeric ID remains unresolved; only a separately supported positive ID is mapped.",
+            "evidence_basis": "Candidate page was unreadable in the bounded audit; no inference from ID uniqueness.",
+            "game_version": "FIFA 06",
+            "nationality": null,
+            "page_url": "https://www.fifaindex.com/player/145025/vicente/fifa06/",
+            "positions": null
+          },
+          "identity_status": "unresolved_alternative_not_read"
+        },
+        {
+          "candidate_editions": [
+            "FIFA 07"
+          ],
+          "candidate_record_ids": [
+            "candidate-157480-07"
+          ],
+          "candidate_source_urls": [
+            "https://www.fifaindex.com/player/157480/vicente/fifa07/"
+          ],
+          "fifaindex_id": "157480",
+          "identity_observation": {
+            "age_at_game_edition": null,
+            "date_of_birth": null,
+            "date_of_birth_observation": "not_observed",
+            "decision_note": "Alternative numeric ID remains unresolved; only a separately supported positive ID is mapped.",
+            "evidence_basis": "Candidate page was unreadable in the bounded audit; no inference from ID uniqueness.",
+            "game_version": "FIFA 07",
+            "nationality": null,
+            "page_url": "https://www.fifaindex.com/player/157480/vicente/fifa07/",
+            "positions": null
+          },
+          "identity_status": "unresolved_alternative_not_read"
+        }
+      ],
+      "canonical_name": "Vicente",
+      "canonical_player_id": "vicente",
+      "cohort_team_positions": [
+        "FW",
+        "MF"
+      ],
+      "cohort_team_seasons": [
+        "valencia-2004"
+      ],
+      "decision_basis": "Positive ID 111010 is supported; unread alternative IDs 113830, 145025, 157480 remain unresolved.",
+      "group_status": "partial_disambiguation",
+      "inherited_v1_baseline_records": [],
+      "selected_fresh_fifaindex_id": "111010",
+      "target_season_years": [
+        2004
+      ]
+    },
+    {
+      "candidate_ids": [
+        {
+          "candidate_editions": [
+            "FIFA 05",
+            "FIFA 06",
+            "FIFA 07"
+          ],
+          "candidate_record_ids": [
+            "candidate-1449-05",
+            "candidate-1449-06",
+            "candidate-1449-07"
+          ],
+          "candidate_source_urls": [
+            "https://www.fifaindex.com/player/1449/vincent-candela/fifa05/",
+            "https://www.fifaindex.com/player/1449/vincent-candela/fifa06/",
+            "https://www.fifaindex.com/player/1449/vincent-candela/fifa07/"
+          ],
+          "fifaindex_id": "1449",
+          "identity_observation": {
+            "age_at_game_edition": 30,
+            "date_of_birth": "1973-10-24",
+            "date_of_birth_observation": "observed",
+            "decision_note": "Nationality, DOB and flank-defender role support match",
+            "evidence_basis": "Manual page-name, nationality, edition-age and broad-position/era comparison; no unique-name auto-match.",
+            "game_version": "FIFA 05",
+            "nationality": "France",
+            "page_name": "Vincent Candela",
+            "page_url": "https://www.fifaindex.com/player/1449/vincent-candela/fifa05/",
+            "positions": [
+              "LWB",
+              "LB",
+              "LM"
+            ]
+          },
+          "identity_status": "fresh_page_confirmed"
+        }
+      ],
+      "canonical_name": "Vincent Candela",
+      "canonical_player_id": "vincent-candela",
+      "cohort_team_positions": [
+        "DF",
+        "MF"
+      ],
+      "cohort_team_seasons": [
+        "roma-2001"
+      ],
+      "decision_basis": "Nationality, DOB and flank-defender role support match",
+      "group_status": "fresh_single_id_confirmed",
+      "inherited_v1_baseline_records": [],
+      "selected_fresh_fifaindex_id": "1449",
+      "target_season_years": [
+        2001
+      ]
+    },
+    {
+      "candidate_ids": [
+        {
+          "candidate_editions": [
+            "FIFA 05",
+            "FIFA 06",
+            "FIFA 07"
+          ],
+          "candidate_record_ids": [
+            "candidate-20170-05",
+            "candidate-20170-06",
+            "candidate-20170-07"
+          ],
+          "candidate_source_urls": [
+            "https://www.fifaindex.com/player/20170/vitor-ba%C3%ADa/fifa05/",
+            "https://www.fifaindex.com/player/20170/vitor-ba%C3%ADa/fifa06/",
+            "https://www.fifaindex.com/player/20170/vitor-ba%C3%ADa/fifa07/"
+          ],
+          "fifaindex_id": "20170",
+          "identity_observation": {
+            "age_at_game_edition": 35,
+            "date_of_birth": null,
+            "date_of_birth_observation": "not_exposed",
+            "decision_note": "GK compatible",
+            "evidence_basis": "Manual page-name, nationality, edition-age and broad-position/era comparison; no unique-name auto-match.",
+            "game_version": "FIFA 05",
+            "nationality": "Portugal",
+            "page_name": "Vitor Baía",
+            "page_url": "https://www.fifaindex.com/players/20170-vitor-baia/fifa05",
+            "positions": [
+              "GK"
+            ]
+          },
+          "identity_status": "fresh_page_confirmed"
+        }
+      ],
+      "canonical_name": "Vitor Baia",
+      "canonical_player_id": "vitor-baia",
+      "cohort_team_positions": [
+        "GK"
+      ],
+      "cohort_team_seasons": [
+        "porto-2004"
+      ],
+      "decision_basis": "GK compatible",
+      "group_status": "fresh_single_id_confirmed",
+      "inherited_v1_baseline_records": [],
+      "selected_fresh_fifaindex_id": "20170",
+      "target_season_years": [
+        2004
+      ]
+    },
+    {
+      "candidate_ids": [
+        {
+          "candidate_editions": [
+            "FIFA 05",
+            "FIFA 06",
+            "FIFA 07"
+          ],
+          "candidate_record_ids": [
+            "candidate-883-05",
+            "candidate-883-06",
+            "candidate-883-07"
+          ],
+          "candidate_source_urls": [
+            "https://www.fifaindex.com/player/883/willy-sagnol/fifa05/",
+            "https://www.fifaindex.com/player/883/willy-sagnol/fifa06/",
+            "https://www.fifaindex.com/player/883/willy-sagnol/fifa07/"
+          ],
+          "fifaindex_id": "883",
+          "identity_observation": {
+            "age_at_game_edition": 27,
+            "date_of_birth": "1977-03-18",
+            "date_of_birth_observation": "observed",
+            "decision_note": "DF compatible",
+            "evidence_basis": "Manual page-name, nationality, edition-age and broad-position/era comparison; no unique-name auto-match.",
+            "game_version": "FIFA 05",
+            "nationality": "France",
+            "page_name": "Willy Sagnol",
+            "page_url": "https://www.fifaindex.com/player/883/willy-sagnol/fifa05/",
+            "positions": [
+              "RWB",
+              "RB",
+              "RCB"
+            ]
+          },
+          "identity_status": "fresh_page_confirmed"
+        }
+      ],
+      "canonical_name": "Willy Sagnol",
+      "canonical_player_id": "willy-sagnol",
+      "cohort_team_positions": [
+        "DF"
+      ],
+      "cohort_team_seasons": [
+        "bayern-munich-2001"
+      ],
+      "decision_basis": "DF compatible",
+      "group_status": "fresh_single_id_confirmed",
+      "inherited_v1_baseline_records": [],
+      "selected_fresh_fifaindex_id": "883",
+      "target_season_years": [
+        2001
+      ]
+    },
+    {
+      "candidate_ids": [
+        {
+          "candidate_editions": [
+            "FIFA 05",
+            "FIFA 06"
+          ],
+          "candidate_record_ids": [
+            "candidate-1397-05",
+            "candidate-1397-06"
+          ],
+          "candidate_source_urls": [
+            "https://www.fifaindex.com/player/1397/zinedine-zidane/fifa05/",
+            "https://www.fifaindex.com/player/1397/zinedine-zidane/fifa06/"
+          ],
+          "fifaindex_id": "1397",
+          "identity_observation": {
+            "age_at_game_edition": 32,
+            "date_of_birth": null,
+            "date_of_birth_observation": "not_exposed",
+            "decision_note": "MF compatible",
+            "evidence_basis": "Manual page-name, nationality, edition-age and broad-position/era comparison; no unique-name auto-match.",
+            "game_version": "FIFA 05",
+            "nationality": "France",
+            "page_name": "Zinedine Zidane",
+            "page_url": "https://www.fifaindex.com/players/1397-zinedine-zidane/fifa05",
+            "positions": [
+              "CAM",
+              "CM",
+              "LM"
+            ]
+          },
+          "identity_status": "fresh_page_confirmed"
+        }
+      ],
+      "canonical_name": "Zinedine Zidane",
+      "canonical_player_id": "zinedine-zidane",
+      "cohort_team_positions": [
+        "MF"
+      ],
+      "cohort_team_seasons": [
+        "real-madrid-2002"
+      ],
+      "decision_basis": "MF compatible",
+      "group_status": "fresh_single_id_confirmed",
+      "inherited_v1_baseline_records": [],
+      "selected_fresh_fifaindex_id": "1397",
+      "target_season_years": [
+        2002
+      ]
+    }
+  ],
+  "identity_rule": "Only manual page-supported IDs are mapped. Name uniqueness alone is insufficient. Page DOB is an observed FIFAIndex value, not an independent canonical DOB; null means not exposed/not observed. V1 mappings are inherited and not freshly reverified.",
+  "inherited_v1_baseline_mappings": [
+    {
+      "canonical_player_id": "alessandro-del-piero",
+      "editions": [
+        "FIFA 05",
+        "FIFA 06",
+        "FIFA 07"
+      ],
+      "fifaindex_id": "1075",
+      "mapping_status": "inherited_v1_not_reverified",
+      "record_ids": [
+        "fifaindex-1075-05",
+        "fifaindex-1075-06",
+        "fifaindex-1075-07"
+      ],
+      "source_urls": [
+        "https://www.fifaindex.com/player/1075/alessandro-del-piero/fifa05/",
+        "https://www.fifaindex.com/player/1075/alessandro-del-piero/fifa06/",
+        "https://www.fifaindex.com/player/1075/alessandro-del-piero/fifa07/"
+      ]
+    },
+    {
+      "canonical_player_id": "alessandro-nesta",
+      "editions": [
+        "FIFA 05",
+        "FIFA 06",
+        "FIFA 07"
+      ],
+      "fifaindex_id": "1088",
+      "mapping_status": "inherited_v1_not_reverified",
+      "record_ids": [
+        "fifaindex-1088-05",
+        "fifaindex-1088-06",
+        "fifaindex-1088-07"
+      ],
+      "source_urls": [
+        "https://www.fifaindex.com/player/1088/alessandro-nesta/fifa05/",
+        "https://www.fifaindex.com/player/1088/alessandro-nesta/fifa06/",
+        "https://www.fifaindex.com/player/1088/alessandro-nesta/fifa07/"
+      ]
+    },
+    {
+      "canonical_player_id": "ashley-cole",
+      "editions": [
+        "FIFA 05",
+        "FIFA 06",
+        "FIFA 07"
+      ],
+      "fifaindex_id": "34079",
+      "mapping_status": "inherited_v1_not_reverified",
+      "record_ids": [
+        "fifaindex-34079-05",
+        "fifaindex-34079-06",
+        "fifaindex-34079-07"
+      ],
+      "source_urls": [
+        "https://www.fifaindex.com/player/34079/ashley-cole/fifa05/",
+        "https://www.fifaindex.com/player/34079/ashley-cole/fifa06/",
+        "https://www.fifaindex.com/player/34079/ashley-cole/fifa07/"
+      ]
+    },
+    {
+      "canonical_player_id": "cafu",
+      "editions": [
+        "FIFA 05",
+        "FIFA 06",
+        "FIFA 07"
+      ],
+      "fifaindex_id": "5003",
+      "mapping_status": "inherited_v1_not_reverified",
+      "record_ids": [
+        "fifaindex-5003-05",
+        "fifaindex-5003-06",
+        "fifaindex-5003-07"
+      ],
+      "source_urls": [
+        "https://www.fifaindex.com/player/5003/caf%C3%BA/fifa05/",
+        "https://www.fifaindex.com/player/5003/cafu/fifa06/",
+        "https://www.fifaindex.com/player/5003/cafu/fifa07/"
+      ]
+    },
+    {
+      "canonical_player_id": "claude-makelele",
+      "editions": [
+        "FIFA 05",
+        "FIFA 06",
+        "FIFA 07"
+      ],
+      "fifaindex_id": "1668",
+      "mapping_status": "inherited_v1_not_reverified",
+      "record_ids": [
+        "fifaindex-1668-05",
+        "fifaindex-1668-06",
+        "fifaindex-1668-07"
+      ],
+      "source_urls": [
+        "https://www.fifaindex.com/player/1668/claude-mak%C3%A9lel%C3%A9/fifa05/",
+        "https://www.fifaindex.com/player/1668/claude-mak%C3%A9lel%C3%A9/fifa06/",
+        "https://www.fifaindex.com/player/1668/claude-mak%C3%A9lel%C3%A9/fifa07/"
+      ]
+    },
+    {
+      "canonical_player_id": "dennis-bergkamp",
+      "editions": [
+        "FIFA 05",
+        "FIFA 06"
+      ],
+      "fifaindex_id": "4000",
+      "mapping_status": "inherited_v1_not_reverified",
+      "record_ids": [
+        "fifaindex-4000-05",
+        "fifaindex-4000-06"
+      ],
+      "source_urls": [
+        "https://www.fifaindex.com/player/4000/dennis-bergkamp/fifa05/",
+        "https://www.fifaindex.com/player/4000/dennis-bergkamp/fifa06/"
+      ]
+    },
+    {
+      "canonical_player_id": "gianluigi-buffon",
+      "editions": [
+        "FIFA 05",
+        "FIFA 06",
+        "FIFA 07"
+      ],
+      "fifaindex_id": "1179",
+      "mapping_status": "inherited_v1_not_reverified",
+      "record_ids": [
+        "fifaindex-1179-05",
+        "fifaindex-1179-06",
+        "fifaindex-1179-07"
+      ],
+      "source_urls": [
+        "https://www.fifaindex.com/player/1179/gianluigi-buffon/fifa05/",
+        "https://www.fifaindex.com/player/1179/gianluigi-buffon/fifa06/",
+        "https://www.fifaindex.com/player/1179/gianluigi-buffon/fifa07/"
+      ]
+    },
+    {
+      "canonical_player_id": "iker-casillas",
+      "editions": [
+        "FIFA 05",
+        "FIFA 06",
+        "FIFA 07"
+      ],
+      "fifaindex_id": "5479",
+      "mapping_status": "inherited_v1_not_reverified",
+      "record_ids": [
+        "fifaindex-5479-05",
+        "fifaindex-5479-06",
+        "fifaindex-5479-07"
+      ],
+      "source_urls": [
+        "https://www.fifaindex.com/player/5479/casillas/fifa05/",
+        "https://www.fifaindex.com/player/5479/iker-casillas/fifa06/",
+        "https://www.fifaindex.com/player/5479/casillas/fifa07/"
+      ]
+    },
+    {
+      "canonical_player_id": "kolo-toure",
+      "editions": [
+        "FIFA 05",
+        "FIFA 06",
+        "FIFA 07"
+      ],
+      "fifaindex_id": "119152",
+      "mapping_status": "inherited_v1_not_reverified",
+      "record_ids": [
+        "fifaindex-119152-05",
+        "fifaindex-119152-06",
+        "fifaindex-119152-07"
+      ],
+      "source_urls": [
+        "https://www.fifaindex.com/player/119152/kolo-toure/fifa05/",
+        "https://www.fifaindex.com/player/119152/kolo-toure/fifa06/",
+        "https://www.fifaindex.com/player/119152/kolo-toure/fifa07/"
+      ]
+    },
+    {
+      "canonical_player_id": "patrick-vieira",
+      "editions": [
+        "FIFA 05",
+        "FIFA 06",
+        "FIFA 07"
+      ],
+      "fifaindex_id": "1419",
+      "mapping_status": "inherited_v1_not_reverified",
+      "record_ids": [
+        "fifaindex-1419-05",
+        "fifaindex-1419-06",
+        "fifaindex-1419-07"
+      ],
+      "source_urls": [
+        "https://www.fifaindex.com/player/1419/patrick-vieira/fifa05/",
+        "https://www.fifaindex.com/player/1419/patrick-vieira/fifa06/",
+        "https://www.fifaindex.com/player/1419/patrick-vieira/fifa07/"
+      ]
+    },
+    {
+      "canonical_player_id": "paul-scholes",
+      "editions": [
+        "FIFA 05",
+        "FIFA 06",
+        "FIFA 07"
+      ],
+      "fifaindex_id": "246",
+      "mapping_status": "inherited_v1_not_reverified",
+      "record_ids": [
+        "fifaindex-246-05",
+        "fifaindex-246-06",
+        "fifaindex-246-07"
+      ],
+      "source_urls": [
+        "https://www.fifaindex.com/player/246/paul-scholes/fifa05/",
+        "https://www.fifaindex.com/player/246/paul-scholes/fifa06/",
+        "https://www.fifaindex.com/player/246/paul-scholes/fifa07/"
+      ]
+    },
+    {
+      "canonical_player_id": "ricardo-carvalho",
+      "editions": [
+        "FIFA 05",
+        "FIFA 06",
+        "FIFA 07"
+      ],
+      "fifaindex_id": "3622",
+      "mapping_status": "inherited_v1_not_reverified",
+      "record_ids": [
+        "fifaindex-3622-05",
+        "fifaindex-3622-06",
+        "fifaindex-3622-07"
+      ],
+      "source_urls": [
+        "https://www.fifaindex.com/player/3622/ricardo-carvalho/fifa05/",
+        "https://www.fifaindex.com/player/3622/ricardo-carvalho/fifa06/",
+        "https://www.fifaindex.com/player/3622/ricardo-carvalho/fifa07/"
+      ]
+    },
+    {
+      "canonical_player_id": "ryan-giggs",
+      "editions": [
+        "FIFA 05",
+        "FIFA 06",
+        "FIFA 07"
+      ],
+      "fifaindex_id": "241",
+      "mapping_status": "inherited_v1_not_reverified",
+      "record_ids": [
+        "fifaindex-241-05",
+        "fifaindex-241-06",
+        "fifaindex-241-07"
+      ],
+      "source_urls": [
+        "https://www.fifaindex.com/player/241/ryan-giggs/fifa05/",
+        "https://www.fifaindex.com/player/241/ryan-giggs/fifa06/",
+        "https://www.fifaindex.com/player/241/ryan-giggs/fifa07/"
+      ]
+    },
+    {
+      "canonical_player_id": "thierry-henry",
+      "editions": [
+        "FIFA 05",
+        "FIFA 06",
+        "FIFA 07"
+      ],
+      "fifaindex_id": "1625",
+      "mapping_status": "inherited_v1_not_reverified",
+      "record_ids": [
+        "fifaindex-1625-05",
+        "fifaindex-1625-06",
+        "fifaindex-1625-07"
+      ],
+      "source_urls": [
+        "https://www.fifaindex.com/player/1625/thierry-henry/fifa05/",
+        "https://www.fifaindex.com/player/1625/thierry-henry/fifa06/",
+        "https://www.fifaindex.com/player/1625/thierry-henry/fifa07/"
+      ]
+    },
+    {
+      "canonical_player_id": "walter-samuel",
+      "editions": [
+        "FIFA 05",
+        "FIFA 06",
+        "FIFA 07"
+      ],
+      "fifaindex_id": "23461",
+      "mapping_status": "inherited_v1_not_reverified",
+      "record_ids": [
+        "fifaindex-23461-05",
+        "fifaindex-23461-06",
+        "fifaindex-23461-07"
+      ],
+      "source_urls": [
+        "https://www.fifaindex.com/player/23461/walter-adri%C3%A1n-samuel/fifa05/",
+        "https://www.fifaindex.com/player/23461/walter-adri%C3%A1n-samuel/fifa06/",
+        "https://www.fifaindex.com/player/23461/walter-adri%C3%A1n-samuel/fifa07/"
+      ]
+    }
+  ],
+  "multi_id_note": "Costinha, Emerson, Fran, Raúl and Vicente have individually supported positive IDs with unread alternatives; Roberto Carlos is resolved within its candidate set.",
+  "player_season_rows": 99,
+  "schema_version": "identity-crosswalk-v1",
+  "unique_canonical_players": 95
+}

@@ -1,0 +1,328 @@
+{
+  "cohort": {
+    "playerSeasonRows": 99,
+    "teamSeasonCount": 11,
+    "uniqueCanonicalPlayers": 95
+  },
+  "identity_confirmation": {
+    "combinedExplicitMappingPlayerSeasonRows": 80,
+    "combinedExplicitMappingRatePercent": 80.8,
+    "freshPageConfirmedPlayerSeasonRows": 64,
+    "freshPageConfirmedUniquePlayers": 61,
+    "inheritedV1NotReverifiedPlayerSeasonRows": 16,
+    "inheritedV1NotReverifiedUniquePlayers": 15,
+    "partialMultiIdGroups": 5,
+    "rejectedSingleCandidateGroups": 1,
+    "unresolvedAlternativeIds": [
+      {
+        "candidate_editions": [
+          "FIFA 06",
+          "FIFA 07"
+        ],
+        "canonical_player_id": "costinha",
+        "fifaindex_id": "157961"
+      },
+      {
+        "candidate_editions": [
+          "FIFA 06"
+        ],
+        "canonical_player_id": "costinha",
+        "fifaindex_id": "159482"
+      },
+      {
+        "candidate_editions": [
+          "FIFA 07"
+        ],
+        "canonical_player_id": "emerson",
+        "fifaindex_id": "18128"
+      },
+      {
+        "candidate_editions": [
+          "FIFA 05",
+          "FIFA 07"
+        ],
+        "canonical_player_id": "emerson",
+        "fifaindex_id": "112566"
+      },
+      {
+        "candidate_editions": [
+          "FIFA 05",
+          "FIFA 06"
+        ],
+        "canonical_player_id": "emerson",
+        "fifaindex_id": "136059"
+      },
+      {
+        "candidate_editions": [
+          "FIFA 05"
+        ],
+        "canonical_player_id": "emerson",
+        "fifaindex_id": "156665"
+      },
+      {
+        "candidate_editions": [
+          "FIFA 06",
+          "FIFA 07"
+        ],
+        "canonical_player_id": "emerson",
+        "fifaindex_id": "165477"
+      },
+      {
+        "candidate_editions": [
+          "FIFA 07"
+        ],
+        "canonical_player_id": "emerson",
+        "fifaindex_id": "177941"
+      },
+      {
+        "candidate_editions": [
+          "FIFA 06"
+        ],
+        "canonical_player_id": "fran",
+        "fifaindex_id": "145017"
+      },
+      {
+        "candidate_editions": [
+          "FIFA 07"
+        ],
+        "canonical_player_id": "fran",
+        "fifaindex_id": "145350"
+      },
+      {
+        "candidate_editions": [
+          "FIFA 05"
+        ],
+        "canonical_player_id": "fran",
+        "fifaindex_id": "146399"
+      },
+      {
+        "candidate_editions": [
+          "FIFA 05",
+          "FIFA 06"
+        ],
+        "canonical_player_id": "raul",
+        "fifaindex_id": "112508"
+      },
+      {
+        "candidate_editions": [
+          "FIFA 06"
+        ],
+        "canonical_player_id": "raul",
+        "fifaindex_id": "113710"
+      },
+      {
+        "candidate_editions": [
+          "FIFA 07"
+        ],
+        "canonical_player_id": "raul",
+        "fifaindex_id": "146453"
+      },
+      {
+        "candidate_editions": [
+          "FIFA 05"
+        ],
+        "canonical_player_id": "vicente",
+        "fifaindex_id": "113830"
+      },
+      {
+        "candidate_editions": [
+          "FIFA 06"
+        ],
+        "canonical_player_id": "vicente",
+        "fifaindex_id": "145025"
+      },
+      {
+        "candidate_editions": [
+          "FIFA 07"
+        ],
+        "canonical_player_id": "vicente",
+        "fifaindex_id": "157480"
+      }
+    ],
+    "unresolvedSingleGroups": [
+      {
+        "canonical_player_id": "damiano-tommasi",
+        "fifaindex_id": "4781",
+        "reason": "Page and modern-route retry inaccessible."
+      },
+      {
+        "canonical_player_id": "luca-marchegiani",
+        "fifaindex_id": "1079",
+        "reason": "FIFA05 and modern-route page inaccessible."
+      },
+      {
+        "canonical_player_id": "manuel-pablo",
+        "fifaindex_id": "8963",
+        "reason": "FIFA06/FIFA07 and modern-route pages inaccessible."
+      },
+      {
+        "canonical_player_id": "mista",
+        "fifaindex_id": "111016",
+        "reason": "FIFA05/FIFA06 and modern-route pages inaccessible."
+      }
+    ]
+  },
+  "nominal_edition_time_closeness": {
+    "bins": {
+      "far_5_plus": 25,
+      "mid_3_4": 22,
+      "near_1_2": 33,
+      "unavailable": 19
+    },
+    "definition": "Earliest complete FIFA 05/06/07 record retained for the identity in this package (fresh mapping) or v1 evidence (inherited mapping); inherited mappings are not refreshed from the pinned CSV, so this is not a cache-wide earliest-edition scan. Edition year minus targetSeasonYear is nominal, not the exact source snapshot date."
+  },
+  "old65_candidate_conversion": {
+    "convertedToReliableFifaRowsWithoutNewDatabaseDownload": 61,
+    "convertedUniquePlayers": 58,
+    "oldIdentityCandidateRows": 65,
+    "remainingRows": 4,
+    "remainingUniquePlayers": 4,
+    "unverifiedCandidateRawProfilePotentialRowsAmongOld65": 4
+  },
+  "per_team": {
+    "arsenal-2004": {
+      "fifaIndexFullDetailRows": 9,
+      "freshIdentityRows": 4,
+      "inheritedV1IdentityRows": 5,
+      "nominalTimeBins": {
+        "near_1_2": 9
+      },
+      "playerSeasonRows": 9,
+      "unresolvedIdentityRows": 0
+    },
+    "bayern-munich-2001": {
+      "fifaIndexFullDetailRows": 7,
+      "freshIdentityRows": 7,
+      "inheritedV1IdentityRows": 0,
+      "nominalTimeBins": {
+        "mid_3_4": 7,
+        "unavailable": 2
+      },
+      "playerSeasonRows": 9,
+      "unresolvedIdentityRows": 0
+    },
+    "deportivo-la-coruna-2000": {
+      "fifaIndexFullDetailRows": 5,
+      "freshIdentityRows": 5,
+      "inheritedV1IdentityRows": 0,
+      "nominalTimeBins": {
+        "far_5_plus": 5,
+        "unavailable": 4
+      },
+      "playerSeasonRows": 9,
+      "unresolvedIdentityRows": 1
+    },
+    "juventus-2003": {
+      "fifaIndexFullDetailRows": 9,
+      "freshIdentityRows": 7,
+      "inheritedV1IdentityRows": 2,
+      "nominalTimeBins": {
+        "near_1_2": 9
+      },
+      "playerSeasonRows": 9,
+      "unresolvedIdentityRows": 0
+    },
+    "lazio-2000": {
+      "fifaIndexFullDetailRows": 6,
+      "freshIdentityRows": 5,
+      "inheritedV1IdentityRows": 1,
+      "nominalTimeBins": {
+        "far_5_plus": 6,
+        "unavailable": 3
+      },
+      "playerSeasonRows": 9,
+      "unresolvedIdentityRows": 1
+    },
+    "manchester-united-1999": {
+      "fifaIndexFullDetailRows": 7,
+      "freshIdentityRows": 5,
+      "inheritedV1IdentityRows": 2,
+      "nominalTimeBins": {
+        "far_5_plus": 7,
+        "unavailable": 2
+      },
+      "playerSeasonRows": 9,
+      "unresolvedIdentityRows": 0
+    },
+    "parma-1999": {
+      "fifaIndexFullDetailRows": 7,
+      "freshIdentityRows": 6,
+      "inheritedV1IdentityRows": 1,
+      "nominalTimeBins": {
+        "far_5_plus": 7,
+        "unavailable": 2
+      },
+      "playerSeasonRows": 9,
+      "unresolvedIdentityRows": 0
+    },
+    "porto-2004": {
+      "fifaIndexFullDetailRows": 8,
+      "freshIdentityRows": 7,
+      "inheritedV1IdentityRows": 1,
+      "nominalTimeBins": {
+        "near_1_2": 8,
+        "unavailable": 1
+      },
+      "playerSeasonRows": 9,
+      "unresolvedIdentityRows": 0
+    },
+    "real-madrid-2002": {
+      "fifaIndexFullDetailRows": 8,
+      "freshIdentityRows": 6,
+      "inheritedV1IdentityRows": 2,
+      "nominalTimeBins": {
+        "mid_3_4": 8,
+        "unavailable": 1
+      },
+      "playerSeasonRows": 9,
+      "unresolvedIdentityRows": 0
+    },
+    "roma-2001": {
+      "fifaIndexFullDetailRows": 7,
+      "freshIdentityRows": 5,
+      "inheritedV1IdentityRows": 2,
+      "nominalTimeBins": {
+        "mid_3_4": 7,
+        "unavailable": 2
+      },
+      "playerSeasonRows": 9,
+      "unresolvedIdentityRows": 1
+    },
+    "valencia-2004": {
+      "fifaIndexFullDetailRows": 7,
+      "freshIdentityRows": 7,
+      "inheritedV1IdentityRows": 0,
+      "nominalTimeBins": {
+        "near_1_2": 7,
+        "unavailable": 2
+      },
+      "playerSeasonRows": 9,
+      "unresolvedIdentityRows": 1
+    }
+  },
+  "raw_attribute_coverage": {
+    "denominator": 99,
+    "fifaIndexFullDetailRows": 80,
+    "meaning": "Direct original FIFAIndex-attributed CSV values under a fresh page-supported ID or inherited v1 mapping. Unresolved/rejected candidate rows never count as confirmed attributes.",
+    "priorFutFullRecordRows": 3,
+    "priorOlFullProfileRows": 3,
+    "ratePercent": 80.8,
+    "uniqueCanonicalPlayersWithFullDetails": 76,
+    "unverifiedCandidateRawProfilePotentialRows": 4
+  },
+  "research_scope": "No new data source or download; no roster-membership research; no runtime/list/identity-index/ability-v2 changes.",
+  "schema_version": "identity-crosswalk-v1",
+  "source_cache": {
+    "cache_gitignored": true,
+    "expected_bytes": 62733624,
+    "expected_sha256": "90403e4a7d30e94198b4c031d805fe06f170833efcae0d738e04108bba436758",
+    "extracted_on": "2026-10-08",
+    "path": "research/cache/fifa-rating-audit/lbenz_fifa05_20_player_stats.csv",
+    "source": "lbenz730/fifa_model, FIFAIndex-attributed; not independently verified official EA data",
+    "source_record_date": "unknown; export snapshot/update vintage not exposed",
+    "source_revision": "mutable master; exact revision unresolved",
+    "url": "https://raw.githubusercontent.com/lbenz730/fifa_model/master/player_stats.csv",
+    "verified_bytes": 62733624,
+    "verified_sha256": "90403e4a7d30e94198b4c031d805fe06f170833efcae0d738e04108bba436758"
+  }
+}

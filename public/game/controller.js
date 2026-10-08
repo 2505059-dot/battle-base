@@ -44,10 +44,19 @@ import { MATCH_SIM_CONFIG } from './match/config.js';
 import { generateMatchScript } from './match/engine.js';
 import { renderCompleteZone, renderMatchZone, scrollFeedToBottom } from './match/ui.js';
 
-function syncDraftBodyScope(isDraft) {
+function syncDraftBodyScope(phaseOrIsDraft) {
     if (typeof document !== 'undefined' && document.body && document.body.classList) {
         if (typeof document.body.classList.toggle === 'function') {
-            document.body.classList.toggle('in-draft', Boolean(isDraft));
+            const phase =
+                typeof phaseOrIsDraft === 'string'
+                    ? phaseOrIsDraft
+                    : phaseOrIsDraft
+                      ? 'DRAFT'
+                      : null;
+            document.body.classList.toggle('in-draft', phase === 'DRAFT');
+            document.body.classList.toggle('in-reveal', phase === 'REVEAL');
+            document.body.classList.toggle('in-match', phase === 'MATCH');
+            document.body.classList.toggle('in-result', phase === 'RESULT');
         }
     }
 }
@@ -387,7 +396,7 @@ export function startGame(ctx) {
         reconcileDraftPreview(state, myTeam, preview);
 
         const isDraft = state.phase === 'DRAFT';
-        syncDraftBodyScope(isDraft);
+        syncDraftBodyScope(state.phase);
 
         const uiSnapshot = captureFocusAndScroll(root);
         root.replaceChildren();

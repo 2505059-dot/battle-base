@@ -65,15 +65,6 @@ function syncAboutVisibility() {
     const toggleBtn = $('help-toggle-btn');
     if (!aboutEl) return;
 
-    if (!inRoom) {
-        aboutEl.hidden = false;
-        if (toggleBtn) {
-            toggleBtn.hidden = true;
-            toggleBtn.setAttribute('aria-expanded', 'true');
-        }
-        return;
-    }
-
     aboutEl.hidden = !helpExpandedInRoom;
     if (toggleBtn) {
         toggleBtn.hidden = false;
@@ -127,6 +118,7 @@ function renderRoom() {
     list.replaceChildren();
     for (const p of players) {
         const li = document.createElement('li');
+        li.className = p.id === me ? 'bb-room-player bb-room-player--self' : 'bb-room-player';
         li.textContent = p.name + (p.id === me ? t('lobby.playerYouSuffix') : '');
         if (p.id === hostId) {
             const badge = document.createElement('span');
@@ -157,7 +149,7 @@ function renderRoom() {
     document.body.classList.toggle('in-room', inRoom);
     document.body.classList.toggle('in-game', inRoom && started);
     if (!inRoom || !started) {
-        document.body.classList.remove('in-draft');
+        document.body.classList.remove('in-draft', 'in-reveal', 'in-match', 'in-result');
     }
 }
 
@@ -186,7 +178,7 @@ function showLobby() {
     $('game-area').hidden = true;
     $('game-area').replaceChildren();
     $('lobby').hidden = false;
-    document.body.classList.remove('in-room', 'in-game', 'in-draft');
+    document.body.classList.remove('in-room', 'in-game', 'in-draft', 'in-reveal', 'in-match', 'in-result');
     syncAboutVisibility();
 }
 

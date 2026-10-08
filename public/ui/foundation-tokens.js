@@ -87,3 +87,10 @@ export function getAbilityTierClasses(score) {
   if (numeric >= 60) return ABILITY_TIER_CLASSES.standard;
   return ABILITY_TIER_CLASSES.muted;
 }
+
+export const GLOBAL_THEME_CLASSES = Object.freeze({
+  hudPanel: 'bb-hud-panel bg-panel/85 text-fg border border-panel-border/70 rounded-panel shadow-panel',
+  primaryGoldBtn: 'bb-btn-primary bg-season-gold text-canvas font-extrabold rounded-control shadow-card',
+  accentCyanBtn: 'bb-btn-accent bg-accent text-fg-on-accent font-bold rounded-control',
+});
+

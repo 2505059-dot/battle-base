@@ -7,12 +7,15 @@
   <link rel="icon" href="data:,">
   <link rel="stylesheet" href="styles/app.css">
 </head>
-<body>
+<body class="bb-theme">
   <main>
     <div class="topbar">
-      <h1 id="app-heading">Battle Base</h1>
+      <div class="topbar-brand">
+        <span class="topbar-badge">11V11 HISTORICAL DRAFT</span>
+        <h1 id="app-heading">Battle Base</h1>
+      </div>
       <div class="topbar-controls">
-        <button id="help-toggle-btn" class="help-toggle-btn secondary small" type="button" hidden aria-expanded="false">遊び方を表示</button>
+        <button id="help-toggle-btn" class="help-toggle-btn secondary small" type="button" aria-expanded="false">遊び方を表示</button>
         <div class="lang-switch">
           <label for="lang-select" id="lang-label">言語</label>
           <select id="lang-select" aria-label="Language">
@@ -25,7 +28,7 @@
     </div>
 
     <!-- この土台が何なのかの説明 -->
-    <section class="about" id="about">
+    <section class="about bb-hud-panel" id="about" hidden>
       <h2 id="about-title">これは「通信対戦ゲームの土台」です</h2>
       <p id="about-intro">スマホやパソコンで部屋に集まって、みんなで遊ぶ対戦ゲームを作るための、ひな形です。
         いま入っているサンプルは、<strong>ミニ人生ゲーム</strong>（ターン制・2〜6人）です。</p>
@@ -37,34 +40,38 @@
     </section>
 
     <!-- ロビー: 部屋を作る／部屋に入る -->
-    <section id="lobby">
-      <label><span id="name-label">名前（12文字まで）</span>
-        <input id="name" maxlength="12" placeholder="なまえ" autocomplete="off">
-      </label>
-      <div class="row">
-        <button id="create-btn">部屋を作る</button>
+    <section id="lobby" class="bb-lobby-shell bb-hud-panel">
+      <div class="bb-lobby-field">
+        <label for="name"><span id="name-label">名前（12文字まで）</span>
+          <input id="name" maxlength="12" placeholder="なまえ" autocomplete="off">
+        </label>
       </div>
-      <div class="row">
-        <input id="room-code" maxlength="4" placeholder="部屋コード（4文字）" autocomplete="off">
-        <button id="join-btn">部屋に入る</button>
+      <div class="bb-lobby-modes">
+        <div class="row bb-lobby-mode bb-lobby-mode--create">
+          <button id="create-btn" class="bb-btn-primary">部屋を作る</button>
+        </div>
+        <div class="row bb-lobby-mode bb-lobby-mode--join">
+          <input id="room-code" maxlength="4" placeholder="部屋コード（4文字）" autocomplete="off">
+          <button id="join-btn" class="bb-btn-accent">部屋に入る</button>
+        </div>
       </div>
     </section>
 
     <!-- 部屋の中: 参加者の一覧とゲーム開始 -->
-    <section id="room" hidden>
+    <section id="room" class="bb-room-shell bb-hud-panel" hidden>
       <div class="room-header-bar">
         <div class="room-code-wrap">
           <span id="room-code-label">部屋コード: </span><strong id="room-id"></strong>
           <button id="copy-btn" class="small">招待リンクをコピー</button>
         </div>
         <div class="room-actions">
-          <button id="start-btn" class="room-btn" hidden>ゲームを始める</button>
+          <button id="start-btn" class="room-btn bb-btn-primary" hidden>ゲームを始める</button>
           <button id="back-btn" class="secondary room-btn" hidden>ロビーに戻る</button>
           <button id="leave-btn" class="secondary room-btn">部屋を出る</button>
         </div>
       </div>
-      <ul id="players"></ul>
-      <p id="wait-note" class="note" hidden></p>
+      <ul id="players" class="bb-room-players"></ul>
+      <p id="wait-note" class="note bb-room-wait-note" hidden></p>
     </section>
 
     <!-- ゲームの画面（game.js がここに描く） -->

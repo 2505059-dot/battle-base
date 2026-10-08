@@ -27,6 +27,7 @@
 @import "./shared/pitch.css";
 
 /* 5. Page / View Modules */
+@import "./pages/home.css";
 @import "./pages/lobby.css";
 @import "./pages/room.css";
 @import "./pages/draft.css";

@@ -7,11 +7,12 @@
 @layer components {
   /* Global Topbar HUD */
   .topbar {
-    background: linear-gradient(180deg, rgba(11, 18, 32, 0.86) 0%, rgba(8, 13, 24, 0.90) 100%);
+    max-width: 100%;
+    background: linear-gradient(180deg, rgba(11, 18, 32, 0.88) 0%, rgba(8, 13, 24, 0.92) 100%);
     border: 1px solid rgba(148, 163, 184, 0.22);
     border-radius: 8px;
     padding: 8px 14px;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
     box-shadow: 0 8px 24px rgba(2, 6, 15, 0.45);
   }
 
@@ -22,6 +23,18 @@
     min-width: 0;
   }
 
+  body:not(.in-room):not(.in-home) .topbar-brand {
+    cursor: pointer;
+  }
+
+  .topbar-title-group {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 8px;
+    min-width: 0;
+    flex-wrap: wrap;
+  }
+
   .topbar-badge {
     display: inline-flex;
     align-items: center;
@@ -30,30 +43,85 @@
     background: rgba(245, 158, 11, 0.16);
     border: 1px solid rgba(245, 158, 11, 0.38);
     color: #fcd34d;
-    font-size: 0.66rem;
+    font-size: 0.64rem;
     font-weight: 800;
     letter-spacing: 0.08em;
     text-transform: uppercase;
     white-space: nowrap;
   }
 
-  body.in-game .topbar-badge {
+  .topbar-subtitle {
+    color: #93c5fd;
+    font-size: 0.76rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    white-space: nowrap;
+  }
+
+  body.in-game .topbar-badge,
+  body.in-game .topbar-subtitle,
+  body.in-game .topbar-guest-btn {
     display: none;
   }
 
   .topbar h1 {
     margin: 0;
-    font-size: 1.22rem;
-    font-weight: 800;
-    letter-spacing: 0.02em;
+    font-size: 1.18rem;
+    font-weight: 900;
+    letter-spacing: 0.05em;
     color: #f8fafc;
     text-shadow: 0 2px 8px rgba(2, 6, 15, 0.65);
+    white-space: nowrap;
   }
 
   .topbar-controls {
     display: inline-flex;
     align-items: center;
     gap: 8px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  .topbar-guest-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 3px 9px;
+    border-radius: 5px;
+    background: rgba(15, 25, 42, 0.88);
+    border: 1px solid rgba(56, 189, 248, 0.28);
+    color: #e2e8f0;
+    font-size: 0.76rem;
+    font-weight: 700;
+    transition: border-color 0.15s, background 0.15s;
+  }
+
+  .topbar-guest-btn:hover {
+    background: rgba(22, 36, 60, 0.94);
+    border-color: #38bdf8;
+  }
+
+  .topbar-guest-tag {
+    padding: 1px 5px;
+    border-radius: 3px;
+    background: rgba(56, 189, 248, 0.16);
+    border: 1px solid rgba(56, 189, 248, 0.36);
+    color: #7dd3fc;
+    font-size: 0.65rem;
+    font-weight: 800;
+    letter-spacing: 0.03em;
+  }
+
+  .topbar-guest-name {
+    max-width: 112px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #f8fafc;
+  }
+
+  .topbar-guest-btn.is-unset .topbar-guest-name {
+    color: #94a3b8;
   }
 
   .help-toggle-btn {
@@ -94,23 +162,157 @@
     border-color: #38bdf8;
   }
 
-  /* Shared HUD Panels: About, Lobby, and Room Waiting */
+  /* Shared HUD Guide Modal (#about) */
   section.about.bb-hud-panel {
-    background: linear-gradient(180deg, rgba(10, 17, 30, 0.88) 0%, rgba(7, 12, 22, 0.92) 100%);
-    border: 1px solid rgba(56, 189, 248, 0.26);
-    border-left: 3px solid #38bdf8;
-    border-radius: 8px;
-    padding: 14px 18px;
+    background: linear-gradient(180deg, rgba(10, 17, 30, 0.96) 0%, rgba(7, 12, 22, 0.98) 100%);
+    border: 1px solid rgba(56, 189, 248, 0.36);
+    border-top: 3px solid #f59e0b;
+    border-radius: 10px;
+    padding: 13px 18px;
     margin-bottom: 14px;
     color: #cbd5e1;
-    box-shadow: 0 12px 32px rgba(2, 6, 15, 0.52);
+    box-shadow: 0 18px 48px rgba(2, 6, 15, 0.75);
+  }
+
+  section.about.bb-hud-panel:not([hidden]) {
+    position: fixed;
+    top: 38px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: var(--z-modal);
+    width: min(860px, calc(100vw - 24px));
+    max-width: min(860px, calc(100vw - 24px));
+    max-height: calc(100dvh - 52px);
+    overflow-y: auto;
+    margin: 0;
+    box-shadow: 0 24px 64px rgba(2, 6, 15, 0.88), 0 0 0 100vmax rgba(3, 8, 18, 0.72);
+  }
+
+  .bb-guide-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 12px;
+    padding-bottom: 7px;
+    border-bottom: 1px solid rgba(148, 163, 184, 0.18);
+    margin-bottom: 8px;
+  }
+
+  .bb-guide-heading-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .bb-guide-eyebrow {
+    font-size: 0.64rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    color: #fcd34d;
+    text-transform: uppercase;
   }
 
   section.about.bb-hud-panel h2 {
     color: #f8fafc;
-    font-size: 1rem;
+    font-size: 1.02rem;
     font-weight: 800;
-    margin: 0 0 6px;
+    margin: 0;
+  }
+
+  .bb-guide-close-btn {
+    background: rgba(18, 29, 48, 0.9);
+    border: 1px solid rgba(148, 163, 184, 0.3);
+    color: #e2e8f0;
+    font-weight: 700;
+    padding: 4px 11px;
+    border-radius: 5px;
+    white-space: nowrap;
+  }
+
+  .bb-guide-close-btn:hover {
+    background: rgba(30, 44, 70, 0.96);
+    border-color: #38bdf8;
+    color: #ffffff;
+  }
+
+  .bb-guide-intro {
+    margin: 0 0 8px;
+    font-size: 0.8rem;
+    line-height: 1.42;
+    color: #dbeafe;
+  }
+
+  ul.bb-guide-summary-bar {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 6px;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 8px;
+  }
+
+  li.bb-guide-summary-item {
+    background: rgba(15, 24, 42, 0.82);
+    border: 1px solid rgba(56, 189, 248, 0.22);
+    border-radius: 6px;
+    padding: 6px 10px;
+    margin: 0;
+    font-size: 0.75rem;
+    line-height: 1.38;
+  }
+
+  ol.bb-guide-steps {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 6px;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 8px;
+  }
+
+  li.bb-guide-step {
+    background: rgba(13, 21, 36, 0.85);
+    border: 1px solid rgba(148, 163, 184, 0.18);
+    border-left: 3px solid #38bdf8;
+    border-radius: 6px;
+    padding: 6px 10px;
+    margin: 0;
+  }
+
+  li.bb-guide-step h3 {
+    margin: 0 0 2px;
+    font-size: 0.78rem;
+    font-weight: 800;
+    color: #f8fafc;
+  }
+
+  li.bb-guide-step p {
+    margin: 0;
+    font-size: 0.72rem;
+    line-height: 1.38;
+    color: #cbd5e1;
+  }
+
+  .bb-guide-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding-top: 8px;
+    border-top: 1px solid rgba(148, 163, 184, 0.18);
+  }
+
+  .bb-guide-footer-note {
+    margin: 0;
+    font-size: 0.76rem;
+    color: #fcd34d;
+    font-weight: 600;
+  }
+
+  .bb-guide-back-btn {
+    padding: 6px 16px;
+    font-size: 0.8rem;
+    white-space: nowrap;
   }
 
   section.about.bb-hud-panel strong {
@@ -123,6 +325,53 @@
     color: #38bdf8;
     padding: 1px 5px;
     border-radius: 4px;
+  }
+
+  @media (max-width: 640px) {
+    .topbar {
+      padding: 7px 10px;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+
+    .topbar-badge {
+      display: none;
+    }
+
+    .topbar h1 {
+      font-size: 1.02rem;
+    }
+
+    .topbar-subtitle {
+      font-size: 0.7rem;
+    }
+
+    .topbar-controls {
+      gap: 5px;
+    }
+
+    .topbar-guest-btn {
+      padding: 3px 7px;
+      font-size: 0.72rem;
+    }
+
+    .topbar-guest-name {
+      max-width: 78px;
+    }
+
+    .lang-switch label {
+      display: none;
+    }
+
+    ul.bb-guide-summary-bar,
+    ol.bb-guide-steps {
+      grid-template-columns: 1fr;
+    }
+
+    .bb-guide-footer {
+      flex-direction: column;
+      align-items: stretch;
+    }
   }
 
   button.bb-btn-primary,
@@ -387,4 +636,3 @@
     transition: width 160ms ease-out;
   }
 }
-

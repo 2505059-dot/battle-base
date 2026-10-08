@@ -6,6 +6,7 @@
 @layer components {
   /* Room Waiting HUD (Before Game Starts) */
   #room.bb-room-shell:not(.room--in-game) {
+    max-width: 100%;
     background: linear-gradient(180deg, rgba(10, 17, 30, 0.88) 0%, rgba(7, 12, 22, 0.92) 100%);
     border: 1px solid rgba(148, 163, 184, 0.24);
     border-top: 2px solid #38bdf8;

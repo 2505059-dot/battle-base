@@ -3,19 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Battle Base - 対戦ゲームの土台</title>
+  <title>ERA DERBY（エラ・ダービー）— 1v1 ヒストリカルサッカードラフト</title>
   <link rel="icon" href="data:,">
   <link rel="stylesheet" href="styles/app.css">
 </head>
-<body class="bb-theme">
+<body class="bb-theme in-home">
   <main>
     <div class="topbar">
-      <div class="topbar-brand">
-        <span class="topbar-badge">11V11 HISTORICAL DRAFT</span>
-        <h1 id="app-heading">Battle Base</h1>
+      <div class="topbar-brand" id="topbar-brand-home" role="button" tabindex="0">
+        <span class="topbar-badge" id="topbar-badge">EVERY ERA. ONE PITCH.</span>
+        <div class="topbar-title-group">
+          <h1 id="app-heading">ERA DERBY</h1>
+          <span id="app-subtitle" class="topbar-subtitle">エラ・ダービー</span>
+        </div>
       </div>
       <div class="topbar-controls">
-        <button id="help-toggle-btn" class="help-toggle-btn secondary small" type="button" aria-expanded="false">遊び方を表示</button>
+        <button id="topbar-guest-btn" class="topbar-guest-btn" type="button">
+          <span id="topbar-guest-tag" class="topbar-guest-tag">ゲスト</span>
+          <span id="topbar-guest-name" class="topbar-guest-name">名前未設定</span>
+        </button>
+        <button id="help-toggle-btn" class="help-toggle-btn secondary small" type="button" aria-expanded="false">遊び方</button>
         <div class="lang-switch">
           <label for="lang-select" id="lang-label">言語</label>
           <select id="lang-select" aria-label="Language">
@@ -27,20 +34,245 @@
       </div>
     </div>
 
-    <!-- この土台が何なのかの説明 -->
-    <section class="about bb-hud-panel" id="about" hidden>
-      <h2 id="about-title">これは「通信対戦ゲームの土台」です</h2>
-      <p id="about-intro">スマホやパソコンで部屋に集まって、みんなで遊ぶ対戦ゲームを作るための、ひな形です。
-        いま入っているサンプルは、<strong>ミニ人生ゲーム</strong>（ターン制・2〜6人）です。</p>
-      <ul>
-        <li><strong id="about-builtin-label">できあがっている部分:</strong> <span id="about-builtin-text">部屋を作る・入る、招待リンク、参加者の一覧、みんなの画面にデータを届ける通信</span></li>
-        <li><strong id="about-custom-label">自分たちで作る部分:</strong> <span id="about-custom-text">ゲームのルールと画面（<code>public/game.js</code>）</span></li>
+    <!-- ERA DERBY 公式ゲームガイド (HUD モーダル) -->
+    <section class="about bb-hud-panel bb-guide-modal" id="about" role="dialog" aria-modal="true" aria-labelledby="about-title" hidden>
+      <div class="bb-guide-header">
+        <div class="bb-guide-heading-wrap">
+          <span class="bb-guide-eyebrow" id="guide-badge">GAME GUIDE · 1V1 HISTORICAL DRAFT</span>
+          <h2 id="about-title">ERA DERBY · 遊び方ガイド</h2>
+        </div>
+        <button id="about-close-btn" class="bb-guide-close-btn secondary small" type="button">遊び方を閉じる</button>
+      </div>
+      <p id="about-intro" class="bb-guide-intro">
+        ERA DERBY（エラ・ダービー）は、時代を超えた名門クラブのシーズンから選手を指名し、4-3-3のドリームチームを組んで90分の試合シミュレーションで競う1v1サッカードラフトゲームです。
+      </p>
+      <ul class="bb-guide-summary-bar">
+        <li class="bb-guide-summary-item">
+          <strong id="about-builtin-label">基本モード:</strong>
+          <span id="about-builtin-text">2人ルーム対戦、ヒストリカルシーズン抽選、3種の再抽選、22人ラインナップ公開</span>
+        </li>
+        <li class="bb-guide-summary-item">
+          <strong id="about-custom-label">編成と試合:</strong>
+          <span id="about-custom-text">4-3-3フォーメーション（GK ×1 / DF ×4 / MF ×3 / FW ×3）＋ 90分実況＆スタッツシミュレーション</span>
+        </li>
       </ul>
-      <p id="about-footer">まず、サンプルをそのまま遊んでから、<code>game.js</code> のマスやイベントを増やして改造します。</p>
+      <ol class="bb-guide-steps" id="guide-steps-list">
+        <li class="bb-guide-step">
+          <h3 id="guide-step1-title">1. ERA DERBY とは</h3>
+          <p id="guide-step1-desc"></p>
+        </li>
+        <li class="bb-guide-step">
+          <h3 id="guide-step2-title">2. 部屋の作成・参加</h3>
+          <p id="guide-step2-desc"></p>
+        </li>
+        <li class="bb-guide-step">
+          <h3 id="guide-step3-title">3. 歴史的クラブシーズンの抽選 (ROLL)</h3>
+          <p id="guide-step3-desc"></p>
+        </li>
+        <li class="bb-guide-step">
+          <h3 id="guide-step4-title">4. 選手を選んで 4-3-3 に配置</h3>
+          <p id="guide-step4-desc"></p>
+        </li>
+        <li class="bb-guide-step">
+          <h3 id="guide-step5-title">5. リーグ・クラブ・シーズンの3種再抽選</h3>
+          <p id="guide-step5-desc"></p>
+        </li>
+        <li class="bb-guide-step">
+          <h3 id="guide-step6-title">6. ロックインと22人ラインナップ公開</h3>
+          <p id="guide-step6-desc"></p>
+        </li>
+        <li class="bb-guide-step">
+          <h3 id="guide-step7-title">7. 90分マッチシミュレーションの開始</h3>
+          <p id="guide-step7-desc"></p>
+        </li>
+        <li class="bb-guide-step">
+          <h3 id="guide-step8-title">8. 実況フィード・スコア・スタッツの見方</h3>
+          <p id="guide-step8-desc"></p>
+        </li>
+      </ol>
+      <div class="bb-guide-footer">
+        <p id="about-footer" class="bb-guide-footer-note">ゲームロビーで部屋を作成または参加し、2人そろったらホストが試合を開始できます。</p>
+        <button id="about-back-btn" class="bb-btn-primary bb-guide-back-btn" type="button">戻る</button>
+      </div>
     </section>
 
-    <!-- ロビー: 部屋を作る／部屋に入る -->
-    <section id="lobby" class="bb-lobby-shell bb-hud-panel">
+    <!-- ERA DERBY メインメニュー (HOME) -->
+    <section id="home" class="bb-home-shell">
+      <header class="bb-home-hero">
+        <div class="bb-home-hero-main">
+          <div class="bb-home-hero-kicker">
+            <span class="bb-home-eyebrow" id="home-eyebrow">EVERY ERA. ONE PITCH.</span>
+            <span class="bb-home-archive-tag" id="home-archive-tag">11V11 ヒストリカル・ドリームドラフト</span>
+          </div>
+          <div class="bb-home-brand-lockup">
+            <h2 class="bb-home-brand-title">ERA DERBY</h2>
+            <span class="bb-home-brand-sub" id="home-brand-sub">エラ・ダービー</span>
+          </div>
+          <p class="bb-home-hero-desc" id="home-hero-desc">
+            異なる歴史的シーズンのクラブと選手たちが時代を超え、ひとつのピッチでドリームチームを結成して激突する。
+          </p>
+        </div>
+        <div class="bb-home-hero-specs" aria-label="Game Specifications">
+          <div class="bb-home-spec-chip">
+            <strong id="home-spec1-title">1v1 DRAFT</strong>
+            <span id="home-spec1-sub">2人同時ブラインド指名</span>
+          </div>
+          <div class="bb-home-spec-chip">
+            <strong id="home-spec2-title">4-3-3 XI</strong>
+            <span id="home-spec2-sub">歴代名門イレブン編成</span>
+          </div>
+          <div class="bb-home-spec-chip">
+            <strong id="home-spec3-title">90' MATCH</strong>
+            <span id="home-spec3-sub">90分実況シミュレーション</span>
+          </div>
+        </div>
+      </header>
+
+      <div class="bb-home-grid">
+        <div class="bb-home-modes-col">
+          <!-- 主モード: ゲームロビー -->
+          <article class="bb-home-primary-card" id="home-lobby-card">
+            <div class="bb-home-card-top">
+              <span class="bb-status-pill bb-status-pill--live">
+                <span class="bb-live-dot" aria-hidden="true"></span>
+                <span id="home-lobby-live-badge">現在公開中 · 1v1 対戦</span>
+              </span>
+              <span class="bb-home-mode-code">MODE 01 // 1V1 DRAFT</span>
+            </div>
+            <div class="bb-home-primary-body">
+              <div class="bb-home-primary-copy">
+                <h3 id="home-lobby-title" class="bb-home-primary-title">ゲームロビー</h3>
+                <p id="home-lobby-sub" class="bb-home-primary-sub">1v1 ヒストリカルサッカードラフト対戦</p>
+                <p id="home-lobby-desc" class="bb-home-primary-desc">
+                  部屋を作成して招待リンクを共有するか4文字のコードで参加し、歴代クラブを抽選して4-3-3の先発メンバーを編成、90分の試合で勝負します。
+                </p>
+              </div>
+              <div class="bb-home-primary-cta">
+                <button id="enter-lobby-btn" type="button" class="bb-btn-primary bb-home-enter-btn">
+                  <span id="enter-lobby-btn-text">ゲームロビーに入る</span>
+                  <span class="bb-home-enter-arrow" aria-hidden="true">▸</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 将来モード (開発中) -->
+          <div class="bb-home-upcoming-grid">
+            <article class="bb-home-mode-card bb-home-mode-card--disabled" data-coming-soon="challenge120" tabindex="0" role="group" aria-disabled="true">
+              <div class="bb-home-card-top">
+                <span class="bb-home-mode-code">MODE 02</span>
+                <span class="bb-status-pill bb-status-pill--soon" id="home-mode-120-badge">開発中</span>
+              </div>
+              <h3 id="home-mode-120-title" class="bb-home-mode-title">12-0 チャレンジ</h3>
+              <p id="home-mode-120-desc" class="bb-home-mode-desc">
+                ドラフト編成したチームで連戦に挑み、無敗のまま12勝0敗の頂点を目指すチャレンジモード。
+              </p>
+              <button id="home-mode-120-btn" type="button" class="bb-home-mode-disabled-btn" disabled>
+                <span id="home-mode-120-btn-text">開発中</span>
+              </button>
+            </article>
+
+            <article class="bb-home-mode-card bb-home-mode-card--disabled" data-coming-soon="teamDatabase" tabindex="0" role="group" aria-disabled="true">
+              <div class="bb-home-card-top">
+                <span class="bb-home-mode-code">MODE 03</span>
+                <span class="bb-status-pill bb-status-pill--soon" id="home-mode-db-badge">開発中</span>
+              </div>
+              <h3 id="home-mode-db-title" class="bb-home-mode-title">チームデータベース</h3>
+              <p id="home-mode-db-desc" class="bb-home-mode-desc">
+                収録されている歴代クラブのシーズンロスター、選手カード、5大能力データを閲覧。
+              </p>
+              <button id="home-mode-db-btn" type="button" class="bb-home-mode-disabled-btn" disabled>
+                <span id="home-mode-db-btn-text">開発中</span>
+              </button>
+            </article>
+
+            <article class="bb-home-mode-card bb-home-mode-card--disabled" data-coming-soon="matchmaking" tabindex="0" role="group" aria-disabled="true">
+              <div class="bb-home-card-top">
+                <span class="bb-home-mode-code">MODE 04</span>
+                <span class="bb-status-pill bb-status-pill--soon" id="home-mode-mm-badge">開発中</span>
+              </div>
+              <h3 id="home-mode-mm-title" class="bb-home-mode-title">マッチメイキング</h3>
+              <p id="home-mode-mm-desc" class="bb-home-mode-desc">
+                部屋コード不要でオンラインの対戦相手を自動検索し、すぐに1v1ドラフトを開始。
+              </p>
+              <button id="home-mode-mm-btn" type="button" class="bb-home-mode-disabled-btn" disabled>
+                <span id="home-mode-mm-btn-text">開発中</span>
+              </button>
+            </article>
+          </div>
+        </div>
+
+        <!-- 右カラム: プレイヤー情報 (ゲストプロフィール) ＆ 遊び方ガイド -->
+        <aside class="bb-home-side-col">
+          <section class="bb-home-profile-card" id="home-profile-card" aria-labelledby="home-profile-title">
+            <div class="bb-home-card-top">
+              <h3 id="home-profile-title" class="bb-home-side-title">プレイヤー情報 · ゲスト</h3>
+              <span id="home-guest-badge" class="bb-status-pill bb-status-pill--guest">ゲスト</span>
+            </div>
+
+            <div class="bb-guest-current-box">
+              <div class="bb-guest-current-meta">
+                <span id="home-current-name-label" class="bb-guest-current-label">現在の名前</span>
+                <strong id="home-current-name-value" class="bb-guest-current-value">ゲスト名未設定</strong>
+              </div>
+              <button id="home-edit-name-btn" type="button" class="bb-guest-edit-btn secondary small">名前を変更</button>
+            </div>
+
+            <div class="bb-guest-editor" id="home-guest-editor">
+              <label for="home-name-input" id="home-name-guide" class="bb-guest-guide">
+                ゲスト名（12文字まで）を設定してください。ゲームロビーで自動的に使用されます：
+              </label>
+              <div class="bb-guest-input-row">
+                <input id="home-name-input" maxlength="12" placeholder="ゲスト名を入力（12文字まで）" autocomplete="off">
+                <button id="home-save-name-btn" type="button" class="bb-btn-accent bb-guest-save-btn">名前を保存</button>
+              </div>
+            </div>
+
+            <div class="bb-guest-footer">
+              <p id="home-guest-storage-note" class="bb-guest-storage-note">
+                現在はブラウザにローカル保存される簡易ゲスト状態です（登録不要で遊べます）。
+              </p>
+              <div class="bb-guest-account-row" data-coming-soon="accountLogin" tabindex="0" role="group" aria-disabled="true">
+                <div class="bb-guest-account-copy">
+                  <strong id="home-account-login-label">アカウントログイン</strong>
+                  <span id="home-account-login-desc">アカウント連携・戦績保存</span>
+                </div>
+                <button id="home-account-login-btn" type="button" class="bb-home-mode-disabled-btn bb-guest-account-btn" disabled>
+                  <span id="home-account-login-badge">開発中</span>
+                </button>
+              </div>
+            </div>
+          </section>
+
+          <section class="bb-home-guide-card" aria-labelledby="home-guide-title">
+            <div class="bb-home-card-top">
+              <h3 id="home-guide-title" class="bb-home-side-title">遊び方</h3>
+              <span id="home-guide-badge" class="bb-status-pill bb-status-pill--guide">ガイド</span>
+            </div>
+            <p id="home-guide-desc" class="bb-home-guide-desc">
+              1v1ドラフトの抽選ルール、3種の再抽選、4-3-3配置、90分マッチシミュレーションの遊び方を確認。
+            </p>
+            <button id="home-help-btn" type="button" class="bb-home-guide-btn">
+              <span id="home-help-btn-text">遊び方を見る</span>
+              <span aria-hidden="true">▸</span>
+            </button>
+          </section>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ゲームロビー: 部屋を作る／部屋に入る -->
+    <section id="lobby" class="bb-lobby-shell bb-hud-panel" hidden>
+      <div class="bb-lobby-header">
+        <div class="bb-lobby-header-copy">
+          <span class="bb-lobby-eyebrow">ERA DERBY // 1V1 ONLINE</span>
+          <h2 id="lobby-title" class="bb-lobby-title">ゲームロビー</h2>
+          <p id="lobby-subtitle" class="bb-lobby-subtitle">
+            1v1 ヒストリカルサッカードラフト — 部屋を作成して招待するか、4文字の部屋コードで参加
+          </p>
+        </div>
+        <button id="lobby-back-home-btn" type="button" class="secondary small bb-lobby-back-btn">← ホームに戻る</button>
+      </div>
       <div class="bb-lobby-field">
         <label for="name"><span id="name-label">名前（12文字まで）</span>
           <input id="name" maxlength="12" placeholder="なまえ" autocomplete="off">
@@ -48,11 +280,21 @@
       </div>
       <div class="bb-lobby-modes">
         <div class="row bb-lobby-mode bb-lobby-mode--create">
+          <div class="bb-lobby-mode-info">
+            <strong id="lobby-create-title" class="bb-lobby-mode-title">新しい部屋を作る</strong>
+            <span id="lobby-create-desc" class="bb-lobby-mode-desc">ホストとして1v1対戦ルームを作成し、4文字の部屋コードや招待リンクを友達に共有します。</span>
+          </div>
           <button id="create-btn" class="bb-btn-primary">部屋を作る</button>
         </div>
         <div class="row bb-lobby-mode bb-lobby-mode--join">
-          <input id="room-code" maxlength="4" placeholder="部屋コード（4文字）" autocomplete="off">
-          <button id="join-btn" class="bb-btn-accent">部屋に入る</button>
+          <div class="bb-lobby-mode-info">
+            <strong id="lobby-join-title" class="bb-lobby-mode-title">部屋コードで入る</strong>
+            <span id="lobby-join-desc" class="bb-lobby-mode-desc">友達から共有された4文字の部屋コードを入力してルームに参加します。</span>
+          </div>
+          <div class="bb-lobby-join-controls">
+            <input id="room-code" maxlength="4" placeholder="部屋コード（4文字）" autocomplete="off">
+            <button id="join-btn" class="bb-btn-accent">部屋に入る</button>
+          </div>
         </div>
       </div>
     </section>
@@ -74,7 +316,7 @@
       <p id="wait-note" class="note bb-room-wait-note" hidden></p>
     </section>
 
-    <!-- ゲームの画面（game.js がここに描く） -->
+    <!-- ゲームの画面 -->
     <section id="game-area" hidden></section>
 
     <p id="toast" role="status"></p>

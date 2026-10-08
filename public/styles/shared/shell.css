@@ -1,7 +1,7 @@
 /**
  * Shared Shell Module
  * Responsibility: Global viewport and body stadium background styling, application container
- * width constraints (lobby/room main vs in-game wide layout), and high-level in-game chrome.
+ * width constraints (home main menu vs lobby/room main vs in-game wide layout), and high-level in-game chrome.
  */
 @layer components {
   /* =========================================================================
@@ -9,6 +9,8 @@
    * ========================================================================= */
   body,
   body.bb-theme,
+  body.in-home,
+  body.in-lobby,
   body.in-draft,
   body.in-reveal,
   body.in-match,
@@ -31,7 +33,14 @@
     color: #e2e8f0;
   }
 
-  body:not(.in-game) main {
+  body.in-home main {
+    max-width: 1120px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 12px 18px 20px;
+  }
+
+  body:not(.in-game):not(.in-home) main {
     max-width: 780px;
     width: 100%;
     margin: 0 auto;
@@ -66,9 +75,14 @@
     margin: 0;
   }
 
+  #home[hidden],
+  #lobby[hidden],
+  #room[hidden],
+  #about[hidden],
+  #game-area[hidden],
+  #toast[hidden],
   body.in-game #room.room--in-game #players[hidden],
   body.in-game #room.room--in-game #wait-note[hidden] {
     display: none;
   }
 }
-

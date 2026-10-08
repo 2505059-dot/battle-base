@@ -1,18 +1,75 @@
 /**
- * Page Module: Lobby View
- * Responsibility: Entry screen shell (#lobby.bb-lobby-shell), user nickname & room code inputs,
- * create/join mode cards, and mobile responsive layout adaptions.
+ * Page Module: Lobby View (Game Lobby / Room Entry)
+ * Responsibility: Entry screen shell (#lobby.bb-lobby-shell), header & back-to-home navigation,
+ * user nickname & room code inputs, create/join mode cards, and mobile responsive layout adaptions.
  */
 @layer components {
-  /* Lobby Main Menu HUD */
+  /* Lobby Room Entry Shell */
   #lobby.bb-lobby-shell {
-    background: linear-gradient(180deg, rgba(10, 17, 30, 0.86) 0%, rgba(7, 12, 22, 0.92) 100%);
+    max-width: 100%;
+    background: linear-gradient(180deg, rgba(10, 17, 30, 0.88) 0%, rgba(7, 12, 22, 0.94) 100%);
     border: 1px solid rgba(148, 163, 184, 0.24);
-    border-top: 2px solid rgba(245, 158, 11, 0.72);
+    border-top: 3px solid rgba(245, 158, 11, 0.8);
     border-radius: 10px;
     padding: 20px 22px;
     margin-bottom: 14px;
     box-shadow: 0 18px 44px rgba(2, 6, 15, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  }
+
+  .bb-lobby-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 12px;
+    padding-bottom: 14px;
+    margin-bottom: 14px;
+    border-bottom: 1px solid rgba(148, 163, 184, 0.18);
+  }
+
+  .bb-lobby-header-copy {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    min-width: 0;
+  }
+
+  .bb-lobby-eyebrow {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: 0.66rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    color: #fcd34d;
+    text-transform: uppercase;
+  }
+
+  .bb-lobby-title {
+    margin: 0;
+    font-size: 1.28rem;
+    font-weight: 900;
+    color: #f8fafc;
+  }
+
+  .bb-lobby-subtitle {
+    margin: 0;
+    font-size: 0.8rem;
+    color: #94a3b8;
+  }
+
+  .bb-lobby-back-btn {
+    background: rgba(16, 26, 44, 0.88);
+    border: 1px solid rgba(148, 163, 184, 0.28);
+    color: #e2e8f0;
+    font-weight: 700;
+    padding: 6px 12px;
+    border-radius: 6px;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .bb-lobby-back-btn:hover {
+    background: rgba(24, 38, 64, 0.96);
+    border-color: #38bdf8;
+    color: #ffffff;
   }
 
   .bb-lobby-field label {
@@ -53,20 +110,40 @@
 
   .bb-lobby-modes {
     display: grid;
-    grid-template-columns: 1fr 1.3fr;
+    grid-template-columns: 1fr 1.25fr;
     gap: 12px;
     margin-top: 14px;
   }
 
   .bb-lobby-mode {
     margin: 0;
-    padding: 12px;
+    padding: 14px;
     border-radius: 8px;
     background: rgba(13, 21, 36, 0.78);
     border: 1px solid rgba(148, 163, 184, 0.18);
     display: flex;
-    align-items: center;
-    gap: 8px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 12px;
+  }
+
+  .bb-lobby-mode-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .bb-lobby-mode-title {
+    font-size: 0.92rem;
+    font-weight: 800;
+    color: #f8fafc;
+  }
+
+  .bb-lobby-mode-desc {
+    font-size: 0.76rem;
+    line-height: 1.45;
+    color: #94a3b8;
   }
 
   .bb-lobby-mode--create {
@@ -78,10 +155,29 @@
     width: 100%;
   }
 
+  .bb-lobby-join-controls {
+    display: flex;
+    align-items: stretch;
+    gap: 8px;
+  }
+
+  .bb-lobby-join-controls input#room-code {
+    flex: 1;
+    min-width: 120px;
+  }
+
   @media (max-width: 640px) {
+    .bb-lobby-header {
+      flex-direction: column;
+      align-items: stretch;
+    }
+
     .bb-lobby-modes {
       grid-template-columns: 1fr;
     }
+
+    .bb-lobby-join-controls {
+      flex-direction: column;
+    }
   }
 }
-

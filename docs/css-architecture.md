@@ -23,7 +23,8 @@ public/
     │   ├── media.css              # 跨阶段共享的媒体卡片、赛季标签 (.ol3-season-badge) 与位置标识
     │   └── pitch.css              # 跨阶段共享的球场空槽标记、figure 包装容器与角色插槽类
     └── pages/
-        ├── lobby.css              # 大厅首页外壳 (#lobby.bb-lobby-shell) 与创建/加入表单卡片
+        ├── home.css               # ERA DERBY 正式游戏主菜单 (#home.bb-home-shell)、主模式卡与游客档案面板
+        ├── lobby.css              # 游戏大厅房间入口外壳 (#lobby.bb-lobby-shell) 与创建/加入表单卡片
         ├── room.css               # 等待房间面板 (#room.bb-room-shell) 与玩家名单网格
         ├── draft.css              # 选人工作台 (Draft Workbench 3 列桌面 / 3 Tab 移动端)
         ├── reveal.css             # 阵容揭晓视图 (REVEAL 阶段 22 人对比 / 11 人单队视角)
@@ -52,7 +53,8 @@ public/
 
 | 即将开发的功能模块 | 归属样式文件 | 说明与原则 |
 | :--- | :--- | :--- |
-| **新产品首页 / 房间列表大厅** | `public/styles/pages/lobby.css` | 房间筛选器、大厅列表卡片、新手引导入口均写在 `lobby.css` 中 |
+| **ERA DERBY 游戏首页主菜单** | `public/styles/pages/home.css` | 品牌横幅、主菜单模式矩阵、游客身份档案与游戏说明入口均写在 `home.css` 中 |
+| **游戏大厅 / 房间列表大厅** | `public/styles/pages/lobby.css` | 创建/加入房间入口、后续房间筛选器、大厅列表卡片均写在 `lobby.css` 中 |
 | **房间内部设置 / 准备区 UI** | `public/styles/pages/room.css` | 房间规则配置、房主特权操作、等待位准备态样式写在 `room.css` 中 |
 | **Draft 选人台细节修复 / 交互增强** | `public/styles/pages/draft.css` | 候选卡高亮、位置槽位占位、确认抽签条动画等 Draft 专属逻辑 |
 | **REVEAL 揭晓阶段视觉微调** | `public/styles/pages/reveal.css` | 揭晓卡牌翻转、22 人同屏对位高亮属于 Reveal 阶段专用样式 |

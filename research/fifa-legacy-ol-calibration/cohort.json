@@ -1,0 +1,1610 @@
+{
+  "source": "public/data/team-seasons.js and public/data/player-identities.js",
+  "teamSeasonCount": 11,
+  "playerSeasonCount": 99,
+  "rows": [
+    {
+      "playerSeasonId": "manchester-united-1999-0",
+      "canonicalPlayerId": "peter-schmeichel",
+      "canonicalName": "Peter Schmeichel",
+      "aliases": [],
+      "fifaIndexExternalId": null,
+      "teamSeasonId": "manchester-united-1999",
+      "team": "Manchester United",
+      "targetSeasonYear": 1999,
+      "slot": 0,
+      "playerName": "Peter Schmeichel",
+      "teamPositions": [
+        "GK"
+      ],
+      "teamOverall": 92
+    },
+    {
+      "playerSeasonId": "manchester-united-1999-1",
+      "canonicalPlayerId": "jaap-stam",
+      "canonicalName": "Jaap Stam",
+      "aliases": [],
+      "fifaIndexExternalId": null,
+      "teamSeasonId": "manchester-united-1999",
+      "team": "Manchester United",
+      "targetSeasonYear": 1999,
+      "slot": 1,
+      "playerName": "Jaap Stam",
+      "teamPositions": [
+        "DF"
+      ],
+      "teamOverall": 92
+    },
+    {
+      "playerSeasonId": "manchester-united-1999-2",
+      "canonicalPlayerId": "gary-neville",
+      "canonicalName": "Gary Neville",
+      "aliases": [],
+      "fifaIndexExternalId": null,
+      "teamSeasonId": "manchester-united-1999",
+      "team": "Manchester United",
+      "targetSeasonYear": 1999,
+      "slot": 2,
+      "playerName": "Gary Neville",
+      "teamPositions": [
+        "DF"
+      ],
+      "teamOverall": 87
+    },
+    {
+      "playerSeasonId": "manchester-united-1999-3",
+      "canonicalPlayerId": "denis-irwin",
+      "canonicalName": "Denis Irwin",
+      "aliases": [],
+      "fifaIndexExternalId": null,
+      "teamSeasonId": "manchester-united-1999",
+      "team": "Manchester United",
+      "targetSeasonYear": 1999,
+      "slot": 3,
+      "playerName": "Denis Irwin",
+      "teamPositions": [
+        "DF"
+      ],
+      "teamOverall": 86
+    },
+    {
+      "playerSeasonId": "manchester-united-1999-4",
+      "canonicalPlayerId": "roy-keane",
+      "canonicalName": "Roy Keane",
+      "aliases": [],
+      "fifaIndexExternalId": null,
+      "teamSeasonId": "manchester-united-1999",
+      "team": "Manchester United",
+      "targetSeasonYear": 1999,
+      "slot": 4,
+      "playerName": "Roy Keane",
+      "teamPositions": [
+        "MF"
+      ],
+      "teamOverall": 93
+    },
+    {
+      "playerSeasonId": "manchester-united-1999-5",
+      "canonicalPlayerId": "david-beckham",
+      "canonicalName": "David Beckham",
+      "aliases": [],
+      "fifaIndexExternalId": null,
+      "teamSeasonId": "manchester-united-1999",
+      "team": "Manchester United",
+      "targetSeasonYear": 1999,
+      "slot": 5,
+      "playerName": "David Beckham",
+      "teamPositions": [
+        "MF"
+      ],
+      "teamOverall": 92
+    },
+    {
+      "playerSeasonId": "manchester-united-1999-6",
+      "canonicalPlayerId": "paul-scholes",
+      "canonicalName": "Paul Scholes",
+      "aliases": [],
+      "fifaIndexExternalId": 246,
+      "teamSeasonId": "manchester-united-1999",
+      "team": "Manchester United",
+      "targetSeasonYear": 1999,
+      "slot": 6,
+      "playerName": "Paul Scholes",
+      "teamPositions": [
+        "MF"
+      ],
+      "teamOverall": 90
+    },
+    {
+      "playerSeasonId": "manchester-united-1999-7",
+      "canonicalPlayerId": "ryan-giggs",
+      "canonicalName": "Ryan Giggs",
+      "aliases": [],
+      "fifaIndexExternalId": 241,
+      "teamSeasonId": "manchester-united-1999",
+      "team": "Manchester United",
+      "targetSeasonYear": 1999,
+      "slot": 7,
+      "playerName": "Ryan Giggs",
+      "teamPositions": [
+        "MF",
+        "FW"
+      ],
+      "teamOverall": 91
+    },
+    {
+      "playerSeasonId": "manchester-united-1999-8",
+      "canonicalPlayerId": "dwight-yorke",
+      "canonicalName": "Dwight Yorke",
+      "aliases": [],
+      "fifaIndexExternalId": null,
+      "teamSeasonId": "manchester-united-1999",
+      "team": "Manchester United",
+      "targetSeasonYear": 1999,
+      "slot": 8,
+      "playerName": "Dwight Yorke",
+      "teamPositions": [
+        "FW"
+      ],
+      "teamOverall": 89
+    },
+    {
+      "playerSeasonId": "arsenal-2004-0",
+      "canonicalPlayerId": "jens-lehmann",
+      "canonicalName": "Jens Lehmann",
+      "aliases": [],
+      "fifaIndexExternalId": null,
+      "teamSeasonId": "arsenal-2004",
+      "team": "Arsenal",
+      "targetSeasonYear": 2004,
+      "slot": 0,
+      "playerName": "Jens Lehmann",
+      "teamPositions": [
+        "GK"
+      ],
+      "teamOverall": 87
+    },
+    {
+      "playerSeasonId": "arsenal-2004-1",
+      "canonicalPlayerId": "sol-campbell",
+      "canonicalName": "Sol Campbell",
+      "aliases": [],
+      "fifaIndexExternalId": null,
+      "teamSeasonId": "arsenal-2004",
+      "team": "Arsenal",
+      "targetSeasonYear": 2004,
+      "slot": 1,
+      "playerName": "Sol Campbell",
+      "teamPositions": [
+        "DF"
+      ],
+      "teamOverall": 91
+    },
+    {
+      "playerSeasonId": "arsenal-2004-2",
+      "canonicalPlayerId": "ashley-cole",
+      "canonicalName": "Ashley Cole",
+      "aliases": [],
+      "fifaIndexExternalId": 34079,
+      "teamSeasonId": "arsenal-2004",
+      "team": "Arsenal",
+      "targetSeasonYear": 2004,
+      "slot": 2,
+      "playerName": "Ashley Cole",
+      "teamPositions": [
+        "DF"
+      ],
+      "teamOverall": 90
+    },
+    {
+      "playerSeasonId": "arsenal-2004-3",
+      "canonicalPlayerId": "kolo-toure",
+      "canonicalName": "Kolo Toure",
+      "aliases": [],
+      "fifaIndexExternalId": 119152,
+      "teamSeasonId": "arsenal-2004",
+      "team": "Arsenal",
+      "targetSeasonYear": 2004,
+      "slot": 3,
+      "playerName": "Kolo Toure",
+      "teamPositions": [
+        "MF"
+      ],
+      "teamOverall": 86
+    },
+    {
+      "playerSeasonId": "arsenal-2004-4",
+      "canonicalPlayerId": "patrick-vieira",
+      "canonicalName": "Patrick Vieira",
+      "aliases": [],
+      "fifaIndexExternalId": null,
+      "teamSeasonId": "arsenal-2004",
+      "team": "Arsenal",
+      "targetSeasonYear": 2004,
+      "slot": 4,
+      "playerName": "Patrick Vieira",
+      "teamPositions": [
+        "MF"
+      ],
+      "teamOverall": 93
+    },
+    {
+      "playerSeasonId": "arsenal-2004-5",
+      "canonicalPlayerId": "robert-pires",
+      "canonicalName": "Robert Pires",
+      "aliases": [],
+      "fifaIndexExternalId": null,
+      "teamSeasonId": "arsenal-2004",
+      "team": "Arsenal",
+      "targetSeasonYear": 2004,
+      "slot": 5,
+      "playerName": "Robert Pires",
+      "teamPositions": [
+        "MF",
+        "FW"
+      ],
+      "teamOverall": 90
+    },
+    {
+      "playerSeasonId": "arsenal-2004-6",
+      "canonicalPlayerId": "gilberto-silva",
+      "canonicalName": "Gilberto Silva",
+      "aliases": [],
+      "fifaIndexExternalId": null,
+      "teamSeasonId": "arsenal-2004",
+      "team": "Arsenal",
+      "targetSeasonYear": 2004,
+      "slot": 6,
+      "playerName": "Gilberto Silva",
+      "teamPositions": [
+        "MF"
+      ],
+      "teamOverall": 86
+    },
+    {
+      "playerSeasonId": "arsenal-2004-7",
+      "canonicalPlayerId": "thierry-henry",
+      "canonicalName": "Thierry Henry",
+      "aliases": [],
+      "fifaIndexExternalId": null,
+      "teamSeasonId": "arsenal-2004",
+      "team": "Arsenal",
+      "targetSeasonYear": 2004,
+      "slot": 7,
+      "playerName": "Thierry Henry",
+      "teamPositions": [
+        "FW"
+      ],
+      "teamOverall": 96
+    },
+    {
+      "playerSeasonId": "arsenal-2004-8",
+      "canonicalPlayerId": "dennis-bergkamp",
+      "canonicalName": "Dennis Bergkamp",
+      "aliases": [],
+      "fifaIndexExternalId": null,
+      "teamSeasonId": "arsenal-2004",
+      "team": "Arsenal",
+      "targetSeasonYear": 2004,
+      "slot": 8,
+      "playerName": "Dennis Bergkamp",
+      "teamPositions": [
+        "FW",
+        "MF"
+      ],
+      "teamOverall": 90
+    },
+    {
+      "playerSeasonId": "real-madrid-2002-0",
+      "canonicalPlayerId": "iker-casillas",
+      "canonicalName": "Iker Casillas",
+      "aliases": [],
+      "fifaIndexExternalId": 5479,
+      "teamSeasonId": "real-madrid-2002",
+      "team": "Real Madrid",
+      "targetSeasonYear": 2002,
+      "slot": 0,
+      "playerName": "Iker Casillas",
+      "teamPositions": [
+        "GK"
+      ],
+      "teamOverall": 90
+    },
+    {
+      "playerSeasonId": "real-madrid-2002-1",
+      "canonicalPlayerId": "roberto-carlos",
+      "canonicalName": "Roberto Carlos",
+      "aliases": [],
+      "fifaIndexExternalId": null,
+      "teamSeasonId": "real-madrid-2002",
+      "team": "Real Madrid",
+      "targetSeasonYear": 2002,
+      "slot": 1,
+      "playerName": "Roberto Carlos",
+      "teamPositions": [
+        "DF"
+      ],
+      "teamOverall": 93
+    },
+    {
+      "playerSeasonId": "real-madrid-2002-2",
+      "canonicalPlayerId": "fernando-hierro",
+      "canonicalName": "Fernando Hierro",
+      "aliases": [],
+      "fifaIndexExternalId": null,
+      "teamSeasonId": "real-madrid-2002",
+      "team": "Real Madrid",
+      "targetSeasonYear": 2002,
+      "slot": 2,
+      "playerName": "Fernando Hierro",
+      "teamPositions": [
+        "DF"
+      ],
+      "teamOverall": 90
+    },
+    {
+      "playerSeasonId": "real-madrid-2002-3",
+      "canonicalPlayerId": "michel-salgado",
+      "canonicalName": "Michel Salgado",
+      "aliases": [],
+      "fifaIndexExternalId": null,
+      "teamSeasonId": "real-madrid-2002",
+      "team": "Real Madrid",
+      "targetSeasonYear": 2002,
+      "slot": 3,
+      "playerName": "Michel Salgado",
+      "teamPositions": [
+        "DF"
+      ],
+      "teamOverall": 86
+    },
+    {
+      "playerSeasonId": "real-madrid-2002-4",
+      "canonicalPlayerId": "zinedine-zidane",
+      "canonicalName": "Zinedine Zidane",
+      "aliases": [],
+      "fifaIndexExternalId": null,
+      "teamSeasonId": "real-madrid-2002",
+      "team": "Real Madrid",
+      "targetSeasonYear": 2002,
+      "slot": 4,
+      "playerName": "Zinedine Zidane",
+      "teamPositions": [
+        "MF"
+      ],
+      "teamOverall": 96
+    },
+    {
+      "playerSeasonId": "real-madrid-2002-5",
+      "canonicalPlayerId": "claude-makelele",
+      "canonicalName": "Claude Makelele",
+      "aliases": [],
+      "fifaIndexExternalId": 1668,
+      "teamSeasonId": "real-madrid-2002",
+      "team": "Real Madrid",
+      "targetSeasonYear": 2002,
+      "slot": 5,
+      "playerName": "Claude Makelele",
+      "teamPositions": [
+        "MF"
+      ],
+      "teamOverall": 90
+    },
+    {
+      "playerSeasonId": "real-madrid-2002-6",
+      "canonicalPlayerId": "luis-figo",
+      "canonicalName": "Luis Figo",
+      "aliases": [],
+      "fifaIndexExternalId": null,
+      "teamSeasonId": "real-madrid-2002",
+      "team": "Real Madrid",
+      "targetSeasonYear": 2002,
+      "slot": 6,
+      "playerName": "Luis Figo",
+      "teamPositions": [
+        "MF",
+        "FW"
+      ],
+      "teamOverall": 93
+    },
+    {
+      "playerSeasonId": "real-madrid-2002-7",
+      "canonicalPlayerId": "raul",
+      "canonicalName": "Raul",
+      "aliases": [],
+      "fifaIndexExternalId": null,
+      "teamSeasonId": "real-madrid-2002",
+      "team": "Real Madrid",
+      "targetSeasonYear": 2002,
+      "slot": 7,
+      "playerName": "Raul",
+      "teamPositions": [
+        "FW"
+      ],
+      "teamOverall": 93
+    },
+    {
+      "playerSeasonId": "real-madrid-2002-8",
+      "canonicalPlayerId": "fernando-morientes",
+      "canonicalName": "Fernando Morientes",
+      "aliases": [],
+      "fifaIndexExternalId": null,
+      "teamSeasonId": "real-madrid-2002",
+      "team": "Real Madrid",
+      "targetSeasonYear": 2002,
+      "slot": 8,
+      "playerName": "Fernando Morientes",
+      "teamPositions": [
+        "FW"
+      ],
+      "teamOverall": 87
+    },
+    {
+      "playerSeasonId": "valencia-2004-0",
+      "canonicalPlayerId": "santiago-canizares",
+      "canonicalName": "Santiago Canizares",
+      "aliases": [],
+      "fifaIndexExternalId": null,
+      "teamSeasonId": "valencia-2004",
+      "team": "Valencia",
+      "targetSeasonYear": 2004,
+      "slot": 0,
+      "playerName": "Santiago Canizares",
+      "teamPositions": [
+        "GK"
+      ],
+      "teamOverall": 89
+    },
+    {
+      "playerSeasonId": "valencia-2004-1",
+      "canonicalPlayerId": "roberto-ayala",
+      "canonicalName": "Roberto Ayala",
+      "aliases": [],
+      "fifaIndexExternalId": null,
+      "teamSeasonId": "valencia-2004",
+      "team": "Valencia",
+      "targetSeasonYear": 2004,
+      "slot": 1,
+      "playerName": "Roberto Ayala",
+      "teamPositions": [
+        "DF"
+      ],
+      "teamOverall": 91
+    },
+    {
+      "playerSeasonId": "valencia-2004-2",
+      "canonicalPlayerId": "carlos-marchena",
+      "canonicalName": "Carlos Marchena",
+      "aliases": [],
+      "fifaIndexExternalId": null,
+      "teamSeasonId": "valencia-2004",
+      "team": "Valencia",
+      "targetSeasonYear": 2004,
+      "slot": 2,
+      "playerName": "Carlos Marchena",
+      "teamPositions": [
+        "DF",
+        "MF"
+      ],
+      "teamOverall": 86
+    },
+    {
+      "playerSeasonId": "valencia-2004-3",
+      "canonicalPlayerId": "amedeo-carboni",
+      "canonicalName": "Amedeo Carboni",
+      "aliases": [],
+      "fifaIndexExternalId": null,
+      "teamSeasonId": "valencia-2004",
+      "team": "Valencia",
+      "targetSeasonYear": 2004,
+      "slot": 3,
+      "playerName": "Amedeo Carboni",
+      "teamPositions": [
+        "DF"
+      ],
+      "teamOverall": 84
+    },
+    {
+      "playerSeasonId": "valencia-2004-4",
+      "canonicalPlayerId": "ruben-baraja",
+      "canonicalName": "Ruben Baraja",
+      "aliases": [],
+      "fifaIndexExternalId": null,
+      "teamSeasonId": "valencia-2004",
+      "team": "Valencia",
+      "targetSeasonYear": 2004,
+      "slot": 4,
+      "playerName": "Ruben Baraja",
+      "teamPositions": [
+        "MF"
+      ],
+      "teamOverall": 90
+    },
+    {
+      "playerSeasonId": "valencia-2004-5",
+      "canonicalPlayerId": "david-albelda",
+      "canonicalName": "David Albelda",
+      "aliases": [],
+      "fifaIndexExternalId": null,
+      "teamSeasonId": "valencia-2004",
+      "team": "Valencia",
+      "targetSeasonYear": 2004,
+      "slot": 5,
+      "playerName": "David Albelda",
+      "teamPositions": [
+        "MF"
+      ],
+      "teamOverall": 88
+    },
+    {
+      "playerSeasonId": "valencia-2004-6",
+      "canonicalPlayerId": "pablo-aimar",
+      "canonicalName": "Pablo Aimar",
+      "aliases": [],
+      "fifaIndexExternalId": null,
+      "teamSeasonId": "valencia-2004",
+      "team": "Valencia",
+      "targetSeasonYear": 2004,
+      "slot": 6,
+      "playerName": "Pablo Aimar",
+      "teamPositions": [
+        "MF",
+        "FW"
+      ],
+      "teamOverall": 89
+    },
+    {
+      "playerSeasonId": "valencia-2004-7",
+      "canonicalPlayerId": "vicente",
+      "canonicalName": "Vicente",
+      "aliases": [],
+      "fifaIndexExternalId": null,
+      "teamSeasonId": "valencia-2004",
+      "team": "Valencia",
+      "targetSeasonYear": 2004,
+      "slot": 7,
+      "playerName": "Vicente",
+      "teamPositions": [
+        "MF",
+        "FW"
+      ],
+      "teamOverall": 89
+    },
+    {
+      "playerSeasonId": "valencia-2004-8",
+      "canonicalPlayerId": "mista",
+      "canonicalName": "Mista",
+      "aliases": [],
+      "fifaIndexExternalId": null,
+      "teamSeasonId": "valencia-2004",
+      "team": "Valencia",
+      "targetSeasonYear": 2004,
+      "slot": 8,
+      "playerName": "Mista",
+      "teamPositions": [
+        "FW"
+      ],
+      "teamOverall": 86
+    },
+    {
+      "playerSeasonId": "deportivo-la-coruna-2000-0",
+      "canonicalPlayerId": "jacques-songo-o",
+      "canonicalName": "Jacques Songo'o",
+      "aliases": [],
+      "fifaIndexExternalId": null,
+      "teamSeasonId": "deportivo-la-coruna-2000",
+      "team": "Deportivo La Coruna",
+      "targetSeasonYear": 2000,
+      "slot": 0,
+      "playerName": "Jacques Songo'o",
+      "teamPositions": [
+        "GK"
+      ],
+      "teamOverall": 84
+    },
+    {
+      "playerSeasonId": "deportivo-la-coruna-2000-1",
+      "canonicalPlayerId": "noureddine-naybet",
+      "canonicalName": "Noureddine Naybet",
+      "aliases": [],
+      "fifaIndexExternalId": null,
+      "teamSeasonId": "deportivo-la-coruna-2000",
+      "team": "Deportivo La Coruna",
+      "targetSeasonYear": 2000,
+      "slot": 1,
+      "playerName": "Noureddine Naybet",
+      "teamPositions": [
+        "DF"
+      ],
+      "teamOverall": 88
+    },
+    {
+      "playerSeasonId": "deportivo-la-coruna-2000-2",
+      "canonicalPlayerId": "donato",
+      "canonicalName": "Donato",
+      "aliases": [],
+      "fifaIndexExternalId": null,
+      "teamSeasonId": "deportivo-la-coruna-2000",
+      "team": "Deportivo La Coruna",
+      "targetSeasonYear": 2000,
+      "slot": 2,
+      "playerName": "Donato",
+      "teamPositions": [
+        "MF",
+        "DF"
+      ],
+      "teamOverall": 85
+    },
+    {
+      "playerSeasonId": "deportivo-la-coruna-2000-3",
+      "canonicalPlayerId": "manuel-pablo",
+      "canonicalName": "Manuel Pablo",
+      "aliases": [],
+      "fifaIndexExternalId": null,
+      "teamSeasonId": "deportivo-la-coruna-2000",
+      "team": "Deportivo La Coruna",
+      "targetSeasonYear": 2000,
+      "slot": 3,
+      "playerName": "Manuel Pablo",
+      "teamPositions": [
+        "DF"
+      ],
+      "teamOverall": 84
+    },
+    {
+      "playerSeasonId": "deportivo-la-coruna-2000-4",
+      "canonicalPlayerId": "mauro-silva",
+      "canonicalName": "Mauro Silva",
+      "aliases": [],
+      "fifaIndexExternalId": null,
+      "teamSeasonId": "deportivo-la-coruna-2000",
+      "team": "Deportivo La Coruna",
+      "targetSeasonYear": 2000,
+      "slot": 4,
+      "playerName": "Mauro Silva",
+      "teamPositions": [
+        "MF"
+      ],
+      "teamOverall": 89
+    },
+    {
+      "playerSeasonId": "deportivo-la-coruna-2000-5",
+      "canonicalPlayerId": "djalminha",
+      "canonicalName": "Djalminha",
+      "aliases": [],
+      "fifaIndexExternalId": null,
+      "teamSeasonId": "deportivo-la-coruna-2000",
+      "team": "Deportivo La Coruna",
+      "targetSeasonYear": 2000,
+      "slot": 5,
+      "playerName": "Djalminha",
+      "teamPositions": [
+        "MF",
+        "FW"
+      ],
+      "teamOverall": 90
+    },
+    {
+      "playerSeasonId": "deportivo-la-coruna-2000-6",
+      "canonicalPlayerId": "fran",
+      "canonicalName": "Fran",
+      "aliases": [],
+      "fifaIndexExternalId": null,
+      "teamSeasonId": "deportivo-la-coruna-2000",
+      "team": "Deportivo La Coruna",
+      "targetSeasonYear": 2000,
+      "slot": 6,
+      "playerName": "Fran",
+      "teamPositions": [
+        "MF"
+      ],
+      "teamOverall": 86
+    },
+    {
+      "playerSeasonId": "deportivo-la-coruna-2000-7",
+      "canonicalPlayerId": "roy-makaay",
+      "canonicalName": "Roy Makaay",
+      "aliases": [],
+      "fifaIndexExternalId": null,
+      "teamSeasonId": "deportivo-la-coruna-2000",
+      "team": "Deportivo La Coruna",
+      "targetSeasonYear": 2000,
+      "slot": 7,
+      "playerName": "Roy Makaay",
+      "teamPositions": [
+        "FW"
+      ],
+      "teamOverall": 89
+    },
+    {
+      "playerSeasonId": "deportivo-la-coruna-2000-8",
+      "canonicalPlayerId": "pauleta",
+      "canonicalName": "Pauleta",
+      "aliases": [],
+      "fifaIndexExternalId": null,
+      "teamSeasonId": "deportivo-la-coruna-2000",
+      "team": "Deportivo La Coruna",
+      "targetSeasonYear": 2000,
+      "slot": 8,
+      "playerName": "Pauleta",
+      "teamPositions": [
+        "FW"
+      ],
+      "teamOverall": 84
+    },
+    {
+      "playerSeasonId": "juventus-2003-0",
+      "canonicalPlayerId": "gianluigi-buffon",
+      "canonicalName": "Gianluigi Buffon",
+      "aliases": [],
+      "fifaIndexExternalId": 1179,
+      "teamSeasonId": "juventus-2003",
+      "team": "Juventus",
+      "targetSeasonYear": 2003,
+      "slot": 0,
+      "playerName": "Gianluigi Buffon",
+      "teamPositions": [
+        "GK"
+      ],
+      "teamOverall": 94
+    },
+    {
+      "playerSeasonId": "juventus-2003-1",
+      "canonicalPlayerId": "lilian-thuram",
+      "canonicalName": "Lilian Thuram",
+      "aliases": [],
+      "fifaIndexExternalId": null,
+      "teamSeasonId": "juventus-2003",
+      "team": "Juventus",
+      "targetSeasonYear": 2003,
+      "slot": 1,
+      "playerName": "Lilian Thuram",
+      "teamPositions": [
+        "DF"
+      ],
+      "teamOverall": 92
+    },
+    {
+      "playerSeasonId": "juventus-2003-2",
+      "canonicalPlayerId": "ciro-ferrara",
+      "canonicalName": "Ciro Ferrara",
+      "aliases": [],
+      "fifaIndexExternalId": null,
+      "teamSeasonId": "juventus-2003",
+      "team": "Juventus",
+      "targetSeasonYear": 2003,
+      "slot": 2,
+      "playerName": "Ciro Ferrara",
+      "teamPositions": [
+        "DF"
+      ],
+      "teamOverall": 88
+    },
+    {
+      "playerSeasonId": "juventus-2003-3",
+      "canonicalPlayerId": "gianluca-zambrotta",
+      "canonicalName": "Gianluca Zambrotta",
+      "aliases": [],
+      "fifaIndexExternalId": null,
+      "teamSeasonId": "juventus-2003",
+      "team": "Juventus",
+      "targetSeasonYear": 2003,
+      "slot": 3,
+      "playerName": "Gianluca Zambrotta",
+      "teamPositions": [
+        "MF",
+        "DF"
+      ],
+      "teamOverall": 89
+    },
+    {
+      "playerSeasonId": "juventus-2003-4",
+      "canonicalPlayerId": "pavel-nedved",
+      "canonicalName": "Pavel Nedved",
+      "aliases": [],
+      "fifaIndexExternalId": null,
+      "teamSeasonId": "juventus-2003",
+      "team": "Juventus",
+      "targetSeasonYear": 2003,
+      "slot": 4,
+      "playerName": "Pavel Nedved",
+      "teamPositions": [
+        "MF",
+        "FW"
+      ],
+      "teamOverall": 94
+    },
+    {
+      "playerSeasonId": "juventus-2003-5",
+      "canonicalPlayerId": "edgar-davids",
+      "canonicalName": "Edgar Davids",
+      "aliases": [],
+      "fifaIndexExternalId": null,
+      "teamSeasonId": "juventus-2003",
+      "team": "Juventus",
+      "targetSeasonYear": 2003,
+      "slot": 5,
+      "playerName": "Edgar Davids",
+      "teamPositions": [
+        "MF"
+      ],
+      "teamOverall": 90
+    },
+    {
+      "playerSeasonId": "juventus-2003-6",
+      "canonicalPlayerId": "mauro-camoranesi",
+      "canonicalName": "Mauro Camoranesi",
+      "aliases": [],
+      "fifaIndexExternalId": null,
+      "teamSeasonId": "juventus-2003",
+      "team": "Juventus",
+      "targetSeasonYear": 2003,
+      "slot": 6,
+      "playerName": "Mauro Camoranesi",
+      "teamPositions": [
+        "MF"
+      ],
+      "teamOverall": 87
+    },
+    {
+      "playerSeasonId": "juventus-2003-7",
+      "canonicalPlayerId": "alessandro-del-piero",
+      "canonicalName": "Alessandro Del Piero",
+      "aliases": [],
+      "fifaIndexExternalId": 1075,
+      "teamSeasonId": "juventus-2003",
+      "team": "Juventus",
+      "targetSeasonYear": 2003,
+      "slot": 7,
+      "playerName": "Alessandro Del Piero",
+      "teamPositions": [
+        "FW",
+        "MF"
+      ],
+      "teamOverall": 92
+    },
+    {
+      "playerSeasonId": "juventus-2003-8",
+      "canonicalPlayerId": "david-trezeguet",
+      "canonicalName": "David Trezeguet",
+      "aliases": [],
+      "fifaIndexExternalId": null,
+      "teamSeasonId": "juventus-2003",
+      "team": "Juventus",
+      "targetSeasonYear": 2003,
+      "slot": 8,
+      "playerName": "David Trezeguet",
+      "teamPositions": [
+        "FW"
+      ],
+      "teamOverall": 90
+    },
+    {
+      "playerSeasonId": "roma-2001-0",
+      "canonicalPlayerId": "francesco-antonioli",
+      "canonicalName": "Francesco Antonioli",
+      "aliases": [],
+      "fifaIndexExternalId": null,
+      "teamSeasonId": "roma-2001",
+      "team": "Roma",
+      "targetSeasonYear": 2001,
+      "slot": 0,
+      "playerName": "Francesco Antonioli",
+      "teamPositions": [
+        "GK"
+      ],
+      "teamOverall": 82
+    },
+    {
+      "playerSeasonId": "roma-2001-1",
+      "canonicalPlayerId": "walter-samuel",
+      "canonicalName": "Walter Samuel",
+      "aliases": [],
+      "fifaIndexExternalId": 23461,
+      "teamSeasonId": "roma-2001",
+      "team": "Roma",
+      "targetSeasonYear": 2001,
+      "slot": 1,
+      "playerName": "Walter Samuel",
+      "teamPositions": [
+        "DF"
+      ],
+      "teamOverall": 90
+    },
+    {
+      "playerSeasonId": "roma-2001-2",
+      "canonicalPlayerId": "cafu",
+      "canonicalName": "Cafu",
+      "aliases": [],
+      "fifaIndexExternalId": 5003,
+      "teamSeasonId": "roma-2001",
+      "team": "Roma",
+      "targetSeasonYear": 2001,
+      "slot": 2,
+      "playerName": "Cafu",
+      "teamPositions": [
+        "DF",
+        "MF"
+      ],
+      "teamOverall": 91
+    },
+    {
+      "playerSeasonId": "roma-2001-3",
+      "canonicalPlayerId": "vincent-candela",
+      "canonicalName": "Vincent Candela",
+      "aliases": [],
+      "fifaIndexExternalId": null,
+      "teamSeasonId": "roma-2001",
+      "team": "Roma",
+      "targetSeasonYear": 2001,
+      "slot": 3,
+      "playerName": "Vincent Candela",
+      "teamPositions": [
+        "DF",
+        "MF"
+      ],
+      "teamOverall": 87
+    },
+    {
+      "playerSeasonId": "roma-2001-4",
+      "canonicalPlayerId": "damiano-tommasi",
+      "canonicalName": "Damiano Tommasi",
+      "aliases": [],
+      "fifaIndexExternalId": null,
+      "teamSeasonId": "roma-2001",
+      "team": "Roma",
+      "targetSeasonYear": 2001,
+      "slot": 4,
+      "playerName": "Damiano Tommasi",
+      "teamPositions": [
+        "MF"
+      ],
+      "teamOverall": 85
+    },
+    {
+      "playerSeasonId": "roma-2001-5",
+      "canonicalPlayerId": "emerson",
+      "canonicalName": "Emerson",
+      "aliases": [],
+      "fifaIndexExternalId": null,
+      "teamSeasonId": "roma-2001",
+      "team": "Roma",
+      "targetSeasonYear": 2001,
+      "slot": 5,
+      "playerName": "Emerson",
+      "teamPositions": [
+        "MF"
+      ],
+      "teamOverall": 88
+    },
+    {
+      "playerSeasonId": "roma-2001-6",
+      "canonicalPlayerId": "hidetoshi-nakata",
+      "canonicalName": "Hidetoshi Nakata",
+      "aliases": [],
+      "fifaIndexExternalId": null,
+      "teamSeasonId": "roma-2001",
+      "team": "Roma",
+      "targetSeasonYear": 2001,
+      "slot": 6,
+      "playerName": "Hidetoshi Nakata",
+      "teamPositions": [
+        "MF"
+      ],
+      "teamOverall": 85
+    },
+    {
+      "playerSeasonId": "roma-2001-7",
+      "canonicalPlayerId": "francesco-totti",
+      "canonicalName": "Francesco Totti",
+      "aliases": [],
+      "fifaIndexExternalId": null,
+      "teamSeasonId": "roma-2001",
+      "team": "Roma",
+      "targetSeasonYear": 2001,
+      "slot": 7,
+      "playerName": "Francesco Totti",
+      "teamPositions": [
+        "FW",
+        "MF"
+      ],
+      "teamOverall": 94
+    },
+    {
+      "playerSeasonId": "roma-2001-8",
+      "canonicalPlayerId": "gabriel-batistuta",
+      "canonicalName": "Gabriel Batistuta",
+      "aliases": [],
+      "fifaIndexExternalId": null,
+      "teamSeasonId": "roma-2001",
+      "team": "Roma",
+      "targetSeasonYear": 2001,
+      "slot": 8,
+      "playerName": "Gabriel Batistuta",
+      "teamPositions": [
+        "FW"
+      ],
+      "teamOverall": 92
+    },
+    {
+      "playerSeasonId": "lazio-2000-0",
+      "canonicalPlayerId": "luca-marchegiani",
+      "canonicalName": "Luca Marchegiani",
+      "aliases": [],
+      "fifaIndexExternalId": null,
+      "teamSeasonId": "lazio-2000",
+      "team": "Lazio",
+      "targetSeasonYear": 2000,
+      "slot": 0,
+      "playerName": "Luca Marchegiani",
+      "teamPositions": [
+        "GK"
+      ],
+      "teamOverall": 85
+    },
+    {
+      "playerSeasonId": "lazio-2000-1",
+      "canonicalPlayerId": "alessandro-nesta",
+      "canonicalName": "Alessandro Nesta",
+      "aliases": [],
+      "fifaIndexExternalId": 1088,
+      "teamSeasonId": "lazio-2000",
+      "team": "Lazio",
+      "targetSeasonYear": 2000,
+      "slot": 1,
+      "playerName": "Alessandro Nesta",
+      "teamPositions": [
+        "DF"
+      ],
+      "teamOverall": 93
+    },
+    {
+      "playerSeasonId": "lazio-2000-2",
+      "canonicalPlayerId": "sinisa-mihajlovic",
+      "canonicalName": "Sinisa Mihajlovic",
+      "aliases": [],
+      "fifaIndexExternalId": null,
+      "teamSeasonId": "lazio-2000",
+      "team": "Lazio",
+      "targetSeasonYear": 2000,
+      "slot": 2,
+      "playerName": "Sinisa Mihajlovic",
+      "teamPositions": [
+        "DF"
+      ],
+      "teamOverall": 89
+    },
+    {
+      "playerSeasonId": "lazio-2000-3",
+      "canonicalPlayerId": "giuseppe-pancaro",
+      "canonicalName": "Giuseppe Pancaro",
+      "aliases": [],
+      "fifaIndexExternalId": null,
+      "teamSeasonId": "lazio-2000",
+      "team": "Lazio",
+      "targetSeasonYear": 2000,
+      "slot": 3,
+      "playerName": "Giuseppe Pancaro",
+      "teamPositions": [
+        "DF"
+      ],
+      "teamOverall": 84
+    },
+    {
+      "playerSeasonId": "lazio-2000-4",
+      "canonicalPlayerId": "juan-sebastian-veron",
+      "canonicalName": "Juan Sebastian Veron",
+      "aliases": [],
+      "fifaIndexExternalId": null,
+      "teamSeasonId": "lazio-2000",
+      "team": "Lazio",
+      "targetSeasonYear": 2000,
+      "slot": 4,
+      "playerName": "Juan Sebastian Veron",
+      "teamPositions": [
+        "MF"
+      ],
+      "teamOverall": 92
+    },
+    {
+      "playerSeasonId": "lazio-2000-5",
+      "canonicalPlayerId": "pavel-nedved",
+      "canonicalName": "Pavel Nedved",
+      "aliases": [],
+      "fifaIndexExternalId": null,
+      "teamSeasonId": "lazio-2000",
+      "team": "Lazio",
+      "targetSeasonYear": 2000,
+      "slot": 5,
+      "playerName": "Pavel Nedved",
+      "teamPositions": [
+        "MF",
+        "FW"
+      ],
+      "teamOverall": 90
+    },
+    {
+      "playerSeasonId": "lazio-2000-6",
+      "canonicalPlayerId": "diego-simeone",
+      "canonicalName": "Diego Simeone",
+      "aliases": [],
+      "fifaIndexExternalId": null,
+      "teamSeasonId": "lazio-2000",
+      "team": "Lazio",
+      "targetSeasonYear": 2000,
+      "slot": 6,
+      "playerName": "Diego Simeone",
+      "teamPositions": [
+        "MF"
+      ],
+      "teamOverall": 88
+    },
+    {
+      "playerSeasonId": "lazio-2000-7",
+      "canonicalPlayerId": "marcelo-salas",
+      "canonicalName": "Marcelo Salas",
+      "aliases": [],
+      "fifaIndexExternalId": null,
+      "teamSeasonId": "lazio-2000",
+      "team": "Lazio",
+      "targetSeasonYear": 2000,
+      "slot": 7,
+      "playerName": "Marcelo Salas",
+      "teamPositions": [
+        "FW"
+      ],
+      "teamOverall": 89
+    },
+    {
+      "playerSeasonId": "lazio-2000-8",
+      "canonicalPlayerId": "roberto-mancini",
+      "canonicalName": "Roberto Mancini",
+      "aliases": [],
+      "fifaIndexExternalId": null,
+      "teamSeasonId": "lazio-2000",
+      "team": "Lazio",
+      "targetSeasonYear": 2000,
+      "slot": 8,
+      "playerName": "Roberto Mancini",
+      "teamPositions": [
+        "FW",
+        "MF"
+      ],
+      "teamOverall": 86
+    },
+    {
+      "playerSeasonId": "parma-1999-0",
+      "canonicalPlayerId": "gianluigi-buffon",
+      "canonicalName": "Gianluigi Buffon",
+      "aliases": [],
+      "fifaIndexExternalId": 1179,
+      "teamSeasonId": "parma-1999",
+      "team": "Parma",
+      "targetSeasonYear": 1999,
+      "slot": 0,
+      "playerName": "Gianluigi Buffon",
+      "teamPositions": [
+        "GK"
+      ],
+      "teamOverall": 90
+    },
+    {
+      "playerSeasonId": "parma-1999-1",
+      "canonicalPlayerId": "lilian-thuram",
+      "canonicalName": "Lilian Thuram",
+      "aliases": [],
+      "fifaIndexExternalId": null,
+      "teamSeasonId": "parma-1999",
+      "team": "Parma",
+      "targetSeasonYear": 1999,
+      "slot": 1,
+      "playerName": "Lilian Thuram",
+      "teamPositions": [
+        "DF"
+      ],
+      "teamOverall": 92
+    },
+    {
+      "playerSeasonId": "parma-1999-2",
+      "canonicalPlayerId": "fabio-cannavaro",
+      "canonicalName": "Fabio Cannavaro",
+      "aliases": [],
+      "fifaIndexExternalId": null,
+      "teamSeasonId": "parma-1999",
+      "team": "Parma",
+      "targetSeasonYear": 1999,
+      "slot": 2,
+      "playerName": "Fabio Cannavaro",
+      "teamPositions": [
+        "DF"
+      ],
+      "teamOverall": 91
+    },
+    {
+      "playerSeasonId": "parma-1999-3",
+      "canonicalPlayerId": "roberto-sensini",
+      "canonicalName": "Roberto Sensini",
+      "aliases": [],
+      "fifaIndexExternalId": null,
+      "teamSeasonId": "parma-1999",
+      "team": "Parma",
+      "targetSeasonYear": 1999,
+      "slot": 3,
+      "playerName": "Roberto Sensini",
+      "teamPositions": [
+        "DF",
+        "MF"
+      ],
+      "teamOverall": 86
+    },
+    {
+      "playerSeasonId": "parma-1999-4",
+      "canonicalPlayerId": "juan-sebastian-veron",
+      "canonicalName": "Juan Sebastian Veron",
+      "aliases": [],
+      "fifaIndexExternalId": null,
+      "teamSeasonId": "parma-1999",
+      "team": "Parma",
+      "targetSeasonYear": 1999,
+      "slot": 4,
+      "playerName": "Juan Sebastian Veron",
+      "teamPositions": [
+        "MF"
+      ],
+      "teamOverall": 90
+    },
+    {
+      "playerSeasonId": "parma-1999-5",
+      "canonicalPlayerId": "dino-baggio",
+      "canonicalName": "Dino Baggio",
+      "aliases": [],
+      "fifaIndexExternalId": null,
+      "teamSeasonId": "parma-1999",
+      "team": "Parma",
+      "targetSeasonYear": 1999,
+      "slot": 5,
+      "playerName": "Dino Baggio",
+      "teamPositions": [
+        "MF"
+      ],
+      "teamOverall": 86
+    },
+    {
+      "playerSeasonId": "parma-1999-6",
+      "canonicalPlayerId": "diego-fuser",
+      "canonicalName": "Diego Fuser",
+      "aliases": [],
+      "fifaIndexExternalId": null,
+      "teamSeasonId": "parma-1999",
+      "team": "Parma",
+      "targetSeasonYear": 1999,
+      "slot": 6,
+      "playerName": "Diego Fuser",
+      "teamPositions": [
+        "MF"
+      ],
+      "teamOverall": 84
+    },
+    {
+      "playerSeasonId": "parma-1999-7",
+      "canonicalPlayerId": "hernan-crespo",
+      "canonicalName": "Hernan Crespo",
+      "aliases": [],
+      "fifaIndexExternalId": null,
+      "teamSeasonId": "parma-1999",
+      "team": "Parma",
+      "targetSeasonYear": 1999,
+      "slot": 7,
+      "playerName": "Hernan Crespo",
+      "teamPositions": [
+        "FW"
+      ],
+      "teamOverall": 91
+    },
+    {
+      "playerSeasonId": "parma-1999-8",
+      "canonicalPlayerId": "enrico-chiesa",
+      "canonicalName": "Enrico Chiesa",
+      "aliases": [],
+      "fifaIndexExternalId": null,
+      "teamSeasonId": "parma-1999",
+      "team": "Parma",
+      "targetSeasonYear": 1999,
+      "slot": 8,
+      "playerName": "Enrico Chiesa",
+      "teamPositions": [
+        "FW"
+      ],
+      "teamOverall": 88
+    },
+    {
+      "playerSeasonId": "bayern-munich-2001-0",
+      "canonicalPlayerId": "oliver-kahn",
+      "canonicalName": "Oliver Kahn",
+      "aliases": [],
+      "fifaIndexExternalId": null,
+      "teamSeasonId": "bayern-munich-2001",
+      "team": "Bayern Munich",
+      "targetSeasonYear": 2001,
+      "slot": 0,
+      "playerName": "Oliver Kahn",
+      "teamPositions": [
+        "GK"
+      ],
+      "teamOverall": 94
+    },
+    {
+      "playerSeasonId": "bayern-munich-2001-1",
+      "canonicalPlayerId": "sammy-kuffour",
+      "canonicalName": "Sammy Kuffour",
+      "aliases": [],
+      "fifaIndexExternalId": null,
+      "teamSeasonId": "bayern-munich-2001",
+      "team": "Bayern Munich",
+      "targetSeasonYear": 2001,
+      "slot": 1,
+      "playerName": "Sammy Kuffour",
+      "teamPositions": [
+        "DF"
+      ],
+      "teamOverall": 86
+    },
+    {
+      "playerSeasonId": "bayern-munich-2001-2",
+      "canonicalPlayerId": "patrik-andersson",
+      "canonicalName": "Patrik Andersson",
+      "aliases": [],
+      "fifaIndexExternalId": null,
+      "teamSeasonId": "bayern-munich-2001",
+      "team": "Bayern Munich",
+      "targetSeasonYear": 2001,
+      "slot": 2,
+      "playerName": "Patrik Andersson",
+      "teamPositions": [
+        "DF"
+      ],
+      "teamOverall": 86
+    },
+    {
+      "playerSeasonId": "bayern-munich-2001-3",
+      "canonicalPlayerId": "bixente-lizarazu",
+      "canonicalName": "Bixente Lizarazu",
+      "aliases": [],
+      "fifaIndexExternalId": null,
+      "teamSeasonId": "bayern-munich-2001",
+      "team": "Bayern Munich",
+      "targetSeasonYear": 2001,
+      "slot": 3,
+      "playerName": "Bixente Lizarazu",
+      "teamPositions": [
+        "DF"
+      ],
+      "teamOverall": 90
+    },
+    {
+      "playerSeasonId": "bayern-munich-2001-4",
+      "canonicalPlayerId": "willy-sagnol",
+      "canonicalName": "Willy Sagnol",
+      "aliases": [],
+      "fifaIndexExternalId": null,
+      "teamSeasonId": "bayern-munich-2001",
+      "team": "Bayern Munich",
+      "targetSeasonYear": 2001,
+      "slot": 4,
+      "playerName": "Willy Sagnol",
+      "teamPositions": [
+        "DF"
+      ],
+      "teamOverall": 86
+    },
+    {
+      "playerSeasonId": "bayern-munich-2001-5",
+      "canonicalPlayerId": "stefan-effenberg",
+      "canonicalName": "Stefan Effenberg",
+      "aliases": [],
+      "fifaIndexExternalId": null,
+      "teamSeasonId": "bayern-munich-2001",
+      "team": "Bayern Munich",
+      "targetSeasonYear": 2001,
+      "slot": 5,
+      "playerName": "Stefan Effenberg",
+      "teamPositions": [
+        "MF"
+      ],
+      "teamOverall": 91
+    },
+    {
+      "playerSeasonId": "bayern-munich-2001-6",
+      "canonicalPlayerId": "owen-hargreaves",
+      "canonicalName": "Owen Hargreaves",
+      "aliases": [],
+      "fifaIndexExternalId": null,
+      "teamSeasonId": "bayern-munich-2001",
+      "team": "Bayern Munich",
+      "targetSeasonYear": 2001,
+      "slot": 6,
+      "playerName": "Owen Hargreaves",
+      "teamPositions": [
+        "MF"
+      ],
+      "teamOverall": 85
+    },
+    {
+      "playerSeasonId": "bayern-munich-2001-7",
+      "canonicalPlayerId": "mehmet-scholl",
+      "canonicalName": "Mehmet Scholl",
+      "aliases": [],
+      "fifaIndexExternalId": null,
+      "teamSeasonId": "bayern-munich-2001",
+      "team": "Bayern Munich",
+      "targetSeasonYear": 2001,
+      "slot": 7,
+      "playerName": "Mehmet Scholl",
+      "teamPositions": [
+        "MF",
+        "FW"
+      ],
+      "teamOverall": 89
+    },
+    {
+      "playerSeasonId": "bayern-munich-2001-8",
+      "canonicalPlayerId": "giovane-elber",
+      "canonicalName": "Giovane Elber",
+      "aliases": [],
+      "fifaIndexExternalId": null,
+      "teamSeasonId": "bayern-munich-2001",
+      "team": "Bayern Munich",
+      "targetSeasonYear": 2001,
+      "slot": 8,
+      "playerName": "Giovane Elber",
+      "teamPositions": [
+        "FW"
+      ],
+      "teamOverall": 90
+    },
+    {
+      "playerSeasonId": "porto-2004-0",
+      "canonicalPlayerId": "vitor-baia",
+      "canonicalName": "Vitor Baia",
+      "aliases": [],
+      "fifaIndexExternalId": null,
+      "teamSeasonId": "porto-2004",
+      "team": "Porto",
+      "targetSeasonYear": 2004,
+      "slot": 0,
+      "playerName": "Vitor Baia",
+      "teamPositions": [
+        "GK"
+      ],
+      "teamOverall": 88
+    },
+    {
+      "playerSeasonId": "porto-2004-1",
+      "canonicalPlayerId": "ricardo-carvalho",
+      "canonicalName": "Ricardo Carvalho",
+      "aliases": [],
+      "fifaIndexExternalId": 3622,
+      "teamSeasonId": "porto-2004",
+      "team": "Porto",
+      "targetSeasonYear": 2004,
+      "slot": 1,
+      "playerName": "Ricardo Carvalho",
+      "teamPositions": [
+        "DF"
+      ],
+      "teamOverall": 91
+    },
+    {
+      "playerSeasonId": "porto-2004-2",
+      "canonicalPlayerId": "jorge-costa",
+      "canonicalName": "Jorge Costa",
+      "aliases": [],
+      "fifaIndexExternalId": null,
+      "teamSeasonId": "porto-2004",
+      "team": "Porto",
+      "targetSeasonYear": 2004,
+      "slot": 2,
+      "playerName": "Jorge Costa",
+      "teamPositions": [
+        "DF"
+      ],
+      "teamOverall": 86
+    },
+    {
+      "playerSeasonId": "porto-2004-3",
+      "canonicalPlayerId": "paulo-ferreira",
+      "canonicalName": "Paulo Ferreira",
+      "aliases": [],
+      "fifaIndexExternalId": null,
+      "teamSeasonId": "porto-2004",
+      "team": "Porto",
+      "targetSeasonYear": 2004,
+      "slot": 3,
+      "playerName": "Paulo Ferreira",
+      "teamPositions": [
+        "DF"
+      ],
+      "teamOverall": 86
+    },
+    {
+      "playerSeasonId": "porto-2004-4",
+      "canonicalPlayerId": "costinha",
+      "canonicalName": "Costinha",
+      "aliases": [],
+      "fifaIndexExternalId": null,
+      "teamSeasonId": "porto-2004",
+      "team": "Porto",
+      "targetSeasonYear": 2004,
+      "slot": 4,
+      "playerName": "Costinha",
+      "teamPositions": [
+        "MF"
+      ],
+      "teamOverall": 87
+    },
+    {
+      "playerSeasonId": "porto-2004-5",
+      "canonicalPlayerId": "maniche",
+      "canonicalName": "Maniche",
+      "aliases": [],
+      "fifaIndexExternalId": null,
+      "teamSeasonId": "porto-2004",
+      "team": "Porto",
+      "targetSeasonYear": 2004,
+      "slot": 5,
+      "playerName": "Maniche",
+      "teamPositions": [
+        "MF"
+      ],
+      "teamOverall": 88
+    },
+    {
+      "playerSeasonId": "porto-2004-6",
+      "canonicalPlayerId": "deco",
+      "canonicalName": "Deco",
+      "aliases": [],
+      "fifaIndexExternalId": null,
+      "teamSeasonId": "porto-2004",
+      "team": "Porto",
+      "targetSeasonYear": 2004,
+      "slot": 6,
+      "playerName": "Deco",
+      "teamPositions": [
+        "MF"
+      ],
+      "teamOverall": 93
+    },
+    {
+      "playerSeasonId": "porto-2004-7",
+      "canonicalPlayerId": "benni-mccarthy",
+      "canonicalName": "Benni McCarthy",
+      "aliases": [],
+      "fifaIndexExternalId": null,
+      "teamSeasonId": "porto-2004",
+      "team": "Porto",
+      "targetSeasonYear": 2004,
+      "slot": 7,
+      "playerName": "Benni McCarthy",
+      "teamPositions": [
+        "FW"
+      ],
+      "teamOverall": 87
+    },
+    {
+      "playerSeasonId": "porto-2004-8",
+      "canonicalPlayerId": "derlei",
+      "canonicalName": "Derlei",
+      "aliases": [],
+      "fifaIndexExternalId": null,
+      "teamSeasonId": "porto-2004",
+      "team": "Porto",
+      "targetSeasonYear": 2004,
+      "slot": 8,
+      "playerName": "Derlei",
+      "teamPositions": [
+        "FW"
+      ],
+      "teamOverall": 85
+    }
+  ]
+}

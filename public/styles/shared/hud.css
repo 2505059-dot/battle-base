@@ -1,0 +1,378 @@
+@layer components {
+  /* Global Topbar HUD */
+  .topbar {
+    background: linear-gradient(180deg, rgba(11, 18, 32, 0.86) 0%, rgba(8, 13, 24, 0.90) 100%);
+    border: 1px solid rgba(148, 163, 184, 0.22);
+    border-radius: 8px;
+    padding: 8px 14px;
+    margin-bottom: 12px;
+    box-shadow: 0 8px 24px rgba(2, 6, 15, 0.45);
+  }
+
+  .topbar-brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    min-width: 0;
+  }
+
+  .topbar-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 2px 7px;
+    border-radius: 4px;
+    background: rgba(245, 158, 11, 0.16);
+    border: 1px solid rgba(245, 158, 11, 0.38);
+    color: #fcd34d;
+    font-size: 0.66rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+
+  body.in-game .topbar-badge {
+    display: none;
+  }
+
+  .topbar h1 {
+    margin: 0;
+    font-size: 1.22rem;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+    color: #f8fafc;
+    text-shadow: 0 2px 8px rgba(2, 6, 15, 0.65);
+  }
+
+  .topbar-controls {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .help-toggle-btn {
+    background: rgba(15, 25, 42, 0.85);
+    border: 1px solid rgba(148, 163, 184, 0.26);
+    color: #e2e8f0;
+    border-radius: 5px;
+    padding: 4px 10px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    transition: border-color 0.15s, background 0.15s;
+  }
+
+  .help-toggle-btn:hover {
+    background: rgba(24, 38, 64, 0.92);
+    border-color: #38bdf8;
+    color: #ffffff;
+  }
+
+  .lang-switch {
+    color: #94a3b8;
+    font-size: 0.78rem;
+    font-weight: 600;
+  }
+
+  .lang-switch select {
+    background: rgba(15, 25, 42, 0.88);
+    border: 1px solid rgba(148, 163, 184, 0.26);
+    color: #f8fafc;
+    border-radius: 5px;
+    padding: 3px 8px;
+    font-size: 0.78rem;
+    font-weight: 600;
+  }
+
+  .lang-switch select:focus {
+    outline: none;
+    border-color: #38bdf8;
+  }
+
+  /* Shared HUD Panels: About, Lobby, and Room Waiting */
+  section.about.bb-hud-panel {
+    background: linear-gradient(180deg, rgba(10, 17, 30, 0.88) 0%, rgba(7, 12, 22, 0.92) 100%);
+    border: 1px solid rgba(56, 189, 248, 0.26);
+    border-left: 3px solid #38bdf8;
+    border-radius: 8px;
+    padding: 14px 18px;
+    margin-bottom: 14px;
+    color: #cbd5e1;
+    box-shadow: 0 12px 32px rgba(2, 6, 15, 0.52);
+  }
+
+  section.about.bb-hud-panel h2 {
+    color: #f8fafc;
+    font-size: 1rem;
+    font-weight: 800;
+    margin: 0 0 6px;
+  }
+
+  section.about.bb-hud-panel strong {
+    color: #fcd34d;
+  }
+
+  section.about.bb-hud-panel code {
+    background: rgba(15, 25, 42, 0.9);
+    border: 1px solid rgba(148, 163, 184, 0.22);
+    color: #38bdf8;
+    padding: 1px 5px;
+    border-radius: 4px;
+  }
+
+
+  button.bb-btn-primary,
+  #lobby button#create-btn,
+  #room button#start-btn {
+    background: linear-gradient(180deg, #fde047 0%, #f59e0b 52%, #d97706 100%);
+    border: 1px solid #fef08a;
+    color: #090d16;
+    font-weight: 800;
+    letter-spacing: 0.03em;
+    border-radius: 6px;
+    padding: 10px 16px;
+    box-shadow: 0 4px 14px rgba(245, 158, 11, 0.28);
+    transition: filter 0.12s, transform 0.1s;
+  }
+
+  button.bb-btn-primary:hover:not(:disabled),
+  #lobby button#create-btn:hover:not(:disabled),
+  #room button#start-btn:hover:not(:disabled) {
+    filter: brightness(1.06);
+  }
+
+  button.bb-btn-primary:disabled,
+  #room button#start-btn:disabled {
+    background: rgba(24, 34, 52, 0.72);
+    border-color: rgba(148, 163, 184, 0.18);
+    color: #64748b;
+    box-shadow: none;
+    opacity: 1;
+  }
+
+  button.bb-btn-accent,
+  #lobby button#join-btn {
+    background: linear-gradient(180deg, #38bdf8 0%, #0284c7 100%);
+    border: 1px solid #7dd3fc;
+    color: #061320;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+    border-radius: 6px;
+    padding: 10px 16px;
+    white-space: nowrap;
+    box-shadow: 0 4px 12px rgba(14, 165, 233, 0.24);
+  }
+
+  button.bb-btn-accent:hover:not(:disabled),
+  #lobby button#join-btn:hover:not(:disabled) {
+    filter: brightness(1.08);
+  }
+
+  /* Global Toast Notification HUD */
+  #toast {
+    position: fixed;
+    bottom: 14px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: var(--z-toast);
+    margin: 0;
+    padding: 6px 14px;
+    min-height: 0;
+    background: rgba(12, 20, 34, 0.94);
+    border: 1px solid rgba(245, 158, 11, 0.55);
+    border-radius: 6px;
+    color: #fef08a;
+    font-size: 0.84rem;
+    font-weight: 700;
+    box-shadow: 0 8px 24px rgba(2, 6, 15, 0.6);
+    pointer-events: none;
+  }
+
+  #toast:empty {
+    display: none;
+  }
+
+  .fd-header {
+    background: rgba(9, 15, 26, 0.82);
+    border: 1px solid rgba(148, 163, 184, 0.2);
+    border-radius: 7px;
+    box-shadow: 0 8px 24px rgba(2, 6, 15, 0.42);
+  }
+
+  .fd-team-panel:not(.ol3-pitch-stage-panel) {
+    background: linear-gradient(180deg, rgba(9, 15, 26, 0.84) 0%, rgba(7, 11, 20, 0.88) 100%);
+    border: 1px solid rgba(148, 163, 184, 0.18);
+    border-radius: 7px;
+    box-shadow: 0 8px 24px rgba(2, 6, 15, 0.45);
+  }
+
+  .fd-log {
+    background: rgba(11, 18, 31, 0.82);
+    border: 1px solid rgba(148, 163, 184, 0.18);
+  }
+
+  /* =========================================================================
+   * 3. Right Column: Historical Player Archive & Ability Inspector
+   * ========================================================================= */
+  .dw-inspector {
+    flex: 1;
+    min-height: 0;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    padding: 8px 10px;
+    gap: 8px;
+  }
+
+  .dw-inspector-head {
+    flex-shrink: 0;
+    padding: 2px 2px 6px;
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid rgba(148, 163, 184, 0.16);
+    border-radius: 0;
+  }
+
+  .dw-inspector-body {
+    flex: 1;
+    min-height: 0;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .dw-inspector-empty {
+    flex: 1;
+    min-height: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 8px;
+    padding: 16px 12px;
+    background: rgba(13, 20, 34, 0.55);
+    border: 1px dashed rgba(148, 163, 184, 0.22);
+    border-radius: 6px;
+  }
+
+  .dw-inspector-empty-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 999px;
+    background: rgba(20, 32, 52, 0.8);
+    border: 1px solid rgba(148, 163, 184, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.95rem;
+  }
+
+  .dw-inspector-empty-title {
+    font-size: 0.88rem;
+    font-weight: 700;
+    color: var(--color-fg);
+  }
+
+  .dw-inspector-empty-guide {
+    margin: 0;
+    font-size: 0.76rem;
+    line-height: 1.45;
+    color: var(--color-fg-muted);
+  }
+
+  .dw-inspector-steps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 4px;
+  }
+
+  .dw-step-pill {
+    font-size: 0.68rem;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 4px;
+    background: rgba(20, 32, 52, 0.78);
+    border: 1px solid rgba(148, 163, 184, 0.2);
+    color: #cbd5e1;
+  }
+
+  /* Clean Flat Inspector Sections (no nested Russian-doll boxes) */
+  .dw-inspector-section {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 8px 0 2px;
+    background: transparent;
+    border: 0;
+    border-top: 1px solid rgba(148, 163, 184, 0.14);
+    border-radius: 0;
+    flex-shrink: 0;
+  }
+
+  .dw-inspector-section-title {
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    color: #94a3b8;
+    background: transparent;
+    border: 0;
+    padding: 0;
+    text-transform: uppercase;
+  }
+
+  /* Ability Breakdown Rows (Clean Minimal Bars without Individual Card Boxes) */
+  .dw-inspector-stats-list {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+  }
+
+  .dw-inspector-stat-row {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    padding: 0;
+    background: transparent;
+    border: 0;
+  }
+
+  .dw-inspector-stat-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.76rem;
+  }
+
+  .dw-inspector-stat-label {
+    color: #cbd5e1;
+    font-weight: 600;
+  }
+
+  .dw-inspector-stat-val {
+    font-size: 0.84rem;
+    font-weight: 800;
+    color: #f8fafc;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .dw-inspector-stat-track {
+    height: 5px;
+    width: 100%;
+    border-radius: 999px;
+    background: rgba(15, 23, 38, 0.9);
+    overflow: hidden;
+  }
+
+  .dw-inspector-stat-fill {
+    height: 100%;
+    width: calc(var(--stat-pct, 0) * 1%);
+    border-radius: 999px;
+    background: linear-gradient(90deg, #2563eb 0%, #38bdf8 100%);
+    transition: width 160ms ease-out;
+  }
+
+}

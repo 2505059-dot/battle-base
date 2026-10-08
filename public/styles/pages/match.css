@@ -1,0 +1,143 @@
+@layer components {
+  .fd-match-zone,
+  .fd-complete {
+    background: linear-gradient(180deg, rgba(9, 15, 26, 0.84) 0%, rgba(7, 11, 20, 0.88) 100%);
+    border: 1px solid rgba(148, 163, 184, 0.18);
+    border-radius: 7px;
+    box-shadow: 0 8px 24px rgba(2, 6, 15, 0.45);
+  }
+
+  .fd-scoreboard {
+    background: linear-gradient(180deg, rgba(15, 25, 42, 0.9) 0%, rgba(9, 15, 26, 0.94) 100%);
+    border: 1px solid rgba(56, 189, 248, 0.26);
+    border-top: 2px solid #facc15;
+    box-shadow: 0 8px 22px rgba(2, 6, 15, 0.45);
+  }
+
+  .fd-match-center,
+  .fd-stats-box {
+    background: rgba(11, 18, 31, 0.82);
+    border: 1px solid rgba(148, 163, 184, 0.18);
+  }
+
+  /* MATCH & RESULT Side Team Panel Pitch Inheritance */
+  body.in-match .fd-team-rerolls,
+  body.in-result .fd-team-rerolls {
+    display: none;
+  }
+
+  .fd-team-panel:not(.dw-squad-panel) .fd-pitch.ol3-pitch {
+    aspect-ratio: 651 / 1024;
+    width: min(100%, 248px);
+    height: auto;
+    margin: 0 auto;
+    padding: 14px 4px 10px;
+    border-radius: 6px;
+    background-color: #164e26;
+    background-image:
+      linear-gradient(
+        180deg,
+        rgba(3, 9, 18, 0.14) 0%,
+        rgba(3, 9, 18, 0.04) 50%,
+        rgba(3, 9, 18, 0.16) 100%
+      ),
+      url("/assets/draft-pitch-vertical.jpg");
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    box-shadow: 0 6px 18px rgba(2, 6, 15, 0.52);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .fd-team-panel:not(.dw-squad-panel) .fd-pitch-markings {
+    display: none;
+  }
+
+  .fd-team-panel:not(.dw-squad-panel) .fd-pitch-node {
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+    padding: 1px;
+    min-height: 0;
+  }
+
+  .fd-team-panel:not(.dw-squad-panel) .fd-pitch-figure {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .fd-team-panel:not(.dw-squad-panel) .fd-pitch-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: linear-gradient(180deg, #1b2c48 0%, #0a1220 100%);
+    border: 1.5px solid rgba(226, 232, 240, 0.72);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.65);
+    overflow: hidden;
+  }
+
+  .fd-team-panel:not(.dw-squad-panel) .fd-pitch-avatar--silhouette,
+  .fd-team-panel:not(.dw-squad-panel) .fd-pitch-avatar:has(.fd-player-img--silhouette),
+  .fd-team-panel:not(.dw-squad-panel) .fd-pitch-avatar:has(.fd-player-img--fallback) {
+    width: 28px;
+    height: 28px;
+    background: radial-gradient(circle at 35% 30%, #1e3a5f 0%, #0d1829 100%);
+  }
+
+  .fd-team-panel:not(.dw-squad-panel) .fd-pitch-avatar--silhouette .fd-slot-player-img,
+  .fd-team-panel:not(.dw-squad-panel) .fd-pitch-avatar .fd-player-img--silhouette,
+  .fd-team-panel:not(.dw-squad-panel) .fd-pitch-avatar .fd-player-img--fallback {
+    opacity: 0;
+    width: 1px;
+    height: 1px;
+  }
+
+  .fd-team-panel:not(.dw-squad-panel) .fd-pitch-rating {
+    position: absolute;
+    right: -4px;
+    bottom: -2px;
+    font-size: 0.60rem;
+    font-weight: 800;
+    padding: 0 3px;
+    border-radius: 3px;
+    background: rgba(7, 12, 22, 0.92);
+    color: #facc15;
+    border: 1px solid rgba(250, 204, 21, 0.45);
+  }
+
+  .fd-team-panel:not(.dw-squad-panel) .fd-pitch-figure:has(.fd-pitch-avatar--silhouette) .fd-pitch-rating,
+  .fd-team-panel:not(.dw-squad-panel) .fd-pitch-figure:has(.fd-player-img--silhouette) .fd-pitch-rating,
+  .fd-team-panel:not(.dw-squad-panel) .fd-pitch-figure:has(.fd-player-img--fallback) .fd-pitch-rating {
+    inset: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: 0;
+    color: #f8fafc;
+    font-size: 0.66rem;
+  }
+
+  .fd-team-panel:not(.dw-squad-panel) .fd-pitch-name {
+    font-size: 0.60rem;
+    font-weight: 700;
+    color: #f8fafc;
+    background: rgba(6, 11, 20, 0.85);
+    padding: 0 4px;
+    border-radius: 3px;
+    max-width: 64px;
+  }
+
+  .fd-team-panel:not(.dw-squad-panel) .fd-pitch-club-row,
+  .fd-team-panel:not(.dw-squad-panel) .fd-pitch-node-top {
+    display: none;
+  }
+
+}

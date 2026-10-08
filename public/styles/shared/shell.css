@@ -1,0 +1,70 @@
+@layer components {
+  /* =========================================================================
+   * Global Theme Foundation v1 — Night Stadium Arena & Unified Football HUD
+   * ========================================================================= */
+  body,
+  body.bb-theme,
+  body.in-draft,
+  body.in-reveal,
+  body.in-match,
+  body.in-result {
+    background-color: #060b14;
+    background-image:
+      linear-gradient(
+        180deg,
+        rgba(4, 10, 20, 0.24) 0%,
+        rgba(6, 14, 28, 0.14) 38%,
+        rgba(5, 12, 24, 0.20) 72%,
+        rgba(3, 8, 16, 0.38) 100%
+      ),
+      url("/assets/draft-stadium-bg.jpg"),
+      linear-gradient(180deg, #060c17 0%, #0a1426 42%, #081220 76%, #050a12 100%);
+    background-size: cover, cover, auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #e2e8f0;
+  }
+
+  body:not(.in-game) main {
+    max-width: 780px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 18px 16px 32px;
+  }
+
+  body.in-game main {
+    max-width: min(1680px, calc(100vw - 24px));
+    width: 100%;
+  }
+
+  body.in-game .topbar,
+  body.in-game #room,
+  body.in-game #about,
+  body.in-game #toast {
+    max-width: min(1680px, calc(100vw - 24px));
+  }
+
+
+  /* Shared In-Game Chrome & MATCH / RESULT Stadium HUD Inheritance */
+  body.in-game #room.room--in-game {
+    background: rgba(9, 15, 26, 0.78);
+    border: 1px solid rgba(148, 163, 184, 0.18);
+    border-radius: 6px;
+    padding: 4px 10px;
+    margin-bottom: 6px;
+  }
+
+  body.in-game #game-area {
+    background: transparent;
+    border: 0;
+    padding: 0;
+    margin: 0;
+  }
+
+
+  body.in-game #room.room--in-game #players[hidden],
+  body.in-game #room.room--in-game #wait-note[hidden] {
+    display: none;
+  }
+}

@@ -1,0 +1,863 @@
+@layer components {
+  /* =========================================================================
+   * REVEAL UI v1 — Full-Pitch 22 Players & Single-Team Historical Lineup
+   * ========================================================================= */
+  body.in-reveal .fd-header {
+    display: none;
+  }
+
+  .fd-main.fd-main--reveal {
+    display: block;
+    width: 100%;
+    min-height: 0;
+  }
+
+  .fd-reveal-zone.rv-root {
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+    min-height: 0;
+    text-align: left;
+  }
+
+  .rv-hidden-media,
+  .rv-sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+    pointer-events: none;
+  }
+
+  /* 1. Top Matchup Summary & Mode Switcher Bar */
+  .rv-top-bar.fd-complete-ratings {
+    display: grid;
+    grid-template-columns: minmax(240px, 1fr) minmax(320px, 1.3fr) minmax(240px, 1fr);
+    align-items: stretch;
+    gap: 10px;
+    margin: 0;
+    width: 100%;
+  }
+
+  .rv-team-summary.fd-complete-rating-card {
+    background: linear-gradient(180deg, rgba(10, 17, 30, 0.86) 0%, rgba(7, 12, 22, 0.90) 100%);
+    border: 1px solid rgba(148, 163, 184, 0.2);
+    border-radius: 7px;
+    padding: 7px 12px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    box-shadow: 0 6px 18px rgba(2, 6, 15, 0.42);
+  }
+
+  .rv-team-summary--a.fd-complete-rating-card {
+    border-left: 3px solid #38bdf8;
+  }
+
+  .rv-team-summary--b.fd-complete-rating-card {
+    border-right: 3px solid #f43f5e;
+  }
+
+  .rv-team-summary-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+  }
+
+  .rv-team-summary-title {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    min-width: 0;
+  }
+
+  .rv-team-dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.68rem;
+    font-weight: 900;
+    flex-shrink: 0;
+    line-height: 1;
+  }
+
+  .rv-team-dot--a {
+    background: linear-gradient(180deg, #38bdf8 0%, #0284c7 100%);
+    border: 1px solid #bae6fd;
+    color: #041322;
+  }
+
+  .rv-team-dot--b {
+    background: linear-gradient(180deg, #fb7185 0%, #e11d48 100%);
+    border: 1px solid #fecdd3;
+    color: #ffffff;
+  }
+
+  .rv-team-summary .fd-complete-team-name {
+    font-size: 0.88rem;
+    font-weight: 800;
+    color: #f8fafc;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0;
+  }
+
+  .rv-team-ovr-badge.fd-complete-rating-text {
+    font-size: 0.8rem;
+    font-weight: 800;
+    color: #facc15;
+    background: rgba(245, 158, 11, 0.14);
+    border: 1px solid rgba(245, 158, 11, 0.35);
+    padding: 1px 7px;
+    border-radius: 4px;
+    margin: 0;
+    white-space: nowrap;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .rv-profile-metrics.fd-profile-metrics {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin: 0;
+    justify-content: flex-start;
+  }
+
+  .rv-profile-metrics .fd-profile-chip {
+    font-size: 0.66rem;
+    font-weight: 700;
+    padding: 1px 6px;
+    border-radius: 3px;
+    background: rgba(15, 25, 42, 0.85);
+    border: 1px solid rgba(148, 163, 184, 0.2);
+    color: #cbd5e1;
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* Center Mode Control Hub */
+  .rv-control-hub {
+    background: linear-gradient(180deg, rgba(12, 20, 35, 0.88) 0%, rgba(8, 13, 24, 0.92) 100%);
+    border: 1px solid rgba(148, 163, 184, 0.22);
+    border-radius: 7px;
+    padding: 6px 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    box-shadow: 0 6px 18px rgba(2, 6, 15, 0.42);
+  }
+
+  .rv-title-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  .rv-title-row .fd-reveal-badge {
+    margin: 0;
+    padding: 1px 7px;
+    font-size: 0.64rem;
+    font-weight: 800;
+    border-radius: 4px;
+  }
+
+  .rv-title-row .fd-complete-title {
+    margin: 0;
+    font-size: 0.92rem;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+    color: #f8fafc;
+  }
+
+  .rv-title-row .fd-complete-sub {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
+  .rv-mode-tabs {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 4px;
+    width: 100%;
+    background: rgba(6, 10, 18, 0.82);
+    border: 1px solid rgba(148, 163, 184, 0.18);
+    border-radius: 5px;
+    padding: 3px;
+  }
+
+  .rv-mode-btn {
+    padding: 4px 8px;
+    font-size: 0.74rem;
+    font-weight: 700;
+    border-radius: 4px;
+    background: transparent;
+    border: 1px solid transparent;
+    color: #94a3b8;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: all 0.12s;
+  }
+
+  .rv-mode-btn:hover:not(.rv-mode-btn--active) {
+    background: rgba(20, 32, 54, 0.75);
+    color: #e2e8f0;
+  }
+
+  .rv-mode-btn--active {
+    background: linear-gradient(180deg, rgba(28, 52, 88, 0.95) 0%, rgba(18, 34, 60, 0.95) 100%);
+    border-color: #38bdf8;
+    color: #f8fafc;
+    box-shadow: 0 2px 8px rgba(14, 165, 233, 0.22);
+  }
+
+  /* 2. Main Stage Grid: Central Vertical Pitch + Right Historical Archive Inspector */
+  .rv-stage-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) clamp(316px, 27vw, 356px);
+    gap: 12px;
+    align-items: stretch;
+    min-height: 0;
+  }
+
+  .rv-pitch-stage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 0;
+    min-height: 0;
+    padding: 2px 0;
+  }
+
+  /* Vertical Full Pitch in REVEAL (651:1024 exact aspect ratio) */
+  .rv-pitch.fd-pitch.ol3-pitch {
+    position: relative;
+    aspect-ratio: 651 / 1024;
+    width: min(100%, 404px);
+    height: auto;
+    margin: 0 auto;
+    padding: 0;
+    border-radius: 8px;
+    background-color: #164e26;
+    background-image:
+      linear-gradient(
+        180deg,
+        rgba(3, 9, 18, 0.10) 0%,
+        rgba(3, 9, 18, 0.02) 50%,
+        rgba(3, 9, 18, 0.12) 100%
+      ),
+      url("/assets/draft-pitch-vertical.jpg");
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border: 1px solid rgba(255, 255, 255, 0.24);
+    box-shadow: 0 12px 34px rgba(2, 6, 15, 0.65);
+    overflow: hidden;
+  }
+
+  /* Half-Pitch Team & Attack Direction Banners (Corner-Anchored to Avoid GK Overlap) */
+  .rv-pitch-half-tag {
+    position: absolute;
+    left: 8px;
+    transform: none;
+    z-index: 2;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 2px 8px;
+    border-radius: 999px;
+    background: rgba(6, 11, 20, 0.86);
+    border: 1px solid rgba(148, 163, 184, 0.28);
+    font-size: 0.60rem;
+    font-weight: 800;
+    color: #f1f5f9;
+    white-space: nowrap;
+    pointer-events: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.55);
+  }
+
+  .rv-pitch-half-tag--b {
+    top: 6px;
+    bottom: auto;
+    border-color: rgba(244, 63, 94, 0.5);
+  }
+
+  .rv-pitch-half-tag--a {
+    top: auto;
+    bottom: 6px;
+    border-color: rgba(56, 189, 248, 0.5);
+  }
+
+  .rv-pitch-half-tag--single {
+    top: 6px;
+    bottom: auto;
+  }
+
+  .rv-pitch-half-dir {
+    color: #fcd34d;
+    font-size: 0.58rem;
+    letter-spacing: 0.03em;
+  }
+
+
+  /* Shared Positioned Node on Reveal Pitch */
+  .rv-node {
+    position: absolute;
+    left: var(--rv-x, 50%);
+    top: var(--rv-y, 50%);
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1px;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .rv-node:hover {
+    z-index: 5;
+  }
+
+  .rv-node.rv-node--selected {
+    z-index: 6;
+  }
+
+  /* Mode 1: 22-Player Tactical Tokens */
+  .rv-token-22 {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.72);
+    transition: transform 0.12s, border-color 0.12s, box-shadow 0.12s;
+  }
+
+  .rv-token-22--a {
+    background: radial-gradient(circle at 35% 30%, #38bdf8 0%, #0284c7 66%, #0369a1 100%);
+    border: 2px solid #e0f2fe;
+    color: #ffffff;
+  }
+
+  .rv-token-22--b {
+    background: radial-gradient(circle at 35% 30%, #fb7185 0%, #e11d48 66%, #9f1239 100%);
+    border: 2px solid #ffe4e6;
+    color: #ffffff;
+  }
+
+  .rv-node--22:hover .rv-token-22 {
+    transform: scale(1.1);
+  }
+
+  .rv-node--22.rv-node--selected .rv-token-22 {
+    transform: scale(1.16);
+    border-color: #facc15;
+    box-shadow: 0 0 0 2px rgba(250, 204, 21, 0.9), 0 4px 12px rgba(0, 0, 0, 0.85);
+  }
+
+  .rv-token-22-ovr {
+    font-size: 0.72rem;
+    font-weight: 900;
+    line-height: 1;
+    color: #ffffff;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.9);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .rv-token-22-slot {
+    position: absolute;
+    top: -5px;
+    right: -8px;
+    font-size: 0.48rem;
+    font-weight: 800;
+    line-height: 1;
+    padding: 1px 3px;
+    border-radius: 3px;
+    background: rgba(6, 11, 20, 0.92);
+    color: #cbd5e1;
+    border: 1px solid rgba(148, 163, 184, 0.35);
+  }
+
+  .rv-name-pill {
+    padding: 0 5px;
+    border-radius: 3px;
+    background: rgba(6, 11, 20, 0.88);
+    border: 1px solid rgba(148, 163, 184, 0.24);
+    font-size: 0.61rem;
+    font-weight: 700;
+    line-height: 1.25;
+    color: #f8fafc;
+    max-width: 72px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.95);
+  }
+
+  .rv-name-pill--a {
+    border-bottom: 1.5px solid #38bdf8;
+  }
+
+  .rv-name-pill--b {
+    border-bottom: 1.5px solid #fb7185;
+  }
+
+  .rv-node--22.rv-node--selected .rv-name-pill {
+    background: rgba(24, 36, 58, 0.96);
+    border-color: #facc15;
+    color: #fef08a;
+  }
+
+  /* Mode 2 & 3: Single-Team 11-Player Historical Lineup Nodes */
+  .rv-single-figure {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .rv-single-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: linear-gradient(180deg, #1b2c48 0%, #0a1220 100%);
+    border: 2px solid rgba(226, 232, 240, 0.8);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.68);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.12s, border-color 0.12s, box-shadow 0.12s;
+  }
+
+  .rv-node--single.rv-node--team-a .rv-single-avatar {
+    border-color: #7dd3fc;
+  }
+
+  .rv-node--single.rv-node--team-b .rv-single-avatar {
+    border-color: #fda4af;
+  }
+
+  .rv-node--single.rv-node--selected .rv-single-avatar {
+    transform: scale(1.08);
+    border-color: #facc15;
+    box-shadow: 0 0 0 2px rgba(250, 204, 21, 0.9), 0 6px 14px rgba(0, 0, 0, 0.8);
+  }
+
+  .rv-single-avatar .fd-slot-player-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 12%;
+  }
+
+  /* Single-Team Silhouette/Fallback -> Role-Colored Tactical Token with Centered OVR */
+  .rv-single-avatar.fd-pitch-avatar--silhouette,
+  .rv-single-avatar:has(.fd-player-img--silhouette),
+  .rv-single-avatar:has(.fd-player-img--fallback) {
+    width: 38px;
+    height: 38px;
+    background: radial-gradient(circle at 35% 30%, #1e3a5f 0%, #0d1829 100%);
+  }
+
+  .rv-node--role-fw .rv-single-avatar.fd-pitch-avatar--silhouette,
+  .rv-node--role-fw .rv-single-avatar:has(.fd-player-img--silhouette),
+  .rv-node--role-fw .rv-single-avatar:has(.fd-player-img--fallback) {
+    border-color: #f87171;
+    background: radial-gradient(circle at 35% 30%, #7f1d1d 0%, #2a0d14 100%);
+  }
+
+  .rv-node--role-mf .rv-single-avatar.fd-pitch-avatar--silhouette,
+  .rv-node--role-mf .rv-single-avatar:has(.fd-player-img--silhouette),
+  .rv-node--role-mf .rv-single-avatar:has(.fd-player-img--fallback) {
+    border-color: #4ade80;
+    background: radial-gradient(circle at 35% 30%, #14532d 0%, #0a2015 100%);
+  }
+
+  .rv-node--role-df .rv-single-avatar.fd-pitch-avatar--silhouette,
+  .rv-node--role-df .rv-single-avatar:has(.fd-player-img--silhouette),
+  .rv-node--role-df .rv-single-avatar:has(.fd-player-img--fallback) {
+    border-color: #38bdf8;
+    background: radial-gradient(circle at 35% 30%, #0c4a6e 0%, #09192b 100%);
+  }
+
+  .rv-node--role-gk .rv-single-avatar.fd-pitch-avatar--silhouette,
+  .rv-node--role-gk .rv-single-avatar:has(.fd-player-img--silhouette),
+  .rv-node--role-gk .rv-single-avatar:has(.fd-player-img--fallback) {
+    border-color: #fbbf24;
+    background: radial-gradient(circle at 35% 30%, #78350f 0%, #271508 100%);
+  }
+
+  .rv-single-avatar.fd-pitch-avatar--silhouette .fd-slot-player-img,
+  .rv-single-avatar .fd-player-img--silhouette,
+  .rv-single-avatar .fd-player-img--fallback {
+    opacity: 0;
+    width: 1px;
+    height: 1px;
+  }
+
+  .rv-single-figure .fd-pitch-rating {
+    position: absolute;
+    right: -6px;
+    bottom: -2px;
+    font-size: 0.68rem;
+    font-weight: 900;
+    line-height: 1;
+    padding: 1px 4px;
+    border-radius: 4px;
+    background: rgba(7, 12, 22, 0.94);
+    color: #facc15;
+    border: 1px solid rgba(250, 204, 21, 0.55);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+  }
+
+  .rv-single-figure:has(.fd-pitch-avatar--silhouette) .fd-pitch-rating,
+  .rv-single-figure:has(.fd-player-img--silhouette) .fd-pitch-rating,
+  .rv-single-figure:has(.fd-player-img--fallback) .fd-pitch-rating {
+    inset: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+    color: #f8fafc;
+    font-size: 0.78rem;
+    pointer-events: none;
+  }
+
+  .rv-single-label .rv-single-name {
+    font-size: 0.68rem;
+    font-weight: 700;
+    color: #f8fafc;
+    background: rgba(6, 11, 20, 0.88);
+    border: 1px solid rgba(148, 163, 184, 0.25);
+    padding: 1px 6px;
+    border-radius: 3px;
+    max-width: 88px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .rv-node--single.rv-node--selected .rv-single-name {
+    border-color: #facc15;
+    color: #fef08a;
+  }
+
+  .rv-single-meta {
+    display: inline-flex;
+    align-items: center;
+    gap: 3px;
+    padding: 0 4px;
+    border-radius: 3px;
+    background: rgba(9, 15, 26, 0.84);
+    border: 1px solid rgba(148, 163, 184, 0.18);
+    font-size: 0.58rem;
+    font-weight: 700;
+    color: #cbd5e1;
+  }
+
+  .rv-single-crest {
+    width: 11px;
+    height: 11px;
+    object-fit: contain;
+  }
+
+  .rv-single-year {
+    color: #fcd34d;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .rv-single-slot {
+    color: #94a3b8;
+    font-size: 0.56rem;
+  }
+
+  /* Right Column: Action Dock + Historical Player Archive Inspector + Log */
+  .rv-side-col {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    min-width: 0;
+    min-height: 0;
+  }
+
+  .rv-action-dock {
+    flex-shrink: 0;
+  }
+
+  .rv-action-dock .fd-match-btn {
+    width: 100%;
+    margin: 0;
+    padding: 10px 16px;
+    font-size: 0.96rem;
+    font-weight: 800;
+  }
+
+  .rv-action-dock .fd-match-wait {
+    margin: 0;
+    padding: 9px 12px;
+    background: rgba(12, 20, 35, 0.88);
+    border: 1px solid rgba(56, 189, 248, 0.32);
+    border-radius: 6px;
+    color: #93c5fd;
+    font-size: 0.82rem;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .rv-inspector.dw-inspector {
+    flex: 1;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .rv-inspector-head {
+    padding: 7px 10px;
+  }
+
+  .rv-inspector-team-pill {
+    font-size: 0.68rem;
+    font-weight: 800;
+    padding: 2px 7px;
+    border-radius: 4px;
+    white-space: nowrap;
+  }
+
+  .rv-inspector-team-pill--a {
+    background: rgba(14, 165, 233, 0.18);
+    border: 1px solid rgba(56, 189, 248, 0.45);
+    color: #bae6fd;
+  }
+
+  .rv-inspector-team-pill--b {
+    background: rgba(244, 63, 94, 0.18);
+    border: 1px solid rgba(251, 113, 133, 0.45);
+    color: #fecdd3;
+  }
+
+  .rv-inspector-hint {
+    font-size: 0.68rem;
+    color: #94a3b8;
+    text-align: center;
+    padding: 2px 4px;
+  }
+
+  .rv-history-box.fd-log {
+    flex: 0 0 auto;
+    max-height: 110px;
+    overflow-y: auto;
+    margin: 0;
+    padding: 6px 10px;
+  }
+
+  /* Desktop Single-Screen Viewport Fit for REVEAL (>= 1024px) */
+  @media (min-width: 1024px) {
+    body.in-reveal {
+      overflow: hidden;
+    }
+
+    body.in-reveal main {
+      height: 100dvh;
+      max-height: 100dvh;
+      overflow: hidden;
+      padding: 6px 12px;
+      display: grid;
+      grid-template-columns: auto minmax(0, 1fr);
+      grid-template-rows: 34px minmax(0, 1fr);
+      column-gap: 10px;
+      row-gap: 6px;
+      align-items: stretch;
+    }
+
+    body.in-reveal .topbar {
+      max-width: none;
+      margin: 0;
+      padding: 3px 10px;
+      height: 34px;
+    }
+
+    body.in-reveal .topbar h1 {
+      font-size: 0.95rem;
+    }
+
+    body.in-reveal #room.room--in-game {
+      max-width: none;
+      margin: 0;
+      padding: 3px 10px;
+      height: 34px;
+      display: flex;
+      align-items: center;
+    }
+
+    body.in-reveal #room.room--in-game .room-header-bar {
+      width: 100%;
+      gap: 8px;
+      flex-wrap: nowrap;
+    }
+
+    body.in-reveal #game-area {
+      grid-column: 1 / -1;
+      min-height: 0;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    body.in-reveal .fd-root {
+      flex: 1;
+      min-height: 0;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    body.in-reveal .fd-main.fd-main--reveal,
+    body.in-reveal .fd-reveal-zone.rv-root {
+      flex: 1;
+      min-height: 0;
+      height: 100%;
+    }
+
+    body.in-reveal .rv-stage-grid {
+      flex: 1;
+      min-height: 0;
+      height: 100%;
+    }
+
+    body.in-reveal .rv-pitch.fd-pitch.ol3-pitch {
+      height: min(100%, calc(100dvh - 134px));
+      width: auto;
+      max-width: 100%;
+      aspect-ratio: 651 / 1024;
+    }
+  }
+
+  /* Mobile / Tablet Layout for REVEAL (< 1024px) */
+  @media (max-width: 1023px) {
+    body.in-reveal main {
+      padding: 4px 6px 14px;
+    }
+
+    body.in-reveal .topbar {
+      margin: 0 0 3px;
+      padding: 3px 8px;
+    }
+
+    body.in-reveal .topbar h1 {
+      font-size: 0.86rem;
+    }
+
+    body.in-reveal .lang-switch span {
+      display: none;
+    }
+
+    body.in-reveal #room.room--in-game {
+      margin: 0 0 4px;
+      padding: 3px 8px;
+    }
+
+    .rv-top-bar.fd-complete-ratings {
+      grid-template-columns: 1fr 1fr;
+      gap: 6px;
+    }
+
+    .rv-control-hub {
+      grid-column: 1 / -1;
+      order: -1;
+      padding: 6px 8px;
+    }
+
+    .rv-team-summary.fd-complete-rating-card {
+      padding: 6px 8px;
+    }
+
+    .rv-team-summary .fd-complete-team-name {
+      font-size: 0.76rem;
+    }
+
+    .rv-team-ovr-badge.fd-complete-rating-text {
+      font-size: 0.72rem;
+      padding: 1px 5px;
+    }
+
+    .rv-profile-metrics .fd-profile-chip {
+      font-size: 0.58rem;
+      padding: 1px 4px;
+    }
+
+    .rv-stage-grid {
+      grid-template-columns: 1fr;
+      gap: 8px;
+    }
+
+    .rv-pitch.fd-pitch.ol3-pitch {
+      width: min(100%, 346px);
+      height: auto;
+      aspect-ratio: 651 / 1024;
+    }
+
+    .rv-token-22 {
+      width: 26px;
+      height: 26px;
+    }
+
+    .rv-token-22-ovr {
+      font-size: 0.65rem;
+    }
+
+    .rv-name-pill {
+      font-size: 0.56rem;
+      max-width: 62px;
+      padding: 0 4px;
+    }
+
+    .rv-single-avatar {
+      width: 38px;
+      height: 38px;
+    }
+
+    .rv-single-avatar.fd-pitch-avatar--silhouette,
+    .rv-single-avatar:has(.fd-player-img--silhouette),
+    .rv-single-avatar:has(.fd-player-img--fallback) {
+      width: 30px;
+      height: 30px;
+    }
+  }
+}

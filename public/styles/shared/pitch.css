@@ -1,0 +1,46 @@
+@layer components {
+  /* Base Pitch Figure & Floating Historical Tag Helpers (also safe in REVEAL phase) */
+  .fd-pitch-figure {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .fd-pitch-hist-tag {
+    display: none;
+  }
+
+
+  .fd-pitch-empty-token--fw {
+    background: radial-gradient(circle at 35% 30%, #f87171 0%, #dc2626 65%, #7f1d1d 100%);
+  }
+
+  .fd-pitch-empty-token--mf {
+    background: radial-gradient(circle at 35% 30%, #4ade80 0%, #16a34a 65%, #14532d 100%);
+  }
+
+  .fd-pitch-empty-token--df {
+    background: radial-gradient(circle at 35% 30%, #60a5fa 0%, #2563eb 65%, #1e3a8a 100%);
+  }
+
+  .fd-pitch-empty-token--gk {
+    background: radial-gradient(circle at 35% 30%, #fbbf24 0%, #d97706 65%, #78350f 100%);
+  }
+
+  .fd-pitch-slot-tag--fw {
+    border-left: 2.5px solid #ef4444;
+  }
+
+  .fd-pitch-slot-tag--mf {
+    border-left: 2.5px solid #22c55e;
+  }
+
+  .fd-pitch-slot-tag--df {
+    border-left: 2.5px solid #3b82f6;
+  }
+
+  .fd-pitch-slot-tag--gk {
+    border-left: 2.5px solid #f59e0b;
+  }
+}

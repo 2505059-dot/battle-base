@@ -105,6 +105,7 @@ function restoreFocusAndScroll(root, snapshot) {
             ...root.querySelectorAll('button'),
             ...root.querySelectorAll('.fd-pitch-node'),
             ...root.querySelectorAll('.fd-slot-row'),
+            ...root.querySelectorAll('.rv-node'),
         ];
         const target = candidates.find(
             (node) => node?.dataset?.focusKey === snapshot.focusKey && !node.disabled
@@ -145,6 +146,11 @@ export function startGame(ctx) {
 
     const state = createInitialState(ctx);
     const preview = createDraftPreviewState();
+    const revealUiState = {
+        viewMode: 'full',
+        selectedTeamIndex: ctx.me === ctx.order[1] ? 1 : 0,
+        selectedSlot: 'FW2',
+    };
     let submittingPick = false;
     let playbackTimer = null;
 
@@ -461,12 +467,33 @@ export function startGame(ctx) {
             return;
         }
 
+        if (state.phase === 'REVEAL') {
+            const mainGrid = el('div', 'fd-main fd-main--reveal');
+            const revealZone = renderCompleteZone(state, isTeamAPlayer(), handleMatchStartClick, {
+                viewMode: revealUiState.viewMode,
+                selectedTeamIndex: revealUiState.selectedTeamIndex,
+                selectedSlot: revealUiState.selectedSlot,
+                onSelectViewMode: (nextMode) => {
+                    revealUiState.viewMode = nextMode;
+                    if (nextMode === 'teamA') revealUiState.selectedTeamIndex = 0;
+                    if (nextMode === 'teamB') revealUiState.selectedTeamIndex = 1;
+                    render();
+                },
+                onSelectPlayer: (teamIdx, slot) => {
+                    revealUiState.selectedTeamIndex = teamIdx;
+                    revealUiState.selectedSlot = slot;
+                    render();
+                },
+            });
+            mainGrid.append(revealZone);
+            root.append(mainGrid);
+            restoreFocusAndScroll(root, uiSnapshot);
+            return;
+        }
+
         const mainGrid = el('div', 'fd-main');
         const teamAPanel = renderTeamPanel(state, state.teams[0], 0, ctx.me);
-        const centerZone =
-            state.phase === 'REVEAL'
-                ? renderCompleteZone(state, isTeamAPlayer(), handleMatchStartClick)
-                : renderMatchZone(state);
+        const centerZone = renderMatchZone(state);
         const teamBPanel = renderTeamPanel(state, state.teams[1], 1, ctx.me);
 
         mainGrid.append(teamAPanel, centerZone, teamBPanel);

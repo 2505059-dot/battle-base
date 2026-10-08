@@ -59,6 +59,7 @@ class FakeElement {
         this.listeners = new Map();
         this.disabled = false;
         this.hidden = false;
+        this.dataset = {};
         this.style = {};
         this.scrollTop = 0;
         this.scrollHeight = 100;
@@ -604,6 +605,55 @@ dispatchAction('p2', { kind: 'draft_lock' });
     assert.ok(areaA.querySelector('.fd-match-btn'), 'Team A sees START MATCH button in REVEAL');
     assert.equal(areaB.querySelector('.fd-match-btn'), null, 'Team B does not see START MATCH button');
     assert.ok(areaB.querySelector('.fd-match-wait'), 'Team B sees waiting notice in REVEAL');
+
+    // Verify REVEAL UI v1 standalone single-pitch architecture & 3 view modes (All 22 / Team A XI / Team B XI)
+    assert.equal(
+        areaA.querySelectorAll('.fd-pitch').length,
+        1,
+        'REVEAL must render exactly ONE central vertical pitch (no duplicate side pitches)'
+    );
+    assert.equal(
+        areaA.querySelectorAll('.rv-node--22').length,
+        22,
+        'REVEAL default full mode must render all 22 tactical player nodes on the single pitch'
+    );
+    assert.equal(
+        areaA.querySelectorAll('.dw-inspector-stat-row').length,
+        5,
+        'REVEAL historical archive inspector must display 5 core ability rows'
+    );
+
+    const modeBtnsA = areaA.querySelectorAll('.rv-mode-btn');
+    assert.equal(modeBtnsA.length, 3, 'REVEAL must provide 3 view mode buttons (full, teamA, teamB)');
+
+    // Switch to Team A XI (11-player single-team mode)
+    modeBtnsA[1].click();
+    assert.equal(
+        areaA.querySelectorAll('.rv-node--single').length,
+        11,
+        'Team A XI mode must render 11 single-team lineup nodes on the vertical pitch'
+    );
+
+    // Switch to Team B XI (11-player single-team mode)
+    const modeBtnsAfterA = areaA.querySelectorAll('.rv-mode-btn');
+    modeBtnsAfterA[2].click();
+    assert.equal(
+        areaA.querySelectorAll('.rv-node--single').length,
+        11,
+        'Team B XI mode must render 11 single-team lineup nodes on the vertical pitch'
+    );
+
+    // Switch back to Full 22-player mode and click a Team B player node to inspect
+    const modeBtnsAfterB = areaA.querySelectorAll('.rv-mode-btn');
+    modeBtnsAfterB[0].click();
+    assert.equal(areaA.querySelectorAll('.rv-node--22').length, 22);
+    const teamBNode = areaA.querySelectorAll('.rv-node--22').find((n) => n.dataset.teamIndex === '1');
+    assert.ok(teamBNode, 'Must find a Team B node on the 22-player pitch');
+    teamBNode.click();
+    assert.ok(
+        areaA.querySelector('.rv-inspector').dumpText().includes(stateA.teams[1].roster[teamBNode.dataset.slot].name),
+        'Clicking a player node on the 22-player pitch must update the Historical Archive Inspector'
+    );
 
     // Verify internal state parity between Client A and Client B
     assert.equal(stateA.phase, 'REVEAL');

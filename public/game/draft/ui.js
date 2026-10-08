@@ -897,7 +897,7 @@ function renderOl3LineSummaryBars(teamState) {
     return wrap;
 }
 
-function formatPitchPlayerName(canonicalName) {
+export function formatPitchPlayerName(canonicalName) {
     const full = formatPlayerName(canonicalName);
     if (!full) return '';
     if (full.includes('・') && full.length > 6) {

@@ -1,0 +1,1509 @@
+{
+  "schemaVersion": "historical-card-search-player-seasons/1",
+  "playerSeasons": [
+    {
+      "playerSeasonId": "manchester-united-1999-0",
+      "teamSeasonId": "manchester-united-1999",
+      "league": "Premier League",
+      "club": "Manchester United",
+      "year": 1999,
+      "rosterName": "Peter Schmeichel",
+      "positions": [
+        "GK"
+      ],
+      "canonicalPlayerId": "peter-schmeichel",
+      "abilityV2BaselineUnavailable": true,
+      "abilityV2NameOrAmbiguousFindings": 0,
+      "abilityV2PositionFindings": 0
+    },
+    {
+      "playerSeasonId": "manchester-united-1999-1",
+      "teamSeasonId": "manchester-united-1999",
+      "league": "Premier League",
+      "club": "Manchester United",
+      "year": 1999,
+      "rosterName": "Jaap Stam",
+      "positions": [
+        "DF"
+      ],
+      "canonicalPlayerId": "jaap-stam",
+      "abilityV2BaselineUnavailable": true,
+      "abilityV2NameOrAmbiguousFindings": 0,
+      "abilityV2PositionFindings": 0
+    },
+    {
+      "playerSeasonId": "manchester-united-1999-2",
+      "teamSeasonId": "manchester-united-1999",
+      "league": "Premier League",
+      "club": "Manchester United",
+      "year": 1999,
+      "rosterName": "Gary Neville",
+      "positions": [
+        "DF"
+      ],
+      "canonicalPlayerId": "gary-neville",
+      "abilityV2BaselineUnavailable": true,
+      "abilityV2NameOrAmbiguousFindings": 0,
+      "abilityV2PositionFindings": 0
+    },
+    {
+      "playerSeasonId": "manchester-united-1999-3",
+      "teamSeasonId": "manchester-united-1999",
+      "league": "Premier League",
+      "club": "Manchester United",
+      "year": 1999,
+      "rosterName": "Denis Irwin",
+      "positions": [
+        "DF"
+      ],
+      "canonicalPlayerId": "denis-irwin",
+      "abilityV2BaselineUnavailable": true,
+      "abilityV2NameOrAmbiguousFindings": 0,
+      "abilityV2PositionFindings": 0
+    },
+    {
+      "playerSeasonId": "manchester-united-1999-4",
+      "teamSeasonId": "manchester-united-1999",
+      "league": "Premier League",
+      "club": "Manchester United",
+      "year": 1999,
+      "rosterName": "Roy Keane",
+      "positions": [
+        "MF"
+      ],
+      "canonicalPlayerId": "roy-keane",
+      "abilityV2BaselineUnavailable": true,
+      "abilityV2NameOrAmbiguousFindings": 0,
+      "abilityV2PositionFindings": 0
+    },
+    {
+      "playerSeasonId": "manchester-united-1999-5",
+      "teamSeasonId": "manchester-united-1999",
+      "league": "Premier League",
+      "club": "Manchester United",
+      "year": 1999,
+      "rosterName": "David Beckham",
+      "positions": [
+        "MF"
+      ],
+      "canonicalPlayerId": "david-beckham",
+      "abilityV2BaselineUnavailable": true,
+      "abilityV2NameOrAmbiguousFindings": 0,
+      "abilityV2PositionFindings": 0
+    },
+    {
+      "playerSeasonId": "manchester-united-1999-6",
+      "teamSeasonId": "manchester-united-1999",
+      "league": "Premier League",
+      "club": "Manchester United",
+      "year": 1999,
+      "rosterName": "Paul Scholes",
+      "positions": [
+        "MF"
+      ],
+      "canonicalPlayerId": "paul-scholes",
+      "abilityV2BaselineUnavailable": true,
+      "abilityV2NameOrAmbiguousFindings": 0,
+      "abilityV2PositionFindings": 0
+    },
+    {
+      "playerSeasonId": "manchester-united-1999-7",
+      "teamSeasonId": "manchester-united-1999",
+      "league": "Premier League",
+      "club": "Manchester United",
+      "year": 1999,
+      "rosterName": "Ryan Giggs",
+      "positions": [
+        "MF",
+        "FW"
+      ],
+      "canonicalPlayerId": "ryan-giggs",
+      "abilityV2BaselineUnavailable": true,
+      "abilityV2NameOrAmbiguousFindings": 0,
+      "abilityV2PositionFindings": 0
+    },
+    {
+      "playerSeasonId": "manchester-united-1999-8",
+      "teamSeasonId": "manchester-united-1999",
+      "league": "Premier League",
+      "club": "Manchester United",
+      "year": 1999,
+      "rosterName": "Dwight Yorke",
+      "positions": [
+        "FW"
+      ],
+      "canonicalPlayerId": "dwight-yorke",
+      "abilityV2BaselineUnavailable": true,
+      "abilityV2NameOrAmbiguousFindings": 0,
+      "abilityV2PositionFindings": 0
+    },
+    {
+      "playerSeasonId": "arsenal-2004-0",
+      "teamSeasonId": "arsenal-2004",
+      "league": "Premier League",
+      "club": "Arsenal",
+      "year": 2004,
+      "rosterName": "Jens Lehmann",
+      "positions": [
+        "GK"
+      ],
+      "canonicalPlayerId": "jens-lehmann",
+      "abilityV2BaselineUnavailable": true,
+      "abilityV2NameOrAmbiguousFindings": 4,
+      "abilityV2PositionFindings": 0
+    },
+    {
+      "playerSeasonId": "arsenal-2004-1",
+      "teamSeasonId": "arsenal-2004",
+      "league": "Premier League",
+      "club": "Arsenal",
+      "year": 2004,
+      "rosterName": "Sol Campbell",
+      "positions": [
+        "DF"
+      ],
+      "canonicalPlayerId": "sol-campbell",
+      "abilityV2BaselineUnavailable": true,
+      "abilityV2NameOrAmbiguousFindings": 4,
+      "abilityV2PositionFindings": 0
+    },
+    {
+      "playerSeasonId": "arsenal-2004-2",
+      "teamSeasonId": "arsenal-2004",
+      "league": "Premier League",
+      "club": "Arsenal",
+      "year": 2004,
+      "rosterName": "Ashley Cole",
+      "positions": [
+        "DF"
+      ],
+      "canonicalPlayerId": "ashley-cole",
+      "abilityV2BaselineUnavailable": false,
+      "abilityV2NameOrAmbiguousFindings": 0,
+      "abilityV2PositionFindings": 0
+    },
+    {
+      "playerSeasonId": "arsenal-2004-3",
+      "teamSeasonId": "arsenal-2004",
+      "league": "Premier League",
+      "club": "Arsenal",
+      "year": 2004,
+      "rosterName": "Kolo Toure",
+      "positions": [
+        "MF"
+      ],
+      "canonicalPlayerId": "kolo-toure",
+      "abilityV2BaselineUnavailable": false,
+      "abilityV2NameOrAmbiguousFindings": 0,
+      "abilityV2PositionFindings": 0
+    },
+    {
+      "playerSeasonId": "arsenal-2004-4",
+      "teamSeasonId": "arsenal-2004",
+      "league": "Premier League",
+      "club": "Arsenal",
+      "year": 2004,
+      "rosterName": "Patrick Vieira",
+      "positions": [
+        "MF"
+      ],
+      "canonicalPlayerId": "patrick-vieira",
+      "abilityV2BaselineUnavailable": true,
+      "abilityV2NameOrAmbiguousFindings": 4,
+      "abilityV2PositionFindings": 0
+    },
+    {
+      "playerSeasonId": "arsenal-2004-5",
+      "teamSeasonId": "arsenal-2004",
+      "league": "Premier League",
+      "club": "Arsenal",
+      "year": 2004,
+      "rosterName": "Robert Pires",
+      "positions": [
+        "MF",
+        "FW"
+      ],
+      "canonicalPlayerId": "robert-pires",
+      "abilityV2BaselineUnavailable": true,
+      "abilityV2NameOrAmbiguousFindings": 3,
+      "abilityV2PositionFindings": 0
+    },
+    {
+      "playerSeasonId": "arsenal-2004-6",
+      "teamSeasonId": "arsenal-2004",
+      "league": "Premier League",
+      "club": "Arsenal",
+      "year": 2004,
+      "rosterName": "Gilberto Silva",
+      "positions": [
+        "MF"
+      ],
+      "canonicalPlayerId": "gilberto-silva",
+      "abilityV2BaselineUnavailable": true,
+      "abilityV2NameOrAmbiguousFindings": 2,
+      "abilityV2PositionFindings": 0
+    },
+    {
+      "playerSeasonId": "arsenal-2004-7",
+      "teamSeasonId": "arsenal-2004",
+      "league": "Premier League",
+      "club": "Arsenal",
+      "year": 2004,
+      "rosterName": "Thierry Henry",
+      "positions": [
+        "FW"
+      ],
+      "canonicalPlayerId": "thierry-henry",
+      "abilityV2BaselineUnavailable": true,
+      "abilityV2NameOrAmbiguousFindings": 4,
+      "abilityV2PositionFindings": 3
+    },
+    {
+      "playerSeasonId": "arsenal-2004-8",
+      "teamSeasonId": "arsenal-2004",
+      "league": "Premier League",
+      "club": "Arsenal",
+      "year": 2004,
+      "rosterName": "Dennis Bergkamp",
+      "positions": [
+        "FW",
+        "MF"
+      ],
+      "canonicalPlayerId": "dennis-bergkamp",
+      "abilityV2BaselineUnavailable": true,
+      "abilityV2NameOrAmbiguousFindings": 2,
+      "abilityV2PositionFindings": 2
+    },
+    {
+      "playerSeasonId": "real-madrid-2002-0",
+      "teamSeasonId": "real-madrid-2002",
+      "league": "La Liga",
+      "club": "Real Madrid",
+      "year": 2002,
+      "rosterName": "Iker Casillas",
+      "positions": [
+        "GK"
+      ],
+      "canonicalPlayerId": "iker-casillas",
+      "abilityV2BaselineUnavailable": false,
+      "abilityV2NameOrAmbiguousFindings": 0,
+      "abilityV2PositionFindings": 0
+    },
+    {
+      "playerSeasonId": "real-madrid-2002-1",
+      "teamSeasonId": "real-madrid-2002",
+      "league": "La Liga",
+      "club": "Real Madrid",
+      "year": 2002,
+      "rosterName": "Roberto Carlos",
+      "positions": [
+        "DF"
+      ],
+      "canonicalPlayerId": "roberto-carlos",
+      "abilityV2BaselineUnavailable": true,
+      "abilityV2NameOrAmbiguousFindings": 1,
+      "abilityV2PositionFindings": 0
+    },
+    {
+      "playerSeasonId": "real-madrid-2002-2",
+      "teamSeasonId": "real-madrid-2002",
+      "league": "La Liga",
+      "club": "Real Madrid",
+      "year": 2002,
+      "rosterName": "Fernando Hierro",
+      "positions": [
+        "DF"
+      ],
+      "canonicalPlayerId": "fernando-hierro",
+      "abilityV2BaselineUnavailable": true,
+      "abilityV2NameOrAmbiguousFindings": 1,
+      "abilityV2PositionFindings": 0
+    },
+    {
+      "playerSeasonId": "real-madrid-2002-3",
+      "teamSeasonId": "real-madrid-2002",
+      "league": "La Liga",
+      "club": "Real Madrid",
+      "year": 2002,
+      "rosterName": "Michel Salgado",
+      "positions": [
+        "DF"
+      ],
+      "canonicalPlayerId": "michel-salgado",
+      "abilityV2BaselineUnavailable": true,
+      "abilityV2NameOrAmbiguousFindings": 0,
+      "abilityV2PositionFindings": 0
+    },
+    {
+      "playerSeasonId": "real-madrid-2002-4",
+      "teamSeasonId": "real-madrid-2002",
+      "league": "La Liga",
+      "club": "Real Madrid",
+      "year": 2002,
+      "rosterName": "Zinedine Zidane",
+      "positions": [
+        "MF"
+      ],
+      "canonicalPlayerId": "zinedine-zidane",
+      "abilityV2BaselineUnavailable": true,
+      "abilityV2NameOrAmbiguousFindings": 1,
+      "abilityV2PositionFindings": 1
+    },
+    {
+      "playerSeasonId": "real-madrid-2002-5",
+      "teamSeasonId": "real-madrid-2002",
+      "league": "La Liga",
+      "club": "Real Madrid",
+      "year": 2002,
+      "rosterName": "Claude Makelele",
+      "positions": [
+        "MF"
+      ],
+      "canonicalPlayerId": "claude-makelele",
+      "abilityV2BaselineUnavailable": false,
+      "abilityV2NameOrAmbiguousFindings": 0,
+      "abilityV2PositionFindings": 0
+    },
+    {
+      "playerSeasonId": "real-madrid-2002-6",
+      "teamSeasonId": "real-madrid-2002",
+      "league": "La Liga",
+      "club": "Real Madrid",
+      "year": 2002,
+      "rosterName": "Luis Figo",
+      "positions": [
+        "MF",
+        "FW"
+      ],
+      "canonicalPlayerId": "luis-figo",
+      "abilityV2BaselineUnavailable": true,
+      "abilityV2NameOrAmbiguousFindings": 0,
+      "abilityV2PositionFindings": 0
+    },
+    {
+      "playerSeasonId": "real-madrid-2002-7",
+      "teamSeasonId": "real-madrid-2002",
+      "league": "La Liga",
+      "club": "Real Madrid",
+      "year": 2002,
+      "rosterName": "Raul",
+      "positions": [
+        "FW"
+      ],
+      "canonicalPlayerId": "raul",
+      "abilityV2BaselineUnavailable": true,
+      "abilityV2NameOrAmbiguousFindings": 2,
+      "abilityV2PositionFindings": 1
+    },
+    {
+      "playerSeasonId": "real-madrid-2002-8",
+      "teamSeasonId": "real-madrid-2002",
+      "league": "La Liga",
+      "club": "Real Madrid",
+      "year": 2002,
+      "rosterName": "Fernando Morientes",
+      "positions": [
+        "FW"
+      ],
+      "canonicalPlayerId": "fernando-morientes",
+      "abilityV2BaselineUnavailable": true,
+      "abilityV2NameOrAmbiguousFindings": 0,
+      "abilityV2PositionFindings": 0
+    },
+    {
+      "playerSeasonId": "valencia-2004-0",
+      "teamSeasonId": "valencia-2004",
+      "league": "La Liga",
+      "club": "Valencia",
+      "year": 2004,
+      "rosterName": "Santiago Canizares",
+      "positions": [
+        "GK"
+      ],
+      "canonicalPlayerId": "santiago-canizares",
+      "abilityV2BaselineUnavailable": true,
+      "abilityV2NameOrAmbiguousFindings": 1,
+      "abilityV2PositionFindings": 0
+    },
+    {
+      "playerSeasonId": "valencia-2004-1",
+      "teamSeasonId": "valencia-2004",
+      "league": "La Liga",
+      "club": "Valencia",
+      "year": 2004,
+      "rosterName": "Roberto Ayala",
+      "positions": [
+        "DF"
+      ],
+      "canonicalPlayerId": "roberto-ayala",
+      "abilityV2BaselineUnavailable": true,
+      "abilityV2NameOrAmbiguousFindings": 2,
+      "abilityV2PositionFindings": 0
+    },
+    {
+      "playerSeasonId": "valencia-2004-2",
+      "teamSeasonId": "valencia-2004",
+      "league": "La Liga",
+      "club": "Valencia",
+      "year": 2004,
+      "rosterName": "Carlos Marchena",
+      "positions": [
+        "DF",
+        "MF"
+      ],
+      "canonicalPlayerId": "carlos-marchena",
+      "abilityV2BaselineUnavailable": true,
+      "abilityV2NameOrAmbiguousFindings": 1,
+      "abilityV2PositionFindings": 1
+    },
+    {
+      "playerSeasonId": "valencia-2004-3",
+      "teamSeasonId": "valencia-2004",
+      "league": "La Liga",
+      "club": "Valencia",
+      "year": 2004,
+      "rosterName": "Amedeo Carboni",
+      "positions": [
+        "DF"
+      ],
+      "canonicalPlayerId": "amedeo-carboni",
+      "abilityV2BaselineUnavailable": true,
+      "abilityV2NameOrAmbiguousFindings": 2,
+      "abilityV2PositionFindings": 0
+    },
+    {
+      "playerSeasonId": "valencia-2004-4",
+      "teamSeasonId": "valencia-2004",
+      "league": "La Liga",
+      "club": "Valencia",
+      "year": 2004,
+      "rosterName": "Ruben Baraja",
+      "positions": [
+        "MF"
+      ],
+      "canonicalPlayerId": "ruben-baraja",
+      "abilityV2BaselineUnavailable": true,
+      "abilityV2NameOrAmbiguousFindings": 1,
+      "abilityV2PositionFindings": 1
+    },
+    {
+      "playerSeasonId": "valencia-2004-5",
+      "teamSeasonId": "valencia-2004",
+      "league": "La Liga",
+      "club": "Valencia",
+      "year": 2004,
+      "rosterName": "David Albelda",
+      "positions": [
+        "MF"
+      ],
+      "canonicalPlayerId": "david-albelda",
+      "abilityV2BaselineUnavailable": true,
+      "abilityV2NameOrAmbiguousFindings": 1,
+      "abilityV2PositionFindings": 1
+    },
+    {
+      "playerSeasonId": "valencia-2004-6",
+      "teamSeasonId": "valencia-2004",
+      "league": "La Liga",
+      "club": "Valencia",
+      "year": 2004,
+      "rosterName": "Pablo Aimar",
+      "positions": [
+        "MF",
+        "FW"
+      ],
+      "canonicalPlayerId": "pablo-aimar",
+      "abilityV2BaselineUnavailable": true,
+      "abilityV2NameOrAmbiguousFindings": 0,
+      "abilityV2PositionFindings": 0
+    },
+    {
+      "playerSeasonId": "valencia-2004-7",
+      "teamSeasonId": "valencia-2004",
+      "league": "La Liga",
+      "club": "Valencia",
+      "year": 2004,
+      "rosterName": "Vicente",
+      "positions": [
+        "MF",
+        "FW"
+      ],
+      "canonicalPlayerId": "vicente",
+      "abilityV2BaselineUnavailable": true,
+      "abilityV2NameOrAmbiguousFindings": 8,
+      "abilityV2PositionFindings": 6
+    },
+    {
+      "playerSeasonId": "valencia-2004-8",
+      "teamSeasonId": "valencia-2004",
+      "league": "La Liga",
+      "club": "Valencia",
+      "year": 2004,
+      "rosterName": "Mista",
+      "positions": [
+        "FW"
+      ],
+      "canonicalPlayerId": "mista",
+      "abilityV2BaselineUnavailable": true,
+      "abilityV2NameOrAmbiguousFindings": 4,
+      "abilityV2PositionFindings": 4
+    },
+    {
+      "playerSeasonId": "deportivo-la-coruna-2000-0",
+      "teamSeasonId": "deportivo-la-coruna-2000",
+      "league": "La Liga",
+      "club": "Deportivo La Coruna",
+      "year": 2000,
+      "rosterName": "Jacques Songo'o",
+      "positions": [
+        "GK"
+      ],
+      "canonicalPlayerId": "jacques-songo-o",
+      "abilityV2BaselineUnavailable": true,
+      "abilityV2NameOrAmbiguousFindings": 0,
+      "abilityV2PositionFindings": 0
+    },
+    {
+      "playerSeasonId": "deportivo-la-coruna-2000-1",
+      "teamSeasonId": "deportivo-la-coruna-2000",
+      "league": "La Liga",
+      "club": "Deportivo La Coruna",
+      "year": 2000,
+      "rosterName": "Noureddine Naybet",
+      "positions": [
+        "DF"
+      ],
+      "canonicalPlayerId": "noureddine-naybet",
+      "abilityV2BaselineUnavailable": true,
+      "abilityV2NameOrAmbiguousFindings": 0,
+      "abilityV2PositionFindings": 0
+    },
+    {
+      "playerSeasonId": "deportivo-la-coruna-2000-2",
+      "teamSeasonId": "deportivo-la-coruna-2000",
+      "league": "La Liga",
+      "club": "Deportivo La Coruna",
+      "year": 2000,
+      "rosterName": "Donato",
+      "positions": [
+        "MF",
+        "DF"
+      ],
+      "canonicalPlayerId": "donato",
+      "abilityV2BaselineUnavailable": true,
+      "abilityV2NameOrAmbiguousFindings": 0,
+      "abilityV2PositionFindings": 0
+    },
+    {
+      "playerSeasonId": "deportivo-la-coruna-2000-3",
+      "teamSeasonId": "deportivo-la-coruna-2000",
+      "league": "La Liga",
+      "club": "Deportivo La Coruna",
+      "year": 2000,
+      "rosterName": "Manuel Pablo",
+      "positions": [
+        "DF"
+      ],
+      "canonicalPlayerId": "manuel-pablo",
+      "abilityV2BaselineUnavailable": true,
+      "abilityV2NameOrAmbiguousFindings": 0,
+      "abilityV2PositionFindings": 0
+    },
+    {
+      "playerSeasonId": "deportivo-la-coruna-2000-4",
+      "teamSeasonId": "deportivo-la-coruna-2000",
+      "league": "La Liga",
+      "club": "Deportivo La Coruna",
+      "year": 2000,
+      "rosterName": "Mauro Silva",
+      "positions": [
+        "MF"
+      ],
+      "canonicalPlayerId": "mauro-silva",
+      "abilityV2BaselineUnavailable": true,
+      "abilityV2NameOrAmbiguousFindings": 0,
+      "abilityV2PositionFindings": 0
+    },
+    {
+      "playerSeasonId": "deportivo-la-coruna-2000-5",
+      "teamSeasonId": "deportivo-la-coruna-2000",
+      "league": "La Liga",
+      "club": "Deportivo La Coruna",
+      "year": 2000,
+      "rosterName": "Djalminha",
+      "positions": [
+        "MF",
+        "FW"
+      ],
+      "canonicalPlayerId": "djalminha",
+      "abilityV2BaselineUnavailable": true,
+      "abilityV2NameOrAmbiguousFindings": 0,
+      "abilityV2PositionFindings": 0
+    },
+    {
+      "playerSeasonId": "deportivo-la-coruna-2000-6",
+      "teamSeasonId": "deportivo-la-coruna-2000",
+      "league": "La Liga",
+      "club": "Deportivo La Coruna",
+      "year": 2000,
+      "rosterName": "Fran",
+      "positions": [
+        "MF"
+      ],
+      "canonicalPlayerId": "fran",
+      "abilityV2BaselineUnavailable": true,
+      "abilityV2NameOrAmbiguousFindings": 0,
+      "abilityV2PositionFindings": 0
+    },
+    {
+      "playerSeasonId": "deportivo-la-coruna-2000-7",
+      "teamSeasonId": "deportivo-la-coruna-2000",
+      "league": "La Liga",
+      "club": "Deportivo La Coruna",
+      "year": 2000,
+      "rosterName": "Roy Makaay",
+      "positions": [
+        "FW"
+      ],
+      "canonicalPlayerId": "roy-makaay",
+      "abilityV2BaselineUnavailable": true,
+      "abilityV2NameOrAmbiguousFindings": 0,
+      "abilityV2PositionFindings": 0
+    },
+    {
+      "playerSeasonId": "deportivo-la-coruna-2000-8",
+      "teamSeasonId": "deportivo-la-coruna-2000",
+      "league": "La Liga",
+      "club": "Deportivo La Coruna",
+      "year": 2000,
+      "rosterName": "Pauleta",
+      "positions": [
+        "FW"
+      ],
+      "canonicalPlayerId": "pauleta",
+      "abilityV2BaselineUnavailable": true,
+      "abilityV2NameOrAmbiguousFindings": 0,
+      "abilityV2PositionFindings": 0
+    },
+    {
+      "playerSeasonId": "juventus-2003-0",
+      "teamSeasonId": "juventus-2003",
+      "league": "Serie A",
+      "club": "Juventus",
+      "year": 2003,
+      "rosterName": "Gianluigi Buffon",
+      "positions": [
+        "GK"
+      ],
+      "canonicalPlayerId": "gianluigi-buffon",
+      "abilityV2BaselineUnavailable": false,
+      "abilityV2NameOrAmbiguousFindings": 0,
+      "abilityV2PositionFindings": 0
+    },
+    {
+      "playerSeasonId": "juventus-2003-1",
+      "teamSeasonId": "juventus-2003",
+      "league": "Serie A",
+      "club": "Juventus",
+      "year": 2003,
+      "rosterName": "Lilian Thuram",
+      "positions": [
+        "DF"
+      ],
+      "canonicalPlayerId": "lilian-thuram",
+      "abilityV2BaselineUnavailable": true,
+      "abilityV2NameOrAmbiguousFindings": 2,
+      "abilityV2PositionFindings": 0
+    },
+    {
+      "playerSeasonId": "juventus-2003-2",
+      "teamSeasonId": "juventus-2003",
+      "league": "Serie A",
+      "club": "Juventus",
+      "year": 2003,
+      "rosterName": "Ciro Ferrara",
+      "positions": [
+        "DF"
+      ],
+      "canonicalPlayerId": "ciro-ferrara",
+      "abilityV2BaselineUnavailable": true,
+      "abilityV2NameOrAmbiguousFindings": 1,
+      "abilityV2PositionFindings": 2
+    },
+    {
+      "playerSeasonId": "juventus-2003-3",
+      "teamSeasonId": "juventus-2003",
+      "league": "Serie A",
+      "club": "Juventus",
+      "year": 2003,
+      "rosterName": "Gianluca Zambrotta",
+      "positions": [
+        "MF",
+        "DF"
+      ],
+      "canonicalPlayerId": "gianluca-zambrotta",
+      "abilityV2BaselineUnavailable": true,
+      "abilityV2NameOrAmbiguousFindings": 2,
+      "abilityV2PositionFindings": 0
+    },
+    {
+      "playerSeasonId": "juventus-2003-4",
+      "teamSeasonId": "juventus-2003",
+      "league": "Serie A",
+      "club": "Juventus",
+      "year": 2003,
+      "rosterName": "Pavel Nedved",
+      "positions": [
+        "MF",
+        "FW"
+      ],
+      "canonicalPlayerId": "pavel-nedved",
+      "abilityV2BaselineUnavailable": true,
+      "abilityV2NameOrAmbiguousFindings": 2,
+      "abilityV2PositionFindings": 0
+    },
+    {
+      "playerSeasonId": "juventus-2003-5",
+      "teamSeasonId": "juventus-2003",
+      "league": "Serie A",
+      "club": "Juventus",
+      "year": 2003,
+      "rosterName": "Edgar Davids",
+      "positions": [
+        "MF"
+      ],
+      "canonicalPlayerId": "edgar-davids",
+      "abilityV2BaselineUnavailable": true,
+      "abilityV2NameOrAmbiguousFindings": 2,
+      "abilityV2PositionFindings": 0
+    },
+    {
+      "playerSeasonId": "juventus-2003-6",
+      "teamSeasonId": "juventus-2003",
+      "league": "Serie A",
+      "club": "Juventus",
+      "year": 2003,
+      "rosterName": "Mauro Camoranesi",
+      "positions": [
+        "MF"
+      ],
+      "canonicalPlayerId": "mauro-camoranesi",
+      "abilityV2BaselineUnavailable": true,
+      "abilityV2NameOrAmbiguousFindings": 2,
+      "abilityV2PositionFindings": 1
+    },
+    {
+      "playerSeasonId": "juventus-2003-7",
+      "teamSeasonId": "juventus-2003",
+      "league": "Serie A",
+      "club": "Juventus",
+      "year": 2003,
+      "rosterName": "Alessandro Del Piero",
+      "positions": [
+        "FW",
+        "MF"
+      ],
+      "canonicalPlayerId": "alessandro-del-piero",
+      "abilityV2BaselineUnavailable": false,
+      "abilityV2NameOrAmbiguousFindings": 0,
+      "abilityV2PositionFindings": 2
+    },
+    {
+      "playerSeasonId": "juventus-2003-8",
+      "teamSeasonId": "juventus-2003",
+      "league": "Serie A",
+      "club": "Juventus",
+      "year": 2003,
+      "rosterName": "David Trezeguet",
+      "positions": [
+        "FW"
+      ],
+      "canonicalPlayerId": "david-trezeguet",
+      "abilityV2BaselineUnavailable": true,
+      "abilityV2NameOrAmbiguousFindings": 2,
+      "abilityV2PositionFindings": 2
+    },
+    {
+      "playerSeasonId": "roma-2001-0",
+      "teamSeasonId": "roma-2001",
+      "league": "Serie A",
+      "club": "Roma",
+      "year": 2001,
+      "rosterName": "Francesco Antonioli",
+      "positions": [
+        "GK"
+      ],
+      "canonicalPlayerId": "francesco-antonioli",
+      "abilityV2BaselineUnavailable": true,
+      "abilityV2NameOrAmbiguousFindings": 0,
+      "abilityV2PositionFindings": 0
+    },
+    {
+      "playerSeasonId": "roma-2001-1",
+      "teamSeasonId": "roma-2001",
+      "league": "Serie A",
+      "club": "Roma",
+      "year": 2001,
+      "rosterName": "Walter Samuel",
+      "positions": [
+        "DF"
+      ],
+      "canonicalPlayerId": "walter-samuel",
+      "abilityV2BaselineUnavailable": true,
+      "abilityV2NameOrAmbiguousFindings": 0,
+      "abilityV2PositionFindings": 0
+    },
+    {
+      "playerSeasonId": "roma-2001-2",
+      "teamSeasonId": "roma-2001",
+      "league": "Serie A",
+      "club": "Roma",
+      "year": 2001,
+      "rosterName": "Cafu",
+      "positions": [
+        "DF",
+        "MF"
+      ],
+      "canonicalPlayerId": "cafu",
+      "abilityV2BaselineUnavailable": true,
+      "abilityV2NameOrAmbiguousFindings": 0,
+      "abilityV2PositionFindings": 0
+    },
+    {
+      "playerSeasonId": "roma-2001-3",
+      "teamSeasonId": "roma-2001",
+      "league": "Serie A",
+      "club": "Roma",
+      "year": 2001,
+      "rosterName": "Vincent Candela",
+      "positions": [
+        "DF",
+        "MF"
+      ],
+      "canonicalPlayerId": "vincent-candela",
+      "abilityV2BaselineUnavailable": true,
+      "abilityV2NameOrAmbiguousFindings": 0,
+      "abilityV2PositionFindings": 0
+    },
+    {
+      "playerSeasonId": "roma-2001-4",
+      "teamSeasonId": "roma-2001",
+      "league": "Serie A",
+      "club": "Roma",
+      "year": 2001,
+      "rosterName": "Damiano Tommasi",
+      "positions": [
+        "MF"
+      ],
+      "canonicalPlayerId": "damiano-tommasi",
+      "abilityV2BaselineUnavailable": true,
+      "abilityV2NameOrAmbiguousFindings": 0,
+      "abilityV2PositionFindings": 0
+    },
+    {
+      "playerSeasonId": "roma-2001-5",
+      "teamSeasonId": "roma-2001",
+      "league": "Serie A",
+      "club": "Roma",
+      "year": 2001,
+      "rosterName": "Emerson",
+      "positions": [
+        "MF"
+      ],
+      "canonicalPlayerId": "emerson",
+      "abilityV2BaselineUnavailable": true,
+      "abilityV2NameOrAmbiguousFindings": 0,
+      "abilityV2PositionFindings": 0
+    },
+    {
+      "playerSeasonId": "roma-2001-6",
+      "teamSeasonId": "roma-2001",
+      "league": "Serie A",
+      "club": "Roma",
+      "year": 2001,
+      "rosterName": "Hidetoshi Nakata",
+      "positions": [
+        "MF"
+      ],
+      "canonicalPlayerId": "hidetoshi-nakata",
+      "abilityV2BaselineUnavailable": true,
+      "abilityV2NameOrAmbiguousFindings": 0,
+      "abilityV2PositionFindings": 0
+    },
+    {
+      "playerSeasonId": "roma-2001-7",
+      "teamSeasonId": "roma-2001",
+      "league": "Serie A",
+      "club": "Roma",
+      "year": 2001,
+      "rosterName": "Francesco Totti",
+      "positions": [
+        "FW",
+        "MF"
+      ],
+      "canonicalPlayerId": "francesco-totti",
+      "abilityV2BaselineUnavailable": true,
+      "abilityV2NameOrAmbiguousFindings": 0,
+      "abilityV2PositionFindings": 0
+    },
+    {
+      "playerSeasonId": "roma-2001-8",
+      "teamSeasonId": "roma-2001",
+      "league": "Serie A",
+      "club": "Roma",
+      "year": 2001,
+      "rosterName": "Gabriel Batistuta",
+      "positions": [
+        "FW"
+      ],
+      "canonicalPlayerId": "gabriel-batistuta",
+      "abilityV2BaselineUnavailable": true,
+      "abilityV2NameOrAmbiguousFindings": 0,
+      "abilityV2PositionFindings": 0
+    },
+    {
+      "playerSeasonId": "lazio-2000-0",
+      "teamSeasonId": "lazio-2000",
+      "league": "Serie A",
+      "club": "Lazio",
+      "year": 2000,
+      "rosterName": "Luca Marchegiani",
+      "positions": [
+        "GK"
+      ],
+      "canonicalPlayerId": "luca-marchegiani",
+      "abilityV2BaselineUnavailable": true,
+      "abilityV2NameOrAmbiguousFindings": 0,
+      "abilityV2PositionFindings": 0
+    },
+    {
+      "playerSeasonId": "lazio-2000-1",
+      "teamSeasonId": "lazio-2000",
+      "league": "Serie A",
+      "club": "Lazio",
+      "year": 2000,
+      "rosterName": "Alessandro Nesta",
+      "positions": [
+        "DF"
+      ],
+      "canonicalPlayerId": "alessandro-nesta",
+      "abilityV2BaselineUnavailable": true,
+      "abilityV2NameOrAmbiguousFindings": 0,
+      "abilityV2PositionFindings": 0
+    },
+    {
+      "playerSeasonId": "lazio-2000-2",
+      "teamSeasonId": "lazio-2000",
+      "league": "Serie A",
+      "club": "Lazio",
+      "year": 2000,
+      "rosterName": "Sinisa Mihajlovic",
+      "positions": [
+        "DF"
+      ],
+      "canonicalPlayerId": "sinisa-mihajlovic",
+      "abilityV2BaselineUnavailable": true,
+      "abilityV2NameOrAmbiguousFindings": 0,
+      "abilityV2PositionFindings": 0
+    },
+    {
+      "playerSeasonId": "lazio-2000-3",
+      "teamSeasonId": "lazio-2000",
+      "league": "Serie A",
+      "club": "Lazio",
+      "year": 2000,
+      "rosterName": "Giuseppe Pancaro",
+      "positions": [
+        "DF"
+      ],
+      "canonicalPlayerId": "giuseppe-pancaro",
+      "abilityV2BaselineUnavailable": true,
+      "abilityV2NameOrAmbiguousFindings": 0,
+      "abilityV2PositionFindings": 0
+    },
+    {
+      "playerSeasonId": "lazio-2000-4",
+      "teamSeasonId": "lazio-2000",
+      "league": "Serie A",
+      "club": "Lazio",
+      "year": 2000,
+      "rosterName": "Juan Sebastian Veron",
+      "positions": [
+        "MF"
+      ],
+      "canonicalPlayerId": "juan-sebastian-veron",
+      "abilityV2BaselineUnavailable": true,
+      "abilityV2NameOrAmbiguousFindings": 0,
+      "abilityV2PositionFindings": 0
+    },
+    {
+      "playerSeasonId": "lazio-2000-5",
+      "teamSeasonId": "lazio-2000",
+      "league": "Serie A",
+      "club": "Lazio",
+      "year": 2000,
+      "rosterName": "Pavel Nedved",
+      "positions": [
+        "MF",
+        "FW"
+      ],
+      "canonicalPlayerId": "pavel-nedved",
+      "abilityV2BaselineUnavailable": true,
+      "abilityV2NameOrAmbiguousFindings": 0,
+      "abilityV2PositionFindings": 0
+    },
+    {
+      "playerSeasonId": "lazio-2000-6",
+      "teamSeasonId": "lazio-2000",
+      "league": "Serie A",
+      "club": "Lazio",
+      "year": 2000,
+      "rosterName": "Diego Simeone",
+      "positions": [
+        "MF"
+      ],
+      "canonicalPlayerId": "diego-simeone",
+      "abilityV2BaselineUnavailable": true,
+      "abilityV2NameOrAmbiguousFindings": 0,
+      "abilityV2PositionFindings": 0
+    },
+    {
+      "playerSeasonId": "lazio-2000-7",
+      "teamSeasonId": "lazio-2000",
+      "league": "Serie A",
+      "club": "Lazio",
+      "year": 2000,
+      "rosterName": "Marcelo Salas",
+      "positions": [
+        "FW"
+      ],
+      "canonicalPlayerId": "marcelo-salas",
+      "abilityV2BaselineUnavailable": true,
+      "abilityV2NameOrAmbiguousFindings": 0,
+      "abilityV2PositionFindings": 0
+    },
+    {
+      "playerSeasonId": "lazio-2000-8",
+      "teamSeasonId": "lazio-2000",
+      "league": "Serie A",
+      "club": "Lazio",
+      "year": 2000,
+      "rosterName": "Roberto Mancini",
+      "positions": [
+        "FW",
+        "MF"
+      ],
+      "canonicalPlayerId": "roberto-mancini",
+      "abilityV2BaselineUnavailable": true,
+      "abilityV2NameOrAmbiguousFindings": 0,
+      "abilityV2PositionFindings": 0
+    },
+    {
+      "playerSeasonId": "parma-1999-0",
+      "teamSeasonId": "parma-1999",
+      "league": "Serie A",
+      "club": "Parma",
+      "year": 1999,
+      "rosterName": "Gianluigi Buffon",
+      "positions": [
+        "GK"
+      ],
+      "canonicalPlayerId": "gianluigi-buffon",
+      "abilityV2BaselineUnavailable": true,
+      "abilityV2NameOrAmbiguousFindings": 0,
+      "abilityV2PositionFindings": 0
+    },
+    {
+      "playerSeasonId": "parma-1999-1",
+      "teamSeasonId": "parma-1999",
+      "league": "Serie A",
+      "club": "Parma",
+      "year": 1999,
+      "rosterName": "Lilian Thuram",
+      "positions": [
+        "DF"
+      ],
+      "canonicalPlayerId": "lilian-thuram",
+      "abilityV2BaselineUnavailable": true,
+      "abilityV2NameOrAmbiguousFindings": 0,
+      "abilityV2PositionFindings": 0
+    },
+    {
+      "playerSeasonId": "parma-1999-2",
+      "teamSeasonId": "parma-1999",
+      "league": "Serie A",
+      "club": "Parma",
+      "year": 1999,
+      "rosterName": "Fabio Cannavaro",
+      "positions": [
+        "DF"
+      ],
+      "canonicalPlayerId": "fabio-cannavaro",
+      "abilityV2BaselineUnavailable": true,
+      "abilityV2NameOrAmbiguousFindings": 0,
+      "abilityV2PositionFindings": 0
+    },
+    {
+      "playerSeasonId": "parma-1999-3",
+      "teamSeasonId": "parma-1999",
+      "league": "Serie A",
+      "club": "Parma",
+      "year": 1999,
+      "rosterName": "Roberto Sensini",
+      "positions": [
+        "DF",
+        "MF"
+      ],
+      "canonicalPlayerId": "roberto-sensini",
+      "abilityV2BaselineUnavailable": true,
+      "abilityV2NameOrAmbiguousFindings": 0,
+      "abilityV2PositionFindings": 0
+    },
+    {
+      "playerSeasonId": "parma-1999-4",
+      "teamSeasonId": "parma-1999",
+      "league": "Serie A",
+      "club": "Parma",
+      "year": 1999,
+      "rosterName": "Juan Sebastian Veron",
+      "positions": [
+        "MF"
+      ],
+      "canonicalPlayerId": "juan-sebastian-veron",
+      "abilityV2BaselineUnavailable": true,
+      "abilityV2NameOrAmbiguousFindings": 0,
+      "abilityV2PositionFindings": 0
+    },
+    {
+      "playerSeasonId": "parma-1999-5",
+      "teamSeasonId": "parma-1999",
+      "league": "Serie A",
+      "club": "Parma",
+      "year": 1999,
+      "rosterName": "Dino Baggio",
+      "positions": [
+        "MF"
+      ],
+      "canonicalPlayerId": "dino-baggio",
+      "abilityV2BaselineUnavailable": true,
+      "abilityV2NameOrAmbiguousFindings": 0,
+      "abilityV2PositionFindings": 0
+    },
+    {
+      "playerSeasonId": "parma-1999-6",
+      "teamSeasonId": "parma-1999",
+      "league": "Serie A",
+      "club": "Parma",
+      "year": 1999,
+      "rosterName": "Diego Fuser",
+      "positions": [
+        "MF"
+      ],
+      "canonicalPlayerId": "diego-fuser",
+      "abilityV2BaselineUnavailable": true,
+      "abilityV2NameOrAmbiguousFindings": 0,
+      "abilityV2PositionFindings": 0
+    },
+    {
+      "playerSeasonId": "parma-1999-7",
+      "teamSeasonId": "parma-1999",
+      "league": "Serie A",
+      "club": "Parma",
+      "year": 1999,
+      "rosterName": "Hernan Crespo",
+      "positions": [
+        "FW"
+      ],
+      "canonicalPlayerId": "hernan-crespo",
+      "abilityV2BaselineUnavailable": true,
+      "abilityV2NameOrAmbiguousFindings": 0,
+      "abilityV2PositionFindings": 0
+    },
+    {
+      "playerSeasonId": "parma-1999-8",
+      "teamSeasonId": "parma-1999",
+      "league": "Serie A",
+      "club": "Parma",
+      "year": 1999,
+      "rosterName": "Enrico Chiesa",
+      "positions": [
+        "FW"
+      ],
+      "canonicalPlayerId": "enrico-chiesa",
+      "abilityV2BaselineUnavailable": true,
+      "abilityV2NameOrAmbiguousFindings": 0,
+      "abilityV2PositionFindings": 0
+    },
+    {
+      "playerSeasonId": "bayern-munich-2001-0",
+      "teamSeasonId": "bayern-munich-2001",
+      "league": "Bundesliga",
+      "club": "Bayern Munich",
+      "year": 2001,
+      "rosterName": "Oliver Kahn",
+      "positions": [
+        "GK"
+      ],
+      "canonicalPlayerId": "oliver-kahn",
+      "abilityV2BaselineUnavailable": true,
+      "abilityV2NameOrAmbiguousFindings": 0,
+      "abilityV2PositionFindings": 0
+    },
+    {
+      "playerSeasonId": "bayern-munich-2001-1",
+      "teamSeasonId": "bayern-munich-2001",
+      "league": "Bundesliga",
+      "club": "Bayern Munich",
+      "year": 2001,
+      "rosterName": "Sammy Kuffour",
+      "positions": [
+        "DF"
+      ],
+      "canonicalPlayerId": "sammy-kuffour",
+      "abilityV2BaselineUnavailable": true,
+      "abilityV2NameOrAmbiguousFindings": 0,
+      "abilityV2PositionFindings": 0
+    },
+    {
+      "playerSeasonId": "bayern-munich-2001-2",
+      "teamSeasonId": "bayern-munich-2001",
+      "league": "Bundesliga",
+      "club": "Bayern Munich",
+      "year": 2001,
+      "rosterName": "Patrik Andersson",
+      "positions": [
+        "DF"
+      ],
+      "canonicalPlayerId": "patrik-andersson",
+      "abilityV2BaselineUnavailable": true,
+      "abilityV2NameOrAmbiguousFindings": 0,
+      "abilityV2PositionFindings": 0
+    },
+    {
+      "playerSeasonId": "bayern-munich-2001-3",
+      "teamSeasonId": "bayern-munich-2001",
+      "league": "Bundesliga",
+      "club": "Bayern Munich",
+      "year": 2001,
+      "rosterName": "Bixente Lizarazu",
+      "positions": [
+        "DF"
+      ],
+      "canonicalPlayerId": "bixente-lizarazu",
+      "abilityV2BaselineUnavailable": true,
+      "abilityV2NameOrAmbiguousFindings": 0,
+      "abilityV2PositionFindings": 0
+    },
+    {
+      "playerSeasonId": "bayern-munich-2001-4",
+      "teamSeasonId": "bayern-munich-2001",
+      "league": "Bundesliga",
+      "club": "Bayern Munich",
+      "year": 2001,
+      "rosterName": "Willy Sagnol",
+      "positions": [
+        "DF"
+      ],
+      "canonicalPlayerId": "willy-sagnol",
+      "abilityV2BaselineUnavailable": true,
+      "abilityV2NameOrAmbiguousFindings": 0,
+      "abilityV2PositionFindings": 0
+    },
+    {
+      "playerSeasonId": "bayern-munich-2001-5",
+      "teamSeasonId": "bayern-munich-2001",
+      "league": "Bundesliga",
+      "club": "Bayern Munich",
+      "year": 2001,
+      "rosterName": "Stefan Effenberg",
+      "positions": [
+        "MF"
+      ],
+      "canonicalPlayerId": "stefan-effenberg",
+      "abilityV2BaselineUnavailable": true,
+      "abilityV2NameOrAmbiguousFindings": 0,
+      "abilityV2PositionFindings": 0
+    },
+    {
+      "playerSeasonId": "bayern-munich-2001-6",
+      "teamSeasonId": "bayern-munich-2001",
+      "league": "Bundesliga",
+      "club": "Bayern Munich",
+      "year": 2001,
+      "rosterName": "Owen Hargreaves",
+      "positions": [
+        "MF"
+      ],
+      "canonicalPlayerId": "owen-hargreaves",
+      "abilityV2BaselineUnavailable": true,
+      "abilityV2NameOrAmbiguousFindings": 0,
+      "abilityV2PositionFindings": 0
+    },
+    {
+      "playerSeasonId": "bayern-munich-2001-7",
+      "teamSeasonId": "bayern-munich-2001",
+      "league": "Bundesliga",
+      "club": "Bayern Munich",
+      "year": 2001,
+      "rosterName": "Mehmet Scholl",
+      "positions": [
+        "MF",
+        "FW"
+      ],
+      "canonicalPlayerId": "mehmet-scholl",
+      "abilityV2BaselineUnavailable": true,
+      "abilityV2NameOrAmbiguousFindings": 0,
+      "abilityV2PositionFindings": 0
+    },
+    {
+      "playerSeasonId": "bayern-munich-2001-8",
+      "teamSeasonId": "bayern-munich-2001",
+      "league": "Bundesliga",
+      "club": "Bayern Munich",
+      "year": 2001,
+      "rosterName": "Giovane Elber",
+      "positions": [
+        "FW"
+      ],
+      "canonicalPlayerId": "giovane-elber",
+      "abilityV2BaselineUnavailable": true,
+      "abilityV2NameOrAmbiguousFindings": 0,
+      "abilityV2PositionFindings": 0
+    },
+    {
+      "playerSeasonId": "porto-2004-0",
+      "teamSeasonId": "porto-2004",
+      "league": "Primeira Liga",
+      "club": "Porto",
+      "year": 2004,
+      "rosterName": "Vitor Baia",
+      "positions": [
+        "GK"
+      ],
+      "canonicalPlayerId": "vitor-baia",
+      "abilityV2BaselineUnavailable": true,
+      "abilityV2NameOrAmbiguousFindings": 4,
+      "abilityV2PositionFindings": 1
+    },
+    {
+      "playerSeasonId": "porto-2004-1",
+      "teamSeasonId": "porto-2004",
+      "league": "Primeira Liga",
+      "club": "Porto",
+      "year": 2004,
+      "rosterName": "Ricardo Carvalho",
+      "positions": [
+        "DF"
+      ],
+      "canonicalPlayerId": "ricardo-carvalho",
+      "abilityV2BaselineUnavailable": false,
+      "abilityV2NameOrAmbiguousFindings": 1,
+      "abilityV2PositionFindings": 3
+    },
+    {
+      "playerSeasonId": "porto-2004-2",
+      "teamSeasonId": "porto-2004",
+      "league": "Primeira Liga",
+      "club": "Porto",
+      "year": 2004,
+      "rosterName": "Jorge Costa",
+      "positions": [
+        "DF"
+      ],
+      "canonicalPlayerId": "jorge-costa",
+      "abilityV2BaselineUnavailable": true,
+      "abilityV2NameOrAmbiguousFindings": 1,
+      "abilityV2PositionFindings": 1
+    },
+    {
+      "playerSeasonId": "porto-2004-3",
+      "teamSeasonId": "porto-2004",
+      "league": "Primeira Liga",
+      "club": "Porto",
+      "year": 2004,
+      "rosterName": "Paulo Ferreira",
+      "positions": [
+        "DF"
+      ],
+      "canonicalPlayerId": "paulo-ferreira",
+      "abilityV2BaselineUnavailable": true,
+      "abilityV2NameOrAmbiguousFindings": 4,
+      "abilityV2PositionFindings": 0
+    },
+    {
+      "playerSeasonId": "porto-2004-4",
+      "teamSeasonId": "porto-2004",
+      "league": "Primeira Liga",
+      "club": "Porto",
+      "year": 2004,
+      "rosterName": "Costinha",
+      "positions": [
+        "MF"
+      ],
+      "canonicalPlayerId": "costinha",
+      "abilityV2BaselineUnavailable": true,
+      "abilityV2NameOrAmbiguousFindings": 8,
+      "abilityV2PositionFindings": 3
+    },
+    {
+      "playerSeasonId": "porto-2004-5",
+      "teamSeasonId": "porto-2004",
+      "league": "Primeira Liga",
+      "club": "Porto",
+      "year": 2004,
+      "rosterName": "Maniche",
+      "positions": [
+        "MF"
+      ],
+      "canonicalPlayerId": "maniche",
+      "abilityV2BaselineUnavailable": true,
+      "abilityV2NameOrAmbiguousFindings": 4,
+      "abilityV2PositionFindings": 3
+    },
+    {
+      "playerSeasonId": "porto-2004-6",
+      "teamSeasonId": "porto-2004",
+      "league": "Primeira Liga",
+      "club": "Porto",
+      "year": 2004,
+      "rosterName": "Deco",
+      "positions": [
+        "MF"
+      ],
+      "canonicalPlayerId": "deco",
+      "abilityV2BaselineUnavailable": true,
+      "abilityV2NameOrAmbiguousFindings": 4,
+      "abilityV2PositionFindings": 1
+    },
+    {
+      "playerSeasonId": "porto-2004-7",
+      "teamSeasonId": "porto-2004",
+      "league": "Primeira Liga",
+      "club": "Porto",
+      "year": 2004,
+      "rosterName": "Benni McCarthy",
+      "positions": [
+        "FW"
+      ],
+      "canonicalPlayerId": "benni-mccarthy",
+      "abilityV2BaselineUnavailable": true,
+      "abilityV2NameOrAmbiguousFindings": 0,
+      "abilityV2PositionFindings": 0
+    },
+    {
+      "playerSeasonId": "porto-2004-8",
+      "teamSeasonId": "porto-2004",
+      "league": "Primeira Liga",
+      "club": "Porto",
+      "year": 2004,
+      "rosterName": "Derlei",
+      "positions": [
+        "FW"
+      ],
+      "canonicalPlayerId": "derlei",
+      "abilityV2BaselineUnavailable": true,
+      "abilityV2NameOrAmbiguousFindings": 2,
+      "abilityV2PositionFindings": 2
+    }
+  ]
+}

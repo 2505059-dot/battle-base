@@ -1,0 +1,3638 @@
+{
+  "schemaVersion": "historical-card-search-players/1",
+  "players": [
+    {
+      "playerId": "alessandro-del-piero",
+      "identitySource": "data/entities/players.json",
+      "canonicalName": "Alessandro Del Piero",
+      "rosterNames": [
+        "Alessandro Del Piero"
+      ],
+      "searchTerms": [
+        "Alessandro Del Piero",
+        "皮耶罗",
+        "アレッサンドロ・デル・ピエロ",
+        "亚历山德罗·德尔·皮耶罗",
+        "德尔·皮耶罗",
+        "デル・ピエロ"
+      ],
+      "existingExternalIds": {
+        "sofifa": 1075,
+        "fifaIndex": 1075
+      },
+      "playerSeasonIds": [
+        "juventus-2003-7"
+      ],
+      "targetTeamSeasons": [
+        {
+          "playerSeasonId": "juventus-2003-7",
+          "teamSeasonId": "juventus-2003",
+          "league": "Serie A",
+          "club": "Juventus",
+          "year": 2003,
+          "positions": [
+            "FW",
+            "MF"
+          ],
+          "abilityV2BaselineUnavailable": false
+        }
+      ],
+      "identityConfidence": "unverified",
+      "searchEntityKey": "entity:alessandro-del-piero"
+    },
+    {
+      "playerId": "alessandro-nesta",
+      "identitySource": "data/entities/players.json",
+      "canonicalName": "Alessandro Nesta",
+      "rosterNames": [
+        "Alessandro Nesta"
+      ],
+      "searchTerms": [
+        "Alessandro Nesta",
+        "内斯塔",
+        "アレッサンドロ・ネスタ",
+        "亚历山德罗·内斯塔",
+        "ネスタ"
+      ],
+      "existingExternalIds": {
+        "sofifa": 1088,
+        "fifaIndex": 1088
+      },
+      "playerSeasonIds": [
+        "lazio-2000-1"
+      ],
+      "targetTeamSeasons": [
+        {
+          "playerSeasonId": "lazio-2000-1",
+          "teamSeasonId": "lazio-2000",
+          "league": "Serie A",
+          "club": "Lazio",
+          "year": 2000,
+          "positions": [
+            "DF"
+          ],
+          "abilityV2BaselineUnavailable": true
+        }
+      ],
+      "identityConfidence": "unverified",
+      "searchEntityKey": "entity:alessandro-nesta"
+    },
+    {
+      "playerId": "amedeo-carboni",
+      "identitySource": "data/entities/players.json",
+      "canonicalName": "Amedeo Carboni",
+      "rosterNames": [
+        "Amedeo Carboni"
+      ],
+      "searchTerms": [
+        "Amedeo Carboni",
+        "卡博尼",
+        "アメデオ・カルボーニ",
+        "阿梅代奥·卡博尼",
+        "カルボーニ"
+      ],
+      "existingExternalIds": {
+        "sofifa": null,
+        "fifaIndex": null
+      },
+      "playerSeasonIds": [
+        "valencia-2004-3"
+      ],
+      "targetTeamSeasons": [
+        {
+          "playerSeasonId": "valencia-2004-3",
+          "teamSeasonId": "valencia-2004",
+          "league": "La Liga",
+          "club": "Valencia",
+          "year": 2004,
+          "positions": [
+            "DF"
+          ],
+          "abilityV2BaselineUnavailable": true
+        }
+      ],
+      "identityConfidence": "unverified",
+      "searchEntityKey": "entity:amedeo-carboni"
+    },
+    {
+      "playerId": "ashley-cole",
+      "identitySource": "data/entities/players.json",
+      "canonicalName": "Ashley Cole",
+      "rosterNames": [
+        "Ashley Cole"
+      ],
+      "searchTerms": [
+        "Ashley Cole",
+        "阿什利·科尔",
+        "アシュリー・コール",
+        "A·科尔",
+        "A・コール"
+      ],
+      "existingExternalIds": {
+        "sofifa": 34079,
+        "fifaIndex": 34079
+      },
+      "playerSeasonIds": [
+        "arsenal-2004-2"
+      ],
+      "targetTeamSeasons": [
+        {
+          "playerSeasonId": "arsenal-2004-2",
+          "teamSeasonId": "arsenal-2004",
+          "league": "Premier League",
+          "club": "Arsenal",
+          "year": 2004,
+          "positions": [
+            "DF"
+          ],
+          "abilityV2BaselineUnavailable": false
+        }
+      ],
+      "identityConfidence": "unverified",
+      "searchEntityKey": "entity:ashley-cole"
+    },
+    {
+      "playerId": "benni-mccarthy",
+      "identitySource": "data/entities/players.json",
+      "canonicalName": "Benni McCarthy",
+      "rosterNames": [
+        "Benni McCarthy"
+      ],
+      "searchTerms": [
+        "Benni McCarthy",
+        "麦卡锡",
+        "ベニー・マッカーシー",
+        "本尼·麦卡锡",
+        "マッカーシー"
+      ],
+      "existingExternalIds": {
+        "sofifa": null,
+        "fifaIndex": null
+      },
+      "playerSeasonIds": [
+        "porto-2004-7"
+      ],
+      "targetTeamSeasons": [
+        {
+          "playerSeasonId": "porto-2004-7",
+          "teamSeasonId": "porto-2004",
+          "league": "Primeira Liga",
+          "club": "Porto",
+          "year": 2004,
+          "positions": [
+            "FW"
+          ],
+          "abilityV2BaselineUnavailable": true
+        }
+      ],
+      "identityConfidence": "unverified",
+      "searchEntityKey": "entity:benni-mccarthy"
+    },
+    {
+      "playerId": "bixente-lizarazu",
+      "identitySource": "data/entities/players.json",
+      "canonicalName": "Bixente Lizarazu",
+      "rosterNames": [
+        "Bixente Lizarazu"
+      ],
+      "searchTerms": [
+        "Bixente Lizarazu",
+        "利扎拉祖",
+        "ビセンテ・リザラズ",
+        "比森特·利扎拉祖",
+        "リザラズ"
+      ],
+      "existingExternalIds": {
+        "sofifa": null,
+        "fifaIndex": null
+      },
+      "playerSeasonIds": [
+        "bayern-munich-2001-3"
+      ],
+      "targetTeamSeasons": [
+        {
+          "playerSeasonId": "bayern-munich-2001-3",
+          "teamSeasonId": "bayern-munich-2001",
+          "league": "Bundesliga",
+          "club": "Bayern Munich",
+          "year": 2001,
+          "positions": [
+            "DF"
+          ],
+          "abilityV2BaselineUnavailable": true
+        }
+      ],
+      "identityConfidence": "unverified",
+      "searchEntityKey": "entity:bixente-lizarazu"
+    },
+    {
+      "playerId": "cafu",
+      "identitySource": "data/entities/players.json",
+      "canonicalName": "Cafu",
+      "rosterNames": [
+        "Cafu"
+      ],
+      "searchTerms": [
+        "Cafu",
+        "Marcos Evangelista de Moraes",
+        "卡福",
+        "カフー",
+        "马科斯·卡福",
+        "マルコス・カフー"
+      ],
+      "existingExternalIds": {
+        "sofifa": 5003,
+        "fifaIndex": 5003
+      },
+      "playerSeasonIds": [
+        "roma-2001-2"
+      ],
+      "targetTeamSeasons": [
+        {
+          "playerSeasonId": "roma-2001-2",
+          "teamSeasonId": "roma-2001",
+          "league": "Serie A",
+          "club": "Roma",
+          "year": 2001,
+          "positions": [
+            "DF",
+            "MF"
+          ],
+          "abilityV2BaselineUnavailable": true
+        }
+      ],
+      "identityConfidence": "unverified",
+      "searchEntityKey": "entity:cafu"
+    },
+    {
+      "playerId": "carlos-marchena",
+      "identitySource": "data/entities/players.json",
+      "canonicalName": "Carlos Marchena",
+      "rosterNames": [
+        "Carlos Marchena"
+      ],
+      "searchTerms": [
+        "Carlos Marchena",
+        "马切纳",
+        "カルロス・マルチェナ",
+        "卡洛斯·马切纳",
+        "マルチェナ"
+      ],
+      "existingExternalIds": {
+        "sofifa": null,
+        "fifaIndex": null
+      },
+      "playerSeasonIds": [
+        "valencia-2004-2"
+      ],
+      "targetTeamSeasons": [
+        {
+          "playerSeasonId": "valencia-2004-2",
+          "teamSeasonId": "valencia-2004",
+          "league": "La Liga",
+          "club": "Valencia",
+          "year": 2004,
+          "positions": [
+            "DF",
+            "MF"
+          ],
+          "abilityV2BaselineUnavailable": true
+        }
+      ],
+      "identityConfidence": "unverified",
+      "searchEntityKey": "entity:carlos-marchena"
+    },
+    {
+      "playerId": "ciro-ferrara",
+      "identitySource": "data/entities/players.json",
+      "canonicalName": "Ciro Ferrara",
+      "rosterNames": [
+        "Ciro Ferrara"
+      ],
+      "searchTerms": [
+        "Ciro Ferrara",
+        "费拉拉",
+        "チーロ・フェラーラ",
+        "奇罗·费拉拉",
+        "フェラーラ"
+      ],
+      "existingExternalIds": {
+        "sofifa": null,
+        "fifaIndex": null
+      },
+      "playerSeasonIds": [
+        "juventus-2003-2"
+      ],
+      "targetTeamSeasons": [
+        {
+          "playerSeasonId": "juventus-2003-2",
+          "teamSeasonId": "juventus-2003",
+          "league": "Serie A",
+          "club": "Juventus",
+          "year": 2003,
+          "positions": [
+            "DF"
+          ],
+          "abilityV2BaselineUnavailable": true
+        }
+      ],
+      "identityConfidence": "unverified",
+      "searchEntityKey": "entity:ciro-ferrara"
+    },
+    {
+      "playerId": "claude-makelele",
+      "identitySource": "data/entities/players.json",
+      "canonicalName": "Claude Makelele",
+      "rosterNames": [
+        "Claude Makelele"
+      ],
+      "searchTerms": [
+        "Claude Makelele",
+        "C. Makélélé",
+        "马克莱莱",
+        "クロード・マケレレ",
+        "克洛德·马克莱莱",
+        "マケレレ"
+      ],
+      "existingExternalIds": {
+        "sofifa": null,
+        "fifaIndex": 1668
+      },
+      "playerSeasonIds": [
+        "real-madrid-2002-5"
+      ],
+      "targetTeamSeasons": [
+        {
+          "playerSeasonId": "real-madrid-2002-5",
+          "teamSeasonId": "real-madrid-2002",
+          "league": "La Liga",
+          "club": "Real Madrid",
+          "year": 2002,
+          "positions": [
+            "MF"
+          ],
+          "abilityV2BaselineUnavailable": false
+        }
+      ],
+      "identityConfidence": "unverified",
+      "searchEntityKey": "entity:claude-makelele"
+    },
+    {
+      "playerId": "costinha",
+      "identitySource": "data/entities/players.json",
+      "canonicalName": "Costinha",
+      "rosterNames": [
+        "Costinha"
+      ],
+      "searchTerms": [
+        "Costinha",
+        "Francisco José Rodrigues da Costa",
+        "科斯蒂尼亚",
+        "コスチーニャ",
+        "弗朗西斯科·科斯蒂尼亚",
+        "フランシスコ・ダ・コスタ"
+      ],
+      "existingExternalIds": {
+        "sofifa": null,
+        "fifaIndex": null
+      },
+      "playerSeasonIds": [
+        "porto-2004-4"
+      ],
+      "targetTeamSeasons": [
+        {
+          "playerSeasonId": "porto-2004-4",
+          "teamSeasonId": "porto-2004",
+          "league": "Primeira Liga",
+          "club": "Porto",
+          "year": 2004,
+          "positions": [
+            "MF"
+          ],
+          "abilityV2BaselineUnavailable": true
+        }
+      ],
+      "identityConfidence": "unverified",
+      "searchEntityKey": "entity:costinha"
+    },
+    {
+      "playerId": "damiano-tommasi",
+      "identitySource": "data/entities/players.json",
+      "canonicalName": "Damiano Tommasi",
+      "rosterNames": [
+        "Damiano Tommasi"
+      ],
+      "searchTerms": [
+        "Damiano Tommasi",
+        "托马西",
+        "ダミアーノ・トンマージ",
+        "达米亚诺·托马西",
+        "トンマージ"
+      ],
+      "existingExternalIds": {
+        "sofifa": null,
+        "fifaIndex": null
+      },
+      "playerSeasonIds": [
+        "roma-2001-4"
+      ],
+      "targetTeamSeasons": [
+        {
+          "playerSeasonId": "roma-2001-4",
+          "teamSeasonId": "roma-2001",
+          "league": "Serie A",
+          "club": "Roma",
+          "year": 2001,
+          "positions": [
+            "MF"
+          ],
+          "abilityV2BaselineUnavailable": true
+        }
+      ],
+      "identityConfidence": "unverified",
+      "searchEntityKey": "entity:damiano-tommasi"
+    },
+    {
+      "playerId": "david-albelda",
+      "identitySource": "data/entities/players.json",
+      "canonicalName": "David Albelda",
+      "rosterNames": [
+        "David Albelda"
+      ],
+      "searchTerms": [
+        "David Albelda",
+        "阿尔贝尔达",
+        "ダビド・アルベルダ",
+        "大卫·阿尔贝尔达",
+        "アルベルダ"
+      ],
+      "existingExternalIds": {
+        "sofifa": null,
+        "fifaIndex": null
+      },
+      "playerSeasonIds": [
+        "valencia-2004-5"
+      ],
+      "targetTeamSeasons": [
+        {
+          "playerSeasonId": "valencia-2004-5",
+          "teamSeasonId": "valencia-2004",
+          "league": "La Liga",
+          "club": "Valencia",
+          "year": 2004,
+          "positions": [
+            "MF"
+          ],
+          "abilityV2BaselineUnavailable": true
+        }
+      ],
+      "identityConfidence": "unverified",
+      "searchEntityKey": "entity:david-albelda"
+    },
+    {
+      "playerId": "david-beckham",
+      "identitySource": "data/entities/players.json",
+      "canonicalName": "David Beckham",
+      "rosterNames": [
+        "David Beckham"
+      ],
+      "searchTerms": [
+        "David Beckham",
+        "贝克汉姆",
+        "デヴィッド・ベッカム",
+        "大卫·贝克汉姆",
+        "デビッド・ベッカム",
+        "ベッカム"
+      ],
+      "existingExternalIds": {
+        "sofifa": null,
+        "fifaIndex": null
+      },
+      "playerSeasonIds": [
+        "manchester-united-1999-5"
+      ],
+      "targetTeamSeasons": [
+        {
+          "playerSeasonId": "manchester-united-1999-5",
+          "teamSeasonId": "manchester-united-1999",
+          "league": "Premier League",
+          "club": "Manchester United",
+          "year": 1999,
+          "positions": [
+            "MF"
+          ],
+          "abilityV2BaselineUnavailable": true
+        }
+      ],
+      "identityConfidence": "unverified",
+      "searchEntityKey": "entity:david-beckham"
+    },
+    {
+      "playerId": "david-trezeguet",
+      "identitySource": "data/entities/players.json",
+      "canonicalName": "David Trezeguet",
+      "rosterNames": [
+        "David Trezeguet"
+      ],
+      "searchTerms": [
+        "David Trezeguet",
+        "特雷泽盖",
+        "ダヴィド・トレゼゲ",
+        "大卫·特雷泽盖",
+        "トレゼゲ"
+      ],
+      "existingExternalIds": {
+        "sofifa": null,
+        "fifaIndex": null
+      },
+      "playerSeasonIds": [
+        "juventus-2003-8"
+      ],
+      "targetTeamSeasons": [
+        {
+          "playerSeasonId": "juventus-2003-8",
+          "teamSeasonId": "juventus-2003",
+          "league": "Serie A",
+          "club": "Juventus",
+          "year": 2003,
+          "positions": [
+            "FW"
+          ],
+          "abilityV2BaselineUnavailable": true
+        }
+      ],
+      "identityConfidence": "unverified",
+      "searchEntityKey": "entity:david-trezeguet"
+    },
+    {
+      "playerId": "deco",
+      "identitySource": "data/entities/players.json",
+      "canonicalName": "Deco",
+      "rosterNames": [
+        "Deco"
+      ],
+      "searchTerms": [
+        "Deco",
+        "Anderson Luís de Souza",
+        "德科",
+        "デコ",
+        "安德森·德科",
+        "アンデルソン・デコ"
+      ],
+      "existingExternalIds": {
+        "sofifa": null,
+        "fifaIndex": null
+      },
+      "playerSeasonIds": [
+        "porto-2004-6"
+      ],
+      "targetTeamSeasons": [
+        {
+          "playerSeasonId": "porto-2004-6",
+          "teamSeasonId": "porto-2004",
+          "league": "Primeira Liga",
+          "club": "Porto",
+          "year": 2004,
+          "positions": [
+            "MF"
+          ],
+          "abilityV2BaselineUnavailable": true
+        }
+      ],
+      "identityConfidence": "unverified",
+      "searchEntityKey": "entity:deco"
+    },
+    {
+      "playerId": "denis-irwin",
+      "identitySource": "data/entities/players.json",
+      "canonicalName": "Denis Irwin",
+      "rosterNames": [
+        "Denis Irwin"
+      ],
+      "searchTerms": [
+        "Denis Irwin",
+        "埃尔文",
+        "デニス・アーウィン",
+        "丹尼斯·埃尔文",
+        "丹尼斯·欧文",
+        "アーウィン"
+      ],
+      "existingExternalIds": {
+        "sofifa": null,
+        "fifaIndex": null
+      },
+      "playerSeasonIds": [
+        "manchester-united-1999-3"
+      ],
+      "targetTeamSeasons": [
+        {
+          "playerSeasonId": "manchester-united-1999-3",
+          "teamSeasonId": "manchester-united-1999",
+          "league": "Premier League",
+          "club": "Manchester United",
+          "year": 1999,
+          "positions": [
+            "DF"
+          ],
+          "abilityV2BaselineUnavailable": true
+        }
+      ],
+      "identityConfidence": "unverified",
+      "searchEntityKey": "entity:denis-irwin"
+    },
+    {
+      "playerId": "dennis-bergkamp",
+      "identitySource": "data/entities/players.json",
+      "canonicalName": "Dennis Bergkamp",
+      "rosterNames": [
+        "Dennis Bergkamp"
+      ],
+      "searchTerms": [
+        "Dennis Bergkamp",
+        "博格坎普",
+        "デニス・ベルカンプ",
+        "丹尼斯·博格坎普",
+        "ベルカンプ"
+      ],
+      "existingExternalIds": {
+        "sofifa": null,
+        "fifaIndex": null
+      },
+      "playerSeasonIds": [
+        "arsenal-2004-8"
+      ],
+      "targetTeamSeasons": [
+        {
+          "playerSeasonId": "arsenal-2004-8",
+          "teamSeasonId": "arsenal-2004",
+          "league": "Premier League",
+          "club": "Arsenal",
+          "year": 2004,
+          "positions": [
+            "FW",
+            "MF"
+          ],
+          "abilityV2BaselineUnavailable": true
+        }
+      ],
+      "identityConfidence": "unverified",
+      "searchEntityKey": "entity:dennis-bergkamp"
+    },
+    {
+      "playerId": "derlei",
+      "identitySource": "data/entities/players.json",
+      "canonicalName": "Derlei",
+      "rosterNames": [
+        "Derlei"
+      ],
+      "searchTerms": [
+        "Derlei",
+        "Vanderlei Fernandes Silva",
+        "德尔莱",
+        "デルレイ",
+        "范德莱·德尔莱",
+        "ヴァンデルレイ・フェルナンデス"
+      ],
+      "existingExternalIds": {
+        "sofifa": null,
+        "fifaIndex": null
+      },
+      "playerSeasonIds": [
+        "porto-2004-8"
+      ],
+      "targetTeamSeasons": [
+        {
+          "playerSeasonId": "porto-2004-8",
+          "teamSeasonId": "porto-2004",
+          "league": "Primeira Liga",
+          "club": "Porto",
+          "year": 2004,
+          "positions": [
+            "FW"
+          ],
+          "abilityV2BaselineUnavailable": true
+        }
+      ],
+      "identityConfidence": "unverified",
+      "searchEntityKey": "entity:derlei"
+    },
+    {
+      "playerId": "diego-fuser",
+      "identitySource": "data/entities/players.json",
+      "canonicalName": "Diego Fuser",
+      "rosterNames": [
+        "Diego Fuser"
+      ],
+      "searchTerms": [
+        "Diego Fuser",
+        "富塞尔",
+        "ディエゴ・フゼール",
+        "迭戈·富塞尔",
+        "フゼール"
+      ],
+      "existingExternalIds": {
+        "sofifa": null,
+        "fifaIndex": null
+      },
+      "playerSeasonIds": [
+        "parma-1999-6"
+      ],
+      "targetTeamSeasons": [
+        {
+          "playerSeasonId": "parma-1999-6",
+          "teamSeasonId": "parma-1999",
+          "league": "Serie A",
+          "club": "Parma",
+          "year": 1999,
+          "positions": [
+            "MF"
+          ],
+          "abilityV2BaselineUnavailable": true
+        }
+      ],
+      "identityConfidence": "unverified",
+      "searchEntityKey": "entity:diego-fuser"
+    },
+    {
+      "playerId": "diego-simeone",
+      "identitySource": "data/entities/players.json",
+      "canonicalName": "Diego Simeone",
+      "rosterNames": [
+        "Diego Simeone"
+      ],
+      "searchTerms": [
+        "Diego Simeone",
+        "西蒙尼",
+        "ディエゴ・シメオネ",
+        "迭戈·西蒙尼",
+        "シメオネ"
+      ],
+      "existingExternalIds": {
+        "sofifa": null,
+        "fifaIndex": null
+      },
+      "playerSeasonIds": [
+        "lazio-2000-6"
+      ],
+      "targetTeamSeasons": [
+        {
+          "playerSeasonId": "lazio-2000-6",
+          "teamSeasonId": "lazio-2000",
+          "league": "Serie A",
+          "club": "Lazio",
+          "year": 2000,
+          "positions": [
+            "MF"
+          ],
+          "abilityV2BaselineUnavailable": true
+        }
+      ],
+      "identityConfidence": "unverified",
+      "searchEntityKey": "entity:diego-simeone"
+    },
+    {
+      "playerId": "dino-baggio",
+      "identitySource": "data/entities/players.json",
+      "canonicalName": "Dino Baggio",
+      "rosterNames": [
+        "Dino Baggio"
+      ],
+      "searchTerms": [
+        "Dino Baggio",
+        "迪诺·巴乔",
+        "ディノ・バッジョ",
+        "D·巴乔",
+        "D・バッジョ"
+      ],
+      "existingExternalIds": {
+        "sofifa": null,
+        "fifaIndex": null
+      },
+      "playerSeasonIds": [
+        "parma-1999-5"
+      ],
+      "targetTeamSeasons": [
+        {
+          "playerSeasonId": "parma-1999-5",
+          "teamSeasonId": "parma-1999",
+          "league": "Serie A",
+          "club": "Parma",
+          "year": 1999,
+          "positions": [
+            "MF"
+          ],
+          "abilityV2BaselineUnavailable": true
+        }
+      ],
+      "identityConfidence": "unverified",
+      "searchEntityKey": "entity:dino-baggio"
+    },
+    {
+      "playerId": "djalminha",
+      "identitySource": "data/entities/players.json",
+      "canonicalName": "Djalminha",
+      "rosterNames": [
+        "Djalminha"
+      ],
+      "searchTerms": [
+        "Djalminha",
+        "Djalma Feitosa Dias",
+        "贾尔米尼亚",
+        "ジャウミーニャ",
+        "德贾尔米尼亚",
+        "ジャルミーニャ"
+      ],
+      "existingExternalIds": {
+        "sofifa": null,
+        "fifaIndex": null
+      },
+      "playerSeasonIds": [
+        "deportivo-la-coruna-2000-5"
+      ],
+      "targetTeamSeasons": [
+        {
+          "playerSeasonId": "deportivo-la-coruna-2000-5",
+          "teamSeasonId": "deportivo-la-coruna-2000",
+          "league": "La Liga",
+          "club": "Deportivo La Coruna",
+          "year": 2000,
+          "positions": [
+            "MF",
+            "FW"
+          ],
+          "abilityV2BaselineUnavailable": true
+        }
+      ],
+      "identityConfidence": "unverified",
+      "searchEntityKey": "entity:djalminha"
+    },
+    {
+      "playerId": "donato",
+      "identitySource": "data/entities/players.json",
+      "canonicalName": "Donato",
+      "rosterNames": [
+        "Donato"
+      ],
+      "searchTerms": [
+        "Donato",
+        "Donato Gama da Silva",
+        "多纳托",
+        "ドナト",
+        "多纳托·伽马",
+        "ドナト・ガマ"
+      ],
+      "existingExternalIds": {
+        "sofifa": null,
+        "fifaIndex": null
+      },
+      "playerSeasonIds": [
+        "deportivo-la-coruna-2000-2"
+      ],
+      "targetTeamSeasons": [
+        {
+          "playerSeasonId": "deportivo-la-coruna-2000-2",
+          "teamSeasonId": "deportivo-la-coruna-2000",
+          "league": "La Liga",
+          "club": "Deportivo La Coruna",
+          "year": 2000,
+          "positions": [
+            "MF",
+            "DF"
+          ],
+          "abilityV2BaselineUnavailable": true
+        }
+      ],
+      "identityConfidence": "unverified",
+      "searchEntityKey": "entity:donato"
+    },
+    {
+      "playerId": "dwight-yorke",
+      "identitySource": "data/entities/players.json",
+      "canonicalName": "Dwight Yorke",
+      "rosterNames": [
+        "Dwight Yorke"
+      ],
+      "searchTerms": [
+        "Dwight Yorke",
+        "约克",
+        "ドワイト・ヨーク",
+        "德怀特·约克",
+        "ヨーク"
+      ],
+      "existingExternalIds": {
+        "sofifa": null,
+        "fifaIndex": null
+      },
+      "playerSeasonIds": [
+        "manchester-united-1999-8"
+      ],
+      "targetTeamSeasons": [
+        {
+          "playerSeasonId": "manchester-united-1999-8",
+          "teamSeasonId": "manchester-united-1999",
+          "league": "Premier League",
+          "club": "Manchester United",
+          "year": 1999,
+          "positions": [
+            "FW"
+          ],
+          "abilityV2BaselineUnavailable": true
+        }
+      ],
+      "identityConfidence": "unverified",
+      "searchEntityKey": "entity:dwight-yorke"
+    },
+    {
+      "playerId": "edgar-davids",
+      "identitySource": "data/entities/players.json",
+      "canonicalName": "Edgar Davids",
+      "rosterNames": [
+        "Edgar Davids"
+      ],
+      "searchTerms": [
+        "Edgar Davids",
+        "埃德加·戴维斯",
+        "エドガー・ダーヴィッツ",
+        "戴维斯",
+        "ダーヴィッツ",
+        "ダービッツ"
+      ],
+      "existingExternalIds": {
+        "sofifa": null,
+        "fifaIndex": null
+      },
+      "playerSeasonIds": [
+        "juventus-2003-5"
+      ],
+      "targetTeamSeasons": [
+        {
+          "playerSeasonId": "juventus-2003-5",
+          "teamSeasonId": "juventus-2003",
+          "league": "Serie A",
+          "club": "Juventus",
+          "year": 2003,
+          "positions": [
+            "MF"
+          ],
+          "abilityV2BaselineUnavailable": true
+        }
+      ],
+      "identityConfidence": "unverified",
+      "searchEntityKey": "entity:edgar-davids"
+    },
+    {
+      "playerId": "emerson",
+      "identitySource": "data/entities/players.json",
+      "canonicalName": "Emerson",
+      "rosterNames": [
+        "Emerson"
+      ],
+      "searchTerms": [
+        "Emerson",
+        "Émerson Ferreira da Rosa",
+        "埃默森",
+        "エメルソン",
+        "埃默森·费雷拉",
+        "エメルソン・フェレイラ"
+      ],
+      "existingExternalIds": {
+        "sofifa": null,
+        "fifaIndex": null
+      },
+      "playerSeasonIds": [
+        "roma-2001-5"
+      ],
+      "targetTeamSeasons": [
+        {
+          "playerSeasonId": "roma-2001-5",
+          "teamSeasonId": "roma-2001",
+          "league": "Serie A",
+          "club": "Roma",
+          "year": 2001,
+          "positions": [
+            "MF"
+          ],
+          "abilityV2BaselineUnavailable": true
+        }
+      ],
+      "identityConfidence": "unverified",
+      "searchEntityKey": "entity:emerson"
+    },
+    {
+      "playerId": "enrico-chiesa",
+      "identitySource": "data/entities/players.json",
+      "canonicalName": "Enrico Chiesa",
+      "rosterNames": [
+        "Enrico Chiesa"
+      ],
+      "searchTerms": [
+        "Enrico Chiesa",
+        "恩里科·基耶萨",
+        "エンリコ・キエーザ",
+        "E·基耶萨",
+        "E・キエーザ"
+      ],
+      "existingExternalIds": {
+        "sofifa": null,
+        "fifaIndex": null
+      },
+      "playerSeasonIds": [
+        "parma-1999-8"
+      ],
+      "targetTeamSeasons": [
+        {
+          "playerSeasonId": "parma-1999-8",
+          "teamSeasonId": "parma-1999",
+          "league": "Serie A",
+          "club": "Parma",
+          "year": 1999,
+          "positions": [
+            "FW"
+          ],
+          "abilityV2BaselineUnavailable": true
+        }
+      ],
+      "identityConfidence": "unverified",
+      "searchEntityKey": "entity:enrico-chiesa"
+    },
+    {
+      "playerId": "fabio-cannavaro",
+      "identitySource": "data/entities/players.json",
+      "canonicalName": "Fabio Cannavaro",
+      "rosterNames": [
+        "Fabio Cannavaro"
+      ],
+      "searchTerms": [
+        "Fabio Cannavaro",
+        "卡纳瓦罗",
+        "ファビオ・カンナヴァーロ",
+        "法比奥·卡纳瓦罗",
+        "カンナヴァーロ",
+        "カンナバーロ"
+      ],
+      "existingExternalIds": {
+        "sofifa": null,
+        "fifaIndex": null
+      },
+      "playerSeasonIds": [
+        "parma-1999-2"
+      ],
+      "targetTeamSeasons": [
+        {
+          "playerSeasonId": "parma-1999-2",
+          "teamSeasonId": "parma-1999",
+          "league": "Serie A",
+          "club": "Parma",
+          "year": 1999,
+          "positions": [
+            "DF"
+          ],
+          "abilityV2BaselineUnavailable": true
+        }
+      ],
+      "identityConfidence": "unverified",
+      "searchEntityKey": "entity:fabio-cannavaro"
+    },
+    {
+      "playerId": "fernando-hierro",
+      "identitySource": "data/entities/players.json",
+      "canonicalName": "Fernando Hierro",
+      "rosterNames": [
+        "Fernando Hierro"
+      ],
+      "searchTerms": [
+        "Fernando Hierro",
+        "耶罗",
+        "フェルナンド・イエロ",
+        "费尔南多·耶罗",
+        "イエロ"
+      ],
+      "existingExternalIds": {
+        "sofifa": null,
+        "fifaIndex": null
+      },
+      "playerSeasonIds": [
+        "real-madrid-2002-2"
+      ],
+      "targetTeamSeasons": [
+        {
+          "playerSeasonId": "real-madrid-2002-2",
+          "teamSeasonId": "real-madrid-2002",
+          "league": "La Liga",
+          "club": "Real Madrid",
+          "year": 2002,
+          "positions": [
+            "DF"
+          ],
+          "abilityV2BaselineUnavailable": true
+        }
+      ],
+      "identityConfidence": "unverified",
+      "searchEntityKey": "entity:fernando-hierro"
+    },
+    {
+      "playerId": "fernando-morientes",
+      "identitySource": "data/entities/players.json",
+      "canonicalName": "Fernando Morientes",
+      "rosterNames": [
+        "Fernando Morientes"
+      ],
+      "searchTerms": [
+        "Fernando Morientes",
+        "莫伦特斯",
+        "フェルナンド・モリエンテス",
+        "费尔南多·莫伦特斯",
+        "モリエンテス"
+      ],
+      "existingExternalIds": {
+        "sofifa": null,
+        "fifaIndex": null
+      },
+      "playerSeasonIds": [
+        "real-madrid-2002-8"
+      ],
+      "targetTeamSeasons": [
+        {
+          "playerSeasonId": "real-madrid-2002-8",
+          "teamSeasonId": "real-madrid-2002",
+          "league": "La Liga",
+          "club": "Real Madrid",
+          "year": 2002,
+          "positions": [
+            "FW"
+          ],
+          "abilityV2BaselineUnavailable": true
+        }
+      ],
+      "identityConfidence": "unverified",
+      "searchEntityKey": "entity:fernando-morientes"
+    },
+    {
+      "playerId": "fran",
+      "identitySource": "data/entities/players.json",
+      "canonicalName": "Fran",
+      "rosterNames": [
+        "Fran"
+      ],
+      "searchTerms": [
+        "Fran",
+        "Francisco Javier González Pérez",
+        "弗兰",
+        "フラン",
+        "弗朗西斯科·冈萨雷斯",
+        "フランシスコ・ゴンサレス"
+      ],
+      "existingExternalIds": {
+        "sofifa": null,
+        "fifaIndex": null
+      },
+      "playerSeasonIds": [
+        "deportivo-la-coruna-2000-6"
+      ],
+      "targetTeamSeasons": [
+        {
+          "playerSeasonId": "deportivo-la-coruna-2000-6",
+          "teamSeasonId": "deportivo-la-coruna-2000",
+          "league": "La Liga",
+          "club": "Deportivo La Coruna",
+          "year": 2000,
+          "positions": [
+            "MF"
+          ],
+          "abilityV2BaselineUnavailable": true
+        }
+      ],
+      "identityConfidence": "unverified",
+      "searchEntityKey": "entity:fran"
+    },
+    {
+      "playerId": "francesco-antonioli",
+      "identitySource": "data/entities/players.json",
+      "canonicalName": "Francesco Antonioli",
+      "rosterNames": [
+        "Francesco Antonioli"
+      ],
+      "searchTerms": [
+        "Francesco Antonioli",
+        "安东尼奥利",
+        "フランチェスコ・アントニオーリ",
+        "弗朗切斯科·安东尼奥利",
+        "アントニオーリ"
+      ],
+      "existingExternalIds": {
+        "sofifa": null,
+        "fifaIndex": null
+      },
+      "playerSeasonIds": [
+        "roma-2001-0"
+      ],
+      "targetTeamSeasons": [
+        {
+          "playerSeasonId": "roma-2001-0",
+          "teamSeasonId": "roma-2001",
+          "league": "Serie A",
+          "club": "Roma",
+          "year": 2001,
+          "positions": [
+            "GK"
+          ],
+          "abilityV2BaselineUnavailable": true
+        }
+      ],
+      "identityConfidence": "unverified",
+      "searchEntityKey": "entity:francesco-antonioli"
+    },
+    {
+      "playerId": "francesco-totti",
+      "identitySource": "data/entities/players.json",
+      "canonicalName": "Francesco Totti",
+      "rosterNames": [
+        "Francesco Totti"
+      ],
+      "searchTerms": [
+        "Francesco Totti",
+        "托蒂",
+        "フランチェスコ・トッティ",
+        "弗朗切斯科·托蒂",
+        "トッティ"
+      ],
+      "existingExternalIds": {
+        "sofifa": null,
+        "fifaIndex": null
+      },
+      "playerSeasonIds": [
+        "roma-2001-7"
+      ],
+      "targetTeamSeasons": [
+        {
+          "playerSeasonId": "roma-2001-7",
+          "teamSeasonId": "roma-2001",
+          "league": "Serie A",
+          "club": "Roma",
+          "year": 2001,
+          "positions": [
+            "FW",
+            "MF"
+          ],
+          "abilityV2BaselineUnavailable": true
+        }
+      ],
+      "identityConfidence": "unverified",
+      "searchEntityKey": "entity:francesco-totti"
+    },
+    {
+      "playerId": "gabriel-batistuta",
+      "identitySource": "data/entities/players.json",
+      "canonicalName": "Gabriel Batistuta",
+      "rosterNames": [
+        "Gabriel Batistuta"
+      ],
+      "searchTerms": [
+        "Gabriel Batistuta",
+        "Batistuta",
+        "Gabriel Omar Batistuta",
+        "巴蒂斯图塔",
+        "ガブリエル・バティストゥータ",
+        "加布里埃尔·巴蒂斯图塔",
+        "巴蒂",
+        "バティストゥータ",
+        "バティ"
+      ],
+      "existingExternalIds": {
+        "sofifa": null,
+        "fifaIndex": null
+      },
+      "playerSeasonIds": [
+        "roma-2001-8"
+      ],
+      "targetTeamSeasons": [
+        {
+          "playerSeasonId": "roma-2001-8",
+          "teamSeasonId": "roma-2001",
+          "league": "Serie A",
+          "club": "Roma",
+          "year": 2001,
+          "positions": [
+            "FW"
+          ],
+          "abilityV2BaselineUnavailable": true
+        }
+      ],
+      "identityConfidence": "unverified",
+      "searchEntityKey": "entity:gabriel-batistuta"
+    },
+    {
+      "playerId": "gary-neville",
+      "identitySource": "data/entities/players.json",
+      "canonicalName": "Gary Neville",
+      "rosterNames": [
+        "Gary Neville"
+      ],
+      "searchTerms": [
+        "Gary Neville",
+        "加里·内维尔",
+        "ガリー・ネヴィル",
+        "大内维尔",
+        "内维尔",
+        "G・ネヴィル",
+        "ネビル"
+      ],
+      "existingExternalIds": {
+        "sofifa": null,
+        "fifaIndex": null
+      },
+      "playerSeasonIds": [
+        "manchester-united-1999-2"
+      ],
+      "targetTeamSeasons": [
+        {
+          "playerSeasonId": "manchester-united-1999-2",
+          "teamSeasonId": "manchester-united-1999",
+          "league": "Premier League",
+          "club": "Manchester United",
+          "year": 1999,
+          "positions": [
+            "DF"
+          ],
+          "abilityV2BaselineUnavailable": true
+        }
+      ],
+      "identityConfidence": "unverified",
+      "searchEntityKey": "entity:gary-neville"
+    },
+    {
+      "playerId": "gianluca-zambrotta",
+      "identitySource": "data/entities/players.json",
+      "canonicalName": "Gianluca Zambrotta",
+      "rosterNames": [
+        "Gianluca Zambrotta"
+      ],
+      "searchTerms": [
+        "Gianluca Zambrotta",
+        "赞布罗塔",
+        "ジャンルカ・ザンブロッタ",
+        "詹卢卡·赞布罗塔",
+        "ザンブロッタ"
+      ],
+      "existingExternalIds": {
+        "sofifa": null,
+        "fifaIndex": null
+      },
+      "playerSeasonIds": [
+        "juventus-2003-3"
+      ],
+      "targetTeamSeasons": [
+        {
+          "playerSeasonId": "juventus-2003-3",
+          "teamSeasonId": "juventus-2003",
+          "league": "Serie A",
+          "club": "Juventus",
+          "year": 2003,
+          "positions": [
+            "MF",
+            "DF"
+          ],
+          "abilityV2BaselineUnavailable": true
+        }
+      ],
+      "identityConfidence": "unverified",
+      "searchEntityKey": "entity:gianluca-zambrotta"
+    },
+    {
+      "playerId": "gianluigi-buffon",
+      "identitySource": "data/entities/players.json",
+      "canonicalName": "Gianluigi Buffon",
+      "rosterNames": [
+        "Gianluigi Buffon"
+      ],
+      "searchTerms": [
+        "Gianluigi Buffon",
+        "布冯",
+        "ジャンルイジ・ブッフォン",
+        "詹路易吉·布冯",
+        "ブッフォン"
+      ],
+      "existingExternalIds": {
+        "sofifa": 1179,
+        "fifaIndex": 1179
+      },
+      "playerSeasonIds": [
+        "juventus-2003-0",
+        "parma-1999-0"
+      ],
+      "targetTeamSeasons": [
+        {
+          "playerSeasonId": "parma-1999-0",
+          "teamSeasonId": "parma-1999",
+          "league": "Serie A",
+          "club": "Parma",
+          "year": 1999,
+          "positions": [
+            "GK"
+          ],
+          "abilityV2BaselineUnavailable": true
+        },
+        {
+          "playerSeasonId": "juventus-2003-0",
+          "teamSeasonId": "juventus-2003",
+          "league": "Serie A",
+          "club": "Juventus",
+          "year": 2003,
+          "positions": [
+            "GK"
+          ],
+          "abilityV2BaselineUnavailable": false
+        }
+      ],
+      "identityConfidence": "unverified",
+      "searchEntityKey": "entity:gianluigi-buffon"
+    },
+    {
+      "playerId": "gilberto-silva",
+      "identitySource": "data/entities/players.json",
+      "canonicalName": "Gilberto Silva",
+      "rosterNames": [
+        "Gilberto Silva"
+      ],
+      "searchTerms": [
+        "Gilberto Silva",
+        "Gilberto Aparecido da Silva",
+        "吉尔伯托·席尔瓦",
+        "ジウベルト・シウバ",
+        "吉尔伯托",
+        "ジウベルト・シルバ"
+      ],
+      "existingExternalIds": {
+        "sofifa": null,
+        "fifaIndex": null
+      },
+      "playerSeasonIds": [
+        "arsenal-2004-6"
+      ],
+      "targetTeamSeasons": [
+        {
+          "playerSeasonId": "arsenal-2004-6",
+          "teamSeasonId": "arsenal-2004",
+          "league": "Premier League",
+          "club": "Arsenal",
+          "year": 2004,
+          "positions": [
+            "MF"
+          ],
+          "abilityV2BaselineUnavailable": true
+        }
+      ],
+      "identityConfidence": "unverified",
+      "searchEntityKey": "entity:gilberto-silva"
+    },
+    {
+      "playerId": "giovane-elber",
+      "identitySource": "data/entities/players.json",
+      "canonicalName": "Giovane Elber",
+      "rosterNames": [
+        "Giovane Elber"
+      ],
+      "searchTerms": [
+        "Giovane Elber",
+        "埃尔伯",
+        "ジオヴァネ・エウベル",
+        "吉奥瓦内·埃尔伯",
+        "エウベル"
+      ],
+      "existingExternalIds": {
+        "sofifa": null,
+        "fifaIndex": null
+      },
+      "playerSeasonIds": [
+        "bayern-munich-2001-8"
+      ],
+      "targetTeamSeasons": [
+        {
+          "playerSeasonId": "bayern-munich-2001-8",
+          "teamSeasonId": "bayern-munich-2001",
+          "league": "Bundesliga",
+          "club": "Bayern Munich",
+          "year": 2001,
+          "positions": [
+            "FW"
+          ],
+          "abilityV2BaselineUnavailable": true
+        }
+      ],
+      "identityConfidence": "unverified",
+      "searchEntityKey": "entity:giovane-elber"
+    },
+    {
+      "playerId": "giuseppe-pancaro",
+      "identitySource": "data/entities/players.json",
+      "canonicalName": "Giuseppe Pancaro",
+      "rosterNames": [
+        "Giuseppe Pancaro"
+      ],
+      "searchTerms": [
+        "Giuseppe Pancaro",
+        "潘卡罗",
+        "ジュゼッペ・パンカロ",
+        "朱塞佩·潘卡罗",
+        "パンカロ"
+      ],
+      "existingExternalIds": {
+        "sofifa": null,
+        "fifaIndex": null
+      },
+      "playerSeasonIds": [
+        "lazio-2000-3"
+      ],
+      "targetTeamSeasons": [
+        {
+          "playerSeasonId": "lazio-2000-3",
+          "teamSeasonId": "lazio-2000",
+          "league": "Serie A",
+          "club": "Lazio",
+          "year": 2000,
+          "positions": [
+            "DF"
+          ],
+          "abilityV2BaselineUnavailable": true
+        }
+      ],
+      "identityConfidence": "unverified",
+      "searchEntityKey": "entity:giuseppe-pancaro"
+    },
+    {
+      "playerId": "hernan-crespo",
+      "identitySource": "data/entities/players.json",
+      "canonicalName": "Hernan Crespo",
+      "rosterNames": [
+        "Hernan Crespo"
+      ],
+      "searchTerms": [
+        "Hernan Crespo",
+        "H. Crespo",
+        "克雷斯波",
+        "エルナン・クレスポ",
+        "埃尔南·克雷斯波",
+        "クレスポ"
+      ],
+      "existingExternalIds": {
+        "sofifa": null,
+        "fifaIndex": null
+      },
+      "playerSeasonIds": [
+        "parma-1999-7"
+      ],
+      "targetTeamSeasons": [
+        {
+          "playerSeasonId": "parma-1999-7",
+          "teamSeasonId": "parma-1999",
+          "league": "Serie A",
+          "club": "Parma",
+          "year": 1999,
+          "positions": [
+            "FW"
+          ],
+          "abilityV2BaselineUnavailable": true
+        }
+      ],
+      "identityConfidence": "unverified",
+      "searchEntityKey": "entity:hernan-crespo"
+    },
+    {
+      "playerId": "hidetoshi-nakata",
+      "identitySource": "data/entities/players.json",
+      "canonicalName": "Hidetoshi Nakata",
+      "rosterNames": [
+        "Hidetoshi Nakata"
+      ],
+      "searchTerms": [
+        "Hidetoshi Nakata",
+        "中田英寿",
+        "中田",
+        "ナカタ",
+        "ヒデ"
+      ],
+      "existingExternalIds": {
+        "sofifa": null,
+        "fifaIndex": null
+      },
+      "playerSeasonIds": [
+        "roma-2001-6"
+      ],
+      "targetTeamSeasons": [
+        {
+          "playerSeasonId": "roma-2001-6",
+          "teamSeasonId": "roma-2001",
+          "league": "Serie A",
+          "club": "Roma",
+          "year": 2001,
+          "positions": [
+            "MF"
+          ],
+          "abilityV2BaselineUnavailable": true
+        }
+      ],
+      "identityConfidence": "unverified",
+      "searchEntityKey": "entity:hidetoshi-nakata"
+    },
+    {
+      "playerId": "iker-casillas",
+      "identitySource": "data/entities/players.json",
+      "canonicalName": "Iker Casillas",
+      "rosterNames": [
+        "Iker Casillas"
+      ],
+      "searchTerms": [
+        "Iker Casillas",
+        "Casillas",
+        "I. Casillas",
+        "Iker Casillas Fernández",
+        "卡西利亚斯",
+        "イケル・カシージャス",
+        "伊克尔·卡西利亚斯",
+        "カシージャス"
+      ],
+      "existingExternalIds": {
+        "sofifa": 5479,
+        "fifaIndex": 5479
+      },
+      "playerSeasonIds": [
+        "real-madrid-2002-0"
+      ],
+      "targetTeamSeasons": [
+        {
+          "playerSeasonId": "real-madrid-2002-0",
+          "teamSeasonId": "real-madrid-2002",
+          "league": "La Liga",
+          "club": "Real Madrid",
+          "year": 2002,
+          "positions": [
+            "GK"
+          ],
+          "abilityV2BaselineUnavailable": false
+        }
+      ],
+      "identityConfidence": "unverified",
+      "searchEntityKey": "entity:iker-casillas"
+    },
+    {
+      "playerId": "jaap-stam",
+      "identitySource": "data/entities/players.json",
+      "canonicalName": "Jaap Stam",
+      "rosterNames": [
+        "Jaap Stam"
+      ],
+      "searchTerms": [
+        "Jaap Stam",
+        "斯塔姆",
+        "ヤープ・スタム",
+        "雅普·斯塔姆",
+        "スタム"
+      ],
+      "existingExternalIds": {
+        "sofifa": null,
+        "fifaIndex": null
+      },
+      "playerSeasonIds": [
+        "manchester-united-1999-1"
+      ],
+      "targetTeamSeasons": [
+        {
+          "playerSeasonId": "manchester-united-1999-1",
+          "teamSeasonId": "manchester-united-1999",
+          "league": "Premier League",
+          "club": "Manchester United",
+          "year": 1999,
+          "positions": [
+            "DF"
+          ],
+          "abilityV2BaselineUnavailable": true
+        }
+      ],
+      "identityConfidence": "unverified",
+      "searchEntityKey": "entity:jaap-stam"
+    },
+    {
+      "playerId": "jacques-songo-o",
+      "identitySource": "data/entities/players.json",
+      "canonicalName": "Jacques Songo'o",
+      "rosterNames": [
+        "Jacques Songo'o"
+      ],
+      "searchTerms": [
+        "Jacques Songo'o",
+        "松戈奥",
+        "ジャック・ソンゴォ",
+        "雅克·松戈奥",
+        "ソンゴォ"
+      ],
+      "existingExternalIds": {
+        "sofifa": null,
+        "fifaIndex": null
+      },
+      "playerSeasonIds": [
+        "deportivo-la-coruna-2000-0"
+      ],
+      "targetTeamSeasons": [
+        {
+          "playerSeasonId": "deportivo-la-coruna-2000-0",
+          "teamSeasonId": "deportivo-la-coruna-2000",
+          "league": "La Liga",
+          "club": "Deportivo La Coruna",
+          "year": 2000,
+          "positions": [
+            "GK"
+          ],
+          "abilityV2BaselineUnavailable": true
+        }
+      ],
+      "identityConfidence": "unverified",
+      "searchEntityKey": "entity:jacques-songo-o"
+    },
+    {
+      "playerId": "jens-lehmann",
+      "identitySource": "data/entities/players.json",
+      "canonicalName": "Jens Lehmann",
+      "rosterNames": [
+        "Jens Lehmann"
+      ],
+      "searchTerms": [
+        "Jens Lehmann",
+        "莱曼",
+        "イェンス・レーマン",
+        "延斯·莱曼",
+        "レーマン"
+      ],
+      "existingExternalIds": {
+        "sofifa": null,
+        "fifaIndex": null
+      },
+      "playerSeasonIds": [
+        "arsenal-2004-0"
+      ],
+      "targetTeamSeasons": [
+        {
+          "playerSeasonId": "arsenal-2004-0",
+          "teamSeasonId": "arsenal-2004",
+          "league": "Premier League",
+          "club": "Arsenal",
+          "year": 2004,
+          "positions": [
+            "GK"
+          ],
+          "abilityV2BaselineUnavailable": true
+        }
+      ],
+      "identityConfidence": "unverified",
+      "searchEntityKey": "entity:jens-lehmann"
+    },
+    {
+      "playerId": "jorge-costa",
+      "identitySource": "data/entities/players.json",
+      "canonicalName": "Jorge Costa",
+      "rosterNames": [
+        "Jorge Costa"
+      ],
+      "searchTerms": [
+        "Jorge Costa",
+        "若热·科斯塔",
+        "ジョルジュ・コスタ",
+        "乔治·科斯塔",
+        "J・コスタ"
+      ],
+      "existingExternalIds": {
+        "sofifa": null,
+        "fifaIndex": null
+      },
+      "playerSeasonIds": [
+        "porto-2004-2"
+      ],
+      "targetTeamSeasons": [
+        {
+          "playerSeasonId": "porto-2004-2",
+          "teamSeasonId": "porto-2004",
+          "league": "Primeira Liga",
+          "club": "Porto",
+          "year": 2004,
+          "positions": [
+            "DF"
+          ],
+          "abilityV2BaselineUnavailable": true
+        }
+      ],
+      "identityConfidence": "unverified",
+      "searchEntityKey": "entity:jorge-costa"
+    },
+    {
+      "playerId": "juan-sebastian-veron",
+      "identitySource": "data/entities/players.json",
+      "canonicalName": "Juan Sebastian Veron",
+      "rosterNames": [
+        "Juan Sebastian Veron"
+      ],
+      "searchTerms": [
+        "Juan Sebastian Veron",
+        "Verón",
+        "J. Verón",
+        "贝隆",
+        "フアン・セバスティアン・ベロン",
+        "胡安·塞巴斯蒂安·贝隆",
+        "ベロン"
+      ],
+      "existingExternalIds": {
+        "sofifa": null,
+        "fifaIndex": null
+      },
+      "playerSeasonIds": [
+        "lazio-2000-4",
+        "parma-1999-4"
+      ],
+      "targetTeamSeasons": [
+        {
+          "playerSeasonId": "parma-1999-4",
+          "teamSeasonId": "parma-1999",
+          "league": "Serie A",
+          "club": "Parma",
+          "year": 1999,
+          "positions": [
+            "MF"
+          ],
+          "abilityV2BaselineUnavailable": true
+        },
+        {
+          "playerSeasonId": "lazio-2000-4",
+          "teamSeasonId": "lazio-2000",
+          "league": "Serie A",
+          "club": "Lazio",
+          "year": 2000,
+          "positions": [
+            "MF"
+          ],
+          "abilityV2BaselineUnavailable": true
+        }
+      ],
+      "identityConfidence": "unverified",
+      "searchEntityKey": "entity:juan-sebastian-veron"
+    },
+    {
+      "playerId": "kolo-toure",
+      "identitySource": "data/entities/players.json",
+      "canonicalName": "Kolo Toure",
+      "rosterNames": [
+        "Kolo Toure"
+      ],
+      "searchTerms": [
+        "Kolo Toure",
+        "K. Touré",
+        "Kolo Habib Touré",
+        "科洛·图雷",
+        "コロ・トゥーレ",
+        "大图雷",
+        "K・トゥーレ"
+      ],
+      "existingExternalIds": {
+        "sofifa": 119152,
+        "fifaIndex": 119152
+      },
+      "playerSeasonIds": [
+        "arsenal-2004-3"
+      ],
+      "targetTeamSeasons": [
+        {
+          "playerSeasonId": "arsenal-2004-3",
+          "teamSeasonId": "arsenal-2004",
+          "league": "Premier League",
+          "club": "Arsenal",
+          "year": 2004,
+          "positions": [
+            "MF"
+          ],
+          "abilityV2BaselineUnavailable": false
+        }
+      ],
+      "identityConfidence": "unverified",
+      "searchEntityKey": "entity:kolo-toure"
+    },
+    {
+      "playerId": "lilian-thuram",
+      "identitySource": "data/entities/players.json",
+      "canonicalName": "Lilian Thuram",
+      "rosterNames": [
+        "Lilian Thuram"
+      ],
+      "searchTerms": [
+        "Lilian Thuram",
+        "利利安·图拉姆",
+        "リリアン・テュラム",
+        "老图拉姆",
+        "图拉姆",
+        "L・テュラム"
+      ],
+      "existingExternalIds": {
+        "sofifa": null,
+        "fifaIndex": null
+      },
+      "playerSeasonIds": [
+        "juventus-2003-1",
+        "parma-1999-1"
+      ],
+      "targetTeamSeasons": [
+        {
+          "playerSeasonId": "parma-1999-1",
+          "teamSeasonId": "parma-1999",
+          "league": "Serie A",
+          "club": "Parma",
+          "year": 1999,
+          "positions": [
+            "DF"
+          ],
+          "abilityV2BaselineUnavailable": true
+        },
+        {
+          "playerSeasonId": "juventus-2003-1",
+          "teamSeasonId": "juventus-2003",
+          "league": "Serie A",
+          "club": "Juventus",
+          "year": 2003,
+          "positions": [
+            "DF"
+          ],
+          "abilityV2BaselineUnavailable": true
+        }
+      ],
+      "identityConfidence": "unverified",
+      "searchEntityKey": "entity:lilian-thuram"
+    },
+    {
+      "playerId": "luca-marchegiani",
+      "identitySource": "data/entities/players.json",
+      "canonicalName": "Luca Marchegiani",
+      "rosterNames": [
+        "Luca Marchegiani"
+      ],
+      "searchTerms": [
+        "Luca Marchegiani",
+        "马切吉亚尼",
+        "ルカ・マルケジャーニ",
+        "卢卡·马切吉亚尼",
+        "マルケジャーニ"
+      ],
+      "existingExternalIds": {
+        "sofifa": null,
+        "fifaIndex": null
+      },
+      "playerSeasonIds": [
+        "lazio-2000-0"
+      ],
+      "targetTeamSeasons": [
+        {
+          "playerSeasonId": "lazio-2000-0",
+          "teamSeasonId": "lazio-2000",
+          "league": "Serie A",
+          "club": "Lazio",
+          "year": 2000,
+          "positions": [
+            "GK"
+          ],
+          "abilityV2BaselineUnavailable": true
+        }
+      ],
+      "identityConfidence": "unverified",
+      "searchEntityKey": "entity:luca-marchegiani"
+    },
+    {
+      "playerId": "luis-figo",
+      "identitySource": "data/entities/players.json",
+      "canonicalName": "Luis Figo",
+      "rosterNames": [
+        "Luis Figo"
+      ],
+      "searchTerms": [
+        "Luis Figo",
+        "Figo",
+        "菲戈",
+        "ルイス・フィーゴ",
+        "路易斯·菲戈",
+        "フィーゴ"
+      ],
+      "existingExternalIds": {
+        "sofifa": null,
+        "fifaIndex": null
+      },
+      "playerSeasonIds": [
+        "real-madrid-2002-6"
+      ],
+      "targetTeamSeasons": [
+        {
+          "playerSeasonId": "real-madrid-2002-6",
+          "teamSeasonId": "real-madrid-2002",
+          "league": "La Liga",
+          "club": "Real Madrid",
+          "year": 2002,
+          "positions": [
+            "MF",
+            "FW"
+          ],
+          "abilityV2BaselineUnavailable": true
+        }
+      ],
+      "identityConfidence": "unverified",
+      "searchEntityKey": "entity:luis-figo"
+    },
+    {
+      "playerId": "maniche",
+      "identitySource": "data/entities/players.json",
+      "canonicalName": "Maniche",
+      "rosterNames": [
+        "Maniche"
+      ],
+      "searchTerms": [
+        "Maniche",
+        "Nuno Ricardo de Oliveira Ribeiro",
+        "马尼切",
+        "マニシェ",
+        "努诺·马尼切",
+        "ヌノ・リベイロ"
+      ],
+      "existingExternalIds": {
+        "sofifa": null,
+        "fifaIndex": null
+      },
+      "playerSeasonIds": [
+        "porto-2004-5"
+      ],
+      "targetTeamSeasons": [
+        {
+          "playerSeasonId": "porto-2004-5",
+          "teamSeasonId": "porto-2004",
+          "league": "Primeira Liga",
+          "club": "Porto",
+          "year": 2004,
+          "positions": [
+            "MF"
+          ],
+          "abilityV2BaselineUnavailable": true
+        }
+      ],
+      "identityConfidence": "unverified",
+      "searchEntityKey": "entity:maniche"
+    },
+    {
+      "playerId": "manuel-pablo",
+      "identitySource": "data/entities/players.json",
+      "canonicalName": "Manuel Pablo",
+      "rosterNames": [
+        "Manuel Pablo"
+      ],
+      "searchTerms": [
+        "Manuel Pablo",
+        "曼努埃尔·帕布罗",
+        "マヌエル・パブロ",
+        "帕布罗",
+        "M・パブロ"
+      ],
+      "existingExternalIds": {
+        "sofifa": null,
+        "fifaIndex": null
+      },
+      "playerSeasonIds": [
+        "deportivo-la-coruna-2000-3"
+      ],
+      "targetTeamSeasons": [
+        {
+          "playerSeasonId": "deportivo-la-coruna-2000-3",
+          "teamSeasonId": "deportivo-la-coruna-2000",
+          "league": "La Liga",
+          "club": "Deportivo La Coruna",
+          "year": 2000,
+          "positions": [
+            "DF"
+          ],
+          "abilityV2BaselineUnavailable": true
+        }
+      ],
+      "identityConfidence": "unverified",
+      "searchEntityKey": "entity:manuel-pablo"
+    },
+    {
+      "playerId": "marcelo-salas",
+      "identitySource": "data/entities/players.json",
+      "canonicalName": "Marcelo Salas",
+      "rosterNames": [
+        "Marcelo Salas"
+      ],
+      "searchTerms": [
+        "Marcelo Salas",
+        "萨拉斯",
+        "マルセロ・サラス",
+        "马塞洛·萨拉斯",
+        "サラス"
+      ],
+      "existingExternalIds": {
+        "sofifa": null,
+        "fifaIndex": null
+      },
+      "playerSeasonIds": [
+        "lazio-2000-7"
+      ],
+      "targetTeamSeasons": [
+        {
+          "playerSeasonId": "lazio-2000-7",
+          "teamSeasonId": "lazio-2000",
+          "league": "Serie A",
+          "club": "Lazio",
+          "year": 2000,
+          "positions": [
+            "FW"
+          ],
+          "abilityV2BaselineUnavailable": true
+        }
+      ],
+      "identityConfidence": "unverified",
+      "searchEntityKey": "entity:marcelo-salas"
+    },
+    {
+      "playerId": "mauro-camoranesi",
+      "identitySource": "data/entities/players.json",
+      "canonicalName": "Mauro Camoranesi",
+      "rosterNames": [
+        "Mauro Camoranesi"
+      ],
+      "searchTerms": [
+        "Mauro Camoranesi",
+        "卡莫拉内西",
+        "マウロ・カモラネージ",
+        "毛罗·卡莫拉内西",
+        "カモラネージ"
+      ],
+      "existingExternalIds": {
+        "sofifa": null,
+        "fifaIndex": null
+      },
+      "playerSeasonIds": [
+        "juventus-2003-6"
+      ],
+      "targetTeamSeasons": [
+        {
+          "playerSeasonId": "juventus-2003-6",
+          "teamSeasonId": "juventus-2003",
+          "league": "Serie A",
+          "club": "Juventus",
+          "year": 2003,
+          "positions": [
+            "MF"
+          ],
+          "abilityV2BaselineUnavailable": true
+        }
+      ],
+      "identityConfidence": "unverified",
+      "searchEntityKey": "entity:mauro-camoranesi"
+    },
+    {
+      "playerId": "mauro-silva",
+      "identitySource": "data/entities/players.json",
+      "canonicalName": "Mauro Silva",
+      "rosterNames": [
+        "Mauro Silva"
+      ],
+      "searchTerms": [
+        "Mauro Silva",
+        "毛罗·席尔瓦",
+        "マウロ・シルバ",
+        "M·席尔瓦",
+        "マウロ・シウバ"
+      ],
+      "existingExternalIds": {
+        "sofifa": null,
+        "fifaIndex": null
+      },
+      "playerSeasonIds": [
+        "deportivo-la-coruna-2000-4"
+      ],
+      "targetTeamSeasons": [
+        {
+          "playerSeasonId": "deportivo-la-coruna-2000-4",
+          "teamSeasonId": "deportivo-la-coruna-2000",
+          "league": "La Liga",
+          "club": "Deportivo La Coruna",
+          "year": 2000,
+          "positions": [
+            "MF"
+          ],
+          "abilityV2BaselineUnavailable": true
+        }
+      ],
+      "identityConfidence": "unverified",
+      "searchEntityKey": "entity:mauro-silva"
+    },
+    {
+      "playerId": "mehmet-scholl",
+      "identitySource": "data/entities/players.json",
+      "canonicalName": "Mehmet Scholl",
+      "rosterNames": [
+        "Mehmet Scholl"
+      ],
+      "searchTerms": [
+        "Mehmet Scholl",
+        "绍尔",
+        "メーメット・ショル",
+        "梅赫梅特·绍尔",
+        "ショル"
+      ],
+      "existingExternalIds": {
+        "sofifa": null,
+        "fifaIndex": null
+      },
+      "playerSeasonIds": [
+        "bayern-munich-2001-7"
+      ],
+      "targetTeamSeasons": [
+        {
+          "playerSeasonId": "bayern-munich-2001-7",
+          "teamSeasonId": "bayern-munich-2001",
+          "league": "Bundesliga",
+          "club": "Bayern Munich",
+          "year": 2001,
+          "positions": [
+            "MF",
+            "FW"
+          ],
+          "abilityV2BaselineUnavailable": true
+        }
+      ],
+      "identityConfidence": "unverified",
+      "searchEntityKey": "entity:mehmet-scholl"
+    },
+    {
+      "playerId": "michel-salgado",
+      "identitySource": "data/entities/players.json",
+      "canonicalName": "Michel Salgado",
+      "rosterNames": [
+        "Michel Salgado"
+      ],
+      "searchTerms": [
+        "Michel Salgado",
+        "萨尔加多",
+        "ミチェル・サルガド",
+        "米歇尔·萨尔加多",
+        "サルガド"
+      ],
+      "existingExternalIds": {
+        "sofifa": null,
+        "fifaIndex": null
+      },
+      "playerSeasonIds": [
+        "real-madrid-2002-3"
+      ],
+      "targetTeamSeasons": [
+        {
+          "playerSeasonId": "real-madrid-2002-3",
+          "teamSeasonId": "real-madrid-2002",
+          "league": "La Liga",
+          "club": "Real Madrid",
+          "year": 2002,
+          "positions": [
+            "DF"
+          ],
+          "abilityV2BaselineUnavailable": true
+        }
+      ],
+      "identityConfidence": "unverified",
+      "searchEntityKey": "entity:michel-salgado"
+    },
+    {
+      "playerId": "mista",
+      "identitySource": "data/entities/players.json",
+      "canonicalName": "Mista",
+      "rosterNames": [
+        "Mista"
+      ],
+      "searchTerms": [
+        "Mista",
+        "Miguel Ángel Ferrer Martínez",
+        "米斯塔",
+        "ミスタ",
+        "米格尔·安赫尔·费雷尔",
+        "ミゲル・アンヘル・フェレール"
+      ],
+      "existingExternalIds": {
+        "sofifa": null,
+        "fifaIndex": null
+      },
+      "playerSeasonIds": [
+        "valencia-2004-8"
+      ],
+      "targetTeamSeasons": [
+        {
+          "playerSeasonId": "valencia-2004-8",
+          "teamSeasonId": "valencia-2004",
+          "league": "La Liga",
+          "club": "Valencia",
+          "year": 2004,
+          "positions": [
+            "FW"
+          ],
+          "abilityV2BaselineUnavailable": true
+        }
+      ],
+      "identityConfidence": "unverified",
+      "searchEntityKey": "entity:mista"
+    },
+    {
+      "playerId": "noureddine-naybet",
+      "identitySource": "data/entities/players.json",
+      "canonicalName": "Noureddine Naybet",
+      "rosterNames": [
+        "Noureddine Naybet"
+      ],
+      "searchTerms": [
+        "Noureddine Naybet",
+        "奈贝特",
+        "ヌレディン・ナイベト",
+        "努尔丁·奈贝特",
+        "ナイベト"
+      ],
+      "existingExternalIds": {
+        "sofifa": null,
+        "fifaIndex": null
+      },
+      "playerSeasonIds": [
+        "deportivo-la-coruna-2000-1"
+      ],
+      "targetTeamSeasons": [
+        {
+          "playerSeasonId": "deportivo-la-coruna-2000-1",
+          "teamSeasonId": "deportivo-la-coruna-2000",
+          "league": "La Liga",
+          "club": "Deportivo La Coruna",
+          "year": 2000,
+          "positions": [
+            "DF"
+          ],
+          "abilityV2BaselineUnavailable": true
+        }
+      ],
+      "identityConfidence": "unverified",
+      "searchEntityKey": "entity:noureddine-naybet"
+    },
+    {
+      "playerId": "oliver-kahn",
+      "identitySource": "data/entities/players.json",
+      "canonicalName": "Oliver Kahn",
+      "rosterNames": [
+        "Oliver Kahn"
+      ],
+      "searchTerms": [
+        "Oliver Kahn",
+        "卡恩",
+        "オリヴァー・カーン",
+        "奥利弗·卡恩",
+        "オリバー・カーン",
+        "カーン"
+      ],
+      "existingExternalIds": {
+        "sofifa": null,
+        "fifaIndex": null
+      },
+      "playerSeasonIds": [
+        "bayern-munich-2001-0"
+      ],
+      "targetTeamSeasons": [
+        {
+          "playerSeasonId": "bayern-munich-2001-0",
+          "teamSeasonId": "bayern-munich-2001",
+          "league": "Bundesliga",
+          "club": "Bayern Munich",
+          "year": 2001,
+          "positions": [
+            "GK"
+          ],
+          "abilityV2BaselineUnavailable": true
+        }
+      ],
+      "identityConfidence": "unverified",
+      "searchEntityKey": "entity:oliver-kahn"
+    },
+    {
+      "playerId": "owen-hargreaves",
+      "identitySource": "data/entities/players.json",
+      "canonicalName": "Owen Hargreaves",
+      "rosterNames": [
+        "Owen Hargreaves"
+      ],
+      "searchTerms": [
+        "Owen Hargreaves",
+        "哈格里夫斯",
+        "オーウェン・ハーグリーヴス",
+        "欧文·哈格里夫斯",
+        "ハーグリーヴス",
+        "ハーグリーブス"
+      ],
+      "existingExternalIds": {
+        "sofifa": null,
+        "fifaIndex": null
+      },
+      "playerSeasonIds": [
+        "bayern-munich-2001-6"
+      ],
+      "targetTeamSeasons": [
+        {
+          "playerSeasonId": "bayern-munich-2001-6",
+          "teamSeasonId": "bayern-munich-2001",
+          "league": "Bundesliga",
+          "club": "Bayern Munich",
+          "year": 2001,
+          "positions": [
+            "MF"
+          ],
+          "abilityV2BaselineUnavailable": true
+        }
+      ],
+      "identityConfidence": "unverified",
+      "searchEntityKey": "entity:owen-hargreaves"
+    },
+    {
+      "playerId": "pablo-aimar",
+      "identitySource": "data/entities/players.json",
+      "canonicalName": "Pablo Aimar",
+      "rosterNames": [
+        "Pablo Aimar"
+      ],
+      "searchTerms": [
+        "Pablo Aimar",
+        "艾马尔",
+        "パブロ・アイマール",
+        "帕布罗·艾马尔",
+        "アイマール"
+      ],
+      "existingExternalIds": {
+        "sofifa": null,
+        "fifaIndex": null
+      },
+      "playerSeasonIds": [
+        "valencia-2004-6"
+      ],
+      "targetTeamSeasons": [
+        {
+          "playerSeasonId": "valencia-2004-6",
+          "teamSeasonId": "valencia-2004",
+          "league": "La Liga",
+          "club": "Valencia",
+          "year": 2004,
+          "positions": [
+            "MF",
+            "FW"
+          ],
+          "abilityV2BaselineUnavailable": true
+        }
+      ],
+      "identityConfidence": "unverified",
+      "searchEntityKey": "entity:pablo-aimar"
+    },
+    {
+      "playerId": "patrick-vieira",
+      "identitySource": "data/entities/players.json",
+      "canonicalName": "Patrick Vieira",
+      "rosterNames": [
+        "Patrick Vieira"
+      ],
+      "searchTerms": [
+        "Patrick Vieira",
+        "维埃拉",
+        "パトリック・ヴィエラ",
+        "帕特里克·维埃拉",
+        "ヴィエラ",
+        "ビエラ"
+      ],
+      "existingExternalIds": {
+        "sofifa": null,
+        "fifaIndex": null
+      },
+      "playerSeasonIds": [
+        "arsenal-2004-4"
+      ],
+      "targetTeamSeasons": [
+        {
+          "playerSeasonId": "arsenal-2004-4",
+          "teamSeasonId": "arsenal-2004",
+          "league": "Premier League",
+          "club": "Arsenal",
+          "year": 2004,
+          "positions": [
+            "MF"
+          ],
+          "abilityV2BaselineUnavailable": true
+        }
+      ],
+      "identityConfidence": "unverified",
+      "searchEntityKey": "entity:patrick-vieira"
+    },
+    {
+      "playerId": "patrik-andersson",
+      "identitySource": "data/entities/players.json",
+      "canonicalName": "Patrik Andersson",
+      "rosterNames": [
+        "Patrik Andersson"
+      ],
+      "searchTerms": [
+        "Patrik Andersson",
+        "Patrick Andersson",
+        "帕特里克·安德森",
+        "パトリック・アンデルソン",
+        "安德森",
+        "P・アンデルソン"
+      ],
+      "existingExternalIds": {
+        "sofifa": null,
+        "fifaIndex": null
+      },
+      "playerSeasonIds": [
+        "bayern-munich-2001-2"
+      ],
+      "targetTeamSeasons": [
+        {
+          "playerSeasonId": "bayern-munich-2001-2",
+          "teamSeasonId": "bayern-munich-2001",
+          "league": "Bundesliga",
+          "club": "Bayern Munich",
+          "year": 2001,
+          "positions": [
+            "DF"
+          ],
+          "abilityV2BaselineUnavailable": true
+        }
+      ],
+      "identityConfidence": "unverified",
+      "searchEntityKey": "entity:patrik-andersson"
+    },
+    {
+      "playerId": "paul-scholes",
+      "identitySource": "data/entities/players.json",
+      "canonicalName": "Paul Scholes",
+      "rosterNames": [
+        "Paul Scholes"
+      ],
+      "searchTerms": [
+        "Paul Scholes",
+        "斯科尔斯",
+        "ポール・スコールズ",
+        "保罗·斯科尔斯",
+        "スコールズ"
+      ],
+      "existingExternalIds": {
+        "sofifa": 246,
+        "fifaIndex": 246
+      },
+      "playerSeasonIds": [
+        "manchester-united-1999-6"
+      ],
+      "targetTeamSeasons": [
+        {
+          "playerSeasonId": "manchester-united-1999-6",
+          "teamSeasonId": "manchester-united-1999",
+          "league": "Premier League",
+          "club": "Manchester United",
+          "year": 1999,
+          "positions": [
+            "MF"
+          ],
+          "abilityV2BaselineUnavailable": true
+        }
+      ],
+      "identityConfidence": "unverified",
+      "searchEntityKey": "entity:paul-scholes"
+    },
+    {
+      "playerId": "pauleta",
+      "identitySource": "data/entities/players.json",
+      "canonicalName": "Pauleta",
+      "rosterNames": [
+        "Pauleta"
+      ],
+      "searchTerms": [
+        "Pauleta",
+        "Pedro Miguel Carreiro Resendes",
+        "保莱塔",
+        "パウレタ",
+        "佩德罗·保莱塔",
+        "ペドロ・パウレタ"
+      ],
+      "existingExternalIds": {
+        "sofifa": null,
+        "fifaIndex": null
+      },
+      "playerSeasonIds": [
+        "deportivo-la-coruna-2000-8"
+      ],
+      "targetTeamSeasons": [
+        {
+          "playerSeasonId": "deportivo-la-coruna-2000-8",
+          "teamSeasonId": "deportivo-la-coruna-2000",
+          "league": "La Liga",
+          "club": "Deportivo La Coruna",
+          "year": 2000,
+          "positions": [
+            "FW"
+          ],
+          "abilityV2BaselineUnavailable": true
+        }
+      ],
+      "identityConfidence": "unverified",
+      "searchEntityKey": "entity:pauleta"
+    },
+    {
+      "playerId": "paulo-ferreira",
+      "identitySource": "data/entities/players.json",
+      "canonicalName": "Paulo Ferreira",
+      "rosterNames": [
+        "Paulo Ferreira"
+      ],
+      "searchTerms": [
+        "Paulo Ferreira",
+        "保罗·费雷拉",
+        "パウロ・フェレイラ",
+        "费雷拉",
+        "P・フェレイラ"
+      ],
+      "existingExternalIds": {
+        "sofifa": null,
+        "fifaIndex": null
+      },
+      "playerSeasonIds": [
+        "porto-2004-3"
+      ],
+      "targetTeamSeasons": [
+        {
+          "playerSeasonId": "porto-2004-3",
+          "teamSeasonId": "porto-2004",
+          "league": "Primeira Liga",
+          "club": "Porto",
+          "year": 2004,
+          "positions": [
+            "DF"
+          ],
+          "abilityV2BaselineUnavailable": true
+        }
+      ],
+      "identityConfidence": "unverified",
+      "searchEntityKey": "entity:paulo-ferreira"
+    },
+    {
+      "playerId": "pavel-nedved",
+      "identitySource": "data/entities/players.json",
+      "canonicalName": "Pavel Nedved",
+      "rosterNames": [
+        "Pavel Nedved"
+      ],
+      "searchTerms": [
+        "Pavel Nedved",
+        "P. Nedvěd",
+        "内德维德",
+        "パヴェル・ネドヴェド",
+        "帕维尔·内德维德",
+        "ネドヴェド",
+        "ネドベド"
+      ],
+      "existingExternalIds": {
+        "sofifa": null,
+        "fifaIndex": null
+      },
+      "playerSeasonIds": [
+        "juventus-2003-4",
+        "lazio-2000-5"
+      ],
+      "targetTeamSeasons": [
+        {
+          "playerSeasonId": "lazio-2000-5",
+          "teamSeasonId": "lazio-2000",
+          "league": "Serie A",
+          "club": "Lazio",
+          "year": 2000,
+          "positions": [
+            "MF",
+            "FW"
+          ],
+          "abilityV2BaselineUnavailable": true
+        },
+        {
+          "playerSeasonId": "juventus-2003-4",
+          "teamSeasonId": "juventus-2003",
+          "league": "Serie A",
+          "club": "Juventus",
+          "year": 2003,
+          "positions": [
+            "MF",
+            "FW"
+          ],
+          "abilityV2BaselineUnavailable": true
+        }
+      ],
+      "identityConfidence": "unverified",
+      "searchEntityKey": "entity:pavel-nedved"
+    },
+    {
+      "playerId": "peter-schmeichel",
+      "identitySource": "data/entities/players.json",
+      "canonicalName": "Peter Schmeichel",
+      "rosterNames": [
+        "Peter Schmeichel"
+      ],
+      "searchTerms": [
+        "Peter Schmeichel",
+        "彼得·舒梅切尔",
+        "ピーター・シュマイケル",
+        "老舒梅切尔",
+        "舒梅切尔",
+        "P・シュマイケル"
+      ],
+      "existingExternalIds": {
+        "sofifa": null,
+        "fifaIndex": null
+      },
+      "playerSeasonIds": [
+        "manchester-united-1999-0"
+      ],
+      "targetTeamSeasons": [
+        {
+          "playerSeasonId": "manchester-united-1999-0",
+          "teamSeasonId": "manchester-united-1999",
+          "league": "Premier League",
+          "club": "Manchester United",
+          "year": 1999,
+          "positions": [
+            "GK"
+          ],
+          "abilityV2BaselineUnavailable": true
+        }
+      ],
+      "identityConfidence": "unverified",
+      "searchEntityKey": "entity:peter-schmeichel"
+    },
+    {
+      "playerId": "raul",
+      "identitySource": "data/entities/players.json",
+      "canonicalName": "Raul",
+      "rosterNames": [
+        "Raul"
+      ],
+      "searchTerms": [
+        "Raul",
+        "Raúl González",
+        "Raúl González Blanco",
+        "劳尔",
+        "ラウール",
+        "劳尔·冈萨雷斯",
+        "ラウール・ゴンサレス"
+      ],
+      "existingExternalIds": {
+        "sofifa": null,
+        "fifaIndex": null
+      },
+      "playerSeasonIds": [
+        "real-madrid-2002-7"
+      ],
+      "targetTeamSeasons": [
+        {
+          "playerSeasonId": "real-madrid-2002-7",
+          "teamSeasonId": "real-madrid-2002",
+          "league": "La Liga",
+          "club": "Real Madrid",
+          "year": 2002,
+          "positions": [
+            "FW"
+          ],
+          "abilityV2BaselineUnavailable": true
+        }
+      ],
+      "identityConfidence": "unverified",
+      "searchEntityKey": "entity:raul"
+    },
+    {
+      "playerId": "ricardo-carvalho",
+      "identitySource": "data/entities/players.json",
+      "canonicalName": "Ricardo Carvalho",
+      "rosterNames": [
+        "Ricardo Carvalho"
+      ],
+      "searchTerms": [
+        "Ricardo Carvalho",
+        "卡瓦略",
+        "リカルド・カルヴァーリョ",
+        "里卡多·卡瓦略",
+        "カルヴァーリョ"
+      ],
+      "existingExternalIds": {
+        "sofifa": null,
+        "fifaIndex": 3622
+      },
+      "playerSeasonIds": [
+        "porto-2004-1"
+      ],
+      "targetTeamSeasons": [
+        {
+          "playerSeasonId": "porto-2004-1",
+          "teamSeasonId": "porto-2004",
+          "league": "Primeira Liga",
+          "club": "Porto",
+          "year": 2004,
+          "positions": [
+            "DF"
+          ],
+          "abilityV2BaselineUnavailable": false
+        }
+      ],
+      "identityConfidence": "unverified",
+      "searchEntityKey": "entity:ricardo-carvalho"
+    },
+    {
+      "playerId": "robert-pires",
+      "identitySource": "data/entities/players.json",
+      "canonicalName": "Robert Pires",
+      "rosterNames": [
+        "Robert Pires"
+      ],
+      "searchTerms": [
+        "Robert Pires",
+        "皮雷",
+        "ロベール・ピレス",
+        "罗贝尔·皮雷",
+        "皮雷斯",
+        "ピレス"
+      ],
+      "existingExternalIds": {
+        "sofifa": null,
+        "fifaIndex": null
+      },
+      "playerSeasonIds": [
+        "arsenal-2004-5"
+      ],
+      "targetTeamSeasons": [
+        {
+          "playerSeasonId": "arsenal-2004-5",
+          "teamSeasonId": "arsenal-2004",
+          "league": "Premier League",
+          "club": "Arsenal",
+          "year": 2004,
+          "positions": [
+            "MF",
+            "FW"
+          ],
+          "abilityV2BaselineUnavailable": true
+        }
+      ],
+      "identityConfidence": "unverified",
+      "searchEntityKey": "entity:robert-pires"
+    },
+    {
+      "playerId": "roberto-ayala",
+      "identitySource": "data/entities/players.json",
+      "canonicalName": "Roberto Ayala",
+      "rosterNames": [
+        "Roberto Ayala"
+      ],
+      "searchTerms": [
+        "Roberto Ayala",
+        "阿亚拉",
+        "ロベルト・アジャラ",
+        "罗伯托·阿亚拉",
+        "アジャラ"
+      ],
+      "existingExternalIds": {
+        "sofifa": null,
+        "fifaIndex": null
+      },
+      "playerSeasonIds": [
+        "valencia-2004-1"
+      ],
+      "targetTeamSeasons": [
+        {
+          "playerSeasonId": "valencia-2004-1",
+          "teamSeasonId": "valencia-2004",
+          "league": "La Liga",
+          "club": "Valencia",
+          "year": 2004,
+          "positions": [
+            "DF"
+          ],
+          "abilityV2BaselineUnavailable": true
+        }
+      ],
+      "identityConfidence": "unverified",
+      "searchEntityKey": "entity:roberto-ayala"
+    },
+    {
+      "playerId": "roberto-carlos",
+      "identitySource": "data/entities/players.json",
+      "canonicalName": "Roberto Carlos",
+      "rosterNames": [
+        "Roberto Carlos"
+      ],
+      "searchTerms": [
+        "Roberto Carlos",
+        "Roberto Carlos da Silva Rocha",
+        "罗伯托·卡洛斯",
+        "ロベルト・カルロス",
+        "卡洛斯",
+        "R・カルロス"
+      ],
+      "existingExternalIds": {
+        "sofifa": null,
+        "fifaIndex": null
+      },
+      "playerSeasonIds": [
+        "real-madrid-2002-1"
+      ],
+      "targetTeamSeasons": [
+        {
+          "playerSeasonId": "real-madrid-2002-1",
+          "teamSeasonId": "real-madrid-2002",
+          "league": "La Liga",
+          "club": "Real Madrid",
+          "year": 2002,
+          "positions": [
+            "DF"
+          ],
+          "abilityV2BaselineUnavailable": true
+        }
+      ],
+      "identityConfidence": "unverified",
+      "searchEntityKey": "entity:roberto-carlos"
+    },
+    {
+      "playerId": "roberto-mancini",
+      "identitySource": "data/entities/players.json",
+      "canonicalName": "Roberto Mancini",
+      "rosterNames": [
+        "Roberto Mancini"
+      ],
+      "searchTerms": [
+        "Roberto Mancini",
+        "曼奇尼",
+        "ロベルト・マンチーニ",
+        "罗伯托·曼奇尼",
+        "マンチーニ"
+      ],
+      "existingExternalIds": {
+        "sofifa": null,
+        "fifaIndex": null
+      },
+      "playerSeasonIds": [
+        "lazio-2000-8"
+      ],
+      "targetTeamSeasons": [
+        {
+          "playerSeasonId": "lazio-2000-8",
+          "teamSeasonId": "lazio-2000",
+          "league": "Serie A",
+          "club": "Lazio",
+          "year": 2000,
+          "positions": [
+            "FW",
+            "MF"
+          ],
+          "abilityV2BaselineUnavailable": true
+        }
+      ],
+      "identityConfidence": "unverified",
+      "searchEntityKey": "entity:roberto-mancini"
+    },
+    {
+      "playerId": "roberto-sensini",
+      "identitySource": "data/entities/players.json",
+      "canonicalName": "Roberto Sensini",
+      "rosterNames": [
+        "Roberto Sensini"
+      ],
+      "searchTerms": [
+        "Roberto Sensini",
+        "Nestor Sensini",
+        "Roberto Néstor Sensini",
+        "森西尼",
+        "ロベルト・センシーニ",
+        "罗伯托·森西尼",
+        "センシーニ"
+      ],
+      "existingExternalIds": {
+        "sofifa": null,
+        "fifaIndex": null
+      },
+      "playerSeasonIds": [
+        "parma-1999-3"
+      ],
+      "targetTeamSeasons": [
+        {
+          "playerSeasonId": "parma-1999-3",
+          "teamSeasonId": "parma-1999",
+          "league": "Serie A",
+          "club": "Parma",
+          "year": 1999,
+          "positions": [
+            "DF",
+            "MF"
+          ],
+          "abilityV2BaselineUnavailable": true
+        }
+      ],
+      "identityConfidence": "unverified",
+      "searchEntityKey": "entity:roberto-sensini"
+    },
+    {
+      "playerId": "roy-keane",
+      "identitySource": "data/entities/players.json",
+      "canonicalName": "Roy Keane",
+      "rosterNames": [
+        "Roy Keane"
+      ],
+      "searchTerms": [
+        "Roy Keane",
+        "罗伊·基恩",
+        "ロイ・キーン",
+        "基恩",
+        "キーン"
+      ],
+      "existingExternalIds": {
+        "sofifa": null,
+        "fifaIndex": null
+      },
+      "playerSeasonIds": [
+        "manchester-united-1999-4"
+      ],
+      "targetTeamSeasons": [
+        {
+          "playerSeasonId": "manchester-united-1999-4",
+          "teamSeasonId": "manchester-united-1999",
+          "league": "Premier League",
+          "club": "Manchester United",
+          "year": 1999,
+          "positions": [
+            "MF"
+          ],
+          "abilityV2BaselineUnavailable": true
+        }
+      ],
+      "identityConfidence": "unverified",
+      "searchEntityKey": "entity:roy-keane"
+    },
+    {
+      "playerId": "roy-makaay",
+      "identitySource": "data/entities/players.json",
+      "canonicalName": "Roy Makaay",
+      "rosterNames": [
+        "Roy Makaay"
+      ],
+      "searchTerms": [
+        "Roy Makaay",
+        "马凯",
+        "ロイ・マカーイ",
+        "罗伊·马凯",
+        "マカーイ"
+      ],
+      "existingExternalIds": {
+        "sofifa": null,
+        "fifaIndex": null
+      },
+      "playerSeasonIds": [
+        "deportivo-la-coruna-2000-7"
+      ],
+      "targetTeamSeasons": [
+        {
+          "playerSeasonId": "deportivo-la-coruna-2000-7",
+          "teamSeasonId": "deportivo-la-coruna-2000",
+          "league": "La Liga",
+          "club": "Deportivo La Coruna",
+          "year": 2000,
+          "positions": [
+            "FW"
+          ],
+          "abilityV2BaselineUnavailable": true
+        }
+      ],
+      "identityConfidence": "unverified",
+      "searchEntityKey": "entity:roy-makaay"
+    },
+    {
+      "playerId": "ruben-baraja",
+      "identitySource": "data/entities/players.json",
+      "canonicalName": "Ruben Baraja",
+      "rosterNames": [
+        "Ruben Baraja"
+      ],
+      "searchTerms": [
+        "Ruben Baraja",
+        "巴拉哈",
+        "ルベン・バラハ",
+        "鲁本·巴拉哈",
+        "バラハ"
+      ],
+      "existingExternalIds": {
+        "sofifa": null,
+        "fifaIndex": null
+      },
+      "playerSeasonIds": [
+        "valencia-2004-4"
+      ],
+      "targetTeamSeasons": [
+        {
+          "playerSeasonId": "valencia-2004-4",
+          "teamSeasonId": "valencia-2004",
+          "league": "La Liga",
+          "club": "Valencia",
+          "year": 2004,
+          "positions": [
+            "MF"
+          ],
+          "abilityV2BaselineUnavailable": true
+        }
+      ],
+      "identityConfidence": "unverified",
+      "searchEntityKey": "entity:ruben-baraja"
+    },
+    {
+      "playerId": "ryan-giggs",
+      "identitySource": "data/entities/players.json",
+      "canonicalName": "Ryan Giggs",
+      "rosterNames": [
+        "Ryan Giggs"
+      ],
+      "searchTerms": [
+        "Ryan Giggs",
+        "吉格斯",
+        "ライアン・ギグス",
+        "瑞恩·吉格斯",
+        "ギグス"
+      ],
+      "existingExternalIds": {
+        "sofifa": 241,
+        "fifaIndex": 241
+      },
+      "playerSeasonIds": [
+        "manchester-united-1999-7"
+      ],
+      "targetTeamSeasons": [
+        {
+          "playerSeasonId": "manchester-united-1999-7",
+          "teamSeasonId": "manchester-united-1999",
+          "league": "Premier League",
+          "club": "Manchester United",
+          "year": 1999,
+          "positions": [
+            "MF",
+            "FW"
+          ],
+          "abilityV2BaselineUnavailable": true
+        }
+      ],
+      "identityConfidence": "unverified",
+      "searchEntityKey": "entity:ryan-giggs"
+    },
+    {
+      "playerId": "sammy-kuffour",
+      "identitySource": "data/entities/players.json",
+      "canonicalName": "Sammy Kuffour",
+      "rosterNames": [
+        "Sammy Kuffour"
+      ],
+      "searchTerms": [
+        "Sammy Kuffour",
+        "Samuel Osei Kuffour",
+        "Samuel Kuffour",
+        "库福尔",
+        "サミー・クフォー",
+        "萨米·库福尔",
+        "クフォー"
+      ],
+      "existingExternalIds": {
+        "sofifa": null,
+        "fifaIndex": null
+      },
+      "playerSeasonIds": [
+        "bayern-munich-2001-1"
+      ],
+      "targetTeamSeasons": [
+        {
+          "playerSeasonId": "bayern-munich-2001-1",
+          "teamSeasonId": "bayern-munich-2001",
+          "league": "Bundesliga",
+          "club": "Bayern Munich",
+          "year": 2001,
+          "positions": [
+            "DF"
+          ],
+          "abilityV2BaselineUnavailable": true
+        }
+      ],
+      "identityConfidence": "unverified",
+      "searchEntityKey": "entity:sammy-kuffour"
+    },
+    {
+      "playerId": "santiago-canizares",
+      "identitySource": "data/entities/players.json",
+      "canonicalName": "Santiago Canizares",
+      "rosterNames": [
+        "Santiago Canizares"
+      ],
+      "searchTerms": [
+        "Santiago Canizares",
+        "卡尼萨雷斯",
+        "サンティアゴ・カニサレス",
+        "圣地亚哥·卡尼萨雷斯",
+        "カニサレス"
+      ],
+      "existingExternalIds": {
+        "sofifa": null,
+        "fifaIndex": null
+      },
+      "playerSeasonIds": [
+        "valencia-2004-0"
+      ],
+      "targetTeamSeasons": [
+        {
+          "playerSeasonId": "valencia-2004-0",
+          "teamSeasonId": "valencia-2004",
+          "league": "La Liga",
+          "club": "Valencia",
+          "year": 2004,
+          "positions": [
+            "GK"
+          ],
+          "abilityV2BaselineUnavailable": true
+        }
+      ],
+      "identityConfidence": "unverified",
+      "searchEntityKey": "entity:santiago-canizares"
+    },
+    {
+      "playerId": "sinisa-mihajlovic",
+      "identitySource": "data/entities/players.json",
+      "canonicalName": "Sinisa Mihajlovic",
+      "rosterNames": [
+        "Sinisa Mihajlovic"
+      ],
+      "searchTerms": [
+        "Sinisa Mihajlovic",
+        "米哈伊洛维奇",
+        "シニシャ・ミハイロヴィッチ",
+        "西尼萨·米哈伊洛维奇",
+        "ミハイロヴィッチ"
+      ],
+      "existingExternalIds": {
+        "sofifa": null,
+        "fifaIndex": null
+      },
+      "playerSeasonIds": [
+        "lazio-2000-2"
+      ],
+      "targetTeamSeasons": [
+        {
+          "playerSeasonId": "lazio-2000-2",
+          "teamSeasonId": "lazio-2000",
+          "league": "Serie A",
+          "club": "Lazio",
+          "year": 2000,
+          "positions": [
+            "DF"
+          ],
+          "abilityV2BaselineUnavailable": true
+        }
+      ],
+      "identityConfidence": "unverified",
+      "searchEntityKey": "entity:sinisa-mihajlovic"
+    },
+    {
+      "playerId": "sol-campbell",
+      "identitySource": "data/entities/players.json",
+      "canonicalName": "Sol Campbell",
+      "rosterNames": [
+        "Sol Campbell"
+      ],
+      "searchTerms": [
+        "Sol Campbell",
+        "索尔·坎贝尔",
+        "ソル・キャンベル",
+        "坎贝尔",
+        "キャンベル"
+      ],
+      "existingExternalIds": {
+        "sofifa": null,
+        "fifaIndex": null
+      },
+      "playerSeasonIds": [
+        "arsenal-2004-1"
+      ],
+      "targetTeamSeasons": [
+        {
+          "playerSeasonId": "arsenal-2004-1",
+          "teamSeasonId": "arsenal-2004",
+          "league": "Premier League",
+          "club": "Arsenal",
+          "year": 2004,
+          "positions": [
+            "DF"
+          ],
+          "abilityV2BaselineUnavailable": true
+        }
+      ],
+      "identityConfidence": "unverified",
+      "searchEntityKey": "entity:sol-campbell"
+    },
+    {
+      "playerId": "stefan-effenberg",
+      "identitySource": "data/entities/players.json",
+      "canonicalName": "Stefan Effenberg",
+      "rosterNames": [
+        "Stefan Effenberg"
+      ],
+      "searchTerms": [
+        "Stefan Effenberg",
+        "埃芬博格",
+        "シュテファン・エッフェンベルク",
+        "斯特凡·埃芬博格",
+        "エッフェンベルク"
+      ],
+      "existingExternalIds": {
+        "sofifa": null,
+        "fifaIndex": null
+      },
+      "playerSeasonIds": [
+        "bayern-munich-2001-5"
+      ],
+      "targetTeamSeasons": [
+        {
+          "playerSeasonId": "bayern-munich-2001-5",
+          "teamSeasonId": "bayern-munich-2001",
+          "league": "Bundesliga",
+          "club": "Bayern Munich",
+          "year": 2001,
+          "positions": [
+            "MF"
+          ],
+          "abilityV2BaselineUnavailable": true
+        }
+      ],
+      "identityConfidence": "unverified",
+      "searchEntityKey": "entity:stefan-effenberg"
+    },
+    {
+      "playerId": "thierry-henry",
+      "identitySource": "data/entities/players.json",
+      "canonicalName": "Thierry Henry",
+      "rosterNames": [
+        "Thierry Henry"
+      ],
+      "searchTerms": [
+        "Thierry Henry",
+        "亨利",
+        "ティエリ・アンリ",
+        "蒂埃里·亨利",
+        "アンリ"
+      ],
+      "existingExternalIds": {
+        "sofifa": null,
+        "fifaIndex": null
+      },
+      "playerSeasonIds": [
+        "arsenal-2004-7"
+      ],
+      "targetTeamSeasons": [
+        {
+          "playerSeasonId": "arsenal-2004-7",
+          "teamSeasonId": "arsenal-2004",
+          "league": "Premier League",
+          "club": "Arsenal",
+          "year": 2004,
+          "positions": [
+            "FW"
+          ],
+          "abilityV2BaselineUnavailable": true
+        }
+      ],
+      "identityConfidence": "unverified",
+      "searchEntityKey": "entity:thierry-henry"
+    },
+    {
+      "playerId": "vicente",
+      "identitySource": "data/entities/players.json",
+      "canonicalName": "Vicente",
+      "rosterNames": [
+        "Vicente"
+      ],
+      "searchTerms": [
+        "Vicente",
+        "Vicente Rodríguez Guillén",
+        "维森特",
+        "ビセンテ",
+        "维森特·罗德里格斯",
+        "ビセンテ・ロドリゲス"
+      ],
+      "existingExternalIds": {
+        "sofifa": null,
+        "fifaIndex": null
+      },
+      "playerSeasonIds": [
+        "valencia-2004-7"
+      ],
+      "targetTeamSeasons": [
+        {
+          "playerSeasonId": "valencia-2004-7",
+          "teamSeasonId": "valencia-2004",
+          "league": "La Liga",
+          "club": "Valencia",
+          "year": 2004,
+          "positions": [
+            "MF",
+            "FW"
+          ],
+          "abilityV2BaselineUnavailable": true
+        }
+      ],
+      "identityConfidence": "unverified",
+      "searchEntityKey": "entity:vicente"
+    },
+    {
+      "playerId": "vincent-candela",
+      "identitySource": "data/entities/players.json",
+      "canonicalName": "Vincent Candela",
+      "rosterNames": [
+        "Vincent Candela"
+      ],
+      "searchTerms": [
+        "Vincent Candela",
+        "坎德拉",
+        "ヴァンサン・カンデラ",
+        "文森特·坎德拉",
+        "カンデラ"
+      ],
+      "existingExternalIds": {
+        "sofifa": null,
+        "fifaIndex": null
+      },
+      "playerSeasonIds": [
+        "roma-2001-3"
+      ],
+      "targetTeamSeasons": [
+        {
+          "playerSeasonId": "roma-2001-3",
+          "teamSeasonId": "roma-2001",
+          "league": "Serie A",
+          "club": "Roma",
+          "year": 2001,
+          "positions": [
+            "DF",
+            "MF"
+          ],
+          "abilityV2BaselineUnavailable": true
+        }
+      ],
+      "identityConfidence": "unverified",
+      "searchEntityKey": "entity:vincent-candela"
+    },
+    {
+      "playerId": "vitor-baia",
+      "identitySource": "data/entities/players.json",
+      "canonicalName": "Vitor Baia",
+      "rosterNames": [
+        "Vitor Baia"
+      ],
+      "searchTerms": [
+        "Vitor Baia",
+        "拜亚",
+        "ビトール・バイーア",
+        "维托尔·拜亚",
+        "バイーア"
+      ],
+      "existingExternalIds": {
+        "sofifa": null,
+        "fifaIndex": null
+      },
+      "playerSeasonIds": [
+        "porto-2004-0"
+      ],
+      "targetTeamSeasons": [
+        {
+          "playerSeasonId": "porto-2004-0",
+          "teamSeasonId": "porto-2004",
+          "league": "Primeira Liga",
+          "club": "Porto",
+          "year": 2004,
+          "positions": [
+            "GK"
+          ],
+          "abilityV2BaselineUnavailable": true
+        }
+      ],
+      "identityConfidence": "unverified",
+      "searchEntityKey": "entity:vitor-baia"
+    },
+    {
+      "playerId": "walter-samuel",
+      "identitySource": "data/entities/players.json",
+      "canonicalName": "Walter Samuel",
+      "rosterNames": [
+        "Walter Samuel"
+      ],
+      "searchTerms": [
+        "Walter Samuel",
+        "萨穆埃尔",
+        "ワルテル・サムエル",
+        "瓦尔特·萨穆埃尔",
+        "サムエル"
+      ],
+      "existingExternalIds": {
+        "sofifa": 23461,
+        "fifaIndex": 23461
+      },
+      "playerSeasonIds": [
+        "roma-2001-1"
+      ],
+      "targetTeamSeasons": [
+        {
+          "playerSeasonId": "roma-2001-1",
+          "teamSeasonId": "roma-2001",
+          "league": "Serie A",
+          "club": "Roma",
+          "year": 2001,
+          "positions": [
+            "DF"
+          ],
+          "abilityV2BaselineUnavailable": true
+        }
+      ],
+      "identityConfidence": "unverified",
+      "searchEntityKey": "entity:walter-samuel"
+    },
+    {
+      "playerId": "willy-sagnol",
+      "identitySource": "data/entities/players.json",
+      "canonicalName": "Willy Sagnol",
+      "rosterNames": [
+        "Willy Sagnol"
+      ],
+      "searchTerms": [
+        "Willy Sagnol",
+        "萨尼奥尔",
+        "ウィリー・サニョル",
+        "威利·萨尼奥尔",
+        "サニョル"
+      ],
+      "existingExternalIds": {
+        "sofifa": null,
+        "fifaIndex": null
+      },
+      "playerSeasonIds": [
+        "bayern-munich-2001-4"
+      ],
+      "targetTeamSeasons": [
+        {
+          "playerSeasonId": "bayern-munich-2001-4",
+          "teamSeasonId": "bayern-munich-2001",
+          "league": "Bundesliga",
+          "club": "Bayern Munich",
+          "year": 2001,
+          "positions": [
+            "DF"
+          ],
+          "abilityV2BaselineUnavailable": true
+        }
+      ],
+      "identityConfidence": "unverified",
+      "searchEntityKey": "entity:willy-sagnol"
+    },
+    {
+      "playerId": "zinedine-zidane",
+      "identitySource": "data/entities/players.json",
+      "canonicalName": "Zinedine Zidane",
+      "rosterNames": [
+        "Zinedine Zidane"
+      ],
+      "searchTerms": [
+        "Zinedine Zidane",
+        "Zidane",
+        "齐达内",
+        "ジネディーヌ・ジダン",
+        "齐内丁·齐达内",
+        "ジダン"
+      ],
+      "existingExternalIds": {
+        "sofifa": null,
+        "fifaIndex": null
+      },
+      "playerSeasonIds": [
+        "real-madrid-2002-4"
+      ],
+      "targetTeamSeasons": [
+        {
+          "playerSeasonId": "real-madrid-2002-4",
+          "teamSeasonId": "real-madrid-2002",
+          "league": "La Liga",
+          "club": "Real Madrid",
+          "year": 2002,
+          "positions": [
+            "MF"
+          ],
+          "abilityV2BaselineUnavailable": true
+        }
+      ],
+      "identityConfidence": "unverified",
+      "searchEntityKey": "entity:zinedine-zidane"
+    }
+  ]
+}

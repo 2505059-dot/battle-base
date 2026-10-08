@@ -1,0 +1,69 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Historical FIFA card search candidate",
+  "type": "object",
+  "required": ["schemaVersion", "site", "searchedPlayerId", "searchEntityKey", "card_found", "overall_found", "attributes_found", "attributes_complete", "attribute_completeness_status", "attribute_field_count", "identity_confidence", "historical_relevance", "blocked_or_unavailable", "sourceUrl", "rawFields"],
+  "properties": {
+    "schemaVersion": { "const": "historical-card-search-candidate/1" },
+    "site": { "enum": ["wefut", "fo4", "fo3", "nexon-fco"] },
+    "sourceRole": { "enum": ["primary", "optional_fallback"] },
+    "gameFamily": { "type": ["string", "null"] },
+    "searchedPlayerId": { "type": ["string", "null"] },
+    "searchEntityKey": { "type": "string" },
+    "searchedCanonicalName": { "type": "string" },
+    "name": { "type": ["string", "null"] },
+    "card_found": { "type": "boolean" },
+    "overall_found": { "type": "boolean" },
+    "overall": { "type": ["integer", "null"] },
+    "attributes_found": { "type": "boolean", "description": "At least 20 usable detailed numeric ability fields were observed, excluding summary ratings, Potential metadata, and skill/work-rate metadata. This is not a completeness claim." },
+    "attributes_complete": { "type": ["boolean", "null"], "description": "True only when the source-native expected detailed field set is verified and fully observed; false when known partial or unavailable; null when its expected set is unknown." },
+    "attribute_completeness_status": { "enum": ["complete", "partial", "unknown", "unavailable"] },
+    "attribute_field_count": { "type": "integer", "minimum": 0, "description": "Observed distinct detailed ability fields, excluding summary ratings, Potential metadata, and skill/work-rate metadata." },
+    "attributeSourceEvidence": { "type": ["object", "null"] },
+    "attributes": { "type": "object", "additionalProperties": { "type": "number" } },
+    "detailedAttributes": { "type": "object", "additionalProperties": { "type": "number" } },
+    "summaryAttributes": { "type": "object", "additionalProperties": { "type": "number" } },
+    "summaryRatings": { "type": "object", "additionalProperties": { "type": "number" } },
+    "skillMetaAttributes": { "type": "object", "additionalProperties": { "type": ["number", "string"] } },
+    "potentialMetaAttributes": { "type": "object", "additionalProperties": { "type": "number" }, "description": "Development potential is preserved separately and excluded from the detailed ability field count." },
+    "attributes_ambiguous": { "type": "boolean" },
+    "attributeAmbiguities": { "type": "array", "items": { "type": "object" } },
+    "placeholderFields": { "type": "array", "items": { "type": "string" } },
+    "identity_confidence": { "enum": ["high", "low", "none", "unverified"] },
+    "identity_evidence": { "type": "string" },
+    "historical_relevance": { "enum": ["confirmed", "possible", "unverified"] },
+    "historical_relevance_reason": { "type": "string" },
+    "blocked_or_unavailable": { "type": "boolean" },
+    "unavailableReason": { "type": ["string", "null"] },
+    "cardId": { "type": ["string", "integer", "null"] },
+    "sourceCardId": { "type": ["string", "null"] },
+    "sourceIdNamespace": { "type": ["string", "null"] },
+    "sourcePlayerId": { "type": ["string", "null"] },
+    "numericIdentityEvidence": { "type": ["object", "null"] },
+    "seasonId": { "type": ["integer", "null"] },
+    "cardState": { "type": "object" },
+    "base_state_verified": { "type": "boolean" },
+    "positions": { "type": "array", "items": { "type": "string" } },
+    "nationality": { "type": ["string", "null"] },
+    "dateOfBirth": { "type": ["string", "null"] },
+    "searchUrl": { "type": "string", "format": "uri" },
+    "sourceUrl": { "type": "string", "format": "uri" },
+    "detailUrl": { "type": ["string", "null"], "format": "uri" },
+    "rawFields": {
+      "type": "object",
+      "properties": {
+        "wefutHeaderEvidenceRef": {
+          "type": "object",
+          "description": "Reference to the shared, source-hashed public table-header evidence. Raw row cells and normalized attributes remain on the candidate.",
+          "required": ["path", "edition", "sha256"],
+          "properties": {
+            "path": { "const": "results/wefut-edition-headers.json" },
+            "edition": { "type": "integer", "minimum": 14, "maximum": 27 },
+            "sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" }
+          },
+          "additionalProperties": false
+        }
+      }
+    }
+  }
+}

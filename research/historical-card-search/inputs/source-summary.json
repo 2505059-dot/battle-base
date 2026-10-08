@@ -1,0 +1,33 @@
+{
+  "schemaVersion": "historical-card-search-inputs/1",
+  "sourcePaths": [
+    "public/data/team-seasons.js",
+    "data/entities/players.json",
+    "data/manual/player-aliases.json",
+    "data/reports/ability-v2/unresolved.json"
+  ],
+  "targetTeamSeasonIds": [
+    "manchester-united-1999",
+    "arsenal-2004",
+    "real-madrid-2002",
+    "valencia-2004",
+    "deportivo-la-coruna-2000",
+    "juventus-2003",
+    "roma-2001",
+    "lazio-2000",
+    "parma-1999",
+    "bayern-munich-2001",
+    "porto-2004"
+  ],
+  "counts": {
+    "teamSeasons": 11,
+    "playerSeasons": 99,
+    "distinctRosterNames": 95,
+    "uniqueSearchEntities": 95,
+    "uniqueSearchEntityKeys": 95,
+    "abilityV2UnavailablePlayerSeasons": 92,
+    "abilityV2NameOrAmbiguousFindings": 89,
+    "abilityV2PositionFindings": 41
+  },
+  "auditInterpretation": "Counts come from the checked-in ability-v2 unresolved report; they are not card-search results or identity confirmations."
+}

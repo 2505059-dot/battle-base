@@ -1,7 +1,7 @@
 {
   "name": "battle-base",
   "version": "1.0.0",
-  "description": "対戦ゲームの土台（部屋・人数上限・メッセージ中継）。授業用。",
+  "description": "ERA DERBY — Every Era. One Pitch. 1v1 Historical Football Draft & Match Simulation.",
   "type": "module",
   "scripts": {
     "build": "npm run build:css",

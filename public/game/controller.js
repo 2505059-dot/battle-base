@@ -2,7 +2,7 @@
 
 import { t, subscribeLocaleChange } from '../i18n/i18n.js';
 import { el } from './shared/dom.js';
-import { REROLL_TYPES } from './shared/constants.js';
+import { REROLL_TYPES, SLOTS } from './shared/constants.js';
 import {
     createInitialState,
     getMyTeam,
@@ -30,6 +30,7 @@ import {
     reconcileDraftPreview,
     selectPreviewCandidate,
     selectPreviewSlot,
+    selectInspectedSlot,
     getConfirmPickStatus,
 } from './draft/preview-state.js';
 import {
@@ -317,13 +318,18 @@ export function startGame(ctx) {
 
     function handleSelectSlot(slotOrRole) {
         const myTeam = getMyTeam(state, ctx.me);
+        if (!preview.selectedPlayerId && SLOTS.includes(slotOrRole) && myTeam?.roster?.[slotOrRole]) {
+            const inspectRes = selectInspectedSlot(state, myTeam, preview, slotOrRole);
+            if (inspectRes.changed) render();
+            return;
+        }
         const res = selectPreviewSlot(state, myTeam, preview, slotOrRole);
         if (!res.changed) return;
         render();
     }
 
     function handleClearPreview() {
-        if (!preview.selectedPlayerId && !preview.selectedSlot) return;
+        if (!preview.selectedPlayerId && !preview.selectedSlot && !preview.inspectedSlot) return;
         clearDraftPreview(preview);
         render();
     }

@@ -18,6 +18,7 @@ export function createDraftPreviewState() {
     return {
         selectedPlayerId: null,
         selectedSlot: null,
+        inspectedSlot: null,
         mobileTab: 'candidates',
         pendingPickKey: null,
         lastRollId: null,
@@ -28,6 +29,7 @@ export function clearDraftPreview(preview) {
     if (!preview) return;
     preview.selectedPlayerId = null;
     preview.selectedSlot = null;
+    preview.inspectedSlot = null;
     preview.pendingPickKey = null;
 }
 
@@ -35,6 +37,33 @@ export function getSelectedCandidate(myTeam, preview) {
     const playerId = preview?.selectedPlayerId;
     if (!playerId || !myTeam?.draft?.currentRoll?.players) return null;
     return myTeam.draft.currentRoll.players.find((p) => p.id === playerId) ?? null;
+}
+
+export function getInspectedRosterEntry(myTeam, preview) {
+    if (!myTeam?.roster || !preview?.inspectedSlot || preview?.selectedPlayerId) return null;
+    const slot = preview.inspectedSlot;
+    if (!SLOTS.includes(slot)) return null;
+    const player = myTeam.roster[slot] ?? null;
+    if (!player) return null;
+    return { slot, player };
+}
+
+export function selectInspectedSlot(state, myTeam, preview, slot) {
+    if (!preview || !state || state.phase !== 'DRAFT' || !myTeam?.roster) {
+        return { changed: false, reason: 'inactive_phase' };
+    }
+    if (preview.selectedPlayerId) {
+        return { changed: false, reason: 'candidate_active' };
+    }
+    if (!SLOTS.includes(slot) || !myTeam.roster[slot]) {
+        return { changed: false, reason: 'empty_slot' };
+    }
+    preview.inspectedSlot = preview.inspectedSlot === slot ? null : slot;
+    return {
+        changed: true,
+        inspectedSlot: preview.inspectedSlot,
+        player: myTeam.roster[slot],
+    };
 }
 
 export function isLegalCandidateSlot(teamOrRoster, candidate, slot) {
@@ -65,6 +94,13 @@ export function reconcileDraftPreview(state, myTeam, preview) {
     }
 
     if (
+        preview.inspectedSlot &&
+        (!state || state.phase !== 'DRAFT' || !myTeam?.roster?.[preview.inspectedSlot])
+    ) {
+        preview.inspectedSlot = null;
+    }
+
+    if (
         !state ||
         state.phase !== 'DRAFT' ||
         !myTeam ||
@@ -72,11 +108,14 @@ export function reconcileDraftPreview(state, myTeam, preview) {
         myTeam.draft?.phase !== 'PICK' ||
         !myTeam.draft?.currentRoll
     ) {
-        clearDraftPreview(preview);
+        preview.selectedPlayerId = null;
+        preview.selectedSlot = null;
+        preview.pendingPickKey = null;
         return;
     }
 
     if (preview.selectedPlayerId) {
+        preview.inspectedSlot = null;
         const candidate = getSelectedCandidate(myTeam, preview);
         if (
             !candidate ||
@@ -115,6 +154,7 @@ export function selectPreviewCandidate(state, myTeam, preview, playerId) {
     }
 
     preview.selectedPlayerId = candidate.id;
+    preview.inspectedSlot = null;
     preview.pendingPickKey = null;
 
     // Re-validate previously previewed slot against the newly selected candidate; clear if invalid

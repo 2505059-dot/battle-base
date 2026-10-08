@@ -447,11 +447,15 @@ function renderConfirmPickBar(state, team, handlers, previewObj, extraCls = '') 
         );
         infoWrap.append(summary);
     } else {
-        const reason = el(
-            'div',
-            'dw-confirm-reason',
-            t(status.reasonKey || 'draft.confirmReasonNeedPlayer')
-        );
+        let reasonText = t(status.reasonKey || 'draft.confirmReasonNeedPlayer');
+        if (team?.draft?.locked || team?.draft?.phase === 'LOCKED') {
+            reasonText = t('draft.locked');
+        } else if (team?.draft?.phase === 'READY') {
+            reasonText = t('draft.readyGuide');
+        } else if (team?.draft?.phase === 'ROLL') {
+            reasonText = t('draft.rollPromptMine');
+        }
+        const reason = el('div', 'dw-confirm-reason', reasonText);
         infoWrap.append(reason);
     }
 
@@ -581,7 +585,7 @@ export function renderDraftZone(state, myTeam, handlers = {}, selectedPlayerIdOv
 
         const yearItem = el('div', 'fd-roll-meta');
         const yearContent = el('div', 'fd-roll-meta-content');
-        yearContent.append(el('strong', 'fd-meta-val fd-meta-val--year', String(roll.year)));
+        yearContent.append(el('strong', 'fd-meta-val fd-meta-val--year ol3-season-badge', String(roll.year)));
         yearItem.append(el('span', 'fd-meta-label', t('draft.metaYear')), yearContent);
 
         rollInfo.append(leagueItem, clubItem, yearItem);
@@ -646,18 +650,30 @@ export function renderDraftZone(state, myTeam, handlers = {}, selectedPlayerIdOv
                 card.dataset.focusKey = `candidate:${player.id}`;
             }
 
+            const displayName = getPlayerDisplayName(player.name);
+            const clubText = formatClubName(player.club);
+            if (typeof card.setAttribute === 'function') {
+                card.setAttribute(
+                    'title',
+                    `${displayName.primary}${displayName.secondary ? ` (${displayName.secondary})` : ''} — ${clubText} ${player.year} · OVR ${ovr}`
+                );
+            }
+
             const rowMain = el('div', 'ol3-candidate-main');
 
             const posCol = el('div', 'ol3-candidate-pos-col');
             posCol.append(el('span', `fd-card-pos ol3-pos-tag ol3-pos-tag--${primaryRole}`, player.positions.join(' / ')));
 
-            const mediaBox = el('div', 'fd-card-media');
-            mediaBox.append(
-                createPlayerPortrait(player, {
-                    className: 'fd-card-player-img',
-                    loading: 'eager',
-                })
+            const portraitImg = createPlayerPortrait(player, {
+                className: 'fd-card-player-img',
+                loading: 'eager',
+            });
+            const isSilhouette = portraitImg.classList?.contains('fd-player-img--silhouette');
+            const mediaBox = el(
+                'div',
+                'fd-card-media' + (isSilhouette ? ' fd-card-media--silhouette' : '')
             );
+            mediaBox.append(portraitImg);
             const cardCrest = createClubCrest(player.club, {
                 className: 'fd-card-club-crest',
                 loading: 'eager',
@@ -667,25 +683,18 @@ export function renderDraftZone(state, myTeam, handlers = {}, selectedPlayerIdOv
                 mediaBox.append(cardCrest);
             }
 
-            const displayName = getPlayerDisplayName(player.name);
             const identityCol = el('div', 'ol3-candidate-identity');
             const nameRow = el('div', 'ol3-candidate-name-row');
-            const seasonTag = el('span', 'ol3-season-badge', String(player.year).slice(-2));
+            const seasonTag = el('span', 'ol3-season-badge', String(player.year));
             const nameEl = el('div', 'fd-card-name', displayName.primary);
             nameRow.append(seasonTag, nameEl);
             identityCol.append(nameRow);
 
             const subRow = el('div', 'ol3-candidate-subrow');
-            if (displayName.secondary) {
+            if (displayName.secondary && displayName.secondary !== displayName.primary) {
                 subRow.append(el('div', 'fd-card-name-secondary', displayName.secondary));
             }
-            subRow.append(
-                el(
-                    'span',
-                    'ol3-candidate-club-meta',
-                    `${formatClubName(player.club)} '${String(player.year).slice(-2)}`
-                )
-            );
+            subRow.append(el('span', 'ol3-candidate-club-meta', clubText));
             identityCol.append(subRow);
 
             const topRow = el('div', 'fd-card-top ol3-candidate-right');
@@ -888,11 +897,48 @@ function renderOl3LineSummaryBars(teamState) {
     return wrap;
 }
 
+function formatPitchPlayerName(canonicalName) {
+    const full = formatPlayerName(canonicalName);
+    if (!full) return '';
+    if (full.includes('・') && full.length > 6) {
+        return full.split('・').at(-1).trim();
+    }
+    if (full.includes('·') && full.length > 4) {
+        return full.split('·').at(-1).trim();
+    }
+    if (full.includes(' ') && full.length > 10) {
+        const parts = full.trim().split(/\s+/);
+        if (parts.length >= 3) {
+            const particles = new Set([
+                'van',
+                'von',
+                'de',
+                'del',
+                'della',
+                'di',
+                'da',
+                'dos',
+                'le',
+                'al',
+                'el',
+                'st.',
+            ]);
+            const penult = parts.at(-2).toLowerCase();
+            if (particles.has(penult)) {
+                return `${parts.at(-2)} ${parts.at(-1)}`;
+            }
+        }
+        return parts.at(-1);
+    }
+    return full;
+}
+
 export function renderPitchView(teamState, options = {}) {
     const {
         isDraftSelf = false,
         selectedCandidate = null,
         selectedSlot = null,
+        inspectedSlot = null,
         onSelectSlot = null,
     } = options;
 
@@ -928,13 +974,18 @@ export function renderPitchView(teamState, options = {}) {
                 : p
                     ? 'occupied'
                     : 'empty';
+            const isFocusedDrafted = Boolean(
+                p && isDraftSelf && !selectedCandidate && inspectedSlot === slot
+            );
 
             let nodeCls = `fd-pitch-node fd-pitch-node--role-${roleKey} `;
             if (p) {
                 nodeCls += 'fd-pitch-node--filled';
                 if (isDraftSelf && selectedCandidate) nodeCls += ' dw-slot--occupied';
+                if (isFocusedDrafted) nodeCls += ' fd-pitch-node--focused dw-slot--inspected';
             } else if (slotState === 'preview') {
-                nodeCls += 'fd-pitch-node--empty fd-pitch-node--preview dw-slot--preview';
+                nodeCls +=
+                    'fd-pitch-node--empty fd-pitch-node--preview dw-slot--preview fd-pitch-node--focused';
             } else if (slotState === 'eligible') {
                 nodeCls += 'fd-pitch-node--empty dw-slot--eligible';
             } else if (slotState === 'mismatch') {
@@ -951,81 +1002,103 @@ export function renderPitchView(teamState, options = {}) {
                 node.dataset.focusKey = `pitch-slot:${slot}`;
             }
 
-            const topBar = el('div', 'fd-pitch-node-top');
-            topBar.append(
-                el('span', `fd-pitch-slot-tag fd-pitch-slot-tag--${roleKey}`, formatSlotLabel(slot))
-            );
             if (p) {
-                topBar.append(
-                    el('span', 'fd-pitch-rating fd-slot-player-rating', String(getPlayerOverall(p)))
-                );
-            } else if (slotState === 'preview' && selectedCandidate) {
-                topBar.append(el('span', 'dw-preview-badge', t('draft.previewBadge')));
-            } else if (slotState === 'eligible') {
-                topBar.append(el('span', 'dw-slot-state-tag', t('draft.slotStateEligible')));
-            }
-            node.append(topBar);
+                const fullPlayerName = formatPlayerName(p.name);
+                const shortPlayerName = formatPitchPlayerName(p.name);
+                const histMetaText = `${formatClubName(p.club)} · ${p.year}`;
+                const ovrVal = String(getPlayerOverall(p));
 
-            if (p) {
-                const avatarWrap = el('div', 'fd-pitch-avatar');
-                avatarWrap.append(
-                    createPlayerPortrait(p, {
-                        className: 'fd-slot-player-img fd-pitch-player-img',
-                        loading: 'lazy',
-                    })
+                const histTag = el('div', 'fd-pitch-hist-tag', histMetaText);
+
+                const figureWrap = el('div', 'fd-pitch-figure');
+                const portraitImg = createPlayerPortrait(p, {
+                    className: 'fd-slot-player-img fd-pitch-player-img',
+                    loading: 'eager',
+                });
+                const isSilhouette = portraitImg.classList?.contains('fd-player-img--silhouette');
+                const avatarWrap = el(
+                    'div',
+                    'fd-pitch-avatar' + (isSilhouette ? ' fd-pitch-avatar--silhouette' : '')
+                );
+                avatarWrap.append(portraitImg);
+
+                const ratingBadge = el('span', 'fd-pitch-rating fd-slot-player-rating', ovrVal);
+                figureWrap.append(avatarWrap, ratingBadge);
+
+                const namePlate = el(
+                    'div',
+                    `fd-pitch-name fd-pitch-name--${roleKey}`,
+                    shortPlayerName
                 );
 
-                const playerNameText = formatPlayerName(p.name);
-                const clubMetaText = `${formatClubName(p.club)} '${String(p.year).slice(-2)}`;
                 if (typeof node.setAttribute === 'function') {
                     node.setAttribute(
                         'title',
-                        `${formatSlotLabel(slot)} — ${playerNameText} (${clubMetaText})`
+                        `${formatSlotLabel(slot)} — ${fullPlayerName} (${histMetaText}) · OVR ${ovrVal}`
                     );
                     if (isDraftSelf && selectedCandidate) {
                         node.setAttribute('aria-disabled', 'true');
                     }
                 }
 
-                node.append(
-                    avatarWrap,
-                    el('div', 'fd-pitch-name', playerNameText),
-                    el('div', 'fd-pitch-meta', clubMetaText)
-                );
+                node.append(histTag, figureWrap, namePlate);
             } else if (slotState === 'preview' && selectedCandidate) {
-                const previewAvatar = el('div', 'fd-pitch-avatar dw-preview-avatar');
-                previewAvatar.append(
-                    createPlayerPortrait(selectedCandidate, {
-                        className: 'dw-preview-player-img fd-pitch-player-img',
-                        loading: 'eager',
-                    })
+                const fullPreviewName = formatPlayerName(selectedCandidate.name);
+                const shortPreviewName = formatPitchPlayerName(selectedCandidate.name);
+                const previewHistText = `${formatClubName(selectedCandidate.club)} · ${selectedCandidate.year}`;
+                const previewOvrVal = String(getPlayerOverall(selectedCandidate));
+
+                const previewBadge = el(
+                    'span',
+                    'dw-preview-badge fd-pitch-hist-tag',
+                    previewHistText
                 );
-                const previewNameText = formatPlayerName(selectedCandidate.name);
-                node.append(
-                    previewAvatar,
-                    el('div', 'fd-pitch-name dw-preview-name', previewNameText),
-                    el(
-                        'div',
-                        'fd-pitch-meta dw-preview-meta',
-                        `OVR ${getPlayerOverall(selectedCandidate)}`
-                    )
+
+                const figureWrap = el('div', 'fd-pitch-figure');
+                const previewImg = createPlayerPortrait(selectedCandidate, {
+                    className: 'dw-preview-player-img fd-pitch-player-img',
+                    loading: 'eager',
+                });
+                const isSilhouette = previewImg.classList?.contains('fd-player-img--silhouette');
+                const previewAvatar = el(
+                    'div',
+                    'fd-pitch-avatar dw-preview-avatar' +
+                        (isSilhouette ? ' fd-pitch-avatar--silhouette' : '')
                 );
+                previewAvatar.append(previewImg);
+
+                const ratingBadge = el(
+                    'span',
+                    'fd-pitch-rating dw-preview-rating',
+                    previewOvrVal
+                );
+                figureWrap.append(previewAvatar, ratingBadge);
+
+                const namePlate = el(
+                    'div',
+                    `fd-pitch-name dw-preview-name fd-pitch-name--${roleKey}`,
+                    shortPreviewName
+                );
+
+                if (typeof node.setAttribute === 'function') {
+                    node.setAttribute(
+                        'title',
+                        `${formatSlotLabel(slot)} — ${fullPreviewName} (${previewHistText}) · OVR ${previewOvrVal}`
+                    );
+                }
+
+                node.append(previewBadge, figureWrap, namePlate);
             } else {
-                const tokenText = slotState === 'eligible' ? '✓' : '+';
-                const emptyLabelText =
-                    slotState === 'eligible'
-                        ? t('draft.slotStateEligible')
-                        : slotState === 'mismatch'
-                            ? t('draft.slotStateMismatch')
-                            : t('common.emptySlot');
-                node.append(
-                    el(
-                        'div',
-                        `fd-pitch-empty-token fd-pitch-empty-token--${roleKey}`,
-                        tokenText
-                    ),
-                    el('div', 'fd-pitch-empty-label fd-slot-empty', emptyLabelText)
+                const dotEl = el('div', `fd-pitch-empty-token fd-pitch-empty-token--${roleKey}`);
+                const slotTagEl = el(
+                    'span',
+                    `fd-pitch-slot-tag fd-pitch-slot-tag--${roleKey}`,
+                    formatSlotLabel(slot)
                 );
+                if (typeof node.setAttribute === 'function') {
+                    node.setAttribute('title', formatSlotLabel(slot));
+                }
+                node.append(dotEl, slotTagEl);
             }
 
             if (isDraftSelf && (slotState === 'eligible' || slotState === 'preview') && onSelectSlot) {
@@ -1037,6 +1110,15 @@ export function renderPitchView(teamState, options = {}) {
                 const chooseSlot = () => onSelectSlot(slot);
                 node.addEventListener('click', chooseSlot);
                 attachKeyboardActivation(node, chooseSlot);
+            } else if (isDraftSelf && p && !selectedCandidate && onSelectSlot) {
+                node.tabIndex = 0;
+                if (typeof node.setAttribute === 'function') {
+                    node.setAttribute('role', 'button');
+                    node.setAttribute('aria-pressed', String(isFocusedDrafted));
+                }
+                const inspectThisSlot = () => onSelectSlot(slot);
+                node.addEventListener('click', inspectThisSlot);
+                attachKeyboardActivation(node, inspectThisSlot);
             } else if (isDraftSelf && (slotState === 'occupied' || slotState === 'mismatch')) {
                 if (typeof node.setAttribute === 'function') {
                     node.setAttribute('aria-disabled', 'true');
@@ -1058,6 +1140,7 @@ export function renderGroupedSlotList(teamState, options = {}) {
         isDraftSelf = false,
         selectedCandidate = null,
         selectedSlot = null,
+        inspectedSlot = null,
         onSelectSlot = null,
     } = options;
 
@@ -1081,11 +1164,15 @@ export function renderGroupedSlotList(teamState, options = {}) {
                 : p
                     ? 'occupied'
                     : 'empty';
+            const isFocusedDrafted = Boolean(
+                p && isDraftSelf && !selectedCandidate && inspectedSlot === slot
+            );
 
             let rowCls = 'fd-slot-row';
             if (p) {
                 rowCls += ' fd-slot-row--filled';
                 if (isDraftSelf && selectedCandidate) rowCls += ' dw-slot--occupied';
+                if (isFocusedDrafted) rowCls += ' fd-slot-row--focused';
             } else if (slotState === 'preview') {
                 rowCls += ' fd-slot-row--preview dw-slot--preview';
             } else if (slotState === 'eligible') {
@@ -1117,7 +1204,7 @@ export function renderGroupedSlotList(teamState, options = {}) {
                     el(
                         'span',
                         'fd-slot-player-meta',
-                        `${formatClubName(p.club)} '${String(p.year).slice(-2)}`
+                        `${formatClubName(p.club)} · ${p.year}`
                     )
                 );
                 row.append(
@@ -1167,6 +1254,15 @@ export function renderGroupedSlotList(teamState, options = {}) {
                 const chooseSlot = () => onSelectSlot(slot);
                 row.addEventListener('click', chooseSlot);
                 attachKeyboardActivation(row, chooseSlot);
+            } else if (isDraftSelf && p && !selectedCandidate && onSelectSlot) {
+                row.tabIndex = 0;
+                if (typeof row.setAttribute === 'function') {
+                    row.setAttribute('role', 'button');
+                    row.setAttribute('aria-pressed', String(isFocusedDrafted));
+                }
+                const inspectThisSlot = () => onSelectSlot(slot);
+                row.addEventListener('click', inspectThisSlot);
+                attachKeyboardActivation(row, inspectThisSlot);
             } else if (isDraftSelf && (slotState === 'occupied' || slotState === 'mismatch')) {
                 if (typeof row.setAttribute === 'function') {
                     row.setAttribute('aria-disabled', 'true');
@@ -1197,6 +1293,7 @@ export function renderTeamPanel(state, teamState, idx, meId, options = {}) {
     const isDraftSelf = isDraftPhase(state) && isSelf;
     const selectedCandidate = isDraftSelf ? getSelectedCandidate(teamState, preview) : null;
     const selectedSlot = isDraftSelf ? (preview?.selectedSlot ?? null) : null;
+    const inspectedSlot = isDraftSelf ? (preview?.inspectedSlot ?? null) : null;
 
     const isActive = isDraftPhase(state) && isTeamDraftActive(teamState);
     const panel = el(
@@ -1279,6 +1376,7 @@ export function renderTeamPanel(state, teamState, idx, meId, options = {}) {
         isDraftSelf,
         selectedCandidate,
         selectedSlot,
+        inspectedSlot,
         onSelectSlot,
     };
 
@@ -1313,7 +1411,7 @@ export function renderTeamPanel(state, teamState, idx, meId, options = {}) {
     renderBody();
     panel.append(bodyWrap);
 
-    if (isDraftSelf && teamState.draft?.phase === 'PICK') {
+    if (isDraftSelf) {
         panel.append(
             renderConfirmPickBar(
                 state,

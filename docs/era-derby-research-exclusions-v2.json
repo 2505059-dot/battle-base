@@ -1,0 +1,164 @@
+{
+  "policy": "Source-derived third-party raw observations are excluded until provenance and redistribution rights are resolved. The source branches remain intact. Recovery means restoring into a private ignored review cache only; do not add these files to a distributable commit without a separate rights decision.",
+  "recoveryCommandPattern": "git show <source-ref>:<source-path> > <private-ignored-review-cache>/<filename>",
+  "excludedFiles": [
+    {
+      "sourceBranch": "codex/fifa-legacy-ol-calibration-v1",
+      "sourceCommit": "61ce94636c4b5142ca16c52e14202fe42147768c",
+      "sourcePath": "research/fifa-legacy-ol-calibration/evidence.json",
+      "bytes": 236684,
+      "sha256": "41f5ebd7bdc5ab42602f098f71e175a10a858c08f19dd22f48c2f5d84bdfb2c1",
+      "gitBlob": "b5e16887239b86bc7d20943f2c3184f0c5d1a07e",
+      "reason": "Detailed FIFAIndex-attributed page observations and attribute values; exact source revision and redistribution rights are unresolved."
+    },
+    {
+      "sourceBranch": "codex/fifa-legacy-ol-calibration-v1",
+      "sourceCommit": "61ce94636c4b5142ca16c52e14202fe42147768c",
+      "sourcePath": "research/fifa-legacy-ol-calibration/calibration-results.json",
+      "bytes": 210194,
+      "sha256": "b58ca160c34ac68682c3ed1bf6a549caba856558b6d24e0514dedd788197bc30",
+      "gitBlob": "681307b0b3ed6214fa04fffb7afe709a25e54730",
+      "reason": "Detailed per-record observations and calibration outputs derived from FIFAIndex-attributed data; redistribution rights are unresolved."
+    },
+    {
+      "sourceBranch": "codex/fifa-legacy-ol-calibration-v1",
+      "sourceCommit": "61ce94636c4b5142ca16c52e14202fe42147768c",
+      "sourcePath": "research/fifa-legacy-ol-calibration/identity-crosswalk-v1/source-attributes.json",
+      "bytes": 569267,
+      "sha256": "833a3de6b65c39ae5c467367d399f33d7ebfe146b8ca07a70f0a9526ecd45773",
+      "gitBlob": "05270ccf6936b5aed8f3ddbb27ae54d250abf52a",
+      "reason": "Selected numeric FIFA 05–07 source attributes and cache provenance; FIFAIndex redistribution rights are unresolved."
+    },
+    {
+      "sourceBranch": "research/pes-legacy-bridge-poc-v1",
+      "sourceCommit": "91cba4f8cee9f61dce9833f490b3a6461f905c26",
+      "sourcePath": "research/pes-legacy-bridge/candidates.json",
+      "bytes": 581930,
+      "sha256": "865d919923c7e60d1791d5644158bdd5e46be4b91c6dbec620867f72062a7de4",
+      "gitBlob": "db25a86ca3ee34da55def33ac762995454dbd57f",
+      "reason": "Raw PES Master candidate observations and attributes; source extraction and redistribution rights are unresolved."
+    },
+    {
+      "sourceBranch": "research/pes-legacy-bridge-poc-v1",
+      "sourceCommit": "91cba4f8cee9f61dce9833f490b3a6461f905c26",
+      "sourcePath": "research/pes-legacy-bridge/fixtures/pes5-live-vicente-excerpt.html",
+      "bytes": 2737,
+      "sha256": "7969eb35ae6fe81c9a31dcb30cc81f0776bd8f1912ea3e0665bdfac52b5e8a3d",
+      "gitBlob": "ed868db150f603d7a33f700474c87cfe03f1212d",
+      "reason": "Captured third-party live HTML with player attributes; no redistribution license was found."
+    },
+    {
+      "sourceBranch": "research/historical-card-search-v1",
+      "sourceCommit": "cf7fa939dba6a26e1c589427edc0645c615ff129",
+      "sourcePath": "research/historical-card-search/results/candidates.json",
+      "bytes": 50680769,
+      "sha256": "1ff4aafda3ad1a0cfd068f44606a3511de270fdc8705256e84ff9a9d7a6ec14f",
+      "gitBlob": "e9f1fbbecde70301c1eef45d617b24351e4ff012",
+      "reason": "50.7 MB of raw third-party candidate records containing page observations, attributes, IDs, and URLs; no redistribution license was found."
+    },
+    {
+      "sourceBranch": "research/historical-card-search-v1",
+      "sourceCommit": "cf7fa939dba6a26e1c589427edc0645c615ff129",
+      "sourcePath": "research/historical-card-search/results/sample-fo3-candidates.json",
+      "bytes": 253672,
+      "sha256": "35855f5daf37321c278f75746daa9c1d0c6b097edc0145ea67851af44e22b48b",
+      "gitBlob": "d595379c4dc863c8cb4f78c0b6808f80bae9cdb9",
+      "reason": "Raw third-party FO3 candidate records; no redistribution license was found."
+    },
+    {
+      "sourceBranch": "research/historical-card-search-v1",
+      "sourceCommit": "cf7fa939dba6a26e1c589427edc0645c615ff129",
+      "sourcePath": "research/historical-card-search/results/sample-fo4-candidates.json",
+      "bytes": 1077382,
+      "sha256": "2725ee77d05ca759ba510f378d913868134b9a9b1202677a1259e47ffaf2ee51",
+      "gitBlob": "32cc53a442a923ce5769e835bea67e470fbda5b9",
+      "reason": "Raw third-party FO4 candidate records; no redistribution license was found."
+    },
+    {
+      "sourceBranch": "research/historical-card-search-v1",
+      "sourceCommit": "cf7fa939dba6a26e1c589427edc0645c615ff129",
+      "sourcePath": "research/historical-card-search/results/sample-nexon-fco-candidates.json",
+      "bytes": 1160919,
+      "sha256": "24c5387d1c0fd6f3b8e6a0b8c3074f949ccecba8b21cd20088346695ee972904",
+      "gitBlob": "63c803d86b8cfb0b55adee9a06306ef2e3187d75",
+      "reason": "Raw third-party Nexon FC Online candidate records and attributes; no redistribution license was found."
+    },
+    {
+      "sourceBranch": "research/historical-card-search-v1",
+      "sourceCommit": "cf7fa939dba6a26e1c589427edc0645c615ff129",
+      "sourcePath": "research/historical-card-search/results/sample-wefut-candidates.json",
+      "bytes": 331556,
+      "sha256": "68b6fff2499d2f4f851b7065889522b2b6c436253f60b8a9e678de4334f6c765",
+      "gitBlob": "f24326f469f0ddc9645295358063b026e8e2c5a3",
+      "reason": "Raw third-party WeFUT candidate records and attributes; no redistribution license was found."
+    },
+    {
+      "sourceBranch": "research/historical-card-search-v1",
+      "sourceCommit": "cf7fa939dba6a26e1c589427edc0645c615ff129",
+      "sourcePath": "research/historical-card-search/results/coverage-report.json",
+      "bytes": 2665758,
+      "sha256": "d80fb44b11190f53cac554f3368cf73daf07f1a0b635b2588a914285f03e5ea6",
+      "gitBlob": "131bc92a3443895cd1db597cafb36e6ad28f49b5",
+      "reason": "Despite its name, this file contains per-source candidate IDs, URLs, and field-level counts for 99 rows rather than aggregate-only coverage; no redistribution license was found."
+    },
+    {
+      "sourceBranch": "research/historical-card-search-v1",
+      "sourceCommit": "cf7fa939dba6a26e1c589427edc0645c615ff129",
+      "sourcePath": "research/historical-card-search/results/wefut-edition-headers.json",
+      "bytes": 127005,
+      "sha256": "2271852b709f621e87891a9294b928cc0f9b9a82dacd7a1c2ded1f89d4408884",
+      "gitBlob": "426f614cf7611d05dd7c7058b01781c063d33426",
+      "reason": "Captured raw third-party page header data; no redistribution license was found."
+    }
+  ],
+  "excludedFileCount": 12,
+  "excludedBytes": 57897873,
+  "embeddedExcerptExclusions": [
+    {
+      "sourceBranch": "codex/fifa-legacy-ol-calibration-v1",
+      "sourceCommit": "61ce94636c4b5142ca16c52e14202fe42147768c",
+      "sourcePath": "research/fifa-legacy-ol-calibration/README.md",
+      "sourceBytes": 9011,
+      "sourceSha256": "f16bf03c8e194525b0d0d1c1689ad6339af0b0ab6436a784c7c809e05fec888f",
+      "sourceGitBlob": "d94028bb222da009a7648307c9a7549482288230",
+      "redactedSections": [
+        "FIFA Online and FO4 observed card-state paragraph (source README line 42)",
+        "Calibration section: numeric OVR comparison, holdout table, and paired-attribute results (source README lines 48-58)",
+        "Source recovery/cross-check paragraph player-specific attribute example (source README line 69)"
+      ],
+      "reason": "Removed embedded third-party OVRs, detailed rating values, and derived rating metrics while retaining aggregate counts, identity facts, and provenance; redistribution rights are unresolved.",
+      "recovery": "Recover the original file with git show from the pinned source commit into a private ignored review cache only after a separate rights review."
+    },
+    {
+      "sourceBranch": "codex/fifa-legacy-ol-calibration-v1",
+      "sourceCommit": "61ce94636c4b5142ca16c52e14202fe42147768c",
+      "sourcePath": "research/fifa-legacy-ol-calibration/identity-crosswalk-v1/mapping.json",
+      "sourceBytes": 145573,
+      "sourceSha256": "abda593b2829db6d5ceedcb4b4dffc7906871816cc77f54174455a4964ee05f0",
+      "sourceGitBlob": "39094d15c0b94c65310fb703f6fccaff7755e148",
+      "removedJsonPointers": [
+        "$/fresh_mappings/16/candidate_ids/0/identity_observation/overall",
+        "$/fresh_mappings/16/candidate_ids/4/identity_observation/overall",
+        "$/fresh_mappings/16/candidate_ids/6/identity_observation/overall",
+        "$/fresh_mappings/51/candidate_ids/0/identity_observation/overall"
+      ],
+      "reason": "Removed four embedded third-party overall-rating observations; all other mapping content was preserved. Source redistribution rights are unresolved.",
+      "recovery": "Recover the original file with git show from the pinned source commit into a private ignored review cache only after a separate rights review."
+    },
+    {
+      "sourceBranch": "research/pes-legacy-bridge-poc-v1",
+      "sourceCommit": "91cba4f8cee9f61dce9833f490b3a6461f905c26",
+      "sourcePath": "research/pes-legacy-bridge/schema-comparison.md",
+      "sourceBytes": 8065,
+      "sourceSha256": "9129fd2d5faf4066d93127a095be9d2d37df7449a4cd11d4d3fdb91b869a28f0",
+      "sourceGitBlob": "23acbfe6ce55bb98cf7e72136250005686e39f4f",
+      "redactedSections": [
+        "Small overlap diagnostic, not calibration: named OVR/paired-attribute table and derived comparison paragraph (source schema-comparison lines 40-46)"
+      ],
+      "reason": "Removed specific third-party observed ratings and derived comparisons; retained only pair count, identity-context facts, and provenance caveats. Redistribution rights are unresolved.",
+      "recovery": "Recover the original file with git show from the pinned source commit into a private ignored review cache only after a separate rights review."
+    }
+  ],
+  "embeddedExcerptExclusionCount": 3,
+  "embeddedExcerptNote": "These are partial redactions in three files that remain selectively imported; source hashes identify the original complete files, not the sanitized working copies. They are separate from excludedFileCount and excludedBytes, which count only whole files."
+}

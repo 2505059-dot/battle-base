@@ -82,24 +82,37 @@ export function renderPlayerInspector(state, myTeam, handlers = {}, preview = {}
     }
 
     // 1. Hero Identity Card
-    const hero = el('div', 'dw-inspector-hero');
-    const portraitWell = el('div', 'dw-inspector-portrait-well ui-card-portrait-well');
+    const primaryRole = (candidate.positions[0] || 'MF').toLowerCase();
+    const hero = el('div', `dw-inspector-hero ol3-inspector-hero ol3-inspector-hero--${primaryRole}`);
+    const portraitCol = el('div', 'ol3-inspector-portrait-col');
+    const portraitWell = el('div', 'dw-inspector-portrait-well ui-card-portrait-well ol3-portrait-well');
+    const posWatermark = el('span', 'ol3-portrait-pos-watermark', candidate.positions[0] || 'MF');
+    const enhanceBadge = el('span', 'ol3-portrait-enhance', '+1');
+    if (typeof posWatermark.setAttribute === 'function') {
+        posWatermark.setAttribute('aria-hidden', 'true');
+        enhanceBadge.setAttribute('aria-hidden', 'true');
+    }
     portraitWell.append(
+        posWatermark,
         createPlayerPortrait(candidate, {
             className: 'dw-inspector-player-img',
             loading: 'eager',
-        })
+        }),
+        enhanceBadge
     );
+    portraitCol.append(portraitWell);
 
     const heroInfo = el('div', 'dw-inspector-hero-info');
     const topMetaRow = el('div', 'dw-inspector-top-meta');
     const roleGroup = el('div', 'dw-inspector-role-badges');
     for (const pos of candidate.positions) {
         const badgeCls = POSITION_BADGE_CLASSES[pos] || POSITION_BADGE_CLASSES.MF;
-        roleGroup.append(el('span', `dw-pos-badge ${badgeCls}`, pos));
+        roleGroup.append(
+            el('span', `dw-pos-badge ol3-pos-tag ol3-pos-tag--${pos.toLowerCase()} ${badgeCls}`, pos)
+        );
     }
 
-    const ovrBox = el('div', 'dw-inspector-ovr');
+    const ovrBox = el('div', 'dw-inspector-ovr ol3-inspector-ovr');
     ovrBox.append(
         el('span', 'dw-inspector-ovr-label', t('common.rating')),
         el('strong', 'dw-inspector-ovr-val', String(getPlayerOverall(candidate)))
@@ -137,7 +150,7 @@ export function renderPlayerInspector(state, myTeam, handlers = {}, preview = {}
 
     clubMeta.append(clubRow, leagueRow);
     heroInfo.append(topMetaRow, nameBlock, clubMeta);
-    hero.append(portraitWell, heroInfo);
+    hero.append(portraitCol, heroInfo);
     body.append(hero);
 
     // 2. Eligible Positions & Slot Status (with explicit per-position rating boundary note)

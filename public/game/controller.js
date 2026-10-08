@@ -385,7 +385,7 @@ export function startGame(ctx) {
 
         const uiSnapshot = captureFocusAndScroll(root);
         root.replaceChildren();
-        root.className = isDraft ? 'fd-root ui-scope dw-root' : 'fd-root ui-scope';
+        root.className = isDraft ? 'fd-root ui-scope dw-root ol3-draft-root' : 'fd-root ui-scope';
 
         root.append(renderHeader(state, ctx.me));
 
@@ -396,18 +396,12 @@ export function startGame(ctx) {
         if (isDraft) {
             root.append(renderMobileWorkbenchTabs(myTeam, preview, handleSelectMobileTab));
 
-            const mainGrid = el('div', 'fd-main dw-workbench');
+            const mainGrid = el('div', 'fd-main dw-workbench ol3-workbench');
             if (mainGrid.dataset) {
                 mainGrid.dataset.mobileTab = preview.mobileTab;
             }
 
             const myIndex = state.teams[0]?.id === myTeam.id ? 0 : 1;
-            const ownSquadCol = renderTeamPanel(state, myTeam, myIndex, ctx.me, {
-                preview,
-                onSelectSlot: handleSelectSlot,
-            });
-            ownSquadCol.classList.add('dw-col-squad');
-
             const centerZone = renderDraftZone(
                 state,
                 myTeam,
@@ -426,7 +420,15 @@ export function startGame(ctx) {
                 },
                 preview.selectedPlayerId
             );
-            centerZone.classList.add('dw-col-center');
+            centerZone.classList.add('dw-col-center', 'ol3-col-candidates');
+
+            const ownSquadCol = renderTeamPanel(state, myTeam, myIndex, ctx.me, {
+                preview,
+                onSelectSlot: handleSelectSlot,
+                onConfirmPick: handleConfirmPick,
+                onClearPreview: handleClearPreview,
+            });
+            ownSquadCol.classList.add('dw-col-squad', 'ol3-col-pitch');
 
             const inspectorCol = renderPlayerInspector(
                 state,
@@ -436,9 +438,9 @@ export function startGame(ctx) {
                 },
                 preview
             );
-            inspectorCol.classList.add('dw-col-inspector');
+            inspectorCol.classList.add('dw-col-inspector', 'ol3-col-inspector');
 
-            mainGrid.append(ownSquadCol, centerZone, inspectorCol);
+            mainGrid.append(centerZone, ownSquadCol, inspectorCol);
             root.append(mainGrid);
             restoreFocusAndScroll(root, uiSnapshot);
             return;

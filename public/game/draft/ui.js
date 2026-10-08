@@ -423,13 +423,16 @@ export function renderPlayerMiniStats(player) {
     return statsRow;
 }
 
-function renderConfirmPickBar(state, team, handlers, previewObj) {
+function renderConfirmPickBar(state, team, handlers, previewObj, extraCls = '') {
     const { onConfirmPick, onClearPreview } = handlers;
     const status = getConfirmPickStatus(state, team, previewObj);
+    const isMobileDuplicate = extraCls.includes('dw-confirm-bar--mobile-only');
 
     const bar = el(
         'div',
-        'dw-confirm-bar' + (status.canConfirm ? ' dw-confirm-bar--ready' : '')
+        'dw-confirm-bar' +
+            (status.canConfirm ? ' dw-confirm-bar--ready' : '') +
+            (extraCls ? ` ${extraCls}` : '')
     );
 
     const infoWrap = el('div', 'dw-confirm-info');
@@ -457,7 +460,7 @@ function renderConfirmPickBar(state, team, handlers, previewObj) {
         const clearBtn = el('button', 'dw-clear-preview-btn', t('draft.clearPreviewBtn'));
         clearBtn.type = 'button';
         if (clearBtn.dataset) {
-            clearBtn.dataset.focusKey = 'clear-preview';
+            clearBtn.dataset.focusKey = isMobileDuplicate ? 'clear-preview-mobile' : 'clear-preview';
         }
         if (onClearPreview) {
             clearBtn.addEventListener('click', onClearPreview);
@@ -473,7 +476,7 @@ function renderConfirmPickBar(state, team, handlers, previewObj) {
     confirmBtn.type = 'button';
     confirmBtn.disabled = !status.canConfirm;
     if (confirmBtn.dataset) {
-        confirmBtn.dataset.focusKey = 'confirm-pick';
+        confirmBtn.dataset.focusKey = isMobileDuplicate ? 'confirm-pick-mobile' : 'confirm-pick';
     }
     if (status.canConfirm && onConfirmPick) {
         confirmBtn.addEventListener('click', onConfirmPick);
@@ -517,7 +520,7 @@ export function renderDraftZone(state, myTeam, handlers = {}, selectedPlayerIdOv
     const pickedCount = getPickedCount(team);
     const slotSelectCallback = onSelectSlot ?? onPickSlot;
 
-    const zone = el('div', 'fd-center dw-center');
+    const zone = el('div', 'fd-center dw-center ol3-candidates-panel');
 
     const pickCounter = el(
         'div',
@@ -610,18 +613,27 @@ export function renderDraftZone(state, myTeam, handlers = {}, selectedPlayerIdOv
             topControls.append(guide);
         }
 
+        const listHeader = el('div', 'ol3-candidates-head');
+        listHeader.append(
+            el('span', 'ol3-candidates-head-pos', 'POS'),
+            el('span', 'ol3-candidates-head-player', t('draft.mobileTabCandidates')),
+            el('span', 'ol3-candidates-head-ovr', t('common.rating'))
+        );
+        topControls.append(listHeader);
+
         zone.append(topControls);
 
         const candidatesScroll = el('div', 'dw-candidates-scroll');
-        const cardsGrid = el('div', 'fd-cards-grid');
+        const cardsGrid = el('div', 'fd-cards-grid ol3-candidates-list');
         for (const player of roll.players) {
             const isDuplicate = isPlayerEntityInRoster(team.roster, player);
             const availableRoles = getAvailableRolesForPlayer(team.roster, player);
             const isSelected = selectedPlayerId === player.id;
             const hasRoles = availableRoles.length > 0;
             const ovr = getPlayerOverall(player);
+            const primaryRole = (player.positions[0] || 'MF').toLowerCase();
 
-            let cardClass = 'fd-card';
+            let cardClass = `fd-card ol3-candidate-row ol3-candidate-row--${primaryRole}`;
             if (isSelected) cardClass += ' fd-card--selected';
             if (!hasRoles) cardClass += ' fd-card--disabled';
             if (isDuplicate) cardClass += ' fd-card--duplicate';
@@ -630,14 +642,14 @@ export function renderDraftZone(state, myTeam, handlers = {}, selectedPlayerIdOv
             const card = el('div', cardClass);
             if (card.dataset) {
                 card.dataset.playerId = player.id;
+                card.dataset.primaryRole = player.positions[0] || 'MF';
                 card.dataset.focusKey = `candidate:${player.id}`;
             }
 
-            const topRow = el('div', 'fd-card-top');
-            topRow.append(
-                el('span', 'fd-card-pos', player.positions.join(' / ')),
-                el('span', 'fd-card-rating', t('draft.cardRating', { rating: ovr }))
-            );
+            const rowMain = el('div', 'ol3-candidate-main');
+
+            const posCol = el('div', 'ol3-candidate-pos-col');
+            posCol.append(el('span', `fd-card-pos ol3-pos-tag ol3-pos-tag--${primaryRole}`, player.positions.join(' / ')));
 
             const mediaBox = el('div', 'fd-card-media');
             mediaBox.append(
@@ -656,11 +668,39 @@ export function renderDraftZone(state, myTeam, handlers = {}, selectedPlayerIdOv
             }
 
             const displayName = getPlayerDisplayName(player.name);
+            const identityCol = el('div', 'ol3-candidate-identity');
+            const nameRow = el('div', 'ol3-candidate-name-row');
+            const seasonTag = el('span', 'ol3-season-badge', String(player.year).slice(-2));
             const nameEl = el('div', 'fd-card-name', displayName.primary);
-            card.append(topRow, mediaBox, nameEl);
+            nameRow.append(seasonTag, nameEl);
+            identityCol.append(nameRow);
+
+            const subRow = el('div', 'ol3-candidate-subrow');
             if (displayName.secondary) {
-                card.append(el('div', 'fd-card-name-secondary', displayName.secondary));
+                subRow.append(el('div', 'fd-card-name-secondary', displayName.secondary));
             }
+            subRow.append(
+                el(
+                    'span',
+                    'ol3-candidate-club-meta',
+                    `${formatClubName(player.club)} '${String(player.year).slice(-2)}`
+                )
+            );
+            identityCol.append(subRow);
+
+            const topRow = el('div', 'fd-card-top ol3-candidate-right');
+            const enhanceTag = el('span', 'ol3-enhance-badge', '+1');
+            if (typeof enhanceTag.setAttribute === 'function') {
+                enhanceTag.setAttribute('aria-hidden', 'true');
+            }
+            topRow.append(
+                el('span', 'fd-card-rating', t('draft.cardRating', { rating: ovr })),
+                el('span', 'ol3-ovr-value', String(ovr)),
+                enhanceTag
+            );
+
+            rowMain.append(posCol, mediaBox, identityCol, topRow);
+            card.append(rowMain);
 
             if (!team.draft.locked && hasRoles) {
                 card.tabIndex = 0;
@@ -726,7 +766,7 @@ export function renderDraftZone(state, myTeam, handlers = {}, selectedPlayerIdOv
         candidatesScroll.append(cardsGrid);
         zone.append(
             candidatesScroll,
-            renderConfirmPickBar(state, team, handlers, previewObj),
+            renderConfirmPickBar(state, team, handlers, previewObj, 'dw-confirm-bar--mobile-only'),
             renderHistoryBox(team)
         );
         return zone;
@@ -812,6 +852,47 @@ export function renderDraftZone(state, myTeam, handlers = {}, selectedPlayerIdOv
     return zone;
 }
 
+function renderOl3LineSummaryBars(teamState) {
+    const wrap = el('div', 'ol3-line-bars');
+    const lineSpecs = [
+        { role: 'FW', cls: 'fw' },
+        { role: 'MF', cls: 'mf' },
+        { role: 'DF', cls: 'df' },
+        { role: 'GK', cls: 'gk' },
+    ];
+    for (const spec of lineSpecs) {
+        const slots = getSlotsForRole(spec.role);
+        const filledPlayers = slots.map((s) => teamState.roster[s]).filter(Boolean);
+        const avgOvr =
+            filledPlayers.length > 0
+                ? Math.round(
+                      filledPlayers.reduce((sum, p) => sum + getPlayerOverall(p), 0) /
+                          filledPlayers.length
+                  )
+                : 0;
+        const fillPct = Math.round((filledPlayers.length / slots.length) * 100);
+
+        const item = el('div', `ol3-line-item ol3-line-item--${spec.cls}`);
+        const label = el('span', 'ol3-line-label', spec.role);
+        const track = el('div', 'ol3-line-track');
+        const fill = el('div', 'ol3-line-fill');
+        if (fill.style && typeof fill.style.setProperty === 'function') {
+            fill.style.setProperty('--line-pct', String(fillPct));
+        } else if (fill.style) {
+            fill.style['--line-pct'] = String(fillPct);
+        }
+        track.append(fill);
+        const val = el(
+            'span',
+            'ol3-line-val',
+            avgOvr > 0 ? String(avgOvr) : `${filledPlayers.length}/${slots.length}`
+        );
+        item.append(label, track, val);
+        wrap.append(item);
+    }
+    return wrap;
+}
+
 export function renderPitchView(teamState, options = {}) {
     const {
         isDraftSelf = false,
@@ -820,15 +901,18 @@ export function renderPitchView(teamState, options = {}) {
         onSelectSlot = null,
     } = options;
 
-    const pitch = el('div', 'fd-pitch');
+    const pitch = el('div', 'fd-pitch ol3-pitch');
 
     const markings = el('div', 'fd-pitch-markings');
     if (typeof markings.setAttribute === 'function') {
         markings.setAttribute('aria-hidden', 'true');
     }
     markings.append(
+        el('div', 'fd-pitch-top-box'),
+        el('div', 'fd-pitch-top-goal-box'),
         el('div', 'fd-pitch-halfline'),
         el('div', 'fd-pitch-circle'),
+        el('div', 'fd-pitch-center-dot'),
         el('div', 'fd-pitch-box'),
         el('div', 'fd-pitch-goal-box')
     );
@@ -836,7 +920,8 @@ export function renderPitchView(teamState, options = {}) {
 
     const grid = el('div', 'fd-pitch-grid');
     for (const rowDef of PITCH_FORMATION_ROWS) {
-        const rowEl = el('div', `fd-pitch-row fd-pitch-row--${rowDef.role.toLowerCase()}`);
+        const roleKey = rowDef.role.toLowerCase();
+        const rowEl = el('div', `fd-pitch-row fd-pitch-row--${roleKey}`);
         if (rowEl.dataset) {
             rowEl.dataset.pitchRow = rowDef.role;
         }
@@ -849,7 +934,7 @@ export function renderPitchView(teamState, options = {}) {
                     ? 'occupied'
                     : 'empty';
 
-            let nodeCls = 'fd-pitch-node ';
+            let nodeCls = `fd-pitch-node fd-pitch-node--role-${roleKey} `;
             if (p) {
                 nodeCls += 'fd-pitch-node--filled';
                 if (isDraftSelf && selectedCandidate) nodeCls += ' dw-slot--occupied';
@@ -872,7 +957,9 @@ export function renderPitchView(teamState, options = {}) {
             }
 
             const topBar = el('div', 'fd-pitch-node-top');
-            topBar.append(el('span', 'fd-pitch-slot-tag', formatSlotLabel(slot)));
+            topBar.append(
+                el('span', `fd-pitch-slot-tag fd-pitch-slot-tag--${roleKey}`, formatSlotLabel(slot))
+            );
             if (p) {
                 topBar.append(
                     el('span', 'fd-pitch-rating fd-slot-player-rating', String(getPlayerOverall(p)))
@@ -937,7 +1024,11 @@ export function renderPitchView(teamState, options = {}) {
                             ? t('draft.slotStateMismatch')
                             : t('common.emptySlot');
                 node.append(
-                    el('div', 'fd-pitch-empty-token', tokenText),
+                    el(
+                        'div',
+                        `fd-pitch-empty-token fd-pitch-empty-token--${roleKey}`,
+                        tokenText
+                    ),
                     el('div', 'fd-pitch-empty-label fd-slot-empty', emptyLabelText)
                 );
             }
@@ -1102,7 +1193,12 @@ export function renderTeamPanel(state, teamState, idx, meId, options = {}) {
         return renderBlindOpponentPanel(teamState);
     }
 
-    const { preview = null, onSelectSlot = null } = options;
+    const {
+        preview = null,
+        onSelectSlot = null,
+        onConfirmPick = null,
+        onClearPreview = null,
+    } = options;
     const isDraftSelf = isDraftPhase(state) && isSelf;
     const selectedCandidate = isDraftSelf ? getSelectedCandidate(teamState, preview) : null;
     const selectedSlot = isDraftSelf ? (preview?.selectedSlot ?? null) : null;
@@ -1112,10 +1208,10 @@ export function renderTeamPanel(state, teamState, idx, meId, options = {}) {
         'div',
         'fd-team-panel' +
             (isActive ? ' fd-team-panel--active' : '') +
-            (isDraftSelf ? ' dw-squad-panel' : '')
+            (isDraftSelf ? ' dw-squad-panel ol3-pitch-stage-panel' : '')
     );
 
-    const head = el('div', 'fd-team-head');
+    const head = el('div', 'fd-team-head ol3-pitch-stage-head');
     const titleWrap = el('div', 'fd-team-title-wrap');
     titleWrap.append(
         el('div', 'fd-team-label', teamState.label),
@@ -1127,7 +1223,7 @@ export function renderTeamPanel(state, teamState, idx, meId, options = {}) {
     );
 
     const subRow = el('div', 'fd-team-subrow');
-    const formationBadge = el('div', 'fd-team-formation', t('draft.formation'));
+    const formationBadge = el('div', 'fd-team-formation ol3-formation-title', t('draft.formation'));
     const viewToggle = el('div', 'fd-view-toggle');
     const pitchBtn = el('button', 'fd-view-toggle-btn', t('draft.pitchView'));
     pitchBtn.type = 'button';
@@ -1176,10 +1272,14 @@ export function renderTeamPanel(state, teamState, idx, meId, options = {}) {
         rerollChips.append(chip);
     }
 
-    head.append(titleWrap, subRow, metaRow, rerollChips);
+    if (isDraftSelf) {
+        head.append(titleWrap, subRow, renderOl3LineSummaryBars(teamState), metaRow, rerollChips);
+    } else {
+        head.append(titleWrap, subRow, metaRow, rerollChips);
+    }
     panel.append(head);
 
-    const bodyWrap = el('div', 'fd-team-body');
+    const bodyWrap = el('div', 'fd-team-body ol3-pitch-stage-body');
     const viewOptions = {
         isDraftSelf,
         selectedCandidate,
@@ -1217,5 +1317,18 @@ export function renderTeamPanel(state, teamState, idx, meId, options = {}) {
 
     renderBody();
     panel.append(bodyWrap);
+
+    if (isDraftSelf && teamState.draft?.phase === 'PICK') {
+        panel.append(
+            renderConfirmPickBar(
+                state,
+                teamState,
+                { onConfirmPick, onClearPreview },
+                preview ?? { selectedPlayerId: null, selectedSlot: null, pendingPickKey: null },
+                'dw-confirm-bar--stage'
+            )
+        );
+    }
+
     return panel;
 }

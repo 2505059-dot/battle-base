@@ -87,18 +87,15 @@ export function renderPlayerInspector(state, myTeam, handlers = {}, preview = {}
     const portraitCol = el('div', 'ol3-inspector-portrait-col');
     const portraitWell = el('div', 'dw-inspector-portrait-well ui-card-portrait-well ol3-portrait-well');
     const posWatermark = el('span', 'ol3-portrait-pos-watermark', candidate.positions[0] || 'MF');
-    const enhanceBadge = el('span', 'ol3-portrait-enhance', '+1');
     if (typeof posWatermark.setAttribute === 'function') {
         posWatermark.setAttribute('aria-hidden', 'true');
-        enhanceBadge.setAttribute('aria-hidden', 'true');
     }
     portraitWell.append(
         posWatermark,
         createPlayerPortrait(candidate, {
             className: 'dw-inspector-player-img',
             loading: 'eager',
-        }),
-        enhanceBadge
+        })
     );
     portraitCol.append(portraitWell);
 

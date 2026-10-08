@@ -689,14 +689,9 @@ export function renderDraftZone(state, myTeam, handlers = {}, selectedPlayerIdOv
             identityCol.append(subRow);
 
             const topRow = el('div', 'fd-card-top ol3-candidate-right');
-            const enhanceTag = el('span', 'ol3-enhance-badge', '+1');
-            if (typeof enhanceTag.setAttribute === 'function') {
-                enhanceTag.setAttribute('aria-hidden', 'true');
-            }
             topRow.append(
                 el('span', 'fd-card-rating', t('draft.cardRating', { rating: ovr })),
-                el('span', 'ol3-ovr-value', String(ovr)),
-                enhanceTag
+                el('span', 'ol3-ovr-value', String(ovr))
             );
 
             rowMain.append(posCol, mediaBox, identityCol, topRow);

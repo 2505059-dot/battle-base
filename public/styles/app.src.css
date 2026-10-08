@@ -192,11 +192,15 @@
   body.in-draft {
     background-color: #060b14;
     background-image:
+      linear-gradient(180deg, rgba(4, 9, 18, 0.80) 0%, rgba(6, 13, 25, 0.70) 46%, rgba(4, 8, 16, 0.86) 100%),
+      radial-gradient(ellipse 80% 55% at 50% 45%, rgba(12, 26, 48, 0.25) 0%, rgba(3, 7, 14, 0.78) 100%),
+      url("/assets/draft-stadium-bg.jpg"),
       radial-gradient(ellipse 38% 18% at 18% 5%, rgba(186, 230, 253, 0.25) 0%, rgba(56, 189, 248, 0.08) 42%, transparent 75%),
       radial-gradient(ellipse 38% 18% at 82% 5%, rgba(186, 230, 253, 0.25) 0%, rgba(56, 189, 248, 0.08) 42%, transparent 75%),
-      radial-gradient(ellipse 68% 24% at 50% 2%, rgba(56, 189, 248, 0.14) 0%, transparent 70%),
-      radial-gradient(ellipse 75% 28% at 50% 98%, rgba(22, 101, 52, 0.22) 0%, rgba(13, 42, 32, 0.1) 48%, transparent 78%),
       linear-gradient(180deg, #060c17 0%, #0a1426 42%, #081220 76%, #050a12 100%);
+    background-size: cover, cover, cover, auto, auto, auto;
+    background-position: center center;
+    background-repeat: no-repeat;
     background-attachment: fixed;
   }
 
@@ -716,18 +720,6 @@
     color: #facc15;
   }
 
-  .ol3-enhance-badge {
-    font-size: 0.58rem;
-    font-weight: 800;
-    padding: 1px 4px;
-    border-radius: 3px;
-    background: linear-gradient(180deg, #28354d 0%, #161f30 100%);
-    border: 1px solid #475b82;
-    color: #cbd5e1;
-    line-height: 1.15;
-    font-variant-numeric: tabular-nums;
-  }
-
   .dw-center .fd-card-noslot {
     font-size: 0.64rem;
     font-weight: 700;
@@ -767,25 +759,48 @@
   }
 
   /* =========================================================================
-   * 2. Center Column: Large Main Pitch Stage & Pinned Confirm Pick Bar
+   * 2. Center Column: Vertical OL3 Tactical Pitch Stage & Pinned Confirm Bar
    * ========================================================================= */
   .dw-squad-panel {
-    padding: 8px 10px;
-    gap: 6px;
+    padding: 6px 10px;
+    gap: 5px;
     border-top: 2px solid #facc15;
+    background:
+      linear-gradient(180deg, rgba(11, 20, 36, 0.78) 0%, rgba(7, 13, 24, 0.84) 100%);
+    backdrop-filter: blur(6px);
   }
 
+  /* Compact Single-Row Center Stage Header to Maximize Vertical Pitch Height */
   .dw-squad-panel .fd-team-head {
     flex-shrink: 0;
-    gap: 4px;
-    padding: 5px 8px 6px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6px 10px;
+    padding: 4px 10px;
     background: linear-gradient(180deg, rgba(20, 34, 58, 0.92) 0%, rgba(12, 21, 38, 0.92) 100%);
     border: 1px solid rgba(56, 110, 178, 0.35);
     border-radius: 6px;
   }
 
+  .dw-squad-panel .fd-team-title-wrap,
+  .dw-squad-panel .fd-team-status,
+  .dw-squad-panel .fd-team-rerolls {
+    display: none;
+  }
+
+  .dw-squad-panel .fd-team-subrow {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+    order: 1;
+  }
+
   .ol3-formation-title {
-    font-size: 0.86rem;
+    font-size: 0.92rem;
     font-weight: 900;
     color: #a3e635;
     letter-spacing: 0.08em;
@@ -794,10 +809,12 @@
 
   /* OL3 FW / MF / DF / GK Line Summary Bars */
   .ol3-line-bars {
+    order: 2;
+    flex: 1 1 220px;
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 8px;
-    padding: 3px 6px;
+    gap: 6px;
+    padding: 2px 6px;
     background: rgba(8, 14, 25, 0.78);
     border: 1px solid rgba(42, 68, 108, 0.45);
     border-radius: 4px;
@@ -806,21 +823,21 @@
   .ol3-line-item {
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 4px;
     min-width: 0;
   }
 
   .ol3-line-label {
-    font-size: 0.62rem;
+    font-size: 0.6rem;
     font-weight: 900;
     color: #cbd5e1;
-    width: 18px;
+    width: 17px;
     flex-shrink: 0;
   }
 
   .ol3-line-track {
     flex: 1;
-    height: 6px;
+    height: 5px;
     background: #0d1626;
     border: 1px solid rgba(59, 82, 126, 0.5);
     border-radius: 2px;
@@ -850,32 +867,61 @@
   }
 
   .ol3-line-val {
-    font-size: 0.66rem;
+    font-size: 0.64rem;
     font-weight: 800;
     color: #f8fafc;
     font-variant-numeric: tabular-nums;
     flex-shrink: 0;
   }
 
+  .dw-squad-panel .fd-team-meta-row {
+    order: 3;
+    margin: 0;
+  }
+
+  .dw-squad-panel .fd-team-rating {
+    font-size: 0.72rem;
+    font-weight: 800;
+    color: #fde047;
+    white-space: nowrap;
+  }
+
   .dw-squad-panel .fd-team-body {
     flex: 1;
     min-height: 0;
-    overflow-y: auto;
+    overflow: hidden;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 2px 0;
   }
 
-  /* Central Main Pitch Stage (OL3 Stadium Grass & Crisp Field Markings) */
+  .dw-squad-panel .fd-slot-list {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+  }
+
+  /* Central Vertical Full Pitch Stage (651:1024 Natural Aspect Ratio, Zero Distortion) */
   .dw-squad-panel .fd-pitch.ol3-pitch {
-    flex: 1;
-    min-height: 0;
-    padding: 12px 16px;
+    position: relative;
+    flex: 0 0 auto;
+    height: 100%;
+    width: auto;
+    aspect-ratio: 651 / 1024;
+    max-height: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 24px 8px 14px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border-radius: 8px;
-    background:
-      radial-gradient(ellipse 72% 48% at 50% 45%, rgba(74, 222, 128, 0.14) 0%, transparent 72%),
+    border-radius: 6px;
+    background-color: #1b4f28;
+    background-image:
+      linear-gradient(180deg, rgba(4, 12, 7, 0.14) 0%, rgba(4, 12, 7, 0.04) 50%, rgba(4, 12, 7, 0.18) 100%),
+      url("/assets/draft-pitch-vertical.jpg"),
       repeating-linear-gradient(
         180deg,
         rgba(38, 102, 52, 0.52) 0px,
@@ -884,140 +930,146 @@
         rgba(26, 76, 38, 0.52) 68px
       ),
       linear-gradient(180deg, #1b4f28 0%, #164020 52%, #113319 100%);
-    border: 1.5px solid rgba(186, 230, 253, 0.35);
+    background-size: 100% 100%, 100% 100%, auto, auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border: 2px solid rgba(148, 184, 232, 0.44);
     box-shadow:
-      inset 0 0 36px rgba(4, 12, 8, 0.78),
-      0 6px 20px rgba(3, 8, 18, 0.6);
+      inset 0 0 22px rgba(3, 10, 6, 0.55),
+      0 8px 28px rgba(2, 6, 15, 0.72);
   }
 
-  .dw-squad-panel .fd-pitch-markings {
-    inset: 8px;
-    border: 1.5px solid rgba(255, 255, 255, 0.28);
-    border-radius: 4px;
-  }
-
-  .fd-pitch-top-box {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    width: 48%;
-    height: 16%;
-    transform: translateX(-50%);
-    border: 1.5px solid rgba(255, 255, 255, 0.24);
-    border-top: 0;
-    background: rgba(15, 42, 24, 0.18);
-  }
-
-  .fd-pitch-top-goal-box {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    width: 24%;
-    height: 7%;
-    transform: translateX(-50%);
-    border: 1.5px solid rgba(255, 255, 255, 0.24);
-    border-top: 0;
-  }
-
-  .dw-squad-panel .fd-pitch-halfline {
-    top: 50%;
-    height: 1.5px;
-    background: rgba(255, 255, 255, 0.25);
-  }
-
-  .dw-squad-panel .fd-pitch-circle {
-    top: 50%;
-    width: 84px;
-    height: 84px;
-    border: 1.5px solid rgba(255, 255, 255, 0.25);
-  }
-
-  .fd-pitch-center-dot {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 6px;
-    height: 6px;
-    transform: translate(-50%, -50%);
-    border-radius: 999px;
-    background: rgba(255, 255, 255, 0.38);
-  }
-
-  .dw-squad-panel .fd-pitch-box {
-    width: 48%;
-    height: 18%;
-    border: 1.5px solid rgba(255, 255, 255, 0.26);
-    border-bottom: 0;
-    background: rgba(15, 42, 24, 0.18);
-  }
-
-  .dw-squad-panel .fd-pitch-goal-box {
-    width: 24%;
-    height: 8%;
-    border: 1.5px solid rgba(255, 255, 255, 0.26);
-    border-bottom: 0;
+  /* Hide duplicate CSS field markings when the vertical pitch image is active */
+  .dw-squad-panel .fd-pitch.ol3-pitch .fd-pitch-markings {
+    display: none;
   }
 
   .dw-squad-panel .fd-pitch-grid {
     flex: 1;
     min-height: 0;
-    justify-content: space-around;
-    gap: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 4px 0 2px;
   }
 
   .dw-squad-panel .fd-pitch-row--fw {
-    padding: 0 28px;
-    gap: 14px;
+    padding: 0 12px;
+    gap: 8px;
   }
 
   .dw-squad-panel .fd-pitch-row--mf {
-    padding: 0 36px;
-    gap: 14px;
+    padding: 0 18px;
+    gap: 8px;
   }
 
   .dw-squad-panel .fd-pitch-row--df {
-    padding: 0 6px;
-    gap: 10px;
+    padding: 0 2px;
+    gap: 4px;
   }
 
   .dw-squad-panel .fd-pitch-row--gk {
-    grid-template-columns: minmax(0, 128px);
+    grid-template-columns: minmax(0, 96px);
   }
 
+  /* 4-3-3 Vertical Tactical Stagger (Forwards at Top, GK at Bottom) */
+  .dw-squad-panel .fd-pitch-node[data-slot="FW2"] {
+    transform: translateY(-8px);
+  }
+
+  .dw-squad-panel .fd-pitch-node[data-slot="FW1"],
+  .dw-squad-panel .fd-pitch-node[data-slot="FW3"] {
+    transform: translateY(8px);
+  }
+
+  .dw-squad-panel .fd-pitch-node[data-slot="MF1"],
+  .dw-squad-panel .fd-pitch-node[data-slot="MF3"] {
+    transform: translateY(-8px);
+  }
+
+  .dw-squad-panel .fd-pitch-node[data-slot="MF2"] {
+    transform: translateY(10px);
+  }
+
+  .dw-squad-panel .fd-pitch-node[data-slot="DF1"],
+  .dw-squad-panel .fd-pitch-node[data-slot="DF4"] {
+    transform: translateY(-8px);
+  }
+
+  .dw-squad-panel .fd-pitch-node[data-slot="DF2"],
+  .dw-squad-panel .fd-pitch-node[data-slot="DF3"] {
+    transform: translateY(6px);
+  }
+
+  /* OL3 Tactical Nodes: Weakened Rectangular Box, Emphasized Role Dot / Avatar / Name / OVR */
   .dw-squad-panel .fd-pitch-node {
-    max-width: 136px;
-    padding: 4px 6px 5px;
+    max-width: 96px;
+    min-height: 0;
+    padding: 2px 3px 3px;
     gap: 2px;
-    border-radius: 6px;
-    backdrop-filter: blur(4px);
+    border-radius: 7px;
+    background: transparent;
+    border: 1px solid transparent;
+    box-shadow: none;
+    backdrop-filter: none;
+  }
+
+  .dw-squad-panel .fd-pitch-node-top {
+    justify-content: center;
+    gap: 3px;
+  }
+
+  .dw-squad-panel .fd-pitch-slot-tag {
+    font-size: 0.56rem;
+    font-weight: 900;
+    padding: 1px 4px;
+    border-radius: 3px;
+    background: rgba(6, 13, 24, 0.85);
+    color: #e2e8f0;
+    white-space: nowrap;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.55);
+  }
+
+  .dw-squad-panel .fd-pitch-node .dw-slot-state-tag {
+    display: none;
+  }
+
+  .dw-squad-panel .fd-pitch-rating {
+    font-size: 0.62rem;
+    font-weight: 900;
+    padding: 0 4px;
+    border-radius: 3px;
+    background: rgba(8, 16, 28, 0.92);
+    color: #fde047;
+    border: 1px solid rgba(250, 204, 21, 0.55);
   }
 
   .dw-squad-panel .fd-pitch-node--filled {
-    background: linear-gradient(180deg, rgba(13, 25, 44, 0.94) 0%, rgba(8, 15, 28, 0.96) 100%);
-    border: 1.5px solid rgba(125, 211, 252, 0.65);
-    box-shadow: 0 4px 12px rgba(2, 6, 15, 0.65), inset 0 1px 0 rgba(255, 255, 255, 0.12);
+    background: rgba(7, 15, 28, 0.52);
+    border: 1px solid rgba(125, 211, 252, 0.45);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.45);
   }
 
-  .dw-squad-panel .fd-pitch-node--role-fw.fd-pitch-node--filled {
-    border-top: 2.5px solid #ef4444;
+  .dw-squad-panel .fd-pitch-node--role-fw.fd-pitch-node--filled .fd-pitch-avatar {
+    border-color: #ef4444;
   }
 
-  .dw-squad-panel .fd-pitch-node--role-mf.fd-pitch-node--filled {
-    border-top: 2.5px solid #22c55e;
+  .dw-squad-panel .fd-pitch-node--role-mf.fd-pitch-node--filled .fd-pitch-avatar {
+    border-color: #22c55e;
   }
 
-  .dw-squad-panel .fd-pitch-node--role-df.fd-pitch-node--filled {
-    border-top: 2.5px solid #3b82f6;
+  .dw-squad-panel .fd-pitch-node--role-df.fd-pitch-node--filled .fd-pitch-avatar {
+    border-color: #3b82f6;
   }
 
-  .dw-squad-panel .fd-pitch-node--role-gk.fd-pitch-node--filled {
-    border-top: 2.5px solid #f59e0b;
+  .dw-squad-panel .fd-pitch-node--role-gk.fd-pitch-node--filled .fd-pitch-avatar {
+    border-color: #f59e0b;
   }
 
   .dw-squad-panel .fd-pitch-node--empty {
-    min-height: 70px;
-    background: rgba(9, 18, 30, 0.66);
-    border: 1px dashed rgba(186, 230, 253, 0.34);
+    min-height: 0;
+    background: transparent;
+    border: 1px solid transparent;
   }
 
   .fd-pitch-slot-tag--fw {
@@ -1037,91 +1089,119 @@
   }
 
   .dw-squad-panel .fd-pitch-avatar {
-    width: 38px;
-    height: 38px;
-    border-radius: 6px;
-    border: 1.5px solid #476da8;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.45);
+    width: 36px;
+    height: 36px;
+    border-radius: 999px;
+    border: 2px solid #60a5fa;
+    background: radial-gradient(circle at 50% 35%, #1e3a5f 0%, #091220 100%);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.65);
   }
 
   .dw-squad-panel .fd-pitch-name {
-    font-size: 0.7rem;
+    font-size: 0.64rem;
     font-weight: 800;
     color: #ffffff;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.85);
+    background: rgba(6, 12, 22, 0.84);
+    padding: 1px 5px;
+    border-radius: 3px;
+    max-width: 100%;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.9);
   }
 
   .dw-squad-panel .fd-pitch-meta {
-    font-size: 0.58rem;
+    font-size: 0.54rem;
     color: #bae6fd;
+    background: rgba(6, 12, 22, 0.72);
+    padding: 0 4px;
+    border-radius: 3px;
   }
 
-  /* OL3 Glossy Role-Colored Empty Slot Circles */
-  .dw-squad-panel .fd-pitch-empty-token {
-    width: 26px;
-    height: 26px;
+  .dw-squad-panel .fd-pitch-empty-label {
+    font-size: 0.58rem;
+    font-weight: 700;
+    color: #e2e8f0;
+    background: rgba(6, 13, 24, 0.78);
+    padding: 1px 6px;
     border-radius: 999px;
-    border: 2px solid rgba(255, 255, 255, 0.85);
+    white-space: nowrap;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.85);
+  }
+
+  /* OL3 Glossy 3D Role-Colored Position Dots */
+  .dw-squad-panel .fd-pitch-empty-token {
+    width: 28px;
+    height: 28px;
+    border-radius: 999px;
+    border: 2px solid rgba(255, 255, 255, 0.92);
     color: #ffffff;
     font-size: 0.8rem;
     font-weight: 900;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.55), inset 0 2px 3px rgba(255, 255, 255, 0.35);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.65), inset 0 2px 4px rgba(255, 255, 255, 0.45);
   }
 
   .fd-pitch-empty-token--fw {
-    background: radial-gradient(circle at 35% 30%, #f87171 0%, #dc2626 65%, #7f1d1d 100%);
+    background: radial-gradient(circle at 35% 30%, #fca5a5 0%, #ef4444 55%, #7f1d1d 100%);
   }
 
   .fd-pitch-empty-token--mf {
-    background: radial-gradient(circle at 35% 30%, #4ade80 0%, #16a34a 65%, #14532d 100%);
+    background: radial-gradient(circle at 35% 30%, #86efac 0%, #22c55e 55%, #14532d 100%);
   }
 
   .fd-pitch-empty-token--df {
-    background: radial-gradient(circle at 35% 30%, #60a5fa 0%, #2563eb 65%, #1e3a8a 100%);
+    background: radial-gradient(circle at 35% 30%, #93c5fd 0%, #3b82f6 55%, #1e3a8a 100%);
   }
 
   .fd-pitch-empty-token--gk {
-    background: radial-gradient(circle at 35% 30%, #fde047 0%, #d97706 65%, #78350f 100%);
+    background: radial-gradient(circle at 35% 30%, #fef08a 0%, #f59e0b 55%, #78350f 100%);
   }
 
   /* Interactive Slot States (Pitch & List) */
   .fd-pitch-node.dw-slot--eligible,
   .fd-slot-row.dw-slot--eligible {
     cursor: pointer;
-    border: 1.5px solid #38bdf8;
-    background: rgba(14, 38, 68, 0.86);
-    box-shadow: 0 0 0 1px rgba(56, 189, 248, 0.32), 0 4px 14px rgba(14, 165, 233, 0.25);
+    border: 1px solid rgba(56, 189, 248, 0.75);
+    background: rgba(12, 36, 66, 0.36);
+    box-shadow: 0 0 10px rgba(56, 189, 248, 0.28);
+  }
+
+  .fd-pitch-node.dw-slot--eligible .fd-pitch-empty-token {
+    box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.55), 0 3px 8px rgba(0, 0, 0, 0.65);
+  }
+
+  .fd-pitch-node.dw-slot--eligible .fd-pitch-empty-label {
+    color: #7dd3fc;
+    background: rgba(10, 32, 58, 0.92);
+    border: 1px solid rgba(56, 189, 248, 0.55);
   }
 
   .fd-pitch-node.dw-slot--eligible:hover,
   .fd-slot-row.dw-slot--eligible:hover {
-    background: rgba(20, 52, 92, 0.95);
+    background: rgba(18, 50, 90, 0.65);
     border-color: #7dd3fc;
-    transform: translateY(-1px);
   }
 
   .fd-pitch-node.dw-slot--preview,
   .fd-slot-row.dw-slot--preview {
     cursor: pointer;
     border: 1.5px dashed #facc15;
-    background: linear-gradient(180deg, rgba(54, 40, 12, 0.94) 0%, rgba(32, 23, 8, 0.96) 100%);
-    box-shadow: 0 0 0 2px rgba(250, 204, 21, 0.42), 0 6px 18px rgba(245, 158, 11, 0.35);
+    background: rgba(42, 30, 8, 0.78);
+    box-shadow: 0 0 0 2px rgba(250, 204, 21, 0.38), 0 6px 16px rgba(0, 0, 0, 0.6);
   }
 
   .fd-pitch-node.dw-slot--occupied,
   .fd-slot-row.dw-slot--occupied {
     cursor: not-allowed;
-    opacity: 0.78;
+    opacity: 0.82;
   }
 
   .fd-pitch-node.dw-slot--mismatch,
   .fd-slot-row.dw-slot--mismatch {
     cursor: not-allowed;
-    opacity: 0.4;
+    opacity: 0.46;
   }
 
   .dw-preview-badge {
-    font-size: 0.56rem;
+    font-size: 0.54rem;
     font-weight: 900;
     letter-spacing: 0.04em;
     padding: 1px 4px;
@@ -1133,20 +1213,20 @@
   }
 
   .dw-slot-state-tag {
-    font-size: 0.56rem;
+    font-size: 0.54rem;
     font-weight: 800;
     padding: 0 4px;
     border-radius: 3px;
-    background: rgba(56, 189, 248, 0.22);
+    background: rgba(12, 34, 62, 0.88);
     color: #7dd3fc;
-    border: 1px solid rgba(56, 189, 248, 0.5);
+    border: 1px solid rgba(56, 189, 248, 0.55);
     line-height: 1.25;
     flex-shrink: 0;
   }
 
-  .dw-preview-avatar {
+  .dw-squad-panel .dw-preview-avatar {
     border-color: #facc15;
-    box-shadow: 0 0 8px rgba(250, 204, 21, 0.45);
+    box-shadow: 0 0 10px rgba(250, 204, 21, 0.65);
   }
 
   .dw-preview-player-img {
@@ -1157,11 +1237,12 @@
     display: block;
   }
 
-  .dw-preview-name {
+  .dw-squad-panel .dw-preview-name {
     color: #fef08a;
+    border: 1px solid rgba(250, 204, 21, 0.45);
   }
 
-  .dw-preview-meta,
+  .dw-squad-panel .dw-preview-meta,
   .dw-preview-rating {
     color: #facc15;
     font-weight: 900;
@@ -1439,21 +1520,6 @@
     font-weight: 900;
     color: rgba(148, 197, 255, 0.35);
     letter-spacing: 0.04em;
-    pointer-events: none;
-  }
-
-  .ol3-portrait-enhance {
-    position: absolute;
-    right: 3px;
-    bottom: 3px;
-    font-size: 0.6rem;
-    font-weight: 900;
-    padding: 1px 4px;
-    border-radius: 3px;
-    background: rgba(15, 23, 38, 0.92);
-    border: 1px solid #64748b;
-    color: #e2e8f0;
-    line-height: 1.1;
     pointer-events: none;
   }
 
@@ -1860,24 +1926,87 @@
     }
   }
 
-  /* Tablet / Mobile (< 1024px): Tabbed Workbench Layout without Horizontal Overflow */
+  /* Tablet / Mobile (< 1024px): Compact Tabbed Workbench Layout without Horizontal Overflow */
   @media (max-width: 1023px) {
     body.in-draft main {
-      padding: 6px 8px;
+      padding: 4px 6px 8px;
     }
 
     body.in-draft .topbar {
-      margin: 0 0 4px;
-      padding: 4px 8px;
+      margin: 0 0 3px;
+      padding: 3px 8px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: nowrap;
+      gap: 6px;
+      background: rgba(10, 18, 32, 0.92);
+      border: 1px solid rgba(56, 110, 178, 0.35);
+      border-radius: 5px;
     }
 
     body.in-draft .topbar h1 {
-      font-size: 0.92rem;
+      font-size: 0.84rem;
+      white-space: nowrap;
+      margin: 0;
+    }
+
+    body.in-draft .topbar-actions {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      flex-wrap: nowrap;
+    }
+
+    body.in-draft .lang-switch span {
+      display: none;
+    }
+
+    body.in-draft .help-toggle-btn,
+    body.in-draft .lang-switch select {
+      padding: 2px 6px;
+      font-size: 0.68rem;
     }
 
     body.in-draft #room.room--in-game {
-      margin: 0 0 4px;
-      padding: 4px 8px;
+      margin: 0 0 3px;
+      padding: 3px 8px;
+      background: rgba(10, 18, 32, 0.92);
+      border: 1px solid rgba(56, 110, 178, 0.35);
+      border-radius: 5px;
+    }
+
+    body.in-draft #room.room--in-game .room-header-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: nowrap;
+      gap: 4px;
+    }
+
+    body.in-draft #room.room--in-game .room-code-wrap {
+      font-size: 0.72rem;
+      gap: 3px;
+      white-space: nowrap;
+    }
+
+    body.in-draft #room.room--in-game .room-code-wrap strong {
+      font-size: 0.74rem;
+      padding: 1px 5px;
+    }
+
+    body.in-draft #room.room--in-game #copy-btn,
+    body.in-draft #room.room--in-game .room-btn {
+      padding: 2px 6px;
+      font-size: 0.66rem;
+      white-space: nowrap;
+    }
+
+    body.in-draft #room.room--in-game .room-actions {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      flex-wrap: nowrap;
     }
 
     body.in-draft #game-area {
@@ -1887,21 +2016,43 @@
       border: 0;
     }
 
+    body.in-draft .dw-root {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
     .dw-header--draft {
       grid-template-columns: 1fr;
-      gap: 4px;
+      gap: 3px;
+      padding: 4px 8px;
+    }
+
+    .dw-header--draft .fd-turn-bar {
+      display: none;
+    }
+
+    .dw-header--draft .fd-vs-player--self {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      padding: 2px 8px;
+      gap: 6px;
     }
 
     .dw-opponent-float {
       width: 100%;
+      padding: 2px 8px;
       justify-content: space-between;
-      border-radius: 6px;
+      border-radius: 5px;
     }
 
     .dw-opponent-float-row {
       width: 100%;
       justify-content: space-between;
-      flex-wrap: wrap;
+      flex-wrap: nowrap;
     }
 
     .dw-mobile-tabs {
@@ -1927,21 +2078,40 @@
       display: none;
     }
 
+    .dw-squad-panel {
+      padding: 6px 8px;
+      gap: 5px;
+    }
+
+    .dw-squad-panel .fd-team-head {
+      padding: 4px 8px;
+      gap: 4px 8px;
+    }
+
+    .dw-squad-panel .fd-team-body {
+      overflow: visible;
+    }
+
     .dw-squad-panel .fd-pitch.ol3-pitch {
-      padding: 8px 6px;
+      width: min(100%, 292px);
+      height: auto;
+      aspect-ratio: 651 / 1024;
+      padding: 16px 6px 10px;
     }
 
     .dw-squad-panel .fd-pitch-row--fw,
     .dw-squad-panel .fd-pitch-row--mf,
     .dw-squad-panel .fd-pitch-row--df {
-      padding: 0 4px;
-      gap: 6px;
+      padding: 0 2px;
+      gap: 4px;
     }
 
     .dw-confirm-bar {
-      flex-direction: column;
-      align-items: stretch;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
       gap: 6px;
+      padding: 5px 8px;
     }
 
     .dw-confirm-actions {

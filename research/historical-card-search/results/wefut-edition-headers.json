@@ -1,0 +1,4611 @@
+{
+  "schemaVersion": "historical-card-search-wefut-headers/1",
+  "generatedAt": "2026-10-08T11:29:36.197Z",
+  "generatedFrom": "Offline reparse of existing GET response cache; no new HTTP requests.",
+  "rateLimitMs": null,
+  "rateLimitProvenance": "Historical process environment was not recorded; this artifact was regenerated offline.",
+  "source": "Public WeFUT player database HTML; GET cache keyed by request method and URL.",
+  "entries": [
+    {
+      "edition": 14,
+      "url": "https://wefut.com/player-database/14/",
+      "httpStatus": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "cachedBodySha256": "3408c5adb50114fc63f7cb16f4ca26b408d7ad5a9c3cd149bc7c36a714890d71",
+      "cachedBodyCharacters": 2847687,
+      "status": "header_observed",
+      "headerEvidence": {
+        "edition": 14,
+        "sourceUrl": "https://wefut.com/player-database/14/",
+        "tableId": "playerTable",
+        "evidence": "public_playerTable_header",
+        "headerColumnCount": 74,
+        "headerSha256": "ab768f1e12e4e2316988c26b3aa43d19cfb566f804080ec213e80b1ce5ea749e",
+        "attributeHeaderRange": {
+          "start": 13,
+          "endExclusive": 67
+        },
+        "headerMappingStrategy": "nation_min_max",
+        "rowAlignmentRequired": false,
+        "frontendSourceContract": {
+          "tableId": "playerTable",
+          "serverSide": true,
+          "ajaxEndpoint": "/ajax/getPlayers/14",
+          "verified": true
+        },
+        "headerBoundaryEvidence": {
+          "nationalityHeaderCount": 1,
+          "minHeaderCount": 1,
+          "maxHeaderCount": 1,
+          "nationalityIndex": 12,
+          "minIndex": 67,
+          "maxIndex": 68,
+          "verified": true,
+          "strategy": "nation_min_max"
+        },
+        "columns": [
+          {
+            "index": 13,
+            "sourceLabel": "PAC",
+            "group": "summaryRatings",
+            "key": "PAC"
+          },
+          {
+            "index": 14,
+            "sourceLabel": "SHO",
+            "group": "summaryRatings",
+            "key": "SHO"
+          },
+          {
+            "index": 15,
+            "sourceLabel": "PAS",
+            "group": "summaryRatings",
+            "key": "PAS"
+          },
+          {
+            "index": 16,
+            "sourceLabel": "DRI",
+            "group": "summaryRatings",
+            "key": "DRI"
+          },
+          {
+            "index": 17,
+            "sourceLabel": "DEF",
+            "group": "summaryRatings",
+            "key": "DEF"
+          },
+          {
+            "index": 18,
+            "sourceLabel": "HEA",
+            "group": "summaryRatings",
+            "key": "HEA"
+          },
+          {
+            "index": 19,
+            "sourceLabel": "Acceleration",
+            "group": "detailedAttributes",
+            "key": "Acceleration"
+          },
+          {
+            "index": 20,
+            "sourceLabel": "Agility",
+            "group": "detailedAttributes",
+            "key": "Agility"
+          },
+          {
+            "index": 21,
+            "sourceLabel": "Balance",
+            "group": "detailedAttributes",
+            "key": "Balance"
+          },
+          {
+            "index": 22,
+            "sourceLabel": "Jumping",
+            "group": "detailedAttributes",
+            "key": "Jumping"
+          },
+          {
+            "index": 23,
+            "sourceLabel": "Reactions",
+            "group": "detailedAttributes",
+            "key": "Reactions"
+          },
+          {
+            "index": 24,
+            "sourceLabel": "Sprint Speed",
+            "group": "detailedAttributes",
+            "key": "SprintSpeed"
+          },
+          {
+            "index": 25,
+            "sourceLabel": "Stamina",
+            "group": "detailedAttributes",
+            "key": "Stamina"
+          },
+          {
+            "index": 26,
+            "sourceLabel": "Strength",
+            "group": "detailedAttributes",
+            "key": "Strength"
+          },
+          {
+            "index": 27,
+            "sourceLabel": "Aggression",
+            "group": "detailedAttributes",
+            "key": "Aggression"
+          },
+          {
+            "index": 28,
+            "sourceLabel": "Interceptions",
+            "group": "detailedAttributes",
+            "key": "Interceptions"
+          },
+          {
+            "index": 29,
+            "sourceLabel": "Positioning",
+            "group": "detailedAttributes",
+            "key": "Positioning"
+          },
+          {
+            "index": 30,
+            "sourceLabel": "Vision",
+            "group": "detailedAttributes",
+            "key": "Vision"
+          },
+          {
+            "index": 31,
+            "sourceLabel": "Potential",
+            "group": "potentialMetaAttributes",
+            "key": "Potential"
+          },
+          {
+            "index": 32,
+            "sourceLabel": "Ball Control",
+            "group": "detailedAttributes",
+            "key": "BallControl"
+          },
+          {
+            "index": 33,
+            "sourceLabel": "Crossing",
+            "group": "detailedAttributes",
+            "key": "Crossing"
+          },
+          {
+            "index": 34,
+            "sourceLabel": "Curve",
+            "group": "detailedAttributes",
+            "key": "Curve"
+          },
+          {
+            "index": 35,
+            "sourceLabel": "Dribbling",
+            "group": "detailedAttributes",
+            "key": "Dribbling"
+          },
+          {
+            "index": 36,
+            "sourceLabel": "Finishing",
+            "group": "detailedAttributes",
+            "key": "Finishing"
+          },
+          {
+            "index": 37,
+            "sourceLabel": "Freekick Acc.",
+            "group": "detailedAttributes",
+            "key": "FreeKickAccuracy"
+          },
+          {
+            "index": 38,
+            "sourceLabel": "Heading Acc.",
+            "group": "detailedAttributes",
+            "key": "HeadingAccuracy"
+          },
+          {
+            "index": 39,
+            "sourceLabel": "Long Pass",
+            "group": "detailedAttributes",
+            "key": "LongPassing"
+          },
+          {
+            "index": 40,
+            "sourceLabel": "Long Shots",
+            "group": "detailedAttributes",
+            "key": "LongShots"
+          },
+          {
+            "index": 41,
+            "sourceLabel": "Marking",
+            "group": "detailedAttributes",
+            "key": "Marking"
+          },
+          {
+            "index": 42,
+            "sourceLabel": "Penalties",
+            "group": "detailedAttributes",
+            "key": "Penalties"
+          },
+          {
+            "index": 43,
+            "sourceLabel": "Short Pass",
+            "group": "detailedAttributes",
+            "key": "ShortPassing"
+          },
+          {
+            "index": 44,
+            "sourceLabel": "Shot Power",
+            "group": "detailedAttributes",
+            "key": "ShotPower"
+          },
+          {
+            "index": 45,
+            "sourceLabel": "Slide Tackle",
+            "group": "detailedAttributes",
+            "key": "SlidingTackle"
+          },
+          {
+            "index": 46,
+            "sourceLabel": "Stand. Tackle",
+            "group": "detailedAttributes",
+            "key": "StandingTackle"
+          },
+          {
+            "index": 47,
+            "sourceLabel": "Volleys",
+            "group": "detailedAttributes",
+            "key": "Volleys"
+          },
+          {
+            "index": 48,
+            "sourceLabel": "DIV",
+            "group": "detailedAttributes",
+            "key": "GK_Diving"
+          },
+          {
+            "index": 49,
+            "sourceLabel": "HAN",
+            "group": "detailedAttributes",
+            "key": "GK_Handling"
+          },
+          {
+            "index": 50,
+            "sourceLabel": "KIC",
+            "group": "detailedAttributes",
+            "key": "GK_Kicking"
+          },
+          {
+            "index": 51,
+            "sourceLabel": "REF",
+            "group": "detailedAttributes",
+            "key": "GK_Reflexes"
+          },
+          {
+            "index": 52,
+            "sourceLabel": "SPE",
+            "group": "detailedAttributes",
+            "key": "GK_Speed"
+          },
+          {
+            "index": 53,
+            "sourceLabel": "POS",
+            "group": "detailedAttributes",
+            "key": "GK_Positioning"
+          },
+          {
+            "index": 54,
+            "sourceLabel": "WF",
+            "group": "skillMetaAttributes",
+            "key": "WF"
+          },
+          {
+            "index": 55,
+            "sourceLabel": "Skill",
+            "group": "skillMetaAttributes",
+            "key": "Skill"
+          },
+          {
+            "index": 56,
+            "sourceLabel": "AW",
+            "group": "skillMetaAttributes",
+            "key": "AW"
+          },
+          {
+            "index": 57,
+            "sourceLabel": "DW",
+            "group": "skillMetaAttributes",
+            "key": "DW"
+          }
+        ],
+        "expectedDetailedAttributeKeys": [
+          "Acceleration",
+          "Agility",
+          "Balance",
+          "Jumping",
+          "Reactions",
+          "SprintSpeed",
+          "Stamina",
+          "Strength",
+          "Aggression",
+          "Interceptions",
+          "Positioning",
+          "Vision",
+          "BallControl",
+          "Crossing",
+          "Curve",
+          "Dribbling",
+          "Finishing",
+          "FreeKickAccuracy",
+          "HeadingAccuracy",
+          "LongPassing",
+          "LongShots",
+          "Marking",
+          "Penalties",
+          "ShortPassing",
+          "ShotPower",
+          "SlidingTackle",
+          "StandingTackle",
+          "Volleys",
+          "GK_Diving",
+          "GK_Handling",
+          "GK_Kicking",
+          "GK_Reflexes",
+          "GK_Speed",
+          "GK_Positioning"
+        ],
+        "unclassifiedHeaderColumns": [],
+        "duplicateDetailedKeys": [],
+        "completeHeaderEvidence": true
+      },
+      "error": null
+    },
+    {
+      "edition": 15,
+      "url": "https://wefut.com/player-database/15/",
+      "httpStatus": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "cachedBodySha256": "d6c68d983f0d81aeaf6ebd6193303af31a059d34fbb94db9111856824e0c24d0",
+      "cachedBodyCharacters": 2596532,
+      "status": "header_observed",
+      "headerEvidence": {
+        "edition": 15,
+        "sourceUrl": "https://wefut.com/player-database/15/",
+        "tableId": "playerTable",
+        "evidence": "public_playerTable_header",
+        "headerColumnCount": 74,
+        "headerSha256": "ab768f1e12e4e2316988c26b3aa43d19cfb566f804080ec213e80b1ce5ea749e",
+        "attributeHeaderRange": {
+          "start": 13,
+          "endExclusive": 67
+        },
+        "headerMappingStrategy": "nation_min_max",
+        "rowAlignmentRequired": false,
+        "frontendSourceContract": {
+          "tableId": "playerTable",
+          "serverSide": true,
+          "ajaxEndpoint": "/ajax/getPlayers/15",
+          "verified": true
+        },
+        "headerBoundaryEvidence": {
+          "nationalityHeaderCount": 1,
+          "minHeaderCount": 1,
+          "maxHeaderCount": 1,
+          "nationalityIndex": 12,
+          "minIndex": 67,
+          "maxIndex": 68,
+          "verified": true,
+          "strategy": "nation_min_max"
+        },
+        "columns": [
+          {
+            "index": 13,
+            "sourceLabel": "PAC",
+            "group": "summaryRatings",
+            "key": "PAC"
+          },
+          {
+            "index": 14,
+            "sourceLabel": "SHO",
+            "group": "summaryRatings",
+            "key": "SHO"
+          },
+          {
+            "index": 15,
+            "sourceLabel": "PAS",
+            "group": "summaryRatings",
+            "key": "PAS"
+          },
+          {
+            "index": 16,
+            "sourceLabel": "DRI",
+            "group": "summaryRatings",
+            "key": "DRI"
+          },
+          {
+            "index": 17,
+            "sourceLabel": "DEF",
+            "group": "summaryRatings",
+            "key": "DEF"
+          },
+          {
+            "index": 18,
+            "sourceLabel": "HEA",
+            "group": "summaryRatings",
+            "key": "HEA"
+          },
+          {
+            "index": 19,
+            "sourceLabel": "Acceleration",
+            "group": "detailedAttributes",
+            "key": "Acceleration"
+          },
+          {
+            "index": 20,
+            "sourceLabel": "Agility",
+            "group": "detailedAttributes",
+            "key": "Agility"
+          },
+          {
+            "index": 21,
+            "sourceLabel": "Balance",
+            "group": "detailedAttributes",
+            "key": "Balance"
+          },
+          {
+            "index": 22,
+            "sourceLabel": "Jumping",
+            "group": "detailedAttributes",
+            "key": "Jumping"
+          },
+          {
+            "index": 23,
+            "sourceLabel": "Reactions",
+            "group": "detailedAttributes",
+            "key": "Reactions"
+          },
+          {
+            "index": 24,
+            "sourceLabel": "Sprint Speed",
+            "group": "detailedAttributes",
+            "key": "SprintSpeed"
+          },
+          {
+            "index": 25,
+            "sourceLabel": "Stamina",
+            "group": "detailedAttributes",
+            "key": "Stamina"
+          },
+          {
+            "index": 26,
+            "sourceLabel": "Strength",
+            "group": "detailedAttributes",
+            "key": "Strength"
+          },
+          {
+            "index": 27,
+            "sourceLabel": "Aggression",
+            "group": "detailedAttributes",
+            "key": "Aggression"
+          },
+          {
+            "index": 28,
+            "sourceLabel": "Interceptions",
+            "group": "detailedAttributes",
+            "key": "Interceptions"
+          },
+          {
+            "index": 29,
+            "sourceLabel": "Positioning",
+            "group": "detailedAttributes",
+            "key": "Positioning"
+          },
+          {
+            "index": 30,
+            "sourceLabel": "Vision",
+            "group": "detailedAttributes",
+            "key": "Vision"
+          },
+          {
+            "index": 31,
+            "sourceLabel": "Potential",
+            "group": "potentialMetaAttributes",
+            "key": "Potential"
+          },
+          {
+            "index": 32,
+            "sourceLabel": "Ball Control",
+            "group": "detailedAttributes",
+            "key": "BallControl"
+          },
+          {
+            "index": 33,
+            "sourceLabel": "Crossing",
+            "group": "detailedAttributes",
+            "key": "Crossing"
+          },
+          {
+            "index": 34,
+            "sourceLabel": "Curve",
+            "group": "detailedAttributes",
+            "key": "Curve"
+          },
+          {
+            "index": 35,
+            "sourceLabel": "Dribbling",
+            "group": "detailedAttributes",
+            "key": "Dribbling"
+          },
+          {
+            "index": 36,
+            "sourceLabel": "Finishing",
+            "group": "detailedAttributes",
+            "key": "Finishing"
+          },
+          {
+            "index": 37,
+            "sourceLabel": "Freekick Acc.",
+            "group": "detailedAttributes",
+            "key": "FreeKickAccuracy"
+          },
+          {
+            "index": 38,
+            "sourceLabel": "Heading Acc.",
+            "group": "detailedAttributes",
+            "key": "HeadingAccuracy"
+          },
+          {
+            "index": 39,
+            "sourceLabel": "Long Pass",
+            "group": "detailedAttributes",
+            "key": "LongPassing"
+          },
+          {
+            "index": 40,
+            "sourceLabel": "Long Shots",
+            "group": "detailedAttributes",
+            "key": "LongShots"
+          },
+          {
+            "index": 41,
+            "sourceLabel": "Marking",
+            "group": "detailedAttributes",
+            "key": "Marking"
+          },
+          {
+            "index": 42,
+            "sourceLabel": "Penalties",
+            "group": "detailedAttributes",
+            "key": "Penalties"
+          },
+          {
+            "index": 43,
+            "sourceLabel": "Short Pass",
+            "group": "detailedAttributes",
+            "key": "ShortPassing"
+          },
+          {
+            "index": 44,
+            "sourceLabel": "Shot Power",
+            "group": "detailedAttributes",
+            "key": "ShotPower"
+          },
+          {
+            "index": 45,
+            "sourceLabel": "Slide Tackle",
+            "group": "detailedAttributes",
+            "key": "SlidingTackle"
+          },
+          {
+            "index": 46,
+            "sourceLabel": "Stand. Tackle",
+            "group": "detailedAttributes",
+            "key": "StandingTackle"
+          },
+          {
+            "index": 47,
+            "sourceLabel": "Volleys",
+            "group": "detailedAttributes",
+            "key": "Volleys"
+          },
+          {
+            "index": 48,
+            "sourceLabel": "DIV",
+            "group": "detailedAttributes",
+            "key": "GK_Diving"
+          },
+          {
+            "index": 49,
+            "sourceLabel": "HAN",
+            "group": "detailedAttributes",
+            "key": "GK_Handling"
+          },
+          {
+            "index": 50,
+            "sourceLabel": "KIC",
+            "group": "detailedAttributes",
+            "key": "GK_Kicking"
+          },
+          {
+            "index": 51,
+            "sourceLabel": "REF",
+            "group": "detailedAttributes",
+            "key": "GK_Reflexes"
+          },
+          {
+            "index": 52,
+            "sourceLabel": "SPE",
+            "group": "detailedAttributes",
+            "key": "GK_Speed"
+          },
+          {
+            "index": 53,
+            "sourceLabel": "POS",
+            "group": "detailedAttributes",
+            "key": "GK_Positioning"
+          },
+          {
+            "index": 54,
+            "sourceLabel": "WF",
+            "group": "skillMetaAttributes",
+            "key": "WF"
+          },
+          {
+            "index": 55,
+            "sourceLabel": "Skill",
+            "group": "skillMetaAttributes",
+            "key": "Skill"
+          },
+          {
+            "index": 56,
+            "sourceLabel": "AW",
+            "group": "skillMetaAttributes",
+            "key": "AW"
+          },
+          {
+            "index": 57,
+            "sourceLabel": "DW",
+            "group": "skillMetaAttributes",
+            "key": "DW"
+          }
+        ],
+        "expectedDetailedAttributeKeys": [
+          "Acceleration",
+          "Agility",
+          "Balance",
+          "Jumping",
+          "Reactions",
+          "SprintSpeed",
+          "Stamina",
+          "Strength",
+          "Aggression",
+          "Interceptions",
+          "Positioning",
+          "Vision",
+          "BallControl",
+          "Crossing",
+          "Curve",
+          "Dribbling",
+          "Finishing",
+          "FreeKickAccuracy",
+          "HeadingAccuracy",
+          "LongPassing",
+          "LongShots",
+          "Marking",
+          "Penalties",
+          "ShortPassing",
+          "ShotPower",
+          "SlidingTackle",
+          "StandingTackle",
+          "Volleys",
+          "GK_Diving",
+          "GK_Handling",
+          "GK_Kicking",
+          "GK_Reflexes",
+          "GK_Speed",
+          "GK_Positioning"
+        ],
+        "unclassifiedHeaderColumns": [],
+        "duplicateDetailedKeys": [],
+        "completeHeaderEvidence": true
+      },
+      "error": null
+    },
+    {
+      "edition": 16,
+      "url": "https://wefut.com/player-database/16/",
+      "httpStatus": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "cachedBodySha256": "f2b5fd8951d7c0ae9c495a0bf75b85170d15649b01b2f2d96d78c3f8fb8136b1",
+      "cachedBodyCharacters": 2698823,
+      "status": "header_observed",
+      "headerEvidence": {
+        "edition": 16,
+        "sourceUrl": "https://wefut.com/player-database/16/",
+        "tableId": "playerTable",
+        "evidence": "public_playerTable_header",
+        "headerColumnCount": 74,
+        "headerSha256": "ab768f1e12e4e2316988c26b3aa43d19cfb566f804080ec213e80b1ce5ea749e",
+        "attributeHeaderRange": {
+          "start": 13,
+          "endExclusive": 67
+        },
+        "headerMappingStrategy": "nation_min_max",
+        "rowAlignmentRequired": false,
+        "frontendSourceContract": {
+          "tableId": "playerTable",
+          "serverSide": true,
+          "ajaxEndpoint": "/ajax/getPlayers/16",
+          "verified": true
+        },
+        "headerBoundaryEvidence": {
+          "nationalityHeaderCount": 1,
+          "minHeaderCount": 1,
+          "maxHeaderCount": 1,
+          "nationalityIndex": 12,
+          "minIndex": 67,
+          "maxIndex": 68,
+          "verified": true,
+          "strategy": "nation_min_max"
+        },
+        "columns": [
+          {
+            "index": 13,
+            "sourceLabel": "PAC",
+            "group": "summaryRatings",
+            "key": "PAC"
+          },
+          {
+            "index": 14,
+            "sourceLabel": "SHO",
+            "group": "summaryRatings",
+            "key": "SHO"
+          },
+          {
+            "index": 15,
+            "sourceLabel": "PAS",
+            "group": "summaryRatings",
+            "key": "PAS"
+          },
+          {
+            "index": 16,
+            "sourceLabel": "DRI",
+            "group": "summaryRatings",
+            "key": "DRI"
+          },
+          {
+            "index": 17,
+            "sourceLabel": "DEF",
+            "group": "summaryRatings",
+            "key": "DEF"
+          },
+          {
+            "index": 18,
+            "sourceLabel": "HEA",
+            "group": "summaryRatings",
+            "key": "HEA"
+          },
+          {
+            "index": 19,
+            "sourceLabel": "Acceleration",
+            "group": "detailedAttributes",
+            "key": "Acceleration"
+          },
+          {
+            "index": 20,
+            "sourceLabel": "Agility",
+            "group": "detailedAttributes",
+            "key": "Agility"
+          },
+          {
+            "index": 21,
+            "sourceLabel": "Balance",
+            "group": "detailedAttributes",
+            "key": "Balance"
+          },
+          {
+            "index": 22,
+            "sourceLabel": "Jumping",
+            "group": "detailedAttributes",
+            "key": "Jumping"
+          },
+          {
+            "index": 23,
+            "sourceLabel": "Reactions",
+            "group": "detailedAttributes",
+            "key": "Reactions"
+          },
+          {
+            "index": 24,
+            "sourceLabel": "Sprint Speed",
+            "group": "detailedAttributes",
+            "key": "SprintSpeed"
+          },
+          {
+            "index": 25,
+            "sourceLabel": "Stamina",
+            "group": "detailedAttributes",
+            "key": "Stamina"
+          },
+          {
+            "index": 26,
+            "sourceLabel": "Strength",
+            "group": "detailedAttributes",
+            "key": "Strength"
+          },
+          {
+            "index": 27,
+            "sourceLabel": "Aggression",
+            "group": "detailedAttributes",
+            "key": "Aggression"
+          },
+          {
+            "index": 28,
+            "sourceLabel": "Interceptions",
+            "group": "detailedAttributes",
+            "key": "Interceptions"
+          },
+          {
+            "index": 29,
+            "sourceLabel": "Positioning",
+            "group": "detailedAttributes",
+            "key": "Positioning"
+          },
+          {
+            "index": 30,
+            "sourceLabel": "Vision",
+            "group": "detailedAttributes",
+            "key": "Vision"
+          },
+          {
+            "index": 31,
+            "sourceLabel": "Potential",
+            "group": "potentialMetaAttributes",
+            "key": "Potential"
+          },
+          {
+            "index": 32,
+            "sourceLabel": "Ball Control",
+            "group": "detailedAttributes",
+            "key": "BallControl"
+          },
+          {
+            "index": 33,
+            "sourceLabel": "Crossing",
+            "group": "detailedAttributes",
+            "key": "Crossing"
+          },
+          {
+            "index": 34,
+            "sourceLabel": "Curve",
+            "group": "detailedAttributes",
+            "key": "Curve"
+          },
+          {
+            "index": 35,
+            "sourceLabel": "Dribbling",
+            "group": "detailedAttributes",
+            "key": "Dribbling"
+          },
+          {
+            "index": 36,
+            "sourceLabel": "Finishing",
+            "group": "detailedAttributes",
+            "key": "Finishing"
+          },
+          {
+            "index": 37,
+            "sourceLabel": "Freekick Acc.",
+            "group": "detailedAttributes",
+            "key": "FreeKickAccuracy"
+          },
+          {
+            "index": 38,
+            "sourceLabel": "Heading Acc.",
+            "group": "detailedAttributes",
+            "key": "HeadingAccuracy"
+          },
+          {
+            "index": 39,
+            "sourceLabel": "Long Pass",
+            "group": "detailedAttributes",
+            "key": "LongPassing"
+          },
+          {
+            "index": 40,
+            "sourceLabel": "Long Shots",
+            "group": "detailedAttributes",
+            "key": "LongShots"
+          },
+          {
+            "index": 41,
+            "sourceLabel": "Marking",
+            "group": "detailedAttributes",
+            "key": "Marking"
+          },
+          {
+            "index": 42,
+            "sourceLabel": "Penalties",
+            "group": "detailedAttributes",
+            "key": "Penalties"
+          },
+          {
+            "index": 43,
+            "sourceLabel": "Short Pass",
+            "group": "detailedAttributes",
+            "key": "ShortPassing"
+          },
+          {
+            "index": 44,
+            "sourceLabel": "Shot Power",
+            "group": "detailedAttributes",
+            "key": "ShotPower"
+          },
+          {
+            "index": 45,
+            "sourceLabel": "Slide Tackle",
+            "group": "detailedAttributes",
+            "key": "SlidingTackle"
+          },
+          {
+            "index": 46,
+            "sourceLabel": "Stand. Tackle",
+            "group": "detailedAttributes",
+            "key": "StandingTackle"
+          },
+          {
+            "index": 47,
+            "sourceLabel": "Volleys",
+            "group": "detailedAttributes",
+            "key": "Volleys"
+          },
+          {
+            "index": 48,
+            "sourceLabel": "DIV",
+            "group": "detailedAttributes",
+            "key": "GK_Diving"
+          },
+          {
+            "index": 49,
+            "sourceLabel": "HAN",
+            "group": "detailedAttributes",
+            "key": "GK_Handling"
+          },
+          {
+            "index": 50,
+            "sourceLabel": "KIC",
+            "group": "detailedAttributes",
+            "key": "GK_Kicking"
+          },
+          {
+            "index": 51,
+            "sourceLabel": "REF",
+            "group": "detailedAttributes",
+            "key": "GK_Reflexes"
+          },
+          {
+            "index": 52,
+            "sourceLabel": "SPE",
+            "group": "detailedAttributes",
+            "key": "GK_Speed"
+          },
+          {
+            "index": 53,
+            "sourceLabel": "POS",
+            "group": "detailedAttributes",
+            "key": "GK_Positioning"
+          },
+          {
+            "index": 54,
+            "sourceLabel": "WF",
+            "group": "skillMetaAttributes",
+            "key": "WF"
+          },
+          {
+            "index": 55,
+            "sourceLabel": "Skill",
+            "group": "skillMetaAttributes",
+            "key": "Skill"
+          },
+          {
+            "index": 56,
+            "sourceLabel": "AW",
+            "group": "skillMetaAttributes",
+            "key": "AW"
+          },
+          {
+            "index": 57,
+            "sourceLabel": "DW",
+            "group": "skillMetaAttributes",
+            "key": "DW"
+          }
+        ],
+        "expectedDetailedAttributeKeys": [
+          "Acceleration",
+          "Agility",
+          "Balance",
+          "Jumping",
+          "Reactions",
+          "SprintSpeed",
+          "Stamina",
+          "Strength",
+          "Aggression",
+          "Interceptions",
+          "Positioning",
+          "Vision",
+          "BallControl",
+          "Crossing",
+          "Curve",
+          "Dribbling",
+          "Finishing",
+          "FreeKickAccuracy",
+          "HeadingAccuracy",
+          "LongPassing",
+          "LongShots",
+          "Marking",
+          "Penalties",
+          "ShortPassing",
+          "ShotPower",
+          "SlidingTackle",
+          "StandingTackle",
+          "Volleys",
+          "GK_Diving",
+          "GK_Handling",
+          "GK_Kicking",
+          "GK_Reflexes",
+          "GK_Speed",
+          "GK_Positioning"
+        ],
+        "unclassifiedHeaderColumns": [],
+        "duplicateDetailedKeys": [],
+        "completeHeaderEvidence": true
+      },
+      "error": null
+    },
+    {
+      "edition": 17,
+      "url": "https://wefut.com/player-database/17/",
+      "httpStatus": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "cachedBodySha256": "20bfbe49bcf299b84870e5505f22a9dd9391fef86af85287356d7a000cd496e2",
+      "cachedBodyCharacters": 3022496,
+      "status": "header_observed",
+      "headerEvidence": {
+        "edition": 17,
+        "sourceUrl": "https://wefut.com/player-database/17/",
+        "tableId": "playerTable",
+        "evidence": "public_playerTable_header",
+        "headerColumnCount": 74,
+        "headerSha256": "ab768f1e12e4e2316988c26b3aa43d19cfb566f804080ec213e80b1ce5ea749e",
+        "attributeHeaderRange": {
+          "start": 13,
+          "endExclusive": 67
+        },
+        "headerMappingStrategy": "nation_min_max",
+        "rowAlignmentRequired": false,
+        "frontendSourceContract": {
+          "tableId": "playerTable",
+          "serverSide": true,
+          "ajaxEndpoint": "/ajax/getPlayers/17",
+          "verified": true
+        },
+        "headerBoundaryEvidence": {
+          "nationalityHeaderCount": 1,
+          "minHeaderCount": 1,
+          "maxHeaderCount": 1,
+          "nationalityIndex": 12,
+          "minIndex": 67,
+          "maxIndex": 68,
+          "verified": true,
+          "strategy": "nation_min_max"
+        },
+        "columns": [
+          {
+            "index": 13,
+            "sourceLabel": "PAC",
+            "group": "summaryRatings",
+            "key": "PAC"
+          },
+          {
+            "index": 14,
+            "sourceLabel": "SHO",
+            "group": "summaryRatings",
+            "key": "SHO"
+          },
+          {
+            "index": 15,
+            "sourceLabel": "PAS",
+            "group": "summaryRatings",
+            "key": "PAS"
+          },
+          {
+            "index": 16,
+            "sourceLabel": "DRI",
+            "group": "summaryRatings",
+            "key": "DRI"
+          },
+          {
+            "index": 17,
+            "sourceLabel": "DEF",
+            "group": "summaryRatings",
+            "key": "DEF"
+          },
+          {
+            "index": 18,
+            "sourceLabel": "HEA",
+            "group": "summaryRatings",
+            "key": "HEA"
+          },
+          {
+            "index": 19,
+            "sourceLabel": "Acceleration",
+            "group": "detailedAttributes",
+            "key": "Acceleration"
+          },
+          {
+            "index": 20,
+            "sourceLabel": "Agility",
+            "group": "detailedAttributes",
+            "key": "Agility"
+          },
+          {
+            "index": 21,
+            "sourceLabel": "Balance",
+            "group": "detailedAttributes",
+            "key": "Balance"
+          },
+          {
+            "index": 22,
+            "sourceLabel": "Jumping",
+            "group": "detailedAttributes",
+            "key": "Jumping"
+          },
+          {
+            "index": 23,
+            "sourceLabel": "Reactions",
+            "group": "detailedAttributes",
+            "key": "Reactions"
+          },
+          {
+            "index": 24,
+            "sourceLabel": "Sprint Speed",
+            "group": "detailedAttributes",
+            "key": "SprintSpeed"
+          },
+          {
+            "index": 25,
+            "sourceLabel": "Stamina",
+            "group": "detailedAttributes",
+            "key": "Stamina"
+          },
+          {
+            "index": 26,
+            "sourceLabel": "Strength",
+            "group": "detailedAttributes",
+            "key": "Strength"
+          },
+          {
+            "index": 27,
+            "sourceLabel": "Aggression",
+            "group": "detailedAttributes",
+            "key": "Aggression"
+          },
+          {
+            "index": 28,
+            "sourceLabel": "Interceptions",
+            "group": "detailedAttributes",
+            "key": "Interceptions"
+          },
+          {
+            "index": 29,
+            "sourceLabel": "Positioning",
+            "group": "detailedAttributes",
+            "key": "Positioning"
+          },
+          {
+            "index": 30,
+            "sourceLabel": "Vision",
+            "group": "detailedAttributes",
+            "key": "Vision"
+          },
+          {
+            "index": 31,
+            "sourceLabel": "Potential",
+            "group": "potentialMetaAttributes",
+            "key": "Potential"
+          },
+          {
+            "index": 32,
+            "sourceLabel": "Ball Control",
+            "group": "detailedAttributes",
+            "key": "BallControl"
+          },
+          {
+            "index": 33,
+            "sourceLabel": "Crossing",
+            "group": "detailedAttributes",
+            "key": "Crossing"
+          },
+          {
+            "index": 34,
+            "sourceLabel": "Curve",
+            "group": "detailedAttributes",
+            "key": "Curve"
+          },
+          {
+            "index": 35,
+            "sourceLabel": "Dribbling",
+            "group": "detailedAttributes",
+            "key": "Dribbling"
+          },
+          {
+            "index": 36,
+            "sourceLabel": "Finishing",
+            "group": "detailedAttributes",
+            "key": "Finishing"
+          },
+          {
+            "index": 37,
+            "sourceLabel": "Freekick Acc.",
+            "group": "detailedAttributes",
+            "key": "FreeKickAccuracy"
+          },
+          {
+            "index": 38,
+            "sourceLabel": "Heading Acc.",
+            "group": "detailedAttributes",
+            "key": "HeadingAccuracy"
+          },
+          {
+            "index": 39,
+            "sourceLabel": "Long Pass",
+            "group": "detailedAttributes",
+            "key": "LongPassing"
+          },
+          {
+            "index": 40,
+            "sourceLabel": "Long Shots",
+            "group": "detailedAttributes",
+            "key": "LongShots"
+          },
+          {
+            "index": 41,
+            "sourceLabel": "Marking",
+            "group": "detailedAttributes",
+            "key": "Marking"
+          },
+          {
+            "index": 42,
+            "sourceLabel": "Penalties",
+            "group": "detailedAttributes",
+            "key": "Penalties"
+          },
+          {
+            "index": 43,
+            "sourceLabel": "Short Pass",
+            "group": "detailedAttributes",
+            "key": "ShortPassing"
+          },
+          {
+            "index": 44,
+            "sourceLabel": "Shot Power",
+            "group": "detailedAttributes",
+            "key": "ShotPower"
+          },
+          {
+            "index": 45,
+            "sourceLabel": "Slide Tackle",
+            "group": "detailedAttributes",
+            "key": "SlidingTackle"
+          },
+          {
+            "index": 46,
+            "sourceLabel": "Stand. Tackle",
+            "group": "detailedAttributes",
+            "key": "StandingTackle"
+          },
+          {
+            "index": 47,
+            "sourceLabel": "Volleys",
+            "group": "detailedAttributes",
+            "key": "Volleys"
+          },
+          {
+            "index": 48,
+            "sourceLabel": "DIV",
+            "group": "detailedAttributes",
+            "key": "GK_Diving"
+          },
+          {
+            "index": 49,
+            "sourceLabel": "HAN",
+            "group": "detailedAttributes",
+            "key": "GK_Handling"
+          },
+          {
+            "index": 50,
+            "sourceLabel": "KIC",
+            "group": "detailedAttributes",
+            "key": "GK_Kicking"
+          },
+          {
+            "index": 51,
+            "sourceLabel": "REF",
+            "group": "detailedAttributes",
+            "key": "GK_Reflexes"
+          },
+          {
+            "index": 52,
+            "sourceLabel": "SPE",
+            "group": "detailedAttributes",
+            "key": "GK_Speed"
+          },
+          {
+            "index": 53,
+            "sourceLabel": "POS",
+            "group": "detailedAttributes",
+            "key": "GK_Positioning"
+          },
+          {
+            "index": 54,
+            "sourceLabel": "WF",
+            "group": "skillMetaAttributes",
+            "key": "WF"
+          },
+          {
+            "index": 55,
+            "sourceLabel": "Skill",
+            "group": "skillMetaAttributes",
+            "key": "Skill"
+          },
+          {
+            "index": 56,
+            "sourceLabel": "AW",
+            "group": "skillMetaAttributes",
+            "key": "AW"
+          },
+          {
+            "index": 57,
+            "sourceLabel": "DW",
+            "group": "skillMetaAttributes",
+            "key": "DW"
+          }
+        ],
+        "expectedDetailedAttributeKeys": [
+          "Acceleration",
+          "Agility",
+          "Balance",
+          "Jumping",
+          "Reactions",
+          "SprintSpeed",
+          "Stamina",
+          "Strength",
+          "Aggression",
+          "Interceptions",
+          "Positioning",
+          "Vision",
+          "BallControl",
+          "Crossing",
+          "Curve",
+          "Dribbling",
+          "Finishing",
+          "FreeKickAccuracy",
+          "HeadingAccuracy",
+          "LongPassing",
+          "LongShots",
+          "Marking",
+          "Penalties",
+          "ShortPassing",
+          "ShotPower",
+          "SlidingTackle",
+          "StandingTackle",
+          "Volleys",
+          "GK_Diving",
+          "GK_Handling",
+          "GK_Kicking",
+          "GK_Reflexes",
+          "GK_Speed",
+          "GK_Positioning"
+        ],
+        "unclassifiedHeaderColumns": [],
+        "duplicateDetailedKeys": [],
+        "completeHeaderEvidence": true
+      },
+      "error": null
+    },
+    {
+      "edition": 18,
+      "url": "https://wefut.com/player-database/18/",
+      "httpStatus": 500,
+      "contentType": "text/html; charset=UTF-8",
+      "cachedBodySha256": "63610144ec74c78dc380fbfbd2873ac03a4825b486e6dd0a385e7a264157cd7b",
+      "cachedBodyCharacters": 3417,
+      "status": "request_failed",
+      "headerEvidence": null,
+      "error": "Cached public page response was HTTP 500; not retried."
+    },
+    {
+      "edition": 19,
+      "url": "https://wefut.com/player-database/19/",
+      "httpStatus": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "cachedBodySha256": "8f50390458a2675ea06ca76bdce76b6f8e00a5191e3cce925e470ef2a269629a",
+      "cachedBodyCharacters": 3162228,
+      "status": "header_observed",
+      "headerEvidence": {
+        "edition": 19,
+        "sourceUrl": "https://wefut.com/player-database/19/",
+        "tableId": "playerTable",
+        "evidence": "public_playerTable_header",
+        "headerColumnCount": 75,
+        "headerSha256": "bf1543333bf8aaccf04ccbe9d6c82721466acb2720157f593feea0c9893a0a25",
+        "attributeHeaderRange": {
+          "start": 13,
+          "endExclusive": 68
+        },
+        "headerMappingStrategy": "nation_min_max",
+        "rowAlignmentRequired": false,
+        "frontendSourceContract": {
+          "tableId": "playerTable",
+          "serverSide": true,
+          "ajaxEndpoint": "/ajax/getPlayers/19",
+          "verified": true
+        },
+        "headerBoundaryEvidence": {
+          "nationalityHeaderCount": 1,
+          "minHeaderCount": 1,
+          "maxHeaderCount": 1,
+          "nationalityIndex": 12,
+          "minIndex": 68,
+          "maxIndex": 69,
+          "verified": true,
+          "strategy": "nation_min_max"
+        },
+        "columns": [
+          {
+            "index": 13,
+            "sourceLabel": "PAC",
+            "group": "summaryRatings",
+            "key": "PAC"
+          },
+          {
+            "index": 14,
+            "sourceLabel": "SHO",
+            "group": "summaryRatings",
+            "key": "SHO"
+          },
+          {
+            "index": 15,
+            "sourceLabel": "PAS",
+            "group": "summaryRatings",
+            "key": "PAS"
+          },
+          {
+            "index": 16,
+            "sourceLabel": "DRI",
+            "group": "summaryRatings",
+            "key": "DRI"
+          },
+          {
+            "index": 17,
+            "sourceLabel": "DEF",
+            "group": "summaryRatings",
+            "key": "DEF"
+          },
+          {
+            "index": 18,
+            "sourceLabel": "HEA",
+            "group": "summaryRatings",
+            "key": "HEA"
+          },
+          {
+            "index": 19,
+            "sourceLabel": "Acceleration",
+            "group": "detailedAttributes",
+            "key": "Acceleration"
+          },
+          {
+            "index": 20,
+            "sourceLabel": "Agility",
+            "group": "detailedAttributes",
+            "key": "Agility"
+          },
+          {
+            "index": 21,
+            "sourceLabel": "Balance",
+            "group": "detailedAttributes",
+            "key": "Balance"
+          },
+          {
+            "index": 22,
+            "sourceLabel": "Jumping",
+            "group": "detailedAttributes",
+            "key": "Jumping"
+          },
+          {
+            "index": 23,
+            "sourceLabel": "Reactions",
+            "group": "detailedAttributes",
+            "key": "Reactions"
+          },
+          {
+            "index": 24,
+            "sourceLabel": "Sprint Speed",
+            "group": "detailedAttributes",
+            "key": "SprintSpeed"
+          },
+          {
+            "index": 25,
+            "sourceLabel": "Stamina",
+            "group": "detailedAttributes",
+            "key": "Stamina"
+          },
+          {
+            "index": 26,
+            "sourceLabel": "Strength",
+            "group": "detailedAttributes",
+            "key": "Strength"
+          },
+          {
+            "index": 27,
+            "sourceLabel": "Aggression",
+            "group": "detailedAttributes",
+            "key": "Aggression"
+          },
+          {
+            "index": 28,
+            "sourceLabel": "Interceptions",
+            "group": "detailedAttributes",
+            "key": "Interceptions"
+          },
+          {
+            "index": 29,
+            "sourceLabel": "Positioning",
+            "group": "detailedAttributes",
+            "key": "Positioning"
+          },
+          {
+            "index": 30,
+            "sourceLabel": "Vision",
+            "group": "detailedAttributes",
+            "key": "Vision"
+          },
+          {
+            "index": 31,
+            "sourceLabel": "Potential",
+            "group": "potentialMetaAttributes",
+            "key": "Potential"
+          },
+          {
+            "index": 32,
+            "sourceLabel": "Ball Control",
+            "group": "detailedAttributes",
+            "key": "BallControl"
+          },
+          {
+            "index": 33,
+            "sourceLabel": "Crossing",
+            "group": "detailedAttributes",
+            "key": "Crossing"
+          },
+          {
+            "index": 34,
+            "sourceLabel": "Curve",
+            "group": "detailedAttributes",
+            "key": "Curve"
+          },
+          {
+            "index": 35,
+            "sourceLabel": "Dribbling",
+            "group": "detailedAttributes",
+            "key": "Dribbling"
+          },
+          {
+            "index": 36,
+            "sourceLabel": "Finishing",
+            "group": "detailedAttributes",
+            "key": "Finishing"
+          },
+          {
+            "index": 37,
+            "sourceLabel": "Freekick Acc.",
+            "group": "detailedAttributes",
+            "key": "FreeKickAccuracy"
+          },
+          {
+            "index": 38,
+            "sourceLabel": "Heading Acc.",
+            "group": "detailedAttributes",
+            "key": "HeadingAccuracy"
+          },
+          {
+            "index": 39,
+            "sourceLabel": "Long Pass",
+            "group": "detailedAttributes",
+            "key": "LongPassing"
+          },
+          {
+            "index": 40,
+            "sourceLabel": "Long Shots",
+            "group": "detailedAttributes",
+            "key": "LongShots"
+          },
+          {
+            "index": 41,
+            "sourceLabel": "Marking",
+            "group": "detailedAttributes",
+            "key": "Marking"
+          },
+          {
+            "index": 42,
+            "sourceLabel": "Penalties",
+            "group": "detailedAttributes",
+            "key": "Penalties"
+          },
+          {
+            "index": 43,
+            "sourceLabel": "Short Pass",
+            "group": "detailedAttributes",
+            "key": "ShortPassing"
+          },
+          {
+            "index": 44,
+            "sourceLabel": "Shot Power",
+            "group": "detailedAttributes",
+            "key": "ShotPower"
+          },
+          {
+            "index": 45,
+            "sourceLabel": "Slide Tackle",
+            "group": "detailedAttributes",
+            "key": "SlidingTackle"
+          },
+          {
+            "index": 46,
+            "sourceLabel": "Stand. Tackle",
+            "group": "detailedAttributes",
+            "key": "StandingTackle"
+          },
+          {
+            "index": 47,
+            "sourceLabel": "Volleys",
+            "group": "detailedAttributes",
+            "key": "Volleys"
+          },
+          {
+            "index": 48,
+            "sourceLabel": "DIV",
+            "group": "detailedAttributes",
+            "key": "GK_Diving"
+          },
+          {
+            "index": 49,
+            "sourceLabel": "HAN",
+            "group": "detailedAttributes",
+            "key": "GK_Handling"
+          },
+          {
+            "index": 50,
+            "sourceLabel": "KIC",
+            "group": "detailedAttributes",
+            "key": "GK_Kicking"
+          },
+          {
+            "index": 51,
+            "sourceLabel": "REF",
+            "group": "detailedAttributes",
+            "key": "GK_Reflexes"
+          },
+          {
+            "index": 52,
+            "sourceLabel": "SPE",
+            "group": "detailedAttributes",
+            "key": "GK_Speed"
+          },
+          {
+            "index": 53,
+            "sourceLabel": "POS",
+            "group": "detailedAttributes",
+            "key": "GK_Positioning"
+          },
+          {
+            "index": 54,
+            "sourceLabel": "WF",
+            "group": "skillMetaAttributes",
+            "key": "WF"
+          },
+          {
+            "index": 55,
+            "sourceLabel": "Skill",
+            "group": "skillMetaAttributes",
+            "key": "Skill"
+          },
+          {
+            "index": 56,
+            "sourceLabel": "AW",
+            "group": "skillMetaAttributes",
+            "key": "AW"
+          },
+          {
+            "index": 57,
+            "sourceLabel": "DW",
+            "group": "skillMetaAttributes",
+            "key": "DW"
+          },
+          {
+            "index": 67,
+            "sourceLabel": "Composure",
+            "group": "detailedAttributes",
+            "key": "Composure"
+          }
+        ],
+        "expectedDetailedAttributeKeys": [
+          "Acceleration",
+          "Agility",
+          "Balance",
+          "Jumping",
+          "Reactions",
+          "SprintSpeed",
+          "Stamina",
+          "Strength",
+          "Aggression",
+          "Interceptions",
+          "Positioning",
+          "Vision",
+          "BallControl",
+          "Crossing",
+          "Curve",
+          "Dribbling",
+          "Finishing",
+          "FreeKickAccuracy",
+          "HeadingAccuracy",
+          "LongPassing",
+          "LongShots",
+          "Marking",
+          "Penalties",
+          "ShortPassing",
+          "ShotPower",
+          "SlidingTackle",
+          "StandingTackle",
+          "Volleys",
+          "GK_Diving",
+          "GK_Handling",
+          "GK_Kicking",
+          "GK_Reflexes",
+          "GK_Speed",
+          "GK_Positioning",
+          "Composure"
+        ],
+        "unclassifiedHeaderColumns": [],
+        "duplicateDetailedKeys": [],
+        "completeHeaderEvidence": true
+      },
+      "error": null
+    },
+    {
+      "edition": 20,
+      "url": "https://wefut.com/player-database/20/",
+      "httpStatus": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "cachedBodySha256": "4fb1724c3c2ab289ef00733ad9d0b660e5d0c4cf59f646c3760f47380c557dbe",
+      "cachedBodyCharacters": 3681517,
+      "status": "header_observed",
+      "headerEvidence": {
+        "edition": 20,
+        "sourceUrl": "https://wefut.com/player-database/20/",
+        "tableId": "playerTable",
+        "evidence": "public_playerTable_header",
+        "headerColumnCount": 75,
+        "headerSha256": "3fd49060e9b5c81025ca2b0883a3a292e90fc81596d05849c8db94d5cf07cd86",
+        "attributeHeaderRange": {
+          "start": 13,
+          "endExclusive": 68
+        },
+        "headerMappingStrategy": "unverified",
+        "rowAlignmentRequired": false,
+        "frontendSourceContract": {
+          "tableId": "playerTable",
+          "serverSide": true,
+          "ajaxEndpoint": "/ajax/getPlayers/20",
+          "verified": true
+        },
+        "headerBoundaryEvidence": {
+          "nationalityHeaderCount": 1,
+          "minHeaderCount": 0,
+          "maxHeaderCount": 0,
+          "nationalityIndex": 12,
+          "minIndex": null,
+          "maxIndex": null,
+          "verified": false,
+          "strategy": "unverified"
+        },
+        "columns": [
+          {
+            "index": 13,
+            "sourceLabel": "PAC",
+            "group": "summaryRatings",
+            "key": "PAC"
+          },
+          {
+            "index": 14,
+            "sourceLabel": "SHO",
+            "group": "summaryRatings",
+            "key": "SHO"
+          },
+          {
+            "index": 15,
+            "sourceLabel": "PAS",
+            "group": "summaryRatings",
+            "key": "PAS"
+          },
+          {
+            "index": 16,
+            "sourceLabel": "DRI",
+            "group": "summaryRatings",
+            "key": "DRI"
+          },
+          {
+            "index": 17,
+            "sourceLabel": "DEF",
+            "group": "summaryRatings",
+            "key": "DEF"
+          },
+          {
+            "index": 18,
+            "sourceLabel": "HEA",
+            "group": "summaryRatings",
+            "key": "HEA"
+          },
+          {
+            "index": 19,
+            "sourceLabel": "Acceleration",
+            "group": "detailedAttributes",
+            "key": "Acceleration"
+          },
+          {
+            "index": 20,
+            "sourceLabel": "Agility",
+            "group": "detailedAttributes",
+            "key": "Agility"
+          },
+          {
+            "index": 21,
+            "sourceLabel": "Balance",
+            "group": "detailedAttributes",
+            "key": "Balance"
+          },
+          {
+            "index": 22,
+            "sourceLabel": "Jumping",
+            "group": "detailedAttributes",
+            "key": "Jumping"
+          },
+          {
+            "index": 23,
+            "sourceLabel": "Reactions",
+            "group": "detailedAttributes",
+            "key": "Reactions"
+          },
+          {
+            "index": 24,
+            "sourceLabel": "Sprint Speed",
+            "group": "detailedAttributes",
+            "key": "SprintSpeed"
+          },
+          {
+            "index": 25,
+            "sourceLabel": "Stamina",
+            "group": "detailedAttributes",
+            "key": "Stamina"
+          },
+          {
+            "index": 26,
+            "sourceLabel": "Strength",
+            "group": "detailedAttributes",
+            "key": "Strength"
+          },
+          {
+            "index": 27,
+            "sourceLabel": "Aggression",
+            "group": "detailedAttributes",
+            "key": "Aggression"
+          },
+          {
+            "index": 28,
+            "sourceLabel": "Interceptions",
+            "group": "detailedAttributes",
+            "key": "Interceptions"
+          },
+          {
+            "index": 29,
+            "sourceLabel": "Positioning",
+            "group": "detailedAttributes",
+            "key": "Positioning"
+          },
+          {
+            "index": 30,
+            "sourceLabel": "Vision",
+            "group": "detailedAttributes",
+            "key": "Vision"
+          },
+          {
+            "index": 31,
+            "sourceLabel": "Potential",
+            "group": "potentialMetaAttributes",
+            "key": "Potential"
+          },
+          {
+            "index": 32,
+            "sourceLabel": "Ball Control",
+            "group": "detailedAttributes",
+            "key": "BallControl"
+          },
+          {
+            "index": 33,
+            "sourceLabel": "Crossing",
+            "group": "detailedAttributes",
+            "key": "Crossing"
+          },
+          {
+            "index": 34,
+            "sourceLabel": "Curve",
+            "group": "detailedAttributes",
+            "key": "Curve"
+          },
+          {
+            "index": 35,
+            "sourceLabel": "Dribbling",
+            "group": "detailedAttributes",
+            "key": "Dribbling"
+          },
+          {
+            "index": 36,
+            "sourceLabel": "Finishing",
+            "group": "detailedAttributes",
+            "key": "Finishing"
+          },
+          {
+            "index": 37,
+            "sourceLabel": "Freekick Acc.",
+            "group": "detailedAttributes",
+            "key": "FreeKickAccuracy"
+          },
+          {
+            "index": 38,
+            "sourceLabel": "Heading Acc.",
+            "group": "detailedAttributes",
+            "key": "HeadingAccuracy"
+          },
+          {
+            "index": 39,
+            "sourceLabel": "Long Pass",
+            "group": "detailedAttributes",
+            "key": "LongPassing"
+          },
+          {
+            "index": 40,
+            "sourceLabel": "Long Shots",
+            "group": "detailedAttributes",
+            "key": "LongShots"
+          },
+          {
+            "index": 41,
+            "sourceLabel": "Marking",
+            "group": "detailedAttributes",
+            "key": "Marking"
+          },
+          {
+            "index": 42,
+            "sourceLabel": "Penalties",
+            "group": "detailedAttributes",
+            "key": "Penalties"
+          },
+          {
+            "index": 43,
+            "sourceLabel": "Short Pass",
+            "group": "detailedAttributes",
+            "key": "ShortPassing"
+          },
+          {
+            "index": 44,
+            "sourceLabel": "Shot Power",
+            "group": "detailedAttributes",
+            "key": "ShotPower"
+          },
+          {
+            "index": 45,
+            "sourceLabel": "Slide Tackle",
+            "group": "detailedAttributes",
+            "key": "SlidingTackle"
+          },
+          {
+            "index": 46,
+            "sourceLabel": "Stand. Tackle",
+            "group": "detailedAttributes",
+            "key": "StandingTackle"
+          },
+          {
+            "index": 47,
+            "sourceLabel": "Volleys",
+            "group": "detailedAttributes",
+            "key": "Volleys"
+          },
+          {
+            "index": 48,
+            "sourceLabel": "DIV",
+            "group": "detailedAttributes",
+            "key": "GK_Diving"
+          },
+          {
+            "index": 49,
+            "sourceLabel": "HAN",
+            "group": "detailedAttributes",
+            "key": "GK_Handling"
+          },
+          {
+            "index": 50,
+            "sourceLabel": "KIC",
+            "group": "detailedAttributes",
+            "key": "GK_Kicking"
+          },
+          {
+            "index": 51,
+            "sourceLabel": "REF",
+            "group": "detailedAttributes",
+            "key": "GK_Reflexes"
+          },
+          {
+            "index": 52,
+            "sourceLabel": "SPE",
+            "group": "detailedAttributes",
+            "key": "GK_Speed"
+          },
+          {
+            "index": 53,
+            "sourceLabel": "POS",
+            "group": "detailedAttributes",
+            "key": "GK_Positioning"
+          },
+          {
+            "index": 54,
+            "sourceLabel": "WF",
+            "group": "skillMetaAttributes",
+            "key": "WF"
+          },
+          {
+            "index": 55,
+            "sourceLabel": "Skill",
+            "group": "skillMetaAttributes",
+            "key": "Skill"
+          },
+          {
+            "index": 56,
+            "sourceLabel": "AW",
+            "group": "skillMetaAttributes",
+            "key": "AW"
+          },
+          {
+            "index": 57,
+            "sourceLabel": "DW",
+            "group": "skillMetaAttributes",
+            "key": "DW"
+          },
+          {
+            "index": 67,
+            "sourceLabel": "Composure",
+            "group": "detailedAttributes",
+            "key": "Composure"
+          }
+        ],
+        "expectedDetailedAttributeKeys": [
+          "Acceleration",
+          "Agility",
+          "Balance",
+          "Jumping",
+          "Reactions",
+          "SprintSpeed",
+          "Stamina",
+          "Strength",
+          "Aggression",
+          "Interceptions",
+          "Positioning",
+          "Vision",
+          "BallControl",
+          "Crossing",
+          "Curve",
+          "Dribbling",
+          "Finishing",
+          "FreeKickAccuracy",
+          "HeadingAccuracy",
+          "LongPassing",
+          "LongShots",
+          "Marking",
+          "Penalties",
+          "ShortPassing",
+          "ShotPower",
+          "SlidingTackle",
+          "StandingTackle",
+          "Volleys",
+          "GK_Diving",
+          "GK_Handling",
+          "GK_Kicking",
+          "GK_Reflexes",
+          "GK_Speed",
+          "GK_Positioning",
+          "Composure"
+        ],
+        "unclassifiedHeaderColumns": [],
+        "duplicateDetailedKeys": [],
+        "completeHeaderEvidence": false
+      },
+      "error": null
+    },
+    {
+      "edition": 21,
+      "url": "https://wefut.com/player-database/21/",
+      "httpStatus": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "cachedBodySha256": "a27266200a2c66a7b4cf6a42f744f7ade6111d34551596c3717c7e9b18723e15",
+      "cachedBodyCharacters": 3511307,
+      "status": "header_observed",
+      "headerEvidence": {
+        "edition": 21,
+        "sourceUrl": "https://wefut.com/player-database/21/",
+        "tableId": "playerTable",
+        "evidence": "public_playerTable_header",
+        "headerColumnCount": 75,
+        "headerSha256": "3fd49060e9b5c81025ca2b0883a3a292e90fc81596d05849c8db94d5cf07cd86",
+        "attributeHeaderRange": {
+          "start": 13,
+          "endExclusive": 68
+        },
+        "headerMappingStrategy": "unverified",
+        "rowAlignmentRequired": false,
+        "frontendSourceContract": {
+          "tableId": "playerTable",
+          "serverSide": true,
+          "ajaxEndpoint": "/ajax/getPlayers/21",
+          "verified": true
+        },
+        "headerBoundaryEvidence": {
+          "nationalityHeaderCount": 1,
+          "minHeaderCount": 0,
+          "maxHeaderCount": 0,
+          "nationalityIndex": 12,
+          "minIndex": null,
+          "maxIndex": null,
+          "verified": false,
+          "strategy": "unverified"
+        },
+        "columns": [
+          {
+            "index": 13,
+            "sourceLabel": "PAC",
+            "group": "summaryRatings",
+            "key": "PAC"
+          },
+          {
+            "index": 14,
+            "sourceLabel": "SHO",
+            "group": "summaryRatings",
+            "key": "SHO"
+          },
+          {
+            "index": 15,
+            "sourceLabel": "PAS",
+            "group": "summaryRatings",
+            "key": "PAS"
+          },
+          {
+            "index": 16,
+            "sourceLabel": "DRI",
+            "group": "summaryRatings",
+            "key": "DRI"
+          },
+          {
+            "index": 17,
+            "sourceLabel": "DEF",
+            "group": "summaryRatings",
+            "key": "DEF"
+          },
+          {
+            "index": 18,
+            "sourceLabel": "HEA",
+            "group": "summaryRatings",
+            "key": "HEA"
+          },
+          {
+            "index": 19,
+            "sourceLabel": "Acceleration",
+            "group": "detailedAttributes",
+            "key": "Acceleration"
+          },
+          {
+            "index": 20,
+            "sourceLabel": "Agility",
+            "group": "detailedAttributes",
+            "key": "Agility"
+          },
+          {
+            "index": 21,
+            "sourceLabel": "Balance",
+            "group": "detailedAttributes",
+            "key": "Balance"
+          },
+          {
+            "index": 22,
+            "sourceLabel": "Jumping",
+            "group": "detailedAttributes",
+            "key": "Jumping"
+          },
+          {
+            "index": 23,
+            "sourceLabel": "Reactions",
+            "group": "detailedAttributes",
+            "key": "Reactions"
+          },
+          {
+            "index": 24,
+            "sourceLabel": "Sprint Speed",
+            "group": "detailedAttributes",
+            "key": "SprintSpeed"
+          },
+          {
+            "index": 25,
+            "sourceLabel": "Stamina",
+            "group": "detailedAttributes",
+            "key": "Stamina"
+          },
+          {
+            "index": 26,
+            "sourceLabel": "Strength",
+            "group": "detailedAttributes",
+            "key": "Strength"
+          },
+          {
+            "index": 27,
+            "sourceLabel": "Aggression",
+            "group": "detailedAttributes",
+            "key": "Aggression"
+          },
+          {
+            "index": 28,
+            "sourceLabel": "Interceptions",
+            "group": "detailedAttributes",
+            "key": "Interceptions"
+          },
+          {
+            "index": 29,
+            "sourceLabel": "Positioning",
+            "group": "detailedAttributes",
+            "key": "Positioning"
+          },
+          {
+            "index": 30,
+            "sourceLabel": "Vision",
+            "group": "detailedAttributes",
+            "key": "Vision"
+          },
+          {
+            "index": 31,
+            "sourceLabel": "Potential",
+            "group": "potentialMetaAttributes",
+            "key": "Potential"
+          },
+          {
+            "index": 32,
+            "sourceLabel": "Ball Control",
+            "group": "detailedAttributes",
+            "key": "BallControl"
+          },
+          {
+            "index": 33,
+            "sourceLabel": "Crossing",
+            "group": "detailedAttributes",
+            "key": "Crossing"
+          },
+          {
+            "index": 34,
+            "sourceLabel": "Curve",
+            "group": "detailedAttributes",
+            "key": "Curve"
+          },
+          {
+            "index": 35,
+            "sourceLabel": "Dribbling",
+            "group": "detailedAttributes",
+            "key": "Dribbling"
+          },
+          {
+            "index": 36,
+            "sourceLabel": "Finishing",
+            "group": "detailedAttributes",
+            "key": "Finishing"
+          },
+          {
+            "index": 37,
+            "sourceLabel": "Freekick Acc.",
+            "group": "detailedAttributes",
+            "key": "FreeKickAccuracy"
+          },
+          {
+            "index": 38,
+            "sourceLabel": "Heading Acc.",
+            "group": "detailedAttributes",
+            "key": "HeadingAccuracy"
+          },
+          {
+            "index": 39,
+            "sourceLabel": "Long Pass",
+            "group": "detailedAttributes",
+            "key": "LongPassing"
+          },
+          {
+            "index": 40,
+            "sourceLabel": "Long Shots",
+            "group": "detailedAttributes",
+            "key": "LongShots"
+          },
+          {
+            "index": 41,
+            "sourceLabel": "Marking",
+            "group": "detailedAttributes",
+            "key": "Marking"
+          },
+          {
+            "index": 42,
+            "sourceLabel": "Penalties",
+            "group": "detailedAttributes",
+            "key": "Penalties"
+          },
+          {
+            "index": 43,
+            "sourceLabel": "Short Pass",
+            "group": "detailedAttributes",
+            "key": "ShortPassing"
+          },
+          {
+            "index": 44,
+            "sourceLabel": "Shot Power",
+            "group": "detailedAttributes",
+            "key": "ShotPower"
+          },
+          {
+            "index": 45,
+            "sourceLabel": "Slide Tackle",
+            "group": "detailedAttributes",
+            "key": "SlidingTackle"
+          },
+          {
+            "index": 46,
+            "sourceLabel": "Stand. Tackle",
+            "group": "detailedAttributes",
+            "key": "StandingTackle"
+          },
+          {
+            "index": 47,
+            "sourceLabel": "Volleys",
+            "group": "detailedAttributes",
+            "key": "Volleys"
+          },
+          {
+            "index": 48,
+            "sourceLabel": "DIV",
+            "group": "detailedAttributes",
+            "key": "GK_Diving"
+          },
+          {
+            "index": 49,
+            "sourceLabel": "HAN",
+            "group": "detailedAttributes",
+            "key": "GK_Handling"
+          },
+          {
+            "index": 50,
+            "sourceLabel": "KIC",
+            "group": "detailedAttributes",
+            "key": "GK_Kicking"
+          },
+          {
+            "index": 51,
+            "sourceLabel": "REF",
+            "group": "detailedAttributes",
+            "key": "GK_Reflexes"
+          },
+          {
+            "index": 52,
+            "sourceLabel": "SPE",
+            "group": "detailedAttributes",
+            "key": "GK_Speed"
+          },
+          {
+            "index": 53,
+            "sourceLabel": "POS",
+            "group": "detailedAttributes",
+            "key": "GK_Positioning"
+          },
+          {
+            "index": 54,
+            "sourceLabel": "WF",
+            "group": "skillMetaAttributes",
+            "key": "WF"
+          },
+          {
+            "index": 55,
+            "sourceLabel": "Skill",
+            "group": "skillMetaAttributes",
+            "key": "Skill"
+          },
+          {
+            "index": 56,
+            "sourceLabel": "AW",
+            "group": "skillMetaAttributes",
+            "key": "AW"
+          },
+          {
+            "index": 57,
+            "sourceLabel": "DW",
+            "group": "skillMetaAttributes",
+            "key": "DW"
+          },
+          {
+            "index": 67,
+            "sourceLabel": "Composure",
+            "group": "detailedAttributes",
+            "key": "Composure"
+          }
+        ],
+        "expectedDetailedAttributeKeys": [
+          "Acceleration",
+          "Agility",
+          "Balance",
+          "Jumping",
+          "Reactions",
+          "SprintSpeed",
+          "Stamina",
+          "Strength",
+          "Aggression",
+          "Interceptions",
+          "Positioning",
+          "Vision",
+          "BallControl",
+          "Crossing",
+          "Curve",
+          "Dribbling",
+          "Finishing",
+          "FreeKickAccuracy",
+          "HeadingAccuracy",
+          "LongPassing",
+          "LongShots",
+          "Marking",
+          "Penalties",
+          "ShortPassing",
+          "ShotPower",
+          "SlidingTackle",
+          "StandingTackle",
+          "Volleys",
+          "GK_Diving",
+          "GK_Handling",
+          "GK_Kicking",
+          "GK_Reflexes",
+          "GK_Speed",
+          "GK_Positioning",
+          "Composure"
+        ],
+        "unclassifiedHeaderColumns": [],
+        "duplicateDetailedKeys": [],
+        "completeHeaderEvidence": false
+      },
+      "error": null
+    },
+    {
+      "edition": 22,
+      "url": "https://wefut.com/player-database/22/",
+      "httpStatus": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "cachedBodySha256": "ce2e506534270ff748ee6ed8bdcf35cef3016522be4e17068a8d52376faaf935",
+      "cachedBodyCharacters": 3786805,
+      "status": "header_observed",
+      "headerEvidence": {
+        "edition": 22,
+        "sourceUrl": "https://wefut.com/player-database/22/",
+        "tableId": "playerTable",
+        "evidence": "public_playerTable_header",
+        "headerColumnCount": 75,
+        "headerSha256": "bb8cf4d143b32962186e8b12c2a16e86c21d00fb7353e6c77df7e08edd25f7ea",
+        "attributeHeaderRange": {
+          "start": 13,
+          "endExclusive": 75
+        },
+        "headerMappingStrategy": "modern_labeled_75_column_server_side_table",
+        "rowAlignmentRequired": true,
+        "frontendSourceContract": {
+          "tableId": "playerTable",
+          "serverSide": true,
+          "ajaxEndpoint": "/ajax/getPlayers/22",
+          "verified": true
+        },
+        "headerBoundaryEvidence": {
+          "nationalityHeaderCount": 1,
+          "minHeaderCount": 0,
+          "maxHeaderCount": 0,
+          "nationalityIndex": 12,
+          "minIndex": null,
+          "maxIndex": null,
+          "verified": true,
+          "strategy": "modern_labeled_75_column_server_side_table"
+        },
+        "columns": [
+          {
+            "index": 13,
+            "sourceLabel": "PAC",
+            "group": "summaryRatings",
+            "key": "PAC"
+          },
+          {
+            "index": 14,
+            "sourceLabel": "SHO",
+            "group": "summaryRatings",
+            "key": "SHO"
+          },
+          {
+            "index": 15,
+            "sourceLabel": "PAS",
+            "group": "summaryRatings",
+            "key": "PAS"
+          },
+          {
+            "index": 16,
+            "sourceLabel": "DRI",
+            "group": "summaryRatings",
+            "key": "DRI"
+          },
+          {
+            "index": 17,
+            "sourceLabel": "DEF",
+            "group": "summaryRatings",
+            "key": "DEF"
+          },
+          {
+            "index": 18,
+            "sourceLabel": "HEA",
+            "group": "summaryRatings",
+            "key": "HEA"
+          },
+          {
+            "index": 19,
+            "sourceLabel": "Acceleration",
+            "group": "detailedAttributes",
+            "key": "Acceleration"
+          },
+          {
+            "index": 20,
+            "sourceLabel": "Agility",
+            "group": "detailedAttributes",
+            "key": "Agility"
+          },
+          {
+            "index": 21,
+            "sourceLabel": "Balance",
+            "group": "detailedAttributes",
+            "key": "Balance"
+          },
+          {
+            "index": 22,
+            "sourceLabel": "Jumping",
+            "group": "detailedAttributes",
+            "key": "Jumping"
+          },
+          {
+            "index": 23,
+            "sourceLabel": "Reactions",
+            "group": "detailedAttributes",
+            "key": "Reactions"
+          },
+          {
+            "index": 24,
+            "sourceLabel": "Sprint Speed",
+            "group": "detailedAttributes",
+            "key": "SprintSpeed"
+          },
+          {
+            "index": 25,
+            "sourceLabel": "Stamina",
+            "group": "detailedAttributes",
+            "key": "Stamina"
+          },
+          {
+            "index": 26,
+            "sourceLabel": "Strength",
+            "group": "detailedAttributes",
+            "key": "Strength"
+          },
+          {
+            "index": 27,
+            "sourceLabel": "Aggression",
+            "group": "detailedAttributes",
+            "key": "Aggression"
+          },
+          {
+            "index": 28,
+            "sourceLabel": "Interceptions",
+            "group": "detailedAttributes",
+            "key": "Interceptions"
+          },
+          {
+            "index": 29,
+            "sourceLabel": "Positioning",
+            "group": "detailedAttributes",
+            "key": "Positioning"
+          },
+          {
+            "index": 30,
+            "sourceLabel": "Vision",
+            "group": "detailedAttributes",
+            "key": "Vision"
+          },
+          {
+            "index": 31,
+            "sourceLabel": "Potential",
+            "group": "potentialMetaAttributes",
+            "key": "Potential"
+          },
+          {
+            "index": 32,
+            "sourceLabel": "Ball Control",
+            "group": "detailedAttributes",
+            "key": "BallControl"
+          },
+          {
+            "index": 33,
+            "sourceLabel": "Crossing",
+            "group": "detailedAttributes",
+            "key": "Crossing"
+          },
+          {
+            "index": 34,
+            "sourceLabel": "Curve",
+            "group": "detailedAttributes",
+            "key": "Curve"
+          },
+          {
+            "index": 35,
+            "sourceLabel": "Dribbling",
+            "group": "detailedAttributes",
+            "key": "Dribbling"
+          },
+          {
+            "index": 36,
+            "sourceLabel": "Finishing",
+            "group": "detailedAttributes",
+            "key": "Finishing"
+          },
+          {
+            "index": 37,
+            "sourceLabel": "Freekick Acc.",
+            "group": "detailedAttributes",
+            "key": "FreeKickAccuracy"
+          },
+          {
+            "index": 38,
+            "sourceLabel": "Heading Acc.",
+            "group": "detailedAttributes",
+            "key": "HeadingAccuracy"
+          },
+          {
+            "index": 39,
+            "sourceLabel": "Long Pass",
+            "group": "detailedAttributes",
+            "key": "LongPassing"
+          },
+          {
+            "index": 40,
+            "sourceLabel": "Long Shots",
+            "group": "detailedAttributes",
+            "key": "LongShots"
+          },
+          {
+            "index": 41,
+            "sourceLabel": "Marking",
+            "group": "detailedAttributes",
+            "key": "Marking"
+          },
+          {
+            "index": 42,
+            "sourceLabel": "Penalties",
+            "group": "detailedAttributes",
+            "key": "Penalties"
+          },
+          {
+            "index": 43,
+            "sourceLabel": "Short Pass",
+            "group": "detailedAttributes",
+            "key": "ShortPassing"
+          },
+          {
+            "index": 44,
+            "sourceLabel": "Shot Power",
+            "group": "detailedAttributes",
+            "key": "ShotPower"
+          },
+          {
+            "index": 45,
+            "sourceLabel": "Slide Tackle",
+            "group": "detailedAttributes",
+            "key": "SlidingTackle"
+          },
+          {
+            "index": 46,
+            "sourceLabel": "Stand. Tackle",
+            "group": "detailedAttributes",
+            "key": "StandingTackle"
+          },
+          {
+            "index": 47,
+            "sourceLabel": "Volleys",
+            "group": "detailedAttributes",
+            "key": "Volleys"
+          },
+          {
+            "index": 48,
+            "sourceLabel": "DIV",
+            "group": "detailedAttributes",
+            "key": "GK_Diving"
+          },
+          {
+            "index": 49,
+            "sourceLabel": "HAN",
+            "group": "detailedAttributes",
+            "key": "GK_Handling"
+          },
+          {
+            "index": 50,
+            "sourceLabel": "KIC",
+            "group": "detailedAttributes",
+            "key": "GK_Kicking"
+          },
+          {
+            "index": 51,
+            "sourceLabel": "REF",
+            "group": "detailedAttributes",
+            "key": "GK_Reflexes"
+          },
+          {
+            "index": 52,
+            "sourceLabel": "SPE",
+            "group": "detailedAttributes",
+            "key": "GK_Speed"
+          },
+          {
+            "index": 53,
+            "sourceLabel": "POS",
+            "group": "detailedAttributes",
+            "key": "GK_Positioning"
+          },
+          {
+            "index": 54,
+            "sourceLabel": "WF",
+            "group": "skillMetaAttributes",
+            "key": "WF"
+          },
+          {
+            "index": 55,
+            "sourceLabel": "Skill",
+            "group": "skillMetaAttributes",
+            "key": "Skill"
+          },
+          {
+            "index": 56,
+            "sourceLabel": "AW",
+            "group": "skillMetaAttributes",
+            "key": "AW"
+          },
+          {
+            "index": 57,
+            "sourceLabel": "DW",
+            "group": "skillMetaAttributes",
+            "key": "DW"
+          },
+          {
+            "index": 67,
+            "sourceLabel": "Composure",
+            "group": "detailedAttributes",
+            "key": "Composure"
+          }
+        ],
+        "expectedDetailedAttributeKeys": [
+          "Acceleration",
+          "Agility",
+          "Balance",
+          "Jumping",
+          "Reactions",
+          "SprintSpeed",
+          "Stamina",
+          "Strength",
+          "Aggression",
+          "Interceptions",
+          "Positioning",
+          "Vision",
+          "BallControl",
+          "Crossing",
+          "Curve",
+          "Dribbling",
+          "Finishing",
+          "FreeKickAccuracy",
+          "HeadingAccuracy",
+          "LongPassing",
+          "LongShots",
+          "Marking",
+          "Penalties",
+          "ShortPassing",
+          "ShotPower",
+          "SlidingTackle",
+          "StandingTackle",
+          "Volleys",
+          "GK_Diving",
+          "GK_Handling",
+          "GK_Kicking",
+          "GK_Reflexes",
+          "GK_Speed",
+          "GK_Positioning",
+          "Composure"
+        ],
+        "unclassifiedHeaderColumns": [],
+        "duplicateDetailedKeys": [],
+        "completeHeaderEvidence": true
+      },
+      "error": null
+    },
+    {
+      "edition": 23,
+      "url": "https://wefut.com/player-database/23/",
+      "httpStatus": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "cachedBodySha256": "de20615463764752ccbd560919ab996c0394b172ec38cadcc683eb1b5277a1ad",
+      "cachedBodyCharacters": 3757292,
+      "status": "header_observed",
+      "headerEvidence": {
+        "edition": 23,
+        "sourceUrl": "https://wefut.com/player-database/23/",
+        "tableId": "playerTable",
+        "evidence": "public_playerTable_header",
+        "headerColumnCount": 75,
+        "headerSha256": "bb8cf4d143b32962186e8b12c2a16e86c21d00fb7353e6c77df7e08edd25f7ea",
+        "attributeHeaderRange": {
+          "start": 13,
+          "endExclusive": 75
+        },
+        "headerMappingStrategy": "modern_labeled_75_column_server_side_table",
+        "rowAlignmentRequired": true,
+        "frontendSourceContract": {
+          "tableId": "playerTable",
+          "serverSide": true,
+          "ajaxEndpoint": "/ajax/getPlayers/23",
+          "verified": true
+        },
+        "headerBoundaryEvidence": {
+          "nationalityHeaderCount": 1,
+          "minHeaderCount": 0,
+          "maxHeaderCount": 0,
+          "nationalityIndex": 12,
+          "minIndex": null,
+          "maxIndex": null,
+          "verified": true,
+          "strategy": "modern_labeled_75_column_server_side_table"
+        },
+        "columns": [
+          {
+            "index": 13,
+            "sourceLabel": "PAC",
+            "group": "summaryRatings",
+            "key": "PAC"
+          },
+          {
+            "index": 14,
+            "sourceLabel": "SHO",
+            "group": "summaryRatings",
+            "key": "SHO"
+          },
+          {
+            "index": 15,
+            "sourceLabel": "PAS",
+            "group": "summaryRatings",
+            "key": "PAS"
+          },
+          {
+            "index": 16,
+            "sourceLabel": "DRI",
+            "group": "summaryRatings",
+            "key": "DRI"
+          },
+          {
+            "index": 17,
+            "sourceLabel": "DEF",
+            "group": "summaryRatings",
+            "key": "DEF"
+          },
+          {
+            "index": 18,
+            "sourceLabel": "HEA",
+            "group": "summaryRatings",
+            "key": "HEA"
+          },
+          {
+            "index": 19,
+            "sourceLabel": "Acceleration",
+            "group": "detailedAttributes",
+            "key": "Acceleration"
+          },
+          {
+            "index": 20,
+            "sourceLabel": "Agility",
+            "group": "detailedAttributes",
+            "key": "Agility"
+          },
+          {
+            "index": 21,
+            "sourceLabel": "Balance",
+            "group": "detailedAttributes",
+            "key": "Balance"
+          },
+          {
+            "index": 22,
+            "sourceLabel": "Jumping",
+            "group": "detailedAttributes",
+            "key": "Jumping"
+          },
+          {
+            "index": 23,
+            "sourceLabel": "Reactions",
+            "group": "detailedAttributes",
+            "key": "Reactions"
+          },
+          {
+            "index": 24,
+            "sourceLabel": "Sprint Speed",
+            "group": "detailedAttributes",
+            "key": "SprintSpeed"
+          },
+          {
+            "index": 25,
+            "sourceLabel": "Stamina",
+            "group": "detailedAttributes",
+            "key": "Stamina"
+          },
+          {
+            "index": 26,
+            "sourceLabel": "Strength",
+            "group": "detailedAttributes",
+            "key": "Strength"
+          },
+          {
+            "index": 27,
+            "sourceLabel": "Aggression",
+            "group": "detailedAttributes",
+            "key": "Aggression"
+          },
+          {
+            "index": 28,
+            "sourceLabel": "Interceptions",
+            "group": "detailedAttributes",
+            "key": "Interceptions"
+          },
+          {
+            "index": 29,
+            "sourceLabel": "Positioning",
+            "group": "detailedAttributes",
+            "key": "Positioning"
+          },
+          {
+            "index": 30,
+            "sourceLabel": "Vision",
+            "group": "detailedAttributes",
+            "key": "Vision"
+          },
+          {
+            "index": 31,
+            "sourceLabel": "Potential",
+            "group": "potentialMetaAttributes",
+            "key": "Potential"
+          },
+          {
+            "index": 32,
+            "sourceLabel": "Ball Control",
+            "group": "detailedAttributes",
+            "key": "BallControl"
+          },
+          {
+            "index": 33,
+            "sourceLabel": "Crossing",
+            "group": "detailedAttributes",
+            "key": "Crossing"
+          },
+          {
+            "index": 34,
+            "sourceLabel": "Curve",
+            "group": "detailedAttributes",
+            "key": "Curve"
+          },
+          {
+            "index": 35,
+            "sourceLabel": "Dribbling",
+            "group": "detailedAttributes",
+            "key": "Dribbling"
+          },
+          {
+            "index": 36,
+            "sourceLabel": "Finishing",
+            "group": "detailedAttributes",
+            "key": "Finishing"
+          },
+          {
+            "index": 37,
+            "sourceLabel": "Freekick Acc.",
+            "group": "detailedAttributes",
+            "key": "FreeKickAccuracy"
+          },
+          {
+            "index": 38,
+            "sourceLabel": "Heading Acc.",
+            "group": "detailedAttributes",
+            "key": "HeadingAccuracy"
+          },
+          {
+            "index": 39,
+            "sourceLabel": "Long Pass",
+            "group": "detailedAttributes",
+            "key": "LongPassing"
+          },
+          {
+            "index": 40,
+            "sourceLabel": "Long Shots",
+            "group": "detailedAttributes",
+            "key": "LongShots"
+          },
+          {
+            "index": 41,
+            "sourceLabel": "Marking",
+            "group": "detailedAttributes",
+            "key": "Marking"
+          },
+          {
+            "index": 42,
+            "sourceLabel": "Penalties",
+            "group": "detailedAttributes",
+            "key": "Penalties"
+          },
+          {
+            "index": 43,
+            "sourceLabel": "Short Pass",
+            "group": "detailedAttributes",
+            "key": "ShortPassing"
+          },
+          {
+            "index": 44,
+            "sourceLabel": "Shot Power",
+            "group": "detailedAttributes",
+            "key": "ShotPower"
+          },
+          {
+            "index": 45,
+            "sourceLabel": "Slide Tackle",
+            "group": "detailedAttributes",
+            "key": "SlidingTackle"
+          },
+          {
+            "index": 46,
+            "sourceLabel": "Stand. Tackle",
+            "group": "detailedAttributes",
+            "key": "StandingTackle"
+          },
+          {
+            "index": 47,
+            "sourceLabel": "Volleys",
+            "group": "detailedAttributes",
+            "key": "Volleys"
+          },
+          {
+            "index": 48,
+            "sourceLabel": "DIV",
+            "group": "detailedAttributes",
+            "key": "GK_Diving"
+          },
+          {
+            "index": 49,
+            "sourceLabel": "HAN",
+            "group": "detailedAttributes",
+            "key": "GK_Handling"
+          },
+          {
+            "index": 50,
+            "sourceLabel": "KIC",
+            "group": "detailedAttributes",
+            "key": "GK_Kicking"
+          },
+          {
+            "index": 51,
+            "sourceLabel": "REF",
+            "group": "detailedAttributes",
+            "key": "GK_Reflexes"
+          },
+          {
+            "index": 52,
+            "sourceLabel": "SPE",
+            "group": "detailedAttributes",
+            "key": "GK_Speed"
+          },
+          {
+            "index": 53,
+            "sourceLabel": "POS",
+            "group": "detailedAttributes",
+            "key": "GK_Positioning"
+          },
+          {
+            "index": 54,
+            "sourceLabel": "WF",
+            "group": "skillMetaAttributes",
+            "key": "WF"
+          },
+          {
+            "index": 55,
+            "sourceLabel": "Skill",
+            "group": "skillMetaAttributes",
+            "key": "Skill"
+          },
+          {
+            "index": 56,
+            "sourceLabel": "AW",
+            "group": "skillMetaAttributes",
+            "key": "AW"
+          },
+          {
+            "index": 57,
+            "sourceLabel": "DW",
+            "group": "skillMetaAttributes",
+            "key": "DW"
+          },
+          {
+            "index": 67,
+            "sourceLabel": "Composure",
+            "group": "detailedAttributes",
+            "key": "Composure"
+          }
+        ],
+        "expectedDetailedAttributeKeys": [
+          "Acceleration",
+          "Agility",
+          "Balance",
+          "Jumping",
+          "Reactions",
+          "SprintSpeed",
+          "Stamina",
+          "Strength",
+          "Aggression",
+          "Interceptions",
+          "Positioning",
+          "Vision",
+          "BallControl",
+          "Crossing",
+          "Curve",
+          "Dribbling",
+          "Finishing",
+          "FreeKickAccuracy",
+          "HeadingAccuracy",
+          "LongPassing",
+          "LongShots",
+          "Marking",
+          "Penalties",
+          "ShortPassing",
+          "ShotPower",
+          "SlidingTackle",
+          "StandingTackle",
+          "Volleys",
+          "GK_Diving",
+          "GK_Handling",
+          "GK_Kicking",
+          "GK_Reflexes",
+          "GK_Speed",
+          "GK_Positioning",
+          "Composure"
+        ],
+        "unclassifiedHeaderColumns": [],
+        "duplicateDetailedKeys": [],
+        "completeHeaderEvidence": true
+      },
+      "error": null
+    },
+    {
+      "edition": 24,
+      "url": "https://wefut.com/player-database/24/",
+      "httpStatus": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "cachedBodySha256": "d5cc1b1c5fcbcca39eac163aa5f27e853a771a5dff74b49a5b472475b0d67078",
+      "cachedBodyCharacters": 4640895,
+      "status": "header_observed",
+      "headerEvidence": {
+        "edition": 24,
+        "sourceUrl": "https://wefut.com/player-database/24/",
+        "tableId": "playerTable",
+        "evidence": "public_playerTable_header",
+        "headerColumnCount": 75,
+        "headerSha256": "bb8cf4d143b32962186e8b12c2a16e86c21d00fb7353e6c77df7e08edd25f7ea",
+        "attributeHeaderRange": {
+          "start": 13,
+          "endExclusive": 75
+        },
+        "headerMappingStrategy": "modern_labeled_75_column_server_side_table",
+        "rowAlignmentRequired": true,
+        "frontendSourceContract": {
+          "tableId": "playerTable",
+          "serverSide": true,
+          "ajaxEndpoint": "/ajax/getPlayers/24",
+          "verified": true
+        },
+        "headerBoundaryEvidence": {
+          "nationalityHeaderCount": 1,
+          "minHeaderCount": 0,
+          "maxHeaderCount": 0,
+          "nationalityIndex": 12,
+          "minIndex": null,
+          "maxIndex": null,
+          "verified": true,
+          "strategy": "modern_labeled_75_column_server_side_table"
+        },
+        "columns": [
+          {
+            "index": 13,
+            "sourceLabel": "PAC",
+            "group": "summaryRatings",
+            "key": "PAC"
+          },
+          {
+            "index": 14,
+            "sourceLabel": "SHO",
+            "group": "summaryRatings",
+            "key": "SHO"
+          },
+          {
+            "index": 15,
+            "sourceLabel": "PAS",
+            "group": "summaryRatings",
+            "key": "PAS"
+          },
+          {
+            "index": 16,
+            "sourceLabel": "DRI",
+            "group": "summaryRatings",
+            "key": "DRI"
+          },
+          {
+            "index": 17,
+            "sourceLabel": "DEF",
+            "group": "summaryRatings",
+            "key": "DEF"
+          },
+          {
+            "index": 18,
+            "sourceLabel": "HEA",
+            "group": "summaryRatings",
+            "key": "HEA"
+          },
+          {
+            "index": 19,
+            "sourceLabel": "Acceleration",
+            "group": "detailedAttributes",
+            "key": "Acceleration"
+          },
+          {
+            "index": 20,
+            "sourceLabel": "Agility",
+            "group": "detailedAttributes",
+            "key": "Agility"
+          },
+          {
+            "index": 21,
+            "sourceLabel": "Balance",
+            "group": "detailedAttributes",
+            "key": "Balance"
+          },
+          {
+            "index": 22,
+            "sourceLabel": "Jumping",
+            "group": "detailedAttributes",
+            "key": "Jumping"
+          },
+          {
+            "index": 23,
+            "sourceLabel": "Reactions",
+            "group": "detailedAttributes",
+            "key": "Reactions"
+          },
+          {
+            "index": 24,
+            "sourceLabel": "Sprint Speed",
+            "group": "detailedAttributes",
+            "key": "SprintSpeed"
+          },
+          {
+            "index": 25,
+            "sourceLabel": "Stamina",
+            "group": "detailedAttributes",
+            "key": "Stamina"
+          },
+          {
+            "index": 26,
+            "sourceLabel": "Strength",
+            "group": "detailedAttributes",
+            "key": "Strength"
+          },
+          {
+            "index": 27,
+            "sourceLabel": "Aggression",
+            "group": "detailedAttributes",
+            "key": "Aggression"
+          },
+          {
+            "index": 28,
+            "sourceLabel": "Interceptions",
+            "group": "detailedAttributes",
+            "key": "Interceptions"
+          },
+          {
+            "index": 29,
+            "sourceLabel": "Positioning",
+            "group": "detailedAttributes",
+            "key": "Positioning"
+          },
+          {
+            "index": 30,
+            "sourceLabel": "Vision",
+            "group": "detailedAttributes",
+            "key": "Vision"
+          },
+          {
+            "index": 31,
+            "sourceLabel": "Potential",
+            "group": "potentialMetaAttributes",
+            "key": "Potential"
+          },
+          {
+            "index": 32,
+            "sourceLabel": "Ball Control",
+            "group": "detailedAttributes",
+            "key": "BallControl"
+          },
+          {
+            "index": 33,
+            "sourceLabel": "Crossing",
+            "group": "detailedAttributes",
+            "key": "Crossing"
+          },
+          {
+            "index": 34,
+            "sourceLabel": "Curve",
+            "group": "detailedAttributes",
+            "key": "Curve"
+          },
+          {
+            "index": 35,
+            "sourceLabel": "Dribbling",
+            "group": "detailedAttributes",
+            "key": "Dribbling"
+          },
+          {
+            "index": 36,
+            "sourceLabel": "Finishing",
+            "group": "detailedAttributes",
+            "key": "Finishing"
+          },
+          {
+            "index": 37,
+            "sourceLabel": "Freekick Acc.",
+            "group": "detailedAttributes",
+            "key": "FreeKickAccuracy"
+          },
+          {
+            "index": 38,
+            "sourceLabel": "Heading Acc.",
+            "group": "detailedAttributes",
+            "key": "HeadingAccuracy"
+          },
+          {
+            "index": 39,
+            "sourceLabel": "Long Pass",
+            "group": "detailedAttributes",
+            "key": "LongPassing"
+          },
+          {
+            "index": 40,
+            "sourceLabel": "Long Shots",
+            "group": "detailedAttributes",
+            "key": "LongShots"
+          },
+          {
+            "index": 41,
+            "sourceLabel": "Marking",
+            "group": "detailedAttributes",
+            "key": "Marking"
+          },
+          {
+            "index": 42,
+            "sourceLabel": "Penalties",
+            "group": "detailedAttributes",
+            "key": "Penalties"
+          },
+          {
+            "index": 43,
+            "sourceLabel": "Short Pass",
+            "group": "detailedAttributes",
+            "key": "ShortPassing"
+          },
+          {
+            "index": 44,
+            "sourceLabel": "Shot Power",
+            "group": "detailedAttributes",
+            "key": "ShotPower"
+          },
+          {
+            "index": 45,
+            "sourceLabel": "Slide Tackle",
+            "group": "detailedAttributes",
+            "key": "SlidingTackle"
+          },
+          {
+            "index": 46,
+            "sourceLabel": "Stand. Tackle",
+            "group": "detailedAttributes",
+            "key": "StandingTackle"
+          },
+          {
+            "index": 47,
+            "sourceLabel": "Volleys",
+            "group": "detailedAttributes",
+            "key": "Volleys"
+          },
+          {
+            "index": 48,
+            "sourceLabel": "DIV",
+            "group": "detailedAttributes",
+            "key": "GK_Diving"
+          },
+          {
+            "index": 49,
+            "sourceLabel": "HAN",
+            "group": "detailedAttributes",
+            "key": "GK_Handling"
+          },
+          {
+            "index": 50,
+            "sourceLabel": "KIC",
+            "group": "detailedAttributes",
+            "key": "GK_Kicking"
+          },
+          {
+            "index": 51,
+            "sourceLabel": "REF",
+            "group": "detailedAttributes",
+            "key": "GK_Reflexes"
+          },
+          {
+            "index": 52,
+            "sourceLabel": "SPE",
+            "group": "detailedAttributes",
+            "key": "GK_Speed"
+          },
+          {
+            "index": 53,
+            "sourceLabel": "POS",
+            "group": "detailedAttributes",
+            "key": "GK_Positioning"
+          },
+          {
+            "index": 54,
+            "sourceLabel": "WF",
+            "group": "skillMetaAttributes",
+            "key": "WF"
+          },
+          {
+            "index": 55,
+            "sourceLabel": "Skill",
+            "group": "skillMetaAttributes",
+            "key": "Skill"
+          },
+          {
+            "index": 56,
+            "sourceLabel": "AW",
+            "group": "skillMetaAttributes",
+            "key": "AW"
+          },
+          {
+            "index": 57,
+            "sourceLabel": "DW",
+            "group": "skillMetaAttributes",
+            "key": "DW"
+          },
+          {
+            "index": 67,
+            "sourceLabel": "Composure",
+            "group": "detailedAttributes",
+            "key": "Composure"
+          }
+        ],
+        "expectedDetailedAttributeKeys": [
+          "Acceleration",
+          "Agility",
+          "Balance",
+          "Jumping",
+          "Reactions",
+          "SprintSpeed",
+          "Stamina",
+          "Strength",
+          "Aggression",
+          "Interceptions",
+          "Positioning",
+          "Vision",
+          "BallControl",
+          "Crossing",
+          "Curve",
+          "Dribbling",
+          "Finishing",
+          "FreeKickAccuracy",
+          "HeadingAccuracy",
+          "LongPassing",
+          "LongShots",
+          "Marking",
+          "Penalties",
+          "ShortPassing",
+          "ShotPower",
+          "SlidingTackle",
+          "StandingTackle",
+          "Volleys",
+          "GK_Diving",
+          "GK_Handling",
+          "GK_Kicking",
+          "GK_Reflexes",
+          "GK_Speed",
+          "GK_Positioning",
+          "Composure"
+        ],
+        "unclassifiedHeaderColumns": [],
+        "duplicateDetailedKeys": [],
+        "completeHeaderEvidence": true
+      },
+      "error": null
+    },
+    {
+      "edition": 25,
+      "url": "https://wefut.com/player-database/25/",
+      "httpStatus": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "cachedBodySha256": "eb6dbae8debf63f184a68a0a30067442378e09a56ea5a992af370bee47da6f46",
+      "cachedBodyCharacters": 4847615,
+      "status": "header_observed",
+      "headerEvidence": {
+        "edition": 25,
+        "sourceUrl": "https://wefut.com/player-database/25/",
+        "tableId": "playerTable",
+        "evidence": "public_playerTable_header",
+        "headerColumnCount": 75,
+        "headerSha256": "86949322e4bd2ce3c5d0185ce3ce390e8e51d45cf10adc4d14bb985ad3c3a28d",
+        "attributeHeaderRange": {
+          "start": 13,
+          "endExclusive": 75
+        },
+        "headerMappingStrategy": "modern_labeled_75_column_server_side_table",
+        "rowAlignmentRequired": true,
+        "frontendSourceContract": {
+          "tableId": "playerTable",
+          "serverSide": true,
+          "ajaxEndpoint": "/ajax/getPlayers/25",
+          "verified": true
+        },
+        "headerBoundaryEvidence": {
+          "nationalityHeaderCount": 1,
+          "minHeaderCount": 0,
+          "maxHeaderCount": 0,
+          "nationalityIndex": 12,
+          "minIndex": null,
+          "maxIndex": null,
+          "verified": true,
+          "strategy": "modern_labeled_75_column_server_side_table"
+        },
+        "columns": [
+          {
+            "index": 13,
+            "sourceLabel": "PAC",
+            "group": "summaryRatings",
+            "key": "PAC"
+          },
+          {
+            "index": 14,
+            "sourceLabel": "SHO",
+            "group": "summaryRatings",
+            "key": "SHO"
+          },
+          {
+            "index": 15,
+            "sourceLabel": "PAS",
+            "group": "summaryRatings",
+            "key": "PAS"
+          },
+          {
+            "index": 16,
+            "sourceLabel": "DRI",
+            "group": "summaryRatings",
+            "key": "DRI"
+          },
+          {
+            "index": 17,
+            "sourceLabel": "DEF",
+            "group": "summaryRatings",
+            "key": "DEF"
+          },
+          {
+            "index": 18,
+            "sourceLabel": "HEA",
+            "group": "summaryRatings",
+            "key": "HEA"
+          },
+          {
+            "index": 19,
+            "sourceLabel": "Acceleration",
+            "group": "detailedAttributes",
+            "key": "Acceleration"
+          },
+          {
+            "index": 20,
+            "sourceLabel": "Agility",
+            "group": "detailedAttributes",
+            "key": "Agility"
+          },
+          {
+            "index": 21,
+            "sourceLabel": "Balance",
+            "group": "detailedAttributes",
+            "key": "Balance"
+          },
+          {
+            "index": 22,
+            "sourceLabel": "Jumping",
+            "group": "detailedAttributes",
+            "key": "Jumping"
+          },
+          {
+            "index": 23,
+            "sourceLabel": "Reactions",
+            "group": "detailedAttributes",
+            "key": "Reactions"
+          },
+          {
+            "index": 24,
+            "sourceLabel": "Sprint Speed",
+            "group": "detailedAttributes",
+            "key": "SprintSpeed"
+          },
+          {
+            "index": 25,
+            "sourceLabel": "Stamina",
+            "group": "detailedAttributes",
+            "key": "Stamina"
+          },
+          {
+            "index": 26,
+            "sourceLabel": "Strength",
+            "group": "detailedAttributes",
+            "key": "Strength"
+          },
+          {
+            "index": 27,
+            "sourceLabel": "Aggression",
+            "group": "detailedAttributes",
+            "key": "Aggression"
+          },
+          {
+            "index": 28,
+            "sourceLabel": "Interceptions",
+            "group": "detailedAttributes",
+            "key": "Interceptions"
+          },
+          {
+            "index": 29,
+            "sourceLabel": "Positioning",
+            "group": "detailedAttributes",
+            "key": "Positioning"
+          },
+          {
+            "index": 30,
+            "sourceLabel": "Vision",
+            "group": "detailedAttributes",
+            "key": "Vision"
+          },
+          {
+            "index": 31,
+            "sourceLabel": "Potential",
+            "group": "potentialMetaAttributes",
+            "key": "Potential"
+          },
+          {
+            "index": 32,
+            "sourceLabel": "Ball Control",
+            "group": "detailedAttributes",
+            "key": "BallControl"
+          },
+          {
+            "index": 33,
+            "sourceLabel": "Crossing",
+            "group": "detailedAttributes",
+            "key": "Crossing"
+          },
+          {
+            "index": 34,
+            "sourceLabel": "Curve",
+            "group": "detailedAttributes",
+            "key": "Curve"
+          },
+          {
+            "index": 35,
+            "sourceLabel": "Dribbling",
+            "group": "detailedAttributes",
+            "key": "Dribbling"
+          },
+          {
+            "index": 36,
+            "sourceLabel": "Finishing",
+            "group": "detailedAttributes",
+            "key": "Finishing"
+          },
+          {
+            "index": 37,
+            "sourceLabel": "Free Kick Acc.",
+            "group": "detailedAttributes",
+            "key": "FreeKickAccuracy"
+          },
+          {
+            "index": 38,
+            "sourceLabel": "Heading Acc.",
+            "group": "detailedAttributes",
+            "key": "HeadingAccuracy"
+          },
+          {
+            "index": 39,
+            "sourceLabel": "Long Pass",
+            "group": "detailedAttributes",
+            "key": "LongPassing"
+          },
+          {
+            "index": 40,
+            "sourceLabel": "Long Shots",
+            "group": "detailedAttributes",
+            "key": "LongShots"
+          },
+          {
+            "index": 41,
+            "sourceLabel": "Marking",
+            "group": "detailedAttributes",
+            "key": "Marking"
+          },
+          {
+            "index": 42,
+            "sourceLabel": "Penalties",
+            "group": "detailedAttributes",
+            "key": "Penalties"
+          },
+          {
+            "index": 43,
+            "sourceLabel": "Short Pass",
+            "group": "detailedAttributes",
+            "key": "ShortPassing"
+          },
+          {
+            "index": 44,
+            "sourceLabel": "Shot Power",
+            "group": "detailedAttributes",
+            "key": "ShotPower"
+          },
+          {
+            "index": 45,
+            "sourceLabel": "Slide Tackle",
+            "group": "detailedAttributes",
+            "key": "SlidingTackle"
+          },
+          {
+            "index": 46,
+            "sourceLabel": "Stand. Tackle",
+            "group": "detailedAttributes",
+            "key": "StandingTackle"
+          },
+          {
+            "index": 47,
+            "sourceLabel": "Volleys",
+            "group": "detailedAttributes",
+            "key": "Volleys"
+          },
+          {
+            "index": 48,
+            "sourceLabel": "DIV",
+            "group": "detailedAttributes",
+            "key": "GK_Diving"
+          },
+          {
+            "index": 49,
+            "sourceLabel": "HAN",
+            "group": "detailedAttributes",
+            "key": "GK_Handling"
+          },
+          {
+            "index": 50,
+            "sourceLabel": "KIC",
+            "group": "detailedAttributes",
+            "key": "GK_Kicking"
+          },
+          {
+            "index": 51,
+            "sourceLabel": "REF",
+            "group": "detailedAttributes",
+            "key": "GK_Reflexes"
+          },
+          {
+            "index": 52,
+            "sourceLabel": "SPE",
+            "group": "detailedAttributes",
+            "key": "GK_Speed"
+          },
+          {
+            "index": 53,
+            "sourceLabel": "POS",
+            "group": "detailedAttributes",
+            "key": "GK_Positioning"
+          },
+          {
+            "index": 54,
+            "sourceLabel": "WF",
+            "group": "skillMetaAttributes",
+            "key": "WF"
+          },
+          {
+            "index": 55,
+            "sourceLabel": "Skill",
+            "group": "skillMetaAttributes",
+            "key": "Skill"
+          },
+          {
+            "index": 67,
+            "sourceLabel": "Composure",
+            "group": "detailedAttributes",
+            "key": "Composure"
+          }
+        ],
+        "expectedDetailedAttributeKeys": [
+          "Acceleration",
+          "Agility",
+          "Balance",
+          "Jumping",
+          "Reactions",
+          "SprintSpeed",
+          "Stamina",
+          "Strength",
+          "Aggression",
+          "Interceptions",
+          "Positioning",
+          "Vision",
+          "BallControl",
+          "Crossing",
+          "Curve",
+          "Dribbling",
+          "Finishing",
+          "FreeKickAccuracy",
+          "HeadingAccuracy",
+          "LongPassing",
+          "LongShots",
+          "Marking",
+          "Penalties",
+          "ShortPassing",
+          "ShotPower",
+          "SlidingTackle",
+          "StandingTackle",
+          "Volleys",
+          "GK_Diving",
+          "GK_Handling",
+          "GK_Kicking",
+          "GK_Reflexes",
+          "GK_Speed",
+          "GK_Positioning",
+          "Composure"
+        ],
+        "unclassifiedHeaderColumns": [],
+        "duplicateDetailedKeys": [],
+        "completeHeaderEvidence": true
+      },
+      "error": null
+    },
+    {
+      "edition": 26,
+      "url": "https://wefut.com/player-database/26/",
+      "httpStatus": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "cachedBodySha256": "abeefb131c09f3c20fcfa276d73d641db42578885d934dbc3255da82d9e67b34",
+      "cachedBodyCharacters": 4968951,
+      "status": "header_observed",
+      "headerEvidence": {
+        "edition": 26,
+        "sourceUrl": "https://wefut.com/player-database/26/",
+        "tableId": "playerTable",
+        "evidence": "public_playerTable_header",
+        "headerColumnCount": 75,
+        "headerSha256": "86949322e4bd2ce3c5d0185ce3ce390e8e51d45cf10adc4d14bb985ad3c3a28d",
+        "attributeHeaderRange": {
+          "start": 13,
+          "endExclusive": 75
+        },
+        "headerMappingStrategy": "modern_labeled_75_column_server_side_table",
+        "rowAlignmentRequired": true,
+        "frontendSourceContract": {
+          "tableId": "playerTable",
+          "serverSide": true,
+          "ajaxEndpoint": "/ajax/getPlayers/26",
+          "verified": true
+        },
+        "headerBoundaryEvidence": {
+          "nationalityHeaderCount": 1,
+          "minHeaderCount": 0,
+          "maxHeaderCount": 0,
+          "nationalityIndex": 12,
+          "minIndex": null,
+          "maxIndex": null,
+          "verified": true,
+          "strategy": "modern_labeled_75_column_server_side_table"
+        },
+        "columns": [
+          {
+            "index": 13,
+            "sourceLabel": "PAC",
+            "group": "summaryRatings",
+            "key": "PAC"
+          },
+          {
+            "index": 14,
+            "sourceLabel": "SHO",
+            "group": "summaryRatings",
+            "key": "SHO"
+          },
+          {
+            "index": 15,
+            "sourceLabel": "PAS",
+            "group": "summaryRatings",
+            "key": "PAS"
+          },
+          {
+            "index": 16,
+            "sourceLabel": "DRI",
+            "group": "summaryRatings",
+            "key": "DRI"
+          },
+          {
+            "index": 17,
+            "sourceLabel": "DEF",
+            "group": "summaryRatings",
+            "key": "DEF"
+          },
+          {
+            "index": 18,
+            "sourceLabel": "HEA",
+            "group": "summaryRatings",
+            "key": "HEA"
+          },
+          {
+            "index": 19,
+            "sourceLabel": "Acceleration",
+            "group": "detailedAttributes",
+            "key": "Acceleration"
+          },
+          {
+            "index": 20,
+            "sourceLabel": "Agility",
+            "group": "detailedAttributes",
+            "key": "Agility"
+          },
+          {
+            "index": 21,
+            "sourceLabel": "Balance",
+            "group": "detailedAttributes",
+            "key": "Balance"
+          },
+          {
+            "index": 22,
+            "sourceLabel": "Jumping",
+            "group": "detailedAttributes",
+            "key": "Jumping"
+          },
+          {
+            "index": 23,
+            "sourceLabel": "Reactions",
+            "group": "detailedAttributes",
+            "key": "Reactions"
+          },
+          {
+            "index": 24,
+            "sourceLabel": "Sprint Speed",
+            "group": "detailedAttributes",
+            "key": "SprintSpeed"
+          },
+          {
+            "index": 25,
+            "sourceLabel": "Stamina",
+            "group": "detailedAttributes",
+            "key": "Stamina"
+          },
+          {
+            "index": 26,
+            "sourceLabel": "Strength",
+            "group": "detailedAttributes",
+            "key": "Strength"
+          },
+          {
+            "index": 27,
+            "sourceLabel": "Aggression",
+            "group": "detailedAttributes",
+            "key": "Aggression"
+          },
+          {
+            "index": 28,
+            "sourceLabel": "Interceptions",
+            "group": "detailedAttributes",
+            "key": "Interceptions"
+          },
+          {
+            "index": 29,
+            "sourceLabel": "Positioning",
+            "group": "detailedAttributes",
+            "key": "Positioning"
+          },
+          {
+            "index": 30,
+            "sourceLabel": "Vision",
+            "group": "detailedAttributes",
+            "key": "Vision"
+          },
+          {
+            "index": 31,
+            "sourceLabel": "Potential",
+            "group": "potentialMetaAttributes",
+            "key": "Potential"
+          },
+          {
+            "index": 32,
+            "sourceLabel": "Ball Control",
+            "group": "detailedAttributes",
+            "key": "BallControl"
+          },
+          {
+            "index": 33,
+            "sourceLabel": "Crossing",
+            "group": "detailedAttributes",
+            "key": "Crossing"
+          },
+          {
+            "index": 34,
+            "sourceLabel": "Curve",
+            "group": "detailedAttributes",
+            "key": "Curve"
+          },
+          {
+            "index": 35,
+            "sourceLabel": "Dribbling",
+            "group": "detailedAttributes",
+            "key": "Dribbling"
+          },
+          {
+            "index": 36,
+            "sourceLabel": "Finishing",
+            "group": "detailedAttributes",
+            "key": "Finishing"
+          },
+          {
+            "index": 37,
+            "sourceLabel": "Free Kick Acc.",
+            "group": "detailedAttributes",
+            "key": "FreeKickAccuracy"
+          },
+          {
+            "index": 38,
+            "sourceLabel": "Heading Acc.",
+            "group": "detailedAttributes",
+            "key": "HeadingAccuracy"
+          },
+          {
+            "index": 39,
+            "sourceLabel": "Long Pass",
+            "group": "detailedAttributes",
+            "key": "LongPassing"
+          },
+          {
+            "index": 40,
+            "sourceLabel": "Long Shots",
+            "group": "detailedAttributes",
+            "key": "LongShots"
+          },
+          {
+            "index": 41,
+            "sourceLabel": "Marking",
+            "group": "detailedAttributes",
+            "key": "Marking"
+          },
+          {
+            "index": 42,
+            "sourceLabel": "Penalties",
+            "group": "detailedAttributes",
+            "key": "Penalties"
+          },
+          {
+            "index": 43,
+            "sourceLabel": "Short Pass",
+            "group": "detailedAttributes",
+            "key": "ShortPassing"
+          },
+          {
+            "index": 44,
+            "sourceLabel": "Shot Power",
+            "group": "detailedAttributes",
+            "key": "ShotPower"
+          },
+          {
+            "index": 45,
+            "sourceLabel": "Slide Tackle",
+            "group": "detailedAttributes",
+            "key": "SlidingTackle"
+          },
+          {
+            "index": 46,
+            "sourceLabel": "Stand. Tackle",
+            "group": "detailedAttributes",
+            "key": "StandingTackle"
+          },
+          {
+            "index": 47,
+            "sourceLabel": "Volleys",
+            "group": "detailedAttributes",
+            "key": "Volleys"
+          },
+          {
+            "index": 48,
+            "sourceLabel": "DIV",
+            "group": "detailedAttributes",
+            "key": "GK_Diving"
+          },
+          {
+            "index": 49,
+            "sourceLabel": "HAN",
+            "group": "detailedAttributes",
+            "key": "GK_Handling"
+          },
+          {
+            "index": 50,
+            "sourceLabel": "KIC",
+            "group": "detailedAttributes",
+            "key": "GK_Kicking"
+          },
+          {
+            "index": 51,
+            "sourceLabel": "REF",
+            "group": "detailedAttributes",
+            "key": "GK_Reflexes"
+          },
+          {
+            "index": 52,
+            "sourceLabel": "SPE",
+            "group": "detailedAttributes",
+            "key": "GK_Speed"
+          },
+          {
+            "index": 53,
+            "sourceLabel": "POS",
+            "group": "detailedAttributes",
+            "key": "GK_Positioning"
+          },
+          {
+            "index": 54,
+            "sourceLabel": "WF",
+            "group": "skillMetaAttributes",
+            "key": "WF"
+          },
+          {
+            "index": 55,
+            "sourceLabel": "Skill",
+            "group": "skillMetaAttributes",
+            "key": "Skill"
+          },
+          {
+            "index": 67,
+            "sourceLabel": "Composure",
+            "group": "detailedAttributes",
+            "key": "Composure"
+          }
+        ],
+        "expectedDetailedAttributeKeys": [
+          "Acceleration",
+          "Agility",
+          "Balance",
+          "Jumping",
+          "Reactions",
+          "SprintSpeed",
+          "Stamina",
+          "Strength",
+          "Aggression",
+          "Interceptions",
+          "Positioning",
+          "Vision",
+          "BallControl",
+          "Crossing",
+          "Curve",
+          "Dribbling",
+          "Finishing",
+          "FreeKickAccuracy",
+          "HeadingAccuracy",
+          "LongPassing",
+          "LongShots",
+          "Marking",
+          "Penalties",
+          "ShortPassing",
+          "ShotPower",
+          "SlidingTackle",
+          "StandingTackle",
+          "Volleys",
+          "GK_Diving",
+          "GK_Handling",
+          "GK_Kicking",
+          "GK_Reflexes",
+          "GK_Speed",
+          "GK_Positioning",
+          "Composure"
+        ],
+        "unclassifiedHeaderColumns": [],
+        "duplicateDetailedKeys": [],
+        "completeHeaderEvidence": true
+      },
+      "error": null
+    },
+    {
+      "edition": 27,
+      "url": "https://wefut.com/player-database/27/",
+      "httpStatus": 200,
+      "contentType": "text/html; charset=UTF-8",
+      "cachedBodySha256": "8df08033bfb0fe43d6898a4b314f201f9a8263d66f6e9831ef77a7dfbb78ca74",
+      "cachedBodyCharacters": 5509746,
+      "status": "header_observed",
+      "headerEvidence": {
+        "edition": 27,
+        "sourceUrl": "https://wefut.com/player-database/27/",
+        "tableId": "playerTable",
+        "evidence": "public_playerTable_header",
+        "headerColumnCount": 75,
+        "headerSha256": "86949322e4bd2ce3c5d0185ce3ce390e8e51d45cf10adc4d14bb985ad3c3a28d",
+        "attributeHeaderRange": {
+          "start": 13,
+          "endExclusive": 75
+        },
+        "headerMappingStrategy": "modern_labeled_75_column_server_side_table",
+        "rowAlignmentRequired": true,
+        "frontendSourceContract": {
+          "tableId": "playerTable",
+          "serverSide": true,
+          "ajaxEndpoint": "/ajax/getPlayers/27",
+          "verified": true
+        },
+        "headerBoundaryEvidence": {
+          "nationalityHeaderCount": 1,
+          "minHeaderCount": 0,
+          "maxHeaderCount": 0,
+          "nationalityIndex": 12,
+          "minIndex": null,
+          "maxIndex": null,
+          "verified": true,
+          "strategy": "modern_labeled_75_column_server_side_table"
+        },
+        "columns": [
+          {
+            "index": 13,
+            "sourceLabel": "PAC",
+            "group": "summaryRatings",
+            "key": "PAC"
+          },
+          {
+            "index": 14,
+            "sourceLabel": "SHO",
+            "group": "summaryRatings",
+            "key": "SHO"
+          },
+          {
+            "index": 15,
+            "sourceLabel": "PAS",
+            "group": "summaryRatings",
+            "key": "PAS"
+          },
+          {
+            "index": 16,
+            "sourceLabel": "DRI",
+            "group": "summaryRatings",
+            "key": "DRI"
+          },
+          {
+            "index": 17,
+            "sourceLabel": "DEF",
+            "group": "summaryRatings",
+            "key": "DEF"
+          },
+          {
+            "index": 18,
+            "sourceLabel": "HEA",
+            "group": "summaryRatings",
+            "key": "HEA"
+          },
+          {
+            "index": 19,
+            "sourceLabel": "Acceleration",
+            "group": "detailedAttributes",
+            "key": "Acceleration"
+          },
+          {
+            "index": 20,
+            "sourceLabel": "Agility",
+            "group": "detailedAttributes",
+            "key": "Agility"
+          },
+          {
+            "index": 21,
+            "sourceLabel": "Balance",
+            "group": "detailedAttributes",
+            "key": "Balance"
+          },
+          {
+            "index": 22,
+            "sourceLabel": "Jumping",
+            "group": "detailedAttributes",
+            "key": "Jumping"
+          },
+          {
+            "index": 23,
+            "sourceLabel": "Reactions",
+            "group": "detailedAttributes",
+            "key": "Reactions"
+          },
+          {
+            "index": 24,
+            "sourceLabel": "Sprint Speed",
+            "group": "detailedAttributes",
+            "key": "SprintSpeed"
+          },
+          {
+            "index": 25,
+            "sourceLabel": "Stamina",
+            "group": "detailedAttributes",
+            "key": "Stamina"
+          },
+          {
+            "index": 26,
+            "sourceLabel": "Strength",
+            "group": "detailedAttributes",
+            "key": "Strength"
+          },
+          {
+            "index": 27,
+            "sourceLabel": "Aggression",
+            "group": "detailedAttributes",
+            "key": "Aggression"
+          },
+          {
+            "index": 28,
+            "sourceLabel": "Interceptions",
+            "group": "detailedAttributes",
+            "key": "Interceptions"
+          },
+          {
+            "index": 29,
+            "sourceLabel": "Positioning",
+            "group": "detailedAttributes",
+            "key": "Positioning"
+          },
+          {
+            "index": 30,
+            "sourceLabel": "Vision",
+            "group": "detailedAttributes",
+            "key": "Vision"
+          },
+          {
+            "index": 31,
+            "sourceLabel": "Potential",
+            "group": "potentialMetaAttributes",
+            "key": "Potential"
+          },
+          {
+            "index": 32,
+            "sourceLabel": "Ball Control",
+            "group": "detailedAttributes",
+            "key": "BallControl"
+          },
+          {
+            "index": 33,
+            "sourceLabel": "Crossing",
+            "group": "detailedAttributes",
+            "key": "Crossing"
+          },
+          {
+            "index": 34,
+            "sourceLabel": "Curve",
+            "group": "detailedAttributes",
+            "key": "Curve"
+          },
+          {
+            "index": 35,
+            "sourceLabel": "Dribbling",
+            "group": "detailedAttributes",
+            "key": "Dribbling"
+          },
+          {
+            "index": 36,
+            "sourceLabel": "Finishing",
+            "group": "detailedAttributes",
+            "key": "Finishing"
+          },
+          {
+            "index": 37,
+            "sourceLabel": "Free Kick Acc.",
+            "group": "detailedAttributes",
+            "key": "FreeKickAccuracy"
+          },
+          {
+            "index": 38,
+            "sourceLabel": "Heading Acc.",
+            "group": "detailedAttributes",
+            "key": "HeadingAccuracy"
+          },
+          {
+            "index": 39,
+            "sourceLabel": "Long Pass",
+            "group": "detailedAttributes",
+            "key": "LongPassing"
+          },
+          {
+            "index": 40,
+            "sourceLabel": "Long Shots",
+            "group": "detailedAttributes",
+            "key": "LongShots"
+          },
+          {
+            "index": 41,
+            "sourceLabel": "Marking",
+            "group": "detailedAttributes",
+            "key": "Marking"
+          },
+          {
+            "index": 42,
+            "sourceLabel": "Penalties",
+            "group": "detailedAttributes",
+            "key": "Penalties"
+          },
+          {
+            "index": 43,
+            "sourceLabel": "Short Pass",
+            "group": "detailedAttributes",
+            "key": "ShortPassing"
+          },
+          {
+            "index": 44,
+            "sourceLabel": "Shot Power",
+            "group": "detailedAttributes",
+            "key": "ShotPower"
+          },
+          {
+            "index": 45,
+            "sourceLabel": "Slide Tackle",
+            "group": "detailedAttributes",
+            "key": "SlidingTackle"
+          },
+          {
+            "index": 46,
+            "sourceLabel": "Stand. Tackle",
+            "group": "detailedAttributes",
+            "key": "StandingTackle"
+          },
+          {
+            "index": 47,
+            "sourceLabel": "Volleys",
+            "group": "detailedAttributes",
+            "key": "Volleys"
+          },
+          {
+            "index": 48,
+            "sourceLabel": "DIV",
+            "group": "detailedAttributes",
+            "key": "GK_Diving"
+          },
+          {
+            "index": 49,
+            "sourceLabel": "HAN",
+            "group": "detailedAttributes",
+            "key": "GK_Handling"
+          },
+          {
+            "index": 50,
+            "sourceLabel": "KIC",
+            "group": "detailedAttributes",
+            "key": "GK_Kicking"
+          },
+          {
+            "index": 51,
+            "sourceLabel": "REF",
+            "group": "detailedAttributes",
+            "key": "GK_Reflexes"
+          },
+          {
+            "index": 52,
+            "sourceLabel": "SPE",
+            "group": "detailedAttributes",
+            "key": "GK_Speed"
+          },
+          {
+            "index": 53,
+            "sourceLabel": "POS",
+            "group": "detailedAttributes",
+            "key": "GK_Positioning"
+          },
+          {
+            "index": 54,
+            "sourceLabel": "WF",
+            "group": "skillMetaAttributes",
+            "key": "WF"
+          },
+          {
+            "index": 55,
+            "sourceLabel": "Skill",
+            "group": "skillMetaAttributes",
+            "key": "Skill"
+          },
+          {
+            "index": 67,
+            "sourceLabel": "Composure",
+            "group": "detailedAttributes",
+            "key": "Composure"
+          }
+        ],
+        "expectedDetailedAttributeKeys": [
+          "Acceleration",
+          "Agility",
+          "Balance",
+          "Jumping",
+          "Reactions",
+          "SprintSpeed",
+          "Stamina",
+          "Strength",
+          "Aggression",
+          "Interceptions",
+          "Positioning",
+          "Vision",
+          "BallControl",
+          "Crossing",
+          "Curve",
+          "Dribbling",
+          "Finishing",
+          "FreeKickAccuracy",
+          "HeadingAccuracy",
+          "LongPassing",
+          "LongShots",
+          "Marking",
+          "Penalties",
+          "ShortPassing",
+          "ShotPower",
+          "SlidingTackle",
+          "StandingTackle",
+          "Volleys",
+          "GK_Diving",
+          "GK_Handling",
+          "GK_Kicking",
+          "GK_Reflexes",
+          "GK_Speed",
+          "GK_Positioning",
+          "Composure"
+        ],
+        "unclassifiedHeaderColumns": [],
+        "duplicateDetailedKeys": [],
+        "completeHeaderEvidence": true
+      },
+      "error": null
+    }
+  ]
+}

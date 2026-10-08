@@ -1,0 +1,293 @@
+{
+  "schemaVersion": "historical-card-search-run-manifest/1",
+  "generatedAt": "2026-10-08T11:37:20.213Z",
+  "runtime": {
+    "node": "v24.15.0",
+    "platform": "win32",
+    "defaultPerOriginDelayMs": 900,
+    "acquisitionPerOriginDelayMs": null,
+    "acquisitionRateNote": "The worker delay defaults to 900 ms and can be overridden with HISTORICAL_CARD_RATE_MS. The acquisition process environment is not saved in checkpoints, so this manifest does not assert the effective historical value."
+  },
+  "timestampProvenance": {
+    "taskClockUtcAtMerge": "2026-10-08T11:37:11Z",
+    "workerCheckpointTimestampsPreservedRaw": true,
+    "note": "Acquisition timestamps are copied as recorded; this merge does not normalize, rewrite, or imply a fresh fetch time."
+  },
+  "inputCounts": {
+    "distinctPlayers": 95,
+    "playerSeasons": 99,
+    "teams": null
+  },
+  "inputSha256": {
+    "inputs/players.json": "9a674319ef4839b7d9c229f2436e966c471a626f760e966055964f737ea5ae43",
+    "inputs/player-seasons.json": "c093a6edaa7bacf2e8f63007f6a52c7e0aeed420b567fbfbdeb497b39789eb48",
+    "inputs/source-summary.json": "afdb06eaf38f195ec26d197f64038d0733fa26a16ad1983b9bb4152aac635332"
+  },
+  "inputSearchEntityKeysSha256": "1d37564bfc755143d94f563fed16d35e643d653bfb5f91b460860060960d7495",
+  "acquisition": {
+    "note": "Search responses were acquired by the frozen isolated worker copies listed below. The final namespace confidence and Nexon attribute normalization are offline enrichment, and do not imply raw responses were acquired with the current post-processing code.",
+    "sites": {
+      "wefut": {
+        "checkpointUsedForMerge": ".cache\\full-run-workers\\wefut\\.cache\\full-progress.json",
+        "checkpointUsedForMergeSha256": "2b4cb7edc769319af3d252259b07e4087d58914b7ade3d3f67582f65d38a66ca",
+        "originalAcquisitionCheckpoint": ".cache\\full-run-workers\\wefut\\.cache\\full-progress.json",
+        "originalAcquisitionCheckpointSha256": "2b4cb7edc769319af3d252259b07e4087d58914b7ade3d3f67582f65d38a66ca",
+        "acquisitionWorkerRoot": ".cache\\full-run-workers\\wefut",
+        "acquisitionCodeSha256": {
+          "scripts/search.mjs": "437b32a0161a8a4a6268b174fd643fd973af03ae2668416521e82cfc648d3415",
+          "scripts/http-transport.mjs": "8eed92e0827b6877f1afd0db82be03f1056ccf028f3b66ebfcc0b49d0f5d3415",
+          "scripts/job-retry.mjs": "e6933d91737fcbfc7e53d4ef20b013d6bf6113bd4a8896fa43a074d9ee758562",
+          "scripts/search-entity-key.mjs": "7ce429ef5a79a26a01cfc33880903635f8713b0f4fdee90aeda04783f76a2437"
+        },
+        "checkpointJobTimestampRangeRaw": {
+          "first": "2026-10-08T06:46:04.562Z",
+          "last": "2026-10-08T09:39:23.116Z",
+          "observedOffsets": [
+            "Z"
+          ]
+        },
+        "mergedAccounting": {
+          "attemptedInputJobs": 95,
+          "jobsPendingRetry": 49,
+          "candidatesIncluded": 2625,
+          "observationsIncluded": 95,
+          "missingObservationsRecorded": 0,
+          "errorsIncluded": 4148,
+          "foreignOrOutOfScopeJobKeysExcluded": 12,
+          "foreignOrOutOfScopeCandidatesExcluded": 93,
+          "foreignOrOutOfScopeObservationsExcluded": 12,
+          "foreignOrOutOfScopeErrorsExcluded": 0,
+          "identityConfidenceCounts": {
+            "high": 0,
+            "low": 1122,
+            "none": 1503,
+            "unverified": 0
+          },
+          "offlineNexonAttributeReparse": null
+        }
+      },
+      "fo4": {
+        "checkpointUsedForMerge": ".cache\\full-run-workers\\fo4\\.cache\\full-progress.json",
+        "checkpointUsedForMergeSha256": "9c3b3b71f759fdc12649de72638a9e8dd910120420cea5a1b5baee55739f9646",
+        "originalAcquisitionCheckpoint": ".cache\\full-run-workers\\fo4\\.cache\\full-progress.json",
+        "originalAcquisitionCheckpointSha256": "9c3b3b71f759fdc12649de72638a9e8dd910120420cea5a1b5baee55739f9646",
+        "acquisitionWorkerRoot": ".cache\\full-run-workers\\fo4",
+        "acquisitionCodeSha256": {
+          "scripts/search.mjs": "437b32a0161a8a4a6268b174fd643fd973af03ae2668416521e82cfc648d3415",
+          "scripts/http-transport.mjs": "8eed92e0827b6877f1afd0db82be03f1056ccf028f3b66ebfcc0b49d0f5d3415",
+          "scripts/job-retry.mjs": "e6933d91737fcbfc7e53d4ef20b013d6bf6113bd4a8896fa43a074d9ee758562",
+          "scripts/search-entity-key.mjs": "7ce429ef5a79a26a01cfc33880903635f8713b0f4fdee90aeda04783f76a2437"
+        },
+        "checkpointJobTimestampRangeRaw": {
+          "first": "2026-10-08T06:45:35.307Z",
+          "last": "2026-10-08T07:11:42.576Z",
+          "observedOffsets": [
+            "Z"
+          ]
+        },
+        "mergedAccounting": {
+          "attemptedInputJobs": 95,
+          "jobsPendingRetry": 0,
+          "candidatesIncluded": 1735,
+          "observationsIncluded": 95,
+          "missingObservationsRecorded": 0,
+          "errorsIncluded": 0,
+          "foreignOrOutOfScopeJobKeysExcluded": 12,
+          "foreignOrOutOfScopeCandidatesExcluded": 115,
+          "foreignOrOutOfScopeObservationsExcluded": 12,
+          "foreignOrOutOfScopeErrorsExcluded": 158,
+          "identityConfidenceCounts": {
+            "high": 0,
+            "low": 835,
+            "none": 900,
+            "unverified": 0
+          },
+          "offlineNexonAttributeReparse": null
+        }
+      },
+      "fo3": {
+        "checkpointUsedForMerge": ".cache\\full-run-workers\\fo3\\.cache\\full-progress.json",
+        "checkpointUsedForMergeSha256": "e5ed69f3b2f5e7b69242bc9ead307ff3e392384e25392fe38b33a6add82d0e3c",
+        "originalAcquisitionCheckpoint": ".cache\\full-run-workers\\fo3\\.cache\\full-progress.json",
+        "originalAcquisitionCheckpointSha256": "e5ed69f3b2f5e7b69242bc9ead307ff3e392384e25392fe38b33a6add82d0e3c",
+        "acquisitionWorkerRoot": ".cache\\full-run-workers\\fo3",
+        "acquisitionCodeSha256": {
+          "scripts/search.mjs": "437b32a0161a8a4a6268b174fd643fd973af03ae2668416521e82cfc648d3415",
+          "scripts/http-transport.mjs": "8eed92e0827b6877f1afd0db82be03f1056ccf028f3b66ebfcc0b49d0f5d3415",
+          "scripts/job-retry.mjs": "e6933d91737fcbfc7e53d4ef20b013d6bf6113bd4a8896fa43a074d9ee758562",
+          "scripts/search-entity-key.mjs": "7ce429ef5a79a26a01cfc33880903635f8713b0f4fdee90aeda04783f76a2437"
+        },
+        "checkpointJobTimestampRangeRaw": {
+          "first": "2026-10-08T06:45:35.307Z",
+          "last": "2026-10-08T07:03:11.514Z",
+          "observedOffsets": [
+            "Z"
+          ]
+        },
+        "mergedAccounting": {
+          "attemptedInputJobs": 95,
+          "jobsPendingRetry": 0,
+          "candidatesIncluded": 856,
+          "observationsIncluded": 95,
+          "missingObservationsRecorded": 0,
+          "errorsIncluded": 0,
+          "foreignOrOutOfScopeJobKeysExcluded": 12,
+          "foreignOrOutOfScopeCandidatesExcluded": 170,
+          "foreignOrOutOfScopeObservationsExcluded": 12,
+          "foreignOrOutOfScopeErrorsExcluded": 158,
+          "identityConfidenceCounts": {
+            "high": 0,
+            "low": 225,
+            "none": 631,
+            "unverified": 0
+          },
+          "offlineNexonAttributeReparse": null
+        }
+      },
+      "nexon-fco": {
+        "checkpointUsedForMerge": ".cache\\nexon-reparse-progress.json",
+        "checkpointUsedForMergeSha256": "e4cba4adc919f2fea8fb35992379887e6d3796283c7411fc240bfb30ee14d623",
+        "originalAcquisitionCheckpoint": ".cache\\full-run-workers\\nexon-fco\\.cache\\full-progress.json",
+        "originalAcquisitionCheckpointSha256": "82a980a3b17c6b27049410a153539fdd5ed36c5bc5d487595e4c647f3aa723ba",
+        "acquisitionWorkerRoot": ".cache\\full-run-workers\\nexon-fco",
+        "acquisitionCodeSha256": {
+          "scripts/search.mjs": "437b32a0161a8a4a6268b174fd643fd973af03ae2668416521e82cfc648d3415",
+          "scripts/http-transport.mjs": "8eed92e0827b6877f1afd0db82be03f1056ccf028f3b66ebfcc0b49d0f5d3415",
+          "scripts/job-retry.mjs": "e6933d91737fcbfc7e53d4ef20b013d6bf6113bd4a8896fa43a074d9ee758562",
+          "scripts/search-entity-key.mjs": "7ce429ef5a79a26a01cfc33880903635f8713b0f4fdee90aeda04783f76a2437"
+        },
+        "checkpointJobTimestampRangeRaw": {
+          "first": "2026-10-08T06:46:12.539Z",
+          "last": "2026-10-08T07:07:51.602Z",
+          "observedOffsets": [
+            "Z"
+          ]
+        },
+        "mergedAccounting": {
+          "attemptedInputJobs": 95,
+          "jobsPendingRetry": 0,
+          "candidatesIncluded": 531,
+          "observationsIncluded": 95,
+          "missingObservationsRecorded": 0,
+          "errorsIncluded": 0,
+          "foreignOrOutOfScopeJobKeysExcluded": 0,
+          "foreignOrOutOfScopeCandidatesExcluded": 0,
+          "foreignOrOutOfScopeObservationsExcluded": 0,
+          "foreignOrOutOfScopeErrorsExcluded": 0,
+          "identityConfidenceCounts": {
+            "high": 0,
+            "low": 0,
+            "none": 0,
+            "unverified": 531
+          },
+          "offlineNexonAttributeReparse": {
+            "source": "saved HTTP cache only; this utility never makes requests",
+            "parsedCandidates": 531,
+            "missingOrFailedCache": 0,
+            "detailedAttributeCandidates": 531,
+            "nativeEntryCounts": {
+              "40": 531
+            },
+            "errors": []
+          }
+        }
+      }
+    }
+  },
+  "postprocessingCodeSha256": {
+    "scripts/identity-evidence.mjs": "c3e80f259cd82ba80b1d68a009b7c47dee60afdaf4b40e5246fa2e864363c5f5",
+    "scripts/source-card-identity.mjs": "38c149f37e071852fcec41fc1bbafa0ef53d8ce293c6f39b9f6d73f6e3c9b05d",
+    "scripts/nexon-attributes.mjs": "e4bf9f90576a7acf60986a4e56bc35c5a41df2e82f3cdfe57ac410238fc05e3e",
+    "scripts/reparse-nexon-cache.mjs": "5092e2988796692f7639434323a31e0d3646f7b7e1eb3ed65675ba995c271646",
+    "scripts/worker-merge.mjs": "dcca7aed10c5bf889863db40804262c55927a5b6f7ad2c6f4acd9accff78dd6e",
+    "scripts/merge-workers.mjs": "5d0b574e26df615064b9b7687cfc0933586752abbd16874675abced541458800",
+    "scripts/build-report.mjs": "3288003e36dc4fbee3d4135d331da95c8d376b009c06c6d4e02e67279ea899f0",
+    "scripts/compact-candidates.mjs": "4c61a6141d24c69bd750b7ea32b17161b1b3f43e6a9111da2914237a21c39586"
+  },
+  "nexonStaticMetadataCache": {
+    "spid": {
+      "url": "https://open.api.nexon.com/static/fconline/meta/spid.json",
+      "status": 200,
+      "cachedResponse": ".cache\\full-run-workers\\nexon-fco\\.cache\\http\\74e888747095f38c0e9651c9764f9943807ca03c317879d282af02207ee0863f.json",
+      "bodySha256": "9a3f11be7d2d3bebef4122fdcc214a334c18341b276aaa929884bcf9f2fd182b",
+      "entries": 88359,
+      "fields": [
+        "id",
+        "name"
+      ]
+    },
+    "seasonid": {
+      "url": "https://open.api.nexon.com/static/fconline/meta/seasonid.json",
+      "status": 200,
+      "cachedResponse": ".cache\\full-run-workers\\nexon-fco\\.cache\\http\\03204ddea6684e05f36ff0c2842f9ed6cca2555164ff3c7519c5b2ac7849a7fa.json",
+      "bodySha256": "563b46345ecbbb31c754376a652eef068848572482e75e113efd97d2a83e38c2",
+      "entries": 153,
+      "fields": [
+        "seasonId",
+        "className",
+        "seasonImg"
+      ]
+    }
+  },
+  "outputs": {
+    "checkpoint": ".cache\\full-progress.json",
+    "candidateFile": "results\\candidates.json",
+    "runManifest": "results\\run-manifest.json",
+    "reportCommand": "node scripts/build-report.mjs",
+    "attemptedSiteJobs": {
+      "wefut": 95,
+      "fo4": 95,
+      "fo3": 95,
+      "nexon-fco": 95
+    },
+    "pendingRetryJobs": {
+      "wefut": 49,
+      "fo4": 0,
+      "fo3": 0,
+      "nexon-fco": 0
+    },
+    "candidateCounts": {
+      "wefut": 2625,
+      "fo4": 1735,
+      "fo3": 856,
+      "nexon-fco": 531
+    },
+    "artifactSha256": {
+      "results/candidates.json": "1ff4aafda3ad1a0cfd068f44606a3511de270fdc8705256e84ff9a9d7a6ec14f",
+      "results/coverage-report.json": "d80fb44b11190f53cac554f3368cf73daf07f1a0b635b2588a914285f03e5ea6",
+      "results/wefut-edition-headers.json": "2271852b709f621e87891a9294b928cc0f9b9a82dacd7a1c2ded1f89d4408884",
+      "results/report.md": "0bffd6c89b531b9cc16317678181f47767e9980c1355200faea3f24a43b741b0",
+      "results/sample-fo3-candidates.json": "35855f5daf37321c278f75746daa9c1d0c6b097edc0145ea67851af44e22b48b",
+      "results/sample-fo4-candidates.json": "2725ee77d05ca759ba510f378d913868134b9a9b1202677a1259e47ffaf2ee51",
+      "results/sample-nexon-fco-candidates.json": "24c5387d1c0fd6f3b8e6a0b8c3074f949ccecba8b21cd20088346695ee972904",
+      "results/sample-wefut-candidates.json": "68b6fff2499d2f4f851b7065889522b2b6c436253f60b8a9e678de4334f6c765"
+    },
+    "candidateBytes": 50680769
+  },
+  "compaction": {
+    "generatedAt": "2026-10-08T11:57:57.024Z",
+    "operation": "share_repeated_wefut_header_evidence",
+    "candidateCount": 5747,
+    "originalBytes": 79377937,
+    "inputBytes": 50680769,
+    "compactedBytes": 50680769,
+    "savedBytes": 28697168,
+    "wefutHeaderReferences": 2470,
+    "candidateDataProjectionSha256": "c2af55365cf29728016606c4b7b583ed86d4fa4458a954300317a379ac9dbf7b",
+    "candidateIdProjectionSha256": "7fce98f131d2cdf4b508a50606fe83449a4fa9d456f23dd8e81ab3f4a85fbb9a",
+    "headerEvidencePath": "results/wefut-edition-headers.json",
+    "headerAuditSha256": "2271852b709f621e87891a9294b928cc0f9b9a82dacd7a1c2ded1f89d4408884"
+  },
+  "finalSourceCodeSha256": {
+    "scripts/age-evidence.mjs": "759a3a7aae548e00d31d026532bf9bbdf8153fd4e6d849359a48a0bfbd71ba38",
+    "scripts/build-report.mjs": "3288003e36dc4fbee3d4135d331da95c8d376b009c06c6d4e02e67279ea899f0",
+    "scripts/http-transport.mjs": "b9d501db66697d7473635840c1717413f6891e94b3b13e0c2e75596a7bd840f8",
+    "scripts/prepare-input.mjs": "7953b0fea89eb2f9be0c71a37e9f7abadf04bdfe860426ca8224dda527acda66",
+    "scripts/search.mjs": "b422994b5e8322a71ddad56493d1ff380c0d338197817c6e17f139ee4390caaf",
+    "scripts/verify-samples.mjs": "131a6d6d67b05ae7ac3033cd63d9eeb4236f11d73c2834bd78fefb41742c4773"
+  },
+  "finalSourceTextSha256": {
+    ".gitignore": "70a213afeabe5ac38ae4c88b2c7002ce5068b91a3e57a032245ab809dc6fa460"
+  },
+  "finalSourceHashNote": "finalSourceCodeSha256 identifies the current LF-normalized delivered scripts. acquisitionCodeSha256 remains the hash of the frozen worker copies actually used for the saved acquisition."
+}

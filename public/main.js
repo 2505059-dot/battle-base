@@ -107,7 +107,8 @@ function saveGuestName(rawName, { showToast = false, skipInputId = null } = {}) 
 
 function myName() {
     const raw = $('name') ? $('name').value : readStoredGuestName();
-    return saveGuestName(raw, { showToast: false });
+    const clean = saveGuestName(raw, { showToast: false });
+    return clean || t('home.guest');
 }
 
 function resolveToastParams(params) {

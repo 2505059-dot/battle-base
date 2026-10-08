@@ -90,8 +90,8 @@ const CHECKS = [
                 description: 'Reveal lineup uses formatPlayerName(p.name)',
             },
             {
-                regex: /formatClubName\(\s*p\.club\s*\)/,
-                description: 'Reveal lineup uses formatClubName(p.club)',
+                regex: /formatClubName\(\s*(?:p|player|subject)\.club\s*\)/,
+                description: 'Reveal lineup and inspector format the displayed club name',
             },
         ],
     },

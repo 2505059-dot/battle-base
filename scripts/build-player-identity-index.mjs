@@ -13,7 +13,7 @@ const ROOT_DIR = path.resolve(__dirname, '..');
 const PLAYERS_ENTITY_PATH = path.join(ROOT_DIR, 'data', 'entities', 'players.json');
 const OUTPUT_PATH = path.join(ROOT_DIR, 'public', 'data', 'player-identities.js');
 
-export function buildPlayerIdentityIndex() {
+export function renderPlayerIdentityIndex() {
     if (!fs.existsSync(PLAYERS_ENTITY_PATH)) {
         throw new Error(`Missing player entities input file: ${PLAYERS_ENTITY_PATH}`);
     }
@@ -82,13 +82,23 @@ export function buildPlayerIdentityIndex() {
         '',
     ];
 
-    fs.mkdirSync(path.dirname(OUTPUT_PATH), { recursive: true });
-    fs.writeFileSync(OUTPUT_PATH, lines.join('\n'), 'utf8');
-
     return {
         entityCount: entityIds.size,
         playerSeasonCount: sortedSeasonIds.length,
         outputPath: OUTPUT_PATH,
+        source: lines.join('\n'),
+    };
+}
+
+export function buildPlayerIdentityIndex() {
+    const rendered = renderPlayerIdentityIndex();
+    fs.mkdirSync(path.dirname(rendered.outputPath), { recursive: true });
+    fs.writeFileSync(rendered.outputPath, rendered.source, 'utf8');
+
+    return {
+        entityCount: rendered.entityCount,
+        playerSeasonCount: rendered.playerSeasonCount,
+        outputPath: rendered.outputPath,
     };
 }
 

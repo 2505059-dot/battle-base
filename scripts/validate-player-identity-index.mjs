@@ -23,7 +23,7 @@ import {
     getPlayerIdentityKey,
     isSameCanonicalPlayer,
 } from '../public/game/player-identity.js';
-import { buildPlayerIdentityIndex } from './build-player-identity-index.mjs';
+import { renderPlayerIdentityIndex } from './build-player-identity-index.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT_DIR = path.resolve(__dirname, '..');
@@ -31,8 +31,26 @@ const PLAYERS_JSON_PATH = path.join(ROOT_DIR, 'data', 'entities', 'players.json'
 const RUNTIME_INDEX_PATH = path.join(ROOT_DIR, 'public', 'data', 'player-identities.js');
 const HELPER_PATH = path.join(ROOT_DIR, 'public', 'game', 'player-identity.js');
 
-function sha256File(filePath) {
-    return crypto.createHash('sha256').update(fs.readFileSync(filePath)).digest('hex');
+export function normalizeLineEndings(bytes) {
+    const input = Buffer.from(bytes);
+    const normalized = Buffer.allocUnsafe(input.length);
+    let length = 0;
+
+    for (let index = 0; index < input.length; index += 1) {
+        if (input[index] === 0x0d && input[index + 1] === 0x0a) continue;
+        normalized[length] = input[index];
+        length += 1;
+    }
+
+    return normalized.subarray(0, length);
+}
+
+export function identityIndexSourceMatches(actualBytes, generatedBytes) {
+    return normalizeLineEndings(actualBytes).equals(normalizeLineEndings(generatedBytes));
+}
+
+function sha256(bytes) {
+    return crypto.createHash('sha256').update(bytes).digest('hex');
 }
 
 export function validatePlayerIdentityIndex() {
@@ -173,14 +191,16 @@ export function validatePlayerIdentityIndex() {
         'public/game/player-identity.js must not import player-media or entity-media'
     );
 
-    // 6. Verify deterministic build hash (running buildPlayerIdentityIndex twice produces identical SHA-256)
-    const hashBefore = sha256File(RUNTIME_INDEX_PATH);
-    buildPlayerIdentityIndex();
-    const hashAfter1 = sha256File(RUNTIME_INDEX_PATH);
-    buildPlayerIdentityIndex();
-    const hashAfter2 = sha256File(RUNTIME_INDEX_PATH);
-    assert.equal(hashBefore, hashAfter1, 'Runtime index on disk must match fresh build output');
-    assert.equal(hashAfter1, hashAfter2, 'Consecutive builds must produce identical SHA-256 hash');
+    // 6. Compare complete bytes while treating only CRLF/LF as equivalent. Rendering is pure,
+    // so validation never rewrites the checked-out runtime index as a side effect.
+    const runtimeBytes = fs.readFileSync(RUNTIME_INDEX_PATH);
+    const generatedBytes1 = Buffer.from(renderPlayerIdentityIndex().source, 'utf8');
+    const generatedBytes2 = Buffer.from(renderPlayerIdentityIndex().source, 'utf8');
+    assert.ok(
+        identityIndexSourceMatches(runtimeBytes, generatedBytes1),
+        'Runtime index on disk must match fresh generated output apart from CRLF/LF line endings'
+    );
+    assert.deepStrictEqual(generatedBytes1, generatedBytes2, 'Consecutive renders must produce identical bytes');
 
     return {
         entities: entities.length,
@@ -188,7 +208,7 @@ export function validatePlayerIdentityIndex() {
         runtimeMappings: runtimeKeys.length,
         unknown: unknownCount,
         duplicateOwnership: duplicateOwnershipCount,
-        sha256: hashAfter2,
+        sha256: sha256(normalizeLineEndings(generatedBytes2)),
     };
 }
 

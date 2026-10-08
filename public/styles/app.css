@@ -5064,12 +5064,6 @@
     padding: 1px;
     min-height: 0;
   }
-  .fd-team-panel:not(.dw-squad-panel) .fd-pitch-figure {
-    position: relative;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-  }
   .fd-team-panel:not(.dw-squad-panel) .fd-pitch-avatar {
     width: 32px;
     height: 32px;

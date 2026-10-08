@@ -1,3 +1,9 @@
+/**
+ * Page Module: Match & Result Views (MATCH / RESULT Phases)
+ * Responsibility: Match zone containers (.fd-match-zone, .fd-complete), scoreboard header
+ * (.fd-scoreboard), live match center & stats panels (.fd-match-center, .fd-stats-box),
+ * and side team panel vertical pitch presentation in Match and Result phases.
+ */
 @layer components {
   .fd-match-zone,
   .fd-complete {
@@ -26,6 +32,14 @@
     display: none;
   }
 
+  /* Maintenance Note: Side Team Panel Pitch Formatting (.fd-team-panel:not(.dw-squad-panel))
+   * The `:not(.dw-squad-panel)` selector guard prevents these match/result side panel pitch
+   * rules from leaking into the Draft Workbench center squad pitch (.dw-squad-panel).
+   * Note: The duplicate `.fd-team-panel:not(.dw-squad-panel) .fd-pitch-figure` rule was removed
+   * because `shared/pitch.css` already defines `.fd-pitch-figure` identically in @layer components.
+   * Centered silhouette rating rule (.fd-pitch-figure:has(...) .fd-pitch-rating) must remain
+   * ordered AFTER `.fd-team-panel:not(.dw-squad-panel) .fd-pitch-rating` to properly center.
+   */
   .fd-team-panel:not(.dw-squad-panel) .fd-pitch.ol3-pitch {
     aspect-ratio: 651 / 1024;
     width: min(100%, 248px);
@@ -62,13 +76,6 @@
     box-shadow: none;
     padding: 1px;
     min-height: 0;
-  }
-
-  .fd-team-panel:not(.dw-squad-panel) .fd-pitch-figure {
-    position: relative;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
   }
 
   .fd-team-panel:not(.dw-squad-panel) .fd-pitch-avatar {
@@ -139,5 +146,5 @@
   .fd-team-panel:not(.dw-squad-panel) .fd-pitch-node-top {
     display: none;
   }
-
 }
+

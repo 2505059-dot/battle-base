@@ -1,3 +1,8 @@
+/**
+ * Shared Shell Module
+ * Responsibility: Global viewport and body stadium background styling, application container
+ * width constraints (lobby/room main vs in-game wide layout), and high-level in-game chrome.
+ */
 @layer components {
   /* =========================================================================
    * Global Theme Foundation v1 — Night Stadium Arena & Unified Football HUD
@@ -45,7 +50,6 @@
     max-width: min(1680px, calc(100vw - 24px));
   }
 
-
   /* Shared In-Game Chrome & MATCH / RESULT Stadium HUD Inheritance */
   body.in-game #room.room--in-game {
     background: rgba(9, 15, 26, 0.78);
@@ -62,9 +66,9 @@
     margin: 0;
   }
 
-
   body.in-game #room.room--in-game #players[hidden],
   body.in-game #room.room--in-game #wait-note[hidden] {
     display: none;
   }
 }
+

@@ -1,3 +1,9 @@
+/**
+ * Shared Base Foundation Module
+ * Responsibility: Scoped UI container reset (.ui-scope), foundational box sizing,
+ * form element inheritance, and reusable presentation helpers (.ui-panel-header-sheen,
+ * .ui-card-portrait-well, .ui-stat-bar-fill, .ui-scope [hidden]).
+ */
 @layer components {
   .ui-scope,
   .ui-scope *,
@@ -36,7 +42,6 @@
     width: calc(var(--stat-pct, 0) * 1%);
     transition: width 180ms ease-out;
   }
-
 }
 
 @layer utilities {
@@ -44,3 +49,4 @@
     display: none;
   }
 }
+

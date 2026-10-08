@@ -1,3 +1,9 @@
+/**
+ * Page Module: Draft Workbench (Draft Phase)
+ * Responsibility: Complete 3-column Draft Workbench layout (.dw-workbench), compact draft top header
+ * (.dw-header--draft), candidate roll cards (.dw-candidate-card), squad pitch formation surface
+ * (.dw-squad-panel), action confirm bar (.dw-confirm-bar), and mobile 3-tab switching layout.
+ */
 @layer components {
   /* Compact Draft Header & Side Opponent Progress Floating Pill (OL3 Top HUD Bar) */
   .dw-header--draft {
@@ -243,7 +249,6 @@
     color: #f1f5f9;
   }
 
-
   .dw-center .fd-reroll-row {
     gap: 4px;
   }
@@ -358,7 +363,6 @@
     align-items: center;
     min-width: 0;
   }
-
 
   .dw-center .fd-card-media {
     width: 38px;
@@ -772,7 +776,6 @@
     transform: translateY(5px);
   }
 
-
   /* v1.2 Pitch Nodes: Frameless Tactical Tokens with Prominent Player Portraits */
   .dw-squad-panel .fd-pitch-node {
     position: relative;
@@ -971,6 +974,10 @@
     background: rgba(24, 18, 6, 0.96);
   }
 
+  /* Maintenance Note: Centered OVR Rating on Silhouette / Fallback Tokens
+   * This rule must remain placed AFTER `.dw-squad-panel .fd-pitch-rating` so that
+   * these centered inset overrides take precedence over default bottom-right offset styles.
+   */
   .dw-squad-panel .fd-pitch-figure:has(.fd-pitch-avatar--silhouette) .fd-pitch-rating,
   .dw-squad-panel .fd-pitch-figure:has(.fd-player-img--silhouette) .fd-pitch-rating,
   .dw-squad-panel .fd-pitch-figure:has(.fd-player-img--fallback) .fd-pitch-rating {
@@ -1041,7 +1048,6 @@
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.58);
     transition: transform 140ms ease, box-shadow 140ms ease, border-color 140ms ease;
   }
-
 
   .dw-squad-panel .fd-pitch-slot-tag {
     font-size: 0.66rem;
@@ -1317,7 +1323,6 @@
     padding-right: 4px;
   }
 
-
   .dw-inspector-slots {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1376,7 +1381,6 @@
     line-height: 1.35;
     padding-top: 2px;
   }
-
 
   /* Focus ring visibility for keyboard accessibility across Draft Workbench */
   .dw-root .fd-card:focus-visible,
@@ -1788,7 +1792,6 @@
     }
   }
 
-
   @media (prefers-reduced-motion: reduce) {
     .dw-root *,
     .dw-root *::before,
@@ -1798,3 +1801,4 @@
     }
   }
 }
+

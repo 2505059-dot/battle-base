@@ -1,6 +1,9 @@
-/* 4. UI Foundation v1 Semantic Design Tokens (mapped to Tailwind theme utilities):
- *    Reference direction: compact dark football tactical UI (FO3/3M visual organization reference).
- *    Named by semantic purpose rather than raw palette numbers.
+/**
+ * Theme & Design Tokens Module
+ * Responsibility: Semantic color palette, typography scales, spacing, border radiuses,
+ * elevation shadows, and z-index layers. Mapped to Tailwind CSS @theme and CSS custom properties.
+ * Referenced across all shared components and page stylesheets.
+ * Reference direction: compact dark football tactical UI (FO3/3M visual organization reference).
  */
 @theme {
   /* Backgrounds, Panels & Borders */

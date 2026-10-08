@@ -1,3 +1,9 @@
+/**
+ * Shared HUD Module
+ * Responsibility: Cross-view top navigation bar (.topbar*), toast messages (#toast),
+ * shared game panels (.about, .bb-btn-*, .fd-header, .fd-team-panel, .fd-log),
+ * and baseline ability inspector primitives (.dw-inspector*).
+ */
 @layer components {
   /* Global Topbar HUD */
   .topbar {
@@ -119,7 +125,6 @@
     border-radius: 4px;
   }
 
-
   button.bb-btn-primary,
   #lobby button#create-btn,
   #room button#start-btn {
@@ -191,6 +196,11 @@
     display: none;
   }
 
+  /* Maintenance Note: Baseline Game Surface Panels (.fd-header, .fd-team-panel, .fd-log)
+   * These shared HUD rules establish default panel styling across in-game phases.
+   * They must load before `pages/draft.css` and `pages/reveal.css` so same-specificity
+   * page overrides (e.g. `.dw-header--draft` and `.rv-inspector-head`) take precedence.
+   */
   .fd-header {
     background: rgba(9, 15, 26, 0.82);
     border: 1px solid rgba(148, 163, 184, 0.2);
@@ -210,9 +220,11 @@
     border: 1px solid rgba(148, 163, 184, 0.18);
   }
 
-  /* =========================================================================
-   * 3. Right Column: Historical Player Archive & Ability Inspector
-   * ========================================================================= */
+  /* Maintenance Note: Base Ability Inspector Layout (.dw-inspector*)
+   * Baseline inspector frame shared between Draft and Reveal phases.
+   * Must load before `pages/draft.css` and `pages/reveal.css` so same-specificity
+   * page overrides (.dw-root .dw-inspector and .rv-inspector-head) take precedence.
+   */
   .dw-inspector {
     flex: 1;
     min-height: 0;
@@ -374,5 +386,5 @@
     background: linear-gradient(90deg, #2563eb 0%, #38bdf8 100%);
     transition: width 160ms ease-out;
   }
-
 }
+

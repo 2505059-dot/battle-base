@@ -1,3 +1,8 @@
+/**
+ * Page Module: Lobby View
+ * Responsibility: Entry screen shell (#lobby.bb-lobby-shell), user nickname & room code inputs,
+ * create/join mode cards, and mobile responsive layout adaptions.
+ */
 @layer components {
   /* Lobby Main Menu HUD */
   #lobby.bb-lobby-shell {
@@ -73,10 +78,10 @@
     width: 100%;
   }
 
-
   @media (max-width: 640px) {
     .bb-lobby-modes {
       grid-template-columns: 1fr;
     }
   }
 }
+

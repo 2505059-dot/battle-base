@@ -1,3 +1,9 @@
+/**
+ * Shared Pitch Primitives Module
+ * Responsibility: Foundational pitch token markers, figure wrappers, and role color slots.
+ * Maintenance Note: `.fd-pitch-figure`, `.fd-pitch-hist-tag`, `.fd-pitch-empty-token--*`,
+ * and `.fd-pitch-slot-tag--*` are shared across Draft, Reveal, and Match/Result pitch views.
+ */
 @layer components {
   /* Base Pitch Figure & Floating Historical Tag Helpers (also safe in REVEAL phase) */
   .fd-pitch-figure {
@@ -10,7 +16,6 @@
   .fd-pitch-hist-tag {
     display: none;
   }
-
 
   .fd-pitch-empty-token--fw {
     background: radial-gradient(circle at 35% 30%, #f87171 0%, #dc2626 65%, #7f1d1d 100%);

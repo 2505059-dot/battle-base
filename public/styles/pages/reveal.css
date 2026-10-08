@@ -1,3 +1,9 @@
+/**
+ * Page Module: Reveal Lineup View (Reveal Phase)
+ * Responsibility: Full-pitch 22-player comparison view (.rv-full-pitch-stage), single-team
+ * 11-player formation view (.rv-single-stage), player node positioning (.rv-node),
+ * formation stat pills (.rv-stat-pill), and mobile responsive adjustments.
+ */
 @layer components {
   /* =========================================================================
    * REVEAL UI v1 — Full-Pitch 22 Players & Single-Team Historical Lineup
@@ -327,7 +333,6 @@
     letter-spacing: 0.03em;
   }
 
-
   /* Shared Positioned Node on Reveal Pitch */
   .rv-node {
     position: absolute;
@@ -542,6 +547,10 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
   }
 
+  /* Maintenance Note: Centered OVR Rating on Silhouette / Fallback Tokens
+   * This rule must remain placed AFTER `.rv-single-figure .fd-pitch-rating` so that
+   * these centered inset overrides take precedence over default bottom-right offset styles.
+   */
   .rv-single-figure:has(.fd-pitch-avatar--silhouette) .fd-pitch-rating,
   .rv-single-figure:has(.fd-player-img--silhouette) .fd-pitch-rating,
   .rv-single-figure:has(.fd-player-img--fallback) .fd-pitch-rating {

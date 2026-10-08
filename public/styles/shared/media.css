@@ -1,3 +1,9 @@
+/**
+ * Shared Media & Tactical Tags Module
+ * Responsibility: Cross-phase visual badges and player presentation assets.
+ * Maintenance Note: `.ol3-season-badge`, `.ol3-pos-tag*`, and `.dw-inspector-hero*` (hero portrait well,
+ * OVR badge, names, and club/league metadata) are shared across Draft and Reveal views.
+ */
 @layer components {
   /* Unified Historical Season Tag (used across Roll Header, Candidate List, and Inspector) */
   .ol3-season-badge,
@@ -226,5 +232,5 @@
     text-overflow: ellipsis;
     font-weight: 600;
   }
-
 }
+

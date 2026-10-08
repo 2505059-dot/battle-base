@@ -1,0 +1,216 @@
+{
+  "schemaVersion": "0.1",
+  "accessedAt": "2026-10-08",
+  "sourceName": "PES Master",
+  "sourceType": "third-party game database aggregation / presentation",
+  "sourceHome": "https://www.pesmaster.com/",
+  "pes5SearchPage": "https://www.pesmaster.com/pes-5/search/",
+  "pes5SearchResultsRoute": "https://www.pesmaster.com/pes-5/search/search.php",
+  "robotsTxtChecked": "https://www.pesmaster.com/robots.txt",
+  "robotsTxtResult": "HTTP 200; User-agent: * Allow: /",
+  "gameEditionLabel": "PES 5",
+  "approximateGameYear": 2005,
+  "originalGameExtractionProvenance": "unconfirmed; PES Master identifies PES 5 pages and says PES 5 assets are Konami property, but the pages do not document whether values were extracted from retail game data, transcribed, or recalculated",
+  "displayedOvrSemantics": "PES Master displayed OVR; PES5 native-versus-recomputed status unverified; preserve values above 99",
+  "targetSeasonIds": [
+    "manchester-united-1999",
+    "arsenal-2004",
+    "real-madrid-2002",
+    "valencia-2004",
+    "deportivo-la-coruna-2000",
+    "juventus-2003",
+    "roma-2001",
+    "lazio-2000",
+    "parma-1999",
+    "bayern-munich-2001",
+    "porto-2004"
+  ],
+  "pilotSeasonIds": [
+    "valencia-2004",
+    "porto-2004",
+    "deportivo-la-coruna-2000",
+    "parma-1999"
+  ],
+  "teamPageUrlBySeasonId": {
+    "manchester-united-1999": "https://www.pesmaster.com/man-red/pes-5/team/100/",
+    "arsenal-2004": "https://www.pesmaster.com/arsenal/pes-5/team/101/",
+    "real-madrid-2002": "https://www.pesmaster.com/r-madrid/pes-5/team/109/",
+    "valencia-2004": "https://www.pesmaster.com/valencia-c-f/pes-5/team/110/",
+    "deportivo-la-coruna-2000": "https://www.pesmaster.com/r-c-deportivo/pes-5/team/111/",
+    "juventus-2003": "https://www.pesmaster.com/juventus/pes-5/team/120/",
+    "roma-2001": "https://www.pesmaster.com/a-s-roma/pes-5/team/125/",
+    "lazio-2000": "https://www.pesmaster.com/lazio/pes-5/team/122/",
+    "parma-1999": "https://www.pesmaster.com/parma/pes-5/team/123/",
+    "bayern-munich-2001": "https://www.pesmaster.com/isar/pes-5/team/127/",
+    "porto-2004": "https://www.pesmaster.com/fc-porto/pes-5/team/192/"
+  },
+  "manualAliases": {
+    "Santiago Canizares": [
+      "Cañizares"
+    ],
+    "Roberto Ayala": [
+      "Ayala"
+    ],
+    "Carlos Marchena": [
+      "C. Marchena"
+    ],
+    "Amedeo Carboni": [
+      "Carboni"
+    ],
+    "Ruben Baraja": [
+      "Baraja"
+    ],
+    "David Albelda": [
+      "Albelda"
+    ],
+    "Pablo Aimar": [
+      "Aimar"
+    ],
+    "Vitor Baia": [
+      "Vítor Baía"
+    ],
+    "Ricardo Carvalho": [
+      "R. Carvalho"
+    ],
+    "Paulo Ferreira": [
+      "P. Ferreira"
+    ],
+    "Benni McCarthy": [
+      "McCarthy"
+    ],
+    "Jacques Songo'o": [
+      "Songo'o",
+      "Songo’o"
+    ],
+    "Noureddine Naybet": [
+      "Naybet"
+    ],
+    "Roy Makaay": [
+      "Makaay"
+    ],
+    "Gianluigi Buffon": [
+      "Buffon"
+    ],
+    "Lilian Thuram": [
+      "Thuram"
+    ],
+    "Fabio Cannavaro": [
+      "F. Cannavaro"
+    ],
+    "Roberto Sensini": [
+      "Sensini"
+    ],
+    "Juan Sebastian Veron": [
+      "Verón",
+      "Veron"
+    ],
+    "Hernan Crespo": [
+      "Crespo"
+    ],
+    "Enrico Chiesa": [
+      "Chiesa"
+    ]
+  },
+  "searchNameOverrides": {
+    "Santiago Canizares": "Canizares",
+    "Carlos Marchena": "Marchena",
+    "Juan Sebastian Veron": "Veron",
+    "Jacques Songo'o": "Songo"
+  },
+  "searchPageBehavior": "The visible PES 5 advanced-search inline script builds /pes-5/search/search.php?name=<term>&sort=ovr&sort_order=desc. The PoC follows that public route for targeted surname queries.",
+  "limitations": [
+    "The script makes one request per selected team page, then one targeted surname query only for unmatched target identities; it never enumerates all PES5 records.",
+    "The first page of up to 30 matching search rows is retained; a result page with 30 rows may be truncated.",
+    "A result with only a surname and no explicit/manual name match stays identity_unresolved.",
+    "No-result means no candidate in that targeted PES Master query, not proof of absence from all PES5 data sources.",
+    "The source file fallback-team-seasons.json remains read-only and is not changed."
+  ],
+  "additionalSourceEvidence": [
+    {
+      "name": "PES Master public PES 5 pages",
+      "url": "https://www.pesmaster.com/pes-5/search/",
+      "kind": "third-party game-data presentation",
+      "finding": "Structured PES 5 search/detail pages expose team/player rows, displayed OVR and 28 named ability fields. Retail extraction/transcription/recalculation provenance and PES 5 OVR semantics are undocumented.",
+      "observed_at": "2026-10-08"
+    },
+    {
+      "name": "PES Master catalog / editions",
+      "url": "https://www.pesmaster.com/",
+      "kind": "site catalog",
+      "finding": "Current navigation/about evidence covers PES 5 and PES 2008 onward; it did not expose an original PES 3/PES 4/WE4 database in this bounded check.",
+      "observed_at": "2026-10-08"
+    },
+    {
+      "name": "Older PES community-stat archive discussion",
+      "url": "https://evoweb.uk/threads/most-complete-player-stats-database-for-older-pes-games-including-psd.94522/page-2",
+      "kind": "community archive discussion",
+      "finding": "A forum participant identified the posted PES 3 entries as the World patch option file rather than the original PES 3 file. The project separately claimed PES 4 completion, but the discussion does not establish original-ISO extraction or data provenance.",
+      "observed_at": "2026-10-08"
+    },
+    {
+      "name": "PES 4 archive extraction discussion",
+      "url": "https://www.pesgaming.com/forums/threads/how-does-the-over-afs-file-work.12546/",
+      "kind": "community technical discussion",
+      "finding": "Describes PES 4 over.afs archive structure for player names/stats/appearance; extraction is plausible, but this is not an accessible validated original-game player database.",
+      "observed_at": "2026-10-08"
+    },
+    {
+      "name": "ISS Pro Evolution player database post",
+      "url": "https://www.reddit.com/r/WEPES/comments/12fc8in/player_database_iss_pro_evolution_ps1/",
+      "kind": "user-created community dataset reference",
+      "finding": "A user reports a player database and SQL/Parquet exports; retail extraction provenance was not stated, so it is not treated as confirmed original data.",
+      "observed_at": "2026-10-08"
+    },
+    {
+      "name": "PlayersDB identity reference",
+      "url": "https://playersdb.app/players",
+      "kind": "community identity-linking source",
+      "finding": "Optional cross-game identity relationships only; not used as a PES ability-value source.",
+      "observed_at": "2026-10-08"
+    },
+    {
+      "name": "FIFA 05 overlap pages",
+      "url": "https://fifaindex.com/players/111010-vicente/fifa05; https://fifaindex.com/players/10959-pablo-cesar-aimar/fifa05; https://fifaindex.com/es/jugadores/1131-roberto-fabian-ayala/fifa05",
+      "kind": "third-party FIFA page comparison",
+      "finding": "Three Valencia identity pairs for OVR and displayed fields; page field taxonomy may be modern-standardized and is not proof of native FIFA 05 fields.",
+      "observed_at": "2026-10-08"
+    },
+    {
+      "name": "FIFA Soccer 2005 guide",
+      "url": "https://gamefaqs.gamespot.com/ps2/919617-fifa-soccer-2005/faqs/33456",
+      "kind": "contemporary third-party guide",
+      "finding": "Uses legacy field names such as Pace, Shot Accuracy/Power, Passing, Long Balls, Dribbling, Heading, Tackling, Strength, Marking and goalkeeper fields; supports taxonomy caution, not raw-game extraction.",
+      "observed_at": "2026-10-08"
+    }
+  ],
+  "originalGameArchiveConclusion": "No accessible, provenance-verified complete original-game PES 3/PES 4/WE4 archive was confirmed in this bounded investigation. Community datasets exist but are patched, self-reported, or provenance-unspecified; this is not a claim that no archive exists anywhere.",
+  "pes5CoverageHeadline": {
+    "targetPlayerSeasons": 99,
+    "candidateRows": 94,
+    "highConfidence": 40,
+    "probable": 45,
+    "identityUnresolved": 9,
+    "targetedNoHit": 5,
+    "complete28FieldRows": 57,
+    "complete28AmongAcceptedOrProbable": 52,
+    "nearTargetRows": 27,
+    "nearTargetYearsDefinition": "absolute game-year anchor 2005 minus target TeamSeason.year <= 1"
+  },
+  "liveParserFixture": {
+    "sourceUrl": "https://www.pesmaster.com/vicente/pes-5/player/4037/",
+    "retrievedAtUtc": "2026-10-08T02:14:40.946682+00:00",
+    "httpStatus": 200,
+    "fullResponseSha256": "6fd5c09d0aad6f97061456948ff5f36ddd725db4d6decc1d9d878cfd4ddbf9e6",
+    "excerptFile": "fixtures/pes5-live-vicente-excerpt.html",
+    "excerptBytes": 2737,
+    "sourceFields": "PES Master heading/OVR, nationality element, Ability Settings table; exact source substrings with normalized line endings",
+    "excerptSha256": "7969eb35ae6fe81c9a31dcb30cc81f0776bd8f1912ea3e0665bdfac52b5e8a3d",
+    "excerptLineEndingNormalization": "LF; original source substrings only, with line endings normalized for repository compatibility",
+    "fullResponseSha256Scope": "SHA-256 of the unmodified full HTTP response bytes; not the excerpt digest"
+  },
+  "requestAccounting": {
+    "fullyLoggedRequests": 151,
+    "unloggedInitialExploratoryRequests": 10,
+    "totalObservedRequests": 161
+  }
+}

@@ -34,10 +34,76 @@
   }
 
   body.in-home main {
-    max-width: 1120px;
+    max-width: 100%;
     width: 100%;
-    margin: 0 auto;
-    padding: 12px 18px 20px;
+    min-height: 100dvh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  body.in-home .topbar,
+  body.in-lobby .topbar {
+    position: sticky;
+    top: 0;
+    z-index: var(--z-sticky);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+    min-height: var(--layout-client-nav);
+    padding: 0 max(20px, calc((100% - 72rem) / 2));
+    margin: 0;
+    background: var(--surface-nav);
+    border: 0;
+    border-bottom: 1px solid var(--border-divider);
+    border-radius: 0;
+    box-shadow: none;
+    backdrop-filter: blur(14px);
+  }
+
+  body.in-home .topbar-brand,
+  body.in-lobby .topbar-brand {
+    flex: 0 0 auto;
+  }
+
+  body.in-home .topbar-title-group,
+  body.in-lobby .topbar-title-group {
+    flex-wrap: nowrap;
+  }
+
+  body.in-home .topbar h1,
+  body.in-lobby .topbar h1 {
+    font-size: var(--text-brand);
+    letter-spacing: 0.07em;
+    text-shadow: none;
+  }
+
+  body.in-home .topbar-badge,
+  body.in-home .topbar-subtitle,
+  body.in-lobby .topbar-badge,
+  body.in-lobby .topbar-subtitle {
+    display: none;
+  }
+
+  body.in-home .topbar-controls,
+  body.in-lobby .topbar-controls {
+    flex-wrap: nowrap;
+    gap: 10px;
+  }
+
+  body.in-lobby main {
+    max-width: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0 0 28px;
+  }
+
+  body.in-lobby #lobby {
+    width: var(--layout-lobby-stage);
+    margin: 18px auto 0;
   }
 
   body:not(.in-game):not(.in-home) main {
@@ -45,6 +111,14 @@
     width: 100%;
     margin: 0 auto;
     padding: 18px 16px 32px;
+  }
+
+  /* Lobby has a full-bleed client bar; constrain only its room-entry surface. */
+  body.in-lobby:not(.in-game):not(.in-home) main {
+    max-width: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0 0 28px;
   }
 
   body.in-game main {
@@ -84,5 +158,28 @@
   body.in-game #room.room--in-game #players[hidden],
   body.in-game #room.room--in-game #wait-note[hidden] {
     display: none;
+  }
+
+  @media (max-width: 640px) {
+    body.in-home .topbar,
+    body.in-lobby .topbar {
+      gap: 8px;
+      min-height: 56px;
+      padding-inline: 12px;
+    }
+
+    body.in-home .topbar-controls,
+    body.in-lobby .topbar-controls {
+      gap: 5px;
+    }
+
+    body.in-home .topbar-guest-tag,
+    body.in-lobby .topbar-guest-tag {
+      display: none;
+    }
+
+    body.in-lobby #lobby {
+      width: var(--layout-lobby-stage);
+    }
   }
 }

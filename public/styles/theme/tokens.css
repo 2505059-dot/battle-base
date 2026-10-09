@@ -73,6 +73,38 @@
   --shadow-panel: 0 8px 24px -4px rgb(4 9 20 / 0.55), inset 0 1px 0 0 rgb(255 255 255 / 0.05);
   --shadow-card: 0 4px 14px -2px rgb(4 9 20 / 0.45), inset 0 1px 0 0 rgb(255 255 255 / 0.04);
   --shadow-selected: 0 0 0 1px var(--color-selected), 0 8px 20px -4px rgb(56 189 248 / 0.28);
+
+  /* ERA DERBY game-client surfaces. These are additive so Draft/REVEAL keep
+     consuming their established foundation until a page explicitly opts in. */
+  --surface-game-stage: rgb(5 11 20 / 0.42);
+  --surface-hud-base: rgb(8 15 27 / 0.84);
+  --surface-hud-raised: rgb(14 23 39 / 0.94);
+  --surface-hud-inset: rgb(5 10 19 / 0.72);
+  --surface-hud-overlay: rgb(7 12 21 / 0.97);
+  --surface-nav: rgb(5 10 18 / 0.94);
+  --surface-nav-active: rgb(245 158 11 / 0.12);
+  --surface-disabled: rgb(11 17 27 / 0.46);
+  --border-hud: rgb(164 184 209 / 0.2);
+  --border-divider: rgb(164 184 209 / 0.13);
+  --border-focus: #38bdf8;
+  --border-nav-active: rgb(245 158 11 / 0.72);
+  --shadow-hud: 0 12px 30px -10px rgb(1 5 12 / 0.58), inset 0 1px 0 rgb(255 255 255 / 0.035);
+  --shadow-overlay: 0 24px 64px rgb(0 0 0 / 0.64);
+  --shadow-action: 0 6px 18px -8px rgb(245 158 11 / 0.52);
+
+  --text-brand: 1.05rem;
+  --text-menu: 1rem;
+  --text-menu-primary: 1.16rem;
+  --text-page-title: 1.35rem;
+  --text-player-info: 0.84rem;
+  --text-tactical-value: 0.78rem;
+  --text-supporting: 0.78rem;
+
+  --layout-client-nav: 3.75rem;
+  --layout-home-stage: min(72rem, calc(100vw - 3rem));
+  --layout-lobby-stage: min(48.75rem, calc(100vw - 2rem));
+  --layout-game-hud: min(105rem, calc(100vw - 1.5rem));
+  --layout-modal: min(26.25rem, calc(100vw - 1.5rem));
 }
 
 @layer theme {
@@ -89,6 +121,33 @@
     --shadow-panel: 0 8px 24px -4px rgb(4 9 20 / 0.55), inset 0 1px 0 0 rgb(255 255 255 / 0.05);
     --shadow-card: 0 4px 14px -2px rgb(4 9 20 / 0.45), inset 0 1px 0 0 rgb(255 255 255 / 0.04);
     --shadow-selected: 0 0 0 1px var(--color-selected), 0 8px 20px -4px rgb(56 189 248 / 0.28);
+    --surface-game-stage: rgb(5 11 20 / 0.42);
+    --surface-hud-base: rgb(8 15 27 / 0.84);
+    --surface-hud-raised: rgb(14 23 39 / 0.94);
+    --surface-hud-inset: rgb(5 10 19 / 0.72);
+    --surface-hud-overlay: rgb(7 12 21 / 0.97);
+    --surface-nav: rgb(5 10 18 / 0.94);
+    --surface-nav-active: rgb(245 158 11 / 0.12);
+    --surface-disabled: rgb(11 17 27 / 0.46);
+    --border-hud: rgb(164 184 209 / 0.2);
+    --border-divider: rgb(164 184 209 / 0.13);
+    --border-focus: #38bdf8;
+    --border-nav-active: rgb(245 158 11 / 0.72);
+    --shadow-hud: 0 12px 30px -10px rgb(1 5 12 / 0.58), inset 0 1px 0 rgb(255 255 255 / 0.035);
+    --shadow-overlay: 0 24px 64px rgb(0 0 0 / 0.64);
+    --shadow-action: 0 6px 18px -8px rgb(245 158 11 / 0.52);
+    --text-brand: 1.05rem;
+    --text-menu: 1rem;
+    --text-menu-primary: 1.16rem;
+    --text-page-title: 1.35rem;
+    --text-player-info: 0.84rem;
+    --text-tactical-value: 0.78rem;
+    --text-supporting: 0.78rem;
+    --layout-client-nav: 3.75rem;
+    --layout-home-stage: min(72rem, calc(100vw - 3rem));
+    --layout-lobby-stage: min(48.75rem, calc(100vw - 2rem));
+    --layout-game-hud: min(105rem, calc(100vw - 1.5rem));
+    --layout-modal: min(26.25rem, calc(100vw - 1.5rem));
     --z-base: 1;
     --z-sticky: 20;
     --z-overlay: 40;

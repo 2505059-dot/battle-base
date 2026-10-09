@@ -635,4 +635,47 @@
     background: linear-gradient(90deg, #2563eb 0%, #38bdf8 100%);
     transition: width 160ms ease-out;
   }
+
+  /* Reusable game-client surface recipes. New pages may opt in without
+     changing the established Draft/REVEAL primitives above. */
+  .bb-surface-stage {
+    background: var(--surface-game-stage);
+  }
+
+  .bb-surface-hud {
+    background: var(--surface-hud-base);
+    border: 1px solid var(--border-hud);
+    border-radius: var(--radius-panel);
+    box-shadow: var(--shadow-hud);
+  }
+
+  .bb-surface-inset {
+    background: var(--surface-hud-inset);
+    border: 1px solid var(--border-divider);
+  }
+
+  .bb-surface-overlay {
+    color: var(--color-fg);
+    background: var(--surface-hud-overlay);
+    border: 1px solid var(--border-hud);
+    border-radius: var(--radius-panel);
+    box-shadow: var(--shadow-overlay);
+  }
+
+  dialog.bb-surface-overlay::backdrop {
+    background: rgb(2 6 14 / 0.72);
+    backdrop-filter: blur(3px);
+  }
+
+  .bb-nav-active {
+    background: var(--surface-nav-active);
+    border-color: var(--border-nav-active);
+    box-shadow: var(--shadow-action);
+  }
+
+  body.in-home :where(button, a, select, input, [tabindex]):focus-visible,
+  body.in-lobby :where(button, a, select, input, [tabindex]):focus-visible {
+    outline: 2px solid var(--border-focus);
+    outline-offset: 2px;
+  }
 }

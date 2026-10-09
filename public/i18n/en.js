@@ -71,6 +71,13 @@ export const en = {
         archiveTag: '11V11 HISTORICAL DREAM DRAFT',
         menuHeading: 'Choose a Match',
         stageCaption: 'Bring legends from every era together to build your dream XI.',
+        showcaseStageLabel: 'Featured historical lineup',
+        showcaseLineupLabel: 'Random 4-3-3 lineup',
+        showcasePlayersLabel: 'Featured historical players',
+        showcaseToggleLabel: 'Automatic lineup rotation',
+        showcasePauseAction: 'Pause',
+        showcaseResumeAction: 'Resume',
+        showcaseStaticAction: 'Static',
         closeProfileBtn: 'Close player profile',
         heroDesc:
             'Bring legendary clubs and players from across football history onto a single pitch to build your dream XI and compete.',

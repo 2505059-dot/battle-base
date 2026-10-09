@@ -53,6 +53,14 @@ Use the shared scale for brand, menu, page heading, player details, tactical val
 
 HOME should use the football imagery as the right-hand stage rather than repeating the brand headline. Prefer a reliable local historical portrait only when its existing media/fallback path is suitable for this role. A local tactical pitch and 4-3-3 shape are the fallback. Do not add external stock images, invented match data, or a second media-rendering system.
 
+### HOME historical player showcase
+
+- The wide HOME stage fades only its translucent backdrop with intersecting horizontal and vertical edge gradients; the mask reaches transparent at each outer edge without an oval spotlight. Keep the original pitch artwork itself unmasked so its full field lines and goal areas stay crisp. Menu surfaces, player portraits, ratings, names, and metadata stay sharp.
+- On desktop, the left menu stays about 340px wide. The pitch uses `/assets/draft-pitch-vertical.jpg` at its native 651:1024 aspect ratio without cropping or stretching, capped at 620px high. The stage shows a random, position-eligible 4-3-3 assembled from real PlayerSeason records. Each player keeps that record's club, year, rating, identity, and existing portrait/crest fallback behavior.
+- The desktop player presentation reuses the REVEAL 11-player visual vocabulary: circular portrait with cyan rim, gold corner OVR badge, player name, club crest (or a compact abbreviation when unavailable), two-digit year, and slot label. It uses HOME list semantics and does not make sample players interactive.
+- The XI is freshly sampled every 8.75 seconds and crossfades. Hover, keyboard focus, an explicit pause control, hidden HOME, and hidden browser tabs stop rotation. Reduced motion keeps a static lineup.
+- On mobile (640px and below), HOME hides the pitch and places a 144px horizontal player ribbon after the menu in normal page flow. Club labels use short, locale-independent abbreviations derived from each record's canonical English club name; full names remain available to assistive technology and tooltips. The ribbon loops slowly, supports touch scrolling, pauses on hover/focus/touch, and becomes a manual horizontal list for reduced-motion users. Repeated loop cards are hidden from assistive technology.
+
 ## Navigation variants and phase isolation
 
 HOME and Lobby use the full-width client navigation. DRAFT, REVEAL, MATCH, and RESULT keep their current compact topbar and room strip. Scope shell rules under `body.in-home`, `body.in-lobby`, or the relevant phase root; do not broaden shared selectors onto `.fd-*`, `.dw-*`, or `.rv-*`.

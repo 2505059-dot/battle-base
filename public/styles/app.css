@@ -13,10 +13,6 @@
     --color-fg-muted: #7e92b8;
     --color-selected: #38bdf8;
     --color-season-gold: #f59e0b;
-    --color-pos-gk: #f59e0b;
-    --color-pos-df: #38bdf8;
-    --color-pos-mf: #22c55e;
-    --color-pos-fw: #f43f5e;
     --radius-control: 0.375rem;
     --radius-panel: 0.625rem;
     --color-canvas-subtle: #101826;
@@ -3008,22 +3004,41 @@
     width: 100%;
     max-width: none;
     margin: 0;
-    padding: 28px 24px;
+    padding: 10px 24px;
     background: transparent;
     border: 0;
   }
   .bb-home-stage {
+    position: relative;
+    isolation: isolate;
     display: grid;
-    grid-template-columns: minmax(300px, 0.36fr) minmax(0, 0.64fr);
+    grid-template-columns: minmax(320px, 340px) minmax(0, 1fr);
     align-items: stretch;
-    gap: clamp(22px, 4vw, 52px);
+    gap: clamp(24px, 3vw, 42px);
     width: var(--layout-home-stage);
-    min-height: min(620px, calc(100svh - 124px));
+    min-height: min(680px, calc(100svh - 90px));
     max-height: 700px;
     margin: auto;
     overflow: hidden;
   }
+  .bb-home-stage.bb-surface-stage {
+    background: transparent;
+  }
+  .bb-home-stage::before {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: var(--surface-game-stage);
+    -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 12%, #000 88%, transparent 100%), linear-gradient(180deg, transparent 0%, #000 12%, #000 88%, transparent 100%);
+    -webkit-mask-composite: source-in;
+    mask-image: linear-gradient(90deg, transparent 0%, #000 12%, #000 88%, transparent 100%), linear-gradient(180deg, transparent 0%, #000 12%, #000 88%, transparent 100%);
+    mask-composite: intersect;
+    content: "";
+    pointer-events: none;
+  }
   .bb-home-menu {
+    position: relative;
+    z-index: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -3127,6 +3142,17 @@
     font-size: 1.2rem;
     vertical-align: -1px;
   }
+  .bb-home-mode--active {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .bb-home-mode--active .bb-home-mode-copy {
+    width: 100%;
+  }
+  .bb-home-mode--active .bb-home-mode-action {
+    align-self: flex-start;
+    margin-inline-start: 20px;
+  }
   .bb-home-menu-item--disabled {
     display: flex;
     align-items: center;
@@ -3174,82 +3200,229 @@
   }
   .bb-home-football-stage {
     position: relative;
+    z-index: 1;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     min-width: 0;
     min-height: 0;
     isolation: isolate;
+    padding: 4px 0;
   }
   .bb-home-pitch {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: min(49%, 22rem);
+    position: relative;
+    width: auto;
+    height: min(38.75rem, calc(100svh - 148px));
+    max-width: 100%;
     aspect-ratio: 651 / 1024;
+    flex: 0 1 auto;
+    isolation: isolate;
+  }
+  .bb-home-pitch::before {
+    position: absolute;
+    inset: 0;
     z-index: -1;
-    transform: translate(-50%, -50%);
-    background-image: radial-gradient(ellipse at center, rgb(5 13 22 / 0.04) 20%, rgb(5 13 22 / 0.42) 80%), url("/assets/draft-pitch-vertical.jpg");
+    background-image: linear-gradient(180deg, rgb(3 9 18 / 0.10) 0%, rgb(3 9 18 / 0.02) 50%, rgb(3 9 18 / 0.12) 100%), url("/assets/draft-pitch-vertical.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100% 100%;
-    opacity: 0.55;
-    -webkit-mask-image: linear-gradient(90deg, transparent, #000 17%, #000 83%, transparent);
-    mask-image: linear-gradient(90deg, transparent, #000 17%, #000 83%, transparent);
+    border: 1px solid rgb(228 240 255 / 0.42);
+    box-shadow: 0 0 50px rgb(2 9 15 / 0.48);
+    content: "";
+    pointer-events: none;
   }
-  .bb-home-formation {
+  .bb-home-formation, .bb-home-position {
+    display: none;
+  }
+  .bb-home-lineup-layer {
     position: absolute;
-    inset: 7% 5% 6%;
+    inset: 0;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 560ms ease;
+    pointer-events: none;
+  }
+  .bb-home-lineup-layer.is-active {
+    opacity: 1;
+  }
+  .bb-home-lineup-layer.is-leaving {
+    opacity: 0;
+  }
+  .bb-home-player {
+    position: absolute;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-  }
-  .bb-home-formation-row {
-    position: relative;
-    display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    width: 100%;
+    gap: 3px;
+    width: 22%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    text-shadow: 0 1px 3px rgb(0 0 0 / 0.92);
   }
-  .bb-home-formation-row--fw {
-    top: 5%;
-  }
-  .bb-home-formation-row--mf {
-    top: 0;
-  }
-  .bb-home-formation-row--df {
-    top: -2%;
-  }
-  .bb-home-formation-row--gk {
-    top: -1%;
-  }
-  .bb-home-position {
-    width: clamp(12px, 1.15vw, 16px);
+  .bb-home-player-avatar {
+    display: grid;
+    place-items: center;
+    width: clamp(44px, 4.2vw, 58px);
     aspect-ratio: 1;
-    border: 2px solid rgb(234 240 255 / 0.82);
+    overflow: hidden;
+    border: 2px solid rgb(234 240 255 / 0.9);
     border-radius: 50%;
-    box-shadow: 0 1px 8px rgb(0 0 0 / 0.68);
+    background: linear-gradient(180deg, #1b2c48 0%, #0a1220 100%);
+    box-shadow: 0 4px 12px rgb(0 0 0 / 0.7);
   }
-  .bb-home-position--fw {
-    background: var(--color-pos-fw);
+  .bb-home-player--fw .bb-home-player-avatar {
+    border-color: #fda4af;
   }
-  .bb-home-position--mf {
-    background: var(--color-pos-mf);
+  .bb-home-player--mf .bb-home-player-avatar {
+    border-color: #86efac;
   }
-  .bb-home-position--df {
-    background: var(--color-pos-df);
+  .bb-home-player--df .bb-home-player-avatar {
+    border-color: #7dd3fc;
   }
-  .bb-home-position--gk {
-    background: var(--color-pos-gk);
+  .bb-home-player--gk .bb-home-player-avatar {
+    border-color: #fcd34d;
+  }
+  .bb-home-player--fw .rv-single-avatar, .bb-home-player--fw .rv-single-avatar.fd-pitch-avatar--silhouette, .bb-home-player--fw .rv-single-avatar:has(.fd-player-img--silhouette), .bb-home-player--fw .rv-single-avatar:has(.fd-player-img--fallback) {
+    border-color: #f87171;
+  }
+  .bb-home-player--mf .rv-single-avatar, .bb-home-player--mf .rv-single-avatar.fd-pitch-avatar--silhouette, .bb-home-player--mf .rv-single-avatar:has(.fd-player-img--silhouette), .bb-home-player--mf .rv-single-avatar:has(.fd-player-img--fallback) {
+    border-color: #4ade80;
+  }
+  .bb-home-player--df .rv-single-avatar, .bb-home-player--df .rv-single-avatar.fd-pitch-avatar--silhouette, .bb-home-player--df .rv-single-avatar:has(.fd-player-img--silhouette), .bb-home-player--df .rv-single-avatar:has(.fd-player-img--fallback) {
+    border-color: #38bdf8;
+  }
+  .bb-home-player--gk .rv-single-avatar, .bb-home-player--gk .rv-single-avatar.fd-pitch-avatar--silhouette, .bb-home-player--gk .rv-single-avatar:has(.fd-player-img--silhouette), .bb-home-player--gk .rv-single-avatar:has(.fd-player-img--fallback) {
+    border-color: #fbbf24;
+  }
+  .bb-home-player .rv-single-avatar {
+    width: 48px;
+    height: 48px;
+    border-color: #38bdf8;
+  }
+  .bb-home-player .rv-single-avatar:has(.fd-player-img--silhouette), .bb-home-player .rv-single-avatar:has(.fd-player-img--fallback) {
+    width: 48px;
+    height: 48px;
+    border-color: #38bdf8;
+    background: radial-gradient(circle at 35% 30%, #1e3a5f 0%, #0d1829 100%);
+  }
+  .bb-home-player .rv-single-avatar .fd-player-img--silhouette, .bb-home-player .rv-single-avatar .fd-player-img--fallback {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    object-fit: contain;
+    object-position: center bottom;
+  }
+  .bb-home-player .rv-single-figure:has(.fd-player-img--silhouette) .fd-pitch-rating, .bb-home-player .rv-single-figure:has(.fd-player-img--fallback) .fd-pitch-rating {
+    inset: auto;
+    right: -6px;
+    bottom: -2px;
+    display: block;
+    padding: 1px 4px;
+    border: 1px solid rgb(250 204 21 / 0.55);
+    border-radius: 4px;
+    background: rgb(7 12 22 / 0.94);
+    box-shadow: 0 2px 4px rgb(0 0 0 / 0.7);
+    color: #facc15;
+    font-size: 0.68rem;
+  }
+  .bb-home-player-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 12%;
+  }
+  .bb-home-player-name, .bb-home-player-season {
+    display: block;
+    max-width: 100%;
+    overflow: hidden;
+    padding: 1px 5px;
+    border: 1px solid rgb(148 163 184 / 0.28);
+    border-radius: 3px;
+    background: rgb(6 11 20 / 0.92);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .bb-home-player-name {
+    color: #f8fafc;
+    font-size: 0.72rem;
+    font-weight: 750;
+    line-height: 1.3;
+  }
+  .bb-home-player-season {
+    color: #fcd34d;
+    font-size: 0.66rem;
+    font-weight: 650;
+    line-height: 1.25;
+  }
+  .bb-home-player .rv-single-label, .bb-home-player .rv-single-name {
+    display: block;
+    max-width: 100%;
+  }
+  .bb-home-player .rv-single-meta {
+    max-width: 100%;
+    gap: 2px;
+    padding-inline: 3px;
+  }
+  .bb-home-player-club-tag {
+    display: none;
+    flex: 0 0 auto;
+    min-width: 14px;
+    color: #bae6fd;
+    font-size: 0.54rem;
+    font-weight: 850;
+    letter-spacing: 0.02em;
+    text-align: center;
+    white-space: nowrap;
+  }
+  .bb-home-player .rv-single-meta.bb-home-meta--no-crest .bb-home-player-club-tag, .bb-home-player .rv-single-meta.fd-logo-wrap--empty .bb-home-player-club-tag {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .bb-home-player-marquee {
+    display: none;
   }
   .bb-home-football-caption {
-    position: absolute;
-    right: 2%;
-    bottom: 2%;
-    left: 2%;
-    padding: 24px 14px 8px;
+    position: static;
+    flex: 0 0 auto;
+    margin-bottom: 4px;
+    padding: 0 12px;
     text-align: center;
-    background: linear-gradient(0deg, rgb(5 10 18 / 0.88), transparent);
+  }
+  .bb-home-showcase-toggle {
+    display: inline-grid;
+    place-items: center;
+    min-width: 36px;
+    min-height: 34px;
+    padding: 4px 8px;
+    color: var(--color-fg-secondary);
+    border: 1px solid var(--border-divider);
+    border-radius: var(--radius-control);
+    background: rgb(7 14 24 / 0.78);
+    font-size: 0.75rem;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  .bb-home-showcase-toggle:hover:not(:disabled) {
+    color: var(--color-fg);
+    border-color: var(--border-focus);
+  }
+  .bb-home-showcase-toggle:focus-visible {
+    outline: 2px solid var(--border-focus);
+    outline-offset: 2px;
+  }
+  .bb-home-showcase-toggle:disabled {
+    cursor: default;
+    opacity: 0.72;
+  }
+  .bb-home-showcase-toggle--desktop {
+    position: absolute;
+    top: 12px;
+    right: max(10px, calc((100% - 32.5rem) / 2));
+  }
+  .bb-home-marquee-heading {
+    display: none;
   }
   .bb-home-tagline {
     margin: 0 0 5px;
@@ -3264,29 +3437,6 @@
     color: var(--color-fg-secondary);
     font-size: var(--text-player-info);
     line-height: 1.55;
-  }
-  .bb-home-season-rail {
-    display: flex;
-    align-items: baseline;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 4px 12px;
-    margin: 9px auto 0;
-    padding: 0;
-    list-style: none;
-  }
-  .bb-home-season-item {
-    display: inline-flex;
-    align-items: baseline;
-    gap: 4px;
-    color: var(--color-fg-secondary);
-    font-size: 0.68rem;
-    line-height: 1.35;
-    white-space: nowrap;
-  }
-  .bb-home-season-item strong {
-    color: var(--color-fg);
-    font-weight: 700;
   }
   dialog.bb-guest-modal {
     position: fixed;
@@ -3381,11 +3531,25 @@
       grid-template-columns: minmax(280px, 0.42fr) minmax(0, 0.58fr);
       gap: 18px;
     }
+    .bb-home-pitch {
+      width: min(100%, 22rem);
+      height: auto;
+    }
+    .bb-home-player {
+      width: 22%;
+    }
+  }
+  @media (max-width: 900px) and (max-height: 760px) {
+    .bb-home-pitch {
+      width: min(100%, 20rem);
+    }
   }
   @media (max-width: 640px) {
     #home.bb-home-shell:not([hidden]) {
       min-height: calc(100dvh - 56px);
       padding: 18px 12px 24px;
+      align-content: start;
+      row-gap: 8px;
     }
     .bb-home-stage {
       grid-template-columns: minmax(0, 1fr);
@@ -3420,25 +3584,135 @@
       text-align: right;
       white-space: normal;
     }
+    .bb-home-mode--active .bb-home-mode-action {
+      max-width: none;
+      text-align: left;
+      white-space: nowrap;
+    }
     .bb-home-menu-item--disabled {
       min-height: 42px;
     }
     .bb-home-football-stage {
-      min-height: 220px;
+      display: none;
     }
-    .bb-home-pitch {
-      width: 38%;
-      opacity: 0.48;
+    .bb-home-marquee-heading {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      width: min(100%, 36rem);
+      margin: 2px auto -2px;
     }
-    .bb-home-formation {
-      inset: 5% 7% 8%;
+    .bb-home-marquee-heading p {
+      min-width: 0;
+      margin: 0;
+      color: var(--color-fg-secondary);
+      font-size: 0.74rem;
+      font-weight: 750;
+      line-height: 1.25;
     }
-    .bb-home-football-caption {
-      bottom: 0;
-      padding-top: 22px;
+    .bb-home-showcase-toggle--mobile {
+      flex: 0 0 auto;
+      min-height: 30px;
+      padding-inline: 9px;
+      font-size: 0.72rem;
     }
-    .bb-home-tagline {
-      font-size: 0.7rem;
+    .bb-home-player-marquee {
+      display: block;
+      width: min(100%, 36rem);
+      height: 144px;
+      margin: 8px auto 0;
+      overflow-x: auto;
+      overflow-y: hidden;
+      border-block: 1px solid rgb(148 163 184 / 0.18);
+      border-radius: 8px;
+      background: linear-gradient(90deg, rgb(5 11 20 / 0.36), rgb(5 11 20 / 0.68), rgb(5 11 20 / 0.36));
+      scrollbar-width: none;
+      overscroll-behavior-x: contain;
+      touch-action: pan-x pan-y;
+      -webkit-mask-image: linear-gradient(90deg, transparent, #000 5%, #000 95%, transparent);
+      mask-image: linear-gradient(90deg, transparent, #000 5%, #000 95%, transparent);
+    }
+    .bb-home-player-marquee::-webkit-scrollbar {
+      display: none;
+    }
+    .bb-home-player-marquee:focus-visible {
+      outline: 2px solid var(--border-focus);
+      outline-offset: 3px;
+    }
+    .bb-home-player-marquee-track {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      width: max-content;
+      min-width: 100%;
+      height: 100%;
+      padding: 10px 14px;
+      animation: bb-home-player-marquee 90s linear infinite;
+      will-change: transform;
+    }
+    .bb-home-player-marquee.is-paused .bb-home-player-marquee-track {
+      animation-play-state: paused;
+    }
+    .bb-home-player--rail {
+      position: relative;
+      display: flex;
+      flex: 0 0 164px;
+      flex-direction: row;
+      align-items: center;
+      gap: 9px;
+      width: 164px;
+      min-height: 112px;
+      padding: 9px;
+      overflow: hidden;
+      transform: none;
+      text-align: left;
+      text-shadow: none;
+      border: 1px solid rgb(148 163 184 / 0.28);
+      border-radius: 7px;
+      background: rgb(7 14 24 / 0.9);
+    }
+    .bb-home-player--rail .bb-home-player-avatar {
+      flex: 0 0 54px;
+      width: 54px;
+    }
+    .bb-home-player-details {
+      display: flex;
+      flex: 1 1 auto;
+      flex-direction: column;
+      gap: 5px;
+      min-width: 0;
+    }
+    .bb-home-player--rail .bb-home-player-name, .bb-home-player--rail .bb-home-player-season {
+      display: -webkit-box;
+      overflow: hidden;
+      padding: 0;
+      border: 0;
+      background: transparent;
+      -webkit-box-orient: vertical;
+      white-space: normal;
+      text-overflow: clip;
+    }
+    .bb-home-player--rail .bb-home-player-name {
+      -webkit-line-clamp: 2;
+      font-size: 0.78rem;
+      line-height: 1.3;
+      text-align: left;
+    }
+    .bb-home-player--rail .bb-home-player-season {
+      -webkit-line-clamp: 2;
+      color: var(--color-fg-secondary);
+      font-size: 0.75rem;
+      line-height: 1.25;
+      text-align: left;
+    }
+    @keyframes bb-home-player-marquee {
+      from {
+        transform: translateX(0);
+      }
+      to {
+        transform: translateX(-50%);
+      }
     }
     dialog.bb-guest-modal {
       padding: 16px;
@@ -3461,6 +3735,14 @@
   @media (prefers-reduced-motion: reduce) {
     .bb-home-mode {
       transition: none;
+    }
+    .bb-home-lineup-layer {
+      transition: none;
+    }
+    .bb-home-player-marquee-track {
+      animation: none;
+      transform: none;
+      will-change: auto;
     }
   }
   #lobby.bb-lobby-shell {

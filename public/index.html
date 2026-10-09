@@ -158,26 +158,24 @@
           </button>
         </nav>
 
-        <div class="bb-home-football-stage" role="group" aria-labelledby="home-eyebrow home-stage-caption">
-          <div class="bb-home-pitch" aria-hidden="true">
-            <div class="bb-home-formation">
-              <div class="bb-home-formation-row bb-home-formation-row--fw"><i class="bb-home-position bb-home-position--fw"></i><i class="bb-home-position bb-home-position--fw"></i><i class="bb-home-position bb-home-position--fw"></i></div>
-              <div class="bb-home-formation-row bb-home-formation-row--mf"><i class="bb-home-position bb-home-position--mf"></i><i class="bb-home-position bb-home-position--mf"></i><i class="bb-home-position bb-home-position--mf"></i></div>
-              <div class="bb-home-formation-row bb-home-formation-row--df"><i class="bb-home-position bb-home-position--df"></i><i class="bb-home-position bb-home-position--df"></i><i class="bb-home-position bb-home-position--df"></i><i class="bb-home-position bb-home-position--df"></i></div>
-              <div class="bb-home-formation-row bb-home-formation-row--gk"><i class="bb-home-position bb-home-position--gk"></i></div>
-            </div>
-          </div>
+        <div class="bb-home-football-stage" id="home-showcase-stage" role="group" tabindex="0" aria-labelledby="home-eyebrow home-stage-caption">
           <div class="bb-home-football-caption">
             <p id="home-eyebrow" class="bb-home-tagline">EVERY ERA. ONE PITCH.</p>
             <p id="home-stage-caption" class="bb-home-stage-caption">各時代の名選手を集め、ドリームイレブンを結成。</p>
-            <ul class="bb-home-season-rail" aria-labelledby="home-stage-caption">
-              <li class="bb-home-season-item"><strong>Roy Keane</strong><span>Manchester United · 1999</span></li>
-              <li class="bb-home-season-item"><strong>Lionel Messi</strong><span>Barcelona · 2011</span></li>
-              <li class="bb-home-season-item"><strong>Andrés Iniesta</strong><span>Barcelona · 2015</span></li>
-            </ul>
+            <button id="home-showcase-toggle" class="bb-home-showcase-toggle bb-home-showcase-toggle--desktop" type="button" aria-label="Showcase animation" aria-pressed="false">
+              <span id="home-showcase-toggle-icon" aria-hidden="true">Ⅱ</span>
+            </button>
           </div>
+          <div class="bb-home-pitch" id="home-pitch" role="list" aria-label="Featured historical 4-3-3 lineup"></div>
         </div>
       </div>
+      <div class="bb-home-marquee-heading">
+        <p id="home-player-marquee-heading">Featured historical players</p>
+        <button id="home-showcase-mobile-toggle" class="bb-home-showcase-toggle bb-home-showcase-toggle--mobile" type="button" aria-label="Showcase animation" aria-pressed="false">Pause</button>
+      </div>
+      <section class="bb-home-player-marquee" id="home-player-marquee" role="region" tabindex="0" aria-label="Featured historical players">
+        <div class="bb-home-player-marquee-track" id="home-player-marquee-track" role="list"></div>
+      </section>
     </section>
 
     <!-- ゲームロビー: 部屋を作る／部屋に入る -->
@@ -240,6 +238,7 @@
 
     <p id="toast" role="status"></p>
   </main>
+  <script type="module" src="ui/home-showcase.js"></script>
   <script type="module" src="main.js"></script>
 </body>
 </html>

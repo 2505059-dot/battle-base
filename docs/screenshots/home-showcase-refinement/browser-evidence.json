@@ -1,0 +1,177 @@
+{
+  "viewports": [
+    {
+      "viewport": [
+        1366,
+        768
+      ],
+      "document": [
+        1366,
+        768
+      ],
+      "stage": {
+        "rect": {
+          "x": 107,
+          "y": 75,
+          "width": 1152,
+          "height": 678
+        },
+        "background": "rgba(0, 0, 0, 0)",
+        "mask": "linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 12%, rgb(0, 0, 0) 88%, rgba(0, 0, 0, 0) 100%), linear-gradient(rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 12%, rgb(0, 0, 0) 88%, rgba(0, 0, 0, 0) 100%)",
+        "maskComposite": "intersect, intersect",
+        "webkitComposite": "intersect, intersect"
+      },
+      "pitch": {
+        "rect": {
+          "x": 676,
+          "y": 129,
+          "width": 394,
+          "height": 620
+        },
+        "aspect": 0.6355,
+        "backgroundImage": "linear-gradient(rgba(3, 9, 18, 0.1) 0%, rgba(3, 9, 18, 0.02) 50%, rgba(3, 9, 18, 0.12) 100%), url(\"http://127.0.0.1:8000/assets/draft-pitch-vertical.jpg\")",
+        "mask": "none",
+        "shadow": "rgba(2, 9, 15, 0.48) 0px 0px 50px 0px"
+      },
+      "activePlayers": 11,
+      "roles": {
+        "GK": 1,
+        "DF": 4,
+        "MF": 3,
+        "FW": 3
+      },
+      "mobilePitchDisplay": "flex",
+      "marqueeMask": "none"
+    },
+    {
+      "viewport": [
+        1920,
+        1080
+      ],
+      "document": [
+        1920,
+        1080
+      ],
+      "stage": {
+        "rect": {
+          "x": 384,
+          "y": 230,
+          "width": 1152,
+          "height": 680
+        },
+        "background": "rgba(0, 0, 0, 0)",
+        "mask": "linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 12%, rgb(0, 0, 0) 88%, rgba(0, 0, 0, 0) 100%), linear-gradient(rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 12%, rgb(0, 0, 0) 88%, rgba(0, 0, 0, 0) 100%)",
+        "maskComposite": "intersect, intersect",
+        "webkitComposite": "intersect, intersect"
+      },
+      "pitch": {
+        "rect": {
+          "x": 954,
+          "y": 285,
+          "width": 394,
+          "height": 620
+        },
+        "aspect": 0.6355,
+        "backgroundImage": "linear-gradient(rgba(3, 9, 18, 0.1) 0%, rgba(3, 9, 18, 0.02) 50%, rgba(3, 9, 18, 0.12) 100%), url(\"http://127.0.0.1:8000/assets/draft-pitch-vertical.jpg\")",
+        "mask": "none",
+        "shadow": "rgba(2, 9, 15, 0.48) 0px 0px 50px 0px"
+      },
+      "activePlayers": 11,
+      "roles": {
+        "GK": 1,
+        "DF": 4,
+        "MF": 3,
+        "FW": 3
+      },
+      "mobilePitchDisplay": "flex",
+      "marqueeMask": "none"
+    },
+    {
+      "viewport": [
+        1280,
+        720
+      ],
+      "document": [
+        1280,
+        720
+      ],
+      "stage": {
+        "rect": {
+          "x": 64,
+          "y": 75,
+          "width": 1152,
+          "height": 630
+        },
+        "background": "rgba(0, 0, 0, 0)",
+        "mask": "linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 12%, rgb(0, 0, 0) 88%, rgba(0, 0, 0, 0) 100%), linear-gradient(rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 12%, rgb(0, 0, 0) 88%, rgba(0, 0, 0, 0) 100%)",
+        "maskComposite": "intersect, intersect",
+        "webkitComposite": "intersect, intersect"
+      },
+      "pitch": {
+        "rect": {
+          "x": 647,
+          "y": 129,
+          "width": 364,
+          "height": 572
+        },
+        "aspect": 0.6364,
+        "backgroundImage": "linear-gradient(rgba(3, 9, 18, 0.1) 0%, rgba(3, 9, 18, 0.02) 50%, rgba(3, 9, 18, 0.12) 100%), url(\"http://127.0.0.1:8000/assets/draft-pitch-vertical.jpg\")",
+        "mask": "none",
+        "shadow": "rgba(2, 9, 15, 0.48) 0px 0px 50px 0px"
+      },
+      "activePlayers": 11,
+      "roles": {
+        "GK": 1,
+        "DF": 4,
+        "MF": 3,
+        "FW": 3
+      },
+      "mobilePitchDisplay": "flex",
+      "marqueeMask": "none"
+    },
+    {
+      "viewport": [
+        390,
+        844
+      ],
+      "document": [
+        390,
+        844
+      ],
+      "stage": {
+        "rect": {
+          "x": 12,
+          "y": 74,
+          "width": 366,
+          "height": 454
+        },
+        "background": "rgba(0, 0, 0, 0)",
+        "mask": "linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 12%, rgb(0, 0, 0) 88%, rgba(0, 0, 0, 0) 100%), linear-gradient(rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 12%, rgb(0, 0, 0) 88%, rgba(0, 0, 0, 0) 100%)",
+        "maskComposite": "intersect, intersect",
+        "webkitComposite": "intersect, intersect"
+      },
+      "pitch": {
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "aspect": null,
+        "backgroundImage": "linear-gradient(rgba(3, 9, 18, 0.1) 0%, rgba(3, 9, 18, 0.02) 50%, rgba(3, 9, 18, 0.12) 100%), url(\"http://127.0.0.1:8000/assets/draft-pitch-vertical.jpg\")",
+        "mask": "none",
+        "shadow": "rgba(2, 9, 15, 0.48) 0px 0px 50px 0px"
+      },
+      "activePlayers": 11,
+      "roles": {
+        "GK": 1,
+        "DF": 4,
+        "MF": 3,
+        "FW": 3
+      },
+      "mobilePitchDisplay": "none",
+      "marqueeMask": "linear-gradient(90deg, rgba(0, 0, 0, 0), rgb(0, 0, 0) 5%, rgb(0, 0, 0) 95%, rgba(0, 0, 0, 0))"
+    }
+  ],
+  "pageErrors": []
+}

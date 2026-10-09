@@ -22,6 +22,7 @@ let started = false;
 let inRoom = false;
 let helpExpandedInRoom = false;
 let lastHelpTrigger = null;
+let lastGuestProfileTrigger = null;
 let players = [];
 let messageHandlers = [];
 let playersHandlers = [];
@@ -94,6 +95,7 @@ function saveGuestName(rawName, { showToast = false, skipInputId = null } = {}) 
     const profileCard = $('home-profile-card');
     if (profileCard && showToast) {
         profileCard.classList.remove('is-editing');
+        closeGuestProfile();
     }
     if (showToast) {
         if (clean) {
@@ -187,7 +189,53 @@ function closeAboutModal() {
     lastHelpTrigger = null;
 }
 
+function openGuestProfile(triggerEl = null) {
+    const dialog = $('home-profile-card');
+    if (!dialog) return;
+    lastGuestProfileTrigger = triggerEl || document.activeElement;
+    if (typeof dialog.showModal === 'function') {
+        if (!dialog.open) dialog.showModal();
+    } else {
+        dialog.setAttribute('open', '');
+    }
+    $('topbar-guest-btn')?.setAttribute('aria-expanded', 'true');
+    const input = $('home-name-input');
+    if (input) {
+        input.focus();
+        input.select();
+    }
+}
+
+function finishGuestProfileClose() {
+    syncPageState();
+    const focusTarget = pageView === 'HOME'
+        ? lastGuestProfileTrigger
+        : pageView === 'ROOM_ENTRY'
+            ? $('name')
+            : $('topbar-brand-home');
+    if (focusTarget && typeof focusTarget.focus === 'function') {
+        focusTarget.focus();
+    }
+    lastGuestProfileTrigger = null;
+}
+
+function closeGuestProfile() {
+    const dialog = $('home-profile-card');
+    if (!dialog) return;
+    if (typeof dialog.close === 'function' && dialog.open) {
+        dialog.close();
+        finishGuestProfileClose();
+    } else {
+        dialog.removeAttribute('open');
+        finishGuestProfileClose();
+    }
+}
+
 function syncPageState() {
+    const guestDialog = $('home-profile-card');
+    if (pageView !== 'HOME' && guestDialog?.open) {
+        guestDialog.close();
+    }
     if ($('home')) $('home').hidden = pageView !== 'HOME';
     if ($('lobby')) $('lobby').hidden = pageView !== 'ROOM_ENTRY';
     if ($('room')) $('room').hidden = pageView !== 'ROOM_WAITING' && pageView !== 'GAME';
@@ -197,6 +245,19 @@ function syncPageState() {
     document.body.classList.toggle('in-lobby', pageView === 'ROOM_ENTRY');
     document.body.classList.toggle('in-room', pageView === 'ROOM_WAITING' || pageView === 'GAME');
     document.body.classList.toggle('in-game', pageView === 'GAME');
+
+    const guestButton = $('topbar-guest-btn');
+    if (guestButton) {
+        if (pageView === 'HOME') {
+            guestButton.setAttribute('aria-haspopup', 'dialog');
+            guestButton.setAttribute('aria-controls', 'home-profile-card');
+            guestButton.setAttribute('aria-expanded', String(Boolean($('home-profile-card')?.open)));
+        } else {
+            guestButton.removeAttribute('aria-haspopup');
+            guestButton.removeAttribute('aria-controls');
+            guestButton.removeAttribute('aria-expanded');
+        }
+    }
 
     if (pageView !== 'GAME') {
         document.body.classList.remove('in-draft', 'in-reveal', 'in-match', 'in-result');
@@ -237,6 +298,8 @@ function applyLobbyTranslations() {
     // ERA DERBY Home Main Menu (#home)
     setText('home-eyebrow', 'home.eyebrow');
     setText('home-archive-tag', 'home.archiveTag');
+    setText('home-menu-title', 'home.menuHeading');
+    setText('home-stage-caption', 'home.stageCaption');
     setText('home-brand-sub', 'lobby.brandSub');
     setText('home-hero-desc', 'home.heroDesc');
     setText('home-spec1-title', 'home.spec1Title');
@@ -268,6 +331,8 @@ function applyLobbyTranslations() {
     setText('home-mode-mm-btn-text', 'home.comingSoon');
 
     setText('home-profile-title', 'home.profileTitle');
+    const profileCloseBtn = $('home-profile-close-btn');
+    if (profileCloseBtn) profileCloseBtn.setAttribute('aria-label', t('home.closeProfileBtn'));
     setText('home-guest-badge', 'home.guest');
     setText('home-current-name-label', 'home.currentNameLabel');
     setText('home-edit-name-btn', 'home.editNameBtn');
@@ -462,8 +527,6 @@ if ($('topbar-brand-home')) {
 // Guest Profile Controls
 if ($('home-edit-name-btn')) {
     $('home-edit-name-btn').addEventListener('click', () => {
-        const profileCard = $('home-profile-card');
-        if (profileCard) profileCard.classList.add('is-editing');
         const input = $('home-name-input');
         if (input) {
             input.focus();
@@ -497,13 +560,7 @@ if ($('name')) {
 if ($('topbar-guest-btn')) {
     $('topbar-guest-btn').addEventListener('click', () => {
         if (pageView === 'HOME') {
-            const profileCard = $('home-profile-card');
-            if (profileCard) profileCard.classList.add('is-editing');
-            const input = $('home-name-input');
-            if (input) {
-                input.focus();
-                input.select();
-            }
+            openGuestProfile($('topbar-guest-btn'));
         } else if (pageView === 'ROOM_ENTRY') {
             const input = $('name');
             if (input) {
@@ -516,6 +573,29 @@ if ($('topbar-guest-btn')) {
                 toastKey('home.toastNameSaved', { name: current });
             }
         }
+    });
+}
+
+if ($('home-profile-close-btn')) {
+    $('home-profile-close-btn').addEventListener('click', closeGuestProfile);
+}
+
+if ($('home-profile-card')) {
+    const dialog = $('home-profile-card');
+    dialog.addEventListener('close', finishGuestProfileClose);
+    dialog.addEventListener('cancel', () => {
+        // Escape closes after `cancel`; announce the collapse before the native default.
+        const guestButton = $('topbar-guest-btn');
+        if (pageView === 'HOME') guestButton?.setAttribute('aria-expanded', 'false');
+        else guestButton?.removeAttribute('aria-expanded');
+    });
+    dialog.addEventListener('click', (event) => {
+        const dialog = $('home-profile-card');
+        if (event.target !== dialog) return;
+        const rect = dialog.getBoundingClientRect();
+        const outside = event.clientX < rect.left || event.clientX > rect.right ||
+            event.clientY < rect.top || event.clientY > rect.bottom;
+        if (outside) closeGuestProfile();
     });
 }
 

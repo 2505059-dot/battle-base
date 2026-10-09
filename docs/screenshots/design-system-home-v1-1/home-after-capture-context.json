@@ -1,0 +1,12 @@
+{
+  "sourceCommit": "working tree based on 45856df957d80cdbc3ce3771da48c6573fe6e1a0",
+  "capture": "Current local app at port 8000; Playwright page screenshot, 1x scale.",
+  "url": "http://localhost:8000/",
+  "deviceScaleFactor": 1,
+  "viewports": [
+    "1920x1080",
+    "1366x768",
+    "1280x720",
+    "390x844"
+  ]
+}

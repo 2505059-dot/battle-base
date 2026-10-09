@@ -69,6 +69,9 @@ export const en = {
     home: {
         eyebrow: 'EVERY ERA. ONE PITCH.',
         archiveTag: '11V11 HISTORICAL DREAM DRAFT',
+        menuHeading: 'Choose a Match',
+        stageCaption: 'Bring legends from every era together to build your dream XI.',
+        closeProfileBtn: 'Close player profile',
         heroDesc:
             'Bring legendary clubs and players from across football history onto a single pitch to build your dream XI and compete.',
         spec1Title: '1v1 DRAFT',

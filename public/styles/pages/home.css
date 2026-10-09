@@ -1,8 +1,6 @@
 /**
- * Page Module: ERA DERBY Home Main Menu (#home.bb-home-shell)
- * Responsibility: Main menu hero banner (.bb-home-hero), primary Game Lobby entry card (.bb-home-primary-card),
- * upcoming disabled mode cards (.bb-home-mode-card), guest identity profile editor (.bb-home-profile-card),
- * and How to Play entry card (.bb-home-guide-card) across 1366x768 desktop and 390x844 mobile viewports.
+ * HOME v1.1 — PC football-client main menu and compact guest identity dialog.
+ * Scope stays on #home and its native dialog; other phases retain their layouts.
  */
 @layer components {
   #home[hidden] {
@@ -10,639 +8,525 @@
   }
 
   #home.bb-home-shell:not([hidden]) {
-    max-width: 100%;
+    display: grid;
+    flex: 1 0 auto;
+    place-items: center;
+    min-height: calc(100dvh - var(--layout-client-nav));
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 28px 24px;
     background: transparent;
     border: 0;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
   }
 
-  /* 1. Brand Hero Banner */
-  .bb-home-hero {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 18px;
-    padding: 16px 22px;
-    border-radius: 10px;
-    background:
-      linear-gradient(125deg, rgba(16, 28, 48, 0.92) 0%, rgba(10, 17, 30, 0.90) 62%, rgba(28, 22, 12, 0.85) 100%);
-    border: 1px solid rgba(148, 163, 184, 0.24);
-    border-left: 4px solid #f59e0b;
-    box-shadow: 0 16px 40px rgba(2, 6, 15, 0.58), inset 0 1px 0 rgba(255, 255, 255, 0.06);
+  .bb-home-stage {
+    display: grid;
+    grid-template-columns: minmax(300px, 0.36fr) minmax(0, 0.64fr);
+    align-items: stretch;
+    gap: clamp(22px, 4vw, 52px);
+    width: var(--layout-home-stage);
+    min-height: min(620px, calc(100svh - 124px));
+    max-height: 700px;
+    margin: auto;
+    overflow: hidden;
   }
 
-  .bb-home-hero-main {
+  .bb-home-menu {
     display: flex;
     flex-direction: column;
-    gap: 6px;
+    justify-content: center;
+    align-self: center;
     min-width: 0;
-    flex: 1;
+    padding: clamp(20px, 2.6vw, 34px) clamp(18px, 2.2vw, 28px);
   }
 
-  .bb-home-hero-kicker {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    flex-wrap: wrap;
-  }
-
-  .bb-home-eyebrow {
-    font-size: 0.68rem;
-    font-weight: 900;
-    letter-spacing: 0.12em;
-    color: #fcd34d;
-    text-transform: uppercase;
+  .bb-home-menu-heading {
+    margin-bottom: 18px;
   }
 
   .bb-home-archive-tag {
-    font-size: 0.65rem;
-    font-weight: 800;
-    letter-spacing: 0.06em;
-    padding: 2px 7px;
-    border-radius: 4px;
-    background: rgba(56, 189, 248, 0.14);
-    border: 1px solid rgba(56, 189, 248, 0.32);
-    color: #7dd3fc;
+    margin: 0 0 9px;
+    color: var(--color-fg-muted);
+    font-size: var(--text-supporting);
+    line-height: 1.45;
   }
 
-  .bb-home-brand-lockup {
-    display: flex;
-    align-items: baseline;
-    gap: 12px;
-    flex-wrap: wrap;
-  }
-
-  .bb-home-brand-title {
+  .bb-home-menu-heading h2 {
     margin: 0;
-    font-size: 2rem;
-    line-height: 1.05;
-    font-weight: 900;
-    letter-spacing: 0.06em;
-    color: #f8fafc;
-    text-shadow: 0 4px 16px rgba(2, 6, 15, 0.8);
-  }
-
-  .bb-home-brand-sub {
-    font-size: 0.98rem;
+    color: var(--color-fg);
+    font-size: clamp(1.35rem, 2vw, 1.65rem);
+    line-height: 1.2;
     font-weight: 800;
-    letter-spacing: 0.04em;
-    color: #fde047;
   }
 
-  .bb-home-hero-desc {
-    margin: 0;
-    font-size: 0.84rem;
-    line-height: 1.48;
-    color: #cbd5e1;
-    max-width: 68ch;
-  }
-
-  .bb-home-hero-specs {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(108px, 1fr));
-    gap: 8px;
-    flex-shrink: 0;
-  }
-
-  .bb-home-spec-chip {
+  .bb-home-menu-list {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    gap: 3px;
-    padding: 9px 11px;
-    border-radius: 7px;
-    background: rgba(9, 15, 26, 0.82);
-    border: 1px solid rgba(148, 163, 184, 0.2);
-    border-top: 2px solid rgba(56, 189, 248, 0.55);
+    gap: 5px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
   }
 
-  .bb-home-spec-chip strong {
-    font-size: 0.84rem;
-    font-weight: 900;
-    letter-spacing: 0.05em;
-    color: #f8fafc;
-    font-variant-numeric: tabular-nums;
-  }
-
-  .bb-home-spec-chip span {
-    font-size: 0.68rem;
-    font-weight: 600;
-    color: #94a3b8;
-    white-space: nowrap;
-  }
-
-  /* 2. Main Client Grid (Modes Left + Guest Profile & Guide Right) */
-  .bb-home-grid {
-    display: grid;
-    grid-template-columns: minmax(0, 1.46fr) minmax(320px, 1fr);
-    gap: 14px;
-    align-items: stretch;
-  }
-
-  .bb-home-modes-col,
-  .bb-home-side-col {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+  .bb-home-menu-item {
     min-width: 0;
   }
 
-  .bb-home-card-top {
+  .bb-home-mode {
+    width: 100%;
+    min-height: 86px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 8px;
+    gap: 12px;
+    padding: 13px 14px;
+    color: var(--color-fg);
+    text-align: left;
+    border: 1px solid var(--border-hud);
+    border-inline-start: 3px solid var(--color-season-gold);
+    border-radius: var(--radius-control);
+    cursor: pointer;
+    transition: background-color 140ms ease, border-color 140ms ease, transform 140ms ease;
   }
 
-  .bb-home-mode-code {
-    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
-    font-size: 0.66rem;
-    font-weight: 800;
-    letter-spacing: 0.08em;
-    color: #64748b;
-    text-transform: uppercase;
+  .bb-home-mode--active.bb-nav-active {
+    background: linear-gradient(100deg, var(--surface-nav-active), rgb(5 11 20 / 0.54));
   }
 
-  /* Semantic Status Pills */
-  .bb-status-pill {
+  .bb-home-mode:hover {
+    background-color: var(--surface-hud-raised);
+    border-color: var(--border-nav-active);
+    transform: translateX(2px);
+  }
+
+  .bb-home-mode-copy {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    min-width: 0;
+  }
+
+  .bb-home-live-status {
     display: inline-flex;
     align-items: center;
-    gap: 5px;
-    padding: 2px 8px;
-    border-radius: 4px;
-    font-size: 0.68rem;
-    font-weight: 800;
-    letter-spacing: 0.04em;
-    white-space: nowrap;
-  }
-
-  .bb-status-pill--live {
-    background: rgba(245, 158, 11, 0.18);
-    border: 1px solid rgba(245, 158, 11, 0.52);
-    color: #fde047;
+    gap: 7px;
+    color: var(--color-fg-secondary);
+    font-size: 0.75rem;
+    line-height: 1.3;
   }
 
   .bb-live-dot {
-    width: 6px;
-    height: 6px;
-    border-radius: 999px;
-    background: #fbbf24;
-    box-shadow: 0 0 8px #f59e0b;
-  }
-
-  .bb-status-pill--soon {
-    background: rgba(30, 41, 59, 0.85);
-    border: 1px solid rgba(148, 163, 184, 0.24);
-    color: #94a3b8;
-  }
-
-  .bb-status-pill--guest {
-    background: rgba(56, 189, 248, 0.16);
-    border: 1px solid rgba(56, 189, 248, 0.42);
-    color: #7dd3fc;
-  }
-
-  .bb-status-pill--guide {
-    background: rgba(34, 197, 94, 0.14);
-    border: 1px solid rgba(34, 197, 94, 0.38);
-    color: #86efac;
-  }
-
-  /* Featured Primary Card: Game Lobby */
-  .bb-home-primary-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 14px;
-    padding: 18px 22px;
-    border-radius: 10px;
-    background:
-      linear-gradient(135deg, rgba(40, 29, 12, 0.72) 0%, rgba(13, 22, 38, 0.92) 55%, rgba(9, 15, 27, 0.96) 100%);
-    border: 1px solid rgba(245, 158, 11, 0.45);
-    border-top: 3px solid #f59e0b;
-    box-shadow: 0 18px 42px rgba(2, 6, 15, 0.62), inset 0 1px 0 rgba(254, 240, 138, 0.12);
-  }
-
-  .bb-home-primary-body {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-    gap: 18px;
-  }
-
-  .bb-home-primary-copy {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    min-width: 0;
-    flex: 1;
-  }
-
-  .bb-home-primary-title {
-    margin: 0;
-    font-size: 1.48rem;
-    line-height: 1.15;
-    font-weight: 900;
-    letter-spacing: 0.02em;
-    color: #f8fafc;
-  }
-
-  .bb-home-primary-sub {
-    margin: 0;
-    font-size: 0.88rem;
-    font-weight: 800;
-    color: #fcd34d;
-  }
-
-  .bb-home-primary-desc {
-    margin: 2px 0 0;
-    font-size: 0.8rem;
-    line-height: 1.48;
-    color: #cbd5e1;
-  }
-
-  .bb-home-primary-cta {
-    flex-shrink: 0;
-  }
-
-  button.bb-home-enter-btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    min-width: 188px;
-    padding: 12px 22px;
-    font-size: 0.98rem;
-    border-radius: 7px;
-    white-space: nowrap;
-  }
-
-  .bb-home-enter-arrow {
-    font-size: 1rem;
-    line-height: 1;
-  }
-
-  /* Secondary / Upcoming Mode Cards (3-column matrix) */
-  .bb-home-upcoming-grid {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 10px;
-    flex: 1;
-  }
-
-  .bb-home-mode-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 8px;
-    padding: 14px 14px 12px;
-    border-radius: 9px;
-    background: linear-gradient(180deg, rgba(11, 18, 31, 0.82) 0%, rgba(8, 13, 23, 0.88) 100%);
-    border: 1px solid rgba(148, 163, 184, 0.16);
-    box-shadow: 0 10px 24px rgba(2, 6, 15, 0.42);
-    transition: border-color 0.15s, background 0.15s;
-  }
-
-  .bb-home-mode-card--disabled {
-    cursor: pointer;
-  }
-
-  .bb-home-mode-card--disabled:hover,
-  .bb-home-mode-card--disabled:focus-visible {
-    outline: none;
-    border-color: rgba(148, 163, 184, 0.34);
-    background: linear-gradient(180deg, rgba(15, 24, 40, 0.86) 0%, rgba(10, 16, 28, 0.92) 100%);
+    width: 7px;
+    height: 7px;
+    flex: 0 0 7px;
+    border-radius: 50%;
+    background: #61c98d;
+    box-shadow: 0 0 0 3px rgb(97 201 141 / 0.12);
   }
 
   .bb-home-mode-title {
-    margin: 2px 0 0;
-    font-size: 0.98rem;
+    color: var(--color-fg);
+    font-size: var(--text-menu-primary);
+    line-height: 1.3;
     font-weight: 800;
-    color: #cbd5e1;
   }
 
-  .bb-home-mode-desc {
-    margin: 0;
-    font-size: 0.75rem;
-    line-height: 1.45;
-    color: #7e92b8;
-    flex: 1;
+  .bb-home-mode-sub {
+    color: var(--color-fg-muted);
+    font-size: var(--text-supporting);
+    line-height: 1.4;
   }
 
-  button.bb-home-mode-disabled-btn {
-    width: 100%;
-    padding: 6px 10px;
-    font-size: 0.74rem;
-    font-weight: 800;
-    letter-spacing: 0.04em;
-    border-radius: 5px;
-    background: rgba(18, 27, 44, 0.78);
-    border: 1px solid rgba(148, 163, 184, 0.18);
-    color: #64748b;
-    opacity: 1;
-    pointer-events: none;
+  .bb-home-mode-action {
+    flex: 0 0 auto;
+    color: #f4c66c;
+    font-size: 0.82rem;
+    font-weight: 700;
+    white-space: nowrap;
   }
 
-  /* Right Column: Guest Identity Profile Card & Game Guide Card */
-  .bb-home-profile-card,
-  .bb-home-guide-card {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding: 15px 18px;
-    border-radius: 10px;
-    background: linear-gradient(180deg, rgba(11, 19, 33, 0.88) 0%, rgba(8, 13, 24, 0.94) 100%);
-    border: 1px solid rgba(148, 163, 184, 0.22);
-    box-shadow: 0 14px 34px rgba(2, 6, 15, 0.54);
+  .bb-home-mode-action span {
+    padding-left: 4px;
+    font-size: 1.2rem;
+    vertical-align: -1px;
   }
 
-  .bb-home-profile-card {
-    border-top: 2px solid #38bdf8;
-    flex: 1;
-  }
-
-  .bb-home-profile-card.is-editing {
-    border-color: rgba(56, 189, 248, 0.55);
-    box-shadow: 0 0 0 1px rgba(56, 189, 248, 0.35), 0 14px 34px rgba(2, 6, 15, 0.6);
-  }
-
-  .bb-home-side-title {
-    margin: 0;
-    font-size: 0.96rem;
-    font-weight: 800;
-    color: #f8fafc;
-  }
-
-  .bb-guest-current-box {
+  .bb-home-menu-item--disabled {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 10px;
-    padding: 8px 11px;
-    border-radius: 7px;
-    background: rgba(7, 12, 22, 0.82);
-    border: 1px solid rgba(148, 163, 184, 0.18);
+    gap: 12px;
+    min-height: 43px;
+    padding: 7px 3px;
+    border-bottom: 1px solid var(--border-divider);
+  }
+
+  .bb-home-menu-item--disabled .bb-home-mode-title {
+    color: var(--color-fg-secondary);
+    font-size: var(--text-menu);
+    font-weight: 600;
+  }
+
+  .bb-home-mode-status {
+    flex: 0 0 auto;
+    color: var(--color-fg-muted);
+    font-size: var(--text-supporting);
+  }
+
+  .bb-home-guide-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    width: fit-content;
+    min-height: 44px;
+    margin-top: 14px;
+    padding: 6px 2px;
+    color: var(--color-fg-secondary);
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid var(--border-divider);
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-align: left;
+    cursor: pointer;
+  }
+
+  .bb-home-guide-link:hover {
+    color: var(--color-fg);
+    border-bottom-color: var(--border-focus);
+  }
+
+  .bb-home-guide-link > span:last-child {
+    color: var(--color-fg-muted);
+    font-size: 1.15rem;
+  }
+
+  .bb-home-football-stage {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 0;
+    min-height: 0;
+    isolation: isolate;
+  }
+
+  .bb-home-pitch {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: min(49%, 22rem);
+    aspect-ratio: 651 / 1024;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    background-image:
+      radial-gradient(ellipse at center, rgb(5 13 22 / 0.04) 20%, rgb(5 13 22 / 0.42) 80%),
+      url("/assets/draft-pitch-vertical.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    opacity: 0.55;
+    -webkit-mask-image: linear-gradient(90deg, transparent, #000 17%, #000 83%, transparent);
+    mask-image: linear-gradient(90deg, transparent, #000 17%, #000 83%, transparent);
+  }
+
+  .bb-home-formation {
+    position: absolute;
+    inset: 7% 5% 6%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .bb-home-formation-row {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+
+  .bb-home-formation-row--fw { top: 5%; }
+  .bb-home-formation-row--mf { top: 0; }
+  .bb-home-formation-row--df { top: -2%; }
+  .bb-home-formation-row--gk { top: -1%; }
+
+  .bb-home-position {
+    width: clamp(12px, 1.15vw, 16px);
+    aspect-ratio: 1;
+    border: 2px solid rgb(234 240 255 / 0.82);
+    border-radius: 50%;
+    box-shadow: 0 1px 8px rgb(0 0 0 / 0.68);
+  }
+
+  .bb-home-position--fw { background: var(--color-pos-fw); }
+  .bb-home-position--mf { background: var(--color-pos-mf); }
+  .bb-home-position--df { background: var(--color-pos-df); }
+  .bb-home-position--gk { background: var(--color-pos-gk); }
+
+  .bb-home-football-caption {
+    position: absolute;
+    right: 2%;
+    bottom: 2%;
+    left: 2%;
+    padding: 24px 14px 8px;
+    text-align: center;
+    background: linear-gradient(0deg, rgb(5 10 18 / 0.88), transparent);
+  }
+
+  .bb-home-tagline {
+    margin: 0 0 5px;
+    color: #f0c66e;
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+  }
+
+  .bb-home-stage-caption {
+    max-width: 38ch;
+    margin: 0 auto;
+    color: var(--color-fg-secondary);
+    font-size: var(--text-player-info);
+    line-height: 1.55;
+  }
+
+  .bb-home-season-rail {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4px 12px;
+    margin: 9px auto 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .bb-home-season-item {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 4px;
+    color: var(--color-fg-secondary);
+    font-size: 0.68rem;
+    line-height: 1.35;
+    white-space: nowrap;
+  }
+
+  .bb-home-season-item strong {
+    color: var(--color-fg);
+    font-weight: 700;
+  }
+
+  /* Compact native modal keeps the guest editor available without taking over HOME. */
+  dialog.bb-guest-modal {
+    position: fixed;
+    inset: 0;
+    width: var(--layout-modal);
+    max-width: none;
+    max-height: calc(100dvh - 24px);
+    margin: auto;
+    padding: 20px;
+    overflow: auto;
+  }
+
+  .bb-guest-modal-header,
+  .bb-guest-current-box,
+  .bb-guest-input-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+  .bb-guest-modal-header {
+    align-items: flex-start;
+    padding-bottom: 14px;
+    border-bottom: 1px solid var(--border-divider);
+  }
+
+  .bb-guest-modal-header h2 {
+    margin: 0 0 5px;
+    color: var(--color-fg);
+    font-size: var(--text-page-title);
+    line-height: 1.2;
+  }
+
+  .bb-guest-storage-note {
+    margin: 0;
+    color: var(--color-fg-muted);
+    font-size: var(--text-supporting);
+    line-height: 1.5;
+  }
+
+  .bb-modal-close {
+    flex: 0 0 36px;
+    width: 36px;
+    height: 36px;
+    color: var(--color-fg-secondary);
+    background: var(--surface-hud-inset);
+    border: 1px solid var(--border-divider);
+    border-radius: var(--radius-control);
+    font-size: 1.35rem;
+    cursor: pointer;
+  }
+
+  .bb-guest-current-box {
+    margin: 15px 0;
+    padding: 12px;
+    background: var(--surface-hud-inset);
+    border: 1px solid var(--border-divider);
+    border-radius: var(--radius-control);
   }
 
   .bb-guest-current-meta {
     display: flex;
     flex-direction: column;
-    gap: 1px;
+    gap: 3px;
     min-width: 0;
   }
 
   .bb-guest-current-label {
-    font-size: 0.68rem;
-    font-weight: 700;
-    color: #94a3b8;
+    color: var(--color-fg-muted);
+    font-size: var(--text-supporting);
   }
 
   .bb-guest-current-value {
-    font-size: 0.96rem;
-    font-weight: 800;
-    color: #fde047;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-  }
-
-  .bb-guest-current-value.is-unset {
-    color: #64748b;
-    font-style: italic;
-    font-weight: 600;
-  }
-
-  .bb-guest-edit-btn {
-    background: rgba(20, 32, 54, 0.9);
-    border: 1px solid rgba(56, 189, 248, 0.32);
-    color: #bae6fd;
-    font-size: 0.74rem;
-    font-weight: 700;
-    padding: 4px 10px;
-    border-radius: 5px;
-    white-space: nowrap;
-    margin: 0;
-  }
-
-  .bb-guest-edit-btn:hover {
-    background: rgba(28, 46, 76, 0.95);
-    border-color: #38bdf8;
-    color: #ffffff;
-  }
-
-  .bb-guest-editor {
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
+    overflow-wrap: anywhere;
+    color: var(--color-fg);
+    font-size: 1rem;
   }
 
   .bb-guest-guide {
-    margin: 0;
-    font-size: 0.73rem;
-    line-height: 1.4;
-    color: #cbd5e1;
-    font-weight: 600;
-  }
-
-  .bb-guest-input-row {
-    display: flex;
-    align-items: stretch;
-    gap: 8px;
-  }
-
-  #home input#home-name-input {
-    flex: 1;
-    min-width: 0;
-    background: rgba(7, 12, 22, 0.92);
-    border: 1px solid rgba(148, 163, 184, 0.28);
-    border-radius: 6px;
-    padding: 8px 10px;
-    color: #f8fafc;
-    font-size: 0.88rem;
-    font-weight: 700;
-    transition: border-color 0.15s, box-shadow 0.15s;
-  }
-
-  #home input#home-name-input:focus {
-    outline: none;
-    border-color: #38bdf8;
-    box-shadow: 0 0 0 2px rgba(56, 189, 248, 0.2);
-  }
-
-  button.bb-guest-save-btn {
-    padding: 8px 13px;
-    font-size: 0.8rem;
-    border-radius: 6px;
-  }
-
-  .bb-guest-footer {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    padding-top: 8px;
-    border-top: 1px solid rgba(148, 163, 184, 0.14);
-  }
-
-  .bb-guest-storage-note {
-    margin: 0;
-    font-size: 0.7rem;
-    line-height: 1.4;
-    color: #7e92b8;
-  }
-
-  .bb-guest-account-row {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 8px;
-    padding: 7px 10px;
-    border-radius: 6px;
-    background: rgba(9, 14, 25, 0.75);
-    border: 1px dashed rgba(148, 163, 184, 0.22);
-    cursor: pointer;
-    transition: border-color 0.15s;
-  }
-
-  .bb-guest-account-row:hover,
-  .bb-guest-account-row:focus-visible {
-    outline: none;
-    border-color: rgba(148, 163, 184, 0.38);
-  }
-
-  .bb-guest-account-copy {
-    display: flex;
-    flex-direction: column;
-    gap: 1px;
-    min-width: 0;
-  }
-
-  .bb-guest-account-copy strong {
-    font-size: 0.76rem;
-    font-weight: 700;
-    color: #94a3b8;
-  }
-
-  .bb-guest-account-copy span {
-    font-size: 0.68rem;
-    color: #64748b;
-  }
-
-  button.bb-guest-account-btn {
-    width: auto;
-    padding: 3px 9px;
-    font-size: 0.68rem;
-    flex-shrink: 0;
-  }
-
-  /* How to Play Card */
-  .bb-home-guide-card {
-    border-top: 2px solid rgba(56, 189, 248, 0.55);
-  }
-
-  .bb-home-guide-desc {
-    margin: 0;
-    font-size: 0.76rem;
+    display: block;
+    margin: 0 0 7px;
+    color: var(--color-fg-secondary);
+    font-size: var(--text-supporting);
     line-height: 1.45;
-    color: #cbd5e1;
   }
 
-  button.bb-home-guide-btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
+  .bb-guest-input-row input {
+    flex: 1 1 auto;
+    min-width: 0;
+    min-height: 42px;
+    padding: 8px 10px;
+    color: var(--color-fg);
+    background: var(--surface-hud-inset);
+    border: 1px solid var(--border-hud);
+    border-radius: var(--radius-control);
+  }
+
+  .bb-guest-save-btn {
+    min-height: 42px;
     padding: 8px 12px;
-    border-radius: 6px;
-    background: rgba(18, 32, 56, 0.88);
-    border: 1px solid rgba(56, 189, 248, 0.34);
-    color: #e0f2fe;
-    font-size: 0.82rem;
-    font-weight: 800;
-    transition: background 0.15s, border-color 0.15s;
+    white-space: nowrap;
   }
 
-  button.bb-home-guide-btn:hover {
-    background: rgba(26, 46, 78, 0.96);
-    border-color: #38bdf8;
-    color: #ffffff;
-  }
-
-  /* Responsive Layout: Tablet & Mobile (< 960px & <= 640px) */
-  @media (max-width: 960px) {
-    .bb-home-hero {
-      flex-direction: column;
-      align-items: stretch;
-      padding: 14px 16px;
-    }
-
-    .bb-home-hero-specs {
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
-
-    .bb-home-grid {
-      grid-template-columns: 1fr;
+  @media (max-width: 900px) {
+    .bb-home-stage {
+      grid-template-columns: minmax(280px, 0.42fr) minmax(0, 0.58fr);
+      gap: 18px;
     }
   }
 
   @media (max-width: 640px) {
-    body.in-home main {
-      padding: 10px 12px 24px;
+    #home.bb-home-shell:not([hidden]) {
+      min-height: calc(100dvh - 56px);
+      padding: 18px 12px 24px;
     }
 
-    .bb-home-brand-title {
-      font-size: 1.55rem;
+    .bb-home-stage {
+      grid-template-columns: minmax(0, 1fr);
+      gap: 10px;
+      width: 100%;
+      min-height: 0;
+      max-height: none;
+      overflow: visible;
     }
 
-    .bb-home-brand-sub {
-      font-size: 0.86rem;
+    .bb-home-menu {
+      padding: 16px;
     }
 
-    .bb-home-hero-specs {
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 6px;
+    .bb-home-menu-heading {
+      margin-bottom: 12px;
     }
 
-    .bb-home-spec-chip {
-      padding: 7px 8px;
+    .bb-home-menu-heading h2 {
+      font-size: 1.3rem;
     }
 
-    .bb-home-spec-chip strong {
+    .bb-home-mode {
+      min-height: 82px;
+      gap: 8px;
+      padding: 12px 10px;
+    }
+
+    .bb-home-mode-title {
+      font-size: 1.08rem;
+    }
+
+    .bb-home-mode-sub {
       font-size: 0.74rem;
     }
 
-    .bb-home-spec-chip span {
-      font-size: 0.62rem;
+    .bb-home-mode-action {
+      max-width: 36%;
+      text-align: right;
       white-space: normal;
     }
 
-    .bb-home-primary-card {
-      padding: 15px 16px;
+    .bb-home-menu-item--disabled {
+      min-height: 42px;
     }
 
-    .bb-home-primary-body {
+    .bb-home-football-stage {
+      min-height: 220px;
+    }
+
+    .bb-home-pitch {
+      width: 38%;
+      opacity: 0.48;
+    }
+
+    .bb-home-formation {
+      inset: 5% 7% 8%;
+    }
+
+    .bb-home-football-caption {
+      bottom: 0;
+      padding-top: 22px;
+    }
+
+    .bb-home-tagline {
+      font-size: 0.7rem;
+    }
+
+    dialog.bb-guest-modal {
+      padding: 16px;
+    }
+  }
+
+  @media (max-width: 380px) {
+    .bb-home-mode {
+      align-items: flex-start;
       flex-direction: column;
-      align-items: stretch;
-      gap: 12px;
     }
 
-    button.bb-home-enter-btn {
-      width: 100%;
-    }
-
-    .bb-home-upcoming-grid {
-      grid-template-columns: 1fr;
+    .bb-home-mode-action {
+      max-width: none;
+      text-align: left;
     }
 
     .bb-guest-input-row {
+      align-items: stretch;
       flex-direction: column;
     }
+  }
 
-    button.bb-guest-save-btn {
-      width: 100%;
+  @media (prefers-reduced-motion: reduce) {
+    .bb-home-mode {
+      transition: none;
     }
   }
 }

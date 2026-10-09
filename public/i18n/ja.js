@@ -69,6 +69,9 @@ export const ja = {
     home: {
         eyebrow: 'EVERY ERA. ONE PITCH.',
         archiveTag: '11V11 ヒストリカル・ドリームドラフト',
+        menuHeading: '対戦モード',
+        stageCaption: '各時代の名選手を集め、夢のイレブンを結成。',
+        closeProfileBtn: 'プレイヤー情報を閉じる',
         heroDesc: '異なる歴史的シーズンのクラブと選手たちが時代を超え、ひとつのピッチでドリームチームを結成して激突する。',
         spec1Title: '1v1 DRAFT',
         spec1Sub: '2人同時ブラインド指名',

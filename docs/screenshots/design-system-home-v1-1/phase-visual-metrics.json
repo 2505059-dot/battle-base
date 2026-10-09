@@ -1,0 +1,515 @@
+{
+  "baselineCommit": "45856df957d80cdbc3ce3771da48c6573fe6e1a0",
+  "capture": "Real local two-client UI; actual invite room, draft, roster locks, reveal and match simulation; both pages at 1366×768 deviceScaleFactor 1.",
+  "room": "4X85",
+  "rosters": {
+    "host": {
+      "GK": 1,
+      "DF": 4,
+      "MF": 3,
+      "FW": 3
+    },
+    "guest": {
+      "GK": 1,
+      "DF": 4,
+      "MF": 3,
+      "FW": 3
+    }
+  },
+  "flow": {
+    "lobbyAfterLeave": "bb-theme in-lobby",
+    "homeAfterBrand": "bb-theme in-home",
+    "ok": true
+  },
+  "metrics": [
+    {
+      "phase": "draft-ready-before-lock",
+      "viewport": {
+        "width": 1366,
+        "height": 768,
+        "deviceScaleFactor": 1
+      },
+      "document": {
+        "width": 1366,
+        "height": 768,
+        "overflowX": false
+      },
+      "bodyClass": "bb-theme in-room in-game in-draft",
+      "elements": {
+        "topbar": {
+          "count": 1,
+          "rects": [
+            {
+              "x": 24,
+              "y": 6,
+              "width": 370,
+              "height": 34
+            }
+          ]
+        },
+        "gameMain": {
+          "count": 1,
+          "rects": [
+            {
+              "x": 24,
+              "y": 88,
+              "width": 1318,
+              "height": 674
+            }
+          ]
+        },
+        "pitch": {
+          "count": 1,
+          "rects": [
+            {
+              "x": 498,
+              "y": 130,
+              "width": 370,
+              "height": 582
+            }
+          ]
+        },
+        "draftPortrait": {
+          "count": 0,
+          "rects": []
+        },
+        "revealGrid": {
+          "count": 0,
+          "rects": []
+        },
+        "revealPitch": {
+          "count": 0,
+          "rects": []
+        },
+        "inspector": {
+          "count": 0,
+          "rects": []
+        },
+        "matchPanel": {
+          "count": 0,
+          "rects": []
+        },
+        "compactHud": {
+          "count": 1,
+          "rects": [
+            {
+              "x": 404,
+              "y": 6,
+              "width": 938,
+              "height": 34
+            }
+          ]
+        }
+      }
+    },
+    {
+      "phase": "reveal-22",
+      "viewport": {
+        "width": 1366,
+        "height": 768,
+        "deviceScaleFactor": 1
+      },
+      "document": {
+        "width": 1366,
+        "height": 768,
+        "overflowX": false
+      },
+      "bodyClass": "bb-theme in-room in-game in-reveal",
+      "elements": {
+        "topbar": {
+          "count": 1,
+          "rects": [
+            {
+              "x": 24,
+              "y": 6,
+              "width": 381,
+              "height": 34
+            }
+          ]
+        },
+        "gameMain": {
+          "count": 1,
+          "rects": [
+            {
+              "x": 24,
+              "y": 46,
+              "width": 1318,
+              "height": 716
+            }
+          ]
+        },
+        "pitch": {
+          "count": 1,
+          "rects": [
+            {
+              "x": 300,
+              "y": 135,
+              "width": 397,
+              "height": 625
+            }
+          ]
+        },
+        "draftPortrait": {
+          "count": 0,
+          "rects": []
+        },
+        "revealGrid": {
+          "count": 1,
+          "rects": [
+            {
+              "x": 300,
+              "y": 133,
+              "width": 765,
+              "height": 629
+            }
+          ]
+        },
+        "revealPitch": {
+          "count": 1,
+          "rects": [
+            {
+              "x": 300,
+              "y": 135,
+              "width": 397,
+              "height": 625
+            }
+          ]
+        },
+        "inspector": {
+          "count": 1,
+          "rects": [
+            {
+              "x": 710,
+              "y": 182,
+              "width": 356,
+              "height": 512
+            }
+          ]
+        },
+        "matchPanel": {
+          "count": 0,
+          "rects": []
+        },
+        "compactHud": {
+          "count": 1,
+          "rects": [
+            {
+              "x": 415,
+              "y": 6,
+              "width": 927,
+              "height": 34
+            }
+          ]
+        }
+      }
+    },
+    {
+      "phase": "reveal-teamA-11",
+      "viewport": {
+        "width": 1366,
+        "height": 768,
+        "deviceScaleFactor": 1
+      },
+      "document": {
+        "width": 1366,
+        "height": 768,
+        "overflowX": false
+      },
+      "bodyClass": "bb-theme in-room in-game in-reveal",
+      "elements": {
+        "topbar": {
+          "count": 1,
+          "rects": [
+            {
+              "x": 24,
+              "y": 6,
+              "width": 381,
+              "height": 34
+            }
+          ]
+        },
+        "gameMain": {
+          "count": 1,
+          "rects": [
+            {
+              "x": 24,
+              "y": 46,
+              "width": 1318,
+              "height": 716
+            }
+          ]
+        },
+        "pitch": {
+          "count": 1,
+          "rects": [
+            {
+              "x": 300,
+              "y": 135,
+              "width": 397,
+              "height": 625
+            }
+          ]
+        },
+        "draftPortrait": {
+          "count": 0,
+          "rects": []
+        },
+        "revealGrid": {
+          "count": 1,
+          "rects": [
+            {
+              "x": 300,
+              "y": 133,
+              "width": 765,
+              "height": 629
+            }
+          ]
+        },
+        "revealPitch": {
+          "count": 1,
+          "rects": [
+            {
+              "x": 300,
+              "y": 135,
+              "width": 397,
+              "height": 625
+            }
+          ]
+        },
+        "inspector": {
+          "count": 1,
+          "rects": [
+            {
+              "x": 710,
+              "y": 182,
+              "width": 356,
+              "height": 512
+            }
+          ]
+        },
+        "matchPanel": {
+          "count": 0,
+          "rects": []
+        },
+        "compactHud": {
+          "count": 1,
+          "rects": [
+            {
+              "x": 415,
+              "y": 6,
+              "width": 927,
+              "height": 34
+            }
+          ]
+        }
+      }
+    },
+    {
+      "phase": "match",
+      "viewport": {
+        "width": 1366,
+        "height": 768,
+        "deviceScaleFactor": 1
+      },
+      "document": {
+        "width": 1366,
+        "height": 773,
+        "overflowX": false
+      },
+      "bodyClass": "bb-theme in-room in-game in-match",
+      "elements": {
+        "topbar": {
+          "count": 1,
+          "rects": [
+            {
+              "x": 28,
+              "y": 8,
+              "width": 1310,
+              "height": 53
+            }
+          ]
+        },
+        "gameMain": {
+          "count": 1,
+          "rects": [
+            {
+              "x": 28,
+              "y": 233,
+              "width": 1310,
+              "height": 528
+            }
+          ]
+        },
+        "pitch": {
+          "count": 2,
+          "rects": [
+            {
+              "x": 42,
+              "y": 338,
+              "width": 248,
+              "height": 390
+            },
+            {
+              "x": 1076,
+              "y": 338,
+              "width": 248,
+              "height": 390
+            }
+          ]
+        },
+        "draftPortrait": {
+          "count": 0,
+          "rects": []
+        },
+        "revealGrid": {
+          "count": 0,
+          "rects": []
+        },
+        "revealPitch": {
+          "count": 0,
+          "rects": []
+        },
+        "inspector": {
+          "count": 0,
+          "rects": []
+        },
+        "matchPanel": {
+          "count": 1,
+          "rects": [
+            {
+              "x": 331,
+              "y": 374,
+              "width": 704,
+              "height": 95
+            }
+          ]
+        },
+        "compactHud": {
+          "count": 1,
+          "rects": [
+            {
+              "x": 28,
+              "y": 71,
+              "width": 1310,
+              "height": 45
+            }
+          ]
+        }
+      }
+    },
+    {
+      "phase": "result-fullpage",
+      "viewport": {
+        "width": 1366,
+        "height": 768,
+        "deviceScaleFactor": 1
+      },
+      "document": {
+        "width": 1366,
+        "height": 1126,
+        "overflowX": false
+      },
+      "bodyClass": "bb-theme in-room in-game in-result",
+      "elements": {
+        "topbar": {
+          "count": 1,
+          "rects": [
+            {
+              "x": 28,
+              "y": 8,
+              "width": 1310,
+              "height": 53
+            }
+          ]
+        },
+        "gameMain": {
+          "count": 1,
+          "rects": [
+            {
+              "x": 28,
+              "y": 232,
+              "width": 1310,
+              "height": 882
+            }
+          ]
+        },
+        "pitch": {
+          "count": 2,
+          "rects": [
+            {
+              "x": 42,
+              "y": 338,
+              "width": 248,
+              "height": 390
+            },
+            {
+              "x": 1076,
+              "y": 338,
+              "width": 248,
+              "height": 390
+            }
+          ]
+        },
+        "draftPortrait": {
+          "count": 0,
+          "rects": []
+        },
+        "revealGrid": {
+          "count": 0,
+          "rects": []
+        },
+        "revealPitch": {
+          "count": 0,
+          "rects": []
+        },
+        "inspector": {
+          "count": 0,
+          "rects": []
+        },
+        "matchPanel": {
+          "count": 1,
+          "rects": [
+            {
+              "x": 331,
+              "y": 720,
+              "width": 704,
+              "height": 381
+            }
+          ]
+        },
+        "compactHud": {
+          "count": 1,
+          "rects": [
+            {
+              "x": 28,
+              "y": 71,
+              "width": 1310,
+              "height": 45
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "errorSummary": {
+    "pageErrors": 0,
+    "localHttpErrors": 0,
+    "remoteRequestFailureEvents": 2590,
+    "remoteConsoleFailureEvents": 2590,
+    "remoteHost": "images.fifaindex.com",
+    "distinctRemoteUrls": 157,
+    "reportedBrowserFailure": "ERR_BLOCKED_BY_RESPONSE.NotSameOrigin",
+    "sampleUrls": [
+      "https://images.fifaindex.com/fifa15/players/178603.png",
+      "https://images.fifaindex.com/fifa22/players/192119.png",
+      "https://images.fifaindex.com/fifa13/players/167495.png",
+      "https://images.fifaindex.com/fifa05/players/g/141111.png",
+      "https://images.fifaindex.com/fifa11/players/13038.png",
+      "https://images.fifaindex.com/fifa13/players/121939.png",
+      "https://images.fifaindex.com/fifa05/players/g/050111.png",
+      "https://images.fifaindex.com/fifa05/players/g/090811.png",
+      "https://images.fifaindex.com/fifa15/players/186942.png",
+      "https://images.fifaindex.com/fifa22/players/253163.png"
+    ]
+  }
+}

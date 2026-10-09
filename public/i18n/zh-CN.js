@@ -69,6 +69,9 @@ export const zhCN = {
     home: {
         eyebrow: 'EVERY ERA. ONE PITCH.',
         archiveTag: '11V11 历史赛季梦之队选秀',
+        menuHeading: '选择对战模式',
+        stageCaption: '汇聚各个时代的传奇球星，组建你的梦之队。',
+        closeProfileBtn: '关闭玩家档案',
         heroDesc: '让不同历史赛季的球队和球员跨越时代，在同一块球场上组成梦之队并展开对决。',
         spec1Title: '1v1 DRAFT',
         spec1Sub: '双人同场盲选',

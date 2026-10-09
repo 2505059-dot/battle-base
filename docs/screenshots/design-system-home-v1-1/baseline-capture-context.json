@@ -1,0 +1,12 @@
+{
+  "sourceCommit": "45856df957d80cdbc3ce3771da48c6573fe6e1a0",
+  "capture": "Read-only baseline public export served locally; WebSocket forwarded to unchanged local server at 8000; app reports no disconnect toast.",
+  "url": "http://127.0.0.1:8001/",
+  "deviceScaleFactor": 1,
+  "viewports": [
+    "1920x1080",
+    "1366x768",
+    "1280x720",
+    "390x844"
+  ]
+}
